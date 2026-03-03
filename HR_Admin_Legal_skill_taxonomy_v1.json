@@ -1,0 +1,3879 @@
+{
+  "taxonomy_metadata": {
+    "version": "1.0.0",
+    "generated_at": "2026-02-25",
+    "job_group": "HR/Admin/Legal",
+    "job_group_en": "Human Resources / Administration / Legal",
+    "source_sites": [
+      "topcv.vn",
+      "vietnamworks.com"
+    ],
+    "jd_corpus_size": "~5 JD per position (top 5 most recent)",
+    "pipeline_stages": {
+      "S1_extraction": "TalentGraph_Extractor_v2.1 — synthesis từ JD corpus",
+      "S11_esco_mapping": "ESCO Skill Mapping v1.0",
+      "S12_occupation_match": "ESCO Occupation Match v1.0",
+      "S13_iviec_gap_detection": "iVIEC Gap Detection v1.0 — VN-specific skills",
+      "S14_hierarchy_enrichment": "Hierarchy Enrichment v1.0"
+    },
+    "prompt_library_version": "TalentGraph_PromptLib_v2.1",
+    "extraction_method": "Synthesis from top-5 most recent JDs per position on TopCV & VietnamWorks",
+    "row_range": "180-208",
+    "total_nghe": 3,
+    "total_vi_tri": 29,
+    "total_skills_extracted": 282,
+    "total_iviec_proposals": 58,
+    "iviec_by_type": {
+      "VN_TOOL": 5,
+      "VN_DOMAIN": 4,
+      "VN_REGULATION": 49,
+      "VN_CERTIFICATION": 0
+    }
+  },
+  "nghes": [
+    {
+      "nghe": "Nhân sự",
+      "position_count": 11,
+      "rows": "180-190"
+    },
+    {
+      "nghe": "Hành chính",
+      "position_count": 15,
+      "rows": "191-205"
+    },
+    {
+      "nghe": "Pháp chế",
+      "position_count": 3,
+      "rows": "206-208"
+    }
+  ],
+  "positions": [
+    {
+      "row_id": 180,
+      "vi_tri": "Tuyển dụng / Recruitment Specialist",
+      "nghe": "Nhân sự",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tuyen-dung",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 12,
+            "notes": "Recruitment - full-cycle talent acquisition for Vietnamese market"
+          },
+          "skills": [
+            {
+              "label_en": "End-to-end Recruitment",
+              "label_vi": "Tuyển dụng toàn trình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện toàn bộ quy trình tuyển dụng: JD, sourcing, screening, phỏng vấn, offer",
+              "esco_hint": "recruitment",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Sourcing & Headhunting",
+              "label_vi": "Tìm kiếm ứng viên",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Chủ động tìm kiếm ứng viên qua LinkedIn, TopCV, VietnamWorks, head hunting",
+              "esco_hint": "candidate sourcing",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "TopCV / VietnamWorks / LinkedIn",
+              "label_vi": "TopCV / VietnamWorks / LinkedIn",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đăng tin và tìm kiếm ứng viên trên TopCV, VietnamWorks và LinkedIn",
+              "esco_hint": "recruitment platform",
+              "esco_uri": "",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL",
+              "iviec_reason": "TopCV và VietnamWorks là 2 nền tảng tuyển dụng lớn nhất VN - bắt buộc với mọi Recruiter"
+            },
+            {
+              "label_en": "Interview Techniques",
+              "label_vi": "Kỹ thuật phỏng vấn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phỏng vấn theo STAR, behavioral và competency-based interview",
+              "esco_hint": "interview techniques",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Applicant Tracking System (ATS)",
+              "label_vi": "Hệ thống quản lý ứng viên ATS",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng ATS để quản lý pipeline ứng viên và tiến độ tuyển dụng",
+              "esco_hint": "applicant tracking system",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Job Description Writing",
+              "label_vi": "Viết mô tả công việc",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Soạn thảo JD rõ ràng, hấp dẫn và phù hợp với thị trường lao động VN",
+              "esco_hint": "job description writing",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Employer Branding",
+              "label_vi": "Thương hiệu nhà tuyển dụng",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Xây dựng và quảng bá employer brand để thu hút ứng viên chất lượng",
+              "esco_hint": "employer branding",
+              "esco_uri": "",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Salary Benchmarking",
+              "label_vi": "Khảo sát lương thị trường",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tham khảo Mercer, Hay Group hoặc VietnamWorks Salary Survey để benchmark lương",
+              "esco_hint": "salary benchmarking",
+              "esco_uri": "",
+              "confidence": 0.9,
+              "iviec_flag": "VN_DOMAIN",
+              "iviec_reason": "Mercer Vietnam và VietnamWorks Salary Survey là nguồn benchmark lương phổ biến nhất VN"
+            },
+            {
+              "label_en": "Labor Law Knowledge",
+              "label_vi": "Kiến thức Luật Lao động",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Hiểu Bộ luật Lao động 2019 về hợp đồng lao động, thử việc và chấm dứt",
+              "esco_hint": "labour law",
+              "esco_uri": "",
+              "confidence": 0.92,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Bộ luật Lao động 2019 VN quy định về HĐ thử việc, probation tối đa 60 ngày"
+            },
+            {
+              "label_en": "Excel / Google Sheets",
+              "label_vi": "Excel / Google Sheets",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý recruitment tracker, báo cáo headcount và pipeline trong Excel",
+              "esco_hint": "spreadsheet software",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Communication & Negotiation",
+              "label_vi": "Giao tiếp & Đàm phán",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Giao tiếp hiệu quả với hiring managers và đàm phán offer với ứng viên",
+              "esco_hint": "communication",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Candidate Experience",
+              "label_vi": "Trải nghiệm ứng viên",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Tạo trải nghiệm tuyển dụng tích cực từ first contact đến onboarding",
+              "esco_hint": "candidate experience",
+              "esco_uri": "",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 181,
+      "vi_tri": "HRBP / HR Business Partner",
+      "nghe": "Nhân sự",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-hrbp",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 11,
+            "notes": "HRBP - strategic HR business partner for business units"
+          },
+          "skills": [
+            {
+              "label_en": "HR Business Partnering",
+              "label_vi": "Đối tác nhân sự chiến lược",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn chiến lược nhân sự cho business unit, align HR với mục tiêu kinh doanh",
+              "esco_hint": "human resources business partnering",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Talent Management",
+              "label_vi": "Quản lý tài năng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng talent pipeline, succession planning và individual development plans",
+              "esco_hint": "talent management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Organizational Development",
+              "label_vi": "Phát triển tổ chức",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Chẩn đoán tổ chức, xây dựng cấu trúc và dẫn dắt change management",
+              "esco_hint": "organisational development",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Performance Management",
+              "label_vi": "Quản lý hiệu suất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế và vận hành hệ thống đánh giá hiệu suất KPI/OKR",
+              "esco_hint": "performance management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Employee Relations",
+              "label_vi": "Quan hệ lao động",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý quan hệ lao động, kỷ luật và khiếu nại nhân viên theo Luật LĐ VN",
+              "esco_hint": "employee relations",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Quy trình kỷ luật lao động theo Bộ luật LĐ 2019 và Nghị định 145/2020/NĐ-CP"
+            },
+            {
+              "label_en": "Workforce Planning",
+              "label_vi": "Hoạch định nhân lực",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích nhu cầu nhân lực ngắn và dài hạn cho business unit",
+              "esco_hint": "workforce planning",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Change Management",
+              "label_vi": "Quản lý thay đổi",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hỗ trợ tổ chức quản lý thay đổi trong M&A, restructuring và transformation",
+              "esco_hint": "change management",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Coaching & Mentoring",
+              "label_vi": "Coaching & Mentoring lãnh đạo",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Coaching line managers về HR practices và leadership development",
+              "esco_hint": "coaching",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Data Analytics (HR)",
+              "label_vi": "Phân tích dữ liệu nhân sự",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phân tích HR metrics: turnover, engagement, headcount để ra quyết định",
+              "esco_hint": "HR analytics",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "English Proficiency",
+              "label_vi": "Tiếng Anh",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Làm việc với regional HR teams và báo cáo lên HQ nước ngoài",
+              "esco_hint": "English language",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Stakeholder Management",
+              "label_vi": "Quản lý stakeholders",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Xây dựng quan hệ tin tưởng với senior leaders và tất cả cấp nhân viên",
+              "esco_hint": "stakeholder management",
+              "esco_uri": "",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 182,
+      "vi_tri": "Đào tạo / Training & Development Specialist",
+      "nghe": "Nhân sự",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-dao-tao",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 12,
+            "notes": "Training & Development - L&D specialist for employee capability building"
+          },
+          "skills": [
+            {
+              "label_en": "Training Needs Analysis (TNA)",
+              "label_vi": "Phân tích nhu cầu đào tạo",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện TNA để xác định khoảng cách kỹ năng và ưu tiên đào tạo",
+              "esco_hint": "training needs analysis",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Curriculum & Program Design",
+              "label_vi": "Thiết kế chương trình đào tạo",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng nội dung và chương trình đào tạo theo ADDIE hoặc Bloom's Taxonomy",
+              "esco_hint": "curriculum development",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Training Delivery (Facilitation)",
+              "label_vi": "Giảng dạy & Điều phối lớp học",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tổ chức và giảng dạy các chương trình đào tạo nội bộ hiệu quả",
+              "esco_hint": "training delivery",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "E-learning Development",
+              "label_vi": "Phát triển E-learning",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Xây dựng khoá học e-learning với Articulate Storyline, Rise hoặc Canva",
+              "esco_hint": "e-learning development",
+              "esco_uri": "",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "LMS Administration",
+              "label_vi": "Quản trị hệ thống LMS",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Quản lý và vận hành Learning Management System cho nhân viên",
+              "esco_hint": "learning management system",
+              "esco_uri": "",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Training Evaluation (Kirkpatrick)",
+              "label_vi": "Đánh giá hiệu quả đào tạo",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đánh giá hiệu quả đào tạo theo mô hình Kirkpatrick Level 1-4",
+              "esco_hint": "training evaluation",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Presentation & Public Speaking",
+              "label_vi": "Thuyết trình & Nói trước đám đông",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thuyết trình hấp dẫn và điều phối workshop cho nhóm 20-100 người",
+              "esco_hint": "public speaking",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Competency Framework",
+              "label_vi": "Khung năng lực",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Xây dựng và áp dụng competency framework cho các vị trí trong tổ chức",
+              "esco_hint": "competency framework",
+              "esco_uri": "",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Onboarding Program Design",
+              "label_vi": "Thiết kế chương trình onboarding",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Xây dựng chương trình onboarding hiệu quả cho nhân viên mới",
+              "esco_hint": "onboarding",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Microsoft PowerPoint",
+              "label_vi": "Microsoft PowerPoint",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế tài liệu đào tạo và slide thuyết trình chất lượng cao",
+              "esco_hint": "presentation software",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Budget Management (Training)",
+              "label_vi": "Quản lý ngân sách đào tạo",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Lập kế hoạch và quản lý ngân sách đào tạo hàng năm",
+              "esco_hint": "budget management",
+              "esco_uri": "",
+              "confidence": 0.87
+            },
+            {
+              "label_en": "Coaching Skills",
+              "label_vi": "Kỹ năng Coaching",
+              "skill_type": "soft",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Coaching 1-1 cho nhân viên và quản lý cấp trung",
+              "esco_hint": "coaching",
+              "esco_uri": "",
+              "confidence": 0.88
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 183,
+      "vi_tri": "Quan hệ lao động / Employee & Labor Relations",
+      "nghe": "Nhân sự",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-quan-he-lao-dong",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 10,
+            "notes": "Labor Relations - Vietnamese labor law compliance and dispute resolution"
+          },
+          "skills": [
+            {
+              "label_en": "Labor Law Expertise",
+              "label_vi": "Chuyên sâu Luật Lao động",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thông thạo Bộ luật Lao động 2019, Luật BHXH, BHYT và các nghị định hướng dẫn",
+              "esco_hint": "labour law",
+              "esco_uri": "",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Bộ luật LĐ 2019, Nghị định 145/2020 về kỷ luật, NĐ 12/2022 về vi phạm HĐLĐ"
+            },
+            {
+              "label_en": "Labor Contract Management",
+              "label_vi": "Quản lý hợp đồng lao động",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Soạn thảo, quản lý và chấm dứt hợp đồng lao động đúng quy định pháp luật VN",
+              "esco_hint": "employment contract management",
+              "esco_uri": "",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Các loại HĐLĐ theo Điều 20 BLLĐ 2019: xác định thời hạn, không xác định thời hạn"
+            },
+            {
+              "label_en": "Disciplinary Procedures",
+              "label_vi": "Quy trình kỷ luật lao động",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện quy trình xử lý kỷ luật lao động đúng trình tự, thủ tục pháp luật",
+              "esco_hint": "disciplinary procedures",
+              "esco_uri": "",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Quy trình kỷ luật 8 bước theo Điều 122 BLLĐ 2019 và NĐ 145/2020/NĐ-CP"
+            },
+            {
+              "label_en": "Collective Bargaining Agreement",
+              "label_vi": "Thỏa ước lao động tập thể",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đàm phán, xây dựng và quản lý thỏa ước lao động tập thể với công đoàn",
+              "esco_hint": "collective bargaining",
+              "esco_uri": "",
+              "confidence": 0.92,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Thỏa ước LĐTT theo Chương IV BLLĐ 2019 - bắt buộc với DN có tổ chức công đoàn"
+            },
+            {
+              "label_en": "Trade Union Relations",
+              "label_vi": "Quan hệ công đoàn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng và duy trì quan hệ hợp tác với Ban Chấp hành Công đoàn cơ sở",
+              "esco_hint": "trade union relations",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Công đoàn cơ sở theo Luật Công đoàn 2012 - đặc thù hệ thống CĐCS tại VN"
+            },
+            {
+              "label_en": "Labor Dispute Resolution",
+              "label_vi": "Giải quyết tranh chấp lao động",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý tranh chấp lao động cá nhân và tập thể theo đúng trình tự pháp luật",
+              "esco_hint": "labour dispute resolution",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Trình tự giải quyết tranh chấp LĐ theo Chương XIV BLLĐ 2019"
+            },
+            {
+              "label_en": "BHXH / BHYT / BHTN Compliance",
+              "label_vi": "Tuân thủ BHXH / BHYT / BHTN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo tuân thủ đóng và quản lý BHXH, BHYT, BHTN theo quy định",
+              "esco_hint": "social insurance compliance",
+              "esco_uri": "",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Luật BHXH 2014 sửa đổi, Luật BHYT 2014 và quy định mức đóng BHXH 2024"
+            },
+            {
+              "label_en": "Internal Regulations Development",
+              "label_vi": "Xây dựng nội quy lao động",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Soạn thảo, đăng ký và cập nhật nội quy lao động tại Sở LĐTBXH",
+              "esco_hint": "internal work regulations",
+              "esco_uri": "",
+              "confidence": 0.92,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Đăng ký nội quy lao động tại Sở LĐTBXH theo Điều 119 BLLĐ 2019"
+            },
+            {
+              "label_en": "Negotiation",
+              "label_vi": "Đàm phán",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Đàm phán và hòa giải trong các tình huống tranh chấp lao động",
+              "esco_hint": "negotiate",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Confidentiality",
+              "label_vi": "Bảo mật thông tin nhân sự",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bảo mật tuyệt đối thông tin nhân sự và tranh chấp lao động",
+              "esco_hint": "confidentiality",
+              "esco_uri": "",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 184,
+      "vi_tri": "Phát triển tổ chức / Organizational Development",
+      "nghe": "Nhân sự",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-phat-trien-to-chuc",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 11,
+            "notes": "Organizational Development - culture, design, engagement and leadership pipeline"
+          },
+          "skills": [
+            {
+              "label_en": "Organizational Design",
+              "label_vi": "Thiết kế tổ chức",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân tích và thiết kế cơ cấu tổ chức tối ưu cho chiến lược doanh nghiệp",
+              "esco_hint": "organisational design",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Culture Transformation",
+              "label_vi": "Chuyển đổi văn hóa doanh nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Dẫn dắt chương trình xây dựng và chuyển đổi văn hóa doanh nghiệp",
+              "esco_hint": "organisational culture",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "OKR / KPI System Design",
+              "label_vi": "Thiết kế hệ thống OKR/KPI",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng và triển khai hệ thống quản trị mục tiêu OKR hoặc KPI",
+              "esco_hint": "performance management system",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Succession Planning",
+              "label_vi": "Hoạch định kế thừa",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng kế hoạch kế thừa cho các vị trí key và leadership pipeline",
+              "esco_hint": "succession planning",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Employee Engagement",
+              "label_vi": "Gắn kết nhân viên",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế và triển khai engagement survey, phân tích kết quả và action planning",
+              "esco_hint": "employee engagement",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Change Management",
+              "label_vi": "Quản lý thay đổi tổ chức",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Áp dụng mô hình ADKAR, Kotter 8-step để dẫn dắt thay đổi",
+              "esco_hint": "change management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Leadership Development",
+              "label_vi": "Phát triển lãnh đạo",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế chương trình phát triển lãnh đạo cho management pipeline",
+              "esco_hint": "leadership development",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Competency Framework Design",
+              "label_vi": "Thiết kế khung năng lực",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng competency model và assessment center cho tổ chức",
+              "esco_hint": "competency framework",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "HR Analytics & Insights",
+              "label_vi": "Phân tích & Insight nhân sự",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phân tích workforce data để hỗ trợ quyết định chiến lược nhân sự",
+              "esco_hint": "HR analytics",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Consulting & Facilitation",
+              "label_vi": "Tư vấn & Điều phối workshop",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Tư vấn và điều phối workshops chiến lược cho lãnh đạo cấp cao",
+              "esco_hint": "facilitation",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "English Proficiency",
+              "label_vi": "Tiếng Anh",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đọc và áp dụng OD models quốc tế, làm việc với global HQ",
+              "esco_hint": "English language",
+              "esco_uri": "",
+              "confidence": 0.9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 185,
+      "vi_tri": "Truyền thông nội bộ / Internal Communications",
+      "nghe": "Nhân sự",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-truyen-thong-noi-bo",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 10,
+            "notes": "Internal Communications - employee engagement and company-wide messaging"
+          },
+          "skills": [
+            {
+              "label_en": "Internal Communication Strategy",
+              "label_vi": "Chiến lược truyền thông nội bộ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng và triển khai kế hoạch truyền thông nội bộ toàn công ty",
+              "esco_hint": "internal communication strategy",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Content Creation (Internal)",
+              "label_vi": "Sản xuất nội dung nội bộ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sản xuất bản tin, video, email all-staff, digital signage và poster nội bộ",
+              "esco_hint": "content creation",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Intranet / Internal Platform Management",
+              "label_vi": "Quản lý Intranet / nền tảng nội bộ",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Quản lý nội dung trên Intranet, SharePoint hoặc ứng dụng nội bộ doanh nghiệp",
+              "esco_hint": "intranet management",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Zalo / Teams / Workplace",
+              "label_vi": "Zalo / Teams / Workplace",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý kênh truyền thông nội bộ qua Zalo, Microsoft Teams hoặc Workplace",
+              "esco_hint": "internal messaging platform",
+              "esco_uri": "",
+              "confidence": 0.92,
+              "iviec_flag": "VN_TOOL",
+              "iviec_reason": "Zalo là ứng dụng nhắn tin nội bộ phổ biến nhất ở SME VN, thay thế email trong giao tiếp hàng ngày"
+            },
+            {
+              "label_en": "Employee Engagement Events",
+              "label_vi": "Tổ chức sự kiện gắn kết nhân viên",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tổ chức Town Hall, Year-End Party, Team Building và các sự kiện nội bộ",
+              "esco_hint": "event organisation",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Graphic Design (Basic)",
+              "label_vi": "Thiết kế đồ họa cơ bản",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "basic",
+              "evidence_text": "Canva hoặc Adobe để thiết kế poster, banner và nội dung visual nội bộ",
+              "esco_hint": "graphic design tools",
+              "esco_uri": "",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Video Production (Basic)",
+              "label_vi": "Sản xuất video cơ bản",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Quay và dựng video ngắn nội bộ: recap, interview lãnh đạo, welcoming mới",
+              "esco_hint": "video production",
+              "esco_uri": "",
+              "confidence": 0.85
+            },
+            {
+              "label_en": "Writing Skills",
+              "label_vi": "Kỹ năng viết lách",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Viết nội dung rõ ràng, engaging và phù hợp với nhiều đối tượng nhân viên",
+              "esco_hint": "writing skills",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Confidentiality",
+              "label_vi": "Bảo mật thông tin",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bảo mật thông tin nhạy cảm của tổ chức trong truyền thông nội bộ",
+              "esco_hint": "confidentiality",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Stakeholder Management",
+              "label_vi": "Quản lý stakeholders",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Phối hợp với HR, C-suite và tất cả phòng ban để đồng bộ thông điệp",
+              "esco_hint": "stakeholder management",
+              "esco_uri": "",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 186,
+      "vi_tri": "C&B / Payroll Specialist",
+      "nghe": "Nhân sự",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-c-b-payroll",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 11,
+            "notes": "C&B/Payroll - compensation, benefits and payroll for Vietnamese enterprises"
+          },
+          "skills": [
+            {
+              "label_en": "Payroll Processing",
+              "label_vi": "Xử lý bảng lương",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tính toán và xử lý bảng lương hàng tháng chính xác cho toàn bộ nhân viên",
+              "esco_hint": "payroll administration",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "BHXH / BHYT / BHTN Administration",
+              "label_vi": "Quản lý BHXH / BHYT / BHTN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý đăng ký, điều chỉnh và quyết toán BHXH, BHYT, BHTN trên cổng eBHXH",
+              "esco_hint": "social insurance administration",
+              "esco_uri": "",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Cổng eBHXH và quy trình nộp hồ sơ điện tử BHXH VN - đặc thù thủ tục hành chính"
+            },
+            {
+              "label_en": "Personal Income Tax (PIT)",
+              "label_vi": "Thuế Thu nhập cá nhân (TNCN)",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tính và khai báo thuế TNCN, quyết toán thuế cuối năm theo quy định VN",
+              "esco_hint": "personal income tax",
+              "esco_uri": "",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Luật Thuế TNCN VN, biểu thuế lũy tiến từng phần, giảm trừ gia cảnh theo TT111"
+            },
+            {
+              "label_en": "Compensation & Benefits Design",
+              "label_vi": "Thiết kế C&B",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng cơ cấu lương, phụ cấp, thưởng và gói phúc lợi cạnh tranh",
+              "esco_hint": "compensation and benefits management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "HRIS / Payroll Software",
+              "label_vi": "Phần mềm HRIS / Payroll",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng HRIS như MISA HRM, eHRM, Fast HR hoặc SAP HCM cho payroll",
+              "esco_hint": "HRIS software",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL",
+              "iviec_reason": "MISA HRM và Fast HR là 2 phần mềm quản lý nhân sự-lương phổ biến nhất SME VN"
+            },
+            {
+              "label_en": "Job Evaluation & Grading",
+              "label_vi": "Đánh giá & Phân hạng công việc",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Áp dụng phương pháp Hay/Mercer để đánh giá và phân hạng vị trí",
+              "esco_hint": "job evaluation",
+              "esco_uri": "",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Salary Survey Analysis",
+              "label_vi": "Phân tích khảo sát lương",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phân tích và áp dụng dữ liệu từ Mercer, Korn Ferry hoặc Towers Watson VN",
+              "esco_hint": "salary survey",
+              "esco_uri": "",
+              "confidence": 0.9,
+              "iviec_flag": "VN_DOMAIN",
+              "iviec_reason": "Mercer Vietnam Total Remuneration Survey là benchmark lương chuẩn nhất cho DN FDI tại VN"
+            },
+            {
+              "label_en": "Excel Advanced",
+              "label_vi": "Excel nâng cao",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Excel nâng cao: hàm phức tạp, pivot table, VBA cho xử lý lương và báo cáo",
+              "esco_hint": "spreadsheet software",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Confidentiality",
+              "label_vi": "Bảo mật thông tin lương",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bảo mật tuyệt đối thông tin lương, thưởng và phúc lợi cá nhân",
+              "esco_hint": "confidentiality",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Chú ý chi tiết",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Kiểm tra kỹ từng con số trong bảng lương trước khi thanh toán",
+              "esco_hint": "attention to detail",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Tax Regulations Knowledge",
+              "label_vi": "Kiến thức quy định thuế",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Cập nhật và áp dụng đúng các thay đổi về thuế TNCN và BHXH",
+              "esco_hint": "tax regulations",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Thông tư 111/2013 về thuế TNCN, các sửa đổi và hướng dẫn mới nhất của Bộ Tài chính"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 187,
+      "vi_tri": "Nhân sự tổng hợp / HR Generalist",
+      "nghe": "Nhân sự",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-nhan-su-tong-hop",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 11,
+            "notes": "HR Generalist - all-round HR operations for SMEs"
+          },
+          "skills": [
+            {
+              "label_en": "Full HR Operations",
+              "label_vi": "Vận hành nhân sự toàn diện",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện toàn bộ nghiệp vụ nhân sự: tuyển dụng, onboarding, payroll, off-boarding",
+              "esco_hint": "HR operations",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "HR Document Management",
+              "label_vi": "Quản lý hồ sơ nhân sự",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lưu trữ và quản lý hồ sơ nhân viên, hợp đồng lao động và quyết định nhân sự",
+              "esco_hint": "HR document management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Labor Law Compliance",
+              "label_vi": "Tuân thủ Luật Lao động",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đảm bảo mọi hoạt động nhân sự tuân thủ Bộ luật Lao động 2019",
+              "esco_hint": "labour law compliance",
+              "esco_uri": "",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Toàn bộ quy định BLLĐ 2019, BHXH, thuế TNCN áp dụng hàng ngày trong HR tổng hợp"
+            },
+            {
+              "label_en": "BHXH / BHYT Administration",
+              "label_vi": "Quản lý BHXH / BHYT",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Khai báo, điều chỉnh và theo dõi BHXH, BHYT hàng tháng",
+              "esco_hint": "social insurance administration",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Quy trình đăng ký và điều chỉnh BHXH qua cổng eBHXH.vn"
+            },
+            {
+              "label_en": "Personal Income Tax (Basic)",
+              "label_vi": "Thuế TNCN cơ bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tính và khấu trừ thuế TNCN hàng tháng, hỗ trợ quyết toán cuối năm",
+              "esco_hint": "personal income tax",
+              "esco_uri": "",
+              "confidence": 0.91,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Quy định thuế TNCN theo Thông tư 111 và biểu thuế lũy tiến VN"
+            },
+            {
+              "label_en": "Payroll Processing (Basic)",
+              "label_vi": "Xử lý bảng lương cơ bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tính lương cơ bản, phụ cấp, thưởng và các khoản khấu trừ hàng tháng",
+              "esco_hint": "payroll administration",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "MISA HRM / Fast HR",
+              "label_vi": "Phần mềm MISA HRM / Fast HR",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng phần mềm MISA HRM hoặc Fast HR để quản lý nhân sự và chấm công",
+              "esco_hint": "HRIS software",
+              "esco_uri": "",
+              "confidence": 0.91,
+              "iviec_flag": "VN_TOOL",
+              "iviec_reason": "MISA HRM và Fast HR chiếm thị phần lớn trong phân khúc HR software SME tại VN"
+            },
+            {
+              "label_en": "Timekeeping Management",
+              "label_vi": "Quản lý chấm công",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý dữ liệu chấm công, phép năm và điều chỉnh OT theo quy định",
+              "esco_hint": "attendance management",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Recruitment Support",
+              "label_vi": "Hỗ trợ tuyển dụng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Hỗ trợ đăng tin, sàng lọc hồ sơ và sắp xếp phỏng vấn",
+              "esco_hint": "recruitment support",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Microsoft Office",
+              "label_vi": "Microsoft Office",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel cho bảng lương, Word cho hợp đồng, PowerPoint cho báo cáo nhân sự",
+              "esco_hint": "office productivity",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Multitasking",
+              "label_vi": "Đa nhiệm",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Xử lý nhiều đầu việc HR cùng lúc với độ chính xác cao",
+              "esco_hint": "multitasking",
+              "esco_uri": "",
+              "confidence": 0.92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 188,
+      "vi_tri": "Trưởng phòng nhân sự / HR Manager",
+      "nghe": "Nhân sự",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-truong-phong-nhan-su",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 11,
+            "notes": "HR Manager - leading the HR function for mid-size organizations"
+          },
+          "skills": [
+            {
+              "label_en": "HR Strategy & Planning",
+              "label_vi": "Chiến lược & Hoạch định nhân sự",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng và triển khai chiến lược nhân sự gắn với kế hoạch kinh doanh",
+              "esco_hint": "HR strategy",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Team Management",
+              "label_vi": "Quản lý nhóm HR",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lãnh đạo và phát triển team nhân sự gồm tuyển dụng, C&B, L&D và HRBP",
+              "esco_hint": "team management",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Full HR Function Oversight",
+              "label_vi": "Giám sát toàn bộ chức năng HR",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý toàn diện: tuyển dụng, đào tạo, C&B, quan hệ lao động, hành chính nhân sự",
+              "esco_hint": "HR management",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Labor Law Compliance",
+              "label_vi": "Tuân thủ Luật Lao động",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo toàn bộ hoạt động công ty tuân thủ BLLĐ 2019 và các quy định liên quan",
+              "esco_hint": "labour law compliance",
+              "esco_uri": "",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "BLLĐ 2019, Luật BHXH 2014, Luật Thuế TNCN - toàn bộ khung pháp lý nhân sự VN"
+            },
+            {
+              "label_en": "HRIS Implementation",
+              "label_vi": "Triển khai HRIS",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Lựa chọn và triển khai hệ thống HRIS phù hợp với quy mô doanh nghiệp",
+              "esco_hint": "HRIS implementation",
+              "esco_uri": "",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Compensation Philosophy",
+              "label_vi": "Triết lý C&B",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng cơ cấu lương và phúc lợi cạnh tranh, cân bằng giữa equity và attraction",
+              "esco_hint": "compensation philosophy",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Employer Branding Strategy",
+              "label_vi": "Chiến lược thương hiệu nhà tuyển dụng",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Xây dựng employer brand để thu hút và giữ chân nhân tài",
+              "esco_hint": "employer branding",
+              "esco_uri": "",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "HR Metrics & Reporting",
+              "label_vi": "Chỉ số & Báo cáo HR",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế HR dashboard với các chỉ số: turnover, time-to-fill, engagement",
+              "esco_hint": "HR analytics",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Budget Management (HR)",
+              "label_vi": "Quản lý ngân sách nhân sự",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập và quản lý ngân sách nhân sự hàng năm bao gồm headcount và L&D",
+              "esco_hint": "budget management",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Stakeholder Management",
+              "label_vi": "Quản lý stakeholders",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Tư vấn và xây dựng quan hệ tin cậy với CEO và tất cả phòng ban",
+              "esco_hint": "stakeholder management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "English Proficiency",
+              "label_vi": "Tiếng Anh",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc tài liệu HR quốc tế và báo cáo lên Regional HR",
+              "esco_hint": "English language",
+              "esco_uri": "",
+              "confidence": 0.89
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 189,
+      "vi_tri": "Giám đốc nhân sự / CHRO",
+      "nghe": "Nhân sự",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-giam-doc-nhan-su",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 10,
+            "notes": "CHRO - C-suite people leadership for enterprise organizations"
+          },
+          "skills": [
+            {
+              "label_en": "People Strategy",
+              "label_vi": "Chiến lược con người",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng và thực thi chiến lược nhân tài dài hạn gắn với tầm nhìn doanh nghiệp",
+              "esco_hint": "people strategy",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Organizational Transformation",
+              "label_vi": "Chuyển đổi tổ chức",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dẫn dắt chuyển đổi tổ chức, tái cơ cấu và culture change ở quy mô lớn",
+              "esco_hint": "organisational transformation",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "C-suite Partnership",
+              "label_vi": "Đối tác cấp C-suite",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Là đối tác chiến lược của CEO, CFO, COO trong các quyết định quan trọng",
+              "esco_hint": "executive collaboration",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Total Rewards Strategy",
+              "label_vi": "Chiến lược Total Rewards",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế và quản lý total rewards strategy cạnh tranh trên thị trường VN",
+              "esco_hint": "total rewards management",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_DOMAIN",
+              "iviec_reason": "Total rewards tại VN thường bao gồm 13th/14th month bonus - đặc thù văn hóa thưởng Tết"
+            },
+            {
+              "label_en": "Talent Pipeline & Succession",
+              "label_vi": "Pipeline tài năng & Kế thừa",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng leadership pipeline và kế hoạch kế thừa toàn tổ chức",
+              "esco_hint": "succession planning",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "HR Technology Strategy",
+              "label_vi": "Chiến lược công nghệ HR",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Định hướng đầu tư HR Tech: HRIS, ATS, LMS, People Analytics platforms",
+              "esco_hint": "HR technology strategy",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Board & Investor Relations (People)",
+              "label_vi": "Quan hệ Hội đồng & Nhà đầu tư về Nhân sự",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Báo cáo ESG/people metrics cho HĐQT và nhà đầu tư",
+              "esco_hint": "board reporting",
+              "esco_uri": "",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Labor Law Mastery",
+              "label_vi": "Thành thạo Luật Lao động",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thông thạo toàn bộ khung pháp lý lao động VN và xu hướng thay đổi",
+              "esco_hint": "labour law",
+              "esco_uri": "",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Toàn bộ BLLĐ 2019, xu hướng sửa đổi và so sánh với tiêu chuẩn lao động quốc tế ILO"
+            },
+            {
+              "label_en": "English Proficiency",
+              "label_vi": "Tiếng Anh",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Giao tiếp với Board, global HQ và tổ chức nhân sự quốc tế",
+              "esco_hint": "English language",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Visionary Leadership",
+              "label_vi": "Lãnh đạo tầm nhìn",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Truyền cảm hứng và dẫn dắt tổ chức xây dựng văn hóa và tài năng hàng đầu",
+              "esco_hint": "visionary leadership",
+              "esco_uri": "",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 190,
+      "vi_tri": "Chuyên môn nhân sự khác / Other HR Specializations",
+      "nghe": "Nhân sự",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 9,
+            "notes": "Other HR specializations - analytics, audit, policy, wellness"
+          },
+          "skills": [
+            {
+              "label_en": "HR Project Management",
+              "label_vi": "Quản lý dự án nhân sự",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý các dự án HR transformation, system implementation và policy rollout",
+              "esco_hint": "HR project management",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "People Analytics",
+              "label_vi": "Phân tích nhân sự nâng cao",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng HR dashboard và predictive analytics cho workforce decisions",
+              "esco_hint": "people analytics",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "HR Audit",
+              "label_vi": "Kiểm toán nhân sự",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện HR audit để đánh giá tuân thủ pháp luật và hiệu quả quy trình",
+              "esco_hint": "HR audit",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Job Analysis & Evaluation",
+              "label_vi": "Phân tích & Đánh giá công việc",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện job analysis, viết JD chuẩn và phân hạng vị trí",
+              "esco_hint": "job analysis",
+              "esco_uri": "",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Onboarding Program Management",
+              "label_vi": "Quản lý chương trình onboarding",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thiết kế và cải tiến liên tục chương trình onboarding cho nhân viên mới",
+              "esco_hint": "onboarding management",
+              "esco_uri": "",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "HR Policy Development",
+              "label_vi": "Phát triển chính sách nhân sự",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng và cập nhật các chính sách nhân sự phù hợp với pháp luật VN",
+              "esco_hint": "HR policy development",
+              "esco_uri": "",
+              "confidence": 0.91,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Chính sách nội bộ phải phù hợp với BLLĐ 2019 và không được thấp hơn tiêu chuẩn tối thiểu"
+            },
+            {
+              "label_en": "Wellness & Benefits Programs",
+              "label_vi": "Chương trình sức khỏe & Phúc lợi",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Thiết kế các chương trình wellness và non-monetary benefits cho nhân viên",
+              "esco_hint": "employee wellbeing",
+              "esco_uri": "",
+              "confidence": 0.87
+            },
+            {
+              "label_en": "DEI Initiatives",
+              "label_vi": "Sáng kiến DEI",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Triển khai các chương trình Diversity, Equity & Inclusion trong tổ chức",
+              "esco_hint": "diversity and inclusion",
+              "esco_uri": "",
+              "confidence": 0.86
+            },
+            {
+              "label_en": "Analytical Thinking",
+              "label_vi": "Tư duy phân tích",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Phân tích dữ liệu nhân sự và đề xuất cải tiến dựa trên bằng chứng",
+              "esco_hint": "analytical thinking",
+              "esco_uri": "",
+              "confidence": 0.92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 191,
+      "vi_tri": "Hành chính nhân sự / HR & Admin Officer",
+      "nghe": "Hành chính",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-hanh-chinh-nhan-su",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 10,
+            "notes": "HR & Admin Officer - combined HR admin and office admin"
+          },
+          "skills": [
+            {
+              "label_en": "HR Administrative Tasks",
+              "label_vi": "Công tác hành chính nhân sự",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện các công việc hành chính nhân sự: hợp đồng, hồ sơ, quyết định",
+              "esco_hint": "HR administration",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Labor Contract Management",
+              "label_vi": "Quản lý hợp đồng lao động",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Soạn thảo, ký kết, lưu trữ và theo dõi hợp đồng lao động",
+              "esco_hint": "employment contract management",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Các loại HĐLĐ và quy định ký kết theo Bộ luật LĐ 2019 VN"
+            },
+            {
+              "label_en": "BHXH Administration",
+              "label_vi": "Nghiệp vụ BHXH",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đăng ký, tăng giảm và theo dõi BHXH, BHYT, BHTN hàng tháng",
+              "esco_hint": "social insurance administration",
+              "esco_uri": "",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Nghiệp vụ BHXH theo Luật BHXH 2014 và quy trình cổng eBHXH.vn"
+            },
+            {
+              "label_en": "Timekeeping & Leave Management",
+              "label_vi": "Quản lý chấm công & Nghỉ phép",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Theo dõi chấm công, phép năm và OT theo nội quy lao động",
+              "esco_hint": "attendance management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Office Administration",
+              "label_vi": "Hành chính văn phòng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Quản lý văn phòng phẩm, tài sản, hợp đồng thuê văn phòng và dịch vụ",
+              "esco_hint": "office administration",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "MISA HRM / Phần mềm nhân sự",
+              "label_vi": "MISA HRM / Phần mềm nhân sự",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nhập liệu và quản lý dữ liệu nhân sự trên MISA HRM, Fast HR hoặc tương đương",
+              "esco_hint": "HRIS software",
+              "esco_uri": "",
+              "confidence": 0.92,
+              "iviec_flag": "VN_TOOL",
+              "iviec_reason": "MISA HRM chiếm >40% thị phần phần mềm nhân sự SME tại VN"
+            },
+            {
+              "label_en": "Microsoft Office",
+              "label_vi": "Microsoft Office",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel cho bảng lương/chấm công, Word cho hợp đồng và quyết định nhân sự",
+              "esco_hint": "office productivity",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Document Filing & Archiving",
+              "label_vi": "Lưu trữ hồ sơ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lưu trữ và quản lý hồ sơ nhân sự, hành chính theo quy định",
+              "esco_hint": "records management",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Confidentiality",
+              "label_vi": "Bảo mật thông tin nhân sự",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bảo mật tuyệt đối thông tin lương và hồ sơ nhân viên",
+              "esco_hint": "confidentiality",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Chú ý chi tiết",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Kiểm tra kỹ tính chính xác của hợp đồng, quyết định và hồ sơ nhân sự",
+              "esco_hint": "attention to detail",
+              "esco_uri": "",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 192,
+      "vi_tri": "Hành chính tổng hợp / General Admin",
+      "nghe": "Hành chính",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-hanh-chinh-tong-hop",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 11,
+            "notes": "General Admin - all-round office administration"
+          },
+          "skills": [
+            {
+              "label_en": "Office Management",
+              "label_vi": "Quản lý văn phòng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý toàn bộ công tác hành chính văn phòng hàng ngày",
+              "esco_hint": "office management",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Document & Correspondence Management",
+              "label_vi": "Quản lý công văn & văn bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tiếp nhận, phân phối, lưu trữ và theo dõi công văn đến và đi",
+              "esco_hint": "records management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Administrative Document Drafting",
+              "label_vi": "Soạn thảo văn bản hành chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Soạn thảo công văn, tờ trình, biên bản họp và các văn bản hành chính theo mẫu",
+              "esco_hint": "administrative writing",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Chuẩn văn bản hành chính theo Nghị định 30/2020/NĐ-CP về công tác văn thư"
+            },
+            {
+              "label_en": "Asset & Facilities Management",
+              "label_vi": "Quản lý tài sản & cơ sở vật chất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Quản lý tài sản công ty, bảo trì văn phòng và theo dõi hợp đồng dịch vụ",
+              "esco_hint": "facilities management",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Vendor & Supplier Management",
+              "label_vi": "Quản lý nhà cung cấp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đàm phán và quản lý quan hệ với nhà cung cấp dịch vụ văn phòng",
+              "esco_hint": "vendor management",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Event & Meeting Coordination",
+              "label_vi": "Điều phối sự kiện & Họp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tổ chức họp nội bộ, sự kiện công ty và tiếp đón khách",
+              "esco_hint": "event coordination",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Budget Tracking (Admin)",
+              "label_vi": "Theo dõi ngân sách hành chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Theo dõi và báo cáo chi tiêu hành chính, đề xuất thanh toán",
+              "esco_hint": "budget tracking",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Microsoft Office",
+              "label_vi": "Microsoft Office",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Word, Excel, PowerPoint cho soạn thảo và báo cáo hành chính",
+              "esco_hint": "office productivity",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Travel & Accommodation Booking",
+              "label_vi": "Đặt vé & Chỗ ở cho công tác",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đặt vé máy bay, khách sạn và làm thủ tục công tác cho nhân viên",
+              "esco_hint": "travel management",
+              "esco_uri": "",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Organizational Skills",
+              "label_vi": "Kỹ năng tổ chức",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Tổ chức công việc hành chính khoa học và xử lý đa nhiệm hiệu quả",
+              "esco_hint": "organise",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Proactiveness",
+              "label_vi": "Chủ động",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Chủ động phát hiện vấn đề và đề xuất giải pháp trước khi được yêu cầu",
+              "esco_hint": "initiative",
+              "esco_uri": "",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 193,
+      "vi_tri": "Trưởng phòng hành chính / Admin Manager",
+      "nghe": "Hành chính",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-truong-phong-hanh-chinh",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 10,
+            "notes": "Admin Manager - managing the administrative function"
+          },
+          "skills": [
+            {
+              "label_en": "Admin Function Management",
+              "label_vi": "Quản lý chức năng hành chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý toàn diện bộ phận hành chính: văn thư, lễ tân, quản lý tài sản, dịch vụ",
+              "esco_hint": "administrative management",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Team Leadership",
+              "label_vi": "Lãnh đạo nhóm hành chính",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lãnh đạo và phát triển team hành chính 3-15 người",
+              "esco_hint": "team leadership",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Facilities & Office Planning",
+              "label_vi": "Hoạch định cơ sở vật chất & Văn phòng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập kế hoạch bố trí văn phòng, sửa chữa, nâng cấp và mở rộng",
+              "esco_hint": "facilities planning",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Budget Management (Admin)",
+              "label_vi": "Quản lý ngân sách hành chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập và kiểm soát ngân sách hành chính hàng năm",
+              "esco_hint": "budget management",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Contract Management (Admin)",
+              "label_vi": "Quản lý hợp đồng hành chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý hợp đồng thuê văn phòng, dịch vụ bảo vệ, vệ sinh và IT",
+              "esco_hint": "contract management",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Administrative Regulations",
+              "label_vi": "Quy định hành chính",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng và cập nhật quy định, quy trình hành chính nội bộ",
+              "esco_hint": "administrative procedures",
+              "esco_uri": "",
+              "confidence": 0.92,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Quy định văn thư lưu trữ theo Nghị định 30/2020 và Luật Lưu trữ 2011 VN"
+            },
+            {
+              "label_en": "Vendor Negotiation",
+              "label_vi": "Đàm phán nhà cung cấp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đàm phán hợp đồng dịch vụ và tài sản để tối ưu chi phí hành chính",
+              "esco_hint": "vendor negotiation",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Safety & Compliance",
+              "label_vi": "An toàn & Tuân thủ",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đảm bảo văn phòng tuân thủ quy định PCCC, an toàn lao động và vệ sinh",
+              "esco_hint": "health and safety compliance",
+              "esco_uri": "",
+              "confidence": 0.9,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Quy định PCCC theo Luật PCCC 2001 sửa đổi và yêu cầu kiểm tra định kỳ tại VN"
+            },
+            {
+              "label_en": "Microsoft Office",
+              "label_vi": "Microsoft Office",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel cho ngân sách, Word cho văn bản, PowerPoint cho báo cáo quản lý",
+              "esco_hint": "office productivity",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Problem-solving",
+              "label_vi": "Giải quyết vấn đề",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Xử lý nhanh các sự cố hành chính và sự cố văn phòng",
+              "esco_hint": "problem solving",
+              "esco_uri": "",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 194,
+      "vi_tri": "Giám đốc hành chính / Administrative Director",
+      "nghe": "Hành chính",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-giam-doc-hanh-chinh",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 9,
+            "notes": "Administrative Director - strategic admin leadership for large organizations"
+          },
+          "skills": [
+            {
+              "label_en": "Administrative Strategy",
+              "label_vi": "Chiến lược hành chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng chiến lược và hệ thống hành chính cho tổ chức quy mô lớn",
+              "esco_hint": "administrative strategy",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Multi-site Facilities Management",
+              "label_vi": "Quản lý cơ sở vật chất đa địa điểm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý cơ sở vật chất cho nhiều văn phòng và chi nhánh trên toàn quốc",
+              "esco_hint": "facilities management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Enterprise Contract Management",
+              "label_vi": "Quản lý hợp đồng cấp doanh nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý danh mục hợp đồng dịch vụ, thuê mướn và mua sắm quy mô lớn",
+              "esco_hint": "contract management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Cost Optimization",
+              "label_vi": "Tối ưu chi phí",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân tích và tối ưu chi phí hành chính thông qua đàm phán và cải tiến quy trình",
+              "esco_hint": "cost optimisation",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Digital Transformation (Admin)",
+              "label_vi": "Chuyển đổi số hành chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Ứng dụng công nghệ để số hóa quy trình hành chính và tăng hiệu quả",
+              "esco_hint": "digital transformation",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Board Reporting",
+              "label_vi": "Báo cáo Hội đồng quản trị",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Chuẩn bị báo cáo hành chính cho HĐQT và ban lãnh đạo cấp cao",
+              "esco_hint": "board reporting",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Risk & Compliance (Admin)",
+              "label_vi": "Rủi ro & Tuân thủ hành chính",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý rủi ro hành chính và đảm bảo tuân thủ toàn bộ quy định pháp lý",
+              "esco_hint": "compliance management",
+              "esco_uri": "",
+              "confidence": 0.91,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Tuân thủ quy định về văn thư, lưu trữ, PCCC, an toàn lao động theo pháp luật VN"
+            },
+            {
+              "label_en": "English Proficiency",
+              "label_vi": "Tiếng Anh",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Làm việc với regional admin teams và tập đoàn mẹ nước ngoài",
+              "esco_hint": "English language",
+              "esco_uri": "",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Strategic Thinking",
+              "label_vi": "Tư duy chiến lược",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Nhìn nhận hành chính như một chức năng chiến lược hỗ trợ business",
+              "esco_hint": "strategic thinking",
+              "esco_uri": "",
+              "confidence": 0.92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 195,
+      "vi_tri": "Giám đốc điều hành / CEO / Managing Director",
+      "nghe": "Hành chính",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-giam-doc-dieu-hanh",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 10,
+            "notes": "CEO/Managing Director - top executive leadership"
+          },
+          "skills": [
+            {
+              "label_en": "Executive Leadership",
+              "label_vi": "Lãnh đạo điều hành",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dẫn dắt và điều hành toàn bộ hoạt động của doanh nghiệp",
+              "esco_hint": "executive management",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Business Strategy",
+              "label_vi": "Chiến lược kinh doanh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng và thực thi chiến lược phát triển kinh doanh dài hạn",
+              "esco_hint": "business strategy",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "P&L Accountability",
+              "label_vi": "Chịu trách nhiệm P&L",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Chịu trách nhiệm toàn bộ kết quả kinh doanh, doanh thu và lợi nhuận",
+              "esco_hint": "profit and loss management",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Board Management",
+              "label_vi": "Quản lý Hội đồng Quản trị",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Báo cáo và làm việc với HĐQT, điều hành theo nghị quyết của ĐHCĐ",
+              "esco_hint": "board management",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Vai trò và trách nhiệm GĐ điều hành theo Luật Doanh nghiệp 2020 VN"
+            },
+            {
+              "label_en": "Stakeholder Relations",
+              "label_vi": "Quan hệ các bên liên quan",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý quan hệ với HĐQT, cổ đông, đối tác, nhà đầu tư và cơ quan nhà nước",
+              "esco_hint": "stakeholder relations",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Financial Acumen",
+              "label_vi": "Nhạy bén tài chính",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đọc và phân tích BCTC, quản lý dòng tiền và ra quyết định tài chính",
+              "esco_hint": "financial management",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Organizational Leadership",
+              "label_vi": "Lãnh đạo tổ chức",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng văn hóa doanh nghiệp và lãnh đạo tổ chức qua giai đoạn tăng trưởng",
+              "esco_hint": "organisational leadership",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "English Proficiency",
+              "label_vi": "Tiếng Anh",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Giao tiếp với investor, đối tác nước ngoài và tập đoàn mẹ",
+              "esco_hint": "English language",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Industry Expertise",
+              "label_vi": "Chuyên môn ngành",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hiểu sâu về ngành hoạt động để đưa ra định hướng chiến lược đúng đắn",
+              "esco_hint": "industry expertise",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Decision Making under Uncertainty",
+              "label_vi": "Ra quyết định trong không chắc chắn",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Ra quyết định kinh doanh quan trọng trong điều kiện thông tin không đầy đủ",
+              "esco_hint": "decision making",
+              "esco_uri": "",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 196,
+      "vi_tri": "Lễ tân / Receptionist",
+      "nghe": "Hành chính",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-le-tan-don-tiep",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 9,
+            "notes": "Receptionist - front desk, visitor management and office support"
+          },
+          "skills": [
+            {
+              "label_en": "Front Desk Reception",
+              "label_vi": "Tiếp tân & Đón khách",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tiếp đón khách đến văn phòng, hướng dẫn và thông báo cho bộ phận liên quan",
+              "esco_hint": "reception duties",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Phone & Switchboard Operations",
+              "label_vi": "Tiếp nhận điện thoại & Tổng đài",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tiếp nhận và chuyển cuộc gọi, ghi nhận tin nhắn cho nhân viên",
+              "esco_hint": "telephone reception",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Mail & Courier Handling",
+              "label_vi": "Xử lý thư tín & Bưu kiện",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nhận, phân loại và chuyển thư tín, bưu kiện cho các bộ phận",
+              "esco_hint": "mail handling",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Meeting Room Coordination",
+              "label_vi": "Điều phối phòng họp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Quản lý lịch đặt phòng họp và chuẩn bị phòng họp cho khách",
+              "esco_hint": "meeting coordination",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Professional Appearance",
+              "label_vi": "Ngoại hình chuyên nghiệp",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Duy trì ngoại hình gọn gàng, chuyên nghiệp đại diện cho hình ảnh công ty",
+              "esco_hint": "professional presentation",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Microsoft Office",
+              "label_vi": "Microsoft Office",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "basic",
+              "evidence_text": "Word và Excel cơ bản để soạn thư và quản lý danh sách khách",
+              "esco_hint": "office productivity",
+              "esco_uri": "",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Vietnamese & English Communication",
+              "label_vi": "Giao tiếp Việt-Anh",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp lịch sự bằng tiếng Việt và tiếng Anh cơ bản với khách trong nước và quốc tế",
+              "esco_hint": "communication",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Organizational Skills",
+              "label_vi": "Kỹ năng tổ chức",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Quản lý lịch, danh sách khách và thông tin tiếp tân có tổ chức",
+              "esco_hint": "organise",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Composure & Professionalism",
+              "label_vi": "Bình tĩnh & Chuyên nghiệp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Xử lý các tình huống bất ngờ và khách khó tính với thái độ chuyên nghiệp",
+              "esco_hint": "professional conduct",
+              "esco_uri": "",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 197,
+      "vi_tri": "Văn thư / Records & Documentation Officer",
+      "nghe": "Hành chính",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-van-thu",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 8,
+            "notes": "Văn thư - Vietnamese administrative document and records management"
+          },
+          "skills": [
+            {
+              "label_en": "Document Management",
+              "label_vi": "Quản lý văn bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tiếp nhận, đăng ký, phân phối và theo dõi toàn bộ văn bản công ty",
+              "esco_hint": "records management",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Records Archiving",
+              "label_vi": "Lưu trữ hồ sơ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân loại, lưu trữ và bảo quản hồ sơ theo quy định Luật Lưu trữ VN",
+              "esco_hint": "archiving",
+              "esco_uri": "",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Luật Lưu trữ 2011 VN - thời hạn bảo quản, phân loại tài liệu lưu trữ nhà nước"
+            },
+            {
+              "label_en": "Administrative Document Drafting",
+              "label_vi": "Soạn thảo văn bản hành chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Soạn thảo công văn, tờ trình, biên bản và các văn bản hành chính chuẩn mực",
+              "esco_hint": "administrative writing",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Chuẩn mực soạn thảo văn bản theo Nghị định 30/2020/NĐ-CP VN"
+            },
+            {
+              "label_en": "Seal & Signature Management",
+              "label_vi": "Quản lý con dấu & Chữ ký",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý và sử dụng con dấu công ty đúng quy định pháp luật",
+              "esco_hint": "seal management",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Quy định sử dụng và quản lý con dấu theo Nghị định 99/2016/NĐ-CP VN"
+            },
+            {
+              "label_en": "Digital Document Management",
+              "label_vi": "Quản lý văn bản điện tử",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng phần mềm quản lý văn bản điện tử và chữ ký số (CKS)",
+              "esco_hint": "electronic document management",
+              "esco_uri": "",
+              "confidence": 0.91,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Chữ ký số và hóa đơn điện tử theo Nghị định 130/2018/NĐ-CP và NĐ 119/2018/NĐ-CP VN"
+            },
+            {
+              "label_en": "Microsoft Word",
+              "label_vi": "Microsoft Word",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Word thành thạo để soạn thảo và format văn bản hành chính",
+              "esco_hint": "word processing",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Confidentiality",
+              "label_vi": "Bảo mật thông tin",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bảo mật tuyệt đối nội dung văn bản mật và thông tin nhạy cảm",
+              "esco_hint": "confidentiality",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Chú ý chi tiết",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Kiểm tra kỹ số hiệu, ngày tháng và nội dung trước khi ban hành văn bản",
+              "esco_hint": "attention to detail",
+              "esco_uri": "",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 198,
+      "vi_tri": "Quản lý cơ sở vật chất / Facilities Manager",
+      "nghe": "Hành chính",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-quan-ly-co-so-vat-chat",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 9,
+            "notes": "Facilities Manager - building management, maintenance and safety compliance"
+          },
+          "skills": [
+            {
+              "label_en": "Facilities Management",
+              "label_vi": "Quản lý cơ sở vật chất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý toàn bộ cơ sở vật chất: văn phòng, nhà máy, kho bãi",
+              "esco_hint": "facilities management",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Maintenance Management",
+              "label_vi": "Quản lý bảo trì",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập kế hoạch và giám sát bảo trì định kỳ và đột xuất toàn bộ cơ sở vật chất",
+              "esco_hint": "maintenance management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Fire Safety & Compliance",
+              "label_vi": "An toàn PCCC & Tuân thủ",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo tuân thủ quy định PCCC, định kỳ kiểm tra và diễn tập phòng cháy chữa cháy",
+              "esco_hint": "fire safety compliance",
+              "esco_uri": "",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Luật PCCC 2001 sửa đổi, Nghị định 136/2020/NĐ-CP về PCCC và CNCH - yêu cầu chặt tại VN"
+            },
+            {
+              "label_en": "Occupational Health & Safety",
+              "label_vi": "An toàn lao động & Sức khỏe nghề nghiệp",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Triển khai quy định an toàn lao động, kiểm tra định kỳ và xử lý tai nạn lao động",
+              "esco_hint": "occupational health and safety",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Luật AT-VSLĐ 2015 và Nghị định 39/2016/NĐ-CP về an toàn lao động VN"
+            },
+            {
+              "label_en": "Vendor & Contractor Management",
+              "label_vi": "Quản lý nhà thầu & nhà cung cấp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đấu thầu, ký kết và giám sát nhà thầu sửa chữa, vệ sinh, bảo vệ",
+              "esco_hint": "contractor management",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Energy & Utilities Management",
+              "label_vi": "Quản lý điện, nước & tiện ích",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Theo dõi và tối ưu tiêu thụ điện, nước và các tiện ích văn phòng",
+              "esco_hint": "utilities management",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Asset Tracking",
+              "label_vi": "Theo dõi tài sản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý danh mục, kiểm kê và khấu hao tài sản cố định công ty",
+              "esco_hint": "asset management",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Budget Control (Facilities)",
+              "label_vi": "Kiểm soát ngân sách cơ sở vật chất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập và kiểm soát ngân sách vận hành và bảo trì cơ sở vật chất",
+              "esco_hint": "budget control",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Problem-solving",
+              "label_vi": "Giải quyết vấn đề",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Xử lý nhanh các sự cố cơ sở vật chất ảnh hưởng đến hoạt động",
+              "esco_hint": "problem solving",
+              "esco_uri": "",
+              "confidence": 0.92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 199,
+      "vi_tri": "Tài xế văn phòng / Office Driver",
+      "nghe": "Hành chính",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tai-xe-van-phong",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 8,
+            "notes": "Office Driver - executive and office transportation"
+          },
+          "skills": [
+            {
+              "label_en": "Safe Driving",
+              "label_vi": "Lái xe an toàn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lái xe an toàn và đúng luật giao thông, đặc biệt trong môi trường đô thị",
+              "esco_hint": "driving",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Valid Driver's License (B2 or higher)",
+              "label_vi": "Bằng lái xe B2 trở lên",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái xe B2 còn hiệu lực, không vi phạm giao thông trong 3 năm gần nhất",
+              "esco_hint": "driving licence",
+              "esco_uri": "",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Phân hạng bằng lái xe theo Luật Giao thông đường bộ VN: B2 cho xe đến 9 chỗ"
+            },
+            {
+              "label_en": "Route Navigation",
+              "label_vi": "Dẫn đường & Biết đường",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thuộc đường nội thành và sử dụng Google Maps/Waze cho tuyến đường mới",
+              "esco_hint": "navigation",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Vehicle Maintenance (Basic)",
+              "label_vi": "Bảo dưỡng xe cơ bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Kiểm tra dầu, lốp, gương và vệ sinh xe định kỳ",
+              "esco_hint": "vehicle maintenance",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Punctuality",
+              "label_vi": "Đúng giờ",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Đảm bảo đón/đưa đúng giờ, không để sếp và khách chờ",
+              "esco_hint": "time management",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Discretion & Confidentiality",
+              "label_vi": "Cẩn trọng & Bảo mật",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Tuyệt đối không tiết lộ lịch trình và thông tin của sếp cho bên ngoài",
+              "esco_hint": "confidentiality",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Professional Conduct",
+              "label_vi": "Thái độ chuyên nghiệp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Ăn mặc gọn gàng, thái độ lịch sự khi chở khách và lãnh đạo",
+              "esco_hint": "professional conduct",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Flexible Working Hours",
+              "label_vi": "Linh hoạt giờ làm việc",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Sẵn sàng làm ngoài giờ, buổi tối và cuối tuần khi cần thiết",
+              "esco_hint": "shift work flexibility",
+              "esco_uri": "",
+              "confidence": 0.92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 200,
+      "vi_tri": "Lái xe cho sếp / Executive Driver",
+      "nghe": "Hành chính",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-lai-xe-cho-sep",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 8,
+            "notes": "Executive Driver - VIP chauffeur for C-suite executives"
+          },
+          "skills": [
+            {
+              "label_en": "Executive Driving",
+              "label_vi": "Lái xe cho lãnh đạo cấp cao",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lái xe phục vụ riêng cho CEO, Giám đốc hoặc lãnh đạo cấp cao",
+              "esco_hint": "chauffeur services",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Valid Driver's License (B2/C)",
+              "label_vi": "Bằng lái B2/C hợp lệ",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái B2 hoặc C còn hiệu lực, lý lịch lái xe sạch",
+              "esco_hint": "driving licence",
+              "esco_uri": "",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Phân hạng bằng lái VN: B2 (xe con), C (xe tải) - yêu cầu theo loại xe công ty"
+            },
+            {
+              "label_en": "Defensive Driving",
+              "label_vi": "Lái xe phòng thủ an toàn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lái xe với kỹ thuật phòng thủ, ưu tiên an toàn tuyệt đối cho hành khách",
+              "esco_hint": "defensive driving",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "VIP Protocol Knowledge",
+              "label_vi": "Hiểu biết nghi thức VIP",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hiểu nghi thức đón tiếp VIP, mở cửa xe và cách ứng xử với lãnh đạo",
+              "esco_hint": "protocol knowledge",
+              "esco_uri": "",
+              "confidence": 0.92,
+              "iviec_flag": "VN_DOMAIN",
+              "iviec_reason": "Văn hóa và nghi thức phục vụ lãnh đạo cấp cao đặc thù tại môi trường doanh nghiệp VN"
+            },
+            {
+              "label_en": "Absolute Discretion",
+              "label_vi": "Bảo mật tuyệt đối",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Không bao giờ tiết lộ bất kỳ thông tin nào về lịch trình, cuộc trò chuyện của sếp",
+              "esco_hint": "confidentiality",
+              "esco_uri": "",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vehicle Knowledge",
+              "label_vi": "Hiểu biết về xe",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Hiểu về cơ bản cơ khí xe hơi, nhận biết sự cố và liên hệ bảo dưỡng",
+              "esco_hint": "vehicle knowledge",
+              "esco_uri": "",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Physical Fitness",
+              "label_vi": "Thể lực tốt",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Sức khỏe tốt, không bệnh mãn tính ảnh hưởng đến an toàn lái xe",
+              "esco_hint": "physical fitness",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Availability on Demand",
+              "label_vi": "Sẵn sàng theo yêu cầu",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Sẵn sàng 24/7 khi có yêu cầu từ lãnh đạo, không giới hạn giờ giấc",
+              "esco_hint": "on-call availability",
+              "esco_uri": "",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 201,
+      "vi_tri": "Trợ lý / Thư ký / Executive Assistant",
+      "nghe": "Hành chính",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tro-ly-thu-ky",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 10,
+            "notes": "Executive Assistant/Secretary - top-level support for C-suite"
+          },
+          "skills": [
+            {
+              "label_en": "Executive Support",
+              "label_vi": "Hỗ trợ điều hành",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hỗ trợ toàn diện cho Giám đốc: lịch họp, email, tài liệu và phối hợp công tác",
+              "esco_hint": "executive assistance",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Calendar & Schedule Management",
+              "label_vi": "Quản lý lịch & Thời gian biểu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý lịch làm việc bận rộn của sếp, đặt lịch họp và tối ưu thời gian",
+              "esco_hint": "calendar management",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Business Correspondence",
+              "label_vi": "Soạn thảo thư tín & Email",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Soạn thảo email, công văn và văn bản giao dịch thay mặt lãnh đạo",
+              "esco_hint": "business correspondence",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Meeting Preparation & Minutes",
+              "label_vi": "Chuẩn bị họp & Ghi biên bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Chuẩn bị tài liệu họp, ghi biên bản và theo dõi action items",
+              "esco_hint": "meeting management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Travel Arrangements",
+              "label_vi": "Sắp xếp công tác",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đặt vé, khách sạn, visa và lịch trình công tác trong nước và quốc tế",
+              "esco_hint": "travel management",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Confidentiality",
+              "label_vi": "Bảo mật thông tin",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Tuyệt đối bảo mật thông tin chiến lược và quyết định của lãnh đạo",
+              "esco_hint": "confidentiality",
+              "esco_uri": "",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Microsoft Office Suite",
+              "label_vi": "Microsoft Office",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Word, Excel, PowerPoint, Outlook thành thạo để hỗ trợ công việc lãnh đạo",
+              "esco_hint": "office productivity",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "English Proficiency",
+              "label_vi": "Tiếng Anh",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Soạn thảo email tiếng Anh và giao tiếp với đối tác nước ngoài",
+              "esco_hint": "English language",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Interpersonal Skills",
+              "label_vi": "Kỹ năng giao tiếp đối nội đối ngoại",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Giao tiếp lịch sự và chuyên nghiệp với mọi cấp bậc trong và ngoài công ty",
+              "esco_hint": "interpersonal skills",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Proactiveness & Anticipation",
+              "label_vi": "Chủ động & Dự đoán trước nhu cầu",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Chủ động phát hiện và xử lý vấn đề trước khi ảnh hưởng đến lãnh đạo",
+              "esco_hint": "proactiveness",
+              "esco_uri": "",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 202,
+      "vi_tri": "Project Administrator / Quản trị Dự án",
+      "nghe": "Hành chính",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-project-administrator",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 9,
+            "notes": "Project Administrator - admin support for project teams"
+          },
+          "skills": [
+            {
+              "label_en": "Project Administration",
+              "label_vi": "Quản trị hành chính dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hỗ trợ hành chính cho dự án: tài liệu, lịch, tracking và báo cáo",
+              "esco_hint": "project administration",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Project Documentation",
+              "label_vi": "Tài liệu dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Soạn thảo, lưu trữ và quản lý tài liệu dự án: charter, minutes, reports",
+              "esco_hint": "project documentation",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Project Scheduling Tools",
+              "label_vi": "Công cụ lập lịch dự án",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Microsoft Project, Jira, Trello hoặc Asana cho project tracking và scheduling",
+              "esco_hint": "project management software",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Meeting & Action Item Tracking",
+              "label_vi": "Theo dõi họp & Action Items",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Ghi biên bản họp dự án và theo dõi tiến độ thực hiện action items",
+              "esco_hint": "meeting management",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Budget Tracking (Project)",
+              "label_vi": "Theo dõi ngân sách dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Theo dõi chi tiêu dự án và báo cáo variance so với kế hoạch",
+              "esco_hint": "project budget tracking",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Stakeholder Communication",
+              "label_vi": "Giao tiếp stakeholders dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Soạn thảo và phân phối project updates cho stakeholders",
+              "esco_hint": "stakeholder communication",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Risk Register Management",
+              "label_vi": "Quản lý đăng ký rủi ro",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Cập nhật và theo dõi risk register của dự án",
+              "esco_hint": "risk management",
+              "esco_uri": "",
+              "confidence": 0.87
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "Microsoft Excel",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel cho project tracking, reporting và phân tích ngân sách",
+              "esco_hint": "spreadsheet software",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Organizational Skills",
+              "label_vi": "Kỹ năng tổ chức",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Quản lý nhiều task và deadline của dự án cùng lúc một cách có hệ thống",
+              "esco_hint": "organise",
+              "esco_uri": "",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 203,
+      "vi_tri": "Xử lý hồ sơ / Document Processing Officer",
+      "nghe": "Hành chính",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-xu-ly-ho-so",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 8,
+            "notes": "Document Processing - high-volume document handling and verification"
+          },
+          "skills": [
+            {
+              "label_en": "Document Processing",
+              "label_vi": "Xử lý hồ sơ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tiếp nhận, kiểm tra, xử lý và theo dõi hồ sơ theo quy trình",
+              "esco_hint": "document processing",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Data Entry Accuracy",
+              "label_vi": "Nhập liệu chính xác",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nhập liệu hồ sơ vào hệ thống với độ chính xác cao, không sai sót",
+              "esco_hint": "data entry",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Document Verification",
+              "label_vi": "Kiểm tra & Xác minh tài liệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm tra tính hợp lệ và đầy đủ của hồ sơ theo checklist yêu cầu",
+              "esco_hint": "document verification",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Filing & Archiving",
+              "label_vi": "Lưu trữ hồ sơ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân loại và lưu trữ hồ sơ vật lý và điện tử theo hệ thống",
+              "esco_hint": "records management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Industry-specific Document Knowledge",
+              "label_vi": "Kiến thức hồ sơ ngành",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hiểu các loại hồ sơ đặc thù: bất động sản, ngân hàng, bảo hiểm, y tế",
+              "esco_hint": "document types knowledge",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Microsoft Office",
+              "label_vi": "Microsoft Office",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Word và Excel để xử lý và theo dõi hồ sơ",
+              "esco_hint": "office productivity",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Chú ý chi tiết",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Phát hiện sai sót trong hồ sơ trước khi xử lý để tránh hậu quả",
+              "esco_hint": "attention to detail",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Deadline Management",
+              "label_vi": "Quản lý deadline hồ sơ",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Xử lý hồ sơ đúng hạn, ưu tiên theo mức độ khẩn cấp",
+              "esco_hint": "time management",
+              "esco_uri": "",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 204,
+      "vi_tri": "Chuyên viên hợp đồng / Contract Specialist",
+      "nghe": "Hành chính",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-vien-hop-dong",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 9,
+            "notes": "Contract Specialist - drafting, reviewing and managing business contracts"
+          },
+          "skills": [
+            {
+              "label_en": "Contract Drafting",
+              "label_vi": "Soạn thảo hợp đồng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Soạn thảo các loại hợp đồng kinh doanh, dịch vụ và mua bán theo pháp luật VN",
+              "esco_hint": "contract drafting",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Contract Review & Negotiation",
+              "label_vi": "Rà soát & Đàm phán hợp đồng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Rà soát, đề xuất sửa đổi và tham gia đàm phán điều khoản hợp đồng",
+              "esco_hint": "contract review",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnamese Contract Law",
+              "label_vi": "Luật hợp đồng Việt Nam",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thông thạo Bộ luật Dân sự 2015 và các luật chuyên ngành về hợp đồng",
+              "esco_hint": "contract law",
+              "esco_uri": "",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "BLDS 2015 Phần III về nghĩa vụ và hợp đồng - nền tảng pháp lý hợp đồng tại VN"
+            },
+            {
+              "label_en": "Contract Management System",
+              "label_vi": "Hệ thống quản lý hợp đồng",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng phần mềm quản lý hợp đồng để theo dõi timeline và renewals",
+              "esco_hint": "contract management software",
+              "esco_uri": "",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Risk Assessment (Contracts)",
+              "label_vi": "Đánh giá rủi ro hợp đồng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xác định và đề xuất biện pháp giảm thiểu rủi ro pháp lý trong hợp đồng",
+              "esco_hint": "legal risk assessment",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Industry-specific Contract Knowledge",
+              "label_vi": "Kiến thức hợp đồng ngành",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thông thạo hợp đồng đặc thù ngành: EPC, xây dựng, IT services, BDS",
+              "esco_hint": "industry contract knowledge",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Deadline & Renewal Tracking",
+              "label_vi": "Theo dõi deadline & Gia hạn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Theo dõi thời hạn hợp đồng và chủ động nhắc nhở gia hạn/chấm dứt",
+              "esco_hint": "contract lifecycle management",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Negotiation Skills",
+              "label_vi": "Kỹ năng đàm phán",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Đàm phán các điều khoản hợp đồng để bảo vệ lợi ích công ty",
+              "esco_hint": "negotiate",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Chú ý chi tiết",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Không bỏ sót bất kỳ điều khoản bất lợi nào trong hợp đồng",
+              "esco_hint": "attention to detail",
+              "esco_uri": "",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 205,
+      "vi_tri": "Chuyên môn hành chính khác / Other Admin Specializations",
+      "nghe": "Hành chính",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 7,
+            "notes": "Other Admin - visa, registration support, supply management"
+          },
+          "skills": [
+            {
+              "label_en": "Administrative Support",
+              "label_vi": "Hỗ trợ hành chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hỗ trợ hành chính tổng hợp cho các bộ phận theo nhu cầu",
+              "esco_hint": "administrative assistance",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Visa & Work Permit Processing",
+              "label_vi": "Xử lý Visa & Giấy phép lao động",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Hỗ trợ xin visa, work permit và giấy phép lao động cho nhân viên nước ngoài",
+              "esco_hint": "visa processing",
+              "esco_uri": "",
+              "confidence": 0.87,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Quy định cấp GPLĐ cho NĐN theo Nghị định 152/2020/NĐ-CP của VN"
+            },
+            {
+              "label_en": "Corporate Registration Support",
+              "label_vi": "Hỗ trợ đăng ký doanh nghiệp",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Hỗ trợ thủ tục đăng ký thành lập, thay đổi và giải thể doanh nghiệp",
+              "esco_hint": "business registration",
+              "esco_uri": "",
+              "confidence": 0.86,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Thủ tục đăng ký DN qua Cổng DVC quốc gia theo Luật DN 2020"
+            },
+            {
+              "label_en": "Office Supply Management",
+              "label_vi": "Quản lý văn phòng phẩm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Quản lý tồn kho văn phòng phẩm và thiết bị văn phòng",
+              "esco_hint": "supplies management",
+              "esco_uri": "",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Business Travel Management",
+              "label_vi": "Quản lý công tác",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Quản lý đặt vé, khách sạn và thanh toán công tác cho toàn công ty",
+              "esco_hint": "travel management",
+              "esco_uri": "",
+              "confidence": 0.87
+            },
+            {
+              "label_en": "Microsoft Office",
+              "label_vi": "Microsoft Office",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Word, Excel, PowerPoint cho công việc hành chính đa dạng",
+              "esco_hint": "office productivity",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Adaptability",
+              "label_vi": "Linh hoạt thích nghi",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Linh hoạt xử lý nhiều loại công việc hành chính khác nhau",
+              "esco_hint": "adaptability",
+              "esco_uri": "",
+              "confidence": 0.92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 206,
+      "vi_tri": "Pháp chế / In-house Legal Counsel",
+      "nghe": "Pháp chế",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-phap-che",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 11,
+            "notes": "In-house Legal Counsel - corporate law, contracts and regulatory compliance VN"
+          },
+          "skills": [
+            {
+              "label_en": "Corporate Legal Advisory",
+              "label_vi": "Tư vấn pháp lý doanh nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn pháp lý toàn diện cho hoạt động kinh doanh và quản trị doanh nghiệp",
+              "esco_hint": "legal advisory",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Contract Law & Drafting",
+              "label_vi": "Luật hợp đồng & Soạn thảo",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Soạn thảo và rà soát hợp đồng theo pháp luật dân sự và thương mại VN",
+              "esco_hint": "contract law",
+              "esco_uri": "",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "BLDS 2015, Luật Thương mại 2005 - nền tảng pháp lý hợp đồng kinh doanh VN"
+            },
+            {
+              "label_en": "Corporate Governance Law",
+              "label_vi": "Luật quản trị doanh nghiệp",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn quản trị nội bộ theo Luật Doanh nghiệp 2020 và quy chế công ty",
+              "esco_hint": "corporate law",
+              "esco_uri": "",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Luật Doanh nghiệp 2020 - cơ cấu quản trị CTCP, TNHH và quy định pháp nhân VN"
+            },
+            {
+              "label_en": "Investment Law",
+              "label_vi": "Luật đầu tư",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn thủ tục đầu tư, M&A và các hình thức góp vốn theo Luật Đầu tư 2020",
+              "esco_hint": "investment law",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Luật Đầu tư 2020, thủ tục cấp IRC/ERC và điều kiện đầu tư có điều kiện tại VN"
+            },
+            {
+              "label_en": "Intellectual Property",
+              "label_vi": "Sở hữu trí tuệ",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đăng ký và bảo hộ nhãn hiệu, bằng sáng chế và bản quyền tại Việt Nam",
+              "esco_hint": "intellectual property law",
+              "esco_uri": "",
+              "confidence": 0.9,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Luật SHTT 2005 sửa đổi 2022, thủ tục đăng ký nhãn hiệu tại Cục SHTT VN"
+            },
+            {
+              "label_en": "Dispute Resolution & Litigation",
+              "label_vi": "Giải quyết tranh chấp & Tố tụng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý tranh chấp thương mại qua hòa giải, trọng tài và tòa án VN",
+              "esco_hint": "dispute resolution",
+              "esco_uri": "",
+              "confidence": 0.92,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Bộ luật TTDS 2015, Luật Trọng tài thương mại 2010 - quy trình tố tụng VN"
+            },
+            {
+              "label_en": "Regulatory Compliance",
+              "label_vi": "Tuân thủ quy định pháp lý",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo doanh nghiệp tuân thủ toàn bộ quy định pháp luật liên quan đến ngành",
+              "esco_hint": "regulatory compliance",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Legal Research",
+              "label_vi": "Nghiên cứu pháp lý",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nghiên cứu văn bản pháp luật, án lệ và hướng dẫn của cơ quan nhà nước",
+              "esco_hint": "legal research",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "English Legal Writing",
+              "label_vi": "Viết pháp lý tiếng Anh",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Soạn thảo hợp đồng, legal memo và tư vấn pháp lý bằng tiếng Anh",
+              "esco_hint": "legal English",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Analytical Thinking",
+              "label_vi": "Tư duy phân tích pháp lý",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Phân tích vấn đề pháp lý phức tạp và đề xuất giải pháp thiết thực",
+              "esco_hint": "legal analytical thinking",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Confidentiality & Ethics",
+              "label_vi": "Bảo mật & Đạo đức nghề nghiệp",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Tuân thủ đạo đức nghề nghiệp và bảo mật thông tin pháp lý nhạy cảm",
+              "esco_hint": "professional ethics",
+              "esco_uri": "",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 207,
+      "vi_tri": "Giám đốc pháp chế / General Counsel / CLO",
+      "nghe": "Pháp chế",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-giam-doc-phap-che",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 10,
+            "notes": "General Counsel/CLO - top legal executive for enterprise organizations"
+          },
+          "skills": [
+            {
+              "label_en": "Legal Strategy",
+              "label_vi": "Chiến lược pháp chế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng và triển khai chiến lược pháp lý bảo vệ lợi ích lâu dài của doanh nghiệp",
+              "esco_hint": "legal strategy",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Enterprise Legal Risk Management",
+              "label_vi": "Quản lý rủi ro pháp lý doanh nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xác định, đánh giá và quản lý toàn bộ rủi ro pháp lý của tổ chức",
+              "esco_hint": "legal risk management",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "C-suite & Board Legal Advisory",
+              "label_vi": "Tư vấn pháp lý cho C-suite & HĐQT",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Là cố vấn pháp lý chính cho CEO, CFO, HĐQT trong mọi quyết định chiến lược",
+              "esco_hint": "legal advisory",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "M&A & Transactions",
+              "label_vi": "M&A & Giao dịch",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dẫn dắt pháp lý cho giao dịch M&A, đầu tư và joint venture",
+              "esco_hint": "mergers and acquisitions",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "M&A tại VN theo Luật Đầu tư 2020, Luật Cạnh tranh 2018 và quy định FDI"
+            },
+            {
+              "label_en": "Regulatory Affairs Leadership",
+              "label_vi": "Lãnh đạo quan hệ pháp lý nhà nước",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý quan hệ với cơ quan quản lý nhà nước và ứng phó với thanh tra",
+              "esco_hint": "regulatory affairs",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Quan hệ với Bộ Tư pháp, Bộ Công Thương, UBCKNN và các Sở tương ứng tại VN"
+            },
+            {
+              "label_en": "Legal Team Leadership",
+              "label_vi": "Lãnh đạo team pháp chế",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lãnh đạo và phát triển team pháp chế nội bộ và quản lý external counsel",
+              "esco_hint": "team leadership",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Litigation Strategy",
+              "label_vi": "Chiến lược tố tụng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Định hướng và quản lý chiến lược tranh tụng cho các vụ kiện quan trọng",
+              "esco_hint": "litigation management",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Compliance Program Management",
+              "label_vi": "Quản lý chương trình tuân thủ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng và giám sát chương trình compliance toàn tổ chức",
+              "esco_hint": "compliance management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "English Legal Proficiency",
+              "label_vi": "Thành thạo pháp lý tiếng Anh",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Soạn thảo tài liệu pháp lý và giao tiếp với external counsel quốc tế",
+              "esco_hint": "legal English",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Business Acumen",
+              "label_vi": "Nhạy bén kinh doanh",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Cân bằng giữa risk management và nhu cầu thực tế của business",
+              "esco_hint": "business acumen",
+              "esco_uri": "",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 208,
+      "vi_tri": "Chuyên môn pháp chế khác / Other Legal Specializations",
+      "nghe": "Pháp chế",
+      "nhom_nghe": "HR/Admin/Legal",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 8,
+            "notes": "Other Legal - compliance, data privacy, specialized law practice areas in VN"
+          },
+          "skills": [
+            {
+              "label_en": "Compliance Officer",
+              "label_vi": "Chuyên viên tuân thủ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng và giám sát chương trình compliance phù hợp với ngành",
+              "esco_hint": "compliance management",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Data Privacy & Protection",
+              "label_vi": "Bảo vệ dữ liệu & Quyền riêng tư",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đảm bảo tuân thủ Nghị định 13/2023 về bảo vệ dữ liệu cá nhân tại VN",
+              "esco_hint": "data protection",
+              "esco_uri": "",
+              "confidence": 0.92,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân - PDPA đầu tiên của VN"
+            },
+            {
+              "label_en": "Anti-Money Laundering (AML)",
+              "label_vi": "Chống rửa tiền (AML)",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Tuân thủ quy định AML/CFT theo Luật Phòng chống rửa tiền VN",
+              "esco_hint": "anti-money laundering",
+              "esco_uri": "",
+              "confidence": 0.87,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Luật Phòng chống rửa tiền 2022 và quy định của NHNN về AML/CFT tại VN"
+            },
+            {
+              "label_en": "Employment Law Specialist",
+              "label_vi": "Chuyên gia Luật lao động",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn chuyên sâu về luật lao động, tranh chấp và nội quy lao động",
+              "esco_hint": "employment law",
+              "esco_uri": "",
+              "confidence": 0.9,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "BLLĐ 2019, Nghị định 145/2020 và các thông tư hướng dẫn thi hành"
+            },
+            {
+              "label_en": "Real Estate Law",
+              "label_vi": "Luật bất động sản",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Tư vấn pháp lý cho giao dịch và đầu tư bất động sản",
+              "esco_hint": "real estate law",
+              "esco_uri": "",
+              "confidence": 0.86,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Luật Đất đai 2024 (sửa đổi), Luật Kinh doanh BĐS 2023 - sửa đổi quan trọng tại VN"
+            },
+            {
+              "label_en": "Tax Law Advisory",
+              "label_vi": "Tư vấn Luật thuế",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Tư vấn các vấn đề thuế doanh nghiệp, TNCN và thuế giao dịch",
+              "esco_hint": "tax law",
+              "esco_uri": "",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION",
+              "iviec_reason": "Luật Thuế TNDN, TNCN, GTGT VN - hệ thống thuế đặc thù và thường xuyên thay đổi"
+            },
+            {
+              "label_en": "Legal Tech Proficiency",
+              "label_vi": "Thành thạo Legal Tech",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng các công cụ legal tech: eContract, LexisNexis, Thomson Reuters",
+              "esco_hint": "legal technology",
+              "esco_uri": "",
+              "confidence": 0.86
+            },
+            {
+              "label_en": "Analytical & Research Skills",
+              "label_vi": "Tư duy phân tích & Nghiên cứu",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Nghiên cứu và phân tích pháp lý phức tạp để đưa ra khuyến nghị thực tiễn",
+              "esco_hint": "legal research",
+              "esco_uri": "",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

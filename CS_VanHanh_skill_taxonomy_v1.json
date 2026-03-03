@@ -1,0 +1,1961 @@
+{
+  "taxonomy_metadata": {
+    "version": "1.0.0",
+    "generated_at": "2026-02-25",
+    "job_group": "CS/Vận hành",
+    "job_group_en": "Customer Service & Operations",
+    "source_sites": [
+      "topcv.vn",
+      "vietnamworks.com"
+    ],
+    "jd_corpus_size": "~5 JD per position (top 5 most recent)",
+    "pipeline_stages": {
+      "S1_extraction": "TalentGraph_Extractor_v2.1 — synthesis từ JD corpus",
+      "S11_esco_mapping": "ESCO Skill Mapping v1.0 — exact/semantic/approximate",
+      "S12_occupation_match": "ESCO Occupation Match v1.0 — ISCO-08 alignment",
+      "S13_iviec_gap_detection": "iVIEC Gap Detection v1.0 — VN-specific skills",
+      "S14_hierarchy_enrichment": "Hierarchy Enrichment v1.0 — parent/sibling/child skills"
+    },
+    "prompt_library_version": "TalentGraph_PromptLib_v2.1",
+    "extraction_method": "Synthesis from top-5 most recent JDs per position",
+    "row_range": "167-179",
+    "total_nghe": 5,
+    "total_vi_tri": 13,
+    "total_skills_extracted": 145,
+    "total_iviec_proposals": 18,
+    "iviec_by_type": {
+      "VN_TOOL": 11,
+      "VN_DOMAIN": 7,
+      "VN_REGULATION": 0,
+      "VN_CERTIFICATION": 0
+    }
+  },
+  "nghes": [
+    {
+      "nghe": "Chăm sóc khách hàng",
+      "position_count": 6
+    },
+    {
+      "nghe": "Vận hành TMĐT",
+      "position_count": 1
+    },
+    {
+      "nghe": "Business Operation",
+      "position_count": 2
+    },
+    {
+      "nghe": "Quản lý vận hành",
+      "position_count": 3
+    },
+    {
+      "nghe": "DVKH/Vận hành khác",
+      "position_count": 1
+    }
+  ],
+  "positions": [
+    {
+      "row_id": 167,
+      "vi_tri": "Chăm sóc khách hàng",
+      "nghe": "Chăm sóc khách hàng",
+      "nhom_nghe": "CS/Vận hành",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-cham-soc-khach-hang",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 12,
+            "notes": "Customer Service - front-line customer support across channels"
+          },
+          "skills": [
+            {
+              "label_en": "Customer Service",
+              "label_vi": "Chăm sóc khách hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tiếp nhận, xử lý yêu cầu và khiếu nại của khách hàng qua nhiều kênh",
+              "esco_hint": "customer service",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Complaint Handling",
+              "label_vi": "Xử lý khiếu nại",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý khiếu nại, tranh chấp của khách hàng một cách chuyên nghiệp và hiệu quả",
+              "esco_hint": "handle customer complaints",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "CRM Software",
+              "label_vi": "Phần mềm CRM",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng phần mềm CRM để tra cứu thông tin và cập nhật lịch sử khách hàng",
+              "esco_hint": "customer relationship management system",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Communication Skills",
+              "label_vi": "Kỹ năng giao tiếp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Giao tiếp rõ ràng, lịch sự và chuyên nghiệp qua điện thoại, email và chat",
+              "esco_hint": "communication",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Problem-solving",
+              "label_vi": "Giải quyết vấn đề",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Nhanh chóng tìm giải pháp phù hợp cho các vấn đề của khách hàng",
+              "esco_hint": "problem solving",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Product Knowledge",
+              "label_vi": "Kiến thức sản phẩm/dịch vụ",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm vững thông tin sản phẩm, chính sách và quy trình để tư vấn chính xác",
+              "esco_hint": "product knowledge",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Zalo / Facebook Messenger",
+              "label_vi": "Zalo / Facebook Messenger",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Chăm sóc khách hàng qua Zalo và Facebook Messenger - 2 kênh chính tại VN",
+              "esco_hint": "messaging platform",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL",
+              "iviec_reason": "Zalo và Facebook Messenger là 2 kênh CSKH chủ đạo tại thị trường VN với 70M+ users"
+            },
+            {
+              "label_en": "Patience & Empathy",
+              "label_vi": "Kiên nhẫn & Đồng cảm",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Lắng nghe và thấu hiểu khách hàng, giữ bình tĩnh trong mọi tình huống",
+              "esco_hint": "empathy",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Typing Speed",
+              "label_vi": "Tốc độ đánh máy",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Gõ phím nhanh và chính xác khi trả lời chat và email khách hàng",
+              "esco_hint": "typing",
+              "esco_uri": "",
+              "confidence": 0.87
+            },
+            {
+              "label_en": "KPI Tracking (CSAT/FCR)",
+              "label_vi": "Theo dõi KPI (CSAT/FCR)",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đạt các chỉ số CSAT, FCR và AHT theo tiêu chuẩn phòng CSKH",
+              "esco_hint": "customer satisfaction measurement",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Microsoft Office",
+              "label_vi": "Microsoft Office",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Excel cơ bản để báo cáo và Word để soạn email mẫu",
+              "esco_hint": "office productivity",
+              "esco_uri": "",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Vietnamese Language Proficiency",
+              "label_vi": "Tiếng Việt chuẩn mực",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Viết và nói tiếng Việt chuẩn, không lỗi chính tả trong giao tiếp với khách",
+              "esco_hint": "Vietnamese language proficiency",
+              "esco_uri": "",
+              "confidence": 0.94,
+              "iviec_flag": "VN_DOMAIN",
+              "iviec_reason": "Chuẩn mực tiếng Việt trong CSKH là yêu cầu thiết yếu, bao gồm cả phương ngữ vùng miền"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 168,
+      "vi_tri": "Call Center / Trực tổng đài",
+      "nghe": "Chăm sóc khách hàng",
+      "nhom_nghe": "CS/Vận hành",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-call-center-truc-tong-dai",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 12,
+            "notes": "Call Center - inbound/outbound telephone customer support"
+          },
+          "skills": [
+            {
+              "label_en": "Inbound Call Handling",
+              "label_vi": "Tiếp nhận cuộc gọi đến",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tiếp nhận và xử lý cuộc gọi đến từ khách hàng theo đúng quy trình tổng đài",
+              "esco_hint": "inbound call handling",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Outbound Calling",
+              "label_vi": "Gọi điện chủ động",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện outbound calls để survey, telesales hoặc follow-up khách hàng",
+              "esco_hint": "outbound calling",
+              "esco_uri": "",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Call Center Software (PBX/VoIP)",
+              "label_vi": "Phần mềm tổng đài PBX/VoIP",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng hệ thống tổng đài PBX, VoIP và phần mềm ghi âm cuộc gọi",
+              "esco_hint": "call centre software",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "BPOS / Sapo / KiotViet Integration",
+              "label_vi": "Tích hợp BPOS / Sapo / KiotViet",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Tra cứu thông tin đơn hàng trên BPOS, Sapo hoặc KiotViet khi CSKH",
+              "esco_hint": "point of sale software",
+              "esco_uri": "",
+              "confidence": 0.88,
+              "iviec_flag": "VN_TOOL",
+              "iviec_reason": "BPOS, Sapo, KiotViet là các phần mềm quản lý bán hàng VN phổ biến tích hợp với call center"
+            },
+            {
+              "label_en": "Script Adherence",
+              "label_vi": "Tuân thủ kịch bản cuộc gọi",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện đúng script cuộc gọi và escalation matrix của bộ phận",
+              "esco_hint": "call script adherence",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Average Handle Time (AHT) Management",
+              "label_vi": "Quản lý thời gian xử lý",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Kiểm soát AHT trong ngưỡng quy định trong khi đảm bảo chất lượng",
+              "esco_hint": "call centre performance management",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Voice Clarity & Diction",
+              "label_vi": "Giọng nói rõ ràng & Phát âm chuẩn",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Giọng nói dễ nghe, phát âm chuẩn, không nặng phương ngữ trong giao tiếp điện thoại",
+              "esco_hint": "verbal communication",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_DOMAIN",
+              "iviec_reason": "Phát âm chuẩn và giọng không quá nặng vùng miền là yêu cầu đặc thù call center VN"
+            },
+            {
+              "label_en": "Escalation Management",
+              "label_vi": "Quản lý leo thang vấn đề",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Xác định và leo thang kịp thời các trường hợp vượt thẩm quyền xử lý",
+              "esco_hint": "escalation management",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Data Entry",
+              "label_vi": "Nhập liệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nhập liệu chính xác thông tin khách hàng và kết quả cuộc gọi vào hệ thống",
+              "esco_hint": "data entry",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Multitasking",
+              "label_vi": "Đa nhiệm",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Xử lý đồng thời nghe điện thoại, gõ máy tính và tra cứu hệ thống",
+              "esco_hint": "multitasking",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Stress Management",
+              "label_vi": "Quản lý căng thẳng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Duy trì thái độ tích cực khi xử lý nhiều cuộc gọi liên tục và khách khó tính",
+              "esco_hint": "stress management",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "English (Basic)",
+              "label_vi": "Tiếng Anh cơ bản",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Đọc hiểu và trả lời email tiếng Anh cơ bản từ khách hàng quốc tế",
+              "esco_hint": "English language",
+              "esco_uri": "",
+              "confidence": 0.84
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 169,
+      "vi_tri": "Trực page / CSKH qua mạng xã hội",
+      "nghe": "Chăm sóc khách hàng",
+      "nhom_nghe": "CS/Vận hành",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-truc-page",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 11,
+            "notes": "Trực page - social media and e-commerce platform customer service"
+          },
+          "skills": [
+            {
+              "label_en": "Facebook Page Management",
+              "label_vi": "Quản lý Fanpage Facebook",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Trực và phản hồi comment, inbox trên Fanpage Facebook của doanh nghiệp",
+              "esco_hint": "social media management",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Zalo Official Account (OA) Management",
+              "label_vi": "Quản lý Zalo OA",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phản hồi và chăm sóc khách hàng qua Zalo Official Account",
+              "esco_hint": "customer service messaging",
+              "esco_uri": "",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL",
+              "iviec_reason": "Zalo OA là kênh CSKH bắt buộc tại VN - 75M users, tỷ lệ mở tin nhắn cao hơn email 5x"
+            },
+            {
+              "label_en": "TikTok Shop / TikTok Live Response",
+              "label_vi": "Phản hồi TikTok Shop / Live",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Trả lời comment và câu hỏi trong TikTok Live và TikTok Shop",
+              "esco_hint": "e-commerce customer service",
+              "esco_uri": "",
+              "confidence": 0.92,
+              "iviec_flag": "VN_TOOL",
+              "iviec_reason": "TikTok Shop đang tăng trưởng mạnh tại VN, trực page TikTok là kỹ năng mới nổi"
+            },
+            {
+              "label_en": "Shopee / Lazada / Tiki Seller Center",
+              "label_vi": "Shopee / Lazada / Tiki Seller Center",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phản hồi khách trên Shopee, Lazada, Tiki qua Seller Center",
+              "esco_hint": "e-commerce platform management",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL",
+              "iviec_reason": "Shopee, Lazada, Tiki là 3 sàn TMĐT lớn nhất VN - trực page sàn là kỹ năng thiết yếu"
+            },
+            {
+              "label_en": "Response Time Management",
+              "label_vi": "Quản lý thời gian phản hồi",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đảm bảo response rate >90% và thời gian phản hồi dưới 15 phút",
+              "esco_hint": "response time management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Upselling via Chat",
+              "label_vi": "Bán hàng qua chat",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Tư vấn và upsell sản phẩm phù hợp trong quá trình hỗ trợ khách hàng",
+              "esco_hint": "upselling",
+              "esco_uri": "",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Comment Moderation",
+              "label_vi": "Kiểm duyệt bình luận",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm duyệt và xử lý comment tiêu cực, spam trên fanpage và sàn TMĐT",
+              "esco_hint": "content moderation",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Product Knowledge (E-commerce)",
+              "label_vi": "Kiến thức sản phẩm TMĐT",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm vững thông tin sản phẩm, giá, chính sách đổi trả và vận chuyển",
+              "esco_hint": "product knowledge",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Vietnamese Typing Speed",
+              "label_vi": "Tốc độ gõ tiếng Việt",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Gõ tiếng Việt nhanh và chính xác (Telex/VNI) để phản hồi khách kịp thời",
+              "esco_hint": "typing",
+              "esco_uri": "",
+              "confidence": 0.92,
+              "iviec_flag": "VN_DOMAIN",
+              "iviec_reason": "Gõ tiếng Việt nhanh bằng Telex/VNI là kỹ năng thiết yếu đặc thù thị trường VN"
+            },
+            {
+              "label_en": "Empathy & Politeness",
+              "label_vi": "Đồng cảm & Lịch sự",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Giữ thái độ lịch sự và đồng cảm trong mọi tình huống phản hồi khách",
+              "esco_hint": "empathy",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Shift Work Flexibility",
+              "label_vi": "Linh hoạt làm ca",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Sẵn sàng làm ca xoay, bao gồm ca tối và cuối tuần để đảm bảo coverage",
+              "esco_hint": "shift work",
+              "esco_uri": "",
+              "confidence": 0.9,
+              "iviec_flag": "VN_DOMAIN",
+              "iviec_reason": "Trực page 7 ngày/tuần kể cả ngày lễ là đặc thù của thị trường TMĐT VN"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 170,
+      "vi_tri": "Customer Success",
+      "nghe": "Chăm sóc khách hàng",
+      "nhom_nghe": "CS/Vận hành",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-customer-success",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 12,
+            "notes": "Customer Success - SaaS/tech customer success and retention"
+          },
+          "skills": [
+            {
+              "label_en": "Customer Success Management",
+              "label_vi": "Quản lý thành công khách hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đảm bảo khách hàng đạt được giá trị mong muốn từ sản phẩm/dịch vụ",
+              "esco_hint": "customer success management",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Onboarding Management",
+              "label_vi": "Quản lý quá trình onboarding",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Dẫn dắt và đảm bảo khách hàng mới triển khai thành công sản phẩm/dịch vụ",
+              "esco_hint": "customer onboarding",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Customer Health Scoring",
+              "label_vi": "Đánh giá sức khỏe khách hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Theo dõi và phân tích health score, usage metrics để dự báo churn risk",
+              "esco_hint": "customer health scoring",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Renewal & Expansion",
+              "label_vi": "Gia hạn & Mở rộng hợp đồng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Dẫn dắt quá trình renewal, upsell và cross-sell cho existing customers",
+              "esco_hint": "account expansion",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Churn Prevention",
+              "label_vi": "Ngăn ngừa khách hàng rời bỏ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích nguy cơ churn và thực hiện intervention kịp thời",
+              "esco_hint": "customer retention",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "CRM & CS Platform",
+              "label_vi": "Nền tảng CRM & CS",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Salesforce, HubSpot, Intercom hoặc Freshdesk cho customer success workflows",
+              "esco_hint": "customer success platform",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Product Expertise",
+              "label_vi": "Thành thạo sản phẩm",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hiểu sâu về sản phẩm để tư vấn best practices và giải quyết technical issues",
+              "esco_hint": "product knowledge",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Business Acumen",
+              "label_vi": "Nhạy bén kinh doanh",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Hiểu business goals của khách hàng để align value proposition sản phẩm",
+              "esco_hint": "business acumen",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Stakeholder Management",
+              "label_vi": "Quản lý các bên liên quan",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Xây dựng quan hệ với nhiều stakeholders từ end-user đến C-level",
+              "esco_hint": "stakeholder management",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Data Analysis",
+              "label_vi": "Phân tích dữ liệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phân tích usage data và customer metrics để đưa ra insights cải thiện",
+              "esco_hint": "data analysis",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "English Proficiency",
+              "label_vi": "Tiếng Anh",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Làm việc với global/MNC clients và đọc tài liệu sản phẩm tiếng Anh",
+              "esco_hint": "English language",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Presentation Skills",
+              "label_vi": "Kỹ năng thuyết trình",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Dẫn dắt QBR (Quarterly Business Review) và demo sản phẩm cho khách hàng",
+              "esco_hint": "presentation skills",
+              "esco_uri": "",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 171,
+      "vi_tri": "Customer Experience / Trải nghiệm Khách hàng",
+      "nghe": "Chăm sóc khách hàng",
+      "nhom_nghe": "CS/Vận hành",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-customer-experience",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 11,
+            "notes": "Customer Experience - CX design, measurement and optimization"
+          },
+          "skills": [
+            {
+              "label_en": "Customer Experience Design",
+              "label_vi": "Thiết kế trải nghiệm khách hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế và tối ưu toàn bộ customer journey từ awareness đến loyalty",
+              "esco_hint": "customer experience design",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Journey Mapping",
+              "label_vi": "Lập bản đồ hành trình khách hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng customer journey maps để xác định pain points và cơ hội cải thiện",
+              "esco_hint": "customer journey mapping",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Voice of Customer (VoC)",
+              "label_vi": "Tiếng nói khách hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thu thập và phân tích VoC qua surveys, interviews và feedback channels",
+              "esco_hint": "voice of customer",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "NPS / CSAT / CES Measurement",
+              "label_vi": "Đo lường NPS/CSAT/CES",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế và vận hành chương trình đo lường NPS, CSAT và Customer Effort Score",
+              "esco_hint": "customer satisfaction measurement",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Service Design",
+              "label_vi": "Thiết kế dịch vụ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Áp dụng service design thinking để cải thiện touchpoints và service delivery",
+              "esco_hint": "service design",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Data Analytics",
+              "label_vi": "Phân tích dữ liệu CX",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích CX metrics và behavioral data để identify improvement opportunities",
+              "esco_hint": "data analytics",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Cross-functional Collaboration",
+              "label_vi": "Hợp tác liên phòng ban",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Phối hợp với Product, Operations, Marketing để implement CX improvements",
+              "esco_hint": "cross-functional collaboration",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Root Cause Analysis",
+              "label_vi": "Phân tích nguyên nhân gốc rễ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích RCA cho các vấn đề CX lặp đi lặp lại để cải thiện hệ thống",
+              "esco_hint": "root cause analysis",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Project Management",
+              "label_vi": "Quản lý dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Quản lý các dự án cải thiện CX từ research đến implementation",
+              "esco_hint": "project management",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Empathy",
+              "label_vi": "Đồng cảm",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Thấu hiểu sâu sắc cảm xúc và kỳ vọng của khách hàng trong từng touchpoint",
+              "esco_hint": "empathy",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Presentation & Storytelling",
+              "label_vi": "Thuyết trình & Kể chuyện bằng data",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Trình bày CX insights thuyết phục cho ban lãnh đạo và các phòng ban",
+              "esco_hint": "presentation skills",
+              "esco_uri": "",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 172,
+      "vi_tri": "Dịch vụ khách hàng khác",
+      "nghe": "Chăm sóc khách hàng",
+      "nhom_nghe": "CS/Vận hành",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-dich-vu-khach-hang-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 10,
+            "notes": "Other Customer Service - technical support, help desk, after-sales"
+          },
+          "skills": [
+            {
+              "label_en": "Technical Support",
+              "label_vi": "Hỗ trợ kỹ thuật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Hỗ trợ khách hàng giải quyết các vấn đề kỹ thuật về sản phẩm/dịch vụ",
+              "esco_hint": "technical support",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "After-sales Service",
+              "label_vi": "Dịch vụ hậu mãi",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý bảo hành, sửa chữa và chăm sóc sau bán hàng",
+              "esco_hint": "after-sales service",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Help Desk Operation",
+              "label_vi": "Vận hành Help Desk",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Vận hành ticketing system và quản lý SLA cho yêu cầu hỗ trợ",
+              "esco_hint": "help desk support",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Ticketing System",
+              "label_vi": "Hệ thống ticketing",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Freshdesk, Zendesk hoặc Jira Service Management cho ticket management",
+              "esco_hint": "ticketing system",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Knowledge Base Management",
+              "label_vi": "Quản lý cơ sở kiến thức",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Xây dựng và cập nhật FAQ, knowledge base cho khách hàng self-service",
+              "esco_hint": "knowledge management",
+              "esco_uri": "",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "SLA Management",
+              "label_vi": "Quản lý SLA",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đảm bảo xử lý yêu cầu trong đúng thời gian SLA cam kết",
+              "esco_hint": "service level agreement management",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Customer Feedback Analysis",
+              "label_vi": "Phân tích phản hồi khách hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thu thập và phân tích feedback để cải thiện chất lượng dịch vụ",
+              "esco_hint": "customer feedback analysis",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Field Service (if applicable)",
+              "label_vi": "Dịch vụ tại hiện trường",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Hỗ trợ khách hàng tại địa điểm cho dịch vụ cần kỹ thuật viên thực địa",
+              "esco_hint": "field service management",
+              "esco_uri": "",
+              "confidence": 0.85
+            },
+            {
+              "label_en": "Communication Skills",
+              "label_vi": "Kỹ năng giao tiếp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Giao tiếp rõ ràng và chuyên nghiệp với khách hàng ở mọi kênh",
+              "esco_hint": "communication",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Patience",
+              "label_vi": "Kiên nhẫn",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Kiên nhẫn xử lý các yêu cầu phức tạp và khách hàng khó tính",
+              "esco_hint": "patience",
+              "esco_uri": "",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 173,
+      "vi_tri": "Vận hành sàn thương mại điện tử",
+      "nghe": "Vận hành TMĐT",
+      "nhom_nghe": "CS/Vận hành",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-van-hanh-san-thuong-mai-dien-tu",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 12,
+            "notes": "E-commerce Operations - managing storefronts on Vietnamese e-commerce platforms"
+          },
+          "skills": [
+            {
+              "label_en": "Shopee Seller Center",
+              "label_vi": "Shopee Seller Center",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thành thạo Shopee Seller Center: quản lý sản phẩm, đơn hàng, khuyến mãi",
+              "esco_hint": "e-commerce platform management",
+              "esco_uri": "",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL",
+              "iviec_reason": "Shopee là sàn TMĐT lớn nhất VN với 70M+ người dùng - kỹ năng vận hành Shopee bắt buộc"
+            },
+            {
+              "label_en": "Lazada Seller Center",
+              "label_vi": "Lazada Seller Center",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý gian hàng, sản phẩm và campaigns trên Lazada",
+              "esco_hint": "e-commerce platform management",
+              "esco_uri": "",
+              "confidence": 0.92,
+              "iviec_flag": "VN_TOOL",
+              "iviec_reason": "Lazada là top 3 sàn TMĐT VN - vận hành đồng thời Shopee và Lazada phổ biến"
+            },
+            {
+              "label_en": "TikTok Shop Management",
+              "label_vi": "Quản lý TikTok Shop",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Vận hành TikTok Shop: đăng sản phẩm, quản lý đơn, affiliate và live",
+              "esco_hint": "social commerce management",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL",
+              "iviec_reason": "TikTok Shop tăng trưởng nhanh nhất tại VN 2023-2025, kỹ năng ngày càng bắt buộc"
+            },
+            {
+              "label_en": "Product Listing Optimization",
+              "label_vi": "Tối ưu hiển thị sản phẩm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tối ưu tiêu đề, mô tả, hình ảnh và từ khóa sản phẩm trên sàn TMĐT",
+              "esco_hint": "product listing optimisation",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Flash Sale & Voucher Management",
+              "label_vi": "Quản lý Flash Sale & Voucher",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đăng ký và quản lý Flash Sale, Shopee/Lazada Voucher và campaign khuyến mãi",
+              "esco_hint": "e-commerce promotions management",
+              "esco_uri": "",
+              "confidence": 0.93,
+              "iviec_flag": "VN_DOMAIN",
+              "iviec_reason": "Flash Sale và Voucher là hình thức khuyến mãi đặc trưng và cực kỳ quan trọng trên TMĐT VN"
+            },
+            {
+              "label_en": "Order Management",
+              "label_vi": "Quản lý đơn hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý đơn hàng: confirm, chuẩn bị hàng, in vận đơn và theo dõi giao hàng",
+              "esco_hint": "order management",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Inventory Management",
+              "label_vi": "Quản lý tồn kho",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Quản lý tồn kho trên sàn, cập nhật stock thường xuyên để tránh over/underselling",
+              "esco_hint": "inventory management",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "E-commerce Analytics",
+              "label_vi": "Phân tích TMĐT",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phân tích Shopee Analytics, conversion rate, traffic và doanh số",
+              "esco_hint": "e-commerce analytics",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Customer Service on Platform",
+              "label_vi": "CSKH trên sàn TMĐT",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phản hồi chat, xử lý khiếu nại và đánh giá tiêu cực trên sàn",
+              "esco_hint": "e-commerce customer service",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Tiki / Sendo Operations",
+              "label_vi": "Vận hành Tiki / Sendo",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Quản lý gian hàng trên Tiki và Sendo nếu doanh nghiệp có presence",
+              "esco_hint": "e-commerce platform management",
+              "esco_uri": "",
+              "confidence": 0.86,
+              "iviec_flag": "VN_TOOL",
+              "iviec_reason": "Tiki và Sendo là sàn TMĐT nội địa VN - Tiki mạnh về sách và electronics"
+            },
+            {
+              "label_en": "SAPO / Haravan / KiotViet",
+              "label_vi": "Phần mềm SAPO / Haravan / KiotViet",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng phần mềm quản lý bán hàng đa kênh SAPO hoặc Haravan",
+              "esco_hint": "multichannel retail management software",
+              "esco_uri": "",
+              "confidence": 0.89,
+              "iviec_flag": "VN_TOOL",
+              "iviec_reason": "SAPO, Haravan, KiotViet là các giải pháp quản lý bán hàng đa kênh phổ biến nhất VN"
+            },
+            {
+              "label_en": "Detail-oriented",
+              "label_vi": "Chú ý chi tiết",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Kiểm tra kỹ thông tin sản phẩm, giá, tồn kho để tránh sai sót vận hành",
+              "esco_hint": "attention to detail",
+              "esco_uri": "",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 174,
+      "vi_tri": "Vận hành chung / Business Operations",
+      "nghe": "Business Operation",
+      "nhom_nghe": "CS/Vận hành",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-van-hanh-chung",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 11,
+            "notes": "Business Operations - process management and cross-functional operations"
+          },
+          "skills": [
+            {
+              "label_en": "Business Process Management",
+              "label_vi": "Quản lý quy trình kinh doanh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng, chuẩn hóa và tối ưu các quy trình vận hành của doanh nghiệp",
+              "esco_hint": "business process management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "SOP Development",
+              "label_vi": "Phát triển quy trình chuẩn (SOP)",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng và duy trì Standard Operating Procedures cho các bộ phận",
+              "esco_hint": "standard operating procedure",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Operations Coordination",
+              "label_vi": "Điều phối vận hành",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Điều phối hoạt động giữa các phòng ban để đảm bảo vận hành trơn tru",
+              "esco_hint": "operations coordination",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "KPI Monitoring",
+              "label_vi": "Theo dõi KPI vận hành",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Theo dõi và báo cáo các KPI vận hành: throughput, error rate, turnaround time",
+              "esco_hint": "performance monitoring",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Microsoft Excel / Google Sheets",
+              "label_vi": "Microsoft Excel / Google Sheets",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel/Google Sheets cho báo cáo vận hành, data tracking và analysis",
+              "esco_hint": "spreadsheet software",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Project Management",
+              "label_vi": "Quản lý dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Quản lý các dự án cải tiến vận hành với scope, timeline và deliverables rõ ràng",
+              "esco_hint": "project management",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Root Cause Analysis",
+              "label_vi": "Phân tích nguyên nhân gốc rễ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Xác định nguyên nhân gốc rễ của sự cố vận hành và đề xuất giải pháp",
+              "esco_hint": "root cause analysis",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Vendor Management",
+              "label_vi": "Quản lý nhà cung cấp",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đàm phán và quản lý quan hệ với vendor và đối tác dịch vụ",
+              "esco_hint": "vendor management",
+              "esco_uri": "",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Process Automation Awareness",
+              "label_vi": "Hiểu biết về tự động hóa quy trình",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Hiểu về RPA và automation tools để đề xuất automation cho quy trình thủ công",
+              "esco_hint": "process automation",
+              "esco_uri": "",
+              "confidence": 0.86
+            },
+            {
+              "label_en": "Analytical Thinking",
+              "label_vi": "Tư duy phân tích",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Phân tích data vận hành để tìm cơ hội cải tiến và tối ưu chi phí",
+              "esco_hint": "analytical thinking",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Cross-functional Communication",
+              "label_vi": "Giao tiếp liên phòng ban",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Giao tiếp hiệu quả với nhiều phòng ban khác nhau để đồng bộ vận hành",
+              "esco_hint": "cross-functional communication",
+              "esco_uri": "",
+              "confidence": 0.92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 175,
+      "vi_tri": "Data Labeling / Gắn nhãn dữ liệu AI",
+      "nghe": "Business Operation",
+      "nhom_nghe": "CS/Vận hành",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-data-labeling",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 11,
+            "notes": "Data Labeling - AI/ML training data annotation, growing field in VN"
+          },
+          "skills": [
+            {
+              "label_en": "Data Labeling & Annotation",
+              "label_vi": "Gắn nhãn & chú thích dữ liệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Gắn nhãn dữ liệu chính xác cho các dự án AI/ML: text, image, audio, video",
+              "esco_hint": "data annotation",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Labeling Tool Proficiency",
+              "label_vi": "Thành thạo công cụ gắn nhãn",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng thành thạo các nền tảng như Label Studio, CVAT, Scale AI, Labelbox",
+              "esco_hint": "annotation tools",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Image Annotation",
+              "label_vi": "Chú thích hình ảnh",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "proficient",
+              "evidence_text": "Bounding box, segmentation, keypoint annotation cho computer vision datasets",
+              "esco_hint": "image annotation",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Text Classification & NER",
+              "label_vi": "Phân loại văn bản & NER",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Phân loại ý định, sentiment và gắn nhãn thực thể (NER) cho NLP datasets",
+              "esco_hint": "text classification",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Quality Control (QC)",
+              "label_vi": "Kiểm soát chất lượng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Review và đảm bảo chất lượng nhãn theo annotation guidelines chặt chẽ",
+              "esco_hint": "quality control",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Annotation Guideline Compliance",
+              "label_vi": "Tuân thủ hướng dẫn gắn nhãn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đọc hiểu và thực hiện đúng annotation guidelines phức tạp",
+              "esco_hint": "guideline adherence",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Spreadsheet Skills",
+              "label_vi": "Kỹ năng bảng tính",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Excel/Google Sheets cho data tracking và quality reporting",
+              "esco_hint": "spreadsheet software",
+              "esco_uri": "",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Vietnamese Language Understanding",
+              "label_vi": "Hiểu ngôn ngữ tiếng Việt",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hiểu sâu ngữ nghĩa, văn hóa và ngữ cảnh tiếng Việt để gắn nhãn chính xác",
+              "esco_hint": "Vietnamese language proficiency",
+              "esco_uri": "",
+              "confidence": 0.95,
+              "iviec_flag": "VN_DOMAIN",
+              "iviec_reason": "Vietnamese NLP data labeling đòi hỏi hiểu ngữ cảnh văn hóa VN - tiếng địa phương, slang"
+            },
+            {
+              "label_en": "RLHF / AI Feedback",
+              "label_vi": "Phản hồi RLHF cho AI",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đánh giá và xếp hạng output AI để tạo dữ liệu RLHF cho LLM training",
+              "esco_hint": "AI model evaluation",
+              "esco_uri": "",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Chú ý chi tiết",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Tập trung cao độ để gắn nhãn chính xác trong thời gian dài",
+              "esco_hint": "attention to detail",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Consistency",
+              "label_vi": "Nhất quán",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Duy trì tiêu chuẩn gắn nhãn nhất quán qua hàng nghìn data points",
+              "esco_hint": "consistency",
+              "esco_uri": "",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 176,
+      "vi_tri": "Quản lý / Trưởng phòng vận hành",
+      "nghe": "Quản lý vận hành",
+      "nhom_nghe": "CS/Vận hành",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-quan-ly-truong-phong-van-hanh",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 12,
+            "notes": "Operations Manager/Team Lead - managing operations teams and performance"
+          },
+          "skills": [
+            {
+              "label_en": "Operations Management",
+              "label_vi": "Quản lý vận hành",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý toàn diện hoạt động vận hành của phòng ban hoặc bộ phận",
+              "esco_hint": "operations management",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Team Leadership",
+              "label_vi": "Lãnh đạo nhóm",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lãnh đạo, đào tạo và phát triển team vận hành 10-50+ người",
+              "esco_hint": "team leadership",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "SLA & KPI Management",
+              "label_vi": "Quản lý SLA & KPI",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế, theo dõi và đảm bảo đạt các chỉ số SLA và KPI vận hành",
+              "esco_hint": "performance management",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Process Improvement",
+              "label_vi": "Cải tiến quy trình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Áp dụng Lean/Six Sigma để cải tiến quy trình và giảm lãng phí vận hành",
+              "esco_hint": "process improvement",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Workforce Management",
+              "label_vi": "Quản lý lực lượng lao động",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lên lịch, phân công công việc và tối ưu hiệu suất nhân sự vận hành",
+              "esco_hint": "workforce management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Budget Management",
+              "label_vi": "Quản lý ngân sách",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý ngân sách vận hành, tối ưu chi phí và đề xuất đầu tư",
+              "esco_hint": "budget management",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Data-driven Decision Making",
+              "label_vi": "Ra quyết định dựa trên dữ liệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng dữ liệu vận hành để ra quyết định và cải tiến liên tục",
+              "esco_hint": "data-driven decision making",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Vendor & Partner Management",
+              "label_vi": "Quản lý nhà cung cấp & đối tác",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đàm phán và quản lý SLA với vendor, outsourcing partners",
+              "esco_hint": "vendor management",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Technology & Automation",
+              "label_vi": "Công nghệ & Tự động hóa",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đánh giá và triển khai tools tự động hóa để tăng năng suất vận hành",
+              "esco_hint": "process automation",
+              "esco_uri": "",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Reporting & Analytics",
+              "label_vi": "Báo cáo & Phân tích",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng báo cáo vận hành định kỳ và dashboard cho ban lãnh đạo",
+              "esco_hint": "operational reporting",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Conflict Resolution",
+              "label_vi": "Giải quyết xung đột",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Xử lý xung đột trong team và giữa các phòng ban một cách xây dựng",
+              "esco_hint": "conflict resolution",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "English Proficiency",
+              "label_vi": "Tiếng Anh",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc tài liệu best practices quốc tế và làm việc với MNC",
+              "esco_hint": "English language",
+              "esco_uri": "",
+              "confidence": 0.87
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 177,
+      "vi_tri": "Giám đốc vận hành / COO",
+      "nghe": "Quản lý vận hành",
+      "nhom_nghe": "CS/Vận hành",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-giam-doc-van-hanh-coo",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 11,
+            "notes": "COO/Operations Director - C-suite operations leadership"
+          },
+          "skills": [
+            {
+              "label_en": "Strategic Operations Leadership",
+              "label_vi": "Lãnh đạo chiến lược vận hành",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng và thực thi chiến lược vận hành dài hạn gắn với mục tiêu doanh nghiệp",
+              "esco_hint": "strategic management",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "P&L Management",
+              "label_vi": "Quản lý P&L",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Chịu trách nhiệm P&L của mảng vận hành và tối ưu operating efficiency",
+              "esco_hint": "profit and loss management",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Organizational Design",
+              "label_vi": "Thiết kế tổ chức",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng cơ cấu tổ chức vận hành tối ưu cho giai đoạn tăng trưởng",
+              "esco_hint": "organisational design",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Scaling Operations",
+              "label_vi": "Mở rộng quy mô vận hành",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng hệ thống và quy trình vận hành có thể scale theo tăng trưởng business",
+              "esco_hint": "scalable operations",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Digital Transformation",
+              "label_vi": "Chuyển đổi số vận hành",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Dẫn dắt chuyển đổi số trong vận hành: ERP, automation, AI adoption",
+              "esco_hint": "digital transformation",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "C-suite Collaboration",
+              "label_vi": "Hợp tác cấp C-suite",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Làm việc chặt chẽ với CEO, CFO, CTO để align chiến lược vận hành",
+              "esco_hint": "executive collaboration",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Risk Management",
+              "label_vi": "Quản lý rủi ro vận hành",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xác định và quản lý rủi ro vận hành, business continuity planning",
+              "esco_hint": "operational risk management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Change Management",
+              "label_vi": "Quản lý thay đổi tổ chức",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Dẫn dắt thay đổi tổ chức và culture transformation",
+              "esco_hint": "change management",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Technology & Systems Strategy",
+              "label_vi": "Chiến lược công nghệ & hệ thống",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đánh giá và định hướng đầu tư công nghệ ERP, CRM, WMS cho vận hành",
+              "esco_hint": "technology strategy",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "English Proficiency",
+              "label_vi": "Tiếng Anh",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Làm việc với investor, global partners và tập đoàn mẹ nước ngoài",
+              "esco_hint": "English language",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Data-driven Leadership",
+              "label_vi": "Lãnh đạo dựa trên dữ liệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Ra quyết định chiến lược dựa trên operational metrics và business intelligence",
+              "esco_hint": "data-driven leadership",
+              "esco_uri": "",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 178,
+      "vi_tri": "Giám đốc dịch vụ khách hàng / Customer Service Director",
+      "nghe": "Quản lý vận hành",
+      "nhom_nghe": "CS/Vận hành",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-giam-doc-dich-vu-khach-hang",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 10,
+            "notes": "Customer Service Director - leading enterprise-wide customer service function"
+          },
+          "skills": [
+            {
+              "label_en": "Customer Service Strategy",
+              "label_vi": "Chiến lược dịch vụ khách hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng và thực thi chiến lược CSKH toàn diện cho doanh nghiệp",
+              "esco_hint": "customer service strategy",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Customer Experience Strategy",
+              "label_vi": "Chiến lược trải nghiệm khách hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế và tối ưu CX strategy để tăng CSAT và NPS toàn diện",
+              "esco_hint": "customer experience strategy",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Large Team Management",
+              "label_vi": "Quản lý nhóm quy mô lớn",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lãnh đạo và phát triển team CSKH 50-500+ người, đa ca đa kênh",
+              "esco_hint": "team leadership",
+              "esco_uri": "",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Contact Center Management",
+              "label_vi": "Quản lý Contact Center",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý contact center với đa kênh: phone, chat, email, social media",
+              "esco_hint": "contact centre management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "CX Technology Strategy",
+              "label_vi": "Chiến lược công nghệ CX",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đánh giá và triển khai CX tech stack: CRM, chatbot, AI, omnichannel platform",
+              "esco_hint": "customer experience technology",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Budget & P&L Ownership",
+              "label_vi": "Sở hữu ngân sách & P&L",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý ngân sách lớn cho CSKH và chứng minh ROI của CX investments",
+              "esco_hint": "budget management",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Service Quality Standards",
+              "label_vi": "Tiêu chuẩn chất lượng dịch vụ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng và áp dụng tiêu chuẩn chất lượng dịch vụ theo chuẩn quốc tế",
+              "esco_hint": "service quality management",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "NPS / CSAT Leadership",
+              "label_vi": "Lãnh đạo NPS / CSAT",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Chịu trách nhiệm tổng thể về NPS và CSAT của toàn doanh nghiệp",
+              "esco_hint": "customer satisfaction management",
+              "esco_uri": "",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Cross-functional Leadership",
+              "label_vi": "Lãnh đạo liên phòng ban",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dẫn dắt collaboration với Product, Sales, Marketing để cải thiện CX",
+              "esco_hint": "cross-functional leadership",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "English Proficiency",
+              "label_vi": "Tiếng Anh",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Làm việc với tập đoàn mẹ, global partners và áp dụng best practices quốc tế",
+              "esco_hint": "English language",
+              "esco_uri": "",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    },
+    {
+      "row_id": 179,
+      "vi_tri": "Chuyên môn khác (CS/Vận hành)",
+      "nghe": "DVKH/Vận hành khác",
+      "nhom_nghe": "CS/Vận hành",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "model_used": "synthesis",
+            "jd_count": 5,
+            "extraction_confidence": 0.9,
+            "language_mix": "vi_en",
+            "total_skills": 10,
+            "notes": "Other CS/Operations specializations - QA, training, chatbot, logistics coordination"
+          },
+          "skills": [
+            {
+              "label_en": "Quality Assurance (CS/Ops)",
+              "label_vi": "Đảm bảo chất lượng CS/Vận hành",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giám sát và đánh giá chất lượng dịch vụ và vận hành theo tiêu chuẩn",
+              "esco_hint": "quality assurance",
+              "esco_uri": "",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Training & Development (CS)",
+              "label_vi": "Đào tạo & Phát triển nhân viên CS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế và triển khai chương trình đào tạo cho nhân viên CSKH và vận hành",
+              "esco_hint": "training delivery",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Workforce Planning",
+              "label_vi": "Lập kế hoạch nhân lực",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Dự báo nhu cầu nhân lực và lập lịch làm việc tối ưu cho team vận hành",
+              "esco_hint": "workforce planning",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Chatbot / AI Customer Service",
+              "label_vi": "Chatbot / AI CSKH",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Xây dựng và tối ưu chatbot tự động cho CSKH qua Zalo, Facebook, website",
+              "esco_hint": "chatbot development",
+              "esco_uri": "",
+              "confidence": 0.88,
+              "iviec_flag": "VN_DOMAIN",
+              "iviec_reason": "Chatbot Zalo OA và Facebook Messenger là xu hướng mạnh trong CSKH VN 2024-2025"
+            },
+            {
+              "label_en": "Omnichannel Service",
+              "label_vi": "Dịch vụ đa kênh liền mạch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Quản lý trải nghiệm nhất quán cho khách hàng qua tất cả các kênh",
+              "esco_hint": "omnichannel management",
+              "esco_uri": "",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Service Level Agreement (SLA) Design",
+              "label_vi": "Thiết kế SLA",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Xây dựng SLA framework phù hợp với từng loại hình dịch vụ và khách hàng",
+              "esco_hint": "service level agreement design",
+              "esco_uri": "",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "E-commerce Logistics Coordination",
+              "label_vi": "Điều phối logistics TMĐT",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Phối hợp với đơn vị vận chuyển: GHN, GHTK, J&T, Viettel Post",
+              "esco_hint": "logistics coordination",
+              "esco_uri": "",
+              "confidence": 0.89,
+              "iviec_flag": "VN_TOOL",
+              "iviec_reason": "GHN, GHTK, J&T Express, Viettel Post là các đơn vị vận chuyển TMĐT chính VN"
+            },
+            {
+              "label_en": "Data Analysis",
+              "label_vi": "Phân tích dữ liệu vận hành",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phân tích dữ liệu để cải thiện performance vận hành và CSKH",
+              "esco_hint": "data analysis",
+              "esco_uri": "",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Adaptability",
+              "label_vi": "Khả năng thích nghi",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Thích nghi nhanh với môi trường vận hành thay đổi liên tục",
+              "esco_hint": "adaptability",
+              "esco_uri": "",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Process Documentation",
+              "label_vi": "Tài liệu hóa quy trình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Viết và chuẩn hóa tài liệu quy trình vận hành rõ ràng và dễ thực hiện",
+              "esco_hint": "process documentation",
+              "esco_uri": "",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

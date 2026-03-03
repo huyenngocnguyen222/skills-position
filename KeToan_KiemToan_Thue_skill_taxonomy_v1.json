@@ -1,0 +1,4404 @@
+{
+  "taxonomy_metadata": {
+    "version": "1.0.0",
+    "generated_at": "2026-03-02",
+    "job_group": "Kế toán/Kiểm toán/Thuế",
+    "job_group_en": "Accounting / Auditing / Tax",
+    "source_sites": [
+      "topcv.vn",
+      "vietnamworks.com"
+    ],
+    "pipeline_version": {
+      "S1_extraction": "v2.1"
+    },
+    "description": "Skill taxonomy for the Vietnamese accounting, auditing and tax sector covering all accounting specialisations (general, payroll, cost, treasury, FA, XNK, banking), chief accountant, auditors (independent, internal, team lead), and tax professionals. Includes VN-specific flags: VAS (Thông tư 200/133), VSA, Luật Kế toán 2015, Luật Thuế GTGT/TNDN/TNCN, Nghị định 132/2020 (transfer pricing), Nghị định 123/2020 (e-invoice), Thông tư 45/2018 (fixed assets), BHXH regulations, Luật Hải quan, Luật Chứng khoán, HTKK/eTax portal, MISA/Fast/BHXH online, chứng chỉ Kế toán trưởng, CPA Vietnam.",
+    "total_nghe": 4,
+    "total_vi_tri": 31,
+    "total_skills_extracted": 367,
+    "avg_skills_per_position": 11.8,
+    "iviec_by_type": {
+      "VN_REGULATION": 81,
+      "VN_TOOL": 31,
+      "VN_CERTIFICATION": 0,
+      "VN_DOMAIN": 0,
+      "total": 112
+    },
+    "skill_type_distribution": {
+      "technical": 171,
+      "domain": 40,
+      "tool": 67,
+      "soft": 63,
+      "certification": 14,
+      "language": 12
+    },
+    "requirement_distribution": {
+      "required": 337,
+      "preferred": 30
+    },
+    "parts": {
+      "Part 1 – kt_a (rows 516–530)": 15,
+      "Part 2 – kt_b (rows 531–538)": 8,
+      "Part 3 – kt_c (rows 539–546)": 8
+    },
+    "sub_categories": {
+      "Kế toán": {
+        "position_count": 23,
+        "skill_count": 269
+      },
+      "Kiểm toán": {
+        "position_count": 5,
+        "skill_count": 64
+      },
+      "Thuế": {
+        "position_count": 2,
+        "skill_count": 23
+      },
+      "Kế toán/Kiểm toán/Thuế khác": {
+        "position_count": 1,
+        "skill_count": 11
+      }
+    }
+  },
+  "positions": [
+    {
+      "vi_tri": "Kế toán tổng hợp",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-tong-hop",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 14
+          },
+          "skills": [
+            {
+              "label_en": "General Accounting",
+              "label_vi": "Kế toán tổng hợp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện toàn bộ nghiệp vụ kế toán: hạch toán, đối chiếu, lập BCTC",
+              "esco_hint": "perform general accounting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Accounting Standards (VAS)",
+              "label_vi": "Chuẩn mực kế toán Việt Nam VAS",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Áp dụng VAS trong hạch toán, lập BCTC",
+              "esco_hint": "apply Vietnamese accounting standards",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Financial Statement Preparation",
+              "label_vi": "Lập báo cáo tài chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập BCTC tháng/quý/năm: BCĐKT, KQHĐKD, LCTT, TMBCTC",
+              "esco_hint": "prepare financial statements",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "MISA Accounting Software",
+              "label_vi": "Phần mềm kế toán MISA",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thành thạo MISA SME hoặc MISA AMIS",
+              "esco_hint": "use MISA accounting software",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Fast Accounting / BRAVO / Other ERP",
+              "label_vi": "Fast Accounting/BRAVO/ERP",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Biết Fast Accounting, BRAVO, SAP FI hoặc Oracle là lợi thế",
+              "esco_hint": "use accounting ERP software",
+              "confidence": 0.88,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Tax Declaration (VAT/CIT/PIT)",
+              "label_vi": "Khai báo thuế GTGT/TNDN/TNCN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập tờ khai thuế GTGT, TNDN, TNCN hàng tháng/quý",
+              "esco_hint": "declare Vietnamese taxes",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Bank Reconciliation",
+              "label_vi": "Đối chiếu sổ sách ngân hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đối chiếu số dư ngân hàng với sổ kế toán",
+              "esco_hint": "perform bank reconciliation",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "General Ledger Management",
+              "label_vi": "Quản lý sổ cái",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý sổ cái, sổ chi tiết các tài khoản",
+              "esco_hint": "manage general ledger",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Month-end & Year-end Close",
+              "label_vi": "Chốt sổ tháng/năm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện đóng sổ tháng, năm, chuẩn bị quyết toán",
+              "esco_hint": "close accounting periods",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thành thạo Excel: PivotTable, hàm kế toán, VLOOKUP",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Số liệu kế toán tổng hợp đòi hỏi chính xác tuyệt đối",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Communication",
+              "label_vi": "Giao tiếp liên bộ phận",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phối hợp các phòng ban để thu thập, đối chiếu số liệu",
+              "esco_hint": "communicate cross-functionally",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Accounting Degree",
+              "label_vi": "Bằng kế toán/tài chính",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Tốt nghiệp Đại học ngành Kế toán, Tài chính",
+              "esco_hint": "hold accounting qualification",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Circular 200/2014/TT-BTC",
+              "label_vi": "Thông tư 200 chế độ kế toán DN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Áp dụng Thông tư 200/2014/TT-BTC hoặc TT133/2016",
+              "esco_hint": "apply Vietnamese accounting regulations",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán nội bộ",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-noi-bo",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 11
+          },
+          "skills": [
+            {
+              "label_en": "Internal Accounting",
+              "label_vi": "Kế toán nội bộ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hạch toán, theo dõi toàn bộ nghiệp vụ kế toán nội bộ",
+              "esco_hint": "perform internal accounting",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Management Reporting",
+              "label_vi": "Báo cáo quản trị nội bộ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập báo cáo quản trị theo yêu cầu Ban giám đốc",
+              "esco_hint": "prepare management accounting reports",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Internal Controls",
+              "label_vi": "Kiểm soát nội bộ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng, tuân thủ quy trình kiểm soát nội bộ tài chính",
+              "esco_hint": "implement internal financial controls",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Budget vs Actual Analysis",
+              "label_vi": "Phân tích ngân sách so thực tế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Theo dõi ngân sách, phân tích chênh lệch kế hoạch/thực tế",
+              "esco_hint": "analyse budget variances",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "VAS & Circular 200",
+              "label_vi": "VAS, Thông tư 200",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Áp dụng VAS và Thông tư 200 trong hạch toán",
+              "esco_hint": "apply Vietnamese accounting standards",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "MISA / ERP",
+              "label_vi": "Phần mềm kế toán",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thành thạo MISA, Fast, BRAVO hoặc ERP tương đương",
+              "esco_hint": "use accounting software",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Tax Compliance",
+              "label_vi": "Tuân thủ nghĩa vụ thuế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Khai thuế, theo dõi nghĩa vụ thuế hàng tháng",
+              "esco_hint": "comply with tax obligations",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel phân tích tài chính, lập báo cáo nội bộ",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Confidentiality",
+              "label_vi": "Bảo mật thông tin",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giữ bí mật số liệu tài chính nội bộ",
+              "esco_hint": "maintain financial confidentiality",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Số liệu kế toán đòi hỏi tuyệt đối chính xác",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Accounting Degree",
+              "label_vi": "Bằng kế toán",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Tốt nghiệp ngành Kế toán, Tài chính",
+              "esco_hint": "hold accounting qualification",
+              "confidence": 0.96
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán công nợ",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-cong-no",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 11
+          },
+          "skills": [
+            {
+              "label_en": "Accounts Receivable (AR) Management",
+              "label_vi": "Quản lý công nợ phải thu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Theo dõi, đôn đốc thu hồi công nợ phải thu khách hàng",
+              "esco_hint": "manage accounts receivable",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Accounts Payable (AP) Management",
+              "label_vi": "Quản lý công nợ phải trả",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Theo dõi, thanh toán công nợ nhà cung cấp đúng hạn",
+              "esco_hint": "manage accounts payable",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Debt Aging Analysis",
+              "label_vi": "Phân tích tuổi nợ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập bảng phân tích tuổi nợ, phân loại nợ quá hạn",
+              "esco_hint": "analyse debt ageing",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Reconciliation with Customers/Suppliers",
+              "label_vi": "Đối chiếu công nợ KH/NCC",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đối chiếu số dư công nợ định kỳ với khách hàng, NCC",
+              "esco_hint": "reconcile customer and supplier balances",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Collection Follow-up",
+              "label_vi": "Đôn đốc thu nợ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Gọi điện, email nhắc nợ và phối hợp bộ phận sales",
+              "esco_hint": "follow up on debt collection",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Invoice Processing",
+              "label_vi": "Xử lý hoá đơn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm tra, hạch toán hoá đơn mua bán theo quy định",
+              "esco_hint": "process invoices",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "MISA / ERP",
+              "label_vi": "Phần mềm kế toán",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "MISA, Fast hoặc ERP module công nợ",
+              "esco_hint": "use accounting software",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel lập báo cáo công nợ, pivot theo KH/NCC",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "VAS / Circular 200",
+              "label_vi": "VAS/Thông tư 200",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Hạch toán công nợ theo VAS, Thông tư 200",
+              "esco_hint": "apply accounting standards",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Số liệu công nợ phải chính xác từng đồng",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Communication & Negotiation",
+              "label_vi": "Giao tiếp, đàm phán",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đàm phán lịch thanh toán với KH, NCC",
+              "esco_hint": "communicate and negotiate",
+              "confidence": 0.92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán thuế",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-thue",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 13
+          },
+          "skills": [
+            {
+              "label_en": "Tax Accounting",
+              "label_vi": "Kế toán thuế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hạch toán, theo dõi tất cả nghĩa vụ thuế của doanh nghiệp",
+              "esco_hint": "perform tax accounting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "VAT Declaration",
+              "label_vi": "Khai thuế giá trị gia tăng GTGT",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập, kiểm tra, nộp tờ khai thuế GTGT tháng/quý qua HTKK",
+              "esco_hint": "declare VAT",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "CIT Declaration",
+              "label_vi": "Khai thuế thu nhập doanh nghiệp TNDN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập tờ khai tạm tính TNDN quý, quyết toán TNDN năm",
+              "esco_hint": "declare corporate income tax",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "PIT Declaration",
+              "label_vi": "Khai thuế thu nhập cá nhân TNCN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập tờ khai TNCN hàng tháng, quyết toán TNCN năm",
+              "esco_hint": "declare personal income tax",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "HTKK Software",
+              "label_vi": "Phần mềm HTKK khai thuế",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng phần mềm HTKK/iHTKK khai thuế điện tử",
+              "esco_hint": "use Vietnamese tax filing software",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Tax Portal (eTax)",
+              "label_vi": "Cổng thuế điện tử eTax",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nộp tờ khai, nộp thuế qua cổng eTax của Tổng cục Thuế",
+              "esco_hint": "use Vietnamese e-tax portal",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Transfer Pricing",
+              "label_vi": "Giao dịch liên kết/chuyển giá",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Biết quy định về giao dịch liên kết Nghị định 132/2020",
+              "esco_hint": "apply transfer pricing regulations",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Tax Audit Support",
+              "label_vi": "Hỗ trợ thanh kiểm tra thuế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Chuẩn bị hồ sơ, giải trình khi cơ quan thuế kiểm tra",
+              "esco_hint": "support tax authority audits",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "MISA / Fast Accounting",
+              "label_vi": "Phần mềm kế toán",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "MISA, Fast tích hợp khai thuế",
+              "esco_hint": "use accounting software",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel lập bảng tổng hợp thuế, đối chiếu",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Luật Thuế GTGT/TNDN/TNCN",
+              "label_vi": "Luật thuế Việt Nam",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm vững Luật Thuế GTGT, TNDN, TNCN và các thông tư hướng dẫn",
+              "esco_hint": "apply Vietnamese tax legislation",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sai sót khai thuế dẫn đến phạt vi phạm hành chính",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Accounting Degree",
+              "label_vi": "Bằng kế toán/tài chính",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Tốt nghiệp ngành Kế toán, Tài chính",
+              "esco_hint": "hold accounting qualification",
+              "confidence": 0.97
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán chi phí/giá thành",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-chi-phi-gia-thanh",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 13
+          },
+          "skills": [
+            {
+              "label_en": "Cost Accounting",
+              "label_vi": "Kế toán chi phí giá thành",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tập hợp chi phí, tính giá thành sản phẩm/dịch vụ",
+              "esco_hint": "perform cost accounting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Cost of Goods Sold (COGS)",
+              "label_vi": "Giá vốn hàng bán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tính, hạch toán giá vốn hàng bán chính xác",
+              "esco_hint": "calculate cost of goods sold",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Standard Cost vs Actual Cost",
+              "label_vi": "Chi phí định mức so thực tế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích biến động chi phí thực tế so định mức",
+              "esco_hint": "analyse cost variances",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Product Cost Sheet",
+              "label_vi": "Bảng tính giá thành sản phẩm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập phiếu tính giá thành theo từng đơn hàng/lô sản xuất",
+              "esco_hint": "prepare product cost sheets",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Overhead Allocation",
+              "label_vi": "Phân bổ chi phí gián tiếp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân bổ chi phí sản xuất chung theo phương pháp phù hợp",
+              "esco_hint": "allocate overhead costs",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Inventory Valuation",
+              "label_vi": "Định giá tồn kho",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Định giá tồn kho theo FIFO, bình quân gia quyền",
+              "esco_hint": "value inventory",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Bill of Materials (BOM) Understanding",
+              "label_vi": "Đọc hiểu BOM",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc BOM để theo dõi chi phí NVL chính xác",
+              "esco_hint": "understand bill of materials",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "MISA / ERP Cost Module",
+              "label_vi": "Phần mềm kế toán chi phí",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "MISA, ERP module tính giá thành",
+              "esco_hint": "use cost accounting software",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel lập bảng tính giá thành, phân tích chi phí",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "VAS 02 (Inventory)",
+              "label_vi": "VAS 02 Hàng tồn kho",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Áp dụng VAS 02 trong kế toán HTK và giá thành",
+              "esco_hint": "apply VAS 02 inventory standard",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Collaboration with Production",
+              "label_vi": "Phối hợp bộ phận sản xuất",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Làm việc chặt với sản xuất để tổng hợp chi phí chính xác",
+              "esco_hint": "collaborate with production team",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Giá thành sai ảnh hưởng định giá, lợi nhuận toàn doanh nghiệp",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Analytical Thinking",
+              "label_vi": "Tư duy phân tích",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích nguyên nhân tăng giảm chi phí",
+              "esco_hint": "apply analytical thinking",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán bán hàng",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-ban-hang",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Sales Accounting",
+              "label_vi": "Kế toán bán hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hạch toán doanh thu, giá vốn, công nợ phải thu khách hàng",
+              "esco_hint": "perform sales accounting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Revenue Recognition",
+              "label_vi": "Ghi nhận doanh thu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Ghi nhận doanh thu đúng kỳ theo VAS 14",
+              "esco_hint": "recognise revenue",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Invoice Issuance (E-Invoice)",
+              "label_vi": "Xuất hoá đơn điện tử",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xuất hoá đơn GTGT điện tử theo Nghị định 123/2020",
+              "esco_hint": "issue electronic invoices",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "AR Tracking",
+              "label_vi": "Theo dõi công nợ phải thu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Theo dõi, đôn đốc thu tiền khách hàng",
+              "esco_hint": "track accounts receivable",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Sales Report",
+              "label_vi": "Báo cáo doanh số, doanh thu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập báo cáo doanh thu theo sản phẩm, kênh, khách hàng",
+              "esco_hint": "prepare sales revenue reports",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "MISA / ERP",
+              "label_vi": "Phần mềm kế toán",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "MISA, Fast hoặc ERP module bán hàng",
+              "esco_hint": "use accounting software",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel lập báo cáo doanh thu, đối chiếu",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "VAS 14 (Revenue)",
+              "label_vi": "VAS 14 Doanh thu",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Áp dụng VAS 14 ghi nhận doanh thu",
+              "esco_hint": "apply VAS 14 revenue standard",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Collaboration with Sales Dept",
+              "label_vi": "Phối hợp bộ phận kinh doanh",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phối hợp nhân viên kinh doanh đối chiếu hợp đồng, công nợ",
+              "esco_hint": "collaborate with sales department",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Doanh thu sai ảnh hưởng báo cáo thuế, BCTC",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.97
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán doanh thu",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-doanh-thu",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Revenue Accounting",
+              "label_vi": "Hạch toán doanh thu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hạch toán, theo dõi toàn bộ doanh thu theo từng luồng",
+              "esco_hint": "perform revenue accounting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Revenue Recognition VAS",
+              "label_vi": "Ghi nhận doanh thu theo VAS 14",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Áp dụng VAS 14 ghi nhận doanh thu đúng kỳ kế toán",
+              "esco_hint": "apply revenue recognition standards",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Deferred Revenue",
+              "label_vi": "Doanh thu chưa thực hiện",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hạch toán doanh thu nhận trước, phân bổ đúng kỳ",
+              "esco_hint": "account for deferred revenue",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "E-Invoice Management",
+              "label_vi": "Quản lý hoá đơn điện tử",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phát hành, quản lý hoá đơn điện tử theo Nghị định 123",
+              "esco_hint": "manage electronic invoices",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Revenue Reconciliation",
+              "label_vi": "Đối chiếu doanh thu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đối chiếu doanh thu kế toán với doanh số kinh doanh",
+              "esco_hint": "reconcile revenue figures",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Revenue Reporting",
+              "label_vi": "Báo cáo doanh thu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập báo cáo doanh thu tháng/quý theo yêu cầu quản lý",
+              "esco_hint": "prepare revenue reports",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "MISA / ERP",
+              "label_vi": "Phần mềm kế toán",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thành thạo MISA, Fast hoặc ERP tương đương",
+              "esco_hint": "use accounting software",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel phân tích xu hướng doanh thu",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "VAT on Revenue",
+              "label_vi": "Thuế GTGT đầu ra",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hạch toán thuế GTGT đầu ra, đối chiếu tờ khai",
+              "esco_hint": "account for output VAT",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Chính xác trong hạch toán doanh thu tránh sai báo cáo thuế",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.97
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán tài chính",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-tai-chinh",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 13
+          },
+          "skills": [
+            {
+              "label_en": "Financial Accounting",
+              "label_vi": "Kế toán tài chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện toàn bộ nghiệp vụ kế toán tài chính",
+              "esco_hint": "perform financial accounting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Financial Statement Preparation",
+              "label_vi": "Lập báo cáo tài chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập BCTC theo VAS: BCĐKT, KQHĐKD, LCTT, TMBCTC",
+              "esco_hint": "prepare financial statements",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "IFRS / VAS Knowledge",
+              "label_vi": "IFRS/VAS",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Biết IFRS là ưu tiên với công ty FDI/niêm yết",
+              "esco_hint": "knowledge of IFRS",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "VAS Full Application",
+              "label_vi": "Áp dụng đầy đủ VAS",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu và áp dụng đầy đủ 26 VAS trong hạch toán",
+              "esco_hint": "apply full Vietnamese accounting standards",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Consolidation",
+              "label_vi": "Hợp nhất BCTC",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Biết hợp nhất BCTC là lợi thế với công ty có công ty con",
+              "esco_hint": "consolidate financial statements",
+              "confidence": 0.86
+            },
+            {
+              "label_en": "Cash Flow Management",
+              "label_vi": "Quản lý dòng tiền",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Theo dõi, lập dự báo dòng tiền cho doanh nghiệp",
+              "esco_hint": "manage cash flow",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Tax Compliance",
+              "label_vi": "Tuân thủ nghĩa vụ thuế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Khai báo và nộp thuế GTGT, TNDN, TNCN đúng hạn",
+              "esco_hint": "comply with tax obligations",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Audit Support",
+              "label_vi": "Hỗ trợ kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Chuẩn bị tài liệu cho kiểm toán nội bộ và độc lập",
+              "esco_hint": "support financial audits",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "MISA / SAP FI / Oracle",
+              "label_vi": "Phần mềm kế toán",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "MISA, SAP FI, Oracle Financials hoặc tương đương",
+              "esco_hint": "use financial accounting software",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel lập BCTC, phân tích tài chính",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Analytical Thinking",
+              "label_vi": "Tư duy phân tích tài chính",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích, diễn giải số liệu tài chính",
+              "esco_hint": "apply financial analytical thinking",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Accounting Degree",
+              "label_vi": "Bằng kế toán/kiểm toán",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Tốt nghiệp Đại học ngành Kế toán, Kiểm toán",
+              "esco_hint": "hold accounting qualification",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "English Financial",
+              "label_vi": "Tiếng Anh tài chính",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc báo cáo tài chính tiếng Anh, giao tiếp với công ty mẹ",
+              "esco_hint": "read English financial documents",
+              "confidence": 0.88
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán đầu tư",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-dau-tu",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 12
+          },
+          "skills": [
+            {
+              "label_en": "Investment Accounting",
+              "label_vi": "Kế toán đầu tư tài chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hạch toán đầu tư chứng khoán, góp vốn, đầu tư dài/ngắn hạn",
+              "esco_hint": "perform investment accounting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Securities & Fund Accounting",
+              "label_vi": "Kế toán chứng khoán, quỹ đầu tư",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hạch toán giao dịch chứng khoán, NAV quỹ đầu tư",
+              "esco_hint": "account for securities and funds",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "VAS 07/25/28 Investment Standards",
+              "label_vi": "VAS đầu tư VAS07/25/28",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Áp dụng VAS 07, 25, 28 hạch toán đầu tư liên kết, liên doanh",
+              "esco_hint": "apply investment accounting standards",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Fair Value Measurement",
+              "label_vi": "Đánh giá giá trị hợp lý",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xác định và điều chỉnh giá trị hợp lý tài sản đầu tư",
+              "esco_hint": "measure fair value of investments",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Dividend & Interest Recording",
+              "label_vi": "Ghi nhận cổ tức, lãi đầu tư",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hạch toán thu nhập từ cổ tức, lãi trái phiếu, tiền gửi",
+              "esco_hint": "record investment income",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Investment Portfolio Reporting",
+              "label_vi": "Báo cáo danh mục đầu tư",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập báo cáo danh mục đầu tư, hiệu suất đầu tư",
+              "esco_hint": "report investment portfolio",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Securities Law Knowledge",
+              "label_vi": "Luật Chứng khoán Việt Nam",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Hiểu biết Luật Chứng khoán 2019 và quy định liên quan",
+              "esco_hint": "knowledge of Vietnamese securities law",
+              "confidence": 0.89,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel lập bảng theo dõi danh mục đầu tư",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Bloomberg / Reuters Basic",
+              "label_vi": "Bloomberg/Reuters cơ bản",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Biết tra cứu dữ liệu thị trường qua Bloomberg, Reuters",
+              "esco_hint": "use financial data terminals",
+              "confidence": 0.82
+            },
+            {
+              "label_en": "Analytical Thinking",
+              "label_vi": "Tư duy phân tích đầu tư",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích hiệu quả đầu tư, đánh giá rủi ro",
+              "esco_hint": "apply investment analytical thinking",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hạch toán đầu tư đòi hỏi chính xác từng nghiệp vụ",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "English Financial",
+              "label_vi": "Tiếng Anh tài chính",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc tài liệu đầu tư, báo cáo thị trường tiếng Anh",
+              "esco_hint": "read English financial documents",
+              "confidence": 0.87
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán tài sản cố định",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-tai-san-co-dinh",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Fixed Asset Accounting",
+              "label_vi": "Kế toán tài sản cố định",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hạch toán tăng, giảm, khấu hao TSCĐ và CCDC",
+              "esco_hint": "perform fixed asset accounting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Depreciation Calculation",
+              "label_vi": "Tính khấu hao TSCĐ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tính khấu hao TSCĐ theo đường thẳng, số dư giảm dần",
+              "esco_hint": "calculate depreciation",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Asset Register Management",
+              "label_vi": "Quản lý sổ TSCĐ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý danh mục TSCĐ, sổ chi tiết từng tài sản",
+              "esco_hint": "manage fixed asset register",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Asset Physical Verification",
+              "label_vi": "Kiểm kê TSCĐ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối hợp kiểm kê TSCĐ định kỳ, đối chiếu sổ sách",
+              "esco_hint": "verify physical fixed assets",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Circular 45/2018/TT-BTC TSCĐ",
+              "label_vi": "Thông tư 45/2018 về TSCĐ",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Áp dụng TT45/2018 xác định, khấu hao TSCĐ",
+              "esco_hint": "apply fixed asset regulations",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "CIT Depreciation vs Accounting",
+              "label_vi": "Khấu hao thuế TNDN vs kế toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Theo dõi chênh lệch khấu hao kế toán và thuế TNDN",
+              "esco_hint": "reconcile tax and accounting depreciation",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "MISA / ERP Fixed Asset Module",
+              "label_vi": "Phần mềm kế toán TSCĐ",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "MISA, Fast, ERP module TSCĐ",
+              "esco_hint": "use fixed asset accounting software",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel lập bảng theo dõi TSCĐ, tính khấu hao",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Capital Expenditure (CAPEX) Tracking",
+              "label_vi": "Theo dõi chi đầu tư CAPEX",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Theo dõi CAPEX, phân bổ vào TSCĐ khi hoàn thành",
+              "esco_hint": "track capital expenditure",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Số liệu TSCĐ ảnh hưởng chi phí, thuế TNDN",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.97
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán mua hàng",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-mua-hang",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 11
+          },
+          "skills": [
+            {
+              "label_en": "Purchase Accounting",
+              "label_vi": "Kế toán mua hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hạch toán toàn bộ nghiệp vụ mua hàng, nhập kho",
+              "esco_hint": "perform purchase accounting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "AP Invoice Processing",
+              "label_vi": "Xử lý hoá đơn đầu vào",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm tra, hạch toán hoá đơn mua hàng, dịch vụ",
+              "esco_hint": "process supplier invoices",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "VAT Input Tax",
+              "label_vi": "Thuế GTGT đầu vào",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hạch toán, theo dõi thuế GTGT đầu vào được khấu trừ",
+              "esco_hint": "account for input VAT",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Three-Way Matching",
+              "label_vi": "Đối chiếu 3 chiều PO-GR-Invoice",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đối chiếu lệnh mua PO, phiếu nhập kho, hoá đơn NCC",
+              "esco_hint": "perform three-way matching",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Supplier Reconciliation",
+              "label_vi": "Đối chiếu công nợ nhà cung cấp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đối chiếu số dư phải trả định kỳ với nhà cung cấp",
+              "esco_hint": "reconcile supplier balances",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Payment Processing",
+              "label_vi": "Xử lý thanh toán NCC",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập đề nghị thanh toán, theo dõi lịch thanh toán",
+              "esco_hint": "process supplier payments",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "MISA / ERP AP Module",
+              "label_vi": "Phần mềm kế toán",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "MISA, SAP MM/FI, Oracle AP module",
+              "esco_hint": "use accounts payable software",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel báo cáo mua hàng, phân tích chi phí",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "E-Invoice Regulations",
+              "label_vi": "Quy định hoá đơn điện tử",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Kiểm tra hoá đơn hợp lệ theo Nghị định 123/2020",
+              "esco_hint": "apply e-invoice regulations",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hoá đơn sai dẫn đến bị loại chi phí thuế TNDN",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Collaboration with Procurement",
+              "label_vi": "Phối hợp mua hàng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phối hợp phòng mua hàng đối chiếu hợp đồng, đơn đặt hàng",
+              "esco_hint": "collaborate with procurement",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán thanh toán",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-thanh-toan",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 11
+          },
+          "skills": [
+            {
+              "label_en": "Payment Processing",
+              "label_vi": "Xử lý thanh toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện thanh toán nội bộ, nhà cung cấp, nhân viên",
+              "esco_hint": "process payments",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Bank Transfer Execution",
+              "label_vi": "Thực hiện chuyển khoản ngân hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện lệnh chuyển khoản, theo dõi trạng thái thanh toán",
+              "esco_hint": "execute bank transfers",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Payment Approval & Verification",
+              "label_vi": "Kiểm soát chứng từ thanh toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm tra tính hợp lệ chứng từ trước khi thanh toán",
+              "esco_hint": "verify payment documents",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Cash Management",
+              "label_vi": "Quản lý tiền mặt quỹ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý quỹ tiền mặt, thu chi đúng quy trình",
+              "esco_hint": "manage petty cash",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Bank Reconciliation",
+              "label_vi": "Đối chiếu sao kê ngân hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đối chiếu sao kê ngân hàng với sổ kế toán hàng ngày",
+              "esco_hint": "perform bank reconciliation",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Internet Banking",
+              "label_vi": "Internet banking doanh nghiệp",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện lệnh trên internet banking của các ngân hàng",
+              "esco_hint": "use corporate internet banking",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "MISA / ERP",
+              "label_vi": "Phần mềm kế toán",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "MISA, SAP hoặc ERP module thanh toán",
+              "esco_hint": "use payment accounting software",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Excel theo dõi lịch thanh toán, đối chiếu",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Integrity & Confidentiality",
+              "label_vi": "Trung thực, bảo mật",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuyệt đối trung thực trong xử lý tiền bạc",
+              "esco_hint": "demonstrate integrity and confidentiality",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, cẩn thận",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Chuyển khoản sai số tiền hoặc tài khoản thụ hưởng",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Time Management",
+              "label_vi": "Xử lý đúng hạn thanh toán",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đảm bảo thanh toán đúng kỳ hạn hợp đồng",
+              "esco_hint": "manage payment deadlines",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán kho/nguyên vật liệu",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-kho-nguyen-vat-lieu",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Inventory Accounting",
+              "label_vi": "Kế toán kho nguyên vật liệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hạch toán nhập xuất tồn kho NVL, công cụ dụng cụ, thành phẩm",
+              "esco_hint": "perform inventory accounting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Inventory Valuation Methods",
+              "label_vi": "Phương pháp tính giá hàng tồn kho",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tính giá xuất kho theo FIFO, bình quân gia quyền",
+              "esco_hint": "apply inventory valuation methods",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Inventory Reconciliation",
+              "label_vi": "Đối chiếu kho kế toán vs thực tế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đối chiếu sổ kế toán với thủ kho, phát hiện chênh lệch",
+              "esco_hint": "reconcile accounting and physical inventory",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Stock Take Participation",
+              "label_vi": "Kiểm kê kho định kỳ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tham gia kiểm kê kho tháng/quý/năm",
+              "esco_hint": "participate in stock takes",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Raw Material Usage Tracking",
+              "label_vi": "Theo dõi xuất NVL sản xuất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hạch toán xuất NVL vào sản xuất, theo dõi tỉ lệ hao hụt",
+              "esco_hint": "track raw material usage",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "VAS 02 Inventory",
+              "label_vi": "VAS 02 hàng tồn kho",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Áp dụng VAS 02 trong kế toán HTK",
+              "esco_hint": "apply VAS 02",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "MISA / ERP Warehouse Module",
+              "label_vi": "Phần mềm kế toán kho",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "MISA, Fast, ERP module kho",
+              "esco_hint": "use warehouse accounting software",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel theo dõi NVL, phân tích hao hụt",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Collaboration with Warehouse",
+              "label_vi": "Phối hợp thủ kho",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phối hợp chặt với thủ kho đối chiếu chứng từ nhập xuất",
+              "esco_hint": "collaborate with warehouse team",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sai số tồn kho ảnh hưởng giá thành, BCTC",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.97
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán tiền lương",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-tien-luong",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 11
+          },
+          "skills": [
+            {
+              "label_en": "Payroll Accounting",
+              "label_vi": "Kế toán tiền lương",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tính, hạch toán lương, phụ cấp, BHXH, BHYT, BHTN",
+              "esco_hint": "perform payroll accounting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Social Insurance (BHXH) Calculation",
+              "label_vi": "Tính BHXH, BHYT, BHTN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tính đúng BHXH (17.5%), BHYT (3%), BHTN (1%) phần DN đóng",
+              "esco_hint": "calculate social insurance contributions",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "PIT Calculation & Declaration",
+              "label_vi": "Tính, khai TNCN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tính thuế TNCN, lập tờ khai tháng/quyết toán năm",
+              "esco_hint": "calculate and declare personal income tax",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "BHXH Online Portal",
+              "label_vi": "Phần mềm BHXH điện tử",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kê khai, nộp hồ sơ BHXH qua cổng BHXH điện tử",
+              "esco_hint": "use Vietnamese social insurance portal",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Labor Contract & Benefits Tracking",
+              "label_vi": "Theo dõi hợp đồng lao động, phúc lợi",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Theo dõi loại HĐLĐ, kỳ hạn, phúc lợi liên quan lương",
+              "esco_hint": "track labour contracts and benefits",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Leave & Attendance Management",
+              "label_vi": "Chấm công, theo dõi nghỉ phép",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đối chiếu dữ liệu chấm công để tính lương chính xác",
+              "esco_hint": "manage leave and attendance data",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Payroll Software (MISA HRM)",
+              "label_vi": "Phần mềm tính lương MISA HRM",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Biết MISA HRM, phần mềm tính lương chuyên dụng",
+              "esco_hint": "use payroll software",
+              "confidence": 0.89,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel tính lương, bảng thanh toán lương",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam Labor Law",
+              "label_vi": "Bộ Luật Lao động 2019",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm vững BLLĐ 2019, quy định tăng ca, nghỉ lễ, lương tối thiểu",
+              "esco_hint": "apply Vietnamese labour law",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Confidentiality",
+              "label_vi": "Bảo mật thông tin lương",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bảo mật tuyệt đối thông tin lương của nhân viên",
+              "esco_hint": "maintain payroll confidentiality",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sai lương ảnh hưởng trực tiếp đến nhân viên và pháp lý",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.98
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán quản trị",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-quan-tri",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 13
+          },
+          "skills": [
+            {
+              "label_en": "Management Accounting",
+              "label_vi": "Kế toán quản trị",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập báo cáo quản trị phục vụ ra quyết định nội bộ",
+              "esco_hint": "perform management accounting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Budgeting & Forecasting",
+              "label_vi": "Lập ngân sách và dự báo tài chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập ngân sách tổng thể, dự báo dòng tiền, P&L",
+              "esco_hint": "prepare budgets and financial forecasts",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Variance Analysis",
+              "label_vi": "Phân tích chênh lệch ngân sách",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích nguyên nhân chênh lệch kế hoạch/thực tế",
+              "esco_hint": "analyse budget variances",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Cost-Benefit Analysis",
+              "label_vi": "Phân tích chi phí-lợi ích",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích CBR cho dự án đầu tư, sản phẩm mới",
+              "esco_hint": "perform cost-benefit analysis",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "KPI Dashboard",
+              "label_vi": "Xây dựng KPI tài chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng dashboard KPI tài chính cho Ban GĐ",
+              "esco_hint": "build financial KPI dashboards",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Profitability Analysis",
+              "label_vi": "Phân tích lợi nhuận",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích lợi nhuận theo sản phẩm, kênh, khách hàng",
+              "esco_hint": "perform profitability analysis",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Financial Modelling",
+              "label_vi": "Mô hình tài chính",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Xây dựng mô hình tài chính DCF, sensitivity analysis",
+              "esco_hint": "build financial models",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Microsoft Excel Advanced",
+              "label_vi": "Excel nâng cao",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Excel nâng cao: Power Query, Power Pivot, mô hình phức tạp",
+              "esco_hint": "use advanced Excel for financial modelling",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Power BI / Tableau",
+              "label_vi": "Power BI/Tableau BI",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Power BI hoặc Tableau lập báo cáo quản trị trực quan",
+              "esco_hint": "use business intelligence software",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "ERP / SAP CO",
+              "label_vi": "ERP CO module",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "SAP CO, ERP controlling module là lợi thế",
+              "esco_hint": "use ERP controlling modules",
+              "confidence": 0.86
+            },
+            {
+              "label_en": "Analytical Thinking",
+              "label_vi": "Tư duy phân tích tài chính cao",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư duy phân tích sắc bén, khả năng insight từ số liệu",
+              "esco_hint": "apply advanced analytical thinking",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Communication with Management",
+              "label_vi": "Trình bày với Ban GĐ",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Trình bày kết quả phân tích tài chính cho lãnh đạo",
+              "esco_hint": "present financial analysis to management",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "English Financial",
+              "label_vi": "Tiếng Anh tài chính",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Báo cáo quản trị tiếng Anh cho công ty nước ngoài",
+              "esco_hint": "prepare management reports in English",
+              "confidence": 0.88
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán trưởng",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-truong",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 15
+          },
+          "skills": [
+            {
+              "label_en": "Chief Accountant Responsibilities",
+              "label_vi": "Trách nhiệm Kế toán trưởng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phụ trách toàn bộ công tác kế toán, tài chính doanh nghiệp theo Luật Kế toán 2015",
+              "esco_hint": "fulfil chief accountant responsibilities",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Financial Statement Preparation & Review",
+              "label_vi": "Lập và ký BCTC",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập, kiểm soát và ký BCTC năm trình kiểm toán, nộp thuế",
+              "esco_hint": "prepare and sign financial statements",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Tax Strategy & Compliance",
+              "label_vi": "Chiến lược và tuân thủ thuế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý toàn bộ nghĩa vụ thuế: GTGT, TNDN, TNCN, TTĐB",
+              "esco_hint": "manage tax strategy and compliance",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "VAS Full Application",
+              "label_vi": "Áp dụng đầy đủ VAS",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm vững và áp dụng toàn bộ 26 VAS, Thông tư 200/TT133",
+              "esco_hint": "apply full Vietnamese accounting standards",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Internal Control System",
+              "label_vi": "Xây dựng hệ thống kiểm soát nội bộ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng, giám sát hệ thống kiểm soát nội bộ tài chính",
+              "esco_hint": "build internal control systems",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Audit Coordination",
+              "label_vi": "Phối hợp kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Làm việc với kiểm toán viên độc lập, cơ quan thuế",
+              "esco_hint": "coordinate with auditors and tax authorities",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Budget & Financial Planning",
+              "label_vi": "Lập kế hoạch tài chính, ngân sách",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập kế hoạch tài chính năm, theo dõi ngân sách doanh nghiệp",
+              "esco_hint": "plan and manage budget",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Cash Flow Management",
+              "label_vi": "Quản lý dòng tiền",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý, dự báo dòng tiền bảo đảm thanh khoản",
+              "esco_hint": "manage cash flow",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Chief Accountant Certificate",
+              "label_vi": "Chứng chỉ Kế toán trưởng",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Có Chứng chỉ hành nghề Kế toán trưởng theo quy định",
+              "esco_hint": "hold chief accountant certificate",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "ERP / SAP FI",
+              "label_vi": "ERP/SAP tài chính",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "SAP FI/CO, Oracle, MISA hoặc ERP tương đương",
+              "esco_hint": "use financial ERP software",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel Advanced",
+              "label_vi": "Excel nâng cao",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel nâng cao: mô hình tài chính, Power Query",
+              "esco_hint": "use advanced Excel",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Leadership & Team Management",
+              "label_vi": "Lãnh đạo phòng kế toán",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý, đào tạo, phát triển đội ngũ kế toán",
+              "esco_hint": "lead accounting team",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Communication with Board",
+              "label_vi": "Báo cáo cho Ban GĐ/HĐQT",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Trình bày tình hình tài chính cho Ban GĐ, HĐQT",
+              "esco_hint": "report to board of directors",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "English Financial",
+              "label_vi": "Tiếng Anh tài chính",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Tiếng Anh làm việc với kiểm toán/công ty mẹ nước ngoài",
+              "esco_hint": "communicate in English on financial matters",
+              "confidence": 0.87
+            },
+            {
+              "label_en": "IFRS Basic",
+              "label_vi": "IFRS cơ bản",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Biết IFRS là lợi thế với công ty FDI, niêm yết quốc tế",
+              "esco_hint": "knowledge of IFRS",
+              "confidence": 0.85
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán công trình",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-cong-trinh",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 12
+          },
+          "skills": [
+            {
+              "label_en": "Construction Project Accounting",
+              "label_vi": "Kế toán công trình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hạch toán kế toán toàn bộ dự án xây dựng, công trình",
+              "esco_hint": "perform construction project accounting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Construction Cost Accounting",
+              "label_vi": "Tập hợp chi phí xây dựng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tập hợp và phân bổ chi phí NVL, nhân công, máy thi công",
+              "esco_hint": "account for construction costs",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Progress Billing & Payment",
+              "label_vi": "Lập hồ sơ nghiệm thu, thanh toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập, kiểm tra hồ sơ nghiệm thu thanh toán theo tiến độ",
+              "esco_hint": "prepare progress billing documentation",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Construction Settlement (Quyết toán)",
+              "label_vi": "Quyết toán công trình hoàn thành",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập hồ sơ quyết toán công trình hoàn thành theo quy định",
+              "esco_hint": "settle completed construction projects",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Nghị định 10/2021 Cost Management",
+              "label_vi": "Nghị định 10/2021 quản lý chi phí XD",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Áp dụng Nghị định 10/2021 và Thông tư 11/2021 quản lý chi phí XD",
+              "esco_hint": "apply construction cost management regulations",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Construction Contract Accounting",
+              "label_vi": "Kế toán hợp đồng xây dựng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hạch toán theo VAS 15 hợp đồng xây dựng dở dang",
+              "esco_hint": "account for construction contracts (VAS 15)",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "VAT on Construction",
+              "label_vi": "Thuế GTGT xây dựng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hạch toán, khai thuế GTGT theo phương pháp tính trên xây dựng",
+              "esco_hint": "account for construction VAT",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "MISA / Construction ERP",
+              "label_vi": "Phần mềm kế toán XD",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "MISA SME, Fast Accounting, phần mềm kế toán xây dựng",
+              "esco_hint": "use construction accounting software",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel lập bảng theo dõi chi phí công trình",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "AutoCAD / BOQ Reading",
+              "label_vi": "Đọc bảng tiên lượng, dự toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc dự toán, bảng tiên lượng để đối chiếu chi phí",
+              "esco_hint": "read construction bills of quantities",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hồ sơ quyết toán sai bị cơ quan nhà nước từ chối",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Communication with Project Team",
+              "label_vi": "Phối hợp ban QLDA",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phối hợp ban QLDA, ban giám sát trong quyết toán",
+              "esco_hint": "coordinate with project management team",
+              "confidence": 0.92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán sản xuất",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-san-xuat",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 12
+          },
+          "skills": [
+            {
+              "label_en": "Manufacturing Accounting",
+              "label_vi": "Kế toán sản xuất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hạch toán kế toán cho toàn bộ hoạt động sản xuất",
+              "esco_hint": "perform manufacturing accounting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Production Cost Accounting",
+              "label_vi": "Kế toán chi phí sản xuất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tập hợp chi phí NVL, nhân công trực tiếp, chi phí SXC",
+              "esco_hint": "account for manufacturing costs",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Work-in-Process (WIP) Accounting",
+              "label_vi": "Hạch toán sản phẩm dở dang",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xác định, hạch toán sản phẩm dở dang cuối kỳ",
+              "esco_hint": "account for work in process",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Standard Costing",
+              "label_vi": "Chi phí định mức",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng và theo dõi chi phí định mức so thực tế",
+              "esco_hint": "apply standard costing",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "BOM & Production Order Accounting",
+              "label_vi": "Hạch toán lệnh sản xuất/BOM",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hạch toán theo lệnh sản xuất, đối chiếu BOM",
+              "esco_hint": "account for production orders",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Scrap & Waste Accounting",
+              "label_vi": "Hạch toán phế liệu, hao hụt",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Hạch toán phế phẩm, phế liệu thu hồi theo chuẩn mực",
+              "esco_hint": "account for scrap and waste",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "VAS 02 / Circular 200",
+              "label_vi": "VAS 02/Thông tư 200",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Áp dụng VAS 02 hàng tồn kho, Thông tư 200 hạch toán SX",
+              "esco_hint": "apply manufacturing accounting standards",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "ERP Manufacturing Module",
+              "label_vi": "ERP sản xuất",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "SAP CO/PP, Oracle Manufacturing, MISA ERP sản xuất",
+              "esco_hint": "use manufacturing ERP modules",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel lập bảng tính giá thành, phân tích chi phí",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Collaboration with Production",
+              "label_vi": "Phối hợp sản xuất",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối hợp chặt với QC, kỹ thuật, kho để thu thập dữ liệu",
+              "esco_hint": "collaborate with production team",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Giá thành sai ảnh hưởng định giá, lợi nhuận toàn DN",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Analytical Thinking",
+              "label_vi": "Tư duy phân tích chi phí",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích biến động chi phí sản xuất giữa các kỳ",
+              "esco_hint": "apply analytical thinking",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán dự án",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-du-an",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 12
+          },
+          "skills": [
+            {
+              "label_en": "Project Accounting",
+              "label_vi": "Kế toán dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hạch toán, theo dõi chi phí và doanh thu theo từng dự án",
+              "esco_hint": "perform project accounting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Project Cost Tracking",
+              "label_vi": "Theo dõi chi phí dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Theo dõi chi phí thực tế so ngân sách từng dự án",
+              "esco_hint": "track project costs versus budget",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Revenue Recognition by Project",
+              "label_vi": "Ghi nhận doanh thu theo dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Ghi nhận doanh thu đúng kỳ theo tiến độ hoàn thành dự án",
+              "esco_hint": "recognise project revenue",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Project Billing & Invoicing",
+              "label_vi": "Lập hoá đơn, thanh toán dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập và theo dõi hoá đơn thanh toán theo milestone dự án",
+              "esco_hint": "manage project billing",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Project Budget Management",
+              "label_vi": "Quản lý ngân sách dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập, theo dõi và báo cáo ngân sách dự án",
+              "esco_hint": "manage project budgets",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Inter-company / Multi-project Allocation",
+              "label_vi": "Phân bổ chi phí liên dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phân bổ chi phí chung cho nhiều dự án hợp lý",
+              "esco_hint": "allocate shared costs across projects",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "VAS 15 Construction Contract",
+              "label_vi": "VAS 15 hợp đồng xây dựng",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Biết VAS 15 áp dụng cho dự án dạng hợp đồng dài hạn",
+              "esco_hint": "apply VAS 15 for long-term contracts",
+              "confidence": 0.87,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "ERP Project Module",
+              "label_vi": "ERP module dự án",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "SAP PS, Oracle Projects, MISA dự án",
+              "esco_hint": "use project management ERP modules",
+              "confidence": 0.91,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel lập bảng theo dõi chi phí nhiều dự án",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Project Management Basic",
+              "label_vi": "Hiểu biết quản lý dự án",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Hiểu cơ bản vòng đời dự án, WBS, milestone",
+              "esco_hint": "basic project management knowledge",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Cross-functional Coordination",
+              "label_vi": "Phối hợp liên bộ phận dự án",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phối hợp PM, sale, kỹ thuật, mua hàng theo dõi chi phí",
+              "esco_hint": "coordinate with project teams",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Báo cáo chi phí dự án sai gây rủi ro hợp đồng",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.97
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán xuất nhập khẩu",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-xuat-nhap-khau",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 12
+          },
+          "skills": [
+            {
+              "label_en": "Import/Export Accounting",
+              "label_vi": "Kế toán xuất nhập khẩu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hạch toán toàn bộ nghiệp vụ mua bán hàng hóa XNK",
+              "esco_hint": "perform import/export accounting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Import Duty & VAT",
+              "label_vi": "Thuế nhập khẩu và GTGT hàng nhập",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hạch toán, khai thuế nhập khẩu, GTGT hàng nhập khẩu",
+              "esco_hint": "account for import duties and VAT",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Export VAT Refund",
+              "label_vi": "Hoàn thuế GTGT xuất khẩu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập hồ sơ hoàn thuế GTGT hàng xuất khẩu theo Luật Thuế",
+              "esco_hint": "apply for VAT refund on exports",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Customs Declaration Documents",
+              "label_vi": "Hồ sơ hải quan",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu chứng từ hải quan: tờ khai, C/O, packing list, invoice",
+              "esco_hint": "understand customs documents",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Customs Law & Tariff",
+              "label_vi": "Luật Hải quan, biểu thuế XNK",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm Luật Hải quan 2014, biểu thuế XNK, mã HS code",
+              "esco_hint": "apply customs law and tariff schedules",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Foreign Currency Accounting",
+              "label_vi": "Kế toán ngoại tệ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hạch toán giao dịch ngoại tệ, chênh lệch tỷ giá",
+              "esco_hint": "account for foreign currency transactions",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Incoterms Knowledge",
+              "label_vi": "Am hiểu Incoterms",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu Incoterms 2020 để hạch toán đúng điểm giao hàng",
+              "esco_hint": "apply Incoterms 2020",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "eCus / VNACCS Customs Software",
+              "label_vi": "Phần mềm hải quan eCus/VNACCS",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Biết phần mềm khai báo hải quan eCus, VNACCS là lợi thế",
+              "esco_hint": "use Vietnamese customs declaration software",
+              "confidence": 0.88,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "MISA / ERP",
+              "label_vi": "Phần mềm kế toán",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "MISA, Fast hoặc ERP tích hợp XNK",
+              "esco_hint": "use accounting ERP software",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel theo dõi lô hàng, đối chiếu chi phí XNK",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "English for Trade Documents",
+              "label_vi": "Tiếng Anh chứng từ thương mại",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đọc LC, Invoice, Packing List, BL tiếng Anh",
+              "esco_hint": "read English trade documents",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sai hồ sơ hải quan gây chậm thông quan, phạt vi phạm",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.97
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán ngân hàng",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-ngan-hang",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 12
+          },
+          "skills": [
+            {
+              "label_en": "Bank Accounting Operations",
+              "label_vi": "Kế toán nghiệp vụ ngân hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hạch toán các nghiệp vụ ngân hàng: tiền gửi, cho vay, thanh toán",
+              "esco_hint": "perform bank accounting operations",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Banking Core System",
+              "label_vi": "Hệ thống core banking",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vận hành core banking (T24, Finacle, Flexcube, BankPlus)",
+              "esco_hint": "use core banking systems",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "State Bank of Vietnam Regulations",
+              "label_vi": "Quy định Ngân hàng Nhà nước",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm vững quy định NHNN về kế toán ngân hàng, tỷ lệ an toàn",
+              "esco_hint": "apply State Bank of Vietnam regulations",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Vietnam Accounting Standards for Banks",
+              "label_vi": "Chế độ kế toán TCTD",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Áp dụng Thông tư 22/2017/TT-NHNN chế độ kế toán TCTD",
+              "esco_hint": "apply bank accounting regulations",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Loan & Credit Accounting",
+              "label_vi": "Kế toán tín dụng, cho vay",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hạch toán giải ngân, thu nợ, dự phòng rủi ro tín dụng",
+              "esco_hint": "account for loans and credit",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Treasury Operations Accounting",
+              "label_vi": "Kế toán nghiệp vụ kinh doanh vốn",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Hạch toán giao dịch ngoại tệ, trái phiếu, liên ngân hàng",
+              "esco_hint": "account for treasury operations",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "IFRS 9 / VAS Basic",
+              "label_vi": "IFRS 9/VAS ngân hàng",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Biết IFRS 9 phân loại công cụ tài chính, dự phòng",
+              "esco_hint": "knowledge of IFRS 9 for banks",
+              "confidence": 0.85
+            },
+            {
+              "label_en": "Regulatory Reporting",
+              "label_vi": "Báo cáo NHNN, BCTC ngân hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập báo cáo kế toán nộp NHNN đúng hạn",
+              "esco_hint": "prepare regulatory reports for State Bank",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel đối chiếu, phân tích số liệu ngân hàng",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nghiệp vụ ngân hàng đòi hỏi độ chính xác cực cao",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "English Financial",
+              "label_vi": "Tiếng Anh ngân hàng",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc tài liệu SWIFT, IBAN, giao dịch quốc tế tiếng Anh",
+              "esco_hint": "read English banking documents",
+              "confidence": 0.86
+            },
+            {
+              "label_en": "Integrity",
+              "label_vi": "Trung thực, liêm khiết",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tiếp xúc tài sản lớn đòi hỏi đạo đức nghề nghiệp cao",
+              "esco_hint": "demonstrate professional integrity",
+              "confidence": 0.98
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Thủ quỹ",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-thu-quy",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 11
+          },
+          "skills": [
+            {
+              "label_en": "Cash Management (Cashier)",
+              "label_vi": "Quản lý quỹ tiền mặt",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý thu chi tiền mặt hàng ngày theo đúng quy trình",
+              "esco_hint": "manage petty cash fund",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Cash Receipt & Disbursement",
+              "label_vi": "Thu chi tiền mặt",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện thu tiền, chi tiền mặt theo phiếu hợp lệ",
+              "esco_hint": "process cash receipts and disbursements",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Daily Cash Count & Reconciliation",
+              "label_vi": "Kiểm đếm, đối soát quỹ cuối ngày",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm đếm quỹ cuối ngày, đối chiếu với sổ quỹ",
+              "esco_hint": "reconcile cash at end of day",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Cash Voucher Processing",
+              "label_vi": "Xử lý phiếu thu, phiếu chi",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm tra tính hợp lệ phiếu thu chi trước khi thực hiện",
+              "esco_hint": "process cash vouchers",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Counterfeit Currency Detection",
+              "label_vi": "Nhận diện tiền giả",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng máy soi tiền, nhận biết tiền giả",
+              "esco_hint": "detect counterfeit currency",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Cash Book Maintenance",
+              "label_vi": "Ghi sổ quỹ tiền mặt",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Ghi chép sổ quỹ tiền mặt chính xác, đầy đủ",
+              "esco_hint": "maintain cash book records",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "MISA / Accounting Software",
+              "label_vi": "Phần mềm kế toán",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nhập phiếu thu chi vào MISA hoặc phần mềm kế toán",
+              "esco_hint": "use accounting software",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Excel lập bảng theo dõi quỹ, báo cáo",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Integrity & Honesty",
+              "label_vi": "Trung thực, liêm khiết",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tiếp xúc tiền mặt đòi hỏi đạo đức nghề nghiệp tuyệt đối",
+              "esco_hint": "demonstrate professional integrity",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, cẩn thận",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đếm tiền, ghi sổ đòi hỏi không sai một đồng",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Physical Security Awareness",
+              "label_vi": "Ý thức an ninh, bảo mật",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Bảo đảm an ninh kho quỹ, không để tiền thất thoát",
+              "esco_hint": "maintain cash security",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kế toán khác",
+      "nghe": "Kế toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ke-toan-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "General Accounting Skills",
+              "label_vi": "Kỹ năng kế toán tổng hợp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện nghiệp vụ kế toán theo chuyên môn cụ thể",
+              "esco_hint": "perform accounting tasks",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "VAS Application",
+              "label_vi": "Áp dụng VAS",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Áp dụng các VAS liên quan trong hạch toán",
+              "esco_hint": "apply Vietnamese accounting standards",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Tax Compliance Basic",
+              "label_vi": "Tuân thủ thuế cơ bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Kê khai, nộp thuế đúng hạn theo quy định",
+              "esco_hint": "comply with tax obligations",
+              "confidence": 0.92,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Financial Reporting",
+              "label_vi": "Lập báo cáo kế toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Lập báo cáo kế toán theo yêu cầu",
+              "esco_hint": "prepare accounting reports",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Accounting Software",
+              "label_vi": "Phần mềm kế toán",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng MISA, Fast hoặc phần mềm kế toán tương đương",
+              "esco_hint": "use accounting software",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel xử lý dữ liệu, lập báo cáo",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kế toán đòi hỏi độ chính xác tuyệt đối",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Integrity",
+              "label_vi": "Trung thực",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đạo đức nghề nghiệp kế toán",
+              "esco_hint": "demonstrate professional integrity",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Accounting Degree",
+              "label_vi": "Bằng kế toán",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Tốt nghiệp ngành Kế toán hoặc liên quan",
+              "esco_hint": "hold accounting qualification",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Communication",
+              "label_vi": "Giao tiếp, phối hợp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phối hợp với các bộ phận thu thập chứng từ",
+              "esco_hint": "communicate and coordinate",
+              "confidence": 0.89
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kiểm toán viên",
+      "nghe": "Kiểm toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-kiem-toan-vien",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 14
+          },
+          "skills": [
+            {
+              "label_en": "Audit Execution",
+              "label_vi": "Thực hiện kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện kiểm toán BCTC theo ISA/VSA và kế hoạch kiểm toán",
+              "esco_hint": "execute financial statement audits",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Standards on Auditing (VSA)",
+              "label_vi": "Chuẩn mực kiểm toán Việt Nam VSA",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm vững và áp dụng VSA trong kiểm toán BCTC",
+              "esco_hint": "apply Vietnamese Standards on Auditing",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Audit Sampling & Evidence",
+              "label_vi": "Thu thập bằng chứng kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế và thực hiện lấy mẫu, thu thập bằng chứng phù hợp",
+              "esco_hint": "collect audit evidence and apply sampling",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Risk Assessment & Materiality",
+              "label_vi": "Đánh giá rủi ro và trọng yếu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xác định rủi ro kiểm toán, mức độ trọng yếu kế hoạch",
+              "esco_hint": "assess audit risk and materiality",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Internal Controls Testing",
+              "label_vi": "Kiểm tra kiểm soát nội bộ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đánh giá thiết kế và hoạt động kiểm soát nội bộ của khách hàng",
+              "esco_hint": "test internal controls",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Substantive Testing",
+              "label_vi": "Kiểm tra cơ bản số dư, nghiệp vụ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện kiểm tra cơ bản số dư, nghiệp vụ trọng yếu",
+              "esco_hint": "perform substantive audit testing",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Working Paper Documentation",
+              "label_vi": "Lập giấy tờ làm việc kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập hồ sơ kiểm toán đầy đủ, rõ ràng theo chuẩn mực",
+              "esco_hint": "document audit working papers",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "VAS Knowledge",
+              "label_vi": "Am hiểu VAS của khách hàng",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu VAS để phát hiện sai sót trọng yếu trong BCTC",
+              "esco_hint": "knowledge of Vietnamese accounting standards",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel phân tích dữ liệu kiểm toán, lập CPA-style workpapers",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Audit Software (IDEA/ACL)",
+              "label_vi": "Phần mềm kiểm toán IDEA/ACL",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Biết IDEA, ACL, CaseWare phân tích dữ liệu kiểm toán",
+              "esco_hint": "use audit data analytics software",
+              "confidence": 0.87
+            },
+            {
+              "label_en": "CPA / ACCA (Pursuing)",
+              "label_vi": "Chứng chỉ CPA/ACCA",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Đang theo đuổi hoặc đã có CPA VN, ACCA, CPA Aus",
+              "esco_hint": "pursue CPA or ACCA qualification",
+              "confidence": 0.9,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "English Audit Reports",
+              "label_vi": "Tiếng Anh kiểm toán",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc, viết báo cáo kiểm toán tiếng Anh (công ty Big4/FDI)",
+              "esco_hint": "use English for audit reporting",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Professional Scepticism",
+              "label_vi": "Hoài nghi nghề nghiệp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì thái độ hoài nghi chuyên nghiệp trong kiểm toán",
+              "esco_hint": "apply professional scepticism",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Analytical Thinking",
+              "label_vi": "Tư duy phân tích",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích biến động số liệu, phát hiện bất thường",
+              "esco_hint": "apply analytical thinking",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kiểm toán nội bộ",
+      "nghe": "Kiểm toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-kiem-toan-noi-bo",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 14
+          },
+          "skills": [
+            {
+              "label_en": "Internal Audit",
+              "label_vi": "Kiểm toán nội bộ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập kế hoạch và thực hiện kiểm toán nội bộ các bộ phận, quy trình",
+              "esco_hint": "conduct internal audits",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Internal Audit Standards (IIA)",
+              "label_vi": "Chuẩn mực kiểm toán nội bộ IIA/VSA",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Áp dụng chuẩn mực IIA hoặc VSA kiểm toán nội bộ",
+              "esco_hint": "apply IIA internal audit standards",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Risk-Based Audit Planning",
+              "label_vi": "Lập kế hoạch kiểm toán dựa trên rủi ro",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xác định rủi ro, ưu tiên nội dung kiểm toán nội bộ",
+              "esco_hint": "plan risk-based internal audits",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Internal Controls Assessment",
+              "label_vi": "Đánh giá kiểm soát nội bộ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đánh giá hiệu quả kiểm soát nội bộ tài chính, hoạt động",
+              "esco_hint": "assess internal control effectiveness",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Process & Compliance Audit",
+              "label_vi": "Kiểm toán quy trình, tuân thủ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm tra tuân thủ quy trình nội bộ, quy định pháp luật",
+              "esco_hint": "audit processes and compliance",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Fraud Detection",
+              "label_vi": "Phát hiện gian lận",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nhận diện dấu hiệu, điều tra gian lận nội bộ",
+              "esco_hint": "detect and investigate fraud",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Internal Audit Report Writing",
+              "label_vi": "Viết báo cáo kiểm toán nội bộ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập báo cáo kiểm toán nội bộ rõ ràng, đề xuất cải thiện",
+              "esco_hint": "write internal audit reports",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Follow-up on Audit Recommendations",
+              "label_vi": "Theo dõi thực hiện kiến nghị",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Theo dõi việc thực hiện kiến nghị sau kiểm toán",
+              "esco_hint": "follow up on audit recommendations",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Audit Committee Reporting",
+              "label_vi": "Báo cáo Ủy ban kiểm toán/BGĐ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Báo cáo kết quả kiểm toán nội bộ lên BGĐ/Ủy ban kiểm toán",
+              "esco_hint": "report to audit committee",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Microsoft Excel / Audit Software",
+              "label_vi": "Excel/phần mềm kiểm toán",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel, IDEA, ACL phân tích dữ liệu kiểm toán nội bộ",
+              "esco_hint": "use audit software",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "CIA / ACCA (Preferred)",
+              "label_vi": "CIA/ACCA là lợi thế",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "CIA, ACCA, CPA là lợi thế lớn",
+              "esco_hint": "hold CIA or equivalent certification",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Independence & Objectivity",
+              "label_vi": "Độc lập, khách quan",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì độc lập và khách quan trong kiểm toán nội bộ",
+              "esco_hint": "demonstrate auditor independence",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Communication & Influence",
+              "label_vi": "Giao tiếp, thuyết phục",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thuyết phục BGĐ, bộ phận được kiểm toán cải thiện",
+              "esco_hint": "communicate audit findings persuasively",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "English",
+              "label_vi": "Tiếng Anh",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Tiếng Anh báo cáo nội bộ cho tập đoàn nước ngoài",
+              "esco_hint": "use English for internal reporting",
+              "confidence": 0.86
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kiểm toán độc lập",
+      "nghe": "Kiểm toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-kiem-toan-doc-lap",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 14
+          },
+          "skills": [
+            {
+              "label_en": "Independent Audit",
+              "label_vi": "Kiểm toán độc lập BCTC",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện kiểm toán BCTC độc lập theo VSA/ISA",
+              "esco_hint": "conduct independent financial statement audits",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "VSA Full Application",
+              "label_vi": "Áp dụng đầy đủ VSA",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm vững và áp dụng đầy đủ hệ thống VSA Việt Nam",
+              "esco_hint": "apply full Vietnamese Standards on Auditing",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Audit Report Issuance",
+              "label_vi": "Phát hành báo cáo kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập báo cáo kiểm toán: ý kiến chấp nhận, ngoại trừ, từ chối",
+              "esco_hint": "issue audit reports with appropriate opinion",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Audit Risk Assessment",
+              "label_vi": "Đánh giá rủi ro kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đánh giá rủi ro kiểm toán tổng thể và rủi ro trọng yếu",
+              "esco_hint": "assess overall and specific audit risks",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Audit Planning",
+              "label_vi": "Lập kế hoạch kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập chiến lược, kế hoạch kiểm toán chi tiết",
+              "esco_hint": "plan audit engagement",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Going Concern Assessment",
+              "label_vi": "Đánh giá hoạt động liên tục",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đánh giá khả năng hoạt động liên tục của đơn vị",
+              "esco_hint": "assess going concern",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "VAS / IFRS Knowledge",
+              "label_vi": "Am hiểu VAS, IFRS",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu sâu VAS để phát hiện sai sót; biết IFRS là lợi thế",
+              "esco_hint": "knowledge of VAS and IFRS",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Working Paper Standards",
+              "label_vi": "Giấy tờ làm việc chuẩn mực",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập hồ sơ kiểm toán đáp ứng chuẩn mực chất lượng",
+              "esco_hint": "maintain audit working paper standards",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "CPA Vietnam Certificate",
+              "label_vi": "Chứng chỉ CPA Việt Nam",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Có hoặc đang thi chứng chỉ CPA Việt Nam theo quy định",
+              "esco_hint": "hold Vietnamese CPA certificate",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Audit Software (CaseWare/IDEA)",
+              "label_vi": "Phần mềm kiểm toán",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "CaseWare, IDEA, ACL hỗ trợ kiểm toán chuyên nghiệp",
+              "esco_hint": "use professional audit software",
+              "confidence": 0.87
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel phân tích dữ liệu, analytical review",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "English Audit",
+              "label_vi": "Tiếng Anh kiểm toán",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tiếng Anh đọc tài liệu, viết báo cáo kiểm toán FDI",
+              "esco_hint": "use English in audit engagements",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Professional Ethics",
+              "label_vi": "Đạo đức nghề nghiệp kiểm toán",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuân thủ tuyệt đối đạo đức nghề nghiệp kiểm toán độc lập",
+              "esco_hint": "demonstrate professional ethics",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Analytical Thinking",
+              "label_vi": "Tư duy phân tích sắc bén",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân tích BCTC phát hiện bất thường, rủi ro sai sót",
+              "esco_hint": "apply analytical thinking",
+              "confidence": 0.97
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Trưởng nhóm kiểm toán",
+      "nghe": "Kiểm toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-truong-nhom-kiem-toan",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 13
+          },
+          "skills": [
+            {
+              "label_en": "Audit Engagement Management",
+              "label_vi": "Quản lý hợp đồng kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý toàn bộ hợp đồng kiểm toán: kế hoạch, nhân sự, tiến độ",
+              "esco_hint": "manage audit engagements",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Audit Team Leadership",
+              "label_vi": "Lãnh đạo nhóm kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân công, hướng dẫn, kiểm soát chất lượng công việc nhóm",
+              "esco_hint": "lead audit team",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Audit Quality Control",
+              "label_vi": "Kiểm soát chất lượng kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Review giấy tờ làm việc, đảm bảo chất lượng kiểm toán",
+              "esco_hint": "control audit quality",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "VSA / ISA Advanced",
+              "label_vi": "VSA/ISA nâng cao",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu sâu VSA và ISA để xử lý vấn đề phức tạp",
+              "esco_hint": "apply advanced VSA and ISA",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Technical Review",
+              "label_vi": "Review kỹ thuật kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Review hồ sơ nhóm, xử lý vấn đề kỹ thuật phức tạp",
+              "esco_hint": "technically review audit work",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Client Management",
+              "label_vi": "Quản lý quan hệ khách hàng kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Duy trì quan hệ, giải quyết phát sinh với khách hàng",
+              "esco_hint": "manage audit client relationships",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Audit Report Review",
+              "label_vi": "Review và ký báo cáo kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Review dự thảo báo cáo kiểm toán trước khi phát hành",
+              "esco_hint": "review and approve audit reports",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "CPA Vietnam / ACCA",
+              "label_vi": "CPA VN / ACCA",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Có CPA Việt Nam hoặc ACCA theo yêu cầu Luật Kiểm toán",
+              "esco_hint": "hold professional audit qualification",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Staff Training & Development",
+              "label_vi": "Đào tạo nhân viên kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hướng dẫn, đào tạo kiểm toán viên cấp dưới",
+              "esco_hint": "train and develop audit staff",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "English",
+              "label_vi": "Tiếng Anh",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tiếng Anh giao tiếp với khách FDI, đọc tài liệu quốc tế",
+              "esco_hint": "communicate in English",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Microsoft Excel / Audit Tools",
+              "label_vi": "Excel/phần mềm kiểm toán",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel nâng cao, CaseWare, IDEA phân tích kiểm toán",
+              "esco_hint": "use audit tools and software",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Leadership & Mentoring",
+              "label_vi": "Lãnh đạo, kèm cặp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lãnh đạo, tạo động lực và phát triển nhóm kiểm toán",
+              "esco_hint": "lead and mentor audit team",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Problem Solving Complex Issues",
+              "label_vi": "Giải quyết vấn đề phức tạp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xử lý vấn đề kỹ thuật phức tạp, tranh luận với khách hàng",
+              "esco_hint": "solve complex audit issues",
+              "confidence": 0.96
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Kiểm toán khác",
+      "nghe": "Kiểm toán",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-kiem-toan-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Audit Technical Knowledge",
+              "label_vi": "Kiến thức kỹ thuật kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm vững kỹ thuật kiểm toán theo chuyên môn cụ thể",
+              "esco_hint": "apply audit technical knowledge",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "VSA / ISA Knowledge",
+              "label_vi": "VSA/ISA",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu VSA, ISA áp dụng trong kiểm toán",
+              "esco_hint": "knowledge of auditing standards",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "VAS Knowledge",
+              "label_vi": "Am hiểu VAS",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu VAS đủ để thực hiện kiểm toán BCTC",
+              "esco_hint": "knowledge of Vietnamese accounting standards",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Audit Working Papers",
+              "label_vi": "Giấy tờ làm việc kiểm toán",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Lập giấy tờ làm việc kiểm toán đầy đủ",
+              "esco_hint": "maintain audit working papers",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Excel phân tích dữ liệu kiểm toán",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Professional Ethics",
+              "label_vi": "Đạo đức nghề nghiệp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Độc lập, khách quan, tuân thủ đạo đức nghề nghiệp",
+              "esco_hint": "demonstrate professional ethics",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Analytical Thinking",
+              "label_vi": "Tư duy phân tích",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích, phát hiện bất thường trong số liệu",
+              "esco_hint": "apply analytical thinking",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Communication",
+              "label_vi": "Giao tiếp khách hàng kiểm toán",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp, thu thập thông tin từ khách hàng kiểm toán",
+              "esco_hint": "communicate with audit clients",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "CPA / ACCA (Pursuing)",
+              "label_vi": "CPA/ACCA đang theo đuổi",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Đang hoặc có kế hoạch thi CPA VN, ACCA",
+              "esco_hint": "pursue professional audit qualification",
+              "confidence": 0.87,
+              "iviec_flag": "VN_REGULATION"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên viên thuế",
+      "nghe": "Thuế",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-vien-thue",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 14
+          },
+          "skills": [
+            {
+              "label_en": "Tax Advisory & Planning",
+              "label_vi": "Tư vấn và lập kế hoạch thuế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn tối ưu hóa thuế hợp pháp cho doanh nghiệp",
+              "esco_hint": "provide tax advisory and planning",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "VAT Advisory",
+              "label_vi": "Tư vấn thuế GTGT",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn quy định thuế GTGT phức tạp, tranh chấp thuế",
+              "esco_hint": "advise on VAT matters",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "CIT Advisory",
+              "label_vi": "Tư vấn thuế TNDN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn ưu đãi thuế TNDN, khấu trừ, quyết toán",
+              "esco_hint": "advise on corporate income tax",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "PIT Advisory",
+              "label_vi": "Tư vấn thuế TNCN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn kế hoạch thuế TNCN cho cá nhân, expatriate",
+              "esco_hint": "advise on personal income tax",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Transfer Pricing",
+              "label_vi": "Giá chuyển nhượng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn quy định giao dịch liên kết theo Nghị định 132/2020",
+              "esco_hint": "advise on transfer pricing",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Tax Audit Defense",
+              "label_vi": "Hỗ trợ thanh kiểm tra thuế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Chuẩn bị hồ sơ, giải trình, đàm phán với cơ quan thuế",
+              "esco_hint": "defend against tax authority audits",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Tax Due Diligence",
+              "label_vi": "Kiểm tra thuế trong M&A",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện tax due diligence trong giao dịch M&A",
+              "esco_hint": "conduct tax due diligence",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Full Vietnamese Tax Law",
+              "label_vi": "Toàn bộ Luật thuế Việt Nam",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm vững Luật GTGT, TNDN, TNCN, XNK, TTĐB, tài nguyên",
+              "esco_hint": "apply full Vietnamese tax legislation",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "HTKK / eTax Portal",
+              "label_vi": "HTKK, cổng eTax",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thành thạo HTKK, iHTKK, cổng eTax khai thuế",
+              "esco_hint": "use Vietnamese tax filing systems",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel phân tích tính toán thuế phức tạp",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Tax Accounting Software",
+              "label_vi": "Phần mềm kế toán thuế",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "MISA, Fast tích hợp khai thuế",
+              "esco_hint": "use tax accounting software",
+              "confidence": 0.91,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "CPA Vietnam / Tax Practice Certificate",
+              "label_vi": "Chứng chỉ hành nghề thuế",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Có chứng chỉ hành nghề thuế theo Luật Quản lý thuế",
+              "esco_hint": "hold tax practice certificate",
+              "confidence": 0.9,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "English Tax",
+              "label_vi": "Tiếng Anh thuế",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Tiếng Anh tư vấn thuế cho công ty FDI, tập đoàn đa quốc gia",
+              "esco_hint": "advise on tax matters in English",
+              "confidence": 0.87
+            },
+            {
+              "label_en": "Analytical & Problem Solving",
+              "label_vi": "Phân tích, giải quyết vấn đề thuế",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân tích tình huống thuế phức tạp, đưa ra giải pháp tối ưu",
+              "esco_hint": "solve complex tax problems",
+              "confidence": 0.96
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Thuế khác",
+      "nghe": "Thuế",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-thue-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Vietnamese Tax Law Knowledge",
+              "label_vi": "Am hiểu Luật thuế Việt Nam",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm vững các sắc thuế chính: GTGT, TNDN, TNCN",
+              "esco_hint": "knowledge of Vietnamese tax laws",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Tax Declaration & Filing",
+              "label_vi": "Khai báo, nộp hồ sơ thuế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập, kiểm tra và nộp tờ khai thuế đúng hạn",
+              "esco_hint": "file tax declarations",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Tax Accounting",
+              "label_vi": "Hạch toán thuế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Hạch toán các nghiệp vụ thuế trong sổ kế toán",
+              "esco_hint": "account for tax transactions",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "HTKK / eTax",
+              "label_vi": "Phần mềm HTKK/eTax",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng HTKK, iHTKK, cổng eTax",
+              "esco_hint": "use tax filing software",
+              "confidence": 0.92,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Tax Audit Support",
+              "label_vi": "Hỗ trợ kiểm tra thuế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Chuẩn bị hồ sơ, giải trình khi cơ quan thuế kiểm tra",
+              "esco_hint": "support tax authority audits",
+              "confidence": 0.91,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Excel tính toán, phân tích nghĩa vụ thuế",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kê khai thuế sai dẫn đến bị phạt vi phạm hành chính",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Analytical Thinking",
+              "label_vi": "Tư duy phân tích",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phân tích quy định thuế áp dụng cho từng nghiệp vụ",
+              "esco_hint": "apply analytical thinking",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Accounting Degree",
+              "label_vi": "Bằng kế toán/tài chính",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Tốt nghiệp ngành Kế toán, Tài chính, Kiểm toán",
+              "esco_hint": "hold accounting or finance qualification",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Kế toán/Kiểm toán/Thuế khác",
+      "nghe": "Kế toán/Kiểm toán/Thuế khác",
+      "nhom_nghe": "Kế toán/Kiểm toán/Thuế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-ke-toan-kiem-toan-thue-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 11
+          },
+          "skills": [
+            {
+              "label_en": "Accounting/Auditing/Tax Professional Skills",
+              "label_vi": "Kỹ năng chuyên môn KT/KToán/Thuế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện nghiệp vụ theo chuyên môn cụ thể trong ngành KT/KToán/Thuế",
+              "esco_hint": "apply professional accounting/auditing/tax skills",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "VAS / VSA / Tax Law",
+              "label_vi": "VAS / VSA / Luật thuế",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm vững chuẩn mực, quy định áp dụng cho chuyên môn",
+              "esco_hint": "apply relevant accounting and tax standards",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Financial Reporting & Analysis",
+              "label_vi": "Báo cáo và phân tích tài chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Lập, phân tích báo cáo tài chính theo yêu cầu",
+              "esco_hint": "prepare and analyse financial reports",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Tax Compliance Basic",
+              "label_vi": "Tuân thủ thuế cơ bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Kê khai, nộp thuế đúng theo quy định hiện hành",
+              "esco_hint": "comply with tax regulations",
+              "confidence": 0.91,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Accounting Software",
+              "label_vi": "Phần mềm kế toán",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "MISA, Fast hoặc phần mềm kế toán tương đương",
+              "esco_hint": "use accounting software",
+              "confidence": 0.92,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Microsoft Excel",
+              "label_vi": "",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel xử lý dữ liệu tài chính",
+              "esco_hint": "use spreadsheet software",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Attention to Detail",
+              "label_vi": "Tỉ mỉ, chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Ngành kế toán/kiểm toán/thuế yêu cầu độ chính xác cao",
+              "esco_hint": "pay attention to detail",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Integrity & Professional Ethics",
+              "label_vi": "Trung thực, đạo đức nghề nghiệp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đạo đức nghề nghiệp là yêu cầu cốt lõi trong ngành",
+              "esco_hint": "demonstrate professional integrity",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Analytical Thinking",
+              "label_vi": "Tư duy phân tích",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phân tích số liệu tài chính, thuế",
+              "esco_hint": "apply analytical thinking",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Accounting/Finance Degree",
+              "label_vi": "Bằng kế toán/tài chính",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Tốt nghiệp ngành Kế toán, Kiểm toán, Tài chính",
+              "esco_hint": "hold accounting or finance degree",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "English Basic",
+              "label_vi": "Tiếng Anh",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Đọc tài liệu kỹ thuật tài chính cơ bản tiếng Anh",
+              "esco_hint": "read basic English financial documents",
+              "confidence": 0.8
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
