@@ -231,6 +231,26 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
   .shell{flex-direction:column}
   .sector-panel,.nghe-panel{width:100%;height:auto;border-right:none;border-bottom:1px solid var(--border)}
 }
+
+body.light{
+  --bg:#ffffff;
+  --bg2:#f5f5f5;
+  --bg3:#fafafa;
+  --bg4:#ffffff;
+  --border:#e5e5e5;
+  --border2:#dcdcdc;
+  --text:#111;
+  --text2:#444;
+  --text3:#888;
+  --accent:#111;
+  --accent-dim:rgba(0,0,0,0.08);
+  --accent-dim2:rgba(0,0,0,0.04);
+  --active-bg:#111;
+  --active-text:#fff;
+  --tag-bg:#ffffff;
+  --tag-border:#e5e5e5;
+}
+
 </style>
 </head>
 <body>
@@ -241,6 +261,12 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
     <h1>Skill Taxonomy</h1>
     <span>Vietnam Job Market &middot; iViec Research</span>
   </div>
+  
+<div style="display:flex;align-items:center;gap:12px">
+  <span style="font-size:11px;color:#888;font-family:JetBrains Mono">ver 1.0 · latest update: 04/03/2026</span>
+  <button id="themeToggle" style="border:1px solid var(--border);background:var(--bg2);color:var(--text);padding:4px 10px;border-radius:5px;cursor:pointer;font-size:11px">🌙/☀</button>
+</div>
+
   <div class="topbar-stats">
     <div class="tstat"><div class="n" id="sFiles">0</div><div class="l">Ng&agrave;nh</div></div>
     <div class="tstat"><div class="n" id="sPos">0</div><div class="l">V&#7883; tr&iacute;</div></div>
@@ -650,5 +676,16 @@ function rerender() {
 
 loadAll();
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  var btn=document.getElementById("themeToggle");
+  if(!btn) return;
+  btn.onclick=function(){
+    document.body.classList.toggle("light");
+  };
+});
+</script>
+
 </body>
 </html>
