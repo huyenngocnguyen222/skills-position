@@ -1,0 +1,1242 @@
+{
+  "taxonomy_metadata": {
+    "sector": "Biên phiên dịch",
+    "sector_en": "Translation & Interpretation",
+    "version": "v1",
+    "total_positions": 11,
+    "total_skills": 97,
+    "avg_skills_per_position": 8.8,
+    "sub_categories": {
+      "Nghề Biên phiên dịch": {
+        "positions": 11,
+        "skills": 97
+      }
+    },
+    "skill_type_distribution": {
+      "language": 11,
+      "technical": 23,
+      "certification": 9,
+      "domain": 41,
+      "tool": 5,
+      "soft": 8
+    },
+    "requirement_distribution": {
+      "required": 89,
+      "preferred": 8
+    },
+    "iviec_flags": {
+      "VN_TOOL": 5,
+      "VN_DOMAIN": 22
+    },
+    "data_sources": [
+      "topcv.vn",
+      "vietnamworks.com"
+    ],
+    "extraction_method": "structured_prompt_5jd_per_position",
+    "rows_covered": "1134–1144",
+    "notes": [
+      "Covers rows 1134–1144 (11 positions, 1 sub-category)",
+      "VN_DOMAIN — highest density in this sector (reflects Vietnamese-specific translation context): Tiếng Việt viết chuẩn là kỹ năng cốt lõi bắt buộc xuyên suốt mọi vị trí, văn hóa kinh doanh Việt-Trung (nhà máy FDI Trung Quốc tại VN), văn hóa sản xuất Nhật-Hàn tại VN (Kaizen/5S/Samsung/LG/Hyundai), bối cảnh quan hệ Việt-Nga (dầu khí/quốc phòng), bối cảnh Pháp ngữ Việt-Pháp (OIF), thị trường dịch thuật VN và mạng lưới dịch thuật viên VN, tiếng Việt làm ngôn ngữ trung gian trong dự án đa ngôn ngữ",
+      "VN_TOOL: SDL Trados Studio, memoQ, OmegaT, Phrase TMS (CAT tools chuyên nghiệp), GMDSS (từ sector hàng hải — không áp dụng sector này)",
+      "VN_CERTIFICATION: IELTS/TOEIC (Anh), HSK 5/6 (Trung), JLPT N2/N1 (Nhật), TOPIK Level 4/5/6 (Hàn), ТРКИ B2/C1 (Nga), DELE B2/C1 (TBN), Goethe C1/C2 / TestDaF TDN4/5 (Đức), DALF C1/C2 (Pháp) — tất cả là lợi thế/ưu tiên, không bắt buộc bởi pháp luật VN",
+      "Sector unique: 'Language' skill type unusually high (xuyên suốt mọi vị trí là kỹ năng ngôn ngữ cốt lõi); Vietnamese writing quality (Tiếng Việt chuẩn trong đầu ra bản dịch) flagged as VN_DOMAIN across all positions — reflects that target-language quality is as critical as source-language comprehension; Trung/Nhật/Hàn positions skewed toward manufacturing/FDI context reflecting dominant demand in Vietnamese labour market; Tư vấn dịch thuật position includes translator network management as a unique skill reflecting fragmented freelance market in Vietnam"
+    ]
+  },
+  "positions": [
+    {
+      "vi_tri": "Biên phiên dịch tiếng Anh",
+      "nghe": "Nghề Biên phiên dịch",
+      "nhom_nghe": "Biên phiên dịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bien-phien-dich-tieng-anh",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "English-Vietnamese Translation",
+              "label_vi": "Dịch thuật Anh-Việt, Việt-Anh",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dịch tài liệu kỹ thuật, pháp lý, kinh doanh, y tế hai chiều Anh-Việt chính xác",
+              "esco_hint": "translate documents between English and Vietnamese accurately",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "English Consecutive & Simultaneous Interpretation",
+              "label_vi": "Phiên dịch liên tiếp và đồng thời tiếng Anh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phiên dịch hội nghị, đàm phán, họp doanh nghiệp liên tiếp và đồng thời tiếng Anh",
+              "esco_hint": "provide consecutive and simultaneous interpretation in English",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "English Proficiency IELTS/TOEIC",
+              "label_vi": "Trình độ tiếng Anh IELTS/TOEIC",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "IELTS 7.0+ hoặc TOEIC 850+ hoặc tương đương là lợi thế cho biên phiên dịch Anh",
+              "esco_hint": "hold IELTS 7.0+ or TOEIC 850+ for English translator roles",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Specialised Domain Knowledge Translation",
+              "label_vi": "Kiến thức chuyên ngành dịch thuật",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu thuật ngữ chuyên ngành: pháp lý, kỹ thuật, y tế, tài chính, CNTT để dịch chính xác",
+              "esco_hint": "knowledge of specialist terminology in legal, technical, medical or business fields",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Translation Memory & CAT Tools",
+              "label_vi": "Phần mềm CAT, bộ nhớ dịch thuật",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng SDL Trados, memoQ, OmegaT hỗ trợ dịch thuật chuyên nghiệp và nhất quán",
+              "esco_hint": "use CAT tools such as SDL Trados or memoQ for translation",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnamese Writing Mastery Translation",
+              "label_vi": "Tiếng Việt viết chuẩn trong dịch thuật",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Viết tiếng Việt chuẩn ngữ pháp, chính tả, văn phong phù hợp thể loại văn bản",
+              "esco_hint": "write Vietnamese to high standard in translation output",
+              "confidence": 0.98,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Terminology Management",
+              "label_vi": "Quản lý thuật ngữ dịch thuật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng, duy trì glossary thuật ngữ nhất quán trong dự án dịch thuật dài hạn",
+              "esco_hint": "build and manage translation glossaries for consistency",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Proofreading & Quality Control Translation",
+              "label_vi": "Hiệu đính, kiểm soát chất lượng bản dịch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đọc soát, chỉnh sửa bản dịch đảm bảo chính xác nghĩa, tự nhiên, đúng thể loại",
+              "esco_hint": "proofread and quality-check translations for accuracy and naturalness",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Deadline Management Translation",
+              "label_vi": "Quản lý deadline dịch thuật",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hoàn thành khối lượng dịch lớn đúng deadline, ưu tiên công việc hiệu quả",
+              "esco_hint": "manage translation workload and meet tight deadlines",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Cultural Adaptation Translation",
+              "label_vi": "Am hiểu văn hóa trong dịch thuật",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Điều chỉnh bản dịch phù hợp văn hóa, bối cảnh người đọc Việt Nam hoặc Anh ngữ",
+              "esco_hint": "adapt translations culturally for Vietnamese or English-speaking audiences",
+              "confidence": 0.95,
+              "iviec_flag": "VN_DOMAIN"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Biên phiên dịch tiếng Trung",
+      "nghe": "Nghề Biên phiên dịch",
+      "nhom_nghe": "Biên phiên dịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bien-phien-dich-tieng-trung",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Chinese-Vietnamese Translation",
+              "label_vi": "Dịch thuật Trung-Việt, Việt-Trung",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dịch tài liệu kỹ thuật sản xuất, kinh doanh, hợp đồng hai chiều Trung-Việt chính xác",
+              "esco_hint": "translate between Chinese and Vietnamese in business and technical contexts",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Chinese Interpretation Manufacturing",
+              "label_vi": "Phiên dịch tiếng Trung nhà máy, sản xuất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phiên dịch liên tiếp tại nhà máy, xưởng sản xuất, đào tạo kỹ thuật cho chuyên gia Trung Quốc",
+              "esco_hint": "interpret consecutively for Chinese engineers and technicians in factories",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "HSK Certification Chinese",
+              "label_vi": "Chứng chỉ HSK tiếng Trung",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "HSK 5/6 hoặc tốt nghiệp đại học ngành Tiếng Trung là lợi thế cho vị trí biên phiên dịch",
+              "esco_hint": "hold HSK level 5/6 or Chinese language degree",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Simplified & Traditional Chinese",
+              "label_vi": "Chữ Trung giản thể và phồn thể",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đọc viết thành thạo cả giản thể (Mainland) và phồn thể (Đài Loan/HK) tùy yêu cầu",
+              "esco_hint": "read and write both simplified and traditional Chinese characters",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Vietnam-China Business Culture",
+              "label_vi": "Văn hóa kinh doanh Việt-Trung",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu phong cách giao tiếp, đàm phán, văn hóa doanh nghiệp Trung Quốc trong bối cảnh VN",
+              "esco_hint": "understand Chinese business culture in Vietnamese manufacturing context",
+              "confidence": 0.95,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Technical Terminology Chinese Manufacturing",
+              "label_vi": "Thuật ngữ kỹ thuật Trung Quốc trong sản xuất",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu thuật ngữ kỹ thuật sản xuất, cơ khí, điện tử, dệt may bằng tiếng Trung",
+              "esco_hint": "knowledge of Chinese technical manufacturing terminology",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Document Translation Chinese",
+              "label_vi": "Dịch tài liệu tiếng Trung",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dịch hợp đồng, hướng dẫn kỹ thuật, email, biên bản họp Trung-Việt chính xác",
+              "esco_hint": "translate contracts, technical manuals and business documents",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnamese Writing Chinese Translator",
+              "label_vi": "Tiếng Việt chuẩn của biên dịch Trung",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hành văn tiếng Việt chuẩn, tự nhiên trong bản dịch từ tiếng Trung",
+              "esco_hint": "produce natural and accurate Vietnamese from Chinese source texts",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Confidentiality Business Chinese",
+              "label_vi": "Bảo mật thông tin trong phiên dịch Trung",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bảo mật thông tin đàm phán, hợp đồng, kỹ thuật trong quá trình phiên dịch",
+              "esco_hint": "maintain strict confidentiality of business information during interpretation",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Biên phiên dịch tiếng Nhật",
+      "nghe": "Nghề Biên phiên dịch",
+      "nhom_nghe": "Biên phiên dịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bien-phien-dich-tieng-nhat",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Japanese-Vietnamese Translation",
+              "label_vi": "Dịch thuật Nhật-Việt, Việt-Nhật",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dịch tài liệu kỹ thuật, kinh doanh, pháp lý hai chiều Nhật-Việt chính xác",
+              "esco_hint": "translate accurately between Japanese and Vietnamese",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Japanese Consecutive Interpretation",
+              "label_vi": "Phiên dịch liên tiếp tiếng Nhật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phiên dịch liên tiếp trong họp doanh nghiệp, đào tạo kỹ thuật với chuyên gia Nhật",
+              "esco_hint": "provide consecutive interpretation for Japanese business meetings",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "JLPT Certification",
+              "label_vi": "Chứng chỉ JLPT tiếng Nhật",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "JLPT N2 tối thiểu, N1 là lợi thế lớn cho vị trí biên phiên dịch tiếng Nhật",
+              "esco_hint": "hold JLPT N2 minimum; N1 strongly preferred for Japanese translator",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Japanese Business Keigo",
+              "label_vi": "Tiếng Nhật kính ngữ, văn phong kinh doanh",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng kính ngữ (keigo) đúng cấp bậc và thành thạo văn phong thư tín kinh doanh Nhật",
+              "esco_hint": "use Japanese business keigo and formal business writing",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Japanese Kanji & Technical Reading",
+              "label_vi": "Đọc Kanji kỹ thuật tiếng Nhật",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đọc hiểu Kanji kỹ thuật trong bản vẽ cơ khí, tài liệu kỹ thuật, thông số sản phẩm Nhật",
+              "esco_hint": "read technical Kanji in Japanese engineering documents",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Vietnam-Japan Manufacturing Culture",
+              "label_vi": "Văn hóa sản xuất Nhật-Việt",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu văn hóa làm việc Nhật: Kaizen, 5S, Monozukuri ứng dụng trong nhà máy VN",
+              "esco_hint": "understand Japanese manufacturing culture including Kaizen and 5S in Vietnam",
+              "confidence": 0.95,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Technical Terminology Japanese",
+              "label_vi": "Thuật ngữ kỹ thuật tiếng Nhật",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu thuật ngữ sản xuất, cơ khí, điện tử, ô tô bằng tiếng Nhật",
+              "esco_hint": "knowledge of Japanese technical and manufacturing terminology",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnamese Output Japanese Translator",
+              "label_vi": "Tiếng Việt chuẩn trong dịch Nhật",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Diễn đạt bản dịch tiếng Việt tự nhiên, súc tích từ nguyên bản tiếng Nhật",
+              "esco_hint": "produce clear and natural Vietnamese translation from Japanese",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Deadline Accuracy Japanese Translation",
+              "label_vi": "Chính xác và đúng deadline dịch Nhật",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo độ chính xác cao và hoàn thành đúng hạn trong môi trường Nhật nghiêm ngặt",
+              "esco_hint": "deliver accurate translations on time in Japanese corporate environment",
+              "confidence": 0.96
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Biên phiên dịch tiếng Hàn",
+      "nghe": "Nghề Biên phiên dịch",
+      "nhom_nghe": "Biên phiên dịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bien-phien-dich-tieng-han",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Korean-Vietnamese Translation",
+              "label_vi": "Dịch thuật Hàn-Việt, Việt-Hàn",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dịch tài liệu sản xuất, thương mại, pháp lý hai chiều Hàn-Việt chính xác",
+              "esco_hint": "translate accurately between Korean and Vietnamese",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Korean Consecutive Interpretation",
+              "label_vi": "Phiên dịch liên tiếp tiếng Hàn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phiên dịch liên tiếp trong họp sản xuất, đào tạo, đàm phán với đối tác Hàn Quốc",
+              "esco_hint": "provide consecutive interpretation for Korean business meetings",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "TOPIK Certification Korean",
+              "label_vi": "Chứng chỉ TOPIK tiếng Hàn",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "TOPIK Level 4 tối thiểu, Level 5/6 là lợi thế cho biên phiên dịch Hàn chuyên nghiệp",
+              "esco_hint": "hold TOPIK Level 4 minimum; Level 5/6 preferred for Korean translator",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Korean Business Communication",
+              "label_vi": "Giao tiếp kinh doanh tiếng Hàn",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng ngôn ngữ tôn kính tiếng Hàn đúng cấp bậc trong môi trường doanh nghiệp Hàn",
+              "esco_hint": "use Korean honorifics and formal language in business settings",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam-Korea Manufacturing Knowledge",
+              "label_vi": "Kiến thức sản xuất Việt-Hàn",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu ngành sản xuất Samsung, LG, Hyundai và FDI Hàn Quốc tại VN",
+              "esco_hint": "knowledge of Korean manufacturing operations in Vietnam",
+              "confidence": 0.94,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Korean Technical Document Translation",
+              "label_vi": "Dịch tài liệu kỹ thuật tiếng Hàn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dịch hướng dẫn kỹ thuật, thông số máy móc, biên bản kiểm tra sản xuất Hàn-Việt",
+              "esco_hint": "translate Korean technical and production documents",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Hangul Reading & Writing Fluency",
+              "label_vi": "Đọc viết Hangul thành thạo",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đọc viết Hangul thành thạo bao gồm văn phong chính thức và văn bản kỹ thuật",
+              "esco_hint": "read and write Hangul fluently including formal and technical texts",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnamese Output Korean Translator",
+              "label_vi": "Tiếng Việt chuẩn trong dịch Hàn",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Diễn đạt bản dịch tiếng Việt tự nhiên, rõ ràng từ nguyên bản tiếng Hàn",
+              "esco_hint": "produce natural Vietnamese translation from Korean source texts",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Korean Corporate Culture Adaptation",
+              "label_vi": "Am hiểu văn hóa doanh nghiệp Hàn",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu văn hóa làm việc Hàn Quốc: cấp bậc, tốc độ, áp lực hiệu suất trong nhà máy VN",
+              "esco_hint": "understand Korean corporate culture in Vietnamese factory settings",
+              "confidence": 0.93,
+              "iviec_flag": "VN_DOMAIN"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Biên phiên dịch tiếng Nga",
+      "nghe": "Nghề Biên phiên dịch",
+      "nhom_nghe": "Biên phiên dịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bien-phien-dich-tieng-nga",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Russian-Vietnamese Translation",
+              "label_vi": "Dịch thuật Nga-Việt, Việt-Nga",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dịch tài liệu kỹ thuật, pháp lý, kinh tế hai chiều Nga-Việt chính xác",
+              "esco_hint": "translate accurately between Russian and Vietnamese",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Russian Consecutive Interpretation",
+              "label_vi": "Phiên dịch liên tiếp tiếng Nga",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phiên dịch liên tiếp trong hội thảo, đàm phán, dự án kỹ thuật với đối tác Nga",
+              "esco_hint": "provide consecutive interpretation for Russian business and technical meetings",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Russian Proficiency ТРКИ/Diploma",
+              "label_vi": "Chứng chỉ tiếng Nga ТРКИ hoặc bằng đại học",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng đại học ngành Tiếng Nga hoặc chứng chỉ ТРКИ B2/C1 cho biên phiên dịch Nga",
+              "esco_hint": "hold Russian language degree or ТРКИ B2/C1 certificate",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Russian Technical Terminology",
+              "label_vi": "Thuật ngữ kỹ thuật tiếng Nga",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu thuật ngữ kỹ thuật Nga trong lĩnh vực dầu khí, năng lượng, cơ khí, quốc phòng",
+              "esco_hint": "knowledge of Russian technical terminology in energy, engineering and defence",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Cyrillic Script & Russian Grammar",
+              "label_vi": "Chữ Cyrillic và ngữ pháp tiếng Nga",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo hệ thống biến cách, giống từ, thì động từ tiếng Nga trong văn bản chính thức",
+              "esco_hint": "master Cyrillic script and complex Russian grammar for translation",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam-Russia Diplomatic Context",
+              "label_vi": "Bối cảnh ngoại giao Việt-Nga",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu quan hệ kinh tế, ngoại giao, hợp tác kỹ thuật Việt-Nga trong dịch thuật",
+              "esco_hint": "knowledge of Vietnam-Russia diplomatic and technical cooperation context",
+              "confidence": 0.88,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Russian Legal & Contract Translation",
+              "label_vi": "Dịch văn bản pháp lý, hợp đồng tiếng Nga",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Dịch hợp đồng kinh tế, văn bản pháp lý Nga-Việt đảm bảo chính xác thuật ngữ pháp luật",
+              "esco_hint": "translate Russian legal documents and contracts accurately",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Vietnamese Output Russian Translator",
+              "label_vi": "Tiếng Việt chuẩn trong dịch Nga",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Diễn đạt bản dịch tiếng Việt chuẩn xác, tự nhiên từ cấu trúc câu phức tạp tiếng Nga",
+              "esco_hint": "produce accurate Vietnamese from complex Russian sentence structures",
+              "confidence": 0.96,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Accuracy & Research Russian Translation",
+              "label_vi": "Độ chính xác và nghiên cứu dịch Nga",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tra cứu kỹ thuật ngữ chuyên ngành, đảm bảo độ chính xác cao trong dịch tiếng Nga ít phổ biến",
+              "esco_hint": "research specialist terms and ensure accuracy in less common Russian translation",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Biên phiên dịch tiếng Tây Ban Nha",
+      "nghe": "Nghề Biên phiên dịch",
+      "nhom_nghe": "Biên phiên dịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bien-phien-dich-tieng-tay-ban-nha",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Spanish-Vietnamese Translation",
+              "label_vi": "Dịch thuật Tây Ban Nha-Việt, Việt-TBN",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dịch tài liệu thương mại, pháp lý, kỹ thuật hai chiều Tây Ban Nha-Việt chính xác",
+              "esco_hint": "translate accurately between Spanish and Vietnamese",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Spanish Consecutive Interpretation",
+              "label_vi": "Phiên dịch liên tiếp tiếng Tây Ban Nha",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phiên dịch liên tiếp trong hội nghị, đàm phán, sự kiện với đối tác Tây Ban Nha",
+              "esco_hint": "provide consecutive interpretation for Spanish-speaking partners",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "DELE Certification Spanish",
+              "label_vi": "Chứng chỉ DELE tiếng Tây Ban Nha",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "DELE B2/C1 hoặc bằng đại học ngành Tiếng Tây Ban Nha là lợi thế",
+              "esco_hint": "hold DELE B2/C1 or Spanish language degree",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Latin American vs Iberian Spanish",
+              "label_vi": "Phân biệt Tây Ban Nha châu Mỹ và Iberia",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nhận biết và dịch chính xác theo phương ngữ: Tây Ban Nha, Mexico, Argentina, Colombia theo yêu cầu khách hàng",
+              "esco_hint": "distinguish and translate accurately across Spanish regional variants",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Spanish Technical & Business Terminology",
+              "label_vi": "Thuật ngữ kỹ thuật, kinh doanh tiếng TBN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu thuật ngữ thương mại quốc tế, pháp lý, xuất nhập khẩu bằng tiếng Tây Ban Nha",
+              "esco_hint": "knowledge of Spanish business, legal and technical terminology",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Vietnamese Output Spanish Translator",
+              "label_vi": "Tiếng Việt chuẩn trong dịch TBN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Diễn đạt bản dịch tiếng Việt tự nhiên, chính xác từ tiếng Tây Ban Nha",
+              "esco_hint": "produce natural and accurate Vietnamese from Spanish source texts",
+              "confidence": 0.96,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "CAT Tools Spanish Translation",
+              "label_vi": "Phần mềm CAT dịch tiếng TBN",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng SDL Trados, memoQ hỗ trợ dịch thuật tiếng Tây Ban Nha nhất quán",
+              "esco_hint": "use CAT tools for Spanish translation projects",
+              "confidence": 0.87,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Cultural Awareness Spanish-speaking World",
+              "label_vi": "Am hiểu văn hóa TBN trong dịch thuật",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu văn hóa giao tiếp, phong tục Tây Ban Nha và Mỹ Latinh trong dịch thuật",
+              "esco_hint": "understand cultural context of Spanish-speaking world in translation",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Biên phiên dịch tiếng Đức",
+      "nghe": "Nghề Biên phiên dịch",
+      "nhom_nghe": "Biên phiên dịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bien-phien-dich-tieng-duc",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "German-Vietnamese Translation",
+              "label_vi": "Dịch thuật Đức-Việt, Việt-Đức",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dịch tài liệu kỹ thuật cơ khí, ô tô, hóa chất hai chiều Đức-Việt chính xác",
+              "esco_hint": "translate accurately between German and Vietnamese",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "German Consecutive Interpretation",
+              "label_vi": "Phiên dịch liên tiếp tiếng Đức",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phiên dịch liên tiếp trong họp kỹ thuật, đào tạo, đàm phán với chuyên gia Đức",
+              "esco_hint": "provide consecutive interpretation for German technical meetings",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "TestDaF / Goethe Zertifikat German",
+              "label_vi": "Chứng chỉ tiếng Đức TestDaF/Goethe",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Goethe C1/C2 hoặc TestDaF TDN 4/5 là lợi thế cho biên phiên dịch Đức chuyên nghiệp",
+              "esco_hint": "hold Goethe C1/C2 or TestDaF TDN4/5 certificate",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "German Technical & Engineering Terminology",
+              "label_vi": "Thuật ngữ kỹ thuật Đức trong cơ khí, ô tô",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu thuật ngữ kỹ thuật Đức: cơ khí, ô tô, hóa chất, điện tử trong bối cảnh FDI VN",
+              "esco_hint": "knowledge of German engineering and technical terminology in Vietnam context",
+              "confidence": 0.95,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "German Grammar Complexity",
+              "label_vi": "Ngữ pháp phức tạp tiếng Đức",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm cấu trúc câu, cách chia động từ, biến cách tiếng Đức để dịch chính xác văn bản phức tạp",
+              "esco_hint": "master German grammar including cases and verb conjugation for accurate translation",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "ISO & DIN Standards Terminology",
+              "label_vi": "Thuật ngữ tiêu chuẩn ISO, DIN tiếng Đức",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu thuật ngữ tiêu chuẩn kỹ thuật DIN, ISO thường gặp trong tài liệu kỹ thuật Đức",
+              "esco_hint": "knowledge of German DIN and ISO technical standards terminology",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Vietnamese Output German Translator",
+              "label_vi": "Tiếng Việt chuẩn trong dịch Đức",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Diễn đạt câu dài phức tạp tiếng Đức thành tiếng Việt tự nhiên, súc tích",
+              "esco_hint": "render complex German sentence structures into natural Vietnamese",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Precision & Accuracy German Translation",
+              "label_vi": "Độ chính xác dịch thuật tiếng Đức",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì độ chính xác kỹ thuật cao, chú ý từng chi tiết trong tài liệu kỹ thuật Đức",
+              "esco_hint": "maintain high precision in German technical document translation",
+              "confidence": 0.96
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Biên phiên dịch tiếng Pháp",
+      "nghe": "Nghề Biên phiên dịch",
+      "nhom_nghe": "Biên phiên dịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bien-phien-dich-tieng-phap",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "French-Vietnamese Translation",
+              "label_vi": "Dịch thuật Pháp-Việt, Việt-Pháp",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dịch tài liệu pháp lý, kinh doanh, ngoại giao, kỹ thuật hai chiều Pháp-Việt chính xác",
+              "esco_hint": "translate accurately between French and Vietnamese",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "French Consecutive Interpretation",
+              "label_vi": "Phiên dịch liên tiếp tiếng Pháp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phiên dịch liên tiếp hội nghị, ngoại giao, họp kỹ thuật với đối tác Pháp và Pháp ngữ",
+              "esco_hint": "provide consecutive interpretation for French-speaking meetings",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "DELF/DALF Certification French",
+              "label_vi": "Chứng chỉ DELF/DALF tiếng Pháp",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "DALF C1/C2 hoặc bằng đại học Tiếng Pháp/Pháp ngữ là lợi thế lớn",
+              "esco_hint": "hold DALF C1/C2 or French language degree",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Vietnam-France Diplomatic Context",
+              "label_vi": "Bối cảnh quan hệ Việt-Pháp trong dịch thuật",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu lịch sử quan hệ Việt-Pháp, Pháp ngữ OIF và hợp tác phát triển Pháp tại VN",
+              "esco_hint": "knowledge of Vietnam-France relations and Francophonie context",
+              "confidence": 0.88,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "French Legal & Diplomatic Terminology",
+              "label_vi": "Thuật ngữ pháp lý, ngoại giao tiếng Pháp",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu thuật ngữ pháp lý, ngoại giao, hành chính tiếng Pháp trong văn bản chính thức",
+              "esco_hint": "knowledge of French legal, diplomatic and administrative terminology",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Francophone Variety Awareness",
+              "label_vi": "Nhận biết phương ngữ Pháp ngữ",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nhận biết sự khác biệt tiếng Pháp: France, Canada, Bỉ, Thụy Sĩ, châu Phi Pháp ngữ",
+              "esco_hint": "distinguish between regional Francophone varieties in translation",
+              "confidence": 0.87
+            },
+            {
+              "label_en": "Vietnamese Output French Translator",
+              "label_vi": "Tiếng Việt chuẩn trong dịch Pháp",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Diễn đạt văn phong học thuật, ngoại giao tiếng Pháp thành tiếng Việt trang trọng, chính xác",
+              "esco_hint": "render formal French texts into accurate and elegant Vietnamese",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Research & Reference French Translation",
+              "label_vi": "Tra cứu, tham khảo dịch tiếng Pháp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tra cứu từ điển chuyên ngành, nguồn tham khảo uy tín để đảm bảo chất lượng dịch Pháp",
+              "esco_hint": "research specialist French dictionaries and references for quality",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Biên phiên dịch ngôn ngữ khác",
+      "nghe": "Nghề Biên phiên dịch",
+      "nhom_nghe": "Biên phiên dịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bien-phien-dich-ngon-ngu-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Other Language Translation Vietnamese",
+              "label_vi": "Dịch thuật ngôn ngữ khác sang tiếng Việt",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dịch tài liệu hai chiều giữa tiếng Việt và ngôn ngữ ít phổ biến: Thái, Ý, Bồ, Ả Rập, Hà Lan",
+              "esco_hint": "translate between Vietnamese and less common foreign languages",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Native or Near-native Language Proficiency",
+              "label_vi": "Trình độ gần như bản ngữ ngôn ngữ chuyên dịch",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đạt trình độ gần như bản ngữ trong ngôn ngữ chuyên dịch: nghe nói đọc viết toàn diện",
+              "esco_hint": "achieve near-native proficiency in the specialist translation language",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Language Pair Rarity Premium",
+              "label_vi": "Lợi thế cặp ngôn ngữ hiếm",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu tính khan hiếm và giá trị của cặp ngôn ngữ ít phổ biến trong thị trường dịch thuật VN",
+              "esco_hint": "understand value of rare language pairs in Vietnamese translation market",
+              "confidence": 0.93,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Relevant Language Certificate Other",
+              "label_vi": "Chứng chỉ ngôn ngữ quốc tế tương ứng",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ quốc tế phù hợp ngôn ngữ: HSK (Trung), JLPT (Nhật), TOPIK (Hàn), CELI (Ý)...",
+              "esco_hint": "hold internationally recognised certificate in the relevant language",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Domain Specialisation Rare Language",
+              "label_vi": "Chuyên môn ngành trong dịch ngôn ngữ hiếm",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu thuật ngữ ít nhất một chuyên ngành: pháp lý, kỹ thuật, y tế, thương mại",
+              "esco_hint": "hold specialist domain knowledge alongside rare language skills",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Research & Terminology Rare Language",
+              "label_vi": "Nghiên cứu thuật ngữ ngôn ngữ hiếm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Chủ động xây dựng glossary, tra cứu nguồn tài liệu khan hiếm để đảm bảo chất lượng dịch",
+              "esco_hint": "research and build glossaries for rare language translation quality",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnamese Writing Other Language Translator",
+              "label_vi": "Tiếng Việt chuẩn trong dịch ngôn ngữ hiếm",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Viết tiếng Việt chuẩn, tự nhiên trong bản dịch từ ngôn ngữ ít phổ biến",
+              "esco_hint": "produce fluent Vietnamese output from rare language source texts",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Cultural Mediation Rare Language",
+              "label_vi": "Trung gian văn hóa ngôn ngữ hiếm",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giải thích và điều chỉnh khác biệt văn hóa trong dịch thuật ngôn ngữ ít phổ biến",
+              "esco_hint": "mediate cultural differences in rare language translation",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Biên phiên dịch đa ngôn ngữ",
+      "nghe": "Nghề Biên phiên dịch",
+      "nhom_nghe": "Biên phiên dịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bien-phien-dich-da-ngon-ngu",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Multilingual Translation Capability",
+              "label_vi": "Năng lực dịch thuật đa ngôn ngữ",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dịch thuật thành thạo từ 2+ ngôn ngữ nước ngoài sang tiếng Việt và ngược lại",
+              "esco_hint": "translate proficiently between Vietnamese and multiple foreign languages",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Primary & Secondary Language Pairs",
+              "label_vi": "Cặp ngôn ngữ chính và phụ đa ngôn ngữ",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xác định và quản lý ngôn ngữ chính (thành thạo nhất) và ngôn ngữ phụ (trung cấp) trong dự án",
+              "esco_hint": "manage primary and secondary language pairs in multilingual projects",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Multilingual Project Coordination",
+              "label_vi": "Điều phối dự án dịch thuật đa ngôn ngữ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối hợp dự án dịch thuật đa ngôn ngữ: phân chia ngôn ngữ, nhất quán thuật ngữ xuyên ngôn ngữ",
+              "esco_hint": "coordinate multilingual translation projects for consistency",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Translation Memory Multilingual",
+              "label_vi": "Bộ nhớ dịch thuật đa ngôn ngữ",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý translation memory và termbase đa ngôn ngữ trên Trados, memoQ",
+              "esco_hint": "manage multilingual translation memories and termbases",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Quality Assurance Multilingual",
+              "label_vi": "Đảm bảo chất lượng bản dịch đa ngôn ngữ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm tra chéo chất lượng bản dịch giữa các ngôn ngữ, đảm bảo nhất quán thông điệp",
+              "esco_hint": "cross-check translation quality and message consistency across languages",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Localisation Skills Multilingual",
+              "label_vi": "Bản địa hóa nội dung đa ngôn ngữ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Bản địa hóa nội dung phù hợp văn hóa từng thị trường trong dự án đa ngôn ngữ",
+              "esco_hint": "localise content appropriately for each target language market",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Vietnamese as Pivot Language",
+              "label_vi": "Tiếng Việt làm ngôn ngữ trung gian",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng tiếng Việt làm ngôn ngữ trung tâm trong dự án đa ngôn ngữ đặc thù VN",
+              "esco_hint": "use Vietnamese as pivot language in Vietnam-based multilingual projects",
+              "confidence": 0.94,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Time Management Multilingual Projects",
+              "label_vi": "Quản lý thời gian dự án đa ngôn ngữ",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý deadline đồng thời cho nhiều ngôn ngữ, ưu tiên và phân bổ nguồn lực hiệu quả",
+              "esco_hint": "manage simultaneous deadlines across multiple language projects",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "CAT Tools Multilingual Advanced",
+              "label_vi": "CAT Tools nâng cao đa ngôn ngữ",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Trados Studio, memoQ, Phrase TMS quản lý dự án đa ngôn ngữ quy mô lớn",
+              "esco_hint": "use advanced CAT tools for large-scale multilingual project management",
+              "confidence": 0.92,
+              "iviec_flag": "VN_TOOL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tư vấn dịch thuật",
+      "nghe": "Nghề Biên phiên dịch",
+      "nhom_nghe": "Biên phiên dịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tu-van-dich-thuat",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Translation Consulting Services",
+              "label_vi": "Dịch vụ tư vấn dịch thuật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn khách hàng về giải pháp dịch thuật phù hợp: thể loại, ngôn ngữ, chi phí, timeline",
+              "esco_hint": "consult clients on translation solutions, scope, costs and timelines",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Client Needs Assessment Translation",
+              "label_vi": "Khai thác nhu cầu dịch thuật khách hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Khai thác, phân tích nhu cầu dịch thuật: thể loại văn bản, mục đích sử dụng, yêu cầu đặc biệt",
+              "esco_hint": "assess client translation needs and requirements",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Translation Project Scoping & Quoting",
+              "label_vi": "Ước tính phạm vi, báo giá dịch thuật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân tích tài liệu, tính toán khối lượng, lập báo giá và timeline dịch thuật chính xác",
+              "esco_hint": "scope translation projects and prepare accurate quotes",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Translator Network Management Vietnam",
+              "label_vi": "Quản lý mạng lưới dịch thuật viên VN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng, quản lý mạng lưới dịch thuật viên chuyên ngành tại VN phù hợp yêu cầu",
+              "esco_hint": "build and manage a network of specialist translators in Vietnam",
+              "confidence": 0.94,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Translation Quality Management",
+              "label_vi": "Quản lý chất lượng dịch thuật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết lập quy trình QA/QC dịch thuật: review, edit, proofread đảm bảo chất lượng đầu ra",
+              "esco_hint": "establish quality assurance processes for translation services",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam Translation Industry Knowledge",
+              "label_vi": "Am hiểu ngành dịch thuật VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu thị trường dịch thuật VN: cạnh tranh, giá cả, nhu cầu ngôn ngữ theo ngành",
+              "esco_hint": "knowledge of Vietnamese translation industry landscape and pricing",
+              "confidence": 0.94,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "CAT & TMS Platform Consulting",
+              "label_vi": "Tư vấn nền tảng CAT, TMS cho khách hàng",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn khách hàng lựa chọn và triển khai nền tảng dịch thuật phù hợp: Trados, memoQ, Phrase",
+              "esco_hint": "advise clients on CAT and TMS platform selection and implementation",
+              "confidence": 0.91,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Business Development Translation",
+              "label_vi": "Phát triển kinh doanh dịch vụ dịch thuật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phát triển khách hàng mới, duy trì khách hàng cũ, upsell dịch vụ dịch thuật",
+              "esco_hint": "develop new clients and grow translation service business",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Multilingual & Multicultural Competence",
+              "label_vi": "Năng lực đa ngôn ngữ, đa văn hóa tư vấn",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu sâu ít nhất 1-2 ngôn ngữ và văn hóa để tư vấn dịch thuật xác đáng",
+              "esco_hint": "demonstrate multilingual and multicultural competence for credible consulting",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "English Vietnamese Translation Consulting",
+              "label_vi": "Tiếng Anh trong tư vấn dịch thuật quốc tế",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giao tiếp tiếng Anh thành thạo với khách hàng quốc tế của dịch vụ dịch thuật VN",
+              "esco_hint": "communicate in English with international clients of Vietnamese translation services",
+              "confidence": 0.9
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

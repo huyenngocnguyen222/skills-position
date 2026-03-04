@@ -1,0 +1,3623 @@
+{
+  "taxonomy_metadata": {
+    "sector": "Thiết kế",
+    "sector_en": "Design",
+    "version": "v1",
+    "total_positions": 35,
+    "total_skills": 281,
+    "avg_skills_per_position": 8.0,
+    "sub_categories": {
+      "Nghệ thuật/Hoạt hình/Game": {
+        "positions": 9,
+        "skills": 71
+      },
+      "Thiết kế Nhà/Nội thất/Môi trường": {
+        "positions": 7,
+        "skills": 56
+      },
+      "Thiết kế Đồ họa/Giao diện/Trải nghiệm": {
+        "positions": 5,
+        "skills": 41
+      },
+      "Thiết kế Công nghiệp": {
+        "positions": 5,
+        "skills": 40
+      },
+      "Quản lý thiết kế": {
+        "positions": 4,
+        "skills": 32
+      },
+      "Thiết kế Thời trang": {
+        "positions": 3,
+        "skills": 24
+      },
+      "Nghiên cứu người dùng": {
+        "positions": 1,
+        "skills": 10
+      },
+      "Thiết kế khác": {
+        "positions": 1,
+        "skills": 7
+      }
+    },
+    "skill_type_distribution": {
+      "technical": 128,
+      "tool": 58,
+      "domain": 60,
+      "soft": 32,
+      "language": 3
+    },
+    "requirement_distribution": {
+      "required": 273,
+      "preferred": 8
+    },
+    "iviec_flags": {
+      "VN_TOOL": 60,
+      "VN_DOMAIN": 37,
+      "VN_REGULATION": 11
+    },
+    "data_sources": [
+      "topcv.vn",
+      "vietnamworks.com"
+    ],
+    "extraction_method": "structured_prompt_5jd_per_position",
+    "rows_covered": "1050–1084",
+    "notes": [
+      "Covers rows 1050–1084 (35 positions across 6 sub-categories)",
+      "VN_TOOL (highest density): Adobe CC suite (Photoshop/Illustrator/InDesign/Premiere/After Effects/Lightroom/XD), Figma, AutoCAD, Revit BIM, SketchUp+Lumion/Enscape/V-Ray, 3ds Max, Blender/Maya, Substance Painter, SolidWorks/Fusion360/Rhino, Gerber AccuMark/Lectra/Clo3D rập, Procreate/Clip Studio Paint, Spine/DragonBones game animation, Unity/Unreal Engine, Cinema 4D, DaVinci Resolve, Maze/Hotjar/Lookback UX research, Excel/SPSS, Rhino/MatrixGold/JewelCAD trang sức",
+      "VN_REGULATION: Luật Xây dựng 2020 + QCVN 03/2022 quy hoạch + QCVN 06 PCCC + TCVN kết cấu (kiến trúc sư, AutoCAD), TCVN 5782 cỡ số may mặc (thiết kế rập), Nghị định 43/2017/NĐ-CP nhãn hàng hoá thực phẩm (bao bì), tiêu chuẩn xuất khẩu nội thất CARB/FSC (nội thất), OEKO-TEX/REACH vải dệt may (thiết kế vải), quy định cây xanh đô thị (cảnh quan)",
+      "VN_DOMAIN (rich): Typography tiếng Việt + font có dấu (graphic design), vật liệu nội thất/nội thất VN + nhà cung cấp VN, quy trình sản xuất nội thất VN (CNC/sơn/lắp ráp), kích thước người Việt ergonomics, thị trường thời trang VN, ngành dệt may VN chuỗi cung ứng, thị trường game mobile VN (VNG/VTC/Gamota/Amanotes/Hiker), thị trường webtoon VN, thị trường trang sức VN (vàng 9999/18K), sản phẩm thương mại điện tử VN (Shopee/Lazada/Tiki), social media VN spec (Facebook/TikTok/Zalo/YouTube), ngành hội chợ triển lãm VN (HAWA/VIETBUILD/Vietnam Expo), thẩm mỹ hình ảnh người tiêu dùng VN, thị trường nhân tài thiết kế VN",
+      "Sector unique: Largest sector in taxonomy (35 positions across 6 sub-categories); AutoCAD appears as standalone position AND as core tool across 8+ positions — reflects Vietnamese construction/manufacturing context; VN_DOMAIN flags highest absolute count reflecting deep localisation needs; Game Design position includes Vietnamese mobile game market (VNG/Gamota) as VN_DOMAIN reflecting Vietnam's significant mobile gaming industry; Packaging Design has strongest regulatory burden (NĐ 43/2017 food labelling) of all design positions"
+    ]
+  },
+  "positions": [
+    {
+      "vi_tri": "Thiết kế đồ họa (Graphic Design)",
+      "nghe": "Thiết kế Đồ họa/Giao diện/Trải nghiệm",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-thiet-ke-do-hoa-graphic-design",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Visual Communication Design",
+              "label_vi": "Thiết kế truyền thông thị giác",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế ấn phẩm truyền thông: banner, poster, brochure, social media, bao bì đúng brand",
+              "esco_hint": "design visual communication materials for print and digital media",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Adobe Creative Suite Graphic",
+              "label_vi": "Adobe Photoshop, Illustrator, InDesign",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Adobe Photoshop, Illustrator, InDesign cho thiết kế đồ họa chuyên nghiệp",
+              "esco_hint": "use Adobe Photoshop, Illustrator and InDesign proficiently",
+              "confidence": 0.99,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Brand Identity Design",
+              "label_vi": "Thiết kế nhận diện thương hiệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng hệ thống nhận diện thương hiệu: logo, color palette, typography, brand guidelines",
+              "esco_hint": "design brand identity systems including logo and guidelines",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Typography Vietnamese",
+              "label_vi": "Typography, font tiếng Việt",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm vững kỹ thuật typography tiếng Việt: font có dấu, căn chỉnh, khoảng cách dòng chữ",
+              "esco_hint": "apply Vietnamese typography including diacritical marks",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Color Theory & Composition",
+              "label_vi": "Lý thuyết màu sắc và bố cục",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Áp dụng lý thuyết màu sắc, nguyên tắc bố cục, visual hierarchy trong thiết kế",
+              "esco_hint": "apply colour theory and composition principles in design",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Print Production Knowledge",
+              "label_vi": "Kiến thức sản xuất in ấn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu quy trình in: CMYK, bleed, resolution, file setup cho in offset và kỹ thuật số",
+              "esco_hint": "knowledge of print production requirements for Vietnamese market",
+              "confidence": 0.93,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Figma / Canva Digital Design",
+              "label_vi": "Figma, Canva thiết kế số",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng Figma hoặc Canva cho thiết kế template và nội dung số nhanh",
+              "esco_hint": "use Figma or Canva for digital design",
+              "confidence": 0.89,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Creative Concept Development",
+              "label_vi": "Phát triển ý tưởng sáng tạo",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phát triển concept sáng tạo từ brief khách hàng thành giải pháp thiết kế đột phá",
+              "esco_hint": "develop creative concepts from client briefs",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Deadline & Revision Management",
+              "label_vi": "Quản lý deadline, chỉnh sửa thiết kế",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hoàn thành thiết kế đúng hạn, xử lý phản hồi và chỉnh sửa chuyên nghiệp",
+              "esco_hint": "manage design deadlines and handle client revision requests",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Illustration",
+      "nghe": "Thiết kế Đồ họa/Giao diện/Trải nghiệm",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-illustration",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Digital Illustration",
+              "label_vi": "Minh họa kỹ thuật số",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vẽ minh họa kỹ thuật số cho editorial, sách, app, website, nội dung mạng xã hội",
+              "esco_hint": "create digital illustrations for editorial, publishing and digital media",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Illustration Style Development",
+              "label_vi": "Phát triển phong cách minh họa cá nhân",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng và duy trì phong cách minh họa nhất quán và nhận diện được",
+              "esco_hint": "develop a consistent and recognisable illustration style",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Adobe Illustrator Procreate Drawing",
+              "label_vi": "Adobe Illustrator, Procreate vẽ số",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Adobe Illustrator và/hoặc Procreate vẽ minh họa chuyên nghiệp",
+              "esco_hint": "use Adobe Illustrator and Procreate for professional illustration",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Character Design",
+              "label_vi": "Thiết kế nhân vật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế nhân vật 2D với cá tính, biểu cảm, tư thế đa dạng và nhất quán",
+              "esco_hint": "design 2D characters with consistent personality and expressions",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Cultural Visual Reference",
+              "label_vi": "Am hiểu văn hóa VN trong minh họa",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu yếu tố văn hóa, hình ảnh truyền thống VN để tích hợp vào minh họa bản địa",
+              "esco_hint": "incorporate Vietnamese cultural visual elements into illustration",
+              "confidence": 0.88,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Portfolio & Client Brief Response",
+              "label_vi": "Portfolio, đáp ứng brief khách hàng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì portfolio chuyên nghiệp, đọc hiểu brief và deliver đúng yêu cầu sáng tạo",
+              "esco_hint": "maintain portfolio and respond accurately to creative briefs",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Traditional & Mixed Media",
+              "label_vi": "Phương tiện truyền thống và kết hợp",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng phương tiện truyền thống (màu nước, bút mực) kết hợp với kỹ thuật số",
+              "esco_hint": "combine traditional and digital illustration media",
+              "confidence": 0.85
+            },
+            {
+              "label_en": "Illustration Deadline & Revisions",
+              "label_vi": "Deadline và chỉnh sửa minh họa",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hoàn thành minh họa đúng hạn và xử lý vòng chỉnh sửa chuyên nghiệp",
+              "esco_hint": "deliver illustrations on deadline and manage revision rounds",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "UI/UX Design",
+      "nghe": "Thiết kế Đồ họa/Giao diện/Trải nghiệm",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ui-ux-design",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "User Interface Design",
+              "label_vi": "Thiết kế giao diện người dùng (UI)",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế giao diện web/app đẹp, nhất quán với design system, đúng responsive guidelines",
+              "esco_hint": "design user interfaces for web and mobile applications",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "User Experience Design",
+              "label_vi": "Thiết kế trải nghiệm người dùng (UX)",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nghiên cứu người dùng, lập user flow, wireframe, prototype kiểm tra trải nghiệm",
+              "esco_hint": "design user experiences through research, wireframes and prototyping",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Figma UI/UX Design Tool",
+              "label_vi": "Figma thiết kế UI/UX",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Figma: component, auto-layout, prototype, handoff cho developer",
+              "esco_hint": "use Figma proficiently for UI/UX design and developer handoff",
+              "confidence": 0.99,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Design System & Component Library",
+              "label_vi": "Hệ thống thiết kế, thư viện component",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng và duy trì design system, component library nhất quán cho sản phẩm số",
+              "esco_hint": "build and maintain design systems and component libraries",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "User Research & Usability Testing",
+              "label_vi": "Nghiên cứu người dùng, kiểm tra UX",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện user interview, usability testing, phân tích kết quả cải thiện UX",
+              "esco_hint": "conduct user research and usability testing",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Wireframing & Prototyping",
+              "label_vi": "Wireframe và prototype tương tác",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập wireframe lo-fi và prototype hi-fi để kiểm tra luồng người dùng trước khi phát triển",
+              "esco_hint": "create wireframes and interactive prototypes for user flow testing",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Mobile-first & Responsive Design",
+              "label_vi": "Thiết kế mobile-first, responsive",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế UI mobile-first, đảm bảo hiển thị tốt trên mọi thiết bị và resolution",
+              "esco_hint": "design mobile-first responsive interfaces across devices",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam User Behaviour & Market",
+              "label_vi": "Am hiểu hành vi người dùng VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu đặc thù UX thị trường VN: hành vi mobile, ưu tiên tốc độ, bối cảnh văn hóa",
+              "esco_hint": "knowledge of Vietnamese user behaviour and mobile-first market context",
+              "confidence": 0.93,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Developer Collaboration UI/UX",
+              "label_vi": "Phối hợp developer trong UI/UX",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Giao tiếp kỹ thuật với developer, cung cấp spec, asset, giải thích design intent",
+              "esco_hint": "collaborate with developers on design implementation",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Adobe XD / Sketch Prototyping",
+              "label_vi": "Adobe XD, Sketch hỗ trợ prototype",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng Adobe XD hoặc Sketch thay thế Figma tuỳ yêu cầu dự án",
+              "esco_hint": "use Adobe XD or Sketch for prototyping when required",
+              "confidence": 0.84,
+              "iviec_flag": "VN_TOOL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "3D Modeler",
+      "nghe": "Thiết kế Đồ họa/Giao diện/Trải nghiệm",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-3d-modeler",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "3D Modelling",
+              "label_vi": "Mô hình hoá 3D",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tạo mô hình 3D sản phẩm, nhân vật, môi trường chính xác và chi tiết",
+              "esco_hint": "create accurate and detailed 3D models for products, characters or environments",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "3D Software Maya Blender 3ds Max",
+              "label_vi": "Maya, Blender, 3ds Max mô hình 3D",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo ít nhất một phần mềm 3D: Maya, Blender, 3ds Max, Cinema 4D",
+              "esco_hint": "use 3D modelling software such as Maya, Blender or 3ds Max proficiently",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Texturing & UV Mapping",
+              "label_vi": "Texturing và UV mapping",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tạo texture, UV unwrap chính xác cho mô hình 3D thực tế và game",
+              "esco_hint": "create textures and UV maps for 3D models",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Rendering & Lighting 3D",
+              "label_vi": "Render và ánh sáng 3D",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết lập ánh sáng, vật liệu, render cảnh 3D cho visualisation, animation, game",
+              "esco_hint": "set up lighting, materials and rendering for 3D scenes",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Rigging & Animation Basic 3D",
+              "label_vi": "Rigging, animation cơ bản 3D",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thiết lập rig cơ bản và animation cho nhân vật 3D nếu cần",
+              "esco_hint": "create basic character rigs and animations in 3D",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Polygon Topology Optimisation",
+              "label_vi": "Tối ưu topology polygon",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu nguyên tắc clean topology, optimise poly count cho realtime và cinematic",
+              "esco_hint": "understand clean topology and polygon optimisation for realtime or cinematic use",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Substance Painter PBR Texturing",
+              "label_vi": "Substance Painter, PBR texturing",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng Substance Painter tạo PBR texture chân thực cho game và visualisation",
+              "esco_hint": "use Substance Painter for PBR texturing",
+              "confidence": 0.92,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Industry Application VN 3D",
+              "label_vi": "Ứng dụng 3D trong ngành tại VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu ứng dụng 3D modelling tại VN: game, nội thất, kiến trúc, quảng cáo TVC",
+              "esco_hint": "knowledge of 3D modelling applications in Vietnamese game, interior and ad industries",
+              "confidence": 0.88,
+              "iviec_flag": "VN_DOMAIN"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Thiết kế Đồ họa/Giao diện/Trải nghiệm khác",
+      "nghe": "Thiết kế Đồ họa/Giao diện/Trải nghiệm",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-thiet-ke-do-hoa-giao-dien-trai-nghiem-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 6
+          },
+          "skills": [
+            {
+              "label_en": "Graphic Interface Design Specialist",
+              "label_vi": "Chuyên môn thiết kế đồ họa/giao diện",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện công việc thiết kế đồ họa, giao diện, trải nghiệm theo chuyên môn cụ thể",
+              "esco_hint": "apply specialist graphic, interface or experience design skills",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Core Design Software",
+              "label_vi": "Phần mềm thiết kế cốt lõi",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thành thạo ít nhất một phần mềm thiết kế: Adobe CC, Figma, Sketch, Canva",
+              "esco_hint": "use at least one core design software tool proficiently",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Visual Aesthetics & Design Principles",
+              "label_vi": "Thẩm mỹ thị giác, nguyên tắc thiết kế",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Áp dụng nguyên tắc thiết kế: cân bằng, contrast, alignment, hierarchy, whitespace",
+              "esco_hint": "apply fundamental design principles in visual work",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Portfolio Development Design",
+              "label_vi": "Xây dựng portfolio thiết kế",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì portfolio thiết kế cập nhật, thể hiện phong cách và năng lực chuyên môn",
+              "esco_hint": "develop and maintain a strong design portfolio",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Creative Brief Interpretation",
+              "label_vi": "Đọc và thực hiện creative brief",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đọc hiểu brief, đặt câu hỏi đúng và deliver thiết kế đáp ứng mục tiêu sáng tạo",
+              "esco_hint": "interpret creative briefs and deliver appropriate design solutions",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Feedback & Iteration Design",
+              "label_vi": "Tiếp nhận feedback, chỉnh sửa thiết kế",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tiếp nhận feedback xây dựng, chỉnh sửa và cải tiến thiết kế theo yêu cầu",
+              "esco_hint": "receive feedback constructively and iterate designs accordingly",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kiến trúc sư",
+      "nghe": "Thiết kế Nhà/Nội thất/Môi trường",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-kien-truc-su",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Architectural Design",
+              "label_vi": "Thiết kế kiến trúc công trình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế kiến trúc nhà ở, thương mại, công nghiệp: bản vẽ, mặt bằng, mặt đứng, mặt cắt",
+              "esco_hint": "design architectural projects from concept to construction drawings",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Construction Law & Building Permits",
+              "label_vi": "Luật Xây dựng, giấy phép xây dựng VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Xây dựng 2020/sửa đổi, quy chuẩn QCVN 03/2022, thủ tục xin GPXD tại VN",
+              "esco_hint": "knowledge of Vietnamese construction law and building permit procedures",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "AutoCAD Architectural Drawing",
+              "label_vi": "AutoCAD vẽ kiến trúc",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo AutoCAD 2D vẽ bản vẽ kiến trúc đầy đủ: mặt bằng, mặt đứng, mặt cắt, chi tiết",
+              "esco_hint": "use AutoCAD for full architectural drawing sets",
+              "confidence": 0.99,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Revit BIM Architecture",
+              "label_vi": "Revit BIM kiến trúc",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng Revit thiết kế kiến trúc BIM, phối hợp đa bộ môn kết cấu và MEP",
+              "esco_hint": "use Revit for BIM architectural design and multi-discipline coordination",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "SketchUp & 3D Visualisation Architecture",
+              "label_vi": "SketchUp, 3D visualisation kiến trúc",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Dùng SketchUp, Lumion, Enscape tạo hình ảnh phối cảnh 3D thuyết trình khách hàng",
+              "esco_hint": "use SketchUp and rendering tools for 3D architectural visualisation",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam Building Standards QCVN TCVN",
+              "label_vi": "Quy chuẩn QCVN, tiêu chuẩn TCVN xây dựng",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm QCVN 03/2022 quy hoạch, QCVN 06 PCCC, TCVN kết cấu áp dụng trong thiết kế",
+              "esco_hint": "apply Vietnamese building standards QCVN and TCVN in design",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Construction Documents & Specifications",
+              "label_vi": "Hồ sơ thiết kế, thuyết minh xây dựng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập hồ sơ thiết kế đầy đủ: bản vẽ, thuyết minh, dự toán, bóc tách khối lượng",
+              "esco_hint": "prepare complete construction documentation and specifications",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Site Supervision Architecture",
+              "label_vi": "Giám sát thi công theo thiết kế kiến trúc",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Giám sát thi công đảm bảo thi công đúng hồ sơ thiết kế kiến trúc được duyệt",
+              "esco_hint": "supervise construction to ensure conformity with architectural designs",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Client Presentation Architecture",
+              "label_vi": "Thuyết trình thiết kế kiến trúc cho khách hàng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Trình bày ý tưởng thiết kế, giải thích phối cảnh và thuyết phục khách hàng",
+              "esco_hint": "present architectural designs and concepts to clients",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Thiết kế nội thất",
+      "nghe": "Thiết kế Nhà/Nội thất/Môi trường",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-thiet-ke-noi-that",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Interior Design",
+              "label_vi": "Thiết kế nội thất không gian sống",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế nội thất nhà ở, văn phòng, nhà hàng: concept, layout, vật liệu, ánh sáng",
+              "esco_hint": "design interior spaces including residential, commercial and hospitality",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "AutoCAD Interior Drawing",
+              "label_vi": "AutoCAD vẽ nội thất",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo AutoCAD vẽ mặt bằng, mặt đứng, chi tiết nội thất đầy đủ",
+              "esco_hint": "use AutoCAD for interior drawing plans and elevations",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "SketchUp 3D Interior Visualisation",
+              "label_vi": "SketchUp, render nội thất 3D",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "SketchUp + Lumion/Enscape/V-Ray tạo phối cảnh nội thất 3D thuyết phục khách hàng",
+              "esco_hint": "create 3D interior visualisations using SketchUp and rendering software",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam Interior Materials & Suppliers",
+              "label_vi": "Vật liệu, nhà cung cấp nội thất VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu vật liệu nội thất trên thị trường VN: gỗ, đá, kim loại, vải, đèn và nhà cung cấp VN",
+              "esco_hint": "knowledge of Vietnamese interior materials and local supplier network",
+              "confidence": 0.96,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Space Planning & Ergonomics",
+              "label_vi": "Bố trí không gian, công thái học",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lên layout không gian tối ưu lưu thông, ánh sáng, công thái học và nhu cầu sử dụng",
+              "esco_hint": "plan space layouts optimising circulation, light and ergonomics",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Construction Regulations Interior",
+              "label_vi": "Quy chuẩn, quy định nội thất xây dựng VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm QCVN 06 PCCC, quy định vật liệu không cháy, an toàn điện trong thiết kế nội thất",
+              "esco_hint": "knowledge of Vietnamese fire safety and electrical regulations for interiors",
+              "confidence": 0.9,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "3ds Max V-Ray Photorealistic Render",
+              "label_vi": "3ds Max, V-Ray render nội thất photorealistic",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng 3ds Max + V-Ray tạo ảnh nội thất photorealistic chuẩn quốc tế",
+              "esco_hint": "use 3ds Max and V-Ray for photorealistic interior rendering",
+              "confidence": 0.88,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Client Consultation Interior",
+              "label_vi": "Tư vấn khách hàng nội thất",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Khai thác nhu cầu, thị hiếu khách hàng và translate thành giải pháp thiết kế nội thất",
+              "esco_hint": "consult with clients to develop tailored interior design solutions",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Budget & Cost Estimation Interior",
+              "label_vi": "Dự toán chi phí nội thất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập dự toán chi phí nội thất phù hợp ngân sách khách hàng và thị trường VN",
+              "esco_hint": "prepare cost estimates aligned with Vietnamese market pricing",
+              "confidence": 0.93,
+              "iviec_flag": "VN_DOMAIN"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Thiết kế triển lãm/trưng bày",
+      "nghe": "Thiết kế Nhà/Nội thất/Môi trường",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-thiet-ke-trien-lam-trung-bay",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Exhibition & Display Design",
+              "label_vi": "Thiết kế triển lãm, trưng bày",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế gian hàng hội chợ, triển lãm, showroom, không gian trưng bày sản phẩm",
+              "esco_hint": "design exhibition stands, trade fair booths and display spaces",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "AutoCAD Exhibition Drawing",
+              "label_vi": "AutoCAD vẽ triển lãm",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vẽ mặt bằng, mặt đứng, chi tiết thi công gian hàng triển lãm bằng AutoCAD",
+              "esco_hint": "draw exhibition stand construction documents in AutoCAD",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "3D Visualisation Exhibition",
+              "label_vi": "Phối cảnh 3D triển lãm",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tạo phối cảnh 3D gian hàng, không gian triển lãm bằng SketchUp/3ds Max/Lumion",
+              "esco_hint": "create 3D visualisations of exhibition and display spaces",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam Exhibition Industry Knowledge",
+              "label_vi": "Ngành hội chợ triển lãm VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu các hội chợ lớn VN: HAWA, VIETBUILD, Vietnam Expo, Saigon Autotech",
+              "esco_hint": "knowledge of major Vietnamese trade fairs and exhibition venues",
+              "confidence": 0.92,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Material & Fabrication Exhibition",
+              "label_vi": "Vật liệu thi công gian hàng triển lãm",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu vật liệu thi công triển lãm: ốp pa, gỗ MDF, mica, vải backdrop, hệ khung",
+              "esco_hint": "knowledge of exhibition construction materials and fabrication methods",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Lighting Design Exhibition",
+              "label_vi": "Thiết kế ánh sáng triển lãm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế hệ thống ánh sáng triển lãm tạo hiệu ứng, nổi bật sản phẩm",
+              "esco_hint": "design exhibition lighting to highlight products and create atmosphere",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Project Timeline Exhibition",
+              "label_vi": "Quản lý tiến độ dự án triển lãm",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý tiến độ thiết kế và thi công gian hàng đúng deadline khai mạc hội chợ",
+              "esco_hint": "manage exhibition project timeline to meet event opening deadlines",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Brand Alignment Exhibition Design",
+              "label_vi": "Nhất quán thương hiệu trong triển lãm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo không gian triển lãm thể hiện đúng brand identity và thông điệp khách hàng",
+              "esco_hint": "ensure exhibition design reflects client brand identity and messaging",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Thiết kế cảnh quan",
+      "nghe": "Thiết kế Nhà/Nội thất/Môi trường",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-thiet-ke-canh-quan",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Landscape Architecture Design",
+              "label_vi": "Thiết kế cảnh quan kiến trúc",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế cảnh quan sân vườn, không gian công cộng, khu đô thị, resort hài hoà với môi trường",
+              "esco_hint": "design landscape architecture for residential, commercial and public spaces",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Native Plants & Horticulture",
+              "label_vi": "Cây xanh bản địa và horticulture VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu cây xanh bản địa VN, đặc tính sinh trưởng, chăm sóc trong điều kiện khí hậu VN",
+              "esco_hint": "knowledge of Vietnamese native plants and local climate horticulture",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "AutoCAD Landscape Drawing",
+              "label_vi": "AutoCAD vẽ cảnh quan",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vẽ bản vẽ cảnh quan: mặt bằng trồng cây, hệ thống tưới, chi tiết tiểu cảnh bằng AutoCAD",
+              "esco_hint": "draw landscape plans and planting schemes in AutoCAD",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "SketchUp Lumion Landscape Visualisation",
+              "label_vi": "SketchUp, Lumion phối cảnh cảnh quan",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tạo phối cảnh cảnh quan 3D thực tế bằng SketchUp + Lumion/Enscape",
+              "esco_hint": "create landscape 3D visualisations using SketchUp and Lumion",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam Landscape Regulations",
+              "label_vi": "Quy định cảnh quan đô thị VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm quy định cây xanh đô thị, quy hoạch cảnh quan, mật độ cây xanh theo quy chuẩn VN",
+              "esco_hint": "knowledge of Vietnamese urban landscape regulations and standards",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Planting Design & Plant Palette",
+              "label_vi": "Thiết kế trồng cây, palette cây xanh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lựa chọn và bố trí cây xanh phù hợp phong cách thiết kế, khí hậu và bảo trì dài hạn",
+              "esco_hint": "design planting schemes with appropriate plant palettes for Vietnamese climate",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Hardscape & Water Features Design",
+              "label_vi": "Thiết kế hardscape, tiểu cảnh nước",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế lối đi, tường rào, đài phun nước, hồ cá koi, sân gỗ trong cảnh quan",
+              "esco_hint": "design hardscape elements including paths, water features and decking",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Cost Estimation Landscape VN",
+              "label_vi": "Dự toán chi phí cảnh quan VN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Lập dự toán chi phí thi công cảnh quan phù hợp thị trường cây xanh và vật liệu VN",
+              "esco_hint": "estimate landscape construction costs based on Vietnamese market rates",
+              "confidence": 0.88,
+              "iviec_flag": "VN_DOMAIN"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Thiết kế mỹ thuật sân khấu",
+      "nghe": "Thiết kế Nhà/Nội thất/Môi trường",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-thiet-ke-my-thuat-san-khau",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Stage & Set Design",
+              "label_vi": "Thiết kế mỹ thuật sân khấu, sàn diễn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế sân khấu sự kiện, phim trường, buổi hoà nhạc, gameshow truyền hình",
+              "esco_hint": "design stage sets and event environments for performances and TV productions",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Performance & Event Industry",
+              "label_vi": "Ngành biểu diễn, sự kiện VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu đặc thù ngành sự kiện, nhạc hội, gameshow, sân khấu truyền hình tại VN",
+              "esco_hint": "knowledge of Vietnamese event, entertainment and TV production industry",
+              "confidence": 0.95,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "AutoCAD Stage Technical Drawing",
+              "label_vi": "AutoCAD bản vẽ kỹ thuật sân khấu",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vẽ bản vẽ kỹ thuật sân khấu: sơ đồ đặt màn, hệ khung backdrop, vị trí ánh sáng",
+              "esco_hint": "draw technical stage plans and rigging diagrams in AutoCAD",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "3D Stage Visualisation",
+              "label_vi": "Phối cảnh 3D sân khấu",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tạo phối cảnh 3D sân khấu, sự kiện bằng SketchUp/3ds Max để thuyết trình khách hàng",
+              "esco_hint": "create 3D visualisations of stage designs for client presentations",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Stage Lighting Design Collaboration",
+              "label_vi": "Phối hợp thiết kế ánh sáng sân khấu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phối hợp với kỹ sư ánh sáng lên kế hoạch chiếu sáng phù hợp mỹ thuật sân khấu",
+              "esco_hint": "collaborate with lighting engineers on stage lighting design",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Materials & Fabrication Stage",
+              "label_vi": "Vật liệu thi công sân khấu, sự kiện",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu vật liệu sân khấu: vải backdrop, LED panel, cấu kiện nhôm truss, vỏ cây nhân tạo",
+              "esco_hint": "knowledge of stage construction materials and event fabrication",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Budget Management Stage Design",
+              "label_vi": "Quản lý ngân sách mỹ thuật sân khấu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập và kiểm soát ngân sách mỹ thuật sân khấu đúng tài chính dự án sự kiện",
+              "esco_hint": "manage stage design budget within event production constraints",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Construction Supervision Stage",
+              "label_vi": "Giám sát thi công sân khấu hiện trường",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Giám sát thi công dựng sân khấu tại hiện trường, đảm bảo đúng thiết kế và an toàn",
+              "esco_hint": "supervise stage set construction on-site for safety and design accuracy",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Vẽ AutoCAD",
+      "nghe": "Thiết kế Nhà/Nội thất/Môi trường",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ve-autocad",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "AutoCAD Technical Drawing",
+              "label_vi": "Vẽ kỹ thuật bằng AutoCAD",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo AutoCAD 2D vẽ bản vẽ kiến trúc, kết cấu, MEP, nội thất, cơ khí",
+              "esco_hint": "use AutoCAD 2D for technical drawing across architecture, structure and MEP",
+              "confidence": 0.99,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam Drawing Standards TCVN",
+              "label_vi": "Tiêu chuẩn bản vẽ kỹ thuật TCVN VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vẽ đúng tiêu chuẩn bản vẽ kỹ thuật TCVN: khổ giấy, tỷ lệ, ký hiệu, ghi chú",
+              "esco_hint": "apply Vietnamese TCVN technical drawing standards",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Drawing Layout & Annotation",
+              "label_vi": "Trình bày bản vẽ, ghi chú kỹ thuật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Trình bày bản vẽ rõ ràng: title block, layer management, dimension, ghi chú đầy đủ",
+              "esco_hint": "prepare drawing layouts with proper annotation and title blocks",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Revit Basic BIM Drawing",
+              "label_vi": "Revit cơ bản hỗ trợ AutoCAD",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng Revit cơ bản hoặc xuất từ Revit sang AutoCAD cho bản vẽ thi công",
+              "esco_hint": "use basic Revit or import/export between Revit and AutoCAD",
+              "confidence": 0.85,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "CAD File Management & Version Control",
+              "label_vi": "Quản lý file CAD, kiểm soát phiên bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý và lưu trữ file CAD theo quy trình: đặt tên, backup, phiên bản bản vẽ",
+              "esco_hint": "manage CAD files with proper naming, versioning and backup procedures",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Domain Knowledge for CAD Drawings",
+              "label_vi": "Kiến thức chuyên môn hỗ trợ vẽ AutoCAD",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu lĩnh vực vẽ: kiến trúc, kết cấu, nội thất, MEP, cơ khí để vẽ đúng yêu cầu",
+              "esco_hint": "understand the domain being drawn to produce accurate technical drawings",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Accuracy & Detail CAD Drawing",
+              "label_vi": "Chính xác và tỉ mỉ trong vẽ AutoCAD",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vẽ chính xác tuyệt đối, tỉ mỉ kiểm tra kích thước, ký hiệu, tránh lỗi sai trong bản vẽ",
+              "esco_hint": "maintain absolute accuracy and attention to detail in technical drawings",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Deadline Management CAD",
+              "label_vi": "Deadline hoàn thành bản vẽ CAD",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hoàn thành bộ bản vẽ đúng tiến độ dự án xây dựng hoặc thiết kế",
+              "esco_hint": "complete drawing sets to project schedule deadlines",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Thiết kế Nhà/Nội thất/Môi trường khác",
+      "nghe": "Thiết kế Nhà/Nội thất/Môi trường",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-thiet-ke-nha-noi-that-moi-truong-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 6
+          },
+          "skills": [
+            {
+              "label_en": "Architectural Interior Environment Design",
+              "label_vi": "Chuyên môn thiết kế Nhà/Nội thất/Môi trường",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện thiết kế nhà, nội thất hoặc môi trường theo chuyên môn cụ thể",
+              "esco_hint": "apply specialist architectural, interior or environment design skills",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "AutoCAD Architectural Basic",
+              "label_vi": "AutoCAD cơ bản kiến trúc/nội thất",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng AutoCAD cơ bản vẽ mặt bằng, mặt đứng cho thiết kế nhà và nội thất",
+              "esco_hint": "use AutoCAD for basic architectural and interior drawings",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam Building Regulations Basic",
+              "label_vi": "Luật Xây dựng VN cơ bản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm cơ bản Luật Xây dựng 2020, quy chuẩn QCVN liên quan đến lĩnh vực thiết kế",
+              "esco_hint": "basic knowledge of Vietnamese construction law and standards",
+              "confidence": 0.9,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Spatial Awareness & Aesthetics",
+              "label_vi": "Cảm quan không gian và thẩm mỹ",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Có cảm quan tốt về không gian, tỷ lệ, màu sắc trong thiết kế nhà và nội thất",
+              "esco_hint": "demonstrate strong spatial awareness and aesthetic sensibility",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "3D Visualisation Basic",
+              "label_vi": "Phối cảnh 3D cơ bản",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Tạo phối cảnh 3D cơ bản bằng SketchUp hoặc phần mềm tương đương",
+              "esco_hint": "create basic 3D visualisations using SketchUp or similar tools",
+              "confidence": 0.87,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Client Communication Design",
+              "label_vi": "Giao tiếp khách hàng trong thiết kế",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lắng nghe, tư vấn và thuyết trình ý tưởng thiết kế đến khách hàng hiệu quả",
+              "esco_hint": "communicate design ideas clearly to clients and stakeholders",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Thiết kế sản phẩm nội thất",
+      "nghe": "Thiết kế Công nghiệp",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-thiet-ke-san-pham-noi-that",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Furniture Product Design",
+              "label_vi": "Thiết kế sản phẩm nội thất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế sản phẩm nội thất: ghế, bàn, tủ, kệ từ concept đến bản vẽ thi công hoàn chỉnh",
+              "esco_hint": "design furniture products from concept through to production drawings",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "AutoCAD Furniture Technical Drawing",
+              "label_vi": "AutoCAD vẽ kỹ thuật nội thất",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo AutoCAD vẽ bản vẽ kỹ thuật sản phẩm nội thất: mặt bằng, mặt đứng, chi tiết gia công",
+              "esco_hint": "use AutoCAD for furniture technical production drawings",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam Furniture Materials",
+              "label_vi": "Vật liệu nội thất thị trường VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu vật liệu nội thất trên thị trường VN: gỗ tự nhiên, HDF, MDF, ván ghép, kim loại",
+              "esco_hint": "knowledge of Vietnamese furniture materials including timber, MDF and HDF",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "3D Furniture Visualisation",
+              "label_vi": "Phối cảnh 3D sản phẩm nội thất",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "3ds Max, SketchUp + V-Ray/Lumion tạo ảnh phối cảnh sản phẩm nội thất thuyết phục",
+              "esco_hint": "create photorealistic furniture product visualisations",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Manufacturing Process Furniture VN",
+              "label_vi": "Quy trình sản xuất nội thất VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu quy trình gia công nội thất VN: cưa, bào, phay CNC, lắp ráp, hoàn thiện sơn",
+              "esco_hint": "knowledge of Vietnamese furniture manufacturing processes",
+              "confidence": 0.96,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Ergonomics Furniture Design",
+              "label_vi": "Công thái học trong thiết kế nội thất",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Áp dụng nguyên tắc công thái học: kích thước người VN, vùng tiếp cận, độ cao sử dụng",
+              "esco_hint": "apply ergonomics appropriate to Vietnamese user dimensions",
+              "confidence": 0.93,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Vietnam Furniture Export Standards",
+              "label_vi": "Tiêu chuẩn xuất khẩu nội thất VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu tiêu chuẩn xuất khẩu nội thất VN: CARB, FSC, EN tiêu chuẩn thị trường Âu/Mỹ",
+              "esco_hint": "knowledge of furniture export standards for Vietnamese manufacturers",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Cost Estimation Furniture",
+              "label_vi": "Dự toán chi phí sản phẩm nội thất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập dự toán chi phí sản xuất sản phẩm nội thất phù hợp giá thành thị trường VN",
+              "esco_hint": "estimate furniture production costs based on Vietnamese manufacturing rates",
+              "confidence": 0.92,
+              "iviec_flag": "VN_DOMAIN"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Thiết kế Công nghiệp",
+      "nghe": "Thiết kế Công nghiệp",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-thiet-ke-cong-nghiep",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Industrial Product Design",
+              "label_vi": "Thiết kế sản phẩm công nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế sản phẩm công nghiệp: từ nghiên cứu người dùng, concept đến prototype và sản xuất",
+              "esco_hint": "design industrial products from user research through prototype to manufacture",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "CAD 3D Industrial Design",
+              "label_vi": "CAD 3D thiết kế công nghiệp",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo SolidWorks, Rhino, Fusion 360 thiết kế sản phẩm công nghiệp 3D chính xác",
+              "esco_hint": "use SolidWorks, Rhino or Fusion 360 for industrial product design",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Design for Manufacturing DFM",
+              "label_vi": "Thiết kế hướng sản xuất DFM",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế sản phẩm đảm bảo khả năng sản xuất hàng loạt: khuôn ép, đúc, gia công CNC",
+              "esco_hint": "design products optimised for manufacturing processes",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Materials Science Industrial",
+              "label_vi": "Khoa học vật liệu thiết kế công nghiệp",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu tính chất vật liệu: nhựa, kim loại, composite ứng dụng trong thiết kế sản phẩm",
+              "esco_hint": "knowledge of materials science for industrial product design",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Prototyping & Rapid Prototyping",
+              "label_vi": "Làm mẫu, in 3D prototype",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tạo prototype từ in 3D FDM/SLA, làm mẫu thủ công để kiểm tra thiết kế trước sản xuất",
+              "esco_hint": "create prototypes using 3D printing and handcraft methods",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "User-centred Design Process",
+              "label_vi": "Quy trình thiết kế lấy người dùng làm trung tâm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Áp dụng quy trình UCD: research, ideation, testing, iteration trong thiết kế sản phẩm",
+              "esco_hint": "apply user-centred design process in industrial product development",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Vietnam Manufacturing Ecosystem",
+              "label_vi": "Hệ sinh thái sản xuất VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu nhà cung cấp, nhà sản xuất, quy trình gia công trong hệ sinh thái sản xuất VN",
+              "esco_hint": "knowledge of Vietnamese manufacturing ecosystem and supplier network",
+              "confidence": 0.89,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "English Technical Communication Industrial",
+              "label_vi": "Tiếng Anh kỹ thuật thiết kế công nghiệp",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc tài liệu kỹ thuật tiếng Anh, giao tiếp với đối tác quốc tế về thiết kế sản phẩm",
+              "esco_hint": "read English technical documents and communicate with international partners",
+              "confidence": 0.85
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Thiết kế bao bì",
+      "nghe": "Thiết kế Công nghiệp",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-thiet-ke-bao-bi",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Packaging Design",
+              "label_vi": "Thiết kế bao bì sản phẩm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế bao bì cho FMCG, thực phẩm, mỹ phẩm, đồ uống: hộp, túi, nhãn, chai lọ",
+              "esco_hint": "design packaging for FMCG, food, cosmetic and beverage products",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Adobe Illustrator Photoshop Packaging",
+              "label_vi": "Adobe Illustrator, Photoshop thiết kế bao bì",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Illustrator tạo dieline, artwork; Photoshop mockup bao bì 2D/3D",
+              "esco_hint": "use Adobe Illustrator for dieline and artwork; Photoshop for packaging mockups",
+              "confidence": 0.99,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam Food Labelling Regulations",
+              "label_vi": "Quy định nhãn hàng thực phẩm VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Nghị định 43/2017/NĐ-CP về nhãn hàng hoá, quy định thông tin bắt buộc trên nhãn thực phẩm VN",
+              "esco_hint": "knowledge of Vietnamese mandatory food labelling regulations",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Dieline & Structural Packaging",
+              "label_vi": "Dieline, cấu trúc bao bì kỹ thuật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tạo dieline chính xác cho hộp carton, túi, blister pack; hiểu cấu trúc gập, dán, lắp ráp",
+              "esco_hint": "create accurate dielines for cartons, bags and blister packs",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Print Production Packaging",
+              "label_vi": "Kỹ thuật in ấn bao bì",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu kỹ thuật in bao bì: offset, flexo, gravure, hot stamping, embossing, varnish",
+              "esco_hint": "knowledge of packaging printing techniques including flexo and gravure",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Brand Consistency Packaging",
+              "label_vi": "Nhất quán thương hiệu trên bao bì",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo bao bì thể hiện đúng brand guidelines: màu Pantone, font, logo placement",
+              "esco_hint": "maintain brand consistency across packaging designs",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Consumer Psychology Packaging VN",
+              "label_vi": "Tâm lý người tiêu dùng trong bao bì VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu yếu tố tác động quyết định mua của người tiêu dùng VN qua thiết kế bao bì",
+              "esco_hint": "understand Vietnamese consumer psychology in packaging design decisions",
+              "confidence": 0.92,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "3D Mockup Packaging Presentation",
+              "label_vi": "Mockup 3D bao bì thuyết trình",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tạo mockup 3D bao bì bằng Photoshop, Cinema 4D hoặc phần mềm mockup chuyên dụng",
+              "esco_hint": "create 3D packaging mockups for client presentations",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Thiết kế đồ trang sức",
+      "nghe": "Thiết kế Công nghiệp",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-thiet-ke-do-trang-suc",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Jewellery Design",
+              "label_vi": "Thiết kế đồ trang sức",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế trang sức: nhẫn, dây chuyền, bông tai, vòng tay từ concept đến bản vẽ kỹ thuật",
+              "esco_hint": "design jewellery pieces from concept through technical specification",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Jewellery Materials Knowledge VN",
+              "label_vi": "Am hiểu vật liệu kim hoàn VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu vật liệu: vàng 9999/18K/10K, bạc, đá quý, đá bán quý trên thị trường trang sức VN",
+              "esco_hint": "knowledge of precious metals and gemstones in Vietnamese jewellery market",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Jewellery Technical Drawing CAD",
+              "label_vi": "Bản vẽ kỹ thuật trang sức",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vẽ kỹ thuật trang sức tay hoặc bằng phần mềm: Rhino, MatrixGold, JewelCAD",
+              "esco_hint": "produce technical jewellery drawings by hand or using CAD software",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Rhino MatrixGold JewelCAD",
+              "label_vi": "Rhino/MatrixGold/JewelCAD thiết kế trang sức",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng Rhino, MatrixGold hoặc JewelCAD thiết kế trang sức 3D hỗ trợ đúc mẫu",
+              "esco_hint": "use jewellery CAD software for 3D design and casting preparation",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Gemology Basic",
+              "label_vi": "Kiến thức đá quý cơ bản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu phân loại đá quý: kim cương 4C, ruby, emerald, sapphire, đá bán quý phổ biến",
+              "esco_hint": "basic gemology knowledge for jewellery design and specification",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Vietnam Jewellery Market Trends",
+              "label_vi": "Xu hướng thị trường trang sức VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu thị hiếu, xu hướng trang sức thị trường VN: truyền thống và hiện đại",
+              "esco_hint": "knowledge of Vietnamese jewellery market trends and consumer preferences",
+              "confidence": 0.92,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Handcraft & Model Making Jewellery",
+              "label_vi": "Thủ công, làm mẫu trang sức",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Kỹ năng thủ công: nặn sáp, đúc, giũa, đánh bóng mẫu trang sức phục vụ sản xuất",
+              "esco_hint": "apply handcraft skills for jewellery wax carving and sample making",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Aesthetic Sensibility Jewellery",
+              "label_vi": "Thẩm mỹ thiết kế trang sức",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thẩm mỹ tinh tế, am hiểu xu hướng thời trang để tạo trang sức vừa đẹp vừa bán được",
+              "esco_hint": "demonstrate refined aesthetic sensibility for jewellery design",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Vẽ kỹ thuật",
+      "nghe": "Thiết kế Công nghiệp",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ve-ky-thuat",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Technical Engineering Drawing",
+              "label_vi": "Vẽ kỹ thuật cơ khí, xây dựng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vẽ bản vẽ kỹ thuật cơ khí, xây dựng, điện: chi tiết, lắp ráp, mặt bằng, sơ đồ",
+              "esco_hint": "create mechanical, civil and electrical engineering technical drawings",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "AutoCAD Technical Drawing Engineer",
+              "label_vi": "AutoCAD vẽ kỹ thuật kỹ sư",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo AutoCAD 2D vẽ bản vẽ kỹ thuật đa ngành theo tiêu chuẩn kỹ thuật",
+              "esco_hint": "use AutoCAD 2D for multi-discipline engineering technical drawings",
+              "confidence": 0.99,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam TCVN Technical Drawing Standards",
+              "label_vi": "Tiêu chuẩn vẽ kỹ thuật TCVN VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vẽ đúng TCVN về vẽ kỹ thuật: khổ giấy, tỷ lệ, đường nét, ký hiệu, dung sai",
+              "esco_hint": "apply Vietnamese TCVN engineering drawing standards",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "SolidWorks / Inventor 3D CAD",
+              "label_vi": "SolidWorks, Autodesk Inventor 3D",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng SolidWorks hoặc Autodesk Inventor vẽ chi tiết 3D và lắp ráp cơ khí",
+              "esco_hint": "use SolidWorks or Inventor for 3D mechanical part and assembly design",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Dimensioning & Tolerances",
+              "label_vi": "Ghi kích thước, dung sai kỹ thuật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Ghi kích thước, dung sai hình học GD&T chính xác theo tiêu chuẩn kỹ thuật",
+              "esco_hint": "apply correct dimensioning and geometric tolerances to engineering drawings",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "BOM & Parts List Management",
+              "label_vi": "Quản lý BOM, danh sách vật tư",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập và quản lý Bill of Materials chính xác hỗ trợ mua hàng và sản xuất",
+              "esco_hint": "create and manage accurate Bills of Materials",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Blueprint Reading & Interpretation",
+              "label_vi": "Đọc hiểu bản vẽ kỹ thuật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đọc hiểu bản vẽ kỹ thuật đa ngành: cơ khí, xây dựng, điện, đường ống",
+              "esco_hint": "read and interpret multi-discipline engineering blueprints",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Accuracy Engineering Drawing",
+              "label_vi": "Độ chính xác tuyệt đối vẽ kỹ thuật",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tỉ mỉ kiểm tra từng kích thước, ký hiệu, dung sai tránh lỗi gây hậu quả trong sản xuất",
+              "esco_hint": "maintain absolute accuracy in all engineering drawing details",
+              "confidence": 0.98
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Thiết kế Thời trang",
+      "nghe": "Thiết kế Thời trang",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-thiet-ke-thoi-trang",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Fashion Design",
+              "label_vi": "Thiết kế thời trang",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế trang phục từ concept đến bản vẽ phẳng kỹ thuật, phù hợp xu hướng và đối tượng",
+              "esco_hint": "design fashion garments from concept through technical flat sketches",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Fashion Market Knowledge",
+              "label_vi": "Am hiểu thị trường thời trang VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu thị trường thời trang VN: thương hiệu nội địa, xu hướng, phân khúc khách hàng",
+              "esco_hint": "knowledge of Vietnamese fashion market segments and local brands",
+              "confidence": 0.96,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Fashion Illustration & Flat Sketch",
+              "label_vi": "Vẽ thời trang, bản vẽ phẳng kỹ thuật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vẽ fashion figure và flat sketch kỹ thuật đủ thông tin để sản xuất mẫu",
+              "esco_hint": "create fashion illustrations and technical flat sketches for production",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Adobe Illustrator Fashion Design",
+              "label_vi": "Adobe Illustrator thiết kế thời trang",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Illustrator vẽ flat sketch, colour palette, pattern repeat cho thời trang",
+              "esco_hint": "use Adobe Illustrator for flat sketching and colour work in fashion",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Fabric & Material Knowledge Fashion",
+              "label_vi": "Am hiểu vải và vật liệu thời trang",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu tính chất vải: cotton, linen, silk, polyester, stretch và ứng dụng trong thiết kế",
+              "esco_hint": "knowledge of fabric properties and appropriate material selection for garments",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Trend Research & Forecasting",
+              "label_vi": "Nghiên cứu và dự báo xu hướng thời trang",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Theo dõi xu hướng thời trang quốc tế và VN, ứng dụng vào collection mới",
+              "esco_hint": "research fashion trends and forecast for new collections",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Collection Development",
+              "label_vi": "Phát triển bộ sưu tập thời trang",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phát triển bộ sưu tập nhất quán về concept, màu sắc, form dáng và câu chuyện thương hiệu",
+              "esco_hint": "develop cohesive fashion collections with consistent story and aesthetic",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Sample Coordination Fashion",
+              "label_vi": "Phối hợp làm mẫu thời trang",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối hợp với xưởng may mẫu, giám sát chất lượng mẫu đảm bảo đúng thiết kế",
+              "esco_hint": "coordinate sample production and quality checking with garment workshops",
+              "confidence": 0.92,
+              "iviec_flag": "VN_DOMAIN"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Thiết kế rập",
+      "nghe": "Thiết kế Thời trang",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-thiet-ke-rap",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Pattern Making Garment",
+              "label_vi": "Thiết kế rập may mặc",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế rập trang phục: rập cơ bản và rập biến dạng từ mô hình chuẩn hoặc đo người thật",
+              "esco_hint": "create base and developed patterns for garment construction",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Garment Sizing Standards",
+              "label_vi": "Cỡ số may mặc VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu cỡ số người Việt Nam theo tiêu chuẩn TCVN 5782 và cỡ số thị trường VN",
+              "esco_hint": "knowledge of Vietnamese garment sizing standards TCVN 5782",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Grading Pattern",
+              "label_vi": "Nhảy cỡ, chuyển cỡ rập may mặc",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nhảy cỡ từ cỡ gốc sang các cỡ còn lại đảm bảo cân đối và tỷ lệ đúng",
+              "esco_hint": "grade patterns across size range maintaining correct proportions",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "CAD Pattern Software",
+              "label_vi": "Phần mềm rập CAD Gerber Lectra",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng Gerber AccuMark, Lectra Modaris hoặc Clo3D thiết kế rập kỹ thuật số",
+              "esco_hint": "use Gerber AccuMark, Lectra or Clo3D for digital pattern making",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Marker Planning & Fabric Efficiency",
+              "label_vi": "Sơ đồ sử dụng vải, tiết kiệm vải",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lên sơ đồ rải rập tối ưu sử dụng vải, giảm lãng phí trong cắt may hàng loạt",
+              "esco_hint": "plan cutting markers to optimise fabric utilisation",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Fitting & Pattern Correction",
+              "label_vi": "Mặc thử, chỉnh sửa rập",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Mặc thử mẫu, nhận diện và sửa lỗi rập: form dáng, đường may, cân bằng trang phục",
+              "esco_hint": "fit garments and correct pattern faults for accurate silhouette",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Garment Construction Knowledge VN",
+              "label_vi": "Kiến thức may mặc công nghiệp VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu quy trình may công nghiệp VN: cắt, may, là, hoàn thiện và kiểm tra chất lượng",
+              "esco_hint": "knowledge of Vietnamese industrial garment construction processes",
+              "confidence": 0.95,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Technical Specification Sheet Fashion",
+              "label_vi": "Bảng thông số kỹ thuật may mặc",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập bảng thông số kỹ thuật đầy đủ: measurements, construction notes, spec sheet",
+              "esco_hint": "prepare complete technical specification sheets for garment production",
+              "confidence": 0.96
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Thiết kế vải",
+      "nghe": "Thiết kế Thời trang",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-thiet-ke-vai",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Textile & Fabric Design",
+              "label_vi": "Thiết kế vải, hoạ tiết dệt",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế hoạ tiết vải: dệt, in, thêu, jacquard, repeat pattern cho thời trang và nội thất",
+              "esco_hint": "design textile patterns for weaving, printing and embroidery",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Surface Pattern & Print Design",
+              "label_vi": "Thiết kế họa tiết in vải",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sáng tác và xử lý họa tiết lặp (repeat pattern) cho in vải thời trang và gia dụng",
+              "esco_hint": "create repeat surface patterns for fabric printing",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Adobe Illustrator Photoshop Textile",
+              "label_vi": "Adobe Illustrator, Photoshop thiết kế vải",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Illustrator, Photoshop tạo repeat pattern, colourway, artwork cho in vải",
+              "esco_hint": "use Adobe Illustrator and Photoshop for textile pattern design",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam Textile Industry Knowledge",
+              "label_vi": "Ngành dệt may VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu chuỗi cung ứng dệt may VN: nguyên liệu, nhà máy dệt, nhà cung cấp vải",
+              "esco_hint": "knowledge of Vietnamese textile supply chain and fabric suppliers",
+              "confidence": 0.96,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Colour Management Textile",
+              "label_vi": "Quản lý màu sắc trong dệt may",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý màu Pantone, đặc tả màu cho nhà máy in, kiểm tra màu dập/in đúng yêu cầu",
+              "esco_hint": "manage colour specifications and approval for textile printing",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Weaving & Fabric Construction Knowledge",
+              "label_vi": "Kiến thức dệt và cấu trúc vải",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu cấu trúc dệt: plain weave, twill, satin và tác động đến thiết kế hoạ tiết",
+              "esco_hint": "knowledge of weave structures and their effect on pattern design",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Vietnam Textile Export Standards",
+              "label_vi": "Tiêu chuẩn xuất khẩu vải dệt may VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu tiêu chuẩn chất lượng vải xuất khẩu: OEKO-TEX, REACH, kiểm định chất lượng",
+              "esco_hint": "knowledge of textile export quality standards for Vietnamese manufacturers",
+              "confidence": 0.87,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Trend Textile Design",
+              "label_vi": "Xu hướng thiết kế vải",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Theo dõi xu hướng màu sắc, hoạ tiết vải quốc tế và ứng dụng vào thiết kế VN",
+              "esco_hint": "research international textile trend forecasts and apply to Vietnamese market",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Illustration (Nghệ thuật/Game)",
+      "nghe": "Nghệ thuật/Hoạt hình/Game",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-illustration",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Game & Entertainment Illustration",
+              "label_vi": "Minh họa game và giải trí",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vẽ minh họa cho game mobile, webtoon, nội dung giải trí số chất lượng cao",
+              "esco_hint": "create illustrations for mobile games, comics and digital entertainment",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Procreate Clip Studio Digital Art",
+              "label_vi": "Procreate, Clip Studio Paint vẽ số",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Procreate và/hoặc Clip Studio Paint vẽ minh họa nhân vật và bối cảnh",
+              "esco_hint": "use Procreate and Clip Studio Paint for professional digital illustration",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Character & Environment Illustration",
+              "label_vi": "Vẽ nhân vật và bối cảnh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vẽ nhân vật đa dạng phong cách và bối cảnh chi tiết phù hợp tone dự án",
+              "esco_hint": "illustrate characters and environments consistently across art styles",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Art Style Consistency",
+              "label_vi": "Nhất quán phong cách nghệ thuật",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì phong cách nghệ thuật nhất quán xuyên suốt dự án game hoặc ấn phẩm",
+              "esco_hint": "maintain consistent art style throughout a game or publication project",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Photoshop Digital Painting",
+              "label_vi": "Photoshop vẽ số, digital painting",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng Photoshop digital painting tạo concept art, key visual, splash art",
+              "esco_hint": "use Photoshop for digital painting and concept art creation",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam Game Webtoon Market",
+              "label_vi": "Thị trường game và webtoon VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu thị trường game mobile VN, webtoon, truyện tranh số đang phát triển tại VN",
+              "esco_hint": "knowledge of Vietnamese mobile game and webtoon market",
+              "confidence": 0.89,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Art Direction Brief Response",
+              "label_vi": "Thực hiện art direction brief",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đọc hiểu và thực hiện chính xác art direction brief từ game designer hoặc art director",
+              "esco_hint": "follow art direction briefs from game designer or art director accurately",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Portfolio Game Art",
+              "label_vi": "Portfolio game art chuyên nghiệp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì portfolio game art thể hiện range phong cách và chất lượng chuyên nghiệp",
+              "esco_hint": "maintain a professional game art portfolio demonstrating range and quality",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Animation Design (Nghệ thuật/Game)",
+      "nghe": "Nghệ thuật/Hoạt hình/Game",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-animation-design",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "2D & 3D Animation Production",
+              "label_vi": "Sản xuất hoạt hình 2D và 3D",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tạo hoạt hình 2D/3D cho game, TVC, phim hoạt hình, nội dung mạng xã hội",
+              "esco_hint": "produce 2D and 3D animations for games, advertising and digital content",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "After Effects Animation",
+              "label_vi": "Adobe After Effects hoạt hình",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo After Effects tạo motion graphics, character animation, visual effects",
+              "esco_hint": "create animations and motion graphics using After Effects",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Spine DragonBones 2D Game Animation",
+              "label_vi": "Spine, DragonBones hoạt hình 2D game",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng Spine2D hoặc DragonBones tạo skeleton animation cho nhân vật game mobile",
+              "esco_hint": "use Spine or DragonBones for 2D skeletal animation in mobile games",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Maya Blender 3D Animation",
+              "label_vi": "Maya, Blender hoạt hình 3D",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng Maya hoặc Blender tạo character animation, rigging, keyframe animation 3D",
+              "esco_hint": "use Maya or Blender for 3D character animation and rigging",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "12 Principles of Animation",
+              "label_vi": "12 nguyên tắc hoạt hình Disney",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm và áp dụng 12 nguyên tắc hoạt hình tạo chuyển động tự nhiên và hấp dẫn",
+              "esco_hint": "apply the 12 principles of animation for natural and appealing motion",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Game Animation Market",
+              "label_vi": "Thị trường hoạt hình game VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu ngành game VN: VNG, VTC, Gamota và nhu cầu animation game mobile tại VN",
+              "esco_hint": "knowledge of Vietnamese game industry and mobile game animation demand",
+              "confidence": 0.88,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Game Engine Animation Unity",
+              "label_vi": "Tích hợp animation vào Unity, Unreal",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Xuất và tích hợp animation vào Unity hoặc Unreal Engine cho game production",
+              "esco_hint": "export and integrate animations into Unity or Unreal Engine",
+              "confidence": 0.88,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Storyboard Animatic Pre-production",
+              "label_vi": "Storyboard, animatic tiền kỳ sản xuất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Vẽ storyboard và tạo animatic kiểm tra timing, staging trước khi sản xuất",
+              "esco_hint": "create storyboards and animatics for animation pre-production",
+              "confidence": 0.92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Motion Graphic",
+      "nghe": "Nghệ thuật/Hoạt hình/Game",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-motion-graphic",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Motion Graphics Design",
+              "label_vi": "Thiết kế motion graphics",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tạo motion graphics cho TVC, social media, explainer video, broadcast, UI animation",
+              "esco_hint": "create motion graphics for advertising, social media and broadcast",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "After Effects Advanced Motion",
+              "label_vi": "Adobe After Effects nâng cao motion",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo After Effects: expressions, shape layer, AE scripting, plugin MG chuyên nghiệp",
+              "esco_hint": "use After Effects at advanced level including expressions and scripting",
+              "confidence": 0.99,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Cinema 4D 3D Motion",
+              "label_vi": "Cinema 4D motion graphics 3D",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng Cinema 4D tạo yếu tố 3D kết hợp motion graphics cho quảng cáo",
+              "esco_hint": "use Cinema 4D for 3D motion graphics elements",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Adobe Premiere Motion Video",
+              "label_vi": "Adobe Premiere dựng video motion",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng Adobe Premiere kết hợp After Effects hoàn thiện video motion graphics",
+              "esco_hint": "use Adobe Premiere alongside After Effects for final video delivery",
+              "confidence": 0.92,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Typography Animation",
+              "label_vi": "Typography animation, chữ động",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tạo typography animation đẹp mắt, nhịp nhàng theo âm nhạc và thông điệp",
+              "esco_hint": "create typographic animations aligned with music and messaging",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Social Media Video Format VN",
+              "label_vi": "Format video mạng xã hội VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tối ưu motion graphics cho Facebook, TikTok, YouTube, Zalo theo spec VN",
+              "esco_hint": "optimise motion graphics for Vietnamese social media platform specifications",
+              "confidence": 0.92,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Brand Motion Guidelines",
+              "label_vi": "Hệ thống motion brand guidelines",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Xây dựng motion style guide đảm bảo nhất quán thương hiệu trong nội dung video",
+              "esco_hint": "develop and follow brand motion style guidelines",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Sound Design Basic Motion",
+              "label_vi": "Âm thanh cơ bản motion graphics",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Chọn nhạc nền, thêm SFX, sync âm thanh với chuyển động trong motion graphics",
+              "esco_hint": "select music, add SFX and sync audio to motion graphics",
+              "confidence": 0.87
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Họa sĩ truyện tranh",
+      "nghe": "Nghệ thuật/Hoạt hình/Game",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-hoa-si-truyen-tranh",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Comics & Manga Creation",
+              "label_vi": "Sáng tác truyện tranh, manga",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vẽ truyện tranh: nhân vật, bối cảnh, layout trang, biểu cảm kể chuyện hấp dẫn",
+              "esco_hint": "create comics and manga with character, background and page layout",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Sequential Art Storytelling",
+              "label_vi": "Nghệ thuật kể chuyện tuần tự",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bố cục trang truyện tranh, dẫn dắt mắt người đọc, nhịp điệu kể chuyện qua hình ảnh",
+              "esco_hint": "apply sequential art and visual storytelling techniques",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Clip Studio Paint Manga",
+              "label_vi": "Clip Studio Paint vẽ manga, truyện tranh",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Clip Studio Paint vẽ manga, tô màu, screentone, layout trang",
+              "esco_hint": "use Clip Studio Paint for manga and comic creation",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Character Design Consistency Comics",
+              "label_vi": "Nhất quán thiết kế nhân vật truyện tranh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì nhất quán ngoại hình, trang phục, biểu cảm nhân vật xuyên suốt tập truyện",
+              "esco_hint": "maintain character design consistency throughout a comics series",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Background Environment Comics",
+              "label_vi": "Vẽ bối cảnh, môi trường truyện tranh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vẽ bối cảnh chi tiết, góc nhìn perspective đúng cho không gian truyện tranh",
+              "esco_hint": "draw detailed backgrounds with accurate perspective for comics",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Inking Colouring Comics",
+              "label_vi": "Tô mực và màu truyện tranh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kỹ thuật inking rõ nét và tô màu flat/cell shading cho truyện tranh",
+              "esco_hint": "apply inking and colouring techniques for comics production",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam Webtoon Comic Market",
+              "label_vi": "Thị trường webtoon, truyện tranh VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu nền tảng webtoon VN, cộng đồng độc giả truyện tranh số tại VN",
+              "esco_hint": "knowledge of Vietnamese webtoon and digital comic platforms",
+              "confidence": 0.91,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Deadline Series Comics",
+              "label_vi": "Deadline sản xuất loạt truyện tranh",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hoàn thành số trang theo lịch xuất bản định kỳ của nền tảng web hoặc tạp chí",
+              "esco_hint": "deliver pages consistently to regular publication schedules",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chỉnh sửa ảnh (Retouch)",
+      "nghe": "Nghệ thuật/Hoạt hình/Game",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chinh-sua-anh-retouch",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Professional Photo Retouching",
+              "label_vi": "Chỉnh sửa, retouch ảnh chuyên nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Retouch ảnh sản phẩm, chân dung, thời trang đạt chuẩn thương mại và quảng cáo",
+              "esco_hint": "retouch product, portrait and fashion photos to commercial standards",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Adobe Photoshop Advanced Retouch",
+              "label_vi": "Adobe Photoshop retouch nâng cao",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Photoshop: frequency separation, dodge & burn, skin retouching, composite",
+              "esco_hint": "use Photoshop advanced retouching including frequency separation",
+              "confidence": 0.99,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Lightroom Colour Grading",
+              "label_vi": "Lightroom chỉnh màu, colour grading",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Lightroom chỉnh màu hàng loạt nhất quán, tạo preset và LUT",
+              "esco_hint": "use Lightroom for batch colour editing and preset creation",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Skin Retouching Natural",
+              "label_vi": "Retouch da tự nhiên, thẩm mỹ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Retouch da giữ chất liệu tự nhiên, không quá smooth, phù hợp thẩm mỹ hiện đại",
+              "esco_hint": "retouch skin naturally maintaining texture and realistic appearance",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Product Photo Retouch VN Ecommerce",
+              "label_vi": "Retouch ảnh sản phẩm thương mại điện tử VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Retouch ảnh sản phẩm cho Shopee, Lazada, Tiki theo chuẩn từng nền tảng VN",
+              "esco_hint": "retouch product photos for Vietnamese e-commerce platform standards",
+              "confidence": 0.95,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Composite Photo Manipulation",
+              "label_vi": "Ghép ảnh, photo manipulation",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Ghép ảnh sáng tạo, xử lý nền, thay đổi background chuyên nghiệp cho quảng cáo",
+              "esco_hint": "create photo composites and manipulations for advertising",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Batch Processing Retouch",
+              "label_vi": "Xử lý hàng loạt ảnh, batch processing",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng Lightroom preset, Photoshop action xử lý hàng loạt ảnh đúng deadline",
+              "esco_hint": "use batch processing to handle high-volume retouching efficiently",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "File Format Export Standards",
+              "label_vi": "Tiêu chuẩn xuất file ảnh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xuất file đúng chuẩn: JPEG, PNG, TIFF, WebP cho in ấn và sử dụng số",
+              "esco_hint": "export images in correct formats and resolutions for print and digital use",
+              "confidence": 0.92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Concept Artist",
+      "nghe": "Nghệ thuật/Hoạt hình/Game",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-concept-artist",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Concept Art Creation",
+              "label_vi": "Sáng tác concept art",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tạo concept art nhân vật, môi trường, prop, creature cho game và phim giải trí",
+              "esco_hint": "create concept art for characters, environments and props",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Digital Painting Photoshop Concept",
+              "label_vi": "Digital painting Photoshop concept art",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Photoshop digital painting tạo concept art chất lượng production",
+              "esco_hint": "use Photoshop for professional concept art digital painting",
+              "confidence": 0.99,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Character Design Concept Art",
+              "label_vi": "Thiết kế nhân vật concept art",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế nhân vật từ silhouette đến full colour sheet với multiple poses",
+              "esco_hint": "design characters from silhouette through full colour reference sheets",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Environment Concept Design",
+              "label_vi": "Thiết kế môi trường concept",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế môi trường game/phim: world-building, kiến trúc, cảnh quan nhất quán",
+              "esco_hint": "design game or film environments with consistent world-building",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Perspective Composition Concept",
+              "label_vi": "Phối cảnh và bố cục trong concept art",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Áp dụng perspective 1/2/3 điểm, framing, visual storytelling trong concept art",
+              "esco_hint": "apply perspective and composition principles in concept art",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Art Style Research Moodboard",
+              "label_vi": "Nghiên cứu phong cách, moodboard",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thu thập tham chiếu, tạo moodboard định hình phong cách nghệ thuật dự án",
+              "esco_hint": "research references and create moodboards to define project art style",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Game Industry Concept Art",
+              "label_vi": "Ngành game VN nhu cầu concept art",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu nhu cầu concept art trong ngành game VN: VNG, KMS, Hiker, Amanotes",
+              "esco_hint": "knowledge of Vietnamese game studios and their concept art requirements",
+              "confidence": 0.88,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Feedback Iteration Concept",
+              "label_vi": "Chỉnh sửa theo feedback art direction",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tiếp nhận feedback art director, chỉnh sửa concept art nhanh và chuyên nghiệp",
+              "esco_hint": "iterate concept art quickly based on art director feedback",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Game Design",
+      "nghe": "Nghệ thuật/Hoạt hình/Game",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-game-design",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Game Design Documentation GDD",
+              "label_vi": "Thiết kế game, GDD",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Viết và duy trì Game Design Document: cơ chế gameplay, systems, progression, balance",
+              "esco_hint": "write and maintain GDDs covering game mechanics and systems",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Game Mechanics Systems Design",
+              "label_vi": "Thiết kế cơ chế và hệ thống game",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế core loop, meta loop, monetisation, progression hấp dẫn và cân bằng",
+              "esco_hint": "design core loops, meta progression and monetisation systems",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Vietnam Mobile Game Market",
+              "label_vi": "Thị trường game mobile VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu thị trường game mobile VN: genre, hành vi người chơi VN, monetisation",
+              "esco_hint": "knowledge of Vietnamese mobile game market and player behaviour",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Unity Unreal Game Engine",
+              "label_vi": "Unity hoặc Unreal Engine",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng Unity hoặc Unreal Engine prototype và triển khai cơ chế game",
+              "esco_hint": "use Unity or Unreal Engine for game prototyping",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Level Design",
+              "label_vi": "Thiết kế level game",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế level: layout, difficulty curve, player guidance, reward placement",
+              "esco_hint": "design game levels with appropriate difficulty curves and player guidance",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Data-driven Game Balancing",
+              "label_vi": "Cân bằng game dựa trên dữ liệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích dữ liệu người chơi, điều chỉnh balance, economy và progression",
+              "esco_hint": "use player data to balance game economics and progression",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Player Psychology Engagement",
+              "label_vi": "Tâm lý người chơi, engagement design",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu tâm lý người chơi: motivation, flow state, retention hooks",
+              "esco_hint": "understand player psychology for engagement and retention design",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Competitive Game Analysis",
+              "label_vi": "Phân tích game cạnh tranh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nghiên cứu game cạnh tranh, phân tích feature, monetisation để đổi mới",
+              "esco_hint": "analyse competitor games to identify opportunities and innovate",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "English Game Design Communication",
+              "label_vi": "Tiếng Anh thiết kế game",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc tài liệu game design tiếng Anh, giao tiếp với team quốc tế",
+              "esco_hint": "read English game design resources and communicate with international teams",
+              "confidence": 0.88
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Photographer/Video Editor (Nghệ thuật)",
+      "nghe": "Nghệ thuật/Hoạt hình/Game",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-photographer-video-editor",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Creative Photography",
+              "label_vi": "Chụp ảnh sáng tạo nghệ thuật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Chụp ảnh sản phẩm, chân dung, lifestyle, editorial với góc nhìn sáng tạo",
+              "esco_hint": "photograph products, portraits and lifestyle with creative vision",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Adobe Premiere Video Editing Art",
+              "label_vi": "Adobe Premiere Pro dựng video sáng tạo",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Premiere Pro cắt ghép video, colour correction, xuất đa định dạng",
+              "esco_hint": "use Adobe Premiere Pro for video editing and colour correction",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Lightroom Photoshop Photo Art",
+              "label_vi": "Lightroom, Photoshop chỉnh sửa ảnh sáng tạo",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Lightroom chỉnh màu hàng loạt và Photoshop retouch sáng tạo",
+              "esco_hint": "use Lightroom and Photoshop for creative photo editing",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "After Effects Creative Video Effects",
+              "label_vi": "After Effects hiệu ứng video sáng tạo",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "After Effects tạo hiệu ứng chuyển cảnh, title, motion graphics cho video",
+              "esco_hint": "use After Effects for creative video effects and motion graphics",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Studio Lighting Creative",
+              "label_vi": "Thiết lập ánh sáng studio sáng tạo",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết lập ánh sáng studio và ngoại cảnh sáng tạo cho sản phẩm, fashion, TVC",
+              "esco_hint": "set up creative studio and location lighting for productions",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Social Content VN Platforms",
+              "label_vi": "Sản xuất nội dung mạng xã hội VN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sản xuất ảnh và video phù hợp spec Facebook, TikTok, Instagram, YouTube VN",
+              "esco_hint": "produce content optimised for Vietnamese social media platforms",
+              "confidence": 0.93,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "DaVinci Resolve Colour Grade",
+              "label_vi": "DaVinci Resolve colour grading",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng DaVinci Resolve colour grading video chuyên nghiệp",
+              "esco_hint": "use DaVinci Resolve for professional colour grading",
+              "confidence": 0.86,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Equipment Operation Photo Video",
+              "label_vi": "Vận hành bảo quản thiết bị ảnh video",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Vận hành bảo quản thiết bị: máy ảnh, lens, gimbal, đèn studio chuyên nghiệp",
+              "esco_hint": "operate and maintain professional camera and lighting equipment",
+              "confidence": 0.92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Nghệ thuật/Hoạt hình/Game khác",
+      "nghe": "Nghệ thuật/Hoạt hình/Game",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-nghe-thuat-hoat-hinh-game-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 6
+          },
+          "skills": [
+            {
+              "label_en": "Art Animation Game Specialist",
+              "label_vi": "Chuyên môn nghệ thuật/hoạt hình/game",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện công việc nghệ thuật, hoạt hình hoặc game theo chuyên môn cụ thể",
+              "esco_hint": "apply specialist art, animation or game design skills",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Core Creative Software Art",
+              "label_vi": "Phần mềm sáng tạo cốt lõi",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thành thạo ít nhất một phần mềm sáng tạo: Adobe CC, Procreate, Unity, Blender",
+              "esco_hint": "use at least one core creative software tool proficiently",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Visual Storytelling Art",
+              "label_vi": "Kể chuyện thị giác",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Truyền đạt cảm xúc và câu chuyện hiệu quả qua hình ảnh và chuyển động",
+              "esco_hint": "convey emotion and narrative effectively through visual work",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Portfolio Art Creative",
+              "label_vi": "Portfolio nghệ thuật sáng tạo",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì portfolio thể hiện năng lực và phong cách nghệ thuật chuyên nghiệp",
+              "esco_hint": "maintain a professional creative portfolio",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Creative Team Collaboration Art",
+              "label_vi": "Phối hợp sáng tạo trong đội nhóm",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Làm việc sáng tạo trong đội ngũ đa chuyên môn: designer, developer, producer",
+              "esco_hint": "collaborate creatively within multidisciplinary teams",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Self-directed Learning Art",
+              "label_vi": "Tự học, cập nhật kỹ năng nghệ thuật",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Chủ động học kỹ thuật mới, theo dõi xu hướng nghệ thuật và công nghệ",
+              "esco_hint": "proactively learn new artistic techniques and follow industry trends",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn nghiên cứu người dùng",
+      "nghe": "Nghiên cứu người dùng",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-nghien-cuu-nguoi-dung",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "User Research Methods",
+              "label_vi": "Phương pháp nghiên cứu người dùng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế và thực hiện nghiên cứu người dùng: interview, usability test, diary study",
+              "esco_hint": "design and conduct user research using qualitative and quantitative methods",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Usability Testing",
+              "label_vi": "Kiểm tra tính dễ dùng sản phẩm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập kế hoạch và điều hành usability testing, phân tích hành vi người dùng",
+              "esco_hint": "plan and facilitate usability testing sessions",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "User Interview Synthesis",
+              "label_vi": "Phỏng vấn người dùng và tổng hợp insight",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện user interview, phân tích affinity diagram, tổng hợp insight hành động",
+              "esco_hint": "conduct user interviews and synthesise insights through affinity mapping",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam User Research Context",
+              "label_vi": "Nghiên cứu người dùng VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu đặc thù người dùng VN: hành vi mobile, rào cản tham gia nghiên cứu",
+              "esco_hint": "knowledge of Vietnamese user research cultural and mobile behaviour context",
+              "confidence": 0.95,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Research Tools Maze Hotjar",
+              "label_vi": "Công cụ nghiên cứu Maze, Hotjar",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng Maze, Hotjar, Lookback hoặc UserTesting thu thập dữ liệu nghiên cứu",
+              "esco_hint": "use research tools such as Maze, Hotjar or Lookback",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Research Report Storytelling",
+              "label_vi": "Báo cáo nghiên cứu, kể chuyện dữ liệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Trình bày kết quả nghiên cứu rõ ràng, actionable cho product team và stakeholders",
+              "esco_hint": "present research findings clearly and persuasively to product teams",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Survey Design Quantitative Research",
+              "label_vi": "Thiết kế khảo sát, phân tích định lượng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế survey, phân tích dữ liệu định lượng bổ sung cho nghiên cứu định tính",
+              "esco_hint": "design surveys and analyse quantitative data",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Design Product Team Collaboration UX",
+              "label_vi": "Phối hợp team thiết kế và sản phẩm",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tích hợp insight nghiên cứu vào quy trình thiết kế UX với PM và designer",
+              "esco_hint": "integrate research insights into UX design process",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Empathy Participant Rapport",
+              "label_vi": "Đồng cảm, xây dựng rapport người tham gia",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tạo môi trường thoải mái, xây dựng rapport với người tham gia để thu insight thật",
+              "esco_hint": "build rapport with research participants to elicit authentic insights",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Excel SPSS Quantitative Analysis",
+              "label_vi": "Excel, SPSS phân tích dữ liệu nghiên cứu",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng Excel hoặc SPSS phân tích kết quả khảo sát và dữ liệu người dùng",
+              "esco_hint": "use Excel or SPSS to analyse survey and quantitative research data",
+              "confidence": 0.88,
+              "iviec_flag": "VN_TOOL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Quản lý/Giám sát thiết kế",
+      "nghe": "Quản lý thiết kế",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-quan-ly-giam-sat-thiet-ke",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Design Team Management",
+              "label_vi": "Quản lý đội ngũ thiết kế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuyển dụng, phát triển, quản lý hiệu suất đội ngũ designer đa chuyên môn",
+              "esco_hint": "recruit, develop and manage multidisciplinary design teams",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Design Process & Quality Control",
+              "label_vi": "Quy trình thiết kế và kiểm soát chất lượng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết lập và duy trì quy trình thiết kế, tiêu chuẩn chất lượng đầu ra nhất quán",
+              "esco_hint": "establish design processes and quality standards",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Creative Direction",
+              "label_vi": "Định hướng sáng tạo cho team",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đưa ra định hướng sáng tạo rõ ràng, review và phản hồi xây dựng cho designer",
+              "esco_hint": "provide clear creative direction and constructive design feedback",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Brand & Design System Governance",
+              "label_vi": "Quản trị hệ thống thương hiệu và design",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì nhất quán thương hiệu, quản lý design system xuyên suốt sản phẩm và kênh",
+              "esco_hint": "maintain brand consistency and govern design systems",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Cross-functional Collaboration Design",
+              "label_vi": "Phối hợp đa phòng ban trong thiết kế",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phối hợp với marketing, product, engineering đảm bảo thiết kế phục vụ mục tiêu kinh doanh",
+              "esco_hint": "collaborate across functions to align design with business goals",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam Design Industry Talent",
+              "label_vi": "Thị trường nhân tài thiết kế VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu thị trường nhân tài thiết kế VN: lương, kỹ năng, trường đào tạo, xu hướng",
+              "esco_hint": "knowledge of Vietnamese design talent market and education landscape",
+              "confidence": 0.91,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Project & Resource Planning Design",
+              "label_vi": "Kế hoạch dự án, nguồn lực thiết kế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập kế hoạch dự án thiết kế: timeline, phân bổ nguồn lực, ưu tiên workload",
+              "esco_hint": "plan design projects, allocate resources and prioritise workloads",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Budget Management Design",
+              "label_vi": "Quản lý ngân sách thiết kế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Quản lý ngân sách phòng thiết kế: tool, freelance, training, production",
+              "esco_hint": "manage design department budget for tools, freelancers and production",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Core Design Software Proficiency",
+              "label_vi": "Thành thạo phần mềm thiết kế cốt lõi",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu và có thể sử dụng phần mềm thiết kế: Adobe CC, Figma để review và guide",
+              "esco_hint": "use core design software to review and guide team output",
+              "confidence": 0.92,
+              "iviec_flag": "VN_TOOL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Giám đốc/Đạo diễn thiết kế",
+      "nghe": "Quản lý thiết kế",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-giam-doc-dao-dien-thiet-ke",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Creative & Design Direction",
+              "label_vi": "Lãnh đạo sáng tạo, đạo diễn thiết kế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Định hướng và dẫn dắt toàn bộ tầm nhìn sáng tạo của thương hiệu hoặc tổ chức",
+              "esco_hint": "lead and define the creative and design vision of the brand",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Design Strategy & Brand Vision",
+              "label_vi": "Chiến lược thiết kế, tầm nhìn thương hiệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng chiến lược thiết kế dài hạn phù hợp mục tiêu kinh doanh và vị thế thương hiệu",
+              "esco_hint": "develop long-term design strategy aligned with business objectives",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Vietnam Brand & Design Market",
+              "label_vi": "Thị trường thương hiệu và thiết kế VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu cảnh quan thương hiệu VN, xu hướng thiết kế và đặc thù thẩm mỹ người VN",
+              "esco_hint": "knowledge of Vietnamese brand landscape and local design aesthetic trends",
+              "confidence": 0.94,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "C-suite Design Communication",
+              "label_vi": "Trình bày chiến lược thiết kế cấp lãnh đạo",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thuyết trình chiến lược sáng tạo thuyết phục HĐQT, CEO, nhà đầu tư",
+              "esco_hint": "present design strategy persuasively to board and executive leadership",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Multi-discipline Design Leadership",
+              "label_vi": "Lãnh đạo đa lĩnh vực thiết kế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lãnh đạo các team: graphic, UX/UI, motion, brand, product design thống nhất tầm nhìn",
+              "esco_hint": "lead multiple design disciplines under unified creative vision",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Design ROI & Business Impact",
+              "label_vi": "ROI thiết kế và tác động kinh doanh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đo lường và trình bày tác động kinh doanh của quyết định thiết kế qua metrics",
+              "esco_hint": "measure and articulate business impact of design decisions",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Agency & Vendor Management Design",
+              "label_vi": "Quản lý agency, nhà cung cấp sáng tạo",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lựa chọn, quản lý agency thiết kế, studio, freelancer để mở rộng năng lực sáng tạo",
+              "esco_hint": "manage design agencies, studios and freelancers",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Talent Development Design",
+              "label_vi": "Phát triển nhân tài thiết kế",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Cố vấn, phát triển designer cấp dưới, xây dựng văn hóa sáng tạo trong tổ chức",
+              "esco_hint": "mentor designers and build a creative culture within the organisation",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "English Design Leadership",
+              "label_vi": "Tiếng Anh lãnh đạo thiết kế",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giao tiếp tiếng Anh với đối tác, agency quốc tế và hội nghị thiết kế quốc tế",
+              "esco_hint": "communicate in English with international design partners and conferences",
+              "confidence": 0.87
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Giám đốc thiết kế hình ảnh (Visual)",
+      "nghe": "Quản lý thiết kế",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-giam-doc-thiet-ke-hinh-anh-visual",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Visual Design Direction",
+              "label_vi": "Đạo diễn hình ảnh thương hiệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Định hướng toàn bộ ngôn ngữ hình ảnh: màu sắc, typography, layout, photography style",
+              "esco_hint": "direct brand visual language across all channels and touchpoints",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Visual Identity System",
+              "label_vi": "Hệ thống nhận diện hình ảnh thương hiệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng và quản lý hệ thống nhận diện hình ảnh toàn diện: guidelines, templates, assets",
+              "esco_hint": "build and manage comprehensive visual identity systems and guidelines",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Vietnam Visual Aesthetic Market",
+              "label_vi": "Thẩm mỹ hình ảnh thị trường VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu thẩm mỹ hình ảnh người tiêu dùng VN: màu sắc, phong cách phù hợp thị trường",
+              "esco_hint": "knowledge of Vietnamese visual aesthetics and consumer preferences",
+              "confidence": 0.94,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Photography & Video Art Direction",
+              "label_vi": "Đạo diễn hình ảnh, video quảng cáo",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đạo diễn buổi chụp ảnh, quay video đảm bảo nhất quán với tầm nhìn hình ảnh thương hiệu",
+              "esco_hint": "art direct photo and video shoots for brand visual consistency",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Adobe CC Design Leadership",
+              "label_vi": "Adobe CC lãnh đạo thiết kế hình ảnh",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu sâu Adobe CC để lãnh đạo team và review chất lượng thiết kế hình ảnh",
+              "esco_hint": "use Adobe CC to lead team and review visual design quality",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Campaign Visual Strategy",
+              "label_vi": "Chiến lược hình ảnh chiến dịch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lên chiến lược hình ảnh cho chiến dịch marketing đa kênh nhất quán và hấp dẫn",
+              "esco_hint": "develop campaign visual strategies across multiple marketing channels",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Digital & Print Visual Consistency",
+              "label_vi": "Nhất quán hình ảnh số và in ấn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo nhất quán hình ảnh thương hiệu xuyên suốt kênh số và ấn phẩm in ấn",
+              "esco_hint": "ensure visual brand consistency across digital and print channels",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Stakeholder Visual Presentation",
+              "label_vi": "Thuyết trình hình ảnh cho stakeholder",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thuyết trình và bảo vệ quyết định hình ảnh sáng tạo trước stakeholder và khách hàng",
+              "esco_hint": "present and defend visual design decisions to stakeholders",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Quản lý thiết kế khác",
+      "nghe": "Quản lý thiết kế",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-quan-ly-thiet-ke-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 6
+          },
+          "skills": [
+            {
+              "label_en": "Design Management Other",
+              "label_vi": "Quản lý thiết kế theo chuyên môn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý, giám sát công việc thiết kế theo lĩnh vực và quy mô cụ thể",
+              "esco_hint": "manage and supervise design work in relevant specialisation",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Design Quality Standards",
+              "label_vi": "Tiêu chuẩn chất lượng thiết kế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết lập và đảm bảo tiêu chuẩn chất lượng thiết kế nhất quán trong team",
+              "esco_hint": "establish and maintain consistent design quality standards",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Team Mentoring Design",
+              "label_vi": "Cố vấn, phát triển team thiết kế",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Cố vấn designer, hỗ trợ phát triển kỹ năng và sự nghiệp trong team",
+              "esco_hint": "mentor and develop designers' skills and careers",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Creative Briefing & Review",
+              "label_vi": "Briefing và review sáng tạo",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Viết creative brief rõ ràng, review và phản hồi chất lượng thiết kế định kỳ",
+              "esco_hint": "write clear creative briefs and conduct regular design reviews",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Stakeholder Communication Design",
+              "label_vi": "Giao tiếp với stakeholder về thiết kế",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đại diện team thiết kế giao tiếp với các phòng ban, quản lý kỳ vọng",
+              "esco_hint": "represent design team and manage stakeholder expectations",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Vietnam Design Talent Recruitment",
+              "label_vi": "Tuyển dụng nhân tài thiết kế VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tuyển dụng designer phù hợp qua các kênh: portfolio review, behance, LinkedIn VN",
+              "esco_hint": "recruit design talent through Vietnamese channels and portfolio review",
+              "confidence": 0.88,
+              "iviec_flag": "VN_DOMAIN"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Thiết kế khác",
+      "nghe": "Thiết kế khác",
+      "nhom_nghe": "Thiết kế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-thiet-ke-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 7
+          },
+          "skills": [
+            {
+              "label_en": "Design Specialist Other",
+              "label_vi": "Chuyên môn thiết kế theo lĩnh vực",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện công việc thiết kế theo chuyên môn đào tạo và kinh nghiệm tích lũy",
+              "esco_hint": "apply specialist design skills in relevant field",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Core Design Tools Other",
+              "label_vi": "Phần mềm thiết kế cốt lõi",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thành thạo ít nhất một phần mềm thiết kế phù hợp lĩnh vực chuyên môn",
+              "esco_hint": "use at least one core design software tool for specialist work",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Design Principles & Aesthetics",
+              "label_vi": "Nguyên tắc thiết kế và thẩm mỹ",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Áp dụng nguyên tắc thiết kế cơ bản: cân bằng, contrast, hierarchy, whitespace",
+              "esco_hint": "apply fundamental design principles in all visual work",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Portfolio Professional Design",
+              "label_vi": "Portfolio thiết kế chuyên nghiệp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì portfolio thiết kế cập nhật thể hiện phong cách và năng lực chuyên môn",
+              "esco_hint": "develop and maintain a professional design portfolio",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Client & Brief Responsiveness",
+              "label_vi": "Đáp ứng yêu cầu khách hàng, brief",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đọc hiểu brief, đặt câu hỏi và deliver thiết kế đáp ứng mục tiêu sáng tạo",
+              "esco_hint": "interpret briefs accurately and deliver design solutions meeting objectives",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Design Market Awareness",
+              "label_vi": "Am hiểu thị trường thiết kế VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu xu hướng thiết kế, nhu cầu thị trường và thẩm mỹ người dùng tại VN",
+              "esco_hint": "knowledge of Vietnamese design market trends and local aesthetics",
+              "confidence": 0.88,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Revision & Iteration Design",
+              "label_vi": "Chỉnh sửa và lặp lại thiết kế",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tiếp nhận phản hồi chuyên nghiệp, chỉnh sửa và cải tiến thiết kế hiệu quả",
+              "esco_hint": "receive feedback professionally and iterate designs effectively",
+              "confidence": 0.92
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
