@@ -10,71 +10,84 @@
   *{box-sizing:border-box;margin:0;padding:0}
   body{font-family:'Be Vietnam Pro',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
   body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(59,130,246,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0}
-  .wrap{position:relative;z-index:1;max-width:1400px;margin:0 auto;padding:0 24px}
-  header{padding:28px 0 0;border-bottom:1px solid var(--border);background:linear-gradient(180deg,rgba(59,130,246,.06) 0%,transparent 100%)}
-  .hrow{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-bottom:18px}
-  .logo h1{font-size:24px;font-weight:800;letter-spacing:-.5px;background:linear-gradient(135deg,#e2e8f0 0%,#3b82f6 50%,#06b6d4 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .wrap{position:relative;z-index:1;max-width:1500px;margin:0 auto;padding:0 24px}
+  header{padding:24px 0 0;border-bottom:1px solid var(--border);background:linear-gradient(180deg,rgba(59,130,246,.06) 0%,transparent 100%)}
+  .hrow{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-bottom:14px}
+  .logo h1{font-size:22px;font-weight:800;letter-spacing:-.5px;background:linear-gradient(135deg,#e2e8f0 0%,#3b82f6 50%,#06b6d4 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
   .logo p{color:var(--text-muted);font-size:11px;margin-top:3px;font-family:'JetBrains Mono',monospace}
-  .hstats{display:flex;gap:12px;flex-wrap:wrap}
-  .stat{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:6px 14px;text-align:center}
-  .stat .n{font-size:20px;font-weight:700;color:var(--accent);font-family:'JetBrains Mono',monospace}
+  .hstats{display:flex;gap:10px;flex-wrap:wrap}
+  .stat{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:5px 13px;text-align:center}
+  .stat .n{font-size:18px;font-weight:700;color:var(--accent);font-family:'JetBrains Mono',monospace}
   .stat .l{font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px}
-  .sector-nav{display:flex;gap:6px;flex-wrap:wrap;padding:12px 0 0}
-  .stab{display:flex;align-items:center;gap:8px;padding:8px 16px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text-dim);cursor:pointer;font-size:13px;font-weight:500;font-family:'Be Vietnam Pro',sans-serif;transition:all .2s}
+
+  /* TABS — scrollable row */
+  .tab-wrap{overflow-x:auto;padding:10px 0 0;margin:0;-webkit-overflow-scrolling:touch}
+  .tab-wrap::-webkit-scrollbar{height:3px}
+  .tab-wrap::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
+  .sector-nav{display:flex;gap:5px;width:max-content;padding-bottom:0}
+  .stab{display:flex;align-items:center;gap:7px;padding:7px 14px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text-dim);cursor:pointer;font-size:12px;font-weight:500;font-family:'Be Vietnam Pro',sans-serif;transition:all .18s;white-space:nowrap}
   .stab:hover{border-color:var(--accent);color:var(--text)}
   .stab.active{background:var(--accent);border-color:var(--accent);color:#fff}
-  .stab .tc{font-family:'JetBrains Mono',monospace;font-size:10px;opacity:.75}
-  .main{display:grid;grid-template-columns:260px 1fr;min-height:calc(100vh - 200px)}
-  .sidebar{border-right:1px solid var(--border);padding:18px 0;position:sticky;top:0;height:calc(100vh - 200px);overflow-y:auto}
+  .stab .tc{font-family:'JetBrains Mono',monospace;font-size:9px;opacity:.75}
+
+  /* LAYOUT */
+  .main{display:grid;grid-template-columns:250px 1fr;min-height:calc(100vh - 185px)}
+  .sidebar{border-right:1px solid var(--border);padding:16px 0;position:sticky;top:0;height:calc(100vh - 185px);overflow-y:auto}
   .sidebar::-webkit-scrollbar{width:3px}
   .sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
-  .stitle{font-size:10px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;padding:0 16px 10px}
-  .nitem{padding:9px 16px;cursor:pointer;border-left:3px solid transparent;transition:all .15s;display:flex;justify-content:space-between;align-items:center}
+  .stitle{font-size:10px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;padding:0 14px 8px}
+  .nitem{padding:8px 14px;cursor:pointer;border-left:3px solid transparent;transition:all .13s;display:flex;justify-content:space-between;align-items:center;user-select:none}
   .nitem:hover{background:var(--surface2)}
   .nitem.active{border-left-color:var(--accent);background:rgba(59,130,246,.08)}
-  .nname{font-size:13px;color:var(--text-dim);font-weight:500}
+  .nname{font-size:12px;color:var(--text-dim);font-weight:500;line-height:1.35}
   .nitem.active .nname{color:var(--accent)}
-  .ncnt{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-muted);background:var(--surface2);padding:2px 7px;border-radius:10px}
-  .content{padding:22px 26px;overflow-y:auto;height:calc(100vh - 200px)}
+  .ncnt{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text-muted);background:var(--surface2);padding:1px 6px;border-radius:10px;flex-shrink:0;margin-left:6px}
+
+  /* CONTENT */
+  .content{padding:20px 24px;overflow-y:auto;height:calc(100vh - 185px)}
   .content::-webkit-scrollbar{width:3px}
   .content::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
-  .cheader{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:12px}
-  .ctitle{font-size:17px;font-weight:700}
-  .csub{font-size:12px;color:var(--text-muted);margin-top:3px}
-  .controls{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+  .cheader{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px}
+  .ctitle{font-size:16px;font-weight:700}
+  .csub{font-size:11px;color:var(--text-muted);margin-top:3px}
+  .controls{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
   .sbox{position:relative}
-  .sbox input{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:7px 11px 7px 30px;color:var(--text);font-size:12px;font-family:'Be Vietnam Pro',sans-serif;width:200px;outline:none;transition:border-color .2s}
+  .sbox input{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:6px 10px 6px 28px;color:var(--text);font-size:12px;font-family:'Be Vietnam Pro',sans-serif;width:190px;outline:none;transition:border-color .2s}
   .sbox input:focus{border-color:var(--accent)}
   .sbox input::placeholder{color:var(--text-muted)}
-  .sicon{position:absolute;left:9px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:12px}
-  .fbtn{padding:6px 11px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text-dim);font-size:11px;cursor:pointer;font-family:'Be Vietnam Pro',sans-serif;transition:all .2s;font-weight:500}
+  .sicon{position:absolute;left:8px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:11px}
+  .fbtn{padding:5px 10px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text-dim);font-size:11px;cursor:pointer;font-family:'Be Vietnam Pro',sans-serif;transition:all .18s;font-weight:500}
   .fbtn:hover{border-color:var(--accent);color:var(--text)}
   .fbtn.on{background:rgba(59,130,246,.15);border-color:var(--accent);color:var(--accent)}
-  .ovcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-bottom:18px}
-  .oc{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 15px}
-  .oc .on{font-size:22px;font-weight:700;font-family:'JetBrains Mono',monospace;color:var(--accent)}
+
+  /* OVERVIEW */
+  .ovcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:9px;margin-bottom:16px}
+  .oc{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:11px 14px}
+  .oc .on{font-size:20px;font-weight:700;font-family:'JetBrains Mono',monospace;color:var(--accent)}
   .oc .ol{font-size:11px;color:var(--text-muted);margin-top:2px}
-  .skbar{display:flex;height:5px;border-radius:3px;overflow:hidden;gap:1px;margin-top:8px}
+  .skbar{display:flex;height:5px;border-radius:3px;overflow:hidden;gap:1px;margin-top:7px}
   .skbar div{height:100%;border-radius:2px}
-  .pgrid{display:grid;gap:11px}
-  .pcard{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color .2s,transform .15s;animation:fi .2s ease both}
-  @keyframes fi{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+
+  /* POS CARDS */
+  .pgrid{display:grid;gap:9px}
+  .pcard{background:var(--surface);border:1px solid var(--border);border-radius:11px;overflow:hidden;transition:border-color .18s,transform .13s;animation:fi .18s ease both}
+  @keyframes fi{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
   .pcard:hover{border-color:rgba(59,130,246,.35);transform:translateY(-1px)}
-  .phead{padding:12px 15px;display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer;user-select:none}
-  .pname{font-size:13px;font-weight:600;color:var(--text);flex:1;line-height:1.4}
-  .pmeta{display:flex;gap:5px;align-items:center;flex-shrink:0}
-  .badge{font-size:10px;padding:2px 7px;border-radius:20px;font-weight:600;white-space:nowrap;font-family:'JetBrains Mono',monospace}
+  .phead{padding:11px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer;user-select:none}
+  .pname{font-size:12px;font-weight:600;color:var(--text);flex:1;line-height:1.4}
+  .pmeta{display:flex;gap:4px;align-items:center;flex-shrink:0}
+  .badge{font-size:9px;padding:2px 6px;border-radius:20px;font-weight:600;white-space:nowrap;font-family:'JetBrains Mono',monospace}
   .b-sk{background:rgba(59,130,246,.15);color:#60a5fa;border:1px solid rgba(59,130,246,.3)}
   .b-cf{background:rgba(16,185,129,.1);color:#34d399;border:1px solid rgba(16,185,129,.25)}
   .b-vn{background:rgba(255,107,107,.1);color:#ff6b6b;border:1px solid rgba(255,107,107,.25)}
-  .xicon{color:var(--text-muted);font-size:15px;transition:transform .2s}
+  .xicon{color:var(--text-muted);font-size:14px;transition:transform .18s;flex-shrink:0}
   .pcard.open .xicon{transform:rotate(180deg)}
-  .spanel{display:none;padding:0 15px 13px;border-top:1px solid var(--border)}
+  .spanel{display:none;padding:0 14px 12px;border-top:1px solid var(--border)}
   .pcard.open .spanel{display:block}
-  .sp-inner{padding-top:11px}
-  .stype-title{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px}
-  .slist{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:11px}
-  .chip{display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:20px;font-size:11px;font-weight:500;border:1px solid;cursor:default;position:relative}
+  .sp-inner{padding-top:10px}
+  .stype-title{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+  .slist{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px}
+  .chip{display:inline-flex;align-items:center;gap:3px;padding:3px 8px;border-radius:20px;font-size:10px;font-weight:500;border:1px solid;cursor:default;position:relative}
   .chip:hover{z-index:10}
   .chip:hover .tip{opacity:1;pointer-events:auto}
   .chip.technical{background:rgba(59,130,246,.1);color:#93c5fd;border-color:rgba(59,130,246,.3)}
@@ -84,22 +97,22 @@
   .chip.certification{background:rgba(239,68,68,.1);color:#fca5a5;border-color:rgba(239,68,68,.3)}
   .chip.language{background:rgba(6,182,212,.1);color:#67e8f9;border-color:rgba(6,182,212,.3)}
   .vndot{width:5px;height:5px;background:var(--iviec);border-radius:50%;flex-shrink:0}
-  .tip{position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);background:#1e293b;border:1px solid #334155;border-radius:8px;padding:8px 11px;font-size:11px;color:var(--text);white-space:normal;min-width:180px;max-width:260px;opacity:0;pointer-events:none;z-index:200;box-shadow:0 4px 20px rgba(0,0,0,.5);transition:opacity .15s}
-  .tip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:#334155}
-  .tip-en{font-weight:700;margin-bottom:3px;color:#e2e8f0}
-  .tip-vi{color:#94a3b8;margin-bottom:3px}
-  .tip-ev{color:#64748b;font-style:italic;font-size:10px;line-height:1.4}
-  .tip-vn{color:#ff6b6b;margin-top:4px;font-size:10px}
-  .tip-reason{color:#f87171;font-size:9px;margin-top:2px}
-  .legend{display:flex;gap:11px;flex-wrap:wrap;padding:9px 0;margin-bottom:13px;border-bottom:1px solid var(--border)}
-  .li{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text-muted)}
-  .ld{width:8px;height:8px;border-radius:2px}
-  .loading{display:flex;align-items:center;justify-content:center;height:300px;color:var(--text-muted);font-size:14px;gap:10px}
-  .spinner{width:18px;height:18px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite}
+  .tip{position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);background:#1e293b;border:1px solid #334155;border-radius:8px;padding:7px 10px;font-size:10px;color:var(--text);white-space:normal;min-width:170px;max-width:250px;opacity:0;pointer-events:none;z-index:200;box-shadow:0 4px 20px rgba(0,0,0,.5);transition:opacity .13s}
+  .tip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:4px solid transparent;border-top-color:#334155}
+  .tip-en{font-weight:700;margin-bottom:2px;color:#e2e8f0}
+  .tip-vi{color:#94a3b8;margin-bottom:2px}
+  .tip-ev{color:#64748b;font-style:italic;font-size:9px;line-height:1.4}
+  .tip-vn{color:#ff6b6b;margin-top:3px;font-size:9px}
+  .tip-reason{color:#f87171;font-size:8px;margin-top:2px}
+  .legend{display:flex;gap:10px;flex-wrap:wrap;padding:8px 0;margin-bottom:12px;border-bottom:1px solid var(--border)}
+  .li{display:flex;align-items:center;gap:4px;font-size:10px;color:var(--text-muted)}
+  .ld{width:7px;height:7px;border-radius:2px}
+  .loading{display:flex;align-items:center;justify-content:center;height:300px;color:var(--text-muted);font-size:13px;gap:10px}
+  .spinner{width:16px;height:16px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite}
   @keyframes spin{to{transform:rotate(360deg)}}
-  .topcv-link{font-size:10px;color:var(--accent2);text-decoration:none;font-family:'JetBrains Mono',monospace;opacity:.65;transition:opacity .15s}
+  .topcv-link{font-size:9px;color:var(--accent2);text-decoration:none;font-family:'JetBrains Mono',monospace;opacity:.6;transition:opacity .15s}
   .topcv-link:hover{opacity:1}
-  @media(max-width:820px){.main{grid-template-columns:1fr}.sidebar{height:auto;position:static;border-right:none;border-bottom:1px solid var(--border)}}
+  @media(max-width:760px){.main{grid-template-columns:1fr}.sidebar{height:auto;position:static;border-right:none;border-bottom:1px solid var(--border)}}
 </style>
 </head>
 <body>
@@ -116,19 +129,22 @@
         <div class="stat"><div class="n" id="sSkills">0</div><div class="l">K&#7929; n&#259;ng</div></div>
       </div>
     </div>
-    <nav class="sector-nav" id="secNav"></nav>
+    <div class="tab-wrap"><nav class="sector-nav" id="secNav"></nav></div>
   </div>
 </header>
 <div class="wrap">
   <div class="main">
     <aside class="sidebar"><div class="stitle">Nh&oacute;m ngh&#7873;</div><div id="ngheList"></div></aside>
-    <main class="content" id="content"><div class="loading"><div class="spinner"></div>&#272;ang t&#7843;i d&#7919; li&#7879;u...</div></main>
+    <main class="content" id="content">
+      <div class="loading"><div class="spinner"></div>&#272;ang t&#7843;i d&#7919; li&#7879;u...</div>
+    </main>
   </div>
 </div>
+
 <script>
-// ==========================================================
-//  CAU HINH — chi chinh sua danh sach file JSON o day
-// ==========================================================
+// =====================================================
+//  CAU HINH — them / bo file JSON o day
+// =====================================================
 var JSON_FILES = [
   'CS_VanHanh_skill_taxonomy_v1.json',
   'Finance_Banking_Insurance_skill_taxonomy_v1.json',
@@ -143,219 +159,332 @@ var JSON_FILES = [
   'SanXuat_skill_taxonomy_v1.json',
   'XayDung_skill_taxonomy_v1.json'
 ];
-// ==========================================================
+// =====================================================
 
 var TC = {technical:'#3b82f6',domain:'#8b5cf6',soft:'#10b981',tool:'#f59e0b',certification:'#ef4444',language:'#06b6d4'};
 var TL = {technical:'K\u1ef9 thu\u1eadt',domain:'Chuy\u00ean m\u00f4n',soft:'K\u1ef9 n\u0103ng m\u1ec1m',tool:'C\u00f4ng c\u1ee5',certification:'Ch\u1ee9ng ch\u1ec9',language:'Ngo\u1ea1i ng\u1eef'};
 
-var datasets=[], activeSector=null, activeNghe=null, filterType=null, searchQuery='';
+var datasets    = [];
+var activeSector = null;
+var activeNghe   = null;
+var filterType   = null;
+var searchQuery  = '';
 
-function loadAll(){
+// ── LOAD ──────────────────────────────────────────
+function loadAll() {
   var pending = JSON_FILES.length;
-  var loaded  = [];
-  if(!pending){ showError(); return; }
-  JSON_FILES.forEach(function(f){
+  if (!pending) { showError(); return; }
+  JSON_FILES.forEach(function(f) {
     fetch(f)
-      .then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
-      .then(function(d){ addDataset(d,f); })
-      .catch(function(e){ console.warn('Cannot load '+f, e); })
-      .finally(function(){ if(--pending===0) boot(); });
+      .then(function(r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(function(json) { addDataset(json, f); })
+      .catch(function(e) { console.warn('Skip ' + f + ':', e.message); })
+      .finally(function() { if (--pending === 0) boot(); });
   });
 }
 
-function addDataset(json, fileName){
-  var meta=json.taxonomy_metadata||{}, positions=json.positions||[], nghes=[];
-  if(json.nghes && json.nghes.length){ nghes=json.nghes; }
-  else if(meta.sub_categories){
-    nghes=Object.keys(meta.sub_categories).map(function(k){
-      var v=meta.sub_categories[k];
-      return {nghe:k, position_count: typeof v==='object'?v.position_count:v};
+function addDataset(json, fileName) {
+  var meta      = json.taxonomy_metadata || {};
+  var positions = json.positions || [];
+  var nghes     = [];
+
+  if (json.nghes && json.nghes.length) {
+    nghes = json.nghes;
+  } else if (meta.sub_categories) {
+    nghes = Object.keys(meta.sub_categories).map(function(k) {
+      var v = meta.sub_categories[k];
+      return { nghe: k, position_count: (typeof v === 'object') ? v.position_count : v };
     });
   } else {
-    var counts={};
-    positions.forEach(function(p){ counts[p.nghe]=(counts[p.nghe]||0)+1; });
-    nghes=Object.keys(counts).map(function(k){ return {nghe:k,position_count:counts[k]}; });
+    var counts = {};
+    positions.forEach(function(p) { counts[p.nghe] = (counts[p.nghe] || 0) + 1; });
+    nghes = Object.keys(counts).map(function(k) { return { nghe: k, position_count: counts[k] }; });
   }
-  datasets.push({id:fileName, name:meta.job_group||fileName.replace('.json',''), name_en:meta.job_group_en||'', metadata:meta, positions:positions, nghes:nghes});
+
+  // Use numeric index as id to avoid any string-escaping issues in DOM
+  datasets.push({
+    idx:      datasets.length,            // simple numeric id
+    fileName: fileName,
+    name:     meta.job_group    || fileName.replace('.json',''),
+    name_en:  meta.job_group_en || '',
+    metadata: meta,
+    positions: positions,
+    nghes:    nghes
+  });
 }
 
-function showError(){
-  document.getElementById('content').innerHTML='<div class="loading">&#9888; Kh\u00f4ng t\u00ecm th\u1ea5y file JSON. \u0110\u1eb7t file JSON c\u00f9ng th\u01b0 m\u1ee5c v\u1edbi index.html v\u00e0 ch\u1ea1y qua HTTP server.</div>';
+function showError() {
+  document.getElementById('content').innerHTML =
+    '<div class="loading">&#9888; Kh\u00f4ng t\u00ecm th\u1ea5y file JSON n\u00e0o. ' +
+    '\u0110\u1eb7t file JSON c\u00f9ng th\u01b0 m\u1ee5c v\u1edbi index.html v\u00e0 ch\u1ea1y qua HTTP server.</div>';
 }
 
-function boot(){
-  if(!datasets.length){ showError(); return; }
-  updateStats(); renderTabs();
-  activeSector=datasets[0].id;
+function boot() {
+  if (!datasets.length) { showError(); return; }
+  updateStats();
+  renderTabs();
+  activeSector = 0;
+  activeNghe   = '__all__';
   renderSidebar();
-  activeNghe='__all__';
   renderOverview(cur());
 }
 
-function cur(){ for(var i=0;i<datasets.length;i++) if(datasets[i].id===activeSector) return datasets[i]; }
+function cur() { return datasets[activeSector]; }
 
-function updateStats(){
-  document.getElementById('sFiles').textContent=datasets.length;
-  var p=0,s=0;
-  datasets.forEach(function(d){ p+=d.positions.length; s+=(d.metadata.total_skills_extracted||0); });
-  document.getElementById('sPos').textContent=p;
-  document.getElementById('sSkills').textContent=s.toLocaleString();
+function updateStats() {
+  var p = 0, s = 0;
+  datasets.forEach(function(d) { p += d.positions.length; s += (d.metadata.total_skills_extracted || 0); });
+  document.getElementById('sFiles').textContent  = datasets.length;
+  document.getElementById('sPos').textContent    = p;
+  document.getElementById('sSkills').textContent = s.toLocaleString();
 }
 
-function renderTabs(){
-  document.getElementById('secNav').innerHTML=datasets.map(function(ds){
-    return '<button class="stab'+(activeSector===ds.id?' active':'')+'" onclick="selSector('+JSON.stringify(ds.id)+')">'+
-      esc(ds.name)+' <span class="tc">'+ds.positions.length+' v\u1ecb tr\u00ed</span></button>';
-  }).join('');
-}
-
-function selSector(id){
-  activeSector=id; activeNghe=null; filterType=null; searchQuery='';
-  renderTabs(); renderSidebar();
-  activeNghe='__all__'; renderOverview(cur()); markNghe();
-}
-
-function renderSidebar(){
-  var ds=cur();
-  var html='<div class="nitem'+(activeNghe==='__all__'?' active':'')+'" data-n="__all__" onclick="selNghe(\'__all__\')">'+
-    '<span class="nname">T\u1ed5ng quan</span><span class="ncnt">'+ds.positions.length+'</span></div>';
-  ds.nghes.forEach(function(n){
-    html+='<div class="nitem'+(activeNghe===n.nghe?' active':'')+'" data-n="'+esc(n.nghe)+'" onclick="selNghe(this.dataset.n)">'+
-      '<span class="nname">'+esc(n.nghe)+'</span><span class="ncnt">'+n.position_count+'</span></div>';
-  });
-  document.getElementById('ngheList').innerHTML=html;
-}
-
-function markNghe(){
-  document.querySelectorAll('.nitem').forEach(function(el){
-    el.classList.toggle('active', el.dataset.n===activeNghe);
+// ── TABS ──────────────────────────────────────────
+function renderTabs() {
+  var nav = document.getElementById('secNav');
+  nav.innerHTML = '';
+  datasets.forEach(function(ds) {
+    var btn = document.createElement('button');
+    btn.className = 'stab' + (activeSector === ds.idx ? ' active' : '');
+    btn.innerHTML = esc(ds.name) + ' <span class="tc">' + ds.positions.length + ' v\u1ecb tr\u00ed</span>';
+    btn.addEventListener('click', function() { selSector(ds.idx); });
+    nav.appendChild(btn);
   });
 }
 
-function selNghe(nghe){
-  activeNghe=nghe; filterType=null; searchQuery='';
-  markNghe();
-  if(nghe==='__all__') renderOverview(cur());
-  else renderPositions(cur().positions.filter(function(p){ return p.nghe===nghe; }), nghe);
+function selSector(idx) {
+  activeSector = idx;
+  activeNghe   = '__all__';
+  filterType   = null;
+  searchQuery  = '';
+  renderTabs();
+  renderSidebar();
+  renderOverview(cur());
 }
 
-function renderOverview(ds){
-  var tc={}, ivN=0;
-  ds.positions.forEach(function(p){
-    ((p.pipeline||{}).S1_extraction||{skills:[]}).skills.forEach(function(s){
-      tc[s.skill_type]=(tc[s.skill_type]||0)+1;
-      if(s.iviec_flag) ivN++;
+// ── SIDEBAR ───────────────────────────────────────
+function renderSidebar() {
+  var list = document.getElementById('ngheList');
+  list.innerHTML = '';
+
+  function makeItem(label, count, ngheVal) {
+    var el = document.createElement('div');
+    el.className = 'nitem' + (activeNghe === ngheVal ? ' active' : '');
+    el.innerHTML = '<span class="nname">' + esc(label) + '</span><span class="ncnt">' + count + '</span>';
+    el.addEventListener('click', function() { selNghe(ngheVal); });
+    return el;
+  }
+
+  var ds = cur();
+  list.appendChild(makeItem('T\u1ed5ng quan', ds.positions.length, '__all__'));
+  ds.nghes.forEach(function(n) {
+    list.appendChild(makeItem(n.nghe, n.position_count, n.nghe));
+  });
+}
+
+function markNghe() {
+  document.querySelectorAll('.nitem').forEach(function(el) {
+    el.classList.toggle('active', el._ngheVal === activeNghe);
+  });
+}
+
+function selNghe(nghe) {
+  activeNghe  = nghe;
+  filterType  = null;
+  searchQuery = '';
+  // Update sidebar highlight without full re-render
+  document.querySelectorAll('#ngheList .nitem').forEach(function(el) {
+    el.classList.toggle('active', el._ngheKey === nghe);
+  });
+  if (nghe === '__all__') renderOverview(cur());
+  else renderPositions(cur().positions.filter(function(p) { return p.nghe === nghe; }), nghe);
+}
+
+// ── OVERVIEW ──────────────────────────────────────
+function renderOverview(ds) {
+  var tc = {}, ivN = 0;
+  ds.positions.forEach(function(p) {
+    skills(p).forEach(function(s) {
+      tc[s.skill_type] = (tc[s.skill_type] || 0) + 1;
+      if (s.iviec_flag) ivN++;
     });
   });
-  var m=ds.metadata;
-  var rows=[['V\u1ecb tr\u00ed',ds.positions.length],['K\u1ef9 n\u0103ng',m.total_skills_extracted||Object.values(tc).reduce(function(a,b){return a+b},0)],
-    ['iViec VN',m.total_iviec_proposals||ivN],['Nh\u00f3m ngh\u1ec1',ds.nghes.length]];
-  var html='<div class="cheader"><div><div class="ctitle">'+esc(ds.name)+'</div>'+
-    '<div class="csub">'+esc(ds.name_en)+(m.source_sites?' &middot; '+m.source_sites.join(', '):'')+' &middot; '+ds.positions.length+' v\u1ecb tr\u00ed</div></div></div>';
-  html+='<div class="ovcards">'+rows.map(function(r){
-    return '<div class="oc"><div class="on">'+Number(r[1]).toLocaleString()+'</div><div class="ol">'+r[0]+'</div></div>';
-  }).join('')+'</div>';
-  html+=legendHtml(tc);
-  html+='<div class="pgrid">'+ds.nghes.map(function(n){
-    var pos=ds.positions.filter(function(p){ return p.nghe===n.nghe; });
-    var sc={};
-    pos.forEach(function(p){ ((p.pipeline||{}).S1_extraction||{skills:[]}).skills.forEach(function(s){ sc[s.skill_type]=(sc[s.skill_type]||0)+1; }); });
-    var tot=Object.values(sc).reduce(function(a,b){return a+b},0);
-    return '<div class="pcard" onclick="selNghe(this.dataset.nghe)" data-nghe="'+esc(n.nghe)+'" style="cursor:pointer">'+
-      '<div class="phead"><div class="pname">'+esc(n.nghe)+'</div>'+
-      '<div class="pmeta"><span class="badge b-sk">'+n.position_count+' v\u1ecb tr\u00ed</span>'+
-      '<span class="badge b-cf">'+tot+' skills</span></div></div>'+
-      '<div style="padding:0 15px 12px"><div class="skbar">'+
-      Object.keys(sc).map(function(t){ return '<div style="flex:'+sc[t]+';background:'+(TC[t]||'#555')+'" title="'+(TL[t]||t)+': '+sc[t]+'"></div>'; }).join('')+
+  var m = ds.metadata;
+  var totalSkills = m.total_skills_extracted || objSum(tc);
+
+  var html = cheaderHtml(ds.name, ds.name_en + (m.source_sites ? ' &middot; ' + m.source_sites.join(', ') : '') + ' &middot; ' + ds.positions.length + ' v\u1ecb tr\u00ed', '');
+  html += '<div class="ovcards">' +
+    [['V\u1ecb tr\u00ed', ds.positions.length],
+     ['K\u1ef9 n\u0103ng', totalSkills],
+     ['iViec VN', m.total_iviec_proposals || ivN],
+     ['Nh\u00f3m ngh\u1ec1', ds.nghes.length]]
+    .map(function(r) {
+      return '<div class="oc"><div class="on">' + Number(r[1]).toLocaleString() + '</div><div class="ol">' + r[0] + '</div></div>';
+    }).join('') + '</div>';
+  html += legendHtml(tc);
+  html += '<div class="pgrid">';
+  ds.nghes.forEach(function(n) {
+    var pos = ds.positions.filter(function(p) { return p.nghe === n.nghe; });
+    var sc = {};
+    pos.forEach(function(p) { skills(p).forEach(function(s) { sc[s.skill_type] = (sc[s.skill_type]||0)+1; }); });
+    html += '<div class="pcard" data-nghe="' + esc(n.nghe) + '" style="cursor:pointer">' +
+      '<div class="phead">' +
+      '<div class="pname">' + esc(n.nghe) + '</div>' +
+      '<div class="pmeta">' +
+      '<span class="badge b-sk">' + n.position_count + ' v\u1ecb tr\u00ed</span>' +
+      '<span class="badge b-cf">' + objSum(sc) + ' skills</span>' +
+      '</div></div>' +
+      '<div style="padding:0 14px 11px"><div class="skbar">' +
+      Object.keys(sc).map(function(t) {
+        return '<div style="flex:' + sc[t] + ';background:' + (TC[t]||'#555') + '" title="' + (TL[t]||t) + ': ' + sc[t] + '"></div>';
+      }).join('') +
       '</div></div></div>';
-  }).join('')+'</div>';
-  document.getElementById('content').innerHTML=html;
+  });
+  html += '</div>';
+
+  var el = document.getElementById('content');
+  el.innerHTML = html;
+
+  // Attach click on overview nghe cards via event delegation
+  el.querySelectorAll('.pcard[data-nghe]').forEach(function(card) {
+    card.addEventListener('click', function() { selNghe(card.dataset.nghe); });
+  });
 }
 
-function renderPositions(positions, title){
-  var ds=cur();
-  var html='<div class="cheader"><div><div class="ctitle">'+esc(title)+'</div>'+
-    '<div class="csub">'+positions.length+' v\u1ecb tr\u00ed &middot; '+esc(ds.name)+'</div></div>'+
-    '<div class="controls"><div class="sbox"><span class="sicon">&#128269;</span>'+
-    '<input id="si" type="text" placeholder="T\u00ecm k\u1ef9 n\u0103ng..." oninput="doSearch(this.value)" value="'+esc(searchQuery)+'"></div>'+
-    Object.keys(TL).map(function(t){
-      return '<button class="fbtn'+(filterType===t?' on':'')+'" onclick="doFilter(\''+t+'\')" style="border-left:2px solid '+TC[t]+'">'+TL[t]+'</button>';
-    }).join('')+
-    ((filterType||searchQuery)?'<button class="fbtn on" onclick="clearF()">&#10005; Reset</button>':'')+
-    '</div></div>';
-  html+=legendHtml();
-  html+='<div class="pgrid" id="pg">'+positions.map(posCard).join('')+'</div>';
-  document.getElementById('content').innerHTML=html;
-  if(filterType||searchQuery) document.querySelectorAll('.pcard').forEach(function(c){c.classList.add('open');});
-  var si=document.getElementById('si');
-  if(si){si.focus();si.setSelectionRange(si.value.length,si.value.length);}
+// ── POSITIONS ─────────────────────────────────────
+function renderPositions(positions, title) {
+  var ds = cur();
+  var controlsHtml = '<div class="controls">' +
+    '<div class="sbox"><span class="sicon">&#128269;</span>' +
+    '<input id="si" type="text" placeholder="T\u00ecm k\u1ef9 n\u0103ng..." value="' + esc(searchQuery) + '"></div>' +
+    Object.keys(TL).map(function(t) {
+      return '<button class="fbtn' + (filterType===t?' on':'') + '" data-ftype="' + t + '" style="border-left:2px solid ' + TC[t] + '">' + TL[t] + '</button>';
+    }).join('') +
+    ((filterType||searchQuery) ? '<button class="fbtn on" id="clearBtn">&#10005; Reset</button>' : '') +
+    '</div>';
+
+  var html = cheaderHtml(title, positions.length + ' v\u1ecb tr\u00ed &middot; ' + esc(ds.name), controlsHtml);
+  html += legendHtml();
+  html += '<div class="pgrid" id="pg">' + positions.map(posCard).join('') + '</div>';
+
+  var el = document.getElementById('content');
+  el.innerHTML = html;
+
+  // Bind search
+  var si = document.getElementById('si');
+  if (si) {
+    si.addEventListener('input', function() { searchQuery = this.value; rerender(); });
+    si.focus();
+    si.setSelectionRange(si.value.length, si.value.length);
+  }
+  // Bind filter buttons
+  el.querySelectorAll('.fbtn[data-ftype]').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      filterType = (filterType === btn.dataset.ftype) ? null : btn.dataset.ftype;
+      rerender();
+    });
+  });
+  // Bind clear
+  var cb = document.getElementById('clearBtn');
+  if (cb) cb.addEventListener('click', function() { filterType = null; searchQuery = ''; rerender(); });
+
+  // Toggle cards
+  el.querySelectorAll('.phead').forEach(function(ph) {
+    ph.addEventListener('click', function() { ph.closest('.pcard').classList.toggle('open'); });
+  });
+
+  if (filterType || searchQuery) {
+    el.querySelectorAll('.pcard').forEach(function(c) { c.classList.add('open'); });
+  }
 }
 
-function posCard(pos, idx){
-  var skills=((pos.pipeline||{}).S1_extraction||{}).skills||[];
-  var meta=((pos.pipeline||{}).S1_extraction||{}).meta||{};
-  var iviec=skills.filter(function(s){return s.iviec_flag;});
-  var show=skills.slice();
-  if(filterType) show=show.filter(function(s){return s.skill_type===filterType;});
-  if(searchQuery){var q=searchQuery.toLowerCase();show=show.filter(function(s){return (s.label_en||'').toLowerCase().indexOf(q)>=0||(s.label_vi||'').toLowerCase().indexOf(q)>=0;});}
-  if((filterType||searchQuery)&&!show.length) return '';
-  var conf=meta.extraction_confidence?(meta.extraction_confidence*100).toFixed(0)+'%':'';
-  var display=(filterType||searchQuery)?show:skills;
-  return '<div class="pcard" data-i="'+idx+'">'+
-    '<div class="phead" onclick="tog('+idx+')"><div>'+
-    '<div class="pname">'+esc(pos.vi_tri)+'</div>'+
-    (pos.topcv_url?'<a class="topcv-link" href="'+pos.topcv_url+'" target="_blank" onclick="event.stopPropagation()">&#8599; TopCV</a>':'')+
-    '</div><div class="pmeta">'+
-    '<span class="badge b-sk">'+skills.length+' skills</span>'+
-    (conf?'<span class="badge b-cf">&#9889; '+conf+'</span>':'')+
-    (iviec.length?'<span class="badge b-vn">&#127474;&#127475; '+iviec.length+'</span>':'')+
-    '<span class="xicon">&#8964;</span></div></div>'+
-    '<div class="spanel"><div class="sp-inner">'+skillGroups(display)+'</div></div></div>';
+function posCard(pos) {
+  var sk   = skills(pos);
+  var meta = ((pos.pipeline||{}).S1_extraction||{}).meta || {};
+  var iviec = sk.filter(function(s) { return s.iviec_flag; });
+
+  var show = sk.slice();
+  if (filterType) show = show.filter(function(s) { return s.skill_type === filterType; });
+  if (searchQuery) {
+    var q = searchQuery.toLowerCase();
+    show = show.filter(function(s) {
+      return (s.label_en||'').toLowerCase().indexOf(q) >= 0 || (s.label_vi||'').toLowerCase().indexOf(q) >= 0;
+    });
+  }
+  if ((filterType || searchQuery) && !show.length) return '';
+
+  var display = (filterType || searchQuery) ? show : sk;
+  var conf    = meta.extraction_confidence ? (meta.extraction_confidence*100).toFixed(0)+'%' : '';
+
+  return '<div class="pcard">' +
+    '<div class="phead">' +
+    '<div>' +
+    '<div class="pname">' + esc(pos.vi_tri) + '</div>' +
+    (pos.topcv_url ? '<a class="topcv-link" href="' + pos.topcv_url + '" target="_blank" onclick="event.stopPropagation()">&#8599; TopCV</a>' : '') +
+    '</div>' +
+    '<div class="pmeta">' +
+    '<span class="badge b-sk">' + sk.length + ' skills</span>' +
+    (conf ? '<span class="badge b-cf">&#9889; ' + conf + '</span>' : '') +
+    (iviec.length ? '<span class="badge b-vn">&#127474;&#127475; ' + iviec.length + '</span>' : '') +
+    '<span class="xicon">&#8964;</span>' +
+    '</div></div>' +
+    '<div class="spanel"><div class="sp-inner">' + skillGroups(display) + '</div></div>' +
+    '</div>';
 }
 
-function skillGroups(skills){
-  var by={};
-  skills.forEach(function(s){if(!by[s.skill_type]) by[s.skill_type]=[]; by[s.skill_type].push(s);});
-  return Object.keys(by).map(function(type){
-    var list=by[type];
-    return '<div style="margin-bottom:10px">'+
-      '<div class="stype-title" style="color:'+(TC[type]||'#888')+'">'+(TL[type]||type)+' ('+list.length+')</div>'+
-      '<div class="slist">'+list.map(function(s){
-        return '<span class="chip '+esc(s.skill_type)+'">'+
-          (s.iviec_flag?'<span class="vndot"></span>':'')+
-          esc(s.label_en)+
-          '<span class="tip">'+
-          '<div class="tip-en">'+esc(s.label_en)+'</div>'+
-          (s.label_vi?'<div class="tip-vi">'+esc(s.label_vi)+'</div>':'')+
-          (s.evidence_text?'<div class="tip-ev">'+esc(s.evidence_text)+'</div>':'')+
-          (s.iviec_flag?'<div class="tip-vn">&#127474;&#127475; '+esc(s.iviec_flag)+'</div>':'')+
-          (s.iviec_reason?'<div class="tip-reason">'+esc(s.iviec_reason)+'</div>':'')+
+function skillGroups(sk) {
+  var by = {};
+  sk.forEach(function(s) { if (!by[s.skill_type]) by[s.skill_type]=[]; by[s.skill_type].push(s); });
+  return Object.keys(by).map(function(type) {
+    var list = by[type];
+    return '<div style="margin-bottom:9px">' +
+      '<div class="stype-title" style="color:' + (TC[type]||'#888') + '">' + (TL[type]||type) + ' (' + list.length + ')</div>' +
+      '<div class="slist">' +
+      list.map(function(s) {
+        return '<span class="chip ' + esc(s.skill_type) + '">' +
+          (s.iviec_flag ? '<span class="vndot"></span>' : '') +
+          esc(s.label_en) +
+          '<span class="tip">' +
+          '<div class="tip-en">' + esc(s.label_en) + '</div>' +
+          (s.label_vi    ? '<div class="tip-vi">'     + esc(s.label_vi)    + '</div>' : '') +
+          (s.evidence_text ? '<div class="tip-ev">'   + esc(s.evidence_text) + '</div>' : '') +
+          (s.iviec_flag  ? '<div class="tip-vn">&#127474;&#127475; ' + esc(s.iviec_flag) + '</div>' : '') +
+          (s.iviec_reason ? '<div class="tip-reason">' + esc(s.iviec_reason) + '</div>' : '') +
           '</span></span>';
-      }).join('')+'</div></div>';
+      }).join('') +
+      '</div></div>';
   }).join('');
 }
 
-function legendHtml(tc){
-  return '<div class="legend">'+
-    Object.keys(TC).map(function(t){
-      return '<div class="li"><div class="ld" style="background:'+TC[t]+'"></div>'+TL[t]+(tc?' <span style="color:#334155;font-size:10px">('+  (tc[t]||0)+')</span>':'')+  '</div>';
-    }).join('')+
-    '<div class="li"><div class="ld" style="background:var(--iviec);border-radius:50%"></div>iViec VN</div></div>';
+// ── HELPERS ───────────────────────────────────────
+function cheaderHtml(title, sub, extra) {
+  return '<div class="cheader"><div><div class="ctitle">' + esc(title) + '</div>' +
+    '<div class="csub">' + sub + '</div></div>' + (extra||'') + '</div>';
 }
 
-function tog(idx){document.querySelector('.pcard[data-i="'+idx+'"]').classList.toggle('open');}
-
-function doFilter(t){filterType=(filterType===t?null:t);rerender();}
-function doSearch(v){searchQuery=v;rerender();}
-function clearF(){filterType=null;searchQuery='';rerender();}
-function rerender(){
-  if(activeNghe==='__all__') renderOverview(cur());
-  else renderPositions(cur().positions.filter(function(p){return p.nghe===activeNghe;}),activeNghe);
+function legendHtml(tc) {
+  return '<div class="legend">' +
+    Object.keys(TC).map(function(t) {
+      return '<div class="li"><div class="ld" style="background:' + TC[t] + '"></div>' + TL[t] +
+        (tc ? ' <span style="color:#334155;font-size:9px">(' + (tc[t]||0) + ')</span>' : '') + '</div>';
+    }).join('') +
+    '<div class="li"><div class="ld" style="background:var(--iviec);border-radius:50%"></div>iViec VN</div>' +
+    '</div>';
 }
 
-function esc(s){
-  if(!s) return '';
+function skills(pos) { return (((pos.pipeline||{}).S1_extraction)||{}).skills || []; }
+function objSum(o)   { return Object.keys(o).reduce(function(s,k){return s+o[k];},0); }
+function esc(s) {
+  if (!s) return '';
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function rerender() {
+  if (activeNghe === '__all__') renderOverview(cur());
+  else renderPositions(cur().positions.filter(function(p){return p.nghe===activeNghe;}), activeNghe);
 }
 
 loadAll();
