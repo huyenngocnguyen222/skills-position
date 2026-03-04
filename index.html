@@ -4,141 +4,266 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Skill Taxonomy Visualizer</title>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root{--bg:#0a0e1a;--surface:#111827;--surface2:#1a2235;--border:#1e2d45;--accent:#3b82f6;--accent2:#06b6d4;--text:#e2e8f0;--text-muted:#64748b;--text-dim:#94a3b8;--iviec:#ff6b6b}
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Be Vietnam Pro',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
-  body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(59,130,246,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(59,130,246,.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0}
-  .wrap{position:relative;z-index:1;max-width:1500px;margin:0 auto;padding:0 24px}
-  header{padding:24px 0 0;border-bottom:1px solid var(--border);background:linear-gradient(180deg,rgba(59,130,246,.06) 0%,transparent 100%)}
-  .hrow{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-bottom:14px}
-  .logo h1{font-size:22px;font-weight:800;letter-spacing:-.5px;background:linear-gradient(135deg,#e2e8f0 0%,#3b82f6 50%,#06b6d4 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-  .logo p{color:var(--text-muted);font-size:11px;margin-top:3px;font-family:'JetBrains Mono',monospace}
-  .hstats{display:flex;gap:10px;flex-wrap:wrap}
-  .stat{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:5px 13px;text-align:center}
-  .stat .n{font-size:18px;font-weight:700;color:var(--accent);font-family:'JetBrains Mono',monospace}
-  .stat .l{font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px}
+/* ── RESET & BASE ── */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0d0d0d;
+  --bg2:#141414;
+  --bg3:#1a1a1a;
+  --bg4:#222;
+  --border:#2a2a2a;
+  --border2:#333;
+  --text:#f0f0f0;
+  --text2:#aaa;
+  --text3:#666;
+  --accent:#fff;
+  --accent-dim:rgba(255,255,255,0.08);
+  --accent-dim2:rgba(255,255,255,0.04);
+  --active-bg:#fff;
+  --active-text:#000;
+  --tag-bg:#1e1e1e;
+  --tag-border:#2e2e2e;
+  /* skill type palette — muted mono tones */
+  --c-tech:#e2e8f0;
+  --c-domain:#94a3b8;
+  --c-soft:#64748b;
+  --c-tool:#cbd5e1;
+  --c-cert:#475569;
+  --c-lang:#f1f5f9;
+  --c-iviec:#ef4444;
+  --sidebar-w:240px;
+  --sector-w:200px;
+}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column;font-size:13px}
 
-  /* TABS — scrollable row */
-  .tab-wrap{overflow-x:auto;padding:10px 0 0;margin:0;-webkit-overflow-scrolling:touch}
-  .tab-wrap::-webkit-scrollbar{height:3px}
-  .tab-wrap::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
-  .sector-nav{display:flex;gap:5px;width:max-content;padding-bottom:0}
-  .stab{display:flex;align-items:center;gap:7px;padding:7px 14px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text-dim);cursor:pointer;font-size:12px;font-weight:500;font-family:'Be Vietnam Pro',sans-serif;transition:all .18s;white-space:nowrap}
-  .stab:hover{border-color:var(--accent);color:var(--text)}
-  .stab.active{background:var(--accent);border-color:var(--accent);color:#fff}
-  .stab .tc{font-family:'JetBrains Mono',monospace;font-size:9px;opacity:.75}
+/* ── TOP BAR ── */
+.topbar{
+  height:52px;background:var(--bg2);border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 20px;flex-shrink:0;position:sticky;top:0;z-index:100;
+}
+.topbar-logo{display:flex;align-items:center;gap:10px}
+.topbar-logo h1{font-size:14px;font-weight:600;color:var(--text);letter-spacing:-.2px}
+.topbar-logo span{font-size:11px;color:var(--text3);font-family:'JetBrains Mono',monospace}
+.topbar-stats{display:flex;gap:0}
+.tstat{padding:0 18px;text-align:center;border-left:1px solid var(--border)}
+.tstat .n{font-size:16px;font-weight:600;color:var(--text);font-family:'JetBrains Mono',monospace;line-height:1.2}
+.tstat .l{font-size:9px;color:var(--text3);text-transform:uppercase;letter-spacing:.8px;margin-top:1px}
 
-  /* LAYOUT */
-  .main{display:grid;grid-template-columns:250px 1fr;min-height:calc(100vh - 185px)}
-  .sidebar{border-right:1px solid var(--border);padding:16px 0;position:sticky;top:0;height:calc(100vh - 185px);overflow-y:auto}
-  .sidebar::-webkit-scrollbar{width:3px}
-  .sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
-  .stitle{font-size:10px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;padding:0 14px 8px}
-  .nitem{padding:8px 14px;cursor:pointer;border-left:3px solid transparent;transition:all .13s;display:flex;justify-content:space-between;align-items:center;user-select:none}
-  .nitem:hover{background:var(--surface2)}
-  .nitem.active{border-left-color:var(--accent);background:rgba(59,130,246,.08)}
-  .nname{font-size:12px;color:var(--text-dim);font-weight:500;line-height:1.35}
-  .nitem.active .nname{color:var(--accent)}
-  .ncnt{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text-muted);background:var(--surface2);padding:1px 6px;border-radius:10px;flex-shrink:0;margin-left:6px}
+/* ── SHELL ── */
+.shell{display:flex;flex:1;overflow:hidden;height:calc(100vh - 52px)}
 
-  /* CONTENT */
-  .content{padding:20px 24px;overflow-y:auto;height:calc(100vh - 185px)}
-  .content::-webkit-scrollbar{width:3px}
-  .content::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
-  .cheader{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px}
-  .ctitle{font-size:16px;font-weight:700}
-  .csub{font-size:11px;color:var(--text-muted);margin-top:3px}
-  .controls{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
-  .sbox{position:relative}
-  .sbox input{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:6px 10px 6px 28px;color:var(--text);font-size:12px;font-family:'Be Vietnam Pro',sans-serif;width:190px;outline:none;transition:border-color .2s}
-  .sbox input:focus{border-color:var(--accent)}
-  .sbox input::placeholder{color:var(--text-muted)}
-  .sicon{position:absolute;left:8px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:11px}
-  .fbtn{padding:5px 10px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text-dim);font-size:11px;cursor:pointer;font-family:'Be Vietnam Pro',sans-serif;transition:all .18s;font-weight:500}
-  .fbtn:hover{border-color:var(--accent);color:var(--text)}
-  .fbtn.on{background:rgba(59,130,246,.15);border-color:var(--accent);color:var(--accent)}
+/* ── SECTOR PANEL (left-most) ── */
+.sector-panel{
+  width:var(--sector-w);flex-shrink:0;
+  background:var(--bg2);border-right:1px solid var(--border);
+  overflow-y:auto;padding:16px 0;
+}
+.sector-panel::-webkit-scrollbar{width:3px}
+.sector-panel::-webkit-scrollbar-thumb{background:var(--border2)}
+.panel-title{font-size:9px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:1px;padding:0 16px 10px}
+.sector-item{
+  padding:9px 16px;cursor:pointer;
+  border-left:2px solid transparent;
+  transition:all .15s;
+  display:flex;align-items:center;justify-content:space-between;gap:6px;
+}
+.sector-item:hover{background:var(--accent-dim2);color:var(--text)}
+.sector-item.active{border-left-color:var(--accent);background:var(--accent-dim);color:var(--text)}
+.sector-item .sname{font-size:12px;color:var(--text2);font-weight:500;line-height:1.35;flex:1}
+.sector-item.active .sname{color:var(--text)}
+.sector-item .scnt{font-size:10px;font-family:'JetBrains Mono',monospace;color:var(--text3);flex-shrink:0}
 
-  /* OVERVIEW */
-  .ovcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:9px;margin-bottom:16px}
-  .oc{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:11px 14px}
-  .oc .on{font-size:20px;font-weight:700;font-family:'JetBrains Mono',monospace;color:var(--accent)}
-  .oc .ol{font-size:11px;color:var(--text-muted);margin-top:2px}
-  .skbar{display:flex;height:5px;border-radius:3px;overflow:hidden;gap:1px;margin-top:7px}
-  .skbar div{height:100%;border-radius:2px}
+/* ── NGHE PANEL (middle) ── */
+.nghe-panel{
+  width:var(--sidebar-w);flex-shrink:0;
+  background:var(--bg2);border-right:1px solid var(--border);
+  overflow-y:auto;padding:16px 0;
+}
+.nghe-panel::-webkit-scrollbar{width:3px}
+.nghe-panel::-webkit-scrollbar-thumb{background:var(--border2)}
+.nghe-item{
+  padding:8px 16px;cursor:pointer;
+  border-left:2px solid transparent;
+  display:flex;align-items:center;justify-content:space-between;gap:6px;
+  transition:all .13s;
+}
+.nghe-item:hover{background:var(--accent-dim2)}
+.nghe-item.active{border-left-color:var(--accent);background:var(--accent-dim)}
+.nghe-item .nname{font-size:12px;color:var(--text2);font-weight:500;line-height:1.35;flex:1}
+.nghe-item.active .nname{color:var(--text)}
+.nghe-item .ncnt{font-size:10px;font-family:'JetBrains Mono',monospace;color:var(--text3);flex-shrink:0}
 
-  /* POS CARDS */
-  .pgrid{display:grid;gap:9px}
-  .pcard{background:var(--surface);border:1px solid var(--border);border-radius:11px;overflow:hidden;transition:border-color .18s,transform .13s;animation:fi .18s ease both}
-  @keyframes fi{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
-  .pcard:hover{border-color:rgba(59,130,246,.35);transform:translateY(-1px)}
-  .phead{padding:11px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer;user-select:none}
-  .pname{font-size:12px;font-weight:600;color:var(--text);flex:1;line-height:1.4}
-  .pmeta{display:flex;gap:4px;align-items:center;flex-shrink:0}
-  .badge{font-size:9px;padding:2px 6px;border-radius:20px;font-weight:600;white-space:nowrap;font-family:'JetBrains Mono',monospace}
-  .b-sk{background:rgba(59,130,246,.15);color:#60a5fa;border:1px solid rgba(59,130,246,.3)}
-  .b-cf{background:rgba(16,185,129,.1);color:#34d399;border:1px solid rgba(16,185,129,.25)}
-  .b-vn{background:rgba(255,107,107,.1);color:#ff6b6b;border:1px solid rgba(255,107,107,.25)}
-  .xicon{color:var(--text-muted);font-size:14px;transition:transform .18s;flex-shrink:0}
-  .pcard.open .xicon{transform:rotate(180deg)}
-  .spanel{display:none;padding:0 14px 12px;border-top:1px solid var(--border)}
-  .pcard.open .spanel{display:block}
-  .sp-inner{padding-top:10px}
-  .stype-title{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
-  .slist{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px}
-  .chip{display:inline-flex;align-items:center;gap:3px;padding:3px 8px;border-radius:20px;font-size:10px;font-weight:500;border:1px solid;cursor:default;position:relative}
-  .chip:hover{z-index:10}
-  .chip:hover .tip{opacity:1;pointer-events:auto}
-  .chip.technical{background:rgba(59,130,246,.1);color:#93c5fd;border-color:rgba(59,130,246,.3)}
-  .chip.domain{background:rgba(139,92,246,.1);color:#c4b5fd;border-color:rgba(139,92,246,.3)}
-  .chip.soft{background:rgba(16,185,129,.1);color:#6ee7b7;border-color:rgba(16,185,129,.3)}
-  .chip.tool{background:rgba(245,158,11,.1);color:#fcd34d;border-color:rgba(245,158,11,.3)}
-  .chip.certification{background:rgba(239,68,68,.1);color:#fca5a5;border-color:rgba(239,68,68,.3)}
-  .chip.language{background:rgba(6,182,212,.1);color:#67e8f9;border-color:rgba(6,182,212,.3)}
-  .vndot{width:5px;height:5px;background:var(--iviec);border-radius:50%;flex-shrink:0}
-  .tip{position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);background:#1e293b;border:1px solid #334155;border-radius:8px;padding:7px 10px;font-size:10px;color:var(--text);white-space:normal;min-width:170px;max-width:250px;opacity:0;pointer-events:none;z-index:200;box-shadow:0 4px 20px rgba(0,0,0,.5);transition:opacity .13s}
-  .tip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:4px solid transparent;border-top-color:#334155}
-  .tip-en{font-weight:700;margin-bottom:2px;color:#e2e8f0}
-  .tip-vi{color:#94a3b8;margin-bottom:2px}
-  .tip-ev{color:#64748b;font-style:italic;font-size:9px;line-height:1.4}
-  .tip-vn{color:#ff6b6b;margin-top:3px;font-size:9px}
-  .tip-reason{color:#f87171;font-size:8px;margin-top:2px}
-  .legend{display:flex;gap:10px;flex-wrap:wrap;padding:8px 0;margin-bottom:12px;border-bottom:1px solid var(--border)}
-  .li{display:flex;align-items:center;gap:4px;font-size:10px;color:var(--text-muted)}
-  .ld{width:7px;height:7px;border-radius:2px}
-  .loading{display:flex;align-items:center;justify-content:center;height:300px;color:var(--text-muted);font-size:13px;gap:10px}
-  .spinner{width:16px;height:16px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite}
-  @keyframes spin{to{transform:rotate(360deg)}}
-  .topcv-link{font-size:9px;color:var(--accent2);text-decoration:none;font-family:'JetBrains Mono',monospace;opacity:.6;transition:opacity .15s}
-  .topcv-link:hover{opacity:1}
-  @media(max-width:760px){.main{grid-template-columns:1fr}.sidebar{height:auto;position:static;border-right:none;border-bottom:1px solid var(--border)}}
+/* ── CONTENT ── */
+.content{flex:1;overflow-y:auto;padding:24px 28px;background:var(--bg)}
+.content::-webkit-scrollbar{width:4px}
+.content::-webkit-scrollbar-thumb{background:var(--border2);border-radius:4px}
+
+/* overview header */
+.ov-header{margin-bottom:20px}
+.ov-title{font-size:20px;font-weight:600;color:var(--text);letter-spacing:-.3px}
+.ov-sub{font-size:11px;color:var(--text3);margin-top:4px}
+.ov-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px}
+.ov-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px 16px}
+.ov-card .on{font-size:22px;font-weight:600;font-family:'JetBrains Mono',monospace;color:var(--text)}
+.ov-card .ol{font-size:10px;color:var(--text3);margin-top:3px;text-transform:uppercase;letter-spacing:.5px}
+
+/* legend */
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid var(--border)}
+.li{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--text3)}
+.ld{width:7px;height:7px;border-radius:1px}
+
+/* nghe overview cards */
+.pgrid{display:grid;gap:8px}
+.pcard{
+  background:var(--bg2);border:1px solid var(--border);border-radius:8px;
+  overflow:hidden;transition:border-color .15s;
+  animation:fi .15s ease both;
+}
+@keyframes fi{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+.pcard:hover{border-color:var(--border2)}
+.phead{
+  padding:12px 16px;display:flex;align-items:center;
+  justify-content:space-between;gap:12px;cursor:pointer;user-select:none;
+}
+.pname{font-size:13px;font-weight:500;color:var(--text);flex:1;line-height:1.4}
+.pmeta{display:flex;gap:5px;align-items:center;flex-shrink:0}
+.badge{
+  font-size:9px;padding:2px 7px;border-radius:3px;font-weight:500;
+  white-space:nowrap;font-family:'JetBrains Mono',monospace;
+  background:var(--tag-bg);color:var(--text2);border:1px solid var(--tag-border);
+}
+.b-vn{background:rgba(239,68,68,.08);color:#ef4444;border-color:rgba(239,68,68,.2)}
+.xicon{color:var(--text3);font-size:13px;transition:transform .15s;flex-shrink:0}
+.pcard.open .xicon{transform:rotate(180deg)}
+.skbar{display:flex;height:3px;border-radius:2px;overflow:hidden;gap:1px;margin-top:10px}
+.skbar div{height:100%}
+
+/* skills panel */
+.spanel{display:none;padding:0 16px 14px;border-top:1px solid var(--border)}
+.pcard.open .spanel{display:block}
+.sp-inner{padding-top:12px}
+.stype-title{
+  font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;
+  margin-bottom:7px;color:var(--text3);
+}
+.slist{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
+
+/* skill chips */
+.chip{
+  display:inline-flex;align-items:center;gap:4px;
+  padding:3px 8px;border-radius:3px;font-size:11px;font-weight:400;
+  border:1px solid var(--border);background:var(--tag-bg);color:var(--text2);
+  cursor:default;position:relative;transition:border-color .1s;
+}
+.chip:hover{border-color:var(--border2);z-index:10}
+.chip:hover .tip{opacity:1;pointer-events:auto}
+/* subtle color differentiation per type */
+.chip.technical{color:var(--c-tech);border-color:rgba(226,232,240,.12)}
+.chip.domain{color:var(--c-domain)}
+.chip.soft{color:var(--c-soft)}
+.chip.tool{color:var(--c-tool);border-color:rgba(203,213,225,.12)}
+.chip.certification{color:var(--c-cert)}
+.chip.language{color:var(--c-lang)}
+.vndot{width:4px;height:4px;background:var(--c-iviec);border-radius:50%;flex-shrink:0}
+
+/* tooltip */
+.tip{
+  position:absolute;bottom:calc(100% + 8px);left:0;
+  background:#1c1c1c;border:1px solid #2e2e2e;border-radius:6px;
+  padding:8px 10px;font-size:11px;color:var(--text);
+  white-space:normal;min-width:180px;max-width:260px;
+  opacity:0;pointer-events:none;z-index:300;
+  box-shadow:0 8px 24px rgba(0,0,0,.6);transition:opacity .12s;
+}
+.tip::after{content:'';position:absolute;top:100%;left:12px;border:4px solid transparent;border-top-color:#2e2e2e}
+.tip-en{font-weight:600;margin-bottom:2px;color:#f0f0f0}
+.tip-vi{color:#888;margin-bottom:3px}
+.tip-ev{color:#555;font-style:italic;font-size:10px;line-height:1.4}
+.tip-vn{color:#ef4444;margin-top:4px;font-size:10px}
+.tip-reason{color:#c0392b;font-size:9px;margin-top:2px}
+
+/* controls */
+.ctrls{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.sbox{position:relative}
+.sbox input{
+  background:var(--bg2);border:1px solid var(--border);border-radius:6px;
+  padding:6px 10px 6px 28px;color:var(--text);font-size:12px;
+  font-family:'Inter',sans-serif;width:200px;outline:none;transition:border-color .15s;
+}
+.sbox input:focus{border-color:var(--border2)}
+.sbox input::placeholder{color:var(--text3)}
+.sicon{position:absolute;left:9px;top:50%;transform:translateY(-50%);color:var(--text3);font-size:11px}
+.fbtn{
+  padding:5px 10px;border:1px solid var(--border);border-radius:5px;
+  background:var(--bg2);color:var(--text3);font-size:11px;
+  cursor:pointer;font-family:'Inter',sans-serif;transition:all .15s;
+}
+.fbtn:hover{border-color:var(--border2);color:var(--text2)}
+.fbtn.on{background:var(--accent);border-color:var(--accent);color:#000;font-weight:600}
+
+/* section header in position view */
+.sec-header{
+  display:flex;align-items:flex-start;justify-content:space-between;
+  margin-bottom:16px;flex-wrap:wrap;gap:10px;
+}
+.sec-title{font-size:16px;font-weight:600;color:var(--text);letter-spacing:-.2px}
+.sec-sub{font-size:11px;color:var(--text3);margin-top:3px}
+
+.topcv-link{font-size:9px;color:var(--text3);text-decoration:none;font-family:'JetBrains Mono',monospace;transition:color .13s}
+.topcv-link:hover{color:var(--text2)}
+
+/* loading */
+.loading{display:flex;align-items:center;justify-content:center;height:200px;color:var(--text3);gap:10px;font-size:12px}
+.spinner{width:14px;height:14px;border:1.5px solid var(--border);border-top-color:var(--text3);border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* divider in sector panel */
+.panel-divider{height:1px;background:var(--border);margin:8px 16px}
+
+@media(max-width:900px){
+  .sector-panel{width:160px}
+  .nghe-panel{width:180px}
+}
+@media(max-width:680px){
+  .shell{flex-direction:column}
+  .sector-panel,.nghe-panel{width:100%;height:auto;border-right:none;border-bottom:1px solid var(--border)}
+}
 </style>
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <div class="hrow">
-      <div class="logo">
-        <h1>&#9889; Skill Taxonomy Visualizer</h1>
-        <p>Vietnam Job Market &middot; iViec Research</p>
-      </div>
-      <div class="hstats">
-        <div class="stat"><div class="n" id="sFiles">0</div><div class="l">Ng&agrave;nh</div></div>
-        <div class="stat"><div class="n" id="sPos">0</div><div class="l">V&#7883; tr&iacute;</div></div>
-        <div class="stat"><div class="n" id="sSkills">0</div><div class="l">K&#7929; n&#259;ng</div></div>
-      </div>
-    </div>
-    <div class="tab-wrap"><nav class="sector-nav" id="secNav"></nav></div>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="topbar-logo">
+    <h1>Skill Taxonomy</h1>
+    <span>Vietnam Job Market &middot; iViec Research</span>
+  </div>
+  <div class="topbar-stats">
+    <div class="tstat"><div class="n" id="sFiles">0</div><div class="l">Ng&agrave;nh</div></div>
+    <div class="tstat"><div class="n" id="sPos">0</div><div class="l">V&#7883; tr&iacute;</div></div>
+    <div class="tstat"><div class="n" id="sSkills">—</div><div class="l">K&#7929; n&#259;ng</div></div>
   </div>
 </header>
-<div class="wrap">
-  <div class="main">
-    <aside class="sidebar"><div class="stitle">Nh&oacute;m ngh&#7873;</div><div id="ngheList"></div></aside>
-    <main class="content" id="content">
-      <div class="loading"><div class="spinner"></div>&#272;ang t&#7843;i d&#7919; li&#7879;u...</div>
-    </main>
-  </div>
+
+<div class="shell">
+  <!-- SECTOR PANEL -->
+  <nav class="sector-panel" id="sectorPanel">
+    <div class="panel-title">Ng&agrave;nh</div>
+  </nav>
+
+  <!-- NGHE PANEL -->
+  <nav class="nghe-panel" id="nghePanel">
+    <div class="panel-title">Nh&oacute;m ngh&#7873;</div>
+    <div id="ngheList"></div>
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="content" id="content">
+    <div class="loading"><div class="spinner"></div>&#272;ang t&#7843;i...</div>
+  </main>
 </div>
 
 <script>
@@ -158,16 +283,47 @@ var JSON_FILES = [
   'Marketing_PR_QC_skill_taxonomy_v1.json',
   'SanXuat_skill_taxonomy_v1.json',
   'XayDung_skill_taxonomy_v1.json',
-  'BanLe_DVDoiSong_skill_taxonomy_v1',
-  'DienDienTuVienThong_skill_taxonomy_v1',
-  'BatDongSan_skill_taxonomy_v1',
-  'NangLuongMoiTruongNongNghiep_skill_taxonomy_v1',
-  'NhaHangKhachSanDuLich_skill_taxonomy_v1'
+  'BanLe_DVDoiSong_skill_taxonomy_v1.json',
+  'DienDienTuVienThong_skill_taxonomy_v1.json',
+  'BatDongSan_skill_taxonomy_v1.json',
+  'NangLuongMoiTruongNongNghiep_skill_taxonomy_v1.json',
+  'NhaHangKhachSanDuLich_skill_taxonomy_v1.json',
+  'DuocYTeSucKhoeCNSH_skill_taxonomy_v1.json',
+  'Luat_skill_taxonomy_v1.json'
 ];
+
+// Fallback tên ngành nếu file JSON không có job_group
+var NAME_MAP = {
+  'CS_VanHanh_skill_taxonomy_v1.json':                    'CS/Vận hành',
+  'Finance_Banking_Insurance_skill_taxonomy_v1.json':      'Tài chính / Ngân hàng / Bảo hiểm',
+  'GiaoDuc_DaoTao_skill_taxonomy_v1.json':                 'Giáo dục / Đào tạo',
+  'HR_Admin_Legal_skill_taxonomy_v1.json':                 'HR / Hành chính / Pháp lý',
+  'IT_skill_taxonomy_v1.json':                             'Công nghệ thông tin',
+  'KeToan_KiemToan_Thue_skill_taxonomy_v1.json':           'Kế toán / Kiểm toán / Thuế',
+  'KinhDoanh_BanHang_skill_taxonomy_v2.json':              'Kinh doanh / Bán hàng',
+  'LaoDongPhoThong_skill_taxonomy_v1.json':                'Lao động phổ thông',
+  'Logistics_ThuMua_Kho_VanTai_skill_taxonomy_v1.json':    'Logistics / Thu mua / Kho / Vận tải',
+  'Marketing_PR_QC_skill_taxonomy_v1.json':                'Marketing / PR / Quảng cáo',
+  'SanXuat_skill_taxonomy_v1.json':                        'Sản xuất',
+  'XayDung_skill_taxonomy_v1.json':                        'Xây dựng',
+  'BanLe_DVDoiSong_skill_taxonomy_v1.json':                'Bán lẻ / Dịch vụ đời sống',
+  'DienDienTuVienThong_skill_taxonomy_v1.json':            'Điện / Điện tử / Viễn thông',
+  'BatDongSan_skill_taxonomy_v1.json':                     'Bất động sản',
+  'NangLuongMoiTruongNongNghiep_skill_taxonomy_v1.json':   'Năng lượng / Môi trường / Nông nghiệp',
+  'NhaHangKhachSanDuLich_skill_taxonomy_v1.json':          'Nhà hàng / Khách sạn / Du lịch',
+  'DuocYTeSucKhoeCNSH_skill_taxonomy_v1.json':             'Dược / Y tế / Sức khỏe / CNSH',
+  'Luat_skill_taxonomy_v1.json':                           'Luật'
+};
 // =====================================================
 
-var TC = {technical:'#3b82f6',domain:'#8b5cf6',soft:'#10b981',tool:'#f59e0b',certification:'#ef4444',language:'#06b6d4'};
-var TL = {technical:'K\u1ef9 thu\u1eadt',domain:'Chuy\u00ean m\u00f4n',soft:'K\u1ef9 n\u0103ng m\u1ec1m',tool:'C\u00f4ng c\u1ee5',certification:'Ch\u1ee9ng ch\u1ec9',language:'Ngo\u1ea1i ng\u1eef'};
+var TC = {
+  technical:'#e2e8f0', domain:'#94a3b8', soft:'#64748b',
+  tool:'#cbd5e1', certification:'#475569', language:'#f1f5f9'
+};
+var TL = {
+  technical:'Kỹ thuật', domain:'Chuyên môn', soft:'Kỹ năng mềm',
+  tool:'Công cụ', certification:'Chứng chỉ', language:'Ngoại ngữ'
+};
 
 var datasets    = [];
 var activeSector = null;
@@ -181,10 +337,7 @@ function loadAll() {
   if (!pending) { showError(); return; }
   JSON_FILES.forEach(function(f) {
     fetch(f)
-      .then(function(r) {
-        if (!r.ok) throw new Error('HTTP ' + r.status);
-        return r.json();
-      })
+      .then(function(r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function(json) { addDataset(json, f); })
       .catch(function(e) { console.warn('Skip ' + f + ':', e.message); })
       .finally(function() { if (--pending === 0) boot(); });
@@ -194,8 +347,9 @@ function loadAll() {
 function addDataset(json, fileName) {
   var meta      = json.taxonomy_metadata || {};
   var positions = json.positions || [];
-  var nghes     = [];
-
+  // Priority: 1) job_group from JSON  2) NAME_MAP  3) filename stripped
+  var name = meta.job_group || NAME_MAP[fileName] || fileName.replace(/_skill_taxonomy_v\d+\.json$/i,'').replace(/_/g,' ');
+  var nghes = [];
   if (json.nghes && json.nghes.length) {
     nghes = json.nghes;
   } else if (meta.sub_categories) {
@@ -205,58 +359,65 @@ function addDataset(json, fileName) {
     });
   } else {
     var counts = {};
-    positions.forEach(function(p) { counts[p.nghe] = (counts[p.nghe] || 0) + 1; });
-    nghes = Object.keys(counts).map(function(k) { return { nghe: k, position_count: counts[k] }; });
+    positions.forEach(function(p) { counts[p.nghe] = (counts[p.nghe]||0)+1; });
+    nghes = Object.keys(counts).map(function(k) { return { nghe:k, position_count:counts[k] }; });
   }
-
-  // Use numeric index as id to avoid any string-escaping issues in DOM
   datasets.push({
-    idx:      datasets.length,            // simple numeric id
+    idx:      datasets.length,
     fileName: fileName,
-    name:     meta.job_group    || fileName.replace('.json',''),
+    name:     name,
     name_en:  meta.job_group_en || '',
     metadata: meta,
-    positions: positions,
+    positions:positions,
     nghes:    nghes
   });
 }
 
 function showError() {
   document.getElementById('content').innerHTML =
-    '<div class="loading">&#9888; Kh\u00f4ng t\u00ecm th\u1ea5y file JSON n\u00e0o. ' +
-    '\u0110\u1eb7t file JSON c\u00f9ng th\u01b0 m\u1ee5c v\u1edbi index.html v\u00e0 ch\u1ea1y qua HTTP server.</div>';
+    '<div class="loading">Không tìm thấy file JSON. Đặt cùng thư mục với index.html và chạy qua HTTP server.</div>';
 }
 
 function boot() {
   if (!datasets.length) { showError(); return; }
   updateStats();
-  renderTabs();
+  renderSectorPanel();
   activeSector = 0;
   activeNghe   = '__all__';
-  renderSidebar();
+  renderNghePanel();
   renderOverview(cur());
+  highlightSector();
 }
 
 function cur() { return datasets[activeSector]; }
 
 function updateStats() {
   var p = 0, s = 0;
-  datasets.forEach(function(d) { p += d.positions.length; s += (d.metadata.total_skills_extracted || 0); });
+  datasets.forEach(function(d) { p += d.positions.length; s += (d.metadata.total_skills_extracted||0); });
   document.getElementById('sFiles').textContent  = datasets.length;
   document.getElementById('sPos').textContent    = p;
-  document.getElementById('sSkills').textContent = s.toLocaleString();
+  document.getElementById('sSkills').textContent = s ? s.toLocaleString() : '—';
 }
 
-// ── TABS ──────────────────────────────────────────
-function renderTabs() {
-  var nav = document.getElementById('secNav');
-  nav.innerHTML = '';
+// ── SECTOR PANEL ──────────────────────────────────
+function renderSectorPanel() {
+  var panel = document.getElementById('sectorPanel');
+  panel.innerHTML = '<div class="panel-title">Ngành</div>';
   datasets.forEach(function(ds) {
-    var btn = document.createElement('button');
-    btn.className = 'stab' + (activeSector === ds.idx ? ' active' : '');
-    btn.innerHTML = esc(ds.name) + ' <span class="tc">' + ds.positions.length + ' v\u1ecb tr\u00ed</span>';
-    btn.addEventListener('click', function() { selSector(ds.idx); });
-    nav.appendChild(btn);
+    var el = document.createElement('div');
+    el.className = 'sector-item' + (activeSector === ds.idx ? ' active' : '');
+    el.dataset.idx = ds.idx;
+    el.innerHTML =
+      '<span class="sname">' + esc(ds.name) + '</span>' +
+      '<span class="scnt">' + ds.positions.length + '</span>';
+    el.addEventListener('click', function() { selSector(ds.idx); });
+    panel.appendChild(el);
+  });
+}
+
+function highlightSector() {
+  document.querySelectorAll('.sector-item').forEach(function(el) {
+    el.classList.toggle('active', parseInt(el.dataset.idx) === activeSector);
   });
 }
 
@@ -265,34 +426,33 @@ function selSector(idx) {
   activeNghe   = '__all__';
   filterType   = null;
   searchQuery  = '';
-  renderTabs();
-  renderSidebar();
+  highlightSector();
+  renderNghePanel();
   renderOverview(cur());
 }
 
-// ── SIDEBAR ───────────────────────────────────────
-function renderSidebar() {
+// ── NGHE PANEL ────────────────────────────────────
+function renderNghePanel() {
   var list = document.getElementById('ngheList');
   list.innerHTML = '';
+  var ds = cur();
 
-  function makeItem(label, count, ngheVal) {
+  function makeItem(label, count, val) {
     var el = document.createElement('div');
-    el.className = 'nitem' + (activeNghe === ngheVal ? ' active' : '');
+    el.className = 'nghe-item' + (activeNghe === val ? ' active' : '');
+    el.dataset.val = val;
     el.innerHTML = '<span class="nname">' + esc(label) + '</span><span class="ncnt">' + count + '</span>';
-    el.addEventListener('click', function() { selNghe(ngheVal); });
+    el.addEventListener('click', function() { selNghe(val); });
     return el;
   }
 
-  var ds = cur();
-  list.appendChild(makeItem('T\u1ed5ng quan', ds.positions.length, '__all__'));
-  ds.nghes.forEach(function(n) {
-    list.appendChild(makeItem(n.nghe, n.position_count, n.nghe));
-  });
+  list.appendChild(makeItem('Tổng quan', ds.positions.length, '__all__'));
+  ds.nghes.forEach(function(n) { list.appendChild(makeItem(n.nghe, n.position_count, n.nghe)); });
 }
 
-function markNghe() {
-  document.querySelectorAll('.nitem').forEach(function(el) {
-    el.classList.toggle('active', el._ngheVal === activeNghe);
+function highlightNghe() {
+  document.querySelectorAll('#ngheList .nghe-item').forEach(function(el) {
+    el.classList.toggle('active', el.dataset.val === activeNghe);
   });
 }
 
@@ -300,10 +460,7 @@ function selNghe(nghe) {
   activeNghe  = nghe;
   filterType  = null;
   searchQuery = '';
-  // Update sidebar highlight without full re-render
-  document.querySelectorAll('#ngheList .nitem').forEach(function(el) {
-    el.classList.toggle('active', el._ngheKey === nghe);
-  });
+  highlightNghe();
   if (nghe === '__all__') renderOverview(cur());
   else renderPositions(cur().positions.filter(function(p) { return p.nghe === nghe; }), nghe);
 }
@@ -312,48 +469,53 @@ function selNghe(nghe) {
 function renderOverview(ds) {
   var tc = {}, ivN = 0;
   ds.positions.forEach(function(p) {
-    skills(p).forEach(function(s) {
-      tc[s.skill_type] = (tc[s.skill_type] || 0) + 1;
+    skillsOf(p).forEach(function(s) {
+      tc[s.skill_type] = (tc[s.skill_type]||0)+1;
       if (s.iviec_flag) ivN++;
     });
   });
   var m = ds.metadata;
-  var totalSkills = m.total_skills_extracted || objSum(tc);
+  var totalSk = m.total_skills_extracted || objSum(tc);
 
-  var html = cheaderHtml(ds.name, ds.name_en + (m.source_sites ? ' &middot; ' + m.source_sites.join(', ') : '') + ' &middot; ' + ds.positions.length + ' v\u1ecb tr\u00ed', '');
-  html += '<div class="ovcards">' +
-    [['V\u1ecb tr\u00ed', ds.positions.length],
-     ['K\u1ef9 n\u0103ng', totalSkills],
-     ['iViec VN', m.total_iviec_proposals || ivN],
-     ['Nh\u00f3m ngh\u1ec1', ds.nghes.length]]
+  var html = '<div class="ov-header">' +
+    '<div class="ov-title">' + esc(ds.name) + '</div>' +
+    '<div class="ov-sub">' + esc(ds.name_en) +
+    (m.source_sites ? ' &middot; ' + m.source_sites.join(', ') : '') +
+    ' &middot; ' + ds.positions.length + ' vị trí</div></div>';
+
+  html += '<div class="ov-cards">' +
+    [['Vị trí', ds.positions.length], ['Kỹ năng', totalSk],
+     ['iViec VN', m.total_iviec_proposals||ivN], ['Nhóm nghề', ds.nghes.length]]
     .map(function(r) {
-      return '<div class="oc"><div class="on">' + Number(r[1]).toLocaleString() + '</div><div class="ol">' + r[0] + '</div></div>';
+      return '<div class="ov-card"><div class="on">' + Number(r[1]).toLocaleString() +
+        '</div><div class="ol">' + r[0] + '</div></div>';
     }).join('') + '</div>';
+
   html += legendHtml(tc);
   html += '<div class="pgrid">';
+
   ds.nghes.forEach(function(n) {
     var pos = ds.positions.filter(function(p) { return p.nghe === n.nghe; });
     var sc = {};
-    pos.forEach(function(p) { skills(p).forEach(function(s) { sc[s.skill_type] = (sc[s.skill_type]||0)+1; }); });
+    pos.forEach(function(p) { skillsOf(p).forEach(function(s) { sc[s.skill_type]=(sc[s.skill_type]||0)+1; }); });
     html += '<div class="pcard" data-nghe="' + esc(n.nghe) + '" style="cursor:pointer">' +
       '<div class="phead">' +
       '<div class="pname">' + esc(n.nghe) + '</div>' +
       '<div class="pmeta">' +
-      '<span class="badge b-sk">' + n.position_count + ' v\u1ecb tr\u00ed</span>' +
-      '<span class="badge b-cf">' + objSum(sc) + ' skills</span>' +
+      '<span class="badge">' + n.position_count + ' vị trí</span>' +
+      '<span class="badge">' + objSum(sc) + ' skills</span>' +
       '</div></div>' +
-      '<div style="padding:0 14px 11px"><div class="skbar">' +
+      '<div style="padding:0 16px 12px">' +
+      '<div class="skbar">' +
       Object.keys(sc).map(function(t) {
-        return '<div style="flex:' + sc[t] + ';background:' + (TC[t]||'#555') + '" title="' + (TL[t]||t) + ': ' + sc[t] + '"></div>';
+        return '<div style="flex:' + sc[t] + ';background:' + (TC[t]||'#444') + '" title="' + (TL[t]||t) + ': ' + sc[t] + '"></div>';
       }).join('') +
       '</div></div></div>';
   });
-  html += '</div>';
 
+  html += '</div>';
   var el = document.getElementById('content');
   el.innerHTML = html;
-
-  // Attach click on overview nghe cards via event delegation
   el.querySelectorAll('.pcard[data-nghe]').forEach(function(card) {
     card.addEventListener('click', function() { selNghe(card.dataset.nghe); });
   });
@@ -362,56 +524,49 @@ function renderOverview(ds) {
 // ── POSITIONS ─────────────────────────────────────
 function renderPositions(positions, title) {
   var ds = cur();
-  var controlsHtml = '<div class="controls">' +
+  var html = '<div class="sec-header">' +
+    '<div><div class="sec-title">' + esc(title) + '</div>' +
+    '<div class="sec-sub">' + positions.length + ' vị trí &middot; ' + esc(ds.name) + '</div></div>' +
+    '<div class="ctrls">' +
     '<div class="sbox"><span class="sicon">&#128269;</span>' +
-    '<input id="si" type="text" placeholder="T\u00ecm k\u1ef9 n\u0103ng..." value="' + esc(searchQuery) + '"></div>' +
+    '<input id="si" type="text" placeholder="Tìm kỹ năng..." value="' + esc(searchQuery) + '"></div>' +
     Object.keys(TL).map(function(t) {
-      return '<button class="fbtn' + (filterType===t?' on':'') + '" data-ftype="' + t + '" style="border-left:2px solid ' + TC[t] + '">' + TL[t] + '</button>';
+      return '<button class="fbtn' + (filterType===t?' on':'') + '" data-ft="' + t + '">' + TL[t] + '</button>';
     }).join('') +
-    ((filterType||searchQuery) ? '<button class="fbtn on" id="clearBtn">&#10005; Reset</button>' : '') +
-    '</div>';
+    ((filterType||searchQuery) ? '<button class="fbtn on" id="clearBtn">&#10005;</button>' : '') +
+    '</div></div>';
 
-  var html = cheaderHtml(title, positions.length + ' v\u1ecb tr\u00ed &middot; ' + esc(ds.name), controlsHtml);
   html += legendHtml();
   html += '<div class="pgrid" id="pg">' + positions.map(posCard).join('') + '</div>';
 
   var el = document.getElementById('content');
   el.innerHTML = html;
 
-  // Bind search
   var si = document.getElementById('si');
   if (si) {
     si.addEventListener('input', function() { searchQuery = this.value; rerender(); });
-    si.focus();
-    si.setSelectionRange(si.value.length, si.value.length);
+    si.focus(); si.setSelectionRange(si.value.length, si.value.length);
   }
-  // Bind filter buttons
-  el.querySelectorAll('.fbtn[data-ftype]').forEach(function(btn) {
+  el.querySelectorAll('.fbtn[data-ft]').forEach(function(btn) {
     btn.addEventListener('click', function() {
-      filterType = (filterType === btn.dataset.ftype) ? null : btn.dataset.ftype;
+      filterType = (filterType === btn.dataset.ft) ? null : btn.dataset.ft;
       rerender();
     });
   });
-  // Bind clear
   var cb = document.getElementById('clearBtn');
-  if (cb) cb.addEventListener('click', function() { filterType = null; searchQuery = ''; rerender(); });
+  if (cb) cb.addEventListener('click', function() { filterType=null; searchQuery=''; rerender(); });
 
-  // Toggle cards
   el.querySelectorAll('.phead').forEach(function(ph) {
     ph.addEventListener('click', function() { ph.closest('.pcard').classList.toggle('open'); });
   });
-
-  if (filterType || searchQuery) {
-    el.querySelectorAll('.pcard').forEach(function(c) { c.classList.add('open'); });
-  }
+  if (filterType || searchQuery) el.querySelectorAll('.pcard').forEach(function(c) { c.classList.add('open'); });
 }
 
 function posCard(pos) {
-  var sk   = skills(pos);
-  var meta = ((pos.pipeline||{}).S1_extraction||{}).meta || {};
+  var sk    = skillsOf(pos);
+  var meta  = (((pos.pipeline||{}).S1_extraction)||{}).meta || {};
   var iviec = sk.filter(function(s) { return s.iviec_flag; });
-
-  var show = sk.slice();
+  var show  = sk.slice();
   if (filterType) show = show.filter(function(s) { return s.skill_type === filterType; });
   if (searchQuery) {
     var q = searchQuery.toLowerCase();
@@ -419,21 +574,17 @@ function posCard(pos) {
       return (s.label_en||'').toLowerCase().indexOf(q) >= 0 || (s.label_vi||'').toLowerCase().indexOf(q) >= 0;
     });
   }
-  if ((filterType || searchQuery) && !show.length) return '';
-
-  var display = (filterType || searchQuery) ? show : sk;
-  var conf    = meta.extraction_confidence ? (meta.extraction_confidence*100).toFixed(0)+'%' : '';
-
+  if ((filterType||searchQuery) && !show.length) return '';
+  var display = (filterType||searchQuery) ? show : sk;
+  var conf = meta.extraction_confidence ? (meta.extraction_confidence*100).toFixed(0)+'%' : '';
   return '<div class="pcard">' +
     '<div class="phead">' +
-    '<div>' +
-    '<div class="pname">' + esc(pos.vi_tri) + '</div>' +
+    '<div><div class="pname">' + esc(pos.vi_tri) + '</div>' +
     (pos.topcv_url ? '<a class="topcv-link" href="' + pos.topcv_url + '" target="_blank" onclick="event.stopPropagation()">&#8599; TopCV</a>' : '') +
-    '</div>' +
-    '<div class="pmeta">' +
-    '<span class="badge b-sk">' + sk.length + ' skills</span>' +
-    (conf ? '<span class="badge b-cf">&#9889; ' + conf + '</span>' : '') +
-    (iviec.length ? '<span class="badge b-vn">&#127474;&#127475; ' + iviec.length + '</span>' : '') +
+    '</div><div class="pmeta">' +
+    '<span class="badge">' + sk.length + ' skills</span>' +
+    (conf ? '<span class="badge">' + conf + '</span>' : '') +
+    (iviec.length ? '<span class="badge b-vn">VN ' + iviec.length + '</span>' : '') +
     '<span class="xicon">&#8964;</span>' +
     '</div></div>' +
     '<div class="spanel"><div class="sp-inner">' + skillGroups(display) + '</div></div>' +
@@ -445,8 +596,8 @@ function skillGroups(sk) {
   sk.forEach(function(s) { if (!by[s.skill_type]) by[s.skill_type]=[]; by[s.skill_type].push(s); });
   return Object.keys(by).map(function(type) {
     var list = by[type];
-    return '<div style="margin-bottom:9px">' +
-      '<div class="stype-title" style="color:' + (TC[type]||'#888') + '">' + (TL[type]||type) + ' (' + list.length + ')</div>' +
+    return '<div style="margin-bottom:10px">' +
+      '<div class="stype-title" style="color:' + (TC[type]||'#666') + '">' + (TL[type]||type) + ' (' + list.length + ')</div>' +
       '<div class="slist">' +
       list.map(function(s) {
         return '<span class="chip ' + esc(s.skill_type) + '">' +
@@ -454,9 +605,9 @@ function skillGroups(sk) {
           esc(s.label_en) +
           '<span class="tip">' +
           '<div class="tip-en">' + esc(s.label_en) + '</div>' +
-          (s.label_vi    ? '<div class="tip-vi">'     + esc(s.label_vi)    + '</div>' : '') +
-          (s.evidence_text ? '<div class="tip-ev">'   + esc(s.evidence_text) + '</div>' : '') +
-          (s.iviec_flag  ? '<div class="tip-vn">&#127474;&#127475; ' + esc(s.iviec_flag) + '</div>' : '') +
+          (s.label_vi ? '<div class="tip-vi">' + esc(s.label_vi) + '</div>' : '') +
+          (s.evidence_text ? '<div class="tip-ev">' + esc(s.evidence_text) + '</div>' : '') +
+          (s.iviec_flag ? '<div class="tip-vn">&#127474;&#127475; ' + esc(s.iviec_flag) + '</div>' : '') +
           (s.iviec_reason ? '<div class="tip-reason">' + esc(s.iviec_reason) + '</div>' : '') +
           '</span></span>';
       }).join('') +
@@ -464,29 +615,23 @@ function skillGroups(sk) {
   }).join('');
 }
 
-// ── HELPERS ───────────────────────────────────────
-function cheaderHtml(title, sub, extra) {
-  return '<div class="cheader"><div><div class="ctitle">' + esc(title) + '</div>' +
-    '<div class="csub">' + sub + '</div></div>' + (extra||'') + '</div>';
-}
-
 function legendHtml(tc) {
   return '<div class="legend">' +
     Object.keys(TC).map(function(t) {
       return '<div class="li"><div class="ld" style="background:' + TC[t] + '"></div>' + TL[t] +
-        (tc ? ' <span style="color:#334155;font-size:9px">(' + (tc[t]||0) + ')</span>' : '') + '</div>';
+        (tc ? ' <span style="color:#333">(' + (tc[t]||0) + ')</span>' : '') + '</div>';
     }).join('') +
-    '<div class="li"><div class="ld" style="background:var(--iviec);border-radius:50%"></div>iViec VN</div>' +
+    '<div class="li"><div class="ld" style="background:#ef4444;border-radius:50%"></div>iViec VN</div>' +
     '</div>';
 }
 
-function skills(pos) { return (((pos.pipeline||{}).S1_extraction)||{}).skills || []; }
-function objSum(o)   { return Object.keys(o).reduce(function(s,k){return s+o[k];},0); }
+// ── HELPERS ───────────────────────────────────────
+function skillsOf(pos) { return ((((pos.pipeline||{}).S1_extraction)||{}).skills)||[]; }
+function objSum(o) { return Object.keys(o).reduce(function(s,k){return s+o[k];},0); }
 function esc(s) {
   if (!s) return '';
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
-
 function rerender() {
   if (activeNghe === '__all__') renderOverview(cur());
   else renderPositions(cur().positions.filter(function(p){return p.nghe===activeNghe;}), activeNghe);
