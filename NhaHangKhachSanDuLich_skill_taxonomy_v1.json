@@ -1,0 +1,3767 @@
+{
+  "taxonomy_metadata": {
+    "sector": "Nhà hàng/Khách sạn/Du lịch",
+    "sector_en": "Hospitality / Hotel / Tourism (F&B, Accommodation, Travel)",
+    "version": "v1",
+    "total_positions": 35,
+    "total_skills": 301,
+    "avg_skills_per_position": 8.6,
+    "sub_categories": {
+      "Nhà hàng/Dịch vụ ăn uống": {
+        "positions": 14,
+        "skills": 122
+      },
+      "Khách sạn/Dịch vụ cư trú": {
+        "positions": 8,
+        "skills": 67
+      },
+      "Sales Nhà hàng/Khách sạn/Du lịch": {
+        "positions": 7,
+        "skills": 63
+      },
+      "Dịch vụ du lịch": {
+        "positions": 5,
+        "skills": 42
+      },
+      "Nhà hàng/Khách sạn/Du lịch khác": {
+        "positions": 1,
+        "skills": 7
+      }
+    },
+    "skill_type_distribution": {
+      "technical": 143,
+      "domain": 53,
+      "tool": 15,
+      "soft": 56,
+      "language": 23,
+      "certification": 11
+    },
+    "requirement_distribution": {
+      "required": 273,
+      "preferred": 28
+    },
+    "iviec_flags": {
+      "VN_REGULATION": 38,
+      "VN_TOOL": 19,
+      "VN_DOMAIN": 5
+    },
+    "data_sources": [
+      "topcv.vn",
+      "vietnamworks.com"
+    ],
+    "extraction_method": "structured_prompt_5jd_per_position",
+    "rows_covered": "1085–1119",
+    "notes": [
+      "Covers rows 1085–1119 of TopCV sector taxonomy (35 positions across 5 sub-categories)",
+      "VN_REGULATION: Luật ATTP 2010/Nghị định 15/2018 VSATTP bếp, Luật Du lịch 2017 (HDV thẻ Bộ VHTTDL, lữ hành, hợp đồng tour), Luật Xuất nhập cảnh 2019 (visa), CAAV hàng không dân dụng, Nghị định 123/2020 hoá đơn VAT, Bộ luật Lao động 2019 ca F&B, Luật Phòng chống tác hại rượu bia 2019, tiêu chuẩn xếp hạng sao Bộ VHTTDL, Luật GTĐB 2008 (bằng B2 valet, A1/A2 shipper), quy định khai báo lưu trú Luật Du lịch",
+      "VN_TOOL: KiotViet/CukCuk/iPOS/Sapo F&B POS, Opera/Smile Hotel/Enzo PMS, Booking.com/Agoda/Expedia/Airbnb/Traveloka OTA, SiteMinder/Cloudbeds channel manager, Amadeus/Sabre/Galileo GDS, GrabFood/ShopeeFood/Baemin Driver delivery apps",
+      "VN_DOMAIN: Ẩm thực Việt Nam 3 miền (Bắc/Trung/Nam), cà phê Robusta/Arabica Việt Nam, bánh mì Việt/bánh truyền thống, văn hóa lịch sử điểm đến VN cho HDV",
+      "VN_CERTIFICATION: Thẻ HDV du lịch quốc tế/nội địa Bộ VHTTDL, bằng lái B2 (valet), A1/A2 (shipper), chứng chỉ nghề nấu ăn/làm bánh/barista Bộ LĐTBXH, WSET/CMS sommeliers, chứng chỉ vận hành điện bậc 3/4/5",
+      "Sector unique: Vietnam food safety (VSATTP/HACCP) systematically flagged across all kitchen positions; OTA ecosystem (Booking/Agoda/Airbnb/Traveloka/GrabFood) flagged as VN_TOOL reflecting dominant local platforms"
+    ]
+  },
+  "positions": [
+    {
+      "vi_tri": "Phục vụ",
+      "nghe": "Nhà hàng/Dịch vụ ăn uống",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-phuc-vu",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Food & Beverage Service",
+              "label_vi": "Phục vụ bàn ăn uống",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nhận order, phục vụ món ăn, đồ uống đúng quy trình nhà hàng",
+              "esco_hint": "provide food and beverage table service",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Menu Knowledge",
+              "label_vi": "Am hiểu thực đơn",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu các món ăn, đồ uống, thành phần, cách chế biến để tư vấn",
+              "esco_hint": "knowledge of menu items and ingredients",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Upselling F&B",
+              "label_vi": "Tư vấn, upsell món ăn, đồ uống",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Gợi ý món khai vị, tráng miệng, đồ uống phù hợp nâng doanh thu",
+              "esco_hint": "upsell food and beverage items",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Table Setup & Mise en Place",
+              "label_vi": "Dọn bàn, chuẩn bị trước phục vụ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Set-up bàn, bày dụng cụ ăn đúng tiêu chuẩn nhà hàng",
+              "esco_hint": "set up tables to restaurant standards",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Food Safety VSATTP",
+              "label_vi": "VSATTP trong phục vụ ăn uống",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tuân thủ vệ sinh an toàn thực phẩm theo quy định Bộ Y tế VN",
+              "esco_hint": "comply with Vietnamese food safety regulations",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "POS System F&B",
+              "label_vi": "Hệ thống POS nhà hàng",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng phần mềm POS nhập order, in bill: KiotViet, CukCuk, iPOS",
+              "esco_hint": "use restaurant POS systems",
+              "confidence": 0.91,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Customer Service F&B",
+              "label_vi": "Phục vụ khách hàng nhà hàng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thân thiện, nhanh nhẹn, xử lý khiếu nại nhẹ nhàng chuyên nghiệp",
+              "esco_hint": "deliver excellent restaurant customer service",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Teamwork F&B",
+              "label_vi": "Làm việc nhóm bếp-phòng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối hợp nhịp nhàng với bếp và đồng nghiệp phục vụ trong giờ cao điểm",
+              "esco_hint": "work effectively as part of F&B team",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Physical Stamina F&B",
+              "label_vi": "Thể lực phục vụ ca dài",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Đứng, di chuyển liên tục ca làm việc 8–10 tiếng",
+              "esco_hint": "maintain physical stamina for long service shifts",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Thu ngân",
+      "nghe": "Nhà hàng/Dịch vụ ăn uống",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-thu-ngan",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Cash & Payment Processing",
+              "label_vi": "Thu ngân tiền mặt và thẻ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thu tiền mặt, thẻ tín dụng/ghi nợ, ví điện tử đúng quy trình",
+              "esco_hint": "process cash and card payments accurately",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "POS & Cashier System",
+              "label_vi": "Hệ thống POS thu ngân",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vận hành hệ thống POS: KiotViet, CukCuk, iPOS, Misa thu ngân",
+              "esco_hint": "operate POS and cashier systems",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Daily Revenue Reconciliation",
+              "label_vi": "Đối soát, báo cáo doanh thu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đối soát doanh thu cuối ca, kiểm tiền két, lập báo cáo thanh toán",
+              "esco_hint": "reconcile daily revenue and prepare cashier reports",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Invoice & Receipt Issuance",
+              "label_vi": "Xuất hoá đơn, biên lai",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xuất hoá đơn VAT theo Nghị định 123/2020/NĐ-CP khi khách yêu cầu",
+              "esco_hint": "issue invoices and receipts according to regulations",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Discount & Promotion Handling",
+              "label_vi": "Xử lý khuyến mãi, voucher",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Áp dụng đúng chương trình khuyến mãi, voucher giảm giá",
+              "esco_hint": "process promotions and discount vouchers accurately",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Cash Handling Integrity",
+              "label_vi": "Trung thực xử lý tiền mặt",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuyệt đối trung thực, không gian lận tiền mặt, thừa thiếu tiền",
+              "esco_hint": "demonstrate integrity in cash handling",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Customer Service Cashier",
+              "label_vi": "Phục vụ khách tại quầy thu ngân",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lịch sự, nhanh chóng phục vụ khách tại quầy thanh toán",
+              "esco_hint": "provide courteous service at cashier",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Numerical Accuracy",
+              "label_vi": "Tính toán chính xác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tính toán nhanh, chính xác, hạn chế sai sót thanh toán",
+              "esco_hint": "demonstrate numerical accuracy and attention to detail",
+              "confidence": 0.96
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Lễ tân/Đón tiếp (Nhà hàng)",
+      "nghe": "Nhà hàng/Dịch vụ ăn uống",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-le-tan-don-tiep",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Guest Reception F&B",
+              "label_vi": "Đón tiếp, hướng dẫn khách nhà hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đón tiếp, sắp xếp chỗ ngồi, quản lý reservation nhà hàng",
+              "esco_hint": "greet and seat guests at restaurant",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Reservation Management",
+              "label_vi": "Quản lý đặt bàn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nhận, xác nhận, sắp xếp đặt bàn qua điện thoại, app, OTA",
+              "esco_hint": "manage restaurant reservations across channels",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Waiting List Management",
+              "label_vi": "Quản lý hàng chờ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Quản lý danh sách chờ giờ cao điểm, thông báo khách kịp thời",
+              "esco_hint": "manage customer waiting lists",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Menu Presentation & Upselling",
+              "label_vi": "Giới thiệu thực đơn, gợi ý món",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Giới thiệu thực đơn, gợi ý các ưu đãi, món đặc biệt của ngày",
+              "esco_hint": "present menu and suggest daily specials",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Complaint Handling Reception",
+              "label_vi": "Xử lý phàn nàn, tình huống",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý tình huống phàn nàn với thái độ chuyên nghiệp, bình tĩnh",
+              "esco_hint": "handle guest complaints professionally",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Phone & Email Etiquette",
+              "label_vi": "Giao tiếp điện thoại, email chuyên nghiệp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giao tiếp qua điện thoại, email đúng chuẩn nghề lễ tân",
+              "esco_hint": "demonstrate professional phone and email etiquette",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "English Communication Reception",
+              "label_vi": "Tiếng Anh giao tiếp lễ tân",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp cơ bản tiếng Anh với khách nước ngoài đặt bàn",
+              "esco_hint": "communicate in English with foreign guests",
+              "confidence": 0.85
+            },
+            {
+              "label_en": "Professional Grooming",
+              "label_vi": "Diện mạo, tác phong chuyên nghiệp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Diện mạo gọn gàng, tác phong chuyên nghiệp, nụ cười thân thiện",
+              "esco_hint": "maintain professional appearance and demeanour",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Quản lý lễ tân",
+      "nghe": "Nhà hàng/Dịch vụ ăn uống",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-quan-ly-le-tan",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Front-of-House Team Management",
+              "label_vi": "Quản lý đội ngũ lễ tân nhà hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý, đào tạo, phân ca đội ngũ lễ tân và phục vụ",
+              "esco_hint": "manage and train front-of-house team",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Reservation System Management",
+              "label_vi": "Quản lý hệ thống đặt bàn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý toàn bộ hệ thống reservation: ResBook, TableCheck, OTA",
+              "esco_hint": "manage restaurant reservation systems",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Guest Experience Management",
+              "label_vi": "Quản lý trải nghiệm khách hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo trải nghiệm khách hàng xuất sắc từ đón tiếp đến tiễn",
+              "esco_hint": "manage end-to-end guest experience",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "SOP Development Reception",
+              "label_vi": "Xây dựng SOP lễ tân",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng, cập nhật SOP phục vụ, đón tiếp chuẩn nhà hàng",
+              "esco_hint": "develop front-of-house SOPs",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Staff Training F&B Reception",
+              "label_vi": "Đào tạo nhân viên lễ tân",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đào tạo nghiệp vụ lễ tân, xử lý tình huống cho nhân viên mới",
+              "esco_hint": "train reception and service staff",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Revenue & Occupancy Reporting",
+              "label_vi": "Báo cáo doanh thu, công suất bàn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Theo dõi, báo cáo công suất bàn, doanh thu theo ca/ngày/tuần",
+              "esco_hint": "track and report table occupancy and revenue",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "English Management Reception",
+              "label_vi": "Tiếng Anh quản lý lễ tân",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp tiếng Anh với khách VIP, đối tác nước ngoài",
+              "esco_hint": "communicate in English with VIP and foreign guests",
+              "confidence": 0.87
+            },
+            {
+              "label_en": "Leadership Front-of-House",
+              "label_vi": "Lãnh đạo đội phục vụ",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Truyền cảm hứng, duy trì tinh thần phục vụ cao cho đội ngũ",
+              "esco_hint": "lead and motivate front-of-house team",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Vietnam F&B Labor Regulations",
+              "label_vi": "Luật lao động trong F&B VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm Bộ luật Lao động 2019, ca phục vụ, OT cho nhân viên F&B",
+              "esco_hint": "knowledge of Vietnamese labour law in F&B",
+              "confidence": 0.87,
+              "iviec_flag": "VN_REGULATION"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Đầu bếp",
+      "nghe": "Nhà hàng/Dịch vụ ăn uống",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-dau-bep",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Cooking Techniques",
+              "label_vi": "Kỹ thuật nấu ăn chuyên nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo kỹ thuật nấu: xào, chiên, hấp, nướng, sous vide",
+              "esco_hint": "master professional cooking techniques",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Cuisine Specialisation",
+              "label_vi": "Chuyên môn ẩm thực",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo ít nhất một nền ẩm thực: Việt, Á, Âu, Fusion",
+              "esco_hint": "specialise in at least one cuisine style",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Vietnam Cuisine Knowledge",
+              "label_vi": "Ẩm thực Việt Nam 3 miền",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu ẩm thực đặc trưng Bắc/Trung/Nam Việt Nam",
+              "esco_hint": "knowledge of Vietnamese regional cuisines",
+              "confidence": 0.95,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Food Preparation & Mise en Place",
+              "label_vi": "Sơ chế, chuẩn bị nguyên liệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sơ chế nguyên liệu đúng kỹ thuật, chuẩn bị mise en place trước ca",
+              "esco_hint": "prepare ingredients and mise en place",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Recipe Standardisation",
+              "label_vi": "Chuẩn hoá công thức, định lượng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tuân thủ công thức chuẩn, kiểm soát định lượng đồng nhất",
+              "esco_hint": "follow standardised recipes and portion control",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Vietnam Food Safety VSATTP Kitchen",
+              "label_vi": "VSATTP bếp theo quy định VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuân thủ vệ sinh an toàn thực phẩm bếp theo Luật ATTP 2010/Nghị định 15/2018",
+              "esco_hint": "comply with Vietnamese kitchen food safety regulations",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Kitchen Speed & Efficiency",
+              "label_vi": "Tốc độ, hiệu quả trong bếp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nấu nhanh, đúng tiêu chuẩn trong giờ cao điểm, không để khách chờ",
+              "esco_hint": "work with speed and efficiency in kitchen",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Knife Skills",
+              "label_vi": "Kỹ năng dao, thái thái chuyên nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thái, thái, băm chuyên nghiệp đúng kỹ thuật culinary",
+              "esco_hint": "demonstrate professional knife skills",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Culinary Certificate",
+              "label_vi": "Chứng chỉ nghề nấu ăn",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng/chứng chỉ nghề nấu ăn trong hoặc ngoài nước",
+              "esco_hint": "hold culinary certificate or diploma",
+              "confidence": 0.85
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Bếp trưởng",
+      "nghe": "Nhà hàng/Dịch vụ ăn uống",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bep-truong",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Executive Chef Leadership",
+              "label_vi": "Quản lý, lãnh đạo bộ phận bếp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý toàn bộ bếp: phân công, đào tạo, kiểm soát chất lượng",
+              "esco_hint": "lead and manage kitchen department",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Menu Development",
+              "label_vi": "Sáng tác, phát triển thực đơn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sáng tác thực đơn mới, cân đối dinh dưỡng, thẩm mỹ và chi phí",
+              "esco_hint": "develop and design restaurant menus",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Food Cost Control",
+              "label_vi": "Kiểm soát chi phí thực phẩm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm soát food cost ≤ target, quản lý tồn kho nguyên liệu",
+              "esco_hint": "control food cost and ingredient inventory",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Kitchen SOP & Quality Standards",
+              "label_vi": "SOP bếp, tiêu chuẩn chất lượng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng SOP nấu ăn, đảm bảo chất lượng món nhất quán",
+              "esco_hint": "develop kitchen SOPs and quality standards",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam ATTP Compliance",
+              "label_vi": "Tuân thủ ATTP, Bộ Y tế VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo bếp đạt tiêu chuẩn ATTP theo Luật ATTP 2010, Nghị định 15",
+              "esco_hint": "ensure kitchen complies with Vietnamese food safety law",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "HACCP Implementation",
+              "label_vi": "Triển khai HACCP bếp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Triển khai, duy trì hệ thống HACCP kiểm soát an toàn thực phẩm",
+              "esco_hint": "implement HACCP food safety system",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Staff Training Kitchen",
+              "label_vi": "Đào tạo đội ngũ bếp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đào tạo kỹ thuật nấu, ATTP, kỷ luật bếp cho nhân viên mới",
+              "esco_hint": "train kitchen staff in techniques and food safety",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Supplier Management Kitchen",
+              "label_vi": "Quản lý nhà cung cấp thực phẩm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lựa chọn, đánh giá nhà cung cấp nguyên liệu đảm bảo chất lượng",
+              "esco_hint": "manage food and ingredient suppliers",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Creative Culinary Vision",
+              "label_vi": "Tầm nhìn sáng tạo ẩm thực",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Cập nhật xu hướng ẩm thực, sáng tạo món mới thu hút thực khách",
+              "esco_hint": "demonstrate creative culinary vision",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "English Culinary Professional",
+              "label_vi": "Tiếng Anh ẩm thực chuyên nghiệp",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp với khách, tư vấn thực đơn tiếng Anh tại nhà hàng",
+              "esco_hint": "communicate in English in professional culinary setting",
+              "confidence": 0.82
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Phụ bếp",
+      "nghe": "Nhà hàng/Dịch vụ ăn uống",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-phu-bep",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Ingredient Preparation",
+              "label_vi": "Sơ chế nguyên liệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Rửa, cắt, thái, ướp nguyên liệu đúng yêu cầu đầu bếp chính",
+              "esco_hint": "prepare and pre-process ingredients",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Basic Cooking Assistance",
+              "label_vi": "Hỗ trợ nấu ăn cơ bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xào, chiên, luộc đơn giản theo hướng dẫn của đầu bếp chính",
+              "esco_hint": "assist with basic cooking tasks",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Kitchen Cleaning & Hygiene",
+              "label_vi": "Vệ sinh bếp, dụng cụ nấu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vệ sinh khu vực bếp, dụng cụ nấu theo đúng quy định ATTP",
+              "esco_hint": "clean kitchen and cooking equipment",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Food Storage",
+              "label_vi": "Bảo quản thực phẩm đúng quy trình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Bảo quản nguyên liệu FIFO, đúng nhiệt độ, ghi nhãn đúng chuẩn",
+              "esco_hint": "store food correctly using FIFO and temperature controls",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Vietnam Kitchen Food Safety Basic",
+              "label_vi": "VSATTP cơ bản trong bếp",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm VSATTP cơ bản theo quy định Bộ Y tế áp dụng trong bếp",
+              "esco_hint": "knowledge of basic Vietnamese kitchen food safety",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Physical Stamina Kitchen",
+              "label_vi": "Thể lực làm việc trong bếp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Chịu nhiệt, đứng lâu, làm việc cường độ cao trong bếp",
+              "esco_hint": "maintain physical stamina in hot kitchen environment",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Teamwork Kitchen",
+              "label_vi": "Làm việc nhóm trong bếp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối hợp nhịp nhàng với đầu bếp chính và đồng nghiệp",
+              "esco_hint": "work well in kitchen team",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Willingness to Learn",
+              "label_vi": "Cầu tiến, học hỏi",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Ham học hỏi kỹ thuật nấu, cầu tiến để thăng tiến lên đầu bếp",
+              "esco_hint": "demonstrate eagerness to learn culinary skills",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Quản lý bếp",
+      "nghe": "Nhà hàng/Dịch vụ ăn uống",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-quan-ly-bep",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Kitchen Operations Management",
+              "label_vi": "Quản lý vận hành bếp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý toàn bộ hoạt động bếp: phân ca, chất lượng, tốc độ",
+              "esco_hint": "manage kitchen operations",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Food Cost & Inventory Kitchen",
+              "label_vi": "Chi phí thực phẩm, tồn kho bếp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm soát food cost, quản lý tồn kho nguyên liệu, giảm hao hụt",
+              "esco_hint": "manage food cost and kitchen inventory",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Menu Costing",
+              "label_vi": "Tính giá thành thực đơn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tính giá thành từng món, đề xuất giá bán đạt margin mục tiêu",
+              "esco_hint": "calculate menu item costs and pricing",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "HACCP & ATTP Management",
+              "label_vi": "Quản lý HACCP, ATTP",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Triển khai, duy trì HACCP; đảm bảo tuân thủ Luật ATTP VN",
+              "esco_hint": "manage HACCP and food safety compliance",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Staff Scheduling Kitchen",
+              "label_vi": "Lập lịch ca bếp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập lịch ca cho đội ngũ bếp, đảm bảo đủ nhân lực mọi ca",
+              "esco_hint": "schedule kitchen staff and shifts",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Kitchen Equipment Management",
+              "label_vi": "Quản lý thiết bị bếp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Quản lý, bảo trì thiết bị bếp, lập lịch bảo dưỡng định kỳ",
+              "esco_hint": "manage and maintain kitchen equipment",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Supplier Sourcing Kitchen",
+              "label_vi": "Tìm nguồn, đánh giá nhà cung cấp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tìm nguồn nguyên liệu đảm bảo chất lượng, giá cạnh tranh",
+              "esco_hint": "source and evaluate food suppliers",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Leadership Kitchen Team",
+              "label_vi": "Lãnh đạo đội ngũ bếp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì kỷ luật, tinh thần làm việc cao cho đội bếp",
+              "esco_hint": "lead and motivate kitchen team",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Vietnam Labor Law Kitchen",
+              "label_vi": "Luật lao động F&B bếp VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tuân thủ Bộ luật Lao động, ca làm việc, OT trong ngành bếp",
+              "esco_hint": "comply with Vietnamese labour law for kitchen staff",
+              "confidence": 0.87,
+              "iviec_flag": "VN_REGULATION"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Thợ làm bánh",
+      "nghe": "Nhà hàng/Dịch vụ ăn uống",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tho-lam-banh",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Pastry & Baking Techniques",
+              "label_vi": "Kỹ thuật làm bánh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo làm bánh: croissant, tart, entremet, bread, chiffon, mousse",
+              "esco_hint": "master pastry and baking techniques",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Bread Making",
+              "label_vi": "Làm bánh mì, bánh lên men",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Làm bánh mì sourdough, baguette, brioche: kiểm soát fermentation",
+              "esco_hint": "bake bread and fermented doughs",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Cake Decorating",
+              "label_vi": "Trang trí bánh, decor",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Trang trí bánh kem, fondant, isomalt, chocolate showpiece",
+              "esco_hint": "decorate cakes and pastries",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnamese Bakery Products",
+              "label_vi": "Bánh Việt Nam: bánh ngọt, bánh mì Việt",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu bánh mì Việt, bánh trung thu, bánh ít, bánh chưng",
+              "esco_hint": "knowledge of Vietnamese bakery products",
+              "confidence": 0.9,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Chocolate & Sugar Work",
+              "label_vi": "Socola, đường nghệ thuật",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Kéo đường, chocolate tempering, showpiece cho bakery cao cấp",
+              "esco_hint": "work with chocolate and sugar for artistic pieces",
+              "confidence": 0.85
+            },
+            {
+              "label_en": "Recipe Scaling & Standardisation",
+              "label_vi": "Nhân công thức, chuẩn hoá",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nhân công thức chính xác, đảm bảo đồng nhất chất lượng bánh",
+              "esco_hint": "scale and standardise pastry recipes",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Bakery Food Safety",
+              "label_vi": "VSATTP trong sản xuất bánh",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tuân thủ VSATTP: FIFO, nhiệt độ lưu trữ bánh và nguyên liệu",
+              "esco_hint": "comply with food safety in bakery production",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Creativity Pastry",
+              "label_vi": "Sáng tạo trong làm bánh",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sáng tạo mẫu bánh mới, theo xu hướng thị trường bánh VN",
+              "esco_hint": "demonstrate creativity in pastry design",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Pastry Certificate",
+              "label_vi": "Chứng chỉ làm bánh",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ nghề làm bánh trong hoặc ngoài nước",
+              "esco_hint": "hold pastry or baking certificate",
+              "confidence": 0.84
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Pha chế (Barista)",
+      "nghe": "Nhà hàng/Dịch vụ ăn uống",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-pha-che-barista",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Espresso & Coffee Brewing",
+              "label_vi": "Pha chế espresso, cà phê",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Pha chế espresso, americano, latte, cappuccino, cold brew chuẩn kỹ thuật",
+              "esco_hint": "brew espresso and specialty coffee drinks",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Latte Art",
+              "label_vi": "Latte art trên cà phê",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Vẽ latte art: heart, rosette, tulip, free pour nâng cao",
+              "esco_hint": "create latte art designs",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Coffee Equipment Operation",
+              "label_vi": "Vận hành máy pha cà phê",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vận hành, vệ sinh máy espresso, máy xay cà phê hàng ngày",
+              "esco_hint": "operate and maintain coffee equipment",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Coffee Knowledge",
+              "label_vi": "Am hiểu cà phê Việt Nam",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu cà phê Robusta/Arabica Việt Nam, cà phê rang xay nội địa",
+              "esco_hint": "knowledge of Vietnamese coffee varieties",
+              "confidence": 0.93,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Specialty Coffee Knowledge",
+              "label_vi": "Kiến thức cà phê đặc sản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu origin, processing, roast profile cà phê đặc sản",
+              "esco_hint": "knowledge of specialty coffee origins and processing",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Cocktail & Mocktail Mixing",
+              "label_vi": "Pha chế cocktail, mocktail",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Pha chế cocktail, mocktail đơn giản để tăng revenue quán",
+              "esco_hint": "mix basic cocktails and mocktails",
+              "confidence": 0.86
+            },
+            {
+              "label_en": "Beverage Hygiene Standards",
+              "label_vi": "VSATTP đồ uống",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Vệ sinh dụng cụ pha chế, tuân thủ VSATTP đồ uống",
+              "esco_hint": "maintain beverage hygiene standards",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Barista Certificate",
+              "label_vi": "Chứng chỉ barista",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ barista SCA, SCAE hoặc chứng chỉ pha chế nội địa",
+              "esco_hint": "hold SCA or domestic barista certificate",
+              "confidence": 0.84
+            },
+            {
+              "label_en": "Customer Interaction Barista",
+              "label_vi": "Giao tiếp với khách tại quầy",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thân thiện, nhiệt tình giới thiệu đồ uống mới cho khách",
+              "esco_hint": "interact warmly with customers at coffee bar",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên gia thẩm rượu",
+      "nghe": "Nhà hàng/Dịch vụ ăn uống",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-gia-tham-ruou",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Wine Knowledge & Tasting",
+              "label_vi": "Kiến thức, thẩm định rượu vang",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiến thức sâu về rượu vang: giống nho, vùng, vintage, tasting",
+              "esco_hint": "deep knowledge of wine varieties, regions and tasting",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Wine Service & Pairing",
+              "label_vi": "Phục vụ và ghép rượu với món ăn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phục vụ rượu vang đúng kỹ thuật, ghép rượu phù hợp thực đơn",
+              "esco_hint": "serve wine and pair with food correctly",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Beverage List Development",
+              "label_vi": "Xây dựng thực đơn đồ uống",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng wine list, cocktail menu phù hợp phong cách nhà hàng",
+              "esco_hint": "develop beverage lists for restaurants",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Spirits & Cocktail Knowledge",
+              "label_vi": "Kiến thức đồ uống có cồn",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu whisky, cognac, gin, rum, cocktail classic và signature",
+              "esco_hint": "knowledge of spirits and cocktail categories",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "WSET / CMS Certification",
+              "label_vi": "Chứng chỉ WSET, CMS",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "WSET Level 2–4 hoặc Court of Master Sommeliers",
+              "esco_hint": "hold WSET or Court of Master Sommeliers certification",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Alcohol Regulations",
+              "label_vi": "Quy định kinh doanh đồ uống có cồn VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm Luật Phòng chống tác hại rượu bia 2019, quy định phục vụ",
+              "esco_hint": "knowledge of Vietnamese alcohol service regulations",
+              "confidence": 0.89,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Staff Training Beverage",
+              "label_vi": "Đào tạo nhân viên về đồ uống",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đào tạo đội ngũ phục vụ kiến thức rượu vang, upsell beverage",
+              "esco_hint": "train service staff on wine and beverage knowledge",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "English Wine Communication",
+              "label_vi": "Tiếng Anh giao tiếp rượu vang",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn, giới thiệu wine list bằng tiếng Anh với khách quốc tế",
+              "esco_hint": "communicate about wines in English with international guests",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Passion for Wine",
+              "label_vi": "Đam mê nghề thẩm định rượu",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đam mê liên tục cập nhật kiến thức, theo dõi xu hướng rượu vang",
+              "esco_hint": "demonstrate genuine passion for wine and beverages",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Quản lý nhà hàng",
+      "nghe": "Nhà hàng/Dịch vụ ăn uống",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-quan-ly-nha-hang",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Restaurant Operations Management",
+              "label_vi": "Quản lý vận hành nhà hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý toàn bộ vận hành nhà hàng: dịch vụ, bếp, nhân sự, tài chính",
+              "esco_hint": "manage full restaurant operations",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Revenue & P&L Management",
+              "label_vi": "Quản lý doanh thu, P&L nhà hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm soát doanh thu, chi phí, lợi nhuận theo target nhà hàng",
+              "esco_hint": "manage restaurant revenue and P&L",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Staff Management Restaurant",
+              "label_vi": "Quản lý nhân sự nhà hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuyển dụng, đào tạo, phân ca, đánh giá toàn bộ nhân viên nhà hàng",
+              "esco_hint": "manage restaurant human resources",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Guest Experience Excellence",
+              "label_vi": "Quản lý trải nghiệm khách hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo trải nghiệm khách xuất sắc, xử lý VIP và sự cố",
+              "esco_hint": "manage guest experience and VIP service",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam ATTP Restaurant Compliance",
+              "label_vi": "Tuân thủ ATTP nhà hàng VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo nhà hàng đạt tiêu chuẩn ATTP, giấy phép kinh doanh VN",
+              "esco_hint": "ensure restaurant ATTP and licensing compliance",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Restaurant POS & Systems",
+              "label_vi": "Hệ thống POS, phần mềm nhà hàng",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý hệ thống POS, đặt bàn, kiểm kê: KiotViet, CukCuk, Sapo F&B",
+              "esco_hint": "manage restaurant POS and management systems",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Menu Engineering",
+              "label_vi": "Menu engineering, tối ưu thực đơn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phân tích popularity/profitability, tối ưu thực đơn tăng lợi nhuận",
+              "esco_hint": "apply menu engineering principles",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Supplier Management Restaurant",
+              "label_vi": "Quản lý nhà cung cấp nhà hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đàm phán, quản lý nhà cung cấp nguyên liệu và dịch vụ nhà hàng",
+              "esco_hint": "manage restaurant suppliers",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "English Restaurant Management",
+              "label_vi": "Tiếng Anh quản lý nhà hàng",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp với khách quốc tế, đối tác nước ngoài tiếng Anh",
+              "esco_hint": "communicate in English for restaurant management",
+              "confidence": 0.85
+            },
+            {
+              "label_en": "Leadership Restaurant",
+              "label_vi": "Lãnh đạo đội ngũ nhà hàng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng văn hóa phục vụ xuất sắc, gắn kết đội ngũ nhà hàng",
+              "esco_hint": "lead and inspire restaurant team culture",
+              "confidence": 0.96
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Shipper (Nhân viên giao hàng F&B)",
+      "nghe": "Nhà hàng/Dịch vụ ăn uống",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-shipper-nhan-vien-giao-hang",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "F&B Delivery",
+              "label_vi": "Giao hàng đồ ăn, đồ uống",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Giao đồ ăn, thức uống đúng hẹn, an toàn, đúng địa chỉ",
+              "esco_hint": "deliver food and beverages accurately and on time",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Food Delivery App Operation",
+              "label_vi": "Vận hành app giao hàng F&B",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vận hành GrabFood, ShopeeFood, Baemin Driver app nhận và giao đơn",
+              "esco_hint": "operate food delivery platform apps",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Route Optimisation Delivery",
+              "label_vi": "Tối ưu tuyến đường giao hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tối ưu lộ trình giao hàng để giao đúng giờ giảm thời gian vận chuyển",
+              "esco_hint": "optimise delivery routes for speed",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "COD Collection F&B",
+              "label_vi": "Thu tiền COD đồ ăn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thu tiền mặt COD, trả lại tiền thừa chính xác cho khách hàng",
+              "esco_hint": "collect COD payments accurately",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Vietnam Traffic Law Delivery",
+              "label_vi": "Luật giao thông khi giao hàng",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tuân thủ Luật GTĐB 2008, an toàn giao thông khi giao hàng",
+              "esco_hint": "comply with Vietnamese traffic law during delivery",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Vietnam Driving Licence A1/A2",
+              "label_vi": "Bằng lái xe A1/A2 Bộ GTVT",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái xe máy A1/A2 hợp lệ theo quy định Bộ GTVT",
+              "esco_hint": "hold valid Vietnamese motorcycle licence A1/A2",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Food Packaging Safety",
+              "label_vi": "Đảm bảo an toàn bao bì thực phẩm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Kiểm tra bao bì, đảm bảo thức ăn không đổ, không hỏng khi giao",
+              "esco_hint": "ensure food packaging integrity during delivery",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Customer Service Delivery",
+              "label_vi": "Giao tiếp khách hàng khi giao hàng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lịch sự, nhanh nhẹn, xử lý thắc mắc khách tại điểm giao",
+              "esco_hint": "provide courteous customer service at delivery point",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Physical Stamina Delivery",
+              "label_vi": "Thể lực giao hàng nhiều ca",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Thể lực làm việc nhiều ca, ngoài trời nắng/mưa",
+              "esco_hint": "maintain physical stamina for multi-shift delivery work",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Nhà hàng/Dịch vụ ăn uống khác",
+      "nghe": "Nhà hàng/Dịch vụ ăn uống",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-nha-hang-dich-vu-an-uong-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 6
+          },
+          "skills": [
+            {
+              "label_en": "F&B Operations",
+              "label_vi": "Vận hành dịch vụ ăn uống",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện công việc F&B theo chuyên môn cụ thể",
+              "esco_hint": "perform F&B operations according to specialisation",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Food Safety Basic",
+              "label_vi": "VSATTP cơ bản theo quy định VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm và tuân thủ VSATTP cơ bản theo Bộ Y tế, Bộ NN&PTNT",
+              "esco_hint": "comply with basic Vietnamese food safety regulations",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Customer Service F&B Basic",
+              "label_vi": "Dịch vụ khách hàng F&B",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thái độ phục vụ tốt, thân thiện với khách hàng trong F&B",
+              "esco_hint": "provide good customer service in F&B",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Teamwork F&B Other",
+              "label_vi": "Làm việc nhóm trong F&B",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối hợp nhịp nhàng với đồng nghiệp bếp và phục vụ",
+              "esco_hint": "work effectively in F&B team",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Physical Stamina F&B Other",
+              "label_vi": "Thể lực F&B",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Thể lực đáp ứng công việc F&B đứng nhiều giờ",
+              "esco_hint": "maintain physical stamina for F&B work",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Relevant F&B Certificate",
+              "label_vi": "Chứng chỉ F&B liên quan",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ nghề hoặc kỹ thuật liên quan ngành F&B",
+              "esco_hint": "hold relevant F&B certificate or qualification",
+              "confidence": 0.81
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Lễ tân/Đón tiếp (Khách sạn)",
+      "nghe": "Khách sạn/Dịch vụ cư trú",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-le-tan-don-tiep",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Check-in & Check-out",
+              "label_vi": "Thủ tục check-in, check-out",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện check-in, check-out nhanh chóng, chính xác, thân thiện",
+              "esco_hint": "perform hotel check-in and check-out procedures",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Hotel PMS Operation",
+              "label_vi": "Vận hành phần mềm quản lý khách sạn",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vận hành PMS: Opera, Smile Hotel, Enzo, VH1 check-in/check-out, room assignment",
+              "esco_hint": "operate hotel property management systems",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Reservation Handling Hotel",
+              "label_vi": "Xử lý đặt phòng khách sạn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nhận, xác nhận đặt phòng qua điện thoại, OTA, email",
+              "esco_hint": "handle hotel room reservations",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Guest Services Front Desk",
+              "label_vi": "Dịch vụ khách tại lễ tân",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Cung cấp thông tin địa phương, hỗ trợ khách, xử lý yêu cầu đặc biệt",
+              "esco_hint": "provide guest services at front desk",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Payment Processing Hotel",
+              "label_vi": "Thanh toán khách sạn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý thanh toán tiền mặt, thẻ, ví điện tử, xuất hóa đơn VAT",
+              "esco_hint": "process hotel payments and issue invoices",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Night Audit Basic",
+              "label_vi": "Kiểm toán đêm cơ bản",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện night audit: đối soát doanh thu, báo cáo cuối ngày",
+              "esco_hint": "perform basic hotel night audit",
+              "confidence": 0.87
+            },
+            {
+              "label_en": "English Hotel Front Desk",
+              "label_vi": "Tiếng Anh lễ tân khách sạn",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giao tiếp tiếng Anh với khách quốc tế check-in, giải đáp thắc mắc",
+              "esco_hint": "communicate in English at hotel front desk",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Professional Appearance Hotel",
+              "label_vi": "Tác phong chuyên nghiệp khách sạn",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Diện mạo gọn gàng, đồng phục chỉnh tề, thái độ niềm nở",
+              "esco_hint": "maintain professional hotel front desk appearance",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam Tourism Star Rating",
+              "label_vi": "Tiêu chuẩn xếp hạng sao khách sạn VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm tiêu chuẩn dịch vụ theo hạng sao khách sạn Bộ VHTTDL VN",
+              "esco_hint": "knowledge of Vietnamese hotel star rating standards",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Bellman (Nhân viên hành lý)",
+      "nghe": "Khách sạn/Dịch vụ cư trú",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bellman-nhan-vien-hanh-ly",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Luggage Handling",
+              "label_vi": "Xử lý, vận chuyển hành lý",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xử lý, vận chuyển hành lý an toàn, đúng phòng khi check-in/out",
+              "esco_hint": "handle and transport guest luggage safely",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Room Escort & Orientation",
+              "label_vi": "Dẫn khách lên phòng, giới thiệu tiện nghi",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dẫn khách lên phòng, giới thiệu tiện nghi, dịch vụ khách sạn",
+              "esco_hint": "escort guests to rooms and explain amenities",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Valet & Transportation Coordination",
+              "label_vi": "Phối hợp xe đón, valet",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phối hợp xe đón tiễn khách, valet parking, taxi booking",
+              "esco_hint": "coordinate guest transportation services",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Parcel & Mail Handling",
+              "label_vi": "Xử lý bưu phẩm, thư từ khách",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nhận, lưu trữ, chuyển bưu phẩm, thư từ cho khách đúng cách",
+              "esco_hint": "receive and deliver parcels and mail for guests",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Local Area Knowledge",
+              "label_vi": "Am hiểu địa phương",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn nhà hàng, điểm tham quan, phương tiện đi lại địa phương",
+              "esco_hint": "provide local area recommendations to guests",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "English Bellman Communication",
+              "label_vi": "Tiếng Anh phục vụ bellman",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp cơ bản tiếng Anh với khách quốc tế về hành lý và dịch vụ",
+              "esco_hint": "communicate basic English with international guests",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Physical Stamina Bellman",
+              "label_vi": "Thể lực vác hành lý",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Thể lực tốt vác hành lý nặng, đứng nhiều ca",
+              "esco_hint": "maintain physical stamina for luggage handling",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Positive Service Attitude Bellman",
+              "label_vi": "Thái độ phục vụ nhiệt tình",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nụ cười, nhiệt tình, tạo ấn tượng đầu tiên tốt cho khách sạn",
+              "esco_hint": "demonstrate positive and enthusiastic service attitude",
+              "confidence": 0.96
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Buồng phòng",
+      "nghe": "Khách sạn/Dịch vụ cư trú",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-buong-phong",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Room Cleaning & Setup",
+              "label_vi": "Dọn phòng khách sạn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dọn phòng occupied, vacant, check-out đúng quy trình và tiêu chuẩn",
+              "esco_hint": "clean and set up hotel rooms to standard",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Bed Making Professional",
+              "label_vi": "Trải giường chuyên nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Trải giường, gấp khăn theo tiêu chuẩn khách sạn từng hạng sao",
+              "esco_hint": "make beds and fold linens to hotel standards",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Amenity Restocking",
+              "label_vi": "Bổ sung tiện nghi phòng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bổ sung amenities: khăn, nước, đồ vệ sinh cá nhân đúng tiêu chuẩn",
+              "esco_hint": "restock room amenities to hotel standards",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Lost & Found Procedures",
+              "label_vi": "Quy trình đồ thất lạc",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý đồ thất lạc của khách theo quy trình khách sạn nghiêm ngặt",
+              "esco_hint": "follow hotel lost and found procedures",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Room Inspection",
+              "label_vi": "Kiểm tra phòng trước nhận khách",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm tra phòng kỹ lưỡng trước khi bàn giao cho lễ tân",
+              "esco_hint": "inspect rooms before releasing to front desk",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Linen & Laundry Management",
+              "label_vi": "Quản lý vải, đồ giặt phòng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Kiểm đếm, lưu trữ, yêu cầu bổ sung khăn, ga giường từ giặt là",
+              "esco_hint": "manage room linen and laundry requests",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Vietnam Housekeeping Star Standards",
+              "label_vi": "Tiêu chuẩn buồng phòng VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện theo tiêu chuẩn buồng phòng khách sạn hạng sao Bộ VHTTDL",
+              "esco_hint": "apply Vietnamese hotel housekeeping star standards",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Attention to Detail Housekeeping",
+              "label_vi": "Tỉ mỉ, cẩn thận vệ sinh phòng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tỉ mỉ kiểm tra từng góc phòng, đảm bảo sạch sẽ hoàn toàn",
+              "esco_hint": "pay meticulous attention to room cleanliness",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Discretion & Privacy",
+              "label_vi": "Tôn trọng sự riêng tư khách",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Không xâm phạm tài sản khách, bảo mật tuyệt đối thông tin khách",
+              "esco_hint": "respect guest privacy and confidentiality",
+              "confidence": 0.97
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Giặt là",
+      "nghe": "Khách sạn/Dịch vụ cư trú",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-giat-la",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Commercial Laundry Operation",
+              "label_vi": "Vận hành máy giặt công nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vận hành máy giặt, máy sấy công nghiệp cho khách sạn, nhà hàng",
+              "esco_hint": "operate commercial laundry equipment",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Fabric Care Knowledge",
+              "label_vi": "Am hiểu chất liệu vải",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu cách giặt/sấy các loại vải: cotton, linen, silk, microfibre",
+              "esco_hint": "knowledge of fabric types and care instructions",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Stain Removal",
+              "label_vi": "Xử lý vết bẩn chuyên nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý vết bẩn các loại đúng kỹ thuật mà không làm hỏng vải",
+              "esco_hint": "remove stains professionally without damaging fabric",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Ironing & Pressing",
+              "label_vi": "Là, ủi vải chuyên nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Là, ủi đồng phục, ga giường, khăn phẳng theo tiêu chuẩn khách sạn",
+              "esco_hint": "iron and press linens and garments professionally",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Laundry Chemical Safety",
+              "label_vi": "An toàn hóa chất giặt tẩy",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng hóa chất giặt tẩy đúng liều lượng, an toàn lao động",
+              "esco_hint": "use laundry chemicals safely",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Dry Cleaning Basic",
+              "label_vi": "Giặt khô cơ bản",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện dry cleaning cơ bản cho đồ cao cấp của khách",
+              "esco_hint": "perform basic dry cleaning for guest garments",
+              "confidence": 0.85
+            },
+            {
+              "label_en": "Linen Inventory Management",
+              "label_vi": "Quản lý kho vải, đồ giặt",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đếm, phân loại, lưu kho vải/đồng phục sau giặt là",
+              "esco_hint": "manage linen inventory after laundering",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Attention to Detail Laundry",
+              "label_vi": "Tỉ mỉ, cẩn thận giặt là",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm tra kỹ từng món đồ trước trả lại khách hoặc bộ phận",
+              "esco_hint": "pay meticulous attention to laundry quality",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Nhân viên đỗ xe (Valet Parking)",
+      "nghe": "Khách sạn/Dịch vụ cư trú",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-nhan-vien-do-xe-valet-parking",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Valet Parking Operations",
+              "label_vi": "Dịch vụ đỗ xe valet",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nhận xe, đỗ xe, trả xe nhanh chóng an toàn cho khách",
+              "esco_hint": "provide professional valet parking service",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vehicle Handling Care",
+              "label_vi": "Lái, xử lý xe của khách cẩn thận",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lái xe nhiều loại: sedan, SUV, xe số tự động an toàn vào bãi",
+              "esco_hint": "drive and park various guest vehicles safely",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Parking Lot Management",
+              "label_vi": "Quản lý bãi đỗ xe",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý chỗ đỗ, thẻ xe, đảm bảo trật tự bãi xe khách sạn",
+              "esco_hint": "manage hotel parking lot organisation",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Vietnam Driving Licence B2",
+              "label_vi": "Bằng lái B2 Bộ GTVT",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái xe B2 hợp lệ theo quy định Bộ GTVT Việt Nam",
+              "esco_hint": "hold valid Vietnamese B2 driving licence",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Traffic Law Compliance Valet",
+              "label_vi": "Tuân thủ luật giao thông",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tuân thủ Luật GTĐB 2008, lái xe an toàn trong khuôn viên khách sạn",
+              "esco_hint": "comply with Vietnamese traffic law during valet operations",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Key & Vehicle Security",
+              "label_vi": "Bảo mật chìa khoá, xe khách",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bảo mật chìa khoá, không để mất xe hoặc tài sản trong xe khách",
+              "esco_hint": "maintain vehicle and key security",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Professional Appearance Valet",
+              "label_vi": "Tác phong chuyên nghiệp valet",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đồng phục chỉnh tề, thái độ lịch sự đại diện thương hiệu khách sạn",
+              "esco_hint": "maintain professional valet appearance",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Emergency Response Vehicle",
+              "label_vi": "Xử lý sự cố xe",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Báo cáo ngay sự cố xe cho quản lý, không tự ý xử lý thiệt hại",
+              "esco_hint": "report vehicle incidents immediately",
+              "confidence": 0.92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Quản lý khách sạn",
+      "nghe": "Khách sạn/Dịch vụ cư trú",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-quan-ly-khach-san",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Hotel Operations Management",
+              "label_vi": "Quản lý vận hành khách sạn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý toàn bộ hoạt động khách sạn: phòng, F&B, nhân sự, tài chính",
+              "esco_hint": "manage full hotel operations",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Revenue Management Hotel",
+              "label_vi": "Quản lý doanh thu khách sạn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "RevPAR, ADR, occupancy optimization; dynamic pricing strategy",
+              "esco_hint": "manage hotel revenue and pricing strategy",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Hotel PMS & Revenue Systems",
+              "label_vi": "PMS, hệ thống doanh thu khách sạn",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Opera PMS, channel manager, OTA extranet quản lý phòng và giá",
+              "esco_hint": "use hotel PMS and revenue management systems",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Department Management Hotel",
+              "label_vi": "Quản lý đa bộ phận khách sạn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý FO, HK, F&B, maintenance phối hợp nhịp nhàng",
+              "esco_hint": "manage multiple hotel departments",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Guest Experience & Complaints",
+              "label_vi": "Trải nghiệm khách, xử lý khiếu nại",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo guest satisfaction, xử lý VIP/khiếu nại cấp quản lý",
+              "esco_hint": "manage guest experience and handle complaints at management level",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam Hotel Licensing",
+              "label_vi": "Giấy phép, quy định khách sạn VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm quy định đăng ký kinh doanh, xếp hạng sao, PCCC, ATTP khách sạn",
+              "esco_hint": "knowledge of Vietnamese hotel licensing and regulations",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "P&L & Budget Hotel",
+              "label_vi": "P&L, ngân sách khách sạn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập, kiểm soát P&L và ngân sách vận hành khách sạn theo tháng/năm",
+              "esco_hint": "manage hotel P&L and budget",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "OTA & Distribution Management",
+              "label_vi": "Quản lý kênh OTA, phân phối",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Booking.com, Agoda, Expedia: quản lý inventory, giá và review",
+              "esco_hint": "manage OTA channels and distribution",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "English Hotel Management",
+              "label_vi": "Tiếng Anh quản lý khách sạn",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giao tiếp với khách quốc tế, đối tác, brand tiếng Anh",
+              "esco_hint": "communicate in English for hotel management",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Leadership Hotel Culture",
+              "label_vi": "Xây dựng văn hóa dịch vụ khách sạn",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng văn hoá dịch vụ xuất sắc, gắn kết đội ngũ khách sạn",
+              "esco_hint": "build excellent hotel service culture",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Quản lý homestay",
+      "nghe": "Khách sạn/Dịch vụ cư trú",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-quan-ly-homestay",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Homestay Operations",
+              "label_vi": "Quản lý vận hành homestay",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý toàn bộ vận hành homestay: phòng, đặt phòng, dịch vụ",
+              "esco_hint": "manage homestay operations",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "OTA Homestay Management",
+              "label_vi": "Quản lý OTA cho homestay",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Airbnb, Booking.com, Agoda: cập nhật phòng, giá, calendar, review",
+              "esco_hint": "manage homestay OTA listings and bookings",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Guest Communication Homestay",
+              "label_vi": "Giao tiếp khách đặt phòng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nhắn tin, tư vấn khách trước, trong và sau kỳ nghỉ tại homestay",
+              "esco_hint": "communicate with guests throughout homestay stay",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Housekeeping Homestay",
+              "label_vi": "Vệ sinh, dọn dẹp homestay",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đảm bảo phòng sạch sẽ, tiện nghi đầy đủ giữa các lượt khách",
+              "esco_hint": "maintain homestay cleanliness between guests",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Pricing & Revenue Homestay",
+              "label_vi": "Định giá, tối ưu doanh thu homestay",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Dynamic pricing theo mùa, sự kiện để tối ưu công suất và doanh thu",
+              "esco_hint": "optimise homestay pricing and occupancy",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Vietnam Homestay Regulations",
+              "label_vi": "Quy định homestay, lưu trú VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm quy định đăng ký kinh doanh lưu trú, khai báo lưu trú theo Luật Du lịch",
+              "esco_hint": "knowledge of Vietnamese homestay and lodging regulations",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Maintenance & Facilities Homestay",
+              "label_vi": "Bảo trì cơ sở vật chất homestay",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Xử lý sự cố cơ bản, sắp xếp sửa chữa kịp thời cho homestay",
+              "esco_hint": "manage homestay maintenance and repairs",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Review Management",
+              "label_vi": "Quản lý đánh giá, reviews",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phản hồi reviews, duy trì rating cao trên Airbnb, Booking.com",
+              "esco_hint": "manage and respond to online reviews",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "English Homestay",
+              "label_vi": "Tiếng Anh quản lý homestay",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp tiếng Anh với khách quốc tế đặt homestay",
+              "esco_hint": "communicate in English with international homestay guests",
+              "confidence": 0.89
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Khách sạn/Dịch vụ cư trú khác",
+      "nghe": "Khách sạn/Dịch vụ cư trú",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-khach-san-dich-vu-cu-tru-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 6
+          },
+          "skills": [
+            {
+              "label_en": "Hotel & Accommodation Service",
+              "label_vi": "Dịch vụ cư trú, khách sạn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện công việc dịch vụ cư trú, khách sạn theo chuyên môn",
+              "esco_hint": "perform hotel and accommodation services",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Guest Service Hospitality",
+              "label_vi": "Phục vụ khách lưu trú",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phục vụ khách lưu trú chuyên nghiệp, thân thiện, tận tâm",
+              "esco_hint": "provide professional guest service",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Vietnam Hotel Regulations Basic",
+              "label_vi": "Quy định khách sạn VN cơ bản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm quy định cơ bản về lưu trú, khai báo khách Luật Du lịch VN",
+              "esco_hint": "basic knowledge of Vietnamese hotel regulations",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Teamwork Hospitality",
+              "label_vi": "Làm việc nhóm khách sạn",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối hợp đa bộ phận để tạo trải nghiệm liền mạch cho khách",
+              "esco_hint": "work collaboratively across hotel departments",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "English Basic Hospitality",
+              "label_vi": "Tiếng Anh cơ bản khách sạn",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Giao tiếp tiếng Anh cơ bản với khách quốc tế trong môi trường khách sạn",
+              "esco_hint": "communicate in basic English with hotel guests",
+              "confidence": 0.84
+            },
+            {
+              "label_en": "Relevant Hospitality Qualification",
+              "label_vi": "Bằng/chứng chỉ du lịch, khách sạn",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng/chứng chỉ du lịch, khách sạn, quản trị lưu trú",
+              "esco_hint": "hold relevant hospitality qualification",
+              "confidence": 0.82
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Hướng dẫn viên du lịch",
+      "nghe": "Dịch vụ du lịch",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-huong-dan-vien-du-lich",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Tour Guiding",
+              "label_vi": "Hướng dẫn đoàn khách du lịch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hướng dẫn đoàn khách tham quan, thuyết minh điểm đến chuyên nghiệp",
+              "esco_hint": "guide tourist groups and present destinations",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Destination & Cultural Knowledge",
+              "label_vi": "Am hiểu điểm đến, văn hóa VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu sâu văn hóa, lịch sử, phong tục điểm đến tại Việt Nam",
+              "esco_hint": "deep knowledge of Vietnamese destinations and culture",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Vietnam Tour Guide License",
+              "label_vi": "Thẻ hướng dẫn viên du lịch VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Thẻ hướng dẫn viên du lịch quốc tế/nội địa cấp Bộ VHTTDL",
+              "esco_hint": "hold Vietnamese licensed tour guide card from MOCST",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Group Management Tour",
+              "label_vi": "Quản lý đoàn khách",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý an toàn, đúng giờ, hài lòng cho đoàn khách 20–50 người",
+              "esco_hint": "manage tourist groups effectively",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Itinerary Execution",
+              "label_vi": "Thực hiện lịch trình tour",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện đúng lịch trình, xử lý phát sinh linh hoạt tại điểm đến",
+              "esco_hint": "execute tour itineraries and handle on-site issues",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Emergency Handling Tour",
+              "label_vi": "Xử lý tình huống khẩn cấp tour",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý sự cố: khách bệnh, mất đồ, thời tiết xấu, delay phương tiện",
+              "esco_hint": "handle emergencies and unexpected situations on tour",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "English Tour Guiding",
+              "label_vi": "Tiếng Anh hướng dẫn viên",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thuyết minh, hướng dẫn đoàn khách quốc tế bằng tiếng Anh lưu loát",
+              "esco_hint": "guide international tourists in English fluently",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Public Speaking & Storytelling",
+              "label_vi": "Thuyết trình, kể chuyện hấp dẫn",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kể chuyện sinh động, truyền cảm hứng cho khách yêu điểm đến",
+              "esco_hint": "deliver engaging presentations and storytelling",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "First Aid Basic Tour",
+              "label_vi": "Sơ cứu cơ bản cho HDV",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sơ cứu cơ bản: say tàu xe, say nắng, vết thương nhỏ cho khách du lịch",
+              "esco_hint": "apply basic first aid for tour groups",
+              "confidence": 0.9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Điều hành tour",
+      "nghe": "Dịch vụ du lịch",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-dieu-hanh-tour",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Tour Operation & Planning",
+              "label_vi": "Điều hành, lập kế hoạch tour",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập kế hoạch, điều hành tour inbound/outbound hoàn chỉnh",
+              "esco_hint": "plan and operate inbound and outbound tours",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Supplier Coordination Tourism",
+              "label_vi": "Phối hợp nhà cung cấp du lịch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đặt và điều phối: khách sạn, vận chuyển, nhà hàng, hướng dẫn viên",
+              "esco_hint": "coordinate all tour suppliers and services",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Tour Costing & Pricing",
+              "label_vi": "Tính giá, báo giá tour",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tính giá thành tour chính xác, báo giá cạnh tranh cho đại lý và khách",
+              "esco_hint": "calculate tour costs and prepare competitive quotes",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Tourism Law Operations",
+              "label_vi": "Luật Du lịch VN trong điều hành",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm Luật Du lịch 2017, quy định lữ hành quốc tế, nội địa, HDV",
+              "esco_hint": "knowledge of Vietnamese tourism law for operations",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Crisis Management Tourism",
+              "label_vi": "Xử lý khủng hoảng, sự cố tour",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý sự cố tour: delay, hủy, khách bệnh, khiếu nại kịp thời",
+              "esco_hint": "manage tour crises and incidents",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Booking & Reservation Systems",
+              "label_vi": "Hệ thống đặt chỗ du lịch",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Amadeus, Sabre, OTA extranet, booking system phối hợp đặt chỗ",
+              "esco_hint": "use booking and reservation systems for tour operations",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "English Tour Operations",
+              "label_vi": "Tiếng Anh điều hành tour",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Soạn tour program, communicate với đối tác nước ngoài tiếng Anh",
+              "esco_hint": "communicate in English for tour operations",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Attention to Detail Operations",
+              "label_vi": "Tỉ mỉ trong điều hành tour",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tỉ mỉ kiểm tra từng chi tiết để tour vận hành hoàn hảo",
+              "esco_hint": "pay meticulous attention to tour operation details",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Geography & Destination Knowledge",
+              "label_vi": "Am hiểu địa lý, điểm đến",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu địa lý, điểm đến VN và quốc tế phục vụ điều hành tour",
+              "esco_hint": "knowledge of destinations for tour planning",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Nhân viên visa",
+      "nghe": "Dịch vụ du lịch",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-nhan-vien-visa",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Visa Application Processing",
+              "label_vi": "Xử lý hồ sơ visa",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xử lý hồ sơ xin visa các nước: Schengen, Mỹ, Úc, Nhật, Hàn Quốc",
+              "esco_hint": "process visa applications for multiple countries",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Visa Requirements Knowledge",
+              "label_vi": "Am hiểu yêu cầu visa từng quốc gia",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Cập nhật yêu cầu visa, giấy tờ từng đại sứ quán và lãnh sự quán",
+              "esco_hint": "knowledge of visa requirements by country",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Vietnam Passport & Immigration Law",
+              "label_vi": "Luật xuất nhập cảnh VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Xuất nhập cảnh 2019, quy định hộ chiếu, thị thực VN",
+              "esco_hint": "knowledge of Vietnamese immigration and passport law",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Document Preparation Visa",
+              "label_vi": "Chuẩn bị hồ sơ visa",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm tra, chuẩn bị hồ sơ đầy đủ, đúng yêu cầu từng đại sứ quán",
+              "esco_hint": "prepare complete and accurate visa documentation",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Embassy & Consulate Procedures",
+              "label_vi": "Thủ tục đại sứ quán, lãnh sự quán",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu quy trình nộp hồ sơ, lịch hẹn, thu visa từng đại sứ quán",
+              "esco_hint": "knowledge of embassy and consulate procedures",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Visa Tracking & Status Updates",
+              "label_vi": "Theo dõi, cập nhật tình trạng visa",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Theo dõi tiến độ xét duyệt, cập nhật thông tin kịp thời cho khách",
+              "esco_hint": "track visa applications and update clients",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "English Visa Communication",
+              "label_vi": "Tiếng Anh hồ sơ visa",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đọc, soạn email với đại sứ quán và khách hàng quốc tế tiếng Anh",
+              "esco_hint": "communicate in English for visa correspondence",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Accuracy & Detail Visa",
+              "label_vi": "Chính xác, tỉ mỉ hồ sơ visa",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tỉ mỉ tuyệt đối, kiểm tra từng chi tiết hồ sơ để tránh bị từ chối visa",
+              "esco_hint": "demonstrate meticulous accuracy in visa documentation",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Customer Service Visa",
+              "label_vi": "Dịch vụ khách hàng visa",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn rõ ràng, cập nhật thường xuyên, giải toả lo lắng của khách",
+              "esco_hint": "provide reassuring customer service for visa clients",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Sales Tour/Kinh doanh du lịch",
+      "nghe": "Dịch vụ du lịch",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-sales-tour-kinh-doanh-du-lich",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Tour Sales",
+              "label_vi": "Bán tour du lịch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn, bán tour trong nước và quốc tế cho cá nhân và nhóm",
+              "esco_hint": "sell domestic and international tour packages",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Destination & Product Knowledge Sales",
+              "label_vi": "Am hiểu sản phẩm, điểm đến",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu hành trình, điểm đến, nhà cung cấp để tư vấn thuyết phục",
+              "esco_hint": "knowledge of tour products and destinations for sales",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Customer Need Assessment Travel",
+              "label_vi": "Khai thác nhu cầu du lịch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Khai thác điểm đến mơ ước, ngân sách, phong cách đi của từng khách",
+              "esco_hint": "assess travel needs and preferences",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Quotation & Itinerary Preparation",
+              "label_vi": "Lập báo giá, lịch trình tour",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Soạn itinerary, báo giá cạnh tranh, bám sát nhu cầu khách hàng",
+              "esco_hint": "prepare tour quotes and itineraries",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Vietnam Tourism Law Sales",
+              "label_vi": "Luật Du lịch 2017 trong bán tour",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm Luật Du lịch 2017, quy định hợp đồng lữ hành, trách nhiệm",
+              "esco_hint": "knowledge of Vietnamese tourism law for sales",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "B2C & B2B Travel Sales",
+              "label_vi": "Bán tour B2C và B2B",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phát triển khách cá nhân và doanh nghiệp, đoàn du lịch MICE",
+              "esco_hint": "conduct B2C and B2B travel sales",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "GDS & OTA Booking Systems",
+              "label_vi": "Hệ thống GDS, OTA đặt chỗ",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Amadeus, Sabre, Booking.com, Agoda đặt phòng, vé cho tour",
+              "esco_hint": "use GDS and OTA booking systems",
+              "confidence": 0.86,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "English Travel Sales",
+              "label_vi": "Tiếng Anh bán tour",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Tư vấn, soạn itinerary tiếng Anh cho khách quốc tế",
+              "esco_hint": "communicate in English for travel sales",
+              "confidence": 0.87
+            },
+            {
+              "label_en": "Passion for Travel Sales",
+              "label_vi": "Đam mê du lịch, truyền cảm hứng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đam mê chia sẻ trải nghiệm du lịch, truyền cảm hứng cho khách",
+              "esco_hint": "demonstrate genuine passion for travel",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Dịch vụ du lịch khác",
+      "nghe": "Dịch vụ du lịch",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-dich-vu-du-lich-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 6
+          },
+          "skills": [
+            {
+              "label_en": "Tourism Service",
+              "label_vi": "Dịch vụ du lịch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện công việc dịch vụ du lịch theo chuyên môn cụ thể",
+              "esco_hint": "provide tourism services according to specialisation",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Tourism Knowledge",
+              "label_vi": "Kiến thức du lịch Việt Nam",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu địa lý du lịch, văn hóa, điểm đến tại Việt Nam",
+              "esco_hint": "knowledge of Vietnamese tourism destinations",
+              "confidence": 0.92,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Vietnam Tourism Law Basic",
+              "label_vi": "Luật Du lịch VN cơ bản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm cơ bản Luật Du lịch 2017, quy định lữ hành, HDV du lịch",
+              "esco_hint": "basic knowledge of Vietnamese tourism law",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Customer Service Tourism",
+              "label_vi": "Dịch vụ khách hàng du lịch",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thân thiện, nhiệt tình phục vụ khách du lịch trong mọi tình huống",
+              "esco_hint": "provide excellent customer service in tourism",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "English Tourism Basic",
+              "label_vi": "Tiếng Anh du lịch cơ bản",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp tiếng Anh cơ bản trong môi trường dịch vụ du lịch",
+              "esco_hint": "communicate in basic English for tourism services",
+              "confidence": 0.84
+            },
+            {
+              "label_en": "Tourism Qualification",
+              "label_vi": "Bằng/chứng chỉ du lịch",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng/chứng chỉ du lịch, lữ hành, quản trị khách sạn liên quan",
+              "esco_hint": "hold relevant tourism or hospitality qualification",
+              "confidence": 0.82
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kinh doanh HORECA",
+      "nghe": "Sales Nhà hàng/Khách sạn/Du lịch",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-kinh-doanh-horeca",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "HORECA Sales",
+              "label_vi": "Kinh doanh kênh HORECA",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bán sản phẩm/dịch vụ (thực phẩm, đồ uống, thiết bị) vào kênh HORECA",
+              "esco_hint": "sell products and services into HORECA channel",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "HORECA Customer Acquisition",
+              "label_vi": "Phát triển khách hàng HORECA",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tìm kiếm, tiếp cận nhà hàng, khách sạn, catering làm khách hàng",
+              "esco_hint": "acquire HORECA channel customers",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "HORECA Product Knowledge",
+              "label_vi": "Am hiểu sản phẩm ngành HORECA",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu thực phẩm, đồ uống, thiết bị bếp, vật phẩm vệ sinh HORECA",
+              "esco_hint": "knowledge of HORECA products and categories",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Route Planning HORECA",
+              "label_vi": "Lập tuyến khách hàng HORECA",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập tuyến viếng thăm khách hàng tối ưu theo địa bàn",
+              "esco_hint": "plan efficient HORECA customer visit routes",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Negotiation & Contract HORECA",
+              "label_vi": "Đàm phán, ký hợp đồng HORECA",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đàm phán giá, điều khoản, ký hợp đồng cung cấp với HORECA",
+              "esco_hint": "negotiate and close HORECA supply contracts",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam F&B Market Knowledge",
+              "label_vi": "Am hiểu thị trường F&B VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu xu hướng F&B, nhà hàng, khách sạn tại thị trường VN",
+              "esco_hint": "knowledge of Vietnamese F&B and HORECA market",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Sales Target HORECA",
+              "label_vi": "Đạt target doanh số HORECA",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Chủ động phát triển thị trường, đạt quota doanh số tháng/quý",
+              "esco_hint": "achieve HORECA sales targets",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "CRM & Reporting HORECA",
+              "label_vi": "CRM, báo cáo kinh doanh HORECA",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "CRM theo dõi khách hàng HORECA, báo cáo doanh số định kỳ",
+              "esco_hint": "use CRM for HORECA sales reporting",
+              "confidence": 0.89,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "English HORECA Sales",
+              "label_vi": "Tiếng Anh kinh doanh HORECA",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp với khách sạn, nhà hàng quốc tế bằng tiếng Anh",
+              "esco_hint": "communicate in English for HORECA sales",
+              "confidence": 0.8
+            },
+            {
+              "label_en": "Relationship Building HORECA",
+              "label_vi": "Xây dựng quan hệ HORECA",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì quan hệ lâu dài với bếp trưởng, F&B manager, purchasing",
+              "esco_hint": "build lasting relationships with HORECA decision-makers",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Sales Tour/Kinh doanh du lịch (Sales)",
+      "nghe": "Sales Nhà hàng/Khách sạn/Du lịch",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-sales-tour-kinh-doanh-du-lich",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Travel Sales B2C B2B",
+              "label_vi": "Bán tour, dịch vụ du lịch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bán tour, dịch vụ du lịch cho khách lẻ và doanh nghiệp",
+              "esco_hint": "sell tours and travel services to B2C and B2B customers",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Travel Product Portfolio",
+              "label_vi": "Am hiểu danh mục sản phẩm du lịch",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu toàn bộ sản phẩm tour, khách sạn, vé máy bay đang bán",
+              "esco_hint": "knowledge of full travel product portfolio",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Customer Journey Travel",
+              "label_vi": "Chăm sóc khách hàng du lịch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Chăm sóc khách trước, trong, sau tour để tạo loyalty",
+              "esco_hint": "manage customer journey throughout travel experience",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Upselling & Cross-selling Travel",
+              "label_vi": "Upsell, cross-sell dịch vụ du lịch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn nâng cấp phòng, tour, bảo hiểm du lịch tăng giá trị đơn",
+              "esco_hint": "upsell and cross-sell travel services",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Sales Pipeline Management Travel",
+              "label_vi": "Quản lý pipeline bán tour",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Theo dõi và nuôi dưỡng pipeline từ lead đến chốt tour",
+              "esco_hint": "manage travel sales pipeline",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Vietnam Tourism Law Sales Context",
+              "label_vi": "Luật Du lịch 2017 trong bán hàng",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm quy định hợp đồng lữ hành, điều kiện hủy tour, trách nhiệm",
+              "esco_hint": "knowledge of Vietnamese tourism law for travel sales",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "GDS & Booking Tools Sales",
+              "label_vi": "Công cụ đặt chỗ bán tour",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Amadeus, Sabre, OTA extranet hỗ trợ đặt chỗ khi bán tour",
+              "esco_hint": "use GDS and booking tools for travel sales",
+              "confidence": 0.85,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "English Travel Sales Communication",
+              "label_vi": "Tiếng Anh bán tour",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Tư vấn, soạn email itinerary tiếng Anh cho khách quốc tế",
+              "esco_hint": "communicate in English for travel sales",
+              "confidence": 0.86
+            },
+            {
+              "label_en": "Revenue Target Travel",
+              "label_vi": "Đạt doanh thu du lịch",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đạt target doanh thu tour tháng/quý, phát triển portfolio khách",
+              "esco_hint": "achieve travel sales revenue targets",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kinh doanh khách đoàn (MICE)",
+      "nghe": "Sales Nhà hàng/Khách sạn/Du lịch",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-kinh-doanh-khach-doan-mice",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "MICE Sales",
+              "label_vi": "Kinh doanh MICE (hội nghị, sự kiện)",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bán dịch vụ MICE cho doanh nghiệp: hội nghị, team building, incentive",
+              "esco_hint": "sell MICE services to corporate clients",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "MICE Proposal Development",
+              "label_vi": "Soạn đề xuất MICE",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Soạn proposal MICE chi tiết: agenda, venue, catering, AV, pricing",
+              "esco_hint": "develop detailed MICE event proposals",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Corporate Client Management MICE",
+              "label_vi": "Quản lý khách hàng doanh nghiệp MICE",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phát triển, duy trì khách hàng doanh nghiệp cho MICE business",
+              "esco_hint": "manage corporate MICE client relationships",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Venue & Supplier Coordination MICE",
+              "label_vi": "Phối hợp venue, nhà cung cấp MICE",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối hợp địa điểm, AV, catering, transport, team building vendor",
+              "esco_hint": "coordinate MICE venues and suppliers",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Budget Management MICE",
+              "label_vi": "Quản lý ngân sách MICE",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập và kiểm soát ngân sách từng dự án MICE đạt margin mục tiêu",
+              "esco_hint": "manage MICE project budgets",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam MICE Regulations",
+              "label_vi": "Quy định tổ chức hội nghị, sự kiện VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm quy định xin phép tổ chức sự kiện, hội nghị có người nước ngoài",
+              "esco_hint": "knowledge of Vietnamese MICE event regulations",
+              "confidence": 0.87,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "MICE Revenue Targets",
+              "label_vi": "Đạt doanh thu MICE",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đạt target doanh thu MICE, phát triển pipeline corporate",
+              "esco_hint": "achieve MICE sales revenue targets",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "English MICE Communication",
+              "label_vi": "Tiếng Anh MICE",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giao tiếp, soạn proposal MICE tiếng Anh với khách doanh nghiệp quốc tế",
+              "esco_hint": "communicate in English for international MICE clients",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Creativity MICE Events",
+              "label_vi": "Sáng tạo ý tưởng MICE",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đề xuất concept sự kiện, team building sáng tạo khác biệt",
+              "esco_hint": "propose creative and distinctive MICE event concepts",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Bán vé máy bay (Ticketing/Booker)",
+      "nghe": "Sales Nhà hàng/Khách sạn/Du lịch",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ban-ve-may-bay-ticketing-booker",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Airline Ticketing",
+              "label_vi": "Xuất vé máy bay",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đặt, xuất, đổi, hoàn vé máy bay nội địa và quốc tế",
+              "esco_hint": "issue and manage airline tickets",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "GDS Proficiency",
+              "label_vi": "Thành thạo hệ thống GDS",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Amadeus, Sabre, Galileo: đặt chỗ, xuất vé, đổi/hoàn chuyên nghiệp",
+              "esco_hint": "use GDS systems proficiently for ticketing",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Fare Rules & Conditions",
+              "label_vi": "Quy tắc giá vé, điều kiện",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu fare basis, booking class, fare rules, baggage policy từng hãng",
+              "esco_hint": "knowledge of airline fare rules and conditions",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Visa & Travel Document Advice",
+              "label_vi": "Tư vấn visa, giấy tờ xuất cảnh",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn yêu cầu visa, transit, hành lý theo từng quốc gia đến",
+              "esco_hint": "advise on visa and travel document requirements",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam CAAV Regulations",
+              "label_vi": "Quy định hàng không dân dụng VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm quy định CAAV về hành lý, an toàn bay, đặt chỗ tại VN",
+              "esco_hint": "knowledge of Vietnamese civil aviation regulations",
+              "confidence": 0.89,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Ticket Exchange & Refund",
+              "label_vi": "Đổi, hoàn vé máy bay",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý đổi lịch, hoàn vé theo điều kiện từng hãng hàng không",
+              "esco_hint": "process airline ticket changes and refunds",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Accuracy Ticketing",
+              "label_vi": "Chính xác xuất vé",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nhập tên, ngày, số hộ chiếu chính xác tuyệt đối tránh phát sinh phí",
+              "esco_hint": "ensure absolute accuracy in ticket data entry",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "English Aviation Communication",
+              "label_vi": "Tiếng Anh hàng không",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc PNR, fare rules, liên hệ hãng nước ngoài bằng tiếng Anh",
+              "esco_hint": "use English in airline and GDS communications",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Customer Service Ticketing",
+              "label_vi": "Dịch vụ khách hàng vé máy bay",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn nhanh, xử lý khẩn cấp đổi vé, tạo tin cậy cho khách",
+              "esco_hint": "provide responsive ticketing customer service",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kinh doanh khách sạn (Sales)",
+      "nghe": "Sales Nhà hàng/Khách sạn/Du lịch",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-kinh-doanh-khach-san",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Hotel Sales",
+              "label_vi": "Kinh doanh khách sạn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bán phòng, dịch vụ MICE, F&B của khách sạn cho khách cá nhân và DN",
+              "esco_hint": "sell hotel rooms and F&B services to individual and corporate clients",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Hotel Product Knowledge Sales",
+              "label_vi": "Am hiểu sản phẩm khách sạn",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu loại phòng, tiện nghi, F&B, MICE của khách sạn để tư vấn",
+              "esco_hint": "knowledge of hotel products and services for sales",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Corporate & Travel Agency Sales",
+              "label_vi": "Bán hàng corporate và travel agency",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phát triển corporate account, travel agency, OTA cho khách sạn",
+              "esco_hint": "develop corporate and travel agency accounts",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Revenue Management Contribution",
+              "label_vi": "Đóng góp quản lý doanh thu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Hiểu RevPAR, ADR, phối hợp revenue manager tối ưu công suất",
+              "esco_hint": "understand revenue management metrics and contribute",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "OTA & Channel Management Hotel Sales",
+              "label_vi": "Quản lý kênh OTA, phân phối",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Booking.com, Agoda, Expedia extranet: cập nhật giá, inventory",
+              "esco_hint": "manage hotel OTA channels and distribution",
+              "confidence": 0.92,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam Hotel Star Standard Sales",
+              "label_vi": "Tiêu chuẩn sao khách sạn trong bán hàng",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Truyền đạt tiêu chuẩn dịch vụ theo hạng sao khách sạn cho khách",
+              "esco_hint": "communicate hotel star standards in sales",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Sales Proposal & Contract Hotel",
+              "label_vi": "Soạn đề xuất, hợp đồng khách sạn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Soạn hợp đồng corporate rate, MICE proposal chuyên nghiệp",
+              "esco_hint": "prepare hotel sales proposals and corporate rate contracts",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "English Hotel Sales",
+              "label_vi": "Tiếng Anh kinh doanh khách sạn",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giao tiếp, soạn proposal tiếng Anh với khách quốc tế",
+              "esco_hint": "communicate in English for hotel sales",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Revenue Target Hotel Sales",
+              "label_vi": "Đạt doanh thu khách sạn",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đạt target doanh thu phòng, MICE, F&B theo tháng/quý",
+              "esco_hint": "achieve hotel sales revenue targets",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kinh doanh OTA",
+      "nghe": "Sales Nhà hàng/Khách sạn/Du lịch",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-kinh-doanh-ota",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "OTA Account Management",
+              "label_vi": "Quản lý tài khoản OTA",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý listings trên Booking.com, Agoda, Expedia, Airbnb, Traveloka",
+              "esco_hint": "manage hotel and property OTA accounts",
+              "confidence": 0.99,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "OTA Content Optimisation",
+              "label_vi": "Tối ưu nội dung OTA",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tối ưu tiêu đề, mô tả, ảnh, review để tăng ranking và CTR trên OTA",
+              "esco_hint": "optimise OTA listings for visibility and conversion",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Rate & Inventory Management OTA",
+              "label_vi": "Quản lý giá, inventory OTA",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Cập nhật giá, số phòng, điều kiện hủy trên channel manager và OTA",
+              "esco_hint": "manage OTA rates and inventory through channel manager",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Channel Manager Tools",
+              "label_vi": "Phần mềm channel manager",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "SiteMinder, Cloudbeds, MyAllocator, HotelRunner quản lý đa kênh OTA",
+              "esco_hint": "use channel manager software proficiently",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Revenue Strategy OTA",
+              "label_vi": "Chiến lược doanh thu qua OTA",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Dynamic pricing, promotions, last-minute deals để tối ưu occupancy",
+              "esco_hint": "develop OTA revenue optimisation strategies",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Review & Reputation Management",
+              "label_vi": "Quản lý review, uy tín OTA",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phản hồi reviews tích cực/tiêu cực chuyên nghiệp, duy trì rating cao",
+              "esco_hint": "manage OTA reviews and property reputation",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "OTA Data Analytics",
+              "label_vi": "Phân tích dữ liệu OTA",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phân tích báo cáo OTA: conversion, ADR, cancellation rate để cải thiện",
+              "esco_hint": "analyse OTA performance data for optimisation",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Vietnam Tourism Accommodation Law",
+              "label_vi": "Luật Du lịch trong kinh doanh OTA",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm quy định lưu trú, khai báo khách theo Luật Du lịch VN",
+              "esco_hint": "knowledge of Vietnamese accommodation regulations for OTA",
+              "confidence": 0.87,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "English OTA Communication",
+              "label_vi": "Tiếng Anh OTA",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp với OTA partner nước ngoài, phản hồi review tiếng Anh",
+              "esco_hint": "communicate in English with OTA partners and guests",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Analytical Mindset OTA",
+              "label_vi": "Tư duy phân tích OTA",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư duy data-driven, phân tích số liệu để ra quyết định tối ưu OTA",
+              "esco_hint": "apply data-driven analytical thinking for OTA",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Sales Nhà hàng/Khách sạn/Du lịch khác",
+      "nghe": "Sales Nhà hàng/Khách sạn/Du lịch",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-sales-nha-hang-khach-san-du-lich-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 7
+          },
+          "skills": [
+            {
+              "label_en": "Hospitality Tourism Sales",
+              "label_vi": "Kinh doanh Nhà hàng/Khách sạn/Du lịch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Bán sản phẩm/dịch vụ ngành HORECA và du lịch theo chuyên môn",
+              "esco_hint": "sell hospitality and tourism products and services",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Hospitality Product Knowledge Sales",
+              "label_vi": "Am hiểu sản phẩm HORECA, du lịch",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu sản phẩm bán trong ngành nhà hàng, khách sạn, du lịch",
+              "esco_hint": "knowledge of hospitality and tourism sales products",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "B2C & B2B Hospitality Sales",
+              "label_vi": "Bán hàng B2C và B2B trong HORECA",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phát triển khách hàng cá nhân và doanh nghiệp trong ngành",
+              "esco_hint": "conduct B2C and B2B hospitality sales",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Vietnam Hospitality Regulations Sales",
+              "label_vi": "Quy định ngành HORECA trong bán hàng",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm quy định liên quan đến sản phẩm/dịch vụ bán trong ngành",
+              "esco_hint": "knowledge of relevant hospitality industry regulations",
+              "confidence": 0.87,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Sales Target Hospitality Other",
+              "label_vi": "Đạt target doanh số HORECA",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Chủ động phát triển thị trường, đạt target doanh số",
+              "esco_hint": "achieve hospitality sales revenue targets",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "English Hospitality Sales Other",
+              "label_vi": "Tiếng Anh bán hàng HORECA",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp tiếng Anh với khách hàng và đối tác trong ngành",
+              "esco_hint": "communicate in English for hospitality sales",
+              "confidence": 0.8
+            },
+            {
+              "label_en": "CRM Hospitality Sales",
+              "label_vi": "CRM bán hàng HORECA",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "CRM theo dõi pipeline và khách hàng trong ngành HORECA",
+              "esco_hint": "use CRM for hospitality sales management",
+              "confidence": 0.86,
+              "iviec_flag": "VN_TOOL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Nhà hàng/Khách sạn/Du lịch khác",
+      "nghe": "Nhà hàng/Khách sạn/Du lịch khác",
+      "nhom_nghe": "Nhà hàng/Khách sạn/Du lịch",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-nha-hang-khach-san-du-lich-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 7
+          },
+          "skills": [
+            {
+              "label_en": "Hospitality & Tourism Service",
+              "label_vi": "Dịch vụ nhà hàng/khách sạn/du lịch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện công việc trong ngành HORECA và du lịch theo chuyên môn",
+              "esco_hint": "provide hospitality and tourism services",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Guest Service Excellence",
+              "label_vi": "Phục vụ khách hàng xuất sắc",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tập trung vào trải nghiệm khách, thân thiện, chuyên nghiệp mọi lúc",
+              "esco_hint": "deliver excellent guest service at all times",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam Hospitality Laws Basic",
+              "label_vi": "Luật Du lịch, ATTP, lao động VN cơ bản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm cơ bản Luật Du lịch, ATTP, Bộ luật Lao động áp dụng trong ngành",
+              "esco_hint": "basic knowledge of Vietnamese hospitality regulations",
+              "confidence": 0.89,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Teamwork Hospitality",
+              "label_vi": "Làm việc nhóm trong ngành HORECA",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối hợp linh hoạt với đồng nghiệp đa bộ phận trong khách sạn/nhà hàng",
+              "esco_hint": "work collaboratively in hospitality teams",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "English Basic Hospitality Other",
+              "label_vi": "Tiếng Anh cơ bản trong HORECA",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Giao tiếp cơ bản tiếng Anh với khách quốc tế trong ngành",
+              "esco_hint": "communicate in basic English with hospitality guests",
+              "confidence": 0.83
+            },
+            {
+              "label_en": "Physical Stamina Hospitality",
+              "label_vi": "Thể lực phù hợp ngành dịch vụ",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Thể lực đáp ứng yêu cầu công việc ca dài trong ngành dịch vụ",
+              "esco_hint": "maintain physical stamina for hospitality work",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Relevant Hospitality Qualification Other",
+              "label_vi": "Bằng/chứng chỉ HORECA liên quan",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng/chứng chỉ trong ngành nhà hàng, khách sạn, du lịch",
+              "esco_hint": "hold relevant hospitality or tourism qualification",
+              "confidence": 0.82
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1665 @@
+{
+  "taxonomy_metadata": {
+    "sector": "Năng lượng/Môi trường/Nông nghiệp",
+    "sector_en": "Energy / Environment / Agriculture",
+    "version": "v1",
+    "total_positions": 14,
+    "total_skills": 130,
+    "avg_skills_per_position": 9.3,
+    "sub_categories": {
+      "Năng lượng/Địa chất": {
+        "positions": 5,
+        "skills": 46
+      },
+      "Nông/Lâm/Ngư nghiệp": {
+        "positions": 5,
+        "skills": 46
+      },
+      "An toàn lao động/Môi trường": {
+        "positions": 4,
+        "skills": 38
+      }
+    },
+    "skill_type_distribution": {
+      "technical": 68,
+      "domain": 27,
+      "tool": 11,
+      "language": 9,
+      "certification": 6,
+      "soft": 9
+    },
+    "requirement_distribution": {
+      "required": 117,
+      "preferred": 13
+    },
+    "iviec_flags": {
+      "VN_REGULATION": 42,
+      "VN_TOOL": 12,
+      "VN_DOMAIN": 3
+    },
+    "data_sources": [
+      "topcv.vn",
+      "vietnamworks.com"
+    ],
+    "extraction_method": "structured_prompt_5jd_per_position",
+    "rows_covered": "1120–1133",
+    "notes": [
+      "Covers rows 1120–1133 (14 positions across 3 sub-categories)",
+      "VN_REGULATION: Luật Điện lực 2004/2022 + Luật Tiết kiệm NL 2010 + ISO 50001 (kỹ sư NL), QĐ 13/2020 + TT 18/2020 đấu nối lưới EVN (solar), Luật Tài nguyên nước 2023 + Luật Thủy lợi 2017 + QCVN đập (thủy lợi), TCVN 9362/9363 địa kỹ thuật + Luật Khoáng sản 2010 (địa chất), Luật ATLĐ 2015 + NĐ 39/2016 + TT 06/2020 + ISO 45001 + chứng chỉ nhóm 1-4 Bộ LĐTBXH (HSE), Luật BVMT 2020 + NĐ 08/2022 + QCVN 14/40 nước thải (MT kỹ sư + XLNT), Luật Trồng trọt 2018 + Luật BVTV 2013 + VietGAP/GlobalGAP (nông nghiệp), Luật Chăn nuôi 2018 + Luật Thú y 2015 + VietGAHP (chăn nuôi), Luật Lâm nghiệp 2017 + NĐ 156/2018 + FSC + REDD+ + thi công chức kiểm lâm (lâm nghiệp/kiểm lâm)",
+      "VN_TOOL: PSS/E, ETAP (phân tích lưới điện), PVSyst/Helioscope (solar), HEC-RAS/MIKE FLOOD (thủy văn), AutoCAD/Civil 3D/GIS (quy hoạch), Plaxis/Slope-W/GEO5 (địa kỹ thuật), SCADA/EMS (giám sát NL + XLNT), MIKE/ADMS/ArcGIS (môi trường)",
+      "VN_DOMAIN: Giống cây trồng VN (lúa/rau màu/cây ăn quả 3 miền), nông nghiệp công nghệ cao VN (nhà kính, hydroponics, IoT NN)",
+      "Sector unique: Kiểm lâm position requires passing Vietnamese civil service exam (thi công chức Tổng cục Lâm nghiệp) — unique to state-employed forest rangers; REDD+ and carbon credits flagged reflecting Vietnam's emerging forest carbon market under NĐ 107/2022"
+    ]
+  },
+  "positions": [
+    {
+      "vi_tri": "Kỹ sư năng lượng",
+      "nghe": "Năng lượng/Địa chất",
+      "nhom_nghe": "Năng lượng/Môi trường/Nông nghiệp",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ky-su-nang-luong",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Energy Systems Engineering",
+              "label_vi": "Kỹ thuật hệ thống năng lượng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế, phân tích, tối ưu hệ thống năng lượng: điện, nhiệt, tái tạo",
+              "esco_hint": "design and optimise energy systems",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Energy Audit & Efficiency",
+              "label_vi": "Kiểm toán năng lượng, hiệu quả",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện kiểm toán năng lượng tòa nhà/nhà máy, đề xuất giải pháp tiết kiệm",
+              "esco_hint": "conduct energy audits and propose efficiency measures",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Energy Law & Regulations",
+              "label_vi": "Luật năng lượng, tiết kiệm điện VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Điện lực 2004/2022, Luật Tiết kiệm năng lượng 2010, QCVN điện lực",
+              "esco_hint": "knowledge of Vietnamese energy law and efficiency regulations",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Renewable Energy Systems",
+              "label_vi": "Hệ thống năng lượng tái tạo",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế, phân tích hệ thống solar PV, wind, biomass, thủy điện nhỏ",
+              "esco_hint": "design and analyse renewable energy systems",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Power System Analysis",
+              "label_vi": "Phân tích hệ thống điện",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích lưới điện: load flow, short circuit, stability bằng PSS/E, ETAP",
+              "esco_hint": "analyse power systems using PSS/E or ETAP",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Energy Management System",
+              "label_vi": "Hệ thống quản lý năng lượng ISO 50001",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Triển khai ISO 50001, EnMS theo quy định tiết kiệm năng lượng VN",
+              "esco_hint": "implement energy management systems to ISO 50001",
+              "confidence": 0.91,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "SCADA Energy Monitoring",
+              "label_vi": "SCADA giám sát năng lượng",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Vận hành SCADA/EMS giám sát sản xuất, tiêu thụ điện năng",
+              "esco_hint": "use SCADA or EMS for energy monitoring",
+              "confidence": 0.9,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Financial Analysis Energy Projects",
+              "label_vi": "Phân tích tài chính dự án năng lượng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tính toán NPV, IRR, LCOE cho dự án năng lượng tái tạo",
+              "esco_hint": "conduct financial analysis for energy projects",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "English Energy Standards",
+              "label_vi": "Tiếng Anh tài liệu năng lượng",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc IEC, IEEE, IRENA standards và báo cáo kỹ thuật tiếng Anh",
+              "esco_hint": "read English energy standards and technical reports",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Energy Engineering Degree",
+              "label_vi": "Bằng kỹ sư điện/năng lượng",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng kỹ sư điện, năng lượng, cơ điện tử hoặc tương đương",
+              "esco_hint": "hold electrical or energy engineering degree",
+              "confidence": 0.87
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kỹ sư điện mặt trời",
+      "nghe": "Năng lượng/Địa chất",
+      "nhom_nghe": "Năng lượng/Môi trường/Nông nghiệp",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ky-su-dien-mat-troi",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Solar PV System Design",
+              "label_vi": "Thiết kế hệ thống điện mặt trời",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế hệ thống PV rooftop, trang trại điện mặt trời: array, inverter, cable",
+              "esco_hint": "design solar PV rooftop and utility-scale systems",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "PVSyst / Helioscope Simulation",
+              "label_vi": "Mô phỏng PVSyst, Helioscope",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Mô phỏng sản lượng, tổn thất hệ thống PV bằng PVSyst, Helioscope",
+              "esco_hint": "simulate solar PV yield using PVSyst or Helioscope",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam Solar Regulations",
+              "label_vi": "Quy định điện mặt trời VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm QĐ 13/2020, TT 18/2020, quy định đấu nối lưới EVN, thủ tục hoà lưới",
+              "esco_hint": "knowledge of Vietnamese solar energy regulations and grid connection",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Grid Connection & Protection",
+              "label_vi": "Đấu nối lưới, bảo vệ hệ thống",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế đấu nối lưới, relay bảo vệ, anti-islanding cho hệ thống PV",
+              "esco_hint": "design grid connection and protection for PV systems",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Solar Construction Supervision",
+              "label_vi": "Giám sát thi công điện mặt trời",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giám sát lắp đặt tấm pin, kết cấu mái, cáp, inverter đúng thiết kế",
+              "esco_hint": "supervise solar PV installation and construction",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "AC & DC Electrical Design Solar",
+              "label_vi": "Thiết kế điện AC/DC hệ thống solar",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế hệ thống DC (string/combiner), AC (LV/MV), tủ điện, metering",
+              "esco_hint": "design AC and DC electrical systems for solar",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "AutoCAD & Single Line Diagram",
+              "label_vi": "AutoCAD, sơ đồ đơn tuyến solar",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Vẽ SLD, layout, bản vẽ thi công hệ thống PV bằng AutoCAD",
+              "esco_hint": "draw solar PV single line diagrams and layouts",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Commissioning Solar PV",
+              "label_vi": "Vận hành thử, nghiệm thu solar",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập kế hoạch và thực hiện commissioning, PVSAF, nghiệm thu hệ thống PV",
+              "esco_hint": "commission and test solar PV systems",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "O&M Solar PV",
+              "label_vi": "Vận hành, bảo trì hệ thống solar",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Lập kế hoạch O&M, giám sát hiệu suất, xử lý sự cố hệ thống solar",
+              "esco_hint": "operate and maintain solar PV systems",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "English Solar Technical Docs",
+              "label_vi": "Tiếng Anh tài liệu kỹ thuật solar",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc datasheet inverter, tấm pin, IEC 61215/61730 tiếng Anh",
+              "esco_hint": "read English solar PV technical documentation",
+              "confidence": 0.88
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kỹ sư thủy lợi",
+      "nghe": "Năng lượng/Địa chất",
+      "nhom_nghe": "Năng lượng/Môi trường/Nông nghiệp",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ky-su-thuy-loi",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Hydraulic Engineering",
+              "label_vi": "Kỹ thuật thủy lợi",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế công trình thủy lợi: kênh mương, đập, hồ chứa, trạm bơm",
+              "esco_hint": "design hydraulic engineering structures",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Irrigation System Design",
+              "label_vi": "Thiết kế hệ thống tưới tiêu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế hệ thống tưới: tưới nhỏ giọt, tưới phun, kênh tưới tự chảy",
+              "esco_hint": "design irrigation and drainage systems",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Water Resources Law",
+              "label_vi": "Luật tài nguyên nước, thủy lợi VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Tài nguyên nước 2023, Luật Thủy lợi 2017, QCVN thiết kế đập",
+              "esco_hint": "knowledge of Vietnamese water resources and irrigation law",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Hydrological Analysis",
+              "label_vi": "Phân tích thủy văn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tính toán lũ thiết kế, cân bằng nước, phân tích thủy văn lưu vực",
+              "esco_hint": "conduct hydrological and flood analysis",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "AutoCAD & Civil 3D Hydraulic",
+              "label_vi": "AutoCAD, Civil 3D thủy lợi",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vẽ bản vẽ thiết kế công trình thủy lợi bằng AutoCAD, Civil 3D",
+              "esco_hint": "use AutoCAD and Civil 3D for hydraulic design",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "HEC-RAS / MIKE Flood Modelling",
+              "label_vi": "Mô hình thuỷ lực HEC-RAS, MIKE",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Mô phỏng dòng chảy, lũ lụt bằng HEC-RAS, MIKE FLOOD, SWAT",
+              "esco_hint": "model hydraulics and flood using HEC-RAS or MIKE",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Dam & Reservoir Design",
+              "label_vi": "Thiết kế đập, hồ chứa",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thiết kế đập đất, đập bê tông, tràn xả lũ theo tiêu chuẩn TCVN",
+              "esco_hint": "design dams and reservoirs to Vietnamese standards",
+              "confidence": 0.91,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Construction Supervision Hydraulic",
+              "label_vi": "Giám sát thi công thủy lợi",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Giám sát thi công công trình thủy lợi đúng thiết kế và tiêu chuẩn",
+              "esco_hint": "supervise hydraulic construction works",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "English Hydraulic Standards",
+              "label_vi": "Tiếng Anh tài liệu thủy lợi",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Đọc tài liệu kỹ thuật thủy lợi, tiêu chuẩn FAO, ICOLD tiếng Anh",
+              "esco_hint": "read English hydraulic engineering standards",
+              "confidence": 0.82
+            },
+            {
+              "label_en": "Environmental Impact Assessment",
+              "label_vi": "Đánh giá tác động môi trường ĐTM",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Lập hoặc phối hợp ĐTM cho công trình thủy lợi theo Luật BVMT 2020",
+              "esco_hint": "prepare environmental impact assessments for hydraulic works",
+              "confidence": 0.89,
+              "iviec_flag": "VN_REGULATION"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kỹ sư địa chất",
+      "nghe": "Năng lượng/Địa chất",
+      "nhom_nghe": "Năng lượng/Môi trường/Nông nghiệp",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ky-su-dia-chat",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Geological Investigation",
+              "label_vi": "Khảo sát địa chất công trình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Khảo sát địa chất, địa kỹ thuật cho công trình xây dựng, khai thác",
+              "esco_hint": "conduct geological and geotechnical investigations",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Geotechnical Analysis",
+              "label_vi": "Phân tích địa kỹ thuật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân tích nền móng, ổn định mái dốc, khả năng chịu tải đất nền",
+              "esco_hint": "analyse geotechnical conditions and foundation capacity",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Geological Survey Standards",
+              "label_vi": "Tiêu chuẩn khảo sát địa chất VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuân thủ TCVN 9362, TCVN 9363, TCVN 4195-4202 khảo sát địa kỹ thuật",
+              "esco_hint": "apply Vietnamese geotechnical investigation standards",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Borehole & Field Testing",
+              "label_vi": "Khoan thăm dò, thí nghiệm hiện trường",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Giám sát khoan thăm dò địa chất, SPT, CPT, thí nghiệm hiện trường",
+              "esco_hint": "supervise borehole drilling and field testing",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Geotechnical Software",
+              "label_vi": "Phần mềm địa kỹ thuật",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Plaxis, Slope/W, GEO5, AutoCAD phân tích và vẽ bản đồ địa chất",
+              "esco_hint": "use geotechnical software for analysis",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Soil & Rock Laboratory Testing",
+              "label_vi": "Thí nghiệm đất, đá trong phòng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện thí nghiệm cơ lý đất, đá: sức kháng cắt, nén, thấm",
+              "esco_hint": "conduct laboratory soil and rock mechanics testing",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Geological Mapping & Report",
+              "label_vi": "Lập bản đồ, báo cáo địa chất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập bản đồ địa chất, báo cáo khảo sát địa kỹ thuật đúng quy định",
+              "esco_hint": "prepare geological maps and geotechnical reports",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Mining & Mineral Law Vietnam",
+              "label_vi": "Luật Khoáng sản VN",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm Luật Khoáng sản 2010/sửa đổi, thủ tục giấy phép thăm dò, khai thác",
+              "esco_hint": "knowledge of Vietnamese mineral law for geological work",
+              "confidence": 0.87,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "English Geological Reports",
+              "label_vi": "Tiếng Anh báo cáo địa chất",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc, viết báo cáo địa kỹ thuật tiếng Anh cho dự án nước ngoài",
+              "esco_hint": "read and write English geotechnical reports",
+              "confidence": 0.84
+            },
+            {
+              "label_en": "GIS Geological Mapping",
+              "label_vi": "GIS bản đồ địa chất",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "ArcGIS, QGIS xây dựng và phân tích bản đồ địa chất, địa hình",
+              "esco_hint": "use GIS for geological mapping and analysis",
+              "confidence": 0.9,
+              "iviec_flag": "VN_TOOL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Năng lượng/Địa chất khác",
+      "nghe": "Năng lượng/Địa chất",
+      "nhom_nghe": "Năng lượng/Môi trường/Nông nghiệp",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-nang-luong-dia-chat-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 6
+          },
+          "skills": [
+            {
+              "label_en": "Energy & Geology Engineering",
+              "label_vi": "Kỹ thuật năng lượng/địa chất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện công việc kỹ thuật năng lượng hoặc địa chất theo chuyên môn",
+              "esco_hint": "apply energy or geological engineering skills",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Technical Domain Energy Geology",
+              "label_vi": "Kiến thức kỹ thuật chuyên ngành",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu hệ thống năng lượng hoặc địa chất theo lĩnh vực cụ thể",
+              "esco_hint": "knowledge of energy or geology technical domain",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Vietnam Energy Geology Regulations",
+              "label_vi": "Quy định pháp luật VN liên quan",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tuân thủ quy định năng lượng, tài nguyên, địa chất VN liên quan",
+              "esco_hint": "comply with relevant Vietnamese energy and geology regulations",
+              "confidence": 0.89,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Engineering Problem Solving",
+              "label_vi": "Xử lý sự cố kỹ thuật",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích và giải quyết vấn đề kỹ thuật trong ngành năng lượng/địa chất",
+              "esco_hint": "apply engineering problem-solving skills",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "English Technical Documentation",
+              "label_vi": "Tiếng Anh tài liệu kỹ thuật",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc tài liệu kỹ thuật năng lượng/địa chất tiếng Anh",
+              "esco_hint": "read English energy or geology technical documentation",
+              "confidence": 0.83
+            },
+            {
+              "label_en": "Relevant Engineering Degree",
+              "label_vi": "Bằng kỹ sư liên quan",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng kỹ sư năng lượng, điện, địa chất, khai thác mỏ hoặc tương đương",
+              "esco_hint": "hold relevant engineering degree",
+              "confidence": 0.85
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kỹ sư an toàn lao động (HSE)",
+      "nghe": "An toàn lao động/Môi trường",
+      "nhom_nghe": "Năng lượng/Môi trường/Nông nghiệp",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ky-su-an-toan-lao-dong-hse",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "HSE Management System",
+              "label_vi": "Quản lý hệ thống HSE",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng, triển khai, duy trì hệ thống quản lý HSE theo ISO 45001",
+              "esco_hint": "implement and maintain HSE management systems",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Occupational Safety Law",
+              "label_vi": "Luật ATLĐ, VSLĐ VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật ATLĐ 2015, Nghị định 39/2016, các thông tư ATLĐ Bộ LĐTBXH",
+              "esco_hint": "comprehensive knowledge of Vietnamese occupational safety law",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Risk Assessment & Hazard ID",
+              "label_vi": "Đánh giá rủi ro, nhận diện nguy hiểm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện HIRA, JSA, Bow-tie, What-If phân tích rủi ro hiện trường",
+              "esco_hint": "conduct risk assessments and hazard identification",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Incident Investigation",
+              "label_vi": "Điều tra sự cố ATLĐ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Điều tra sự cố, tai nạn lao động: thu thập bằng chứng, phân tích nguyên nhân gốc rễ",
+              "esco_hint": "investigate occupational incidents and accidents",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "HSE Training & Toolbox Talk",
+              "label_vi": "Đào tạo ATLĐ, huấn luyện hiện trường",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tổ chức đào tạo ATLĐ bắt buộc, toolbox talk hàng ngày theo Thông tư 06/2020",
+              "esco_hint": "conduct mandatory HSE training and toolbox talks",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "PTW System",
+              "label_vi": "Hệ thống cấp phép làm việc PTW",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý PTW: hot work, confined space, LOTO, working at height",
+              "esco_hint": "manage permit-to-work systems",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Environmental Compliance HSE",
+              "label_vi": "Tuân thủ môi trường trong HSE",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm soát chất thải, tiếng ồn, bụi, nước thải theo Luật BVMT 2020",
+              "esco_hint": "ensure environmental compliance in HSE programs",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "ISO 45001 / OHSAS 18001",
+              "label_vi": "Tiêu chuẩn ISO 45001, OHSAS 18001",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ kiểm toán viên nội bộ hoặc chuyên gia ISO 45001/OHSAS 18001",
+              "esco_hint": "hold ISO 45001 or OHSAS 18001 certification",
+              "confidence": 0.92,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "HSE Engineer Certificate Vietnam",
+              "label_vi": "Chứng chỉ kỹ sư ATLĐ VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ huấn luyện an toàn nhóm 1/2/3/4 Bộ LĐTBXH",
+              "esco_hint": "hold Vietnamese HSE engineer training certificate",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "English HSE Standards",
+              "label_vi": "Tiếng Anh tiêu chuẩn HSE",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc OSHA, ISO 45001, API RP tiêu chuẩn HSE tiếng Anh",
+              "esco_hint": "read English HSE standards and guidelines",
+              "confidence": 0.86
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kỹ sư môi trường",
+      "nghe": "An toàn lao động/Môi trường",
+      "nhom_nghe": "Năng lượng/Môi trường/Nông nghiệp",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ky-su-moi-truong",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Environmental Engineering",
+              "label_vi": "Kỹ thuật môi trường",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế, vận hành hệ thống xử lý nước thải, khí thải, chất thải rắn",
+              "esco_hint": "design and operate environmental treatment systems",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Environmental Impact Assessment Vietnam",
+              "label_vi": "Đánh giá tác động môi trường ĐTM VN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập báo cáo ĐTM theo Luật BVMT 2020, Nghị định 08/2022/NĐ-CP",
+              "esco_hint": "prepare EIA reports under Vietnamese environmental law",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Vietnam Environmental Law",
+              "label_vi": "Luật bảo vệ môi trường VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật BVMT 2020, Nghị định 08/2022, tiêu chuẩn/quy chuẩn QCVN môi trường",
+              "esco_hint": "comprehensive knowledge of Vietnamese environmental law",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Wastewater Treatment Engineering",
+              "label_vi": "Kỹ thuật xử lý nước thải",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế, vận hành hệ thống XLNT: sinh học (AS, MBR), hóa lý, kết tủa",
+              "esco_hint": "design and operate wastewater treatment systems",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Air Quality & Emission Control",
+              "label_vi": "Kiểm soát chất lượng không khí, khí thải",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết kế hệ thống xử lý khí thải, quan trắc khí thải theo QCVN",
+              "esco_hint": "design air emission control systems and monitoring",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Environmental Monitoring",
+              "label_vi": "Quan trắc môi trường",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập kế hoạch, thực hiện quan trắc môi trường định kỳ theo giấy phép",
+              "esco_hint": "conduct environmental monitoring programs",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Environmental Permit Management",
+              "label_vi": "Quản lý giấy phép môi trường",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xin cấp, duy trì giấy phép môi trường theo Nghị định 08/2022/NĐ-CP",
+              "esco_hint": "manage environmental permits under Vietnamese regulations",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Environmental Lab & Testing",
+              "label_vi": "Thí nghiệm, phân tích môi trường",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Lấy mẫu, thí nghiệm phân tích chỉ tiêu nước, không khí, đất theo TCVN",
+              "esco_hint": "conduct environmental sampling and laboratory analysis",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Environmental Software GIS",
+              "label_vi": "Phần mềm môi trường, GIS",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "MIKE, ADMS, ArcGIS mô phỏng lan truyền ô nhiễm, bản đồ môi trường",
+              "esco_hint": "use environmental modelling and GIS software",
+              "confidence": 0.88,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "English Environmental Standards",
+              "label_vi": "Tiếng Anh tiêu chuẩn môi trường",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc EIA guidelines, ISO 14001, WHO standards tiếng Anh",
+              "esco_hint": "read English environmental standards and guidelines",
+              "confidence": 0.85
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Công nhân môi trường",
+      "nghe": "An toàn lao động/Môi trường",
+      "nhom_nghe": "Năng lượng/Môi trường/Nông nghiệp",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-cong-nhan-moi-truong",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Environmental Sanitation Work",
+              "label_vi": "Vệ sinh môi trường đô thị",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thu gom, vận chuyển rác thải sinh hoạt, quét đường, duy trì vệ sinh đô thị",
+              "esco_hint": "collect waste and maintain urban environmental sanitation",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Waste Collection & Sorting",
+              "label_vi": "Thu gom, phân loại rác thải",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thu gom, phân loại rác tại nguồn: hữu cơ, tái chế, nguy hại theo quy định",
+              "esco_hint": "collect and sort waste at source",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Waste Management Law",
+              "label_vi": "Quy định quản lý chất thải VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tuân thủ Luật BVMT 2020, Nghị định 08/2022 phân loại rác tại nguồn",
+              "esco_hint": "comply with Vietnamese waste management regulations",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Environmental Equipment Operation",
+              "label_vi": "Vận hành phương tiện, thiết bị MT",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Vận hành xe thu gom rác, máy quét đường, xe hút bể phốt",
+              "esco_hint": "operate environmental sanitation vehicles and equipment",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Chemical & Hazardous Waste Safety",
+              "label_vi": "An toàn hóa chất, chất thải nguy hại",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nhận biết, xử lý an toàn chất thải nguy hại, hóa chất vệ sinh môi trường",
+              "esco_hint": "handle chemical and hazardous waste safely",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "PPE Usage Environmental",
+              "label_vi": "Sử dụng PPE môi trường",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng đúng và đầy đủ PPE: khẩu trang, găng, quần áo bảo hộ vệ sinh MT",
+              "esco_hint": "use appropriate PPE for environmental sanitation work",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Physical Stamina Outdoor Environment",
+              "label_vi": "Thể lực làm việc ngoài trời",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Thể lực tốt làm việc ngoài trời, nắng mưa, ca sáng sớm/đêm",
+              "esco_hint": "maintain physical stamina for outdoor environmental work",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Teamwork Environmental Workers",
+              "label_vi": "Làm việc nhóm công nhân MT",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối hợp nhóm công nhân vệ sinh hoàn thành ca đúng tuyến",
+              "esco_hint": "work effectively in environmental sanitation team",
+              "confidence": 0.9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Vận hành hệ thống xử lý nước thải",
+      "nghe": "An toàn lao động/Môi trường",
+      "nhom_nghe": "Năng lượng/Môi trường/Nông nghiệp",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-van-hanh-he-thong-xu-ly-nuoc-thai",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Wastewater Treatment Plant Operation",
+              "label_vi": "Vận hành trạm xử lý nước thải",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vận hành toàn bộ HTXLNT: bể điều hoà, sinh học, lắng, khử trùng",
+              "esco_hint": "operate wastewater treatment plants",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Biological Treatment Process",
+              "label_vi": "Vận hành xử lý sinh học",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vận hành và kiểm soát quá trình AS, SBR, MBR, MBBR, UASB sinh học",
+              "esco_hint": "operate biological treatment processes",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Chemical Dosing WWTP",
+              "label_vi": "Định lượng hoá chất XLNT",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Pha, định lượng hóa chất đông keo tụ, khử trùng Clo, NaOH, PAC",
+              "esco_hint": "dose and manage chemicals in wastewater treatment",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "SCADA WWTP Monitoring",
+              "label_vi": "SCADA giám sát HTXLNT",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Giám sát, điều chỉnh thông số HTXLNT qua SCADA hoặc bảng điều khiển",
+              "esco_hint": "monitor WWTP operations using SCADA",
+              "confidence": 0.91,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam Wastewater Discharge Standards",
+              "label_vi": "Quy chuẩn nước thải xả thải VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm QCVN 14:2008, QCVN 40:2011 tiêu chuẩn nước thải sinh hoạt, công nghiệp",
+              "esco_hint": "knowledge of Vietnamese wastewater discharge standards",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Water Quality Testing WWTP",
+              "label_vi": "Kiểm tra chất lượng nước đầu vào/ra",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lấy mẫu, đo BOD/COD/SS/pH/DO theo quy trình giám sát vận hành",
+              "esco_hint": "test water quality parameters in treatment operations",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Sludge Management",
+              "label_vi": "Quản lý bùn thải",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Vận hành máy ép bùn, quản lý lưu trữ và xử lý bùn theo quy định",
+              "esco_hint": "manage sludge dewatering and disposal",
+              "confidence": 0.9,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "WWTP Maintenance Basic",
+              "label_vi": "Bảo trì thiết bị HTXLNT cơ bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Bảo trì định kỳ bơm, máy thổi khí, máy ép bùn, hệ thống điều khiển",
+              "esco_hint": "perform basic WWTP equipment maintenance",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Shift Log WWTP",
+              "label_vi": "Nhật ký ca vận hành HTXLNT",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Ghi nhật ký vận hành đầy đủ, báo cáo thông số ca cho quản lý",
+              "esco_hint": "maintain WWTP shift logs and operational records",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Chemical Safety WWTP",
+              "label_vi": "An toàn hóa chất trong XLNT",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng, lưu trữ hóa chất XLNT an toàn theo quy định ATLĐ VN",
+              "esco_hint": "handle wastewater treatment chemicals safely",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kỹ thuật viên nông nghiệp/trồng trọt",
+      "nghe": "Nông/Lâm/Ngư nghiệp",
+      "nhom_nghe": "Năng lượng/Môi trường/Nông nghiệp",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ky-thuat-vien-nong-nghiep-trong-trot",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Crop Production Techniques",
+              "label_vi": "Kỹ thuật trồng trọt, canh tác",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Áp dụng kỹ thuật canh tác: làm đất, gieo trồng, bón phân, tưới tiêu",
+              "esco_hint": "apply crop production and cultivation techniques",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Crop Varieties Knowledge",
+              "label_vi": "Am hiểu giống cây trồng VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu giống lúa, cây ăn quả, rau màu phổ biến tại Việt Nam",
+              "esco_hint": "knowledge of Vietnamese crop varieties and seeds",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Pesticide & Fertiliser Application Agri",
+              "label_vi": "Sử dụng phân bón, thuốc BVTV",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Pha, phun thuốc BVTV và bón phân đúng kỹ thuật, an toàn và hiệu quả",
+              "esco_hint": "apply pesticides and fertilisers correctly and safely",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Plant Protection Law",
+              "label_vi": "Luật BVTV, phân bón VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật BVTV 2013, Luật Trồng trọt 2018, danh mục thuốc BVTV được phép",
+              "esco_hint": "knowledge of Vietnamese plant protection law",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Integrated Pest Management",
+              "label_vi": "Quản lý dịch hại tổng hợp IPM",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Áp dụng IPM: nhận diện sâu bệnh, dự báo, phòng trừ sinh học và hóa học",
+              "esco_hint": "implement integrated pest management",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Good Agricultural Practices",
+              "label_vi": "Thực hành nông nghiệp tốt VietGAP/GlobalGAP",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện VietGAP, GlobalGAP trong sản xuất rau, trái cây xuất khẩu",
+              "esco_hint": "apply VietGAP and GlobalGAP agricultural practices",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Irrigation & Water Management Agri",
+              "label_vi": "Quản lý tưới tiêu nông nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Vận hành hệ thống tưới nhỏ giọt, phun mưa; quản lý nước tưới tiêu",
+              "esco_hint": "manage agricultural irrigation systems",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Soil Testing & Management",
+              "label_vi": "Kiểm tra, quản lý đất nông nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Lấy mẫu đất, đọc kết quả phân tích, điều chỉnh dinh dưỡng đất",
+              "esco_hint": "test and manage agricultural soil",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Farm Record Keeping",
+              "label_vi": "Ghi chép nhật ký đồng ruộng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Ghi nhật ký sản xuất: ngày bón phân, phun thuốc, năng suất thu hoạch",
+              "esco_hint": "maintain farm production records",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "Agricultural Technology Vietnam",
+              "label_vi": "Nông nghiệp công nghệ cao VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu nông nghiệp ứng dụng công nghệ cao: nhà kính, hydroponics, IoT nông nghiệp",
+              "esco_hint": "knowledge of Vietnamese high-tech agriculture",
+              "confidence": 0.88,
+              "iviec_flag": "VN_DOMAIN"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Công nhân chăn nuôi",
+      "nghe": "Nông/Lâm/Ngư nghiệp",
+      "nhom_nghe": "Năng lượng/Môi trường/Nông nghiệp",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-cong-nhan-chan-nuoi",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Animal Husbandry & Livestock Care",
+              "label_vi": "Chăm sóc gia súc, gia cầm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Cho ăn, chăm sóc hàng ngày gia súc/gia cầm (heo, gà, bò, tôm cá)",
+              "esco_hint": "care for and feed livestock and poultry daily",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Animal Husbandry Law",
+              "label_vi": "Luật Chăn nuôi, thú y VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm Luật Chăn nuôi 2018, Luật Thú y 2015, quy định kiểm dịch động vật",
+              "esco_hint": "knowledge of Vietnamese animal husbandry and veterinary law",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Biosecurity & Disease Prevention",
+              "label_vi": "An toàn sinh học, phòng dịch bệnh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện biện pháp an toàn sinh học: khử trùng, tiêm phòng, cách ly",
+              "esco_hint": "implement biosecurity measures to prevent livestock disease",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Feed Management Livestock",
+              "label_vi": "Quản lý thức ăn chăn nuôi",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm soát lượng thức ăn, chất lượng, lịch cho ăn theo giai đoạn tăng trưởng",
+              "esco_hint": "manage livestock feed and feeding schedules",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Basic Veterinary Procedures",
+              "label_vi": "Thủ thuật thú y cơ bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tiêm phòng, xử lý vết thương cơ bản, nhận biết triệu chứng bệnh gia súc",
+              "esco_hint": "perform basic veterinary procedures on livestock",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Barn & Facility Hygiene",
+              "label_vi": "Vệ sinh chuồng trại, cơ sở chăn nuôi",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vệ sinh, khử trùng chuồng trại thường xuyên ngăn ngừa dịch bệnh",
+              "esco_hint": "maintain barn and facility hygiene and disinfection",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam VietGAHP Livestock",
+              "label_vi": "Thực hành chăn nuôi tốt VietGAHP",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện VietGAHP trong chăn nuôi theo hướng dẫn Bộ NN&PTNT",
+              "esco_hint": "apply VietGAHP livestock production practices",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Physical Stamina Livestock",
+              "label_vi": "Thể lực chăn nuôi",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Thể lực làm việc trong điều kiện chuồng trại, nắng nóng, mùi",
+              "esco_hint": "maintain physical stamina for livestock work environment",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Observation & Animal Health",
+              "label_vi": "Quan sát, phát hiện dấu hiệu bệnh",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quan sát kỹ gia súc phát hiện sớm dấu hiệu bệnh, bất thường",
+              "esco_hint": "observe and detect early signs of animal illness",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kỹ sư lâm nghiệp",
+      "nghe": "Nông/Lâm/Ngư nghiệp",
+      "nhom_nghe": "Năng lượng/Môi trường/Nông nghiệp",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-ky-su-lam-nghiep",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Forestry Engineering",
+              "label_vi": "Kỹ thuật lâm nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Trồng, chăm sóc, khai thác rừng theo kế hoạch quản lý bền vững",
+              "esco_hint": "manage forestry operations sustainably",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Forest Law",
+              "label_vi": "Luật Lâm nghiệp VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Lâm nghiệp 2017, Nghị định 156/2018, quy định trồng, khai thác rừng",
+              "esco_hint": "knowledge of Vietnamese forestry law",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Forest Inventory & Assessment",
+              "label_vi": "Điều tra, đánh giá tài nguyên rừng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Điều tra trữ lượng rừng, lập hồ sơ tài nguyên rừng theo TCVN",
+              "esco_hint": "conduct forest inventory and resource assessment",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Reforestation & Silviculture",
+              "label_vi": "Trồng rừng, lâm sinh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập kế hoạch và thực hiện trồng rừng, chăm sóc, tỉa thưa theo kỹ thuật",
+              "esco_hint": "plan and implement reforestation and silviculture",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Forest Fire Prevention",
+              "label_vi": "Phòng chống cháy rừng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập phương án PCCC rừng, thực hiện đốt có kiểm soát, tuần tra rừng",
+              "esco_hint": "implement forest fire prevention measures",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "GIS Forest Mapping",
+              "label_vi": "GIS bản đồ rừng",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "ArcGIS, QGIS theo dõi hiện trạng, quy hoạch rừng và đất lâm nghiệp",
+              "esco_hint": "use GIS for forest mapping and monitoring",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Sustainable Forest Management",
+              "label_vi": "Quản lý rừng bền vững FSC",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Triển khai quản lý rừng bền vững theo tiêu chuẩn FSC, PEFC tại VN",
+              "esco_hint": "implement sustainable forest management standards",
+              "confidence": 0.89,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Carbon Credits Forestry REDD+",
+              "label_vi": "Tín chỉ carbon lâm nghiệp REDD+",
+              "skill_type": "domain",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu cơ chế REDD+, chi trả dịch vụ hệ sinh thái rừng VN",
+              "esco_hint": "knowledge of REDD+ and forest carbon credits",
+              "confidence": 0.84,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Field Work Physical Forestry",
+              "label_vi": "Thể lực, làm việc thực địa rừng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Thể lực làm việc dài ngày trong rừng, địa hình phức tạp",
+              "esco_hint": "maintain physical stamina for extended forest fieldwork",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "English Forestry Reports",
+              "label_vi": "Tiếng Anh báo cáo lâm nghiệp",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc tài liệu FSC, REDD+, báo cáo lâm nghiệp quốc tế tiếng Anh",
+              "esco_hint": "read English forestry and sustainability reports",
+              "confidence": 0.82
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Kiểm lâm",
+      "nghe": "Nông/Lâm/Ngư nghiệp",
+      "nhom_nghe": "Năng lượng/Môi trường/Nông nghiệp",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-kiem-lam",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Forest Law Enforcement",
+              "label_vi": "Thực thi pháp luật bảo vệ rừng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuần tra, kiểm tra, xử lý vi phạm pháp luật về lâm nghiệp, bảo vệ rừng",
+              "esco_hint": "enforce forestry and forest protection law",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Forest Protection Law",
+              "label_vi": "Luật Lâm nghiệp, Bộ luật Hình sự lâm nghiệp",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Lâm nghiệp 2017, Bộ luật Hình sự tội phạm rừng, CITES VN",
+              "esco_hint": "knowledge of Vietnamese forest protection and criminal law",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Illegal Logging Investigation",
+              "label_vi": "Điều tra khai thác rừng trái phép",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phát hiện, điều tra, lập biên bản vi phạm khai thác, buôn bán lâm sản",
+              "esco_hint": "investigate and document illegal logging activities",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Wildlife Protection",
+              "label_vi": "Bảo vệ động vật hoang dã",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Bảo vệ ĐVHD: phát hiện bẫy săn, thu giữ tang vật, cứu hộ động vật",
+              "esco_hint": "protect wildlife and confiscate illegal traps and items",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Administrative Penalty Procedures",
+              "label_vi": "Thủ tục xử phạt vi phạm hành chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập biên bản, quyết định xử phạt vi phạm hành chính lâm nghiệp đúng quy trình",
+              "esco_hint": "apply administrative penalty procedures in forestry",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Forest Patrol & Monitoring",
+              "label_vi": "Tuần tra, giám sát rừng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuần tra rừng thường xuyên, phát hiện sớm vi phạm, lấn chiếm đất rừng",
+              "esco_hint": "patrol forests and monitor for violations",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Physical Fitness & Endurance Ranger",
+              "label_vi": "Thể lực kiểm lâm viên",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Thể lực xuất sắc: đi rừng dài ngày, địa hình hiểm trở",
+              "esco_hint": "demonstrate superior physical fitness for ranger duties",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Community Relations Forestry",
+              "label_vi": "Quan hệ cộng đồng dân cư rừng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng quan hệ với cộng đồng dân cư địa phương bảo vệ rừng",
+              "esco_hint": "build community relations for participatory forest protection",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Civil Service Exam Ranger",
+              "label_vi": "Thi công chức kiểm lâm",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Vượt kỳ thi công chức vào ngành kiểm lâm Tổng cục Lâm nghiệp",
+              "esco_hint": "pass civil service examination for forest ranger position",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "GIS & Remote Sensing Forestry",
+              "label_vi": "GIS, viễn thám giám sát rừng",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "GIS, ảnh viễn thám phát hiện mất rừng, cháy rừng, vi phạm",
+              "esco_hint": "use GIS and remote sensing for forest monitoring",
+              "confidence": 0.85,
+              "iviec_flag": "VN_TOOL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Nông/Lâm/Ngư nghiệp khác",
+      "nghe": "Nông/Lâm/Ngư nghiệp",
+      "nhom_nghe": "Năng lượng/Môi trường/Nông nghiệp",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-nong-lam-ngu-nghiep-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 7
+          },
+          "skills": [
+            {
+              "label_en": "Agriculture Forestry Fishery Specialist",
+              "label_vi": "Chuyên môn Nông/Lâm/Ngư nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện công việc Nông/Lâm/Ngư nghiệp theo chuyên môn cụ thể",
+              "esco_hint": "apply agriculture, forestry or fishery skills",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Agri Sector Knowledge",
+              "label_vi": "Am hiểu ngành Nông/Lâm/Ngư VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu kỹ thuật, xu hướng ngành Nông/Lâm/Ngư nghiệp Việt Nam",
+              "esco_hint": "knowledge of Vietnamese agriculture, forestry or fishery sector",
+              "confidence": 0.92,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Vietnam Agri Forestry Law Basic",
+              "label_vi": "Luật Nông/Lâm/Ngư nghiệp VN cơ bản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm cơ bản Luật Trồng trọt, Lâm nghiệp, Chăn nuôi, Thú y VN",
+              "esco_hint": "basic knowledge of Vietnamese agri-forestry-fishery law",
+              "confidence": 0.89,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Good Agricultural Practice Basic",
+              "label_vi": "Thực hành nông nghiệp tốt cơ bản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu và thực hành VietGAP/GlobalGAP trong sản xuất nông sản",
+              "esco_hint": "apply basic good agricultural practice standards",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Field Work Agriculture",
+              "label_vi": "Làm việc thực địa nông nghiệp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Thể lực tốt làm việc thực địa ngoài trời trong ngành Nông/Lâm/Ngư",
+              "esco_hint": "maintain physical fitness for agricultural field work",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "English Agri Technical Docs",
+              "label_vi": "Tiếng Anh tài liệu nông nghiệp",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Đọc tài liệu kỹ thuật nông nghiệp tiếng Anh cơ bản",
+              "esco_hint": "read basic English agricultural technical documentation",
+              "confidence": 0.79
+            },
+            {
+              "label_en": "Agri Forestry Fishery Degree",
+              "label_vi": "Bằng Nông/Lâm/Ngư nghiệp",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng kỹ sư nông nghiệp, lâm nghiệp, thủy sản hoặc tương đương",
+              "esco_hint": "hold relevant agriculture, forestry or fishery degree",
+              "confidence": 0.83
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

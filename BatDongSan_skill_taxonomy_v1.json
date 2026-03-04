@@ -1,0 +1,2435 @@
+{
+  "taxonomy_metadata": {
+    "sector": "Bất động sản",
+    "sector_en": "Real Estate",
+    "version": "v1",
+    "total_positions": 20,
+    "total_skills": 195,
+    "avg_skills_per_position": 9.8,
+    "sub_categories": {
+      "Quy hoạch và phát triển bất động sản": {
+        "positions": 10,
+        "skills": 100
+      },
+      "Quản lý vận hành bất động sản": {
+        "positions": 7,
+        "skills": 65
+      },
+      "Sales Bất động sản": {
+        "positions": 2,
+        "skills": 22
+      },
+      "Bất động sản khác": {
+        "positions": 1,
+        "skills": 8
+      }
+    },
+    "skill_type_distribution": {
+      "technical": 101,
+      "tool": 16,
+      "domain": 32,
+      "language": 14,
+      "certification": 12,
+      "soft": 20
+    },
+    "requirement_distribution": {
+      "required": 169,
+      "preferred": 26
+    },
+    "iviec_flags": {
+      "VN_TOOL": 18,
+      "VN_REGULATION": 46,
+      "VN_DOMAIN": 1
+    },
+    "data_sources": [
+      "topcv.vn",
+      "vietnamworks.com"
+    ],
+    "extraction_method": "structured_prompt_5jd_per_position",
+    "rows_covered": "443–462",
+    "notes": [
+      "Covers rows 443–462 of TopCV sector taxonomy (20 positions across 4 sub-categories)",
+      "VN_REGULATION (high density): Luật Đất đai 2024 (GPMB, bồi thường, bảng giá đất, đấu giá QSD đất), Luật Nhà ở 2023, Luật KDBĐS 2023 (chứng chỉ môi giới BĐS Bộ Xây dựng), Luật Quy hoạch 2017 + QCVN QH-KTQG 01:2021, Luật Xây dựng 2014/2020, Luật Đấu thầu 2023 + Nghị định 24/2024, Luật PCCC 2001/2013 + Nghị định 136/2020, Luật Giá 2023 + Tiêu chuẩn TĐG VN 01-13 (thẻ TĐV Bộ Tài chính), Nghị định 88/2024 bồi thường GPMB, QCVN 35:2010/BLĐTBXH thang máy, chứng chỉ ATLĐ điện Bộ LĐTBXH",
+      "VN_TOOL: AutoCAD/Civil 3D quy hoạch, ArcGIS/QGIS GIS, BMS tòa nhà (Honeywell/Siemens/Schneider), CMMS bảo trì, SCADA/EMS năng lượng, Excel financial modelling, CRM BĐS, Batdongsan.com.vn/Zalo/Facebook digital marketing, MS Project/Primavera QLDA, thiết bị PCCC (Hochiki/Siemens FA/Marioff)",
+      "VN_CERTIFICATION: Chứng chỉ môi giới BĐS Bộ Xây dựng (bắt buộc Luật KDBĐS 2023), Thẻ thẩm định viên về giá Bộ Tài chính (bắt buộc Luật Giá 2023), Chứng chỉ PCCC Cảnh sát PCCC, Chứng chỉ ATLĐ điện bậc 3/4/5 Bộ LĐTBXH, PMP/chứng chỉ QLDA Bộ Xây dựng",
+      "Sector unique: Luật Đất đai 2024 (effective 1/8/2024) and Luật Nhà ở 2023/Luật KDBĐS 2023 represent major regulatory overhaul flagged across all relevant positions; GPMB sub-category reflects Vietnam-specific land clearance processes unique to state-led infrastructure development"
+    ]
+  },
+  "positions": [
+    {
+      "vi_tri": "Quản lý tòa nhà",
+      "nghe": "Quản lý vận hành bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-quan-ly-toa-nha",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Building Operations Management",
+              "label_vi": "Quản lý vận hành tòa nhà",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý toàn bộ vận hành tòa nhà văn phòng/TTTM/chung cư: M&E, vệ sinh, bảo vệ",
+              "esco_hint": "manage full building operations",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Building Management System",
+              "label_vi": "Hệ thống quản lý tòa nhà BMS",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Vận hành, giám sát BMS: HVAC, điện, thang máy, PCCC qua hệ thống tập trung",
+              "esco_hint": "operate Building Management System",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Tenant Management",
+              "label_vi": "Quản lý khách thuê",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý quan hệ khách thuê, xử lý yêu cầu, giải quyết tranh chấp",
+              "esco_hint": "manage tenant relations and service requests",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Condominium & Building Law",
+              "label_vi": "Luật Nhà ở, quy định quản lý chung cư VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Nhà ở 2014/2023, Thông tư 02/2016/TT-BXD quản lý chung cư",
+              "esco_hint": "knowledge of Vietnamese condominium management law",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Maintenance Planning Building",
+              "label_vi": "Lập kế hoạch bảo trì tòa nhà",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập kế hoạch, ngân sách bảo trì định kỳ và bất thường toàn bộ tòa nhà",
+              "esco_hint": "plan and budget building maintenance",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Service Charge & Budget Management",
+              "label_vi": "Quản lý phí dịch vụ, ngân sách tòa nhà",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thu phí dịch vụ, quản lý ngân sách vận hành, kiểm soát chi phí",
+              "esco_hint": "manage service charges and operational budget",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "PCCC Compliance Building",
+              "label_vi": "Tuân thủ PCCC tòa nhà VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo tòa nhà tuân thủ Luật PCCC 2001/2013, Nghị định 136/2020",
+              "esco_hint": "ensure PCCC compliance for buildings",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Contractor & Vendor Management",
+              "label_vi": "Quản lý nhà thầu dịch vụ tòa nhà",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lựa chọn, giám sát nhà thầu vệ sinh, bảo vệ, bảo trì M&E",
+              "esco_hint": "manage building service contractors and vendors",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Emergency Response Building",
+              "label_vi": "Xử lý sự cố khẩn cấp tòa nhà",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập và thực hiện quy trình xử lý sự cố: cháy, mất điện, ngập lụt",
+              "esco_hint": "manage building emergency response",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "English Building Management",
+              "label_vi": "Tiếng Anh quản lý tòa nhà",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp tiếng Anh với khách thuê quốc tế, báo cáo chủ đầu tư nước ngoài",
+              "esco_hint": "communicate in English for building management",
+              "confidence": 0.83
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Bảo trì tòa nhà",
+      "nghe": "Quản lý vận hành bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bao-tri-toa-nha",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Building M&E Maintenance",
+              "label_vi": "Bảo trì hệ thống M&E tòa nhà",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bảo trì, sửa chữa hệ thống M&E: điện, nước, điều hoà, thang máy tòa nhà",
+              "esco_hint": "maintain building M&E systems",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Electrical System Maintenance Building",
+              "label_vi": "Bảo trì hệ thống điện tòa nhà",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bảo trì tủ điện, máy biến áp, máy phát điện, hệ thống chiếu sáng",
+              "esco_hint": "maintain building electrical systems",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "HVAC Maintenance Building",
+              "label_vi": "Bảo trì điều hoà, thông gió",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Bảo dưỡng định kỳ AHU, FCU, Chiller, hệ thống thông gió tòa nhà",
+              "esco_hint": "maintain building HVAC systems",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Plumbing Maintenance",
+              "label_vi": "Bảo trì hệ thống cấp thoát nước",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Bảo trì, sửa chữa hệ thống cấp thoát nước, bơm tăng áp, bể chứa",
+              "esco_hint": "maintain building plumbing systems",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Building Technical Standards",
+              "label_vi": "QCVN kỹ thuật tòa nhà",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tuân thủ QCVN về an toàn điện, PCCC, thang máy cho tòa nhà",
+              "esco_hint": "apply Vietnamese building technical standards",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Preventive Maintenance Schedule",
+              "label_vi": "Lập lịch bảo trì phòng ngừa",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập và thực hiện lịch PPM cho toàn bộ thiết bị tòa nhà",
+              "esco_hint": "develop and execute PPM schedule",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "CMMS Software",
+              "label_vi": "Phần mềm CMMS bảo trì",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng phần mềm CMMS hoặc Excel quản lý lịch bảo trì và sự cố",
+              "esco_hint": "use CMMS or maintenance management software",
+              "confidence": 0.88,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Elevator & Escalator Maintenance",
+              "label_vi": "Bảo trì thang máy, thang cuốn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phối hợp bảo trì thang máy, kiểm tra theo QCVN 35:2010/BLĐTBXH",
+              "esco_hint": "maintain lifts and escalators to Vietnamese standards",
+              "confidence": 0.91,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Maintenance Record Keeping",
+              "label_vi": "Hồ sơ bảo trì tòa nhà",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập và lưu trữ hồ sơ bảo trì, sự cố, thay thế thiết bị đầy đủ",
+              "esco_hint": "maintain comprehensive building maintenance records",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Electrical Safety Certificate",
+              "label_vi": "Chứng chỉ an toàn điện",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ an toàn điện bậc 3/4/5 Bộ LĐTBXH",
+              "esco_hint": "hold Vietnamese electrical safety certificate",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Giám sát bảo trì tòa nhà",
+      "nghe": "Quản lý vận hành bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-giam-sat-bao-tri-toa-nha",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Maintenance Supervision Building",
+              "label_vi": "Giám sát bảo trì tòa nhà",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Giám sát đội bảo trì và nhà thầu thực hiện công việc đúng tiêu chuẩn",
+              "esco_hint": "supervise building maintenance teams and contractors",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Technical Inspection Building",
+              "label_vi": "Kiểm tra kỹ thuật tòa nhà",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm tra định kỳ và đột xuất hệ thống kỹ thuật toàn bộ tòa nhà",
+              "esco_hint": "conduct technical inspections of building systems",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Work Order Management",
+              "label_vi": "Quản lý lệnh công việc bảo trì",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập, phân công, theo dõi work order bảo trì/sửa chữa kịp thời",
+              "esco_hint": "manage maintenance work orders",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Quality Control Maintenance",
+              "label_vi": "Kiểm soát chất lượng bảo trì",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm tra chất lượng công việc bảo trì đạt tiêu chuẩn kỹ thuật",
+              "esco_hint": "quality control maintenance work quality",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam M&E Compliance",
+              "label_vi": "Tuân thủ kỹ thuật M&E VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm QCVN điện, nước, PCCC, thang máy áp dụng cho tòa nhà",
+              "esco_hint": "ensure M&E compliance with Vietnamese standards",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Contractor Supervision",
+              "label_vi": "Giám sát nhà thầu kỹ thuật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giám sát nhà thầu kỹ thuật thi công, bảo trì đúng hợp đồng",
+              "esco_hint": "supervise technical contractors on site",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Maintenance Budget Control",
+              "label_vi": "Kiểm soát ngân sách bảo trì",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Kiểm soát chi phí bảo trì trong ngân sách, tối ưu hoá chi tiêu",
+              "esco_hint": "control maintenance budget expenditure",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Technical Report Writing",
+              "label_vi": "Viết báo cáo kỹ thuật bảo trì",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Lập báo cáo kỹ thuật, đề xuất cải tiến hệ thống tòa nhà",
+              "esco_hint": "prepare technical maintenance reports",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Team Leadership Maintenance",
+              "label_vi": "Lãnh đạo đội bảo trì",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Dẫn dắt, phân công, đánh giá đội ngũ bảo trì tòa nhà",
+              "esco_hint": "lead and manage maintenance team",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Electrical Safety Supervision",
+              "label_vi": "An toàn điện giám sát",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ an toàn điện bậc 4/5 Bộ LĐTBXH để giám sát",
+              "esco_hint": "hold supervisory electrical safety certificate",
+              "confidence": 0.92,
+              "iviec_flag": "VN_REGULATION"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Nhân viên cảnh quan",
+      "nghe": "Quản lý vận hành bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-nhan-vien-canh-quan",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Landscape Maintenance",
+              "label_vi": "Chăm sóc cây cảnh, cảnh quan",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Cắt tỉa cây, chăm sóc bồn hoa, thảm cỏ, tiểu cảnh khuôn viên",
+              "esco_hint": "maintain landscape plants and gardens",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Plant & Tree Knowledge",
+              "label_vi": "Am hiểu cây cảnh, cây xanh",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu đặc tính sinh trưởng, chăm sóc các loại cây cảnh, cây bóng mát",
+              "esco_hint": "knowledge of plant and tree care",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Irrigation System Operation",
+              "label_vi": "Vận hành hệ thống tưới cây",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Vận hành, điều chỉnh hệ thống tưới tự động và tưới tay khuôn viên",
+              "esco_hint": "operate irrigation systems",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Pesticide & Fertiliser Application",
+              "label_vi": "Bón phân, phun thuốc cây",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Bón phân, phun thuốc trừ sâu đúng liều lượng, đúng cây và an toàn",
+              "esco_hint": "apply fertilisers and pesticides safely",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Vietnam Pesticide Safety",
+              "label_vi": "An toàn sử dụng thuốc trừ sâu VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tuân thủ quy định an toàn thuốc BVTV Bộ NN&PTNT khi phun xịt",
+              "esco_hint": "comply with Vietnamese pesticide safety regulations",
+              "confidence": 0.87,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Landscape Tools Operation",
+              "label_vi": "Vận hành dụng cụ làm vườn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng máy cắt cỏ, máy tỉa cành, máy thổi lá chuyên nghiệp",
+              "esco_hint": "operate landscape maintenance tools and machinery",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Seasonal Plant Care",
+              "label_vi": "Chăm sóc cây theo mùa",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu lịch chăm sóc cây theo mùa vụ khí hậu miền Nam/Bắc VN",
+              "esco_hint": "knowledge of seasonal plant care in Vietnamese climate",
+              "confidence": 0.9,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Physical Stamina Outdoor",
+              "label_vi": "Thể lực làm ngoài trời",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Thể lực tốt làm việc ngoài trời nắng nóng, mưa gió",
+              "esco_hint": "maintain physical stamina for outdoor landscape work",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Teamwork Landscape",
+              "label_vi": "Làm việc nhóm cảnh quan",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối hợp nhóm cảnh quan hoàn thành công việc đúng tiến độ",
+              "esco_hint": "work effectively in landscape maintenance team",
+              "confidence": 0.89
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Bảo trì PCCC",
+      "nghe": "Quản lý vận hành bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bao-tri-pccc",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "PCCC System Maintenance",
+              "label_vi": "Bảo trì hệ thống PCCC",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bảo trì, kiểm tra định kỳ hệ thống PCCC: báo cháy, sprinkler, CO2, FM200",
+              "esco_hint": "maintain fire detection and suppression systems",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Fire Alarm System",
+              "label_vi": "Hệ thống báo cháy tự động",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bảo trì, kiểm tra đầu báo khói/nhiệt, tủ trung tâm báo cháy",
+              "esco_hint": "maintain automatic fire alarm systems",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Suppression System Maintenance",
+              "label_vi": "Bảo trì hệ thống dập lửa",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bảo trì hệ thống sprinkler, FM200, CO2, bình chữa cháy xách tay",
+              "esco_hint": "maintain fire suppression and extinguishing systems",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam PCCC Law & Standards",
+              "label_vi": "Luật PCCC, QCVN/TCVN PCCC",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật PCCC 2001/2013, Nghị định 136/2020, QCVN 06, TCVN thiết bị PCCC",
+              "esco_hint": "knowledge of Vietnamese fire safety law and standards",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "PCCC Technician Certificate",
+              "label_vi": "Chứng chỉ nghiệp vụ PCCC",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ nghiệp vụ PCCC do Cảnh sát PCCC cấp",
+              "esco_hint": "hold PCCC technical certificate from Fire Police",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "PCCC Inspection & Testing",
+              "label_vi": "Kiểm tra, thử nghiệm hệ thống PCCC",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện kiểm tra định kỳ, thử nghiệm toàn bộ hệ thống PCCC",
+              "esco_hint": "conduct PCCC system inspection and testing",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "PCCC Compliance Documentation",
+              "label_vi": "Hồ sơ kiểm định PCCC",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập hồ sơ kiểm định, biên bản bảo trì PCCC theo quy định Cảnh sát PCCC",
+              "esco_hint": "prepare PCCC compliance documentation",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Evacuation Plan Implementation",
+              "label_vi": "Triển khai phương án PCCC, thoát nạn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hỗ trợ lập, diễn tập phương án PCCC, thoát nạn cho tòa nhà",
+              "esco_hint": "support PCCC evacuation planning and drills",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "PCCC Equipment Knowledge",
+              "label_vi": "Am hiểu thiết bị PCCC chuyên sâu",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu thiết bị: Hochiki, Napco, Viking, SIEMENS FA, Marioff HI-FOG",
+              "esco_hint": "knowledge of PCCC equipment brands and specifications",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "English PCCC Documentation",
+              "label_vi": "Tiếng Anh tài liệu PCCC",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Đọc tài liệu kỹ thuật PCCC tiếng Anh của nhà sản xuất nước ngoài",
+              "esco_hint": "read English PCCC technical documentation",
+              "confidence": 0.8
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Vận hành tòa nhà",
+      "nghe": "Quản lý vận hành bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-van-hanh-toa-nha",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Building Operations Daily",
+              "label_vi": "Vận hành tòa nhà hàng ngày",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vận hành hàng ngày: điện, nước, HVAC, thang máy, chiếu sáng, PCCC tòa nhà",
+              "esco_hint": "operate building systems on a daily basis",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Mechanical & Electrical Systems",
+              "label_vi": "Hệ thống cơ điện tòa nhà",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vận hành, theo dõi hệ thống M&E: máy bơm, AHU, máy phát điện",
+              "esco_hint": "operate building mechanical and electrical systems",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "BMS Operation",
+              "label_vi": "Vận hành BMS giám sát tòa nhà",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giám sát và điều khiển tòa nhà qua BMS, phát hiện cảnh báo sớm",
+              "esco_hint": "operate BMS for building monitoring and control",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Shift Log & Reporting",
+              "label_vi": "Nhật ký ca, báo cáo vận hành",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Ghi nhật ký ca vận hành, báo cáo sự cố và thông số kỹ thuật đầy đủ",
+              "esco_hint": "maintain shift logs and operational reports",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Building Operation Standards",
+              "label_vi": "Tiêu chuẩn vận hành tòa nhà VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tuân thủ QCVN vận hành an toàn điện, thang máy, hệ thống kỹ thuật",
+              "esco_hint": "apply Vietnamese building operation standards",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Energy Management Building",
+              "label_vi": "Quản lý năng lượng tòa nhà",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Theo dõi, phân tích mức tiêu thụ điện, nước; đề xuất tiết kiệm năng lượng",
+              "esco_hint": "monitor and manage building energy consumption",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Incident Response Building Ops",
+              "label_vi": "Xử lý sự cố vận hành tòa nhà",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phát hiện và xử lý sự cố kỹ thuật kịp thời, escalate đúng quy trình",
+              "esco_hint": "respond to and resolve building operational incidents",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "SCADA / EMS Building",
+              "label_vi": "SCADA, EMS tòa nhà",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Vận hành SCADA hoặc EMS theo dõi hệ thống điện/năng lượng tòa nhà",
+              "esco_hint": "use SCADA or EMS for building energy monitoring",
+              "confidence": 0.86,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Electrical Operator Certificate",
+              "label_vi": "Chứng chỉ vận hành điện tòa nhà",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ vận hành an toàn điện bậc 3/4 Bộ LĐTBXH",
+              "esco_hint": "hold Vietnamese building electrical operator certificate",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Quản lý vận hành bất động sản khác",
+      "nghe": "Quản lý vận hành bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-quan-ly-van-hanh-bat-dong-san-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 7
+          },
+          "skills": [
+            {
+              "label_en": "Real Estate Operations",
+              "label_vi": "Quản lý vận hành bất động sản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện công việc quản lý vận hành bất động sản theo chuyên môn",
+              "esco_hint": "manage real estate operations",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Building Technical Knowledge",
+              "label_vi": "Kiến thức kỹ thuật tòa nhà",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu hệ thống kỹ thuật tòa nhà: M&E, PCCC, thang máy",
+              "esco_hint": "knowledge of building technical systems",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Vietnam Building Regulations",
+              "label_vi": "Quy định tòa nhà VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm các quy định pháp luật liên quan vận hành tòa nhà/BĐS",
+              "esco_hint": "knowledge of Vietnamese building regulations",
+              "confidence": 0.9,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Tenant Communication",
+              "label_vi": "Giao tiếp với cư dân, khách thuê",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giao tiếp, xử lý yêu cầu cư dân/khách thuê chuyên nghiệp",
+              "esco_hint": "communicate professionally with tenants and residents",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Maintenance Record Management",
+              "label_vi": "Quản lý hồ sơ vận hành",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Lưu trữ, quản lý hồ sơ kỹ thuật vận hành và bảo trì",
+              "esco_hint": "manage operational and maintenance records",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Problem Solving Building Ops",
+              "label_vi": "Xử lý sự cố vận hành",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích, xử lý sự cố kỹ thuật và dịch vụ trong tòa nhà",
+              "esco_hint": "solve operational problems in buildings",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Relevant Building Qualification",
+              "label_vi": "Bằng/chứng chỉ vận hành BĐS",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ kỹ thuật, quản lý tòa nhà liên quan",
+              "esco_hint": "hold relevant building operations qualification",
+              "confidence": 0.83
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Quy hoạch và thiết kế đô thị",
+      "nghe": "Quy hoạch và phát triển bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-quy-hoach-va-thiet-ke-do-thi",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Urban Planning & Design",
+              "label_vi": "Quy hoạch và thiết kế đô thị",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập quy hoạch đô thị: tổng mặt bằng, phân khu chức năng, hệ thống hạ tầng",
+              "esco_hint": "conduct urban planning and design",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "AutoCAD / Civil 3D Urban",
+              "label_vi": "AutoCAD, Civil 3D quy hoạch",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vẽ bản đồ quy hoạch, mặt bằng tổng thể bằng AutoCAD, Civil 3D",
+              "esco_hint": "use AutoCAD and Civil 3D for urban planning",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam Urban Planning Law",
+              "label_vi": "Luật Quy hoạch, Luật Đô thị VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Quy hoạch 2017, Luật Xây dựng 2014/2020, QCVN QH-KTQG 01:2021",
+              "esco_hint": "knowledge of Vietnamese urban planning law",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "GIS & Spatial Analysis",
+              "label_vi": "GIS, phân tích không gian",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "ArcGIS, QGIS phân tích không gian, bản đồ địa chính, thổ nhưỡng",
+              "esco_hint": "use GIS for spatial analysis and mapping",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Urban Design Principles",
+              "label_vi": "Nguyên lý thiết kế đô thị",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Áp dụng nguyên lý thiết kế đô thị: TOD, mật độ, tầm nhìn cảnh quan",
+              "esco_hint": "apply urban design principles",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Infrastructure Planning",
+              "label_vi": "Quy hoạch hạ tầng kỹ thuật đô thị",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quy hoạch giao thông, cấp thoát nước, điện, viễn thông đô thị",
+              "esco_hint": "plan urban technical infrastructure",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Planning Document Preparation",
+              "label_vi": "Lập hồ sơ đồ án quy hoạch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập hồ sơ đồ án quy hoạch: thuyết minh, bản vẽ, quy định quản lý xây dựng",
+              "esco_hint": "prepare urban planning documentation",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Stakeholder Consultation Planning",
+              "label_vi": "Lấy ý kiến cộng đồng, cơ quan",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tổ chức lấy ý kiến các cơ quan và cộng đồng về đồ án quy hoạch",
+              "esco_hint": "conduct stakeholder consultation for planning",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "SketchUp / Rhino 3D Urban",
+              "label_vi": "SketchUp, Rhino mô hình đô thị",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Mô hình 3D ý tưởng quy hoạch bằng SketchUp, Rhino, Lumion",
+              "esco_hint": "use 3D modelling for urban design visualisation",
+              "confidence": 0.86,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "English Urban Planning",
+              "label_vi": "Tiếng Anh quy hoạch đô thị",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc tài liệu, tiêu chuẩn quy hoạch quốc tế tiếng Anh",
+              "esco_hint": "read English urban planning standards and documentation",
+              "confidence": 0.84
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Đấu thầu bất động sản",
+      "nghe": "Quy hoạch và phát triển bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-dau-thau-bat-dong-san",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Real Estate Tender Management",
+              "label_vi": "Quản lý đấu thầu bất động sản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Chuẩn bị, nộp và quản lý hồ sơ đấu thầu dự án bất động sản",
+              "esco_hint": "manage real estate tender processes",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Bidding Law Real Estate",
+              "label_vi": "Luật Đấu thầu VN áp dụng BĐS",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Đấu thầu 2023, Nghị định 24/2024/NĐ-CP đấu thầu BĐS",
+              "esco_hint": "knowledge of Vietnamese bidding law for real estate",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Land Use Right Auction",
+              "label_vi": "Đấu giá quyền sử dụng đất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quy trình đấu giá QSD đất theo Luật Đất đai 2024, Luật Đấu giá TS",
+              "esco_hint": "knowledge of land use right auction process",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Tender Document Preparation",
+              "label_vi": "Chuẩn bị hồ sơ mời thầu/dự thầu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập hồ sơ mời thầu, hồ sơ dự thầu BĐS đúng quy định pháp luật",
+              "esco_hint": "prepare bidding tender documents for real estate",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Project Financial Feasibility",
+              "label_vi": "Phân tích tài chính dự án đấu thầu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích khả năng tài chính, lập phương án tài chính đấu thầu dự án",
+              "esco_hint": "conduct financial feasibility for tender projects",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Land Valuation for Tender",
+              "label_vi": "Định giá đất phục vụ đấu thầu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thẩm định, phân tích giá đất để lập phương án đấu thầu cạnh tranh",
+              "esco_hint": "value land for bidding purposes",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Legal Due Diligence Tender",
+              "label_vi": "Thẩm tra pháp lý hồ sơ đấu thầu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Rà soát pháp lý: quy hoạch, pháp lý đất trước khi tham gia đấu thầu",
+              "esco_hint": "conduct legal due diligence for real estate tenders",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Negotiation Tender Real Estate",
+              "label_vi": "Đàm phán trong đấu thầu BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đàm phán điều khoản hợp đồng, giá trong quá trình đấu thầu",
+              "esco_hint": "negotiate tender terms and conditions",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "English Tender Documents",
+              "label_vi": "Tiếng Anh hồ sơ đấu thầu",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc, soạn hồ sơ đấu thầu tiếng Anh với đối tác nước ngoài",
+              "esco_hint": "use English for real estate tender documentation",
+              "confidence": 0.82
+            },
+            {
+              "label_en": "Excel & Financial Modelling Tender",
+              "label_vi": "Excel mô hình tài chính đấu thầu",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel lập mô hình tài chính, phân tích NPV/IRR cho dự án đấu thầu",
+              "esco_hint": "use Excel for financial modelling in tenders",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Quản lý dự án bất động sản",
+      "nghe": "Quy hoạch và phát triển bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-quan-ly-du-an-bat-dong-san",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Real Estate Project Management",
+              "label_vi": "Quản lý dự án bất động sản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý toàn bộ dự án BĐS từ phát triển đến bàn giao: scope, time, cost, quality",
+              "esco_hint": "manage real estate projects end-to-end",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Construction & Real Estate Law",
+              "label_vi": "Luật Xây dựng, Nhà ở, Kinh doanh BĐS",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Xây dựng 2014/2020, Luật Nhà ở 2023, Luật KDBĐS 2023",
+              "esco_hint": "knowledge of Vietnamese construction and real estate law",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Project Schedule & Budget Control",
+              "label_vi": "Kiểm soát tiến độ, chi phí dự án BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập, kiểm soát tiến độ MS Project/Primavera, ngân sách dự án BĐS",
+              "esco_hint": "control real estate project schedule and budget",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Construction Permit Management",
+              "label_vi": "Quản lý giấy phép xây dựng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Theo dõi, xin cấp giấy phép xây dựng, chấp thuận đầu tư cho dự án BĐS",
+              "esco_hint": "manage construction and investment permits",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Contractor Management Real Estate",
+              "label_vi": "Quản lý nhà thầu dự án BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lựa chọn, đàm phán hợp đồng, giám sát nhà thầu xây dựng, M&E, nội thất",
+              "esco_hint": "manage contractors for real estate development projects",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Land Use Right & Legal Status",
+              "label_vi": "Pháp lý quyền sử dụng đất, dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm tra pháp lý QSD đất, quy hoạch, điều kiện đưa BĐS vào kinh doanh",
+              "esco_hint": "manage land use right and project legal status",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Design Coordination Real Estate",
+              "label_vi": "Phối hợp thiết kế dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối hợp thiết kế kiến trúc, kết cấu, M&E cho dự án BĐS",
+              "esco_hint": "coordinate design for real estate projects",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Handover & Defects Management",
+              "label_vi": "Quản lý bàn giao, bảo hành dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý bàn giao sản phẩm, theo dõi bảo hành, xử lý sự cố sau bàn giao",
+              "esco_hint": "manage project handover and defect liability",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "PMP / Construction PM Certification",
+              "label_vi": "Chứng chỉ PMP, QLDA xây dựng",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "PMP, chứng chỉ QLDA xây dựng Bộ Xây dựng cấp",
+              "esco_hint": "hold project management certification",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "English Real Estate PM",
+              "label_vi": "Tiếng Anh quản lý dự án BĐS",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Báo cáo, giao tiếp dự án BĐS với nhà đầu tư nước ngoài tiếng Anh",
+              "esco_hint": "use English for real estate project reporting",
+              "confidence": 0.84
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Quy hoạch bất động sản",
+      "nghe": "Quy hoạch và phát triển bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-quy-hoach-bat-dong-san",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Real Estate Planning & Zoning",
+              "label_vi": "Quy hoạch, phân vùng bất động sản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nghiên cứu, phân tích quy hoạch sử dụng đất, quy hoạch phân khu cho BĐS",
+              "esco_hint": "research and analyse real estate zoning and planning",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Land Use Planning Vietnam",
+              "label_vi": "Quy hoạch sử dụng đất VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Đất đai 2024, Luật Quy hoạch 2017, quy hoạch sử dụng đất cấp tỉnh/huyện",
+              "esco_hint": "knowledge of Vietnamese land use planning regulations",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Planning Permission Research",
+              "label_vi": "Nghiên cứu điều kiện pháp lý quy hoạch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tra cứu, xác định điều kiện quy hoạch, mục đích sử dụng đất từng lô",
+              "esco_hint": "research planning permissions and land use conditions",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Master Plan Analysis",
+              "label_vi": "Phân tích đồ án quy hoạch tổng thể",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đọc, phân tích đồ án quy hoạch 1/500, 1/2000, 1/5000 liên quan dự án",
+              "esco_hint": "read and analyse master planning documents",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Site Selection & Feasibility",
+              "label_vi": "Nghiên cứu khả thi lựa chọn quỹ đất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đánh giá tiềm năng, pháp lý, quy hoạch quỹ đất cho phát triển BĐS",
+              "esco_hint": "conduct site selection and planning feasibility",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "AutoCAD Planning Maps",
+              "label_vi": "AutoCAD, GIS bản đồ quy hoạch",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "AutoCAD, GIS tra cứu và vẽ bản đồ quy hoạch, vị trí dự án",
+              "esco_hint": "use AutoCAD and GIS for planning maps",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Liaise with Planning Authorities",
+              "label_vi": "Làm việc với cơ quan quy hoạch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Làm việc với Sở Xây dựng, Sở TNMT, Ban quản lý quy hoạch",
+              "esco_hint": "liaise with Vietnamese planning and land management authorities",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Real Estate Market Research Planning",
+              "label_vi": "Nghiên cứu thị trường BĐS quy hoạch",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Phân tích xu hướng phát triển đô thị, tác động quy hoạch đến giá BĐS",
+              "esco_hint": "analyse real estate market and planning impacts",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "English Planning Documentation",
+              "label_vi": "Tiếng Anh tài liệu quy hoạch",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc tài liệu quy hoạch, báo cáo dự án tiếng Anh",
+              "esco_hint": "read English planning documentation",
+              "confidence": 0.82
+            },
+            {
+              "label_en": "Analytical Thinking Planning",
+              "label_vi": "Tư duy phân tích quy hoạch",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư duy hệ thống, phân tích tác động quy hoạch đến chiến lược dự án",
+              "esco_hint": "apply analytical thinking to real estate planning",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Phát triển mặt bằng",
+      "nghe": "Quy hoạch và phát triển bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-phat-trien-mat-bang",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Site Development & Acquisition",
+              "label_vi": "Phát triển, tìm kiếm mặt bằng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tìm kiếm, đánh giá, đàm phán mặt bằng để phát triển dự án BĐS",
+              "esco_hint": "identify and acquire sites for real estate development",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Site Feasibility Analysis",
+              "label_vi": "Phân tích khả thi mặt bằng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân tích khả thi: pháp lý, quy hoạch, kỹ thuật, tài chính cho mặt bằng",
+              "esco_hint": "conduct full site feasibility analysis",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Land Law Site Dev",
+              "label_vi": "Luật Đất đai 2024 trong phát triển MB",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Đất đai 2024, thủ tục chuyển mục đích sử dụng đất, GPMB",
+              "esco_hint": "knowledge of Vietnamese land law for site development",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Negotiation Land & Site",
+              "label_vi": "Đàm phán thuê/mua mặt bằng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đàm phán điều khoản thuê, mua, hợp tác phát triển mặt bằng",
+              "esco_hint": "negotiate land and site acquisition deals",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Market Analysis Site Development",
+              "label_vi": "Phân tích thị trường BĐS vị trí",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích cung cầu, giá thuê, tỷ suất lợi nhuận khu vực mặt bằng",
+              "esco_hint": "analyse real estate market for site development",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Zoning & Land Use Check",
+              "label_vi": "Kiểm tra quy hoạch, mục đích đất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm tra quy hoạch hiện trạng, điều kiện phát triển từng lô đất",
+              "esco_hint": "verify zoning and land use conditions",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Financial Modelling Site",
+              "label_vi": "Mô hình tài chính dự án mặt bằng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng financial model cho dự án, tính NPV/IRR/payback",
+              "esco_hint": "build financial models for site development projects",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "GIS & Mapping Site",
+              "label_vi": "GIS, bản đồ tìm kiếm mặt bằng",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "GIS, Google Maps, bản đồ địa chính xác định và phân tích vị trí",
+              "esco_hint": "use GIS and mapping tools for site identification",
+              "confidence": 0.9,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Network & Relationship Site Dev",
+              "label_vi": "Mạng lưới quan hệ phát triển mặt bằng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng mạng lưới môi giới, chủ đất để tiếp cận quỹ đất tốt",
+              "esco_hint": "build networks for site development opportunities",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "English Site Development",
+              "label_vi": "Tiếng Anh phát triển mặt bằng",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp, báo cáo phát triển mặt bằng với nhà đầu tư quốc tế",
+              "esco_hint": "communicate in English for site development reporting",
+              "confidence": 0.82
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Giải phóng mặt bằng",
+      "nghe": "Quy hoạch và phát triển bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-giai-phong-mat-bang",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Land Clearance & Compensation",
+              "label_vi": "Giải phóng mặt bằng, đền bù GPMB",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện toàn bộ quy trình GPMB: kiểm đếm, lập phương án bồi thường",
+              "esco_hint": "conduct land clearance and compensation processes",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Land Clearance Law",
+              "label_vi": "Luật Đất đai 2024 GPMB, bồi thường",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Đất đai 2024, Nghị định 88/2024 bồi thường GPMB, tái định cư",
+              "esco_hint": "knowledge of Vietnamese land clearance and compensation law",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Compensation Assessment",
+              "label_vi": "Thẩm định giá bồi thường",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xác định, thẩm định giá đất, tài sản trên đất để lập phương án bồi thường",
+              "esco_hint": "assess land and asset value for compensation",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Resettlement Planning",
+              "label_vi": "Lập phương án tái định cư",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng phương án tái định cư đảm bảo đời sống người bị thu hồi đất",
+              "esco_hint": "develop resettlement plans",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Community Engagement GPMB",
+              "label_vi": "Tiếp dân, vận động GPMB",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tổ chức họp dân, giải thích chính sách, vận động người dân bàn giao đất",
+              "esco_hint": "engage communities in land clearance processes",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Administrative Procedures GPMB",
+              "label_vi": "Thủ tục hành chính GPMB",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hoàn thiện hồ sơ hành chính GPMB với UBND, Sở TNMT, Hội đồng bồi thường",
+              "esco_hint": "complete administrative procedures for land clearance",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Dispute Resolution GPMB",
+              "label_vi": "Giải quyết tranh chấp, khiếu nại GPMB",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý khiếu nại, tranh chấp về bồi thường GPMB đúng quy định pháp luật",
+              "esco_hint": "resolve land clearance disputes and complaints",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Communication & Empathy GPMB",
+              "label_vi": "Giao tiếp, đồng cảm trong GPMB",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Giao tiếp kiên nhẫn, đồng cảm với người dân trong quá trình GPMB",
+              "esco_hint": "communicate with empathy in land clearance processes",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Excel & GIS GPMB",
+              "label_vi": "Excel, GIS quản lý hồ sơ GPMB",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Excel, GIS theo dõi tiến độ bồi thường, hồ sơ từng hộ dân GPMB",
+              "esco_hint": "use Excel and GIS for land clearance management",
+              "confidence": 0.9,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Law Degree or Land Management",
+              "label_vi": "Bằng luật hoặc quản lý đất đai",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng luật, quản lý đất đai hoặc xây dựng liên quan GPMB",
+              "esco_hint": "hold relevant law or land management qualification",
+              "confidence": 0.87
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Thẩm định giá bất động sản",
+      "nghe": "Quy hoạch và phát triển bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tham-dinh-gia-bat-dong-san",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Real Estate Valuation",
+              "label_vi": "Thẩm định giá bất động sản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thẩm định giá BĐS: nhà ở, thương mại, công nghiệp bằng các phương pháp chuẩn",
+              "esco_hint": "conduct real estate valuations",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Valuation Methodologies",
+              "label_vi": "Phương pháp thẩm định giá",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo: so sánh, thu nhập, chi phí, thặng dư, chiết khấu dòng tiền",
+              "esco_hint": "master real estate valuation methodologies",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Vietnam Valuation Law & Standards",
+              "label_vi": "Luật Giá, Tiêu chuẩn thẩm định giá VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Giá 2023, Tiêu chuẩn TĐG VN 01–13 do Bộ Tài chính ban hành",
+              "esco_hint": "knowledge of Vietnamese valuation law and standards",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Valuation Report Writing",
+              "label_vi": "Viết chứng thư thẩm định giá",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập chứng thư, báo cáo thẩm định giá đúng chuẩn Bộ Tài chính/IVSC",
+              "esco_hint": "write valuation certificates and reports",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Market Research Real Estate Val",
+              "label_vi": "Nghiên cứu thị trường BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thu thập, phân tích dữ liệu thị trường BĐS để làm cơ sở thẩm định",
+              "esco_hint": "research real estate market data for valuation",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam Land Price Regulations",
+              "label_vi": "Khung giá đất, bảng giá đất VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu khung giá đất, bảng giá đất UBND tỉnh/thành theo Luật Đất đai 2024",
+              "esco_hint": "knowledge of Vietnamese land price regulations",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Valuation Certificate Vietnam",
+              "label_vi": "Thẻ thẩm định viên về giá VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Thẻ thẩm định viên về giá do Bộ Tài chính cấp",
+              "esco_hint": "hold Vietnamese government valuation certificate",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Financial Analysis Valuation",
+              "label_vi": "Phân tích tài chính thẩm định BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "DCF, IRR, cap rate phân tích tài chính dự án BĐS",
+              "esco_hint": "apply financial analysis methods in real estate valuation",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Excel & Valuation Software",
+              "label_vi": "Excel, phần mềm thẩm định giá",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Excel nâng cao, phần mềm thẩm định giá để lập mô hình và báo cáo",
+              "esco_hint": "use Excel and valuation software for real estate",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "English Valuation Standards",
+              "label_vi": "Tiếng Anh tiêu chuẩn thẩm định giá",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc IVSC IVS, RICS Red Book tiêu chuẩn thẩm định giá tiếng Anh",
+              "esco_hint": "read English international valuation standards",
+              "confidence": 0.83
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Giám đốc kế hoạch bất động sản",
+      "nghe": "Quy hoạch và phát triển bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-giam-doc-ke-hoach-bat-dong-san",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Strategic Planning Real Estate",
+              "label_vi": "Hoạch định chiến lược phát triển BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập kế hoạch chiến lược phát triển danh mục dự án BĐS dài hạn",
+              "esco_hint": "develop strategic plans for real estate portfolio",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Business Planning Real Estate",
+              "label_vi": "Lập kế hoạch kinh doanh BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập kế hoạch kinh doanh, phân bổ nguồn lực, KPI cho bộ phận dự án",
+              "esco_hint": "prepare business plans and KPIs for real estate division",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Investment Analysis Real Estate",
+              "label_vi": "Phân tích đầu tư BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân tích cơ hội đầu tư: feasibility, NPV/IRR, sensitivity analysis",
+              "esco_hint": "analyse real estate investment opportunities",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Real Estate Legal Framework",
+              "label_vi": "Khung pháp lý BĐS tổng thể VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm toàn diện: Luật Đất đai 2024, Luật Nhà ở 2023, Luật KDBĐS 2023",
+              "esco_hint": "comprehensive knowledge of Vietnamese real estate legal framework",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Portfolio Management Real Estate",
+              "label_vi": "Quản lý danh mục dự án BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý danh mục đa dự án, ưu tiên nguồn lực theo chiến lược công ty",
+              "esco_hint": "manage real estate project portfolio",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Financial Modelling Real Estate",
+              "label_vi": "Mô hình tài chính BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng financial model chi tiết: pro forma, sensitivity, scenario analysis",
+              "esco_hint": "build detailed real estate financial models",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Stakeholder Management Planning Dir",
+              "label_vi": "Quản lý stakeholder chiến lược",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Trình bày chiến lược, thuyết phục HĐQT, nhà đầu tư, cơ quan nhà nước",
+              "esco_hint": "manage strategic stakeholders in real estate",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Market Trend Analysis Real Estate",
+              "label_vi": "Phân tích xu hướng thị trường BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích macro, thị trường BĐS để điều chỉnh chiến lược kịp thời",
+              "esco_hint": "analyse real estate market trends for strategy",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Leadership Planning Director",
+              "label_vi": "Lãnh đạo bộ phận kế hoạch BĐS",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dẫn dắt đội kế hoạch, phối hợp liên bộ phận phát triển dự án",
+              "esco_hint": "lead real estate planning department",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "English Real Estate Strategy",
+              "label_vi": "Tiếng Anh chiến lược BĐS",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "proficient",
+              "evidence_text": "Trình bày chiến lược, báo cáo đầu tư BĐS tiếng Anh với nhà đầu tư nước ngoài",
+              "esco_hint": "communicate real estate strategy in English",
+              "confidence": 0.87
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Giám đốc đấu thầu bất động sản",
+      "nghe": "Quy hoạch và phát triển bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-giam-doc-dau-thau-bat-dong-san",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Tender Director Real Estate",
+              "label_vi": "Giám đốc đấu thầu BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lãnh đạo toàn bộ hoạt động đấu thầu: chiến lược, hồ sơ, đàm phán, ký kết",
+              "esco_hint": "lead real estate tendering and procurement",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Tender Strategy Development",
+              "label_vi": "Xây dựng chiến lược đấu thầu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng chiến lược đấu thầu/đấu giá đất, đánh giá rủi ro tổng thể",
+              "esco_hint": "develop tendering and land auction strategies",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Procurement & Land Law",
+              "label_vi": "Luật Đấu thầu 2023, Đất đai 2024",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm sâu Luật Đấu thầu 2023, Luật Đất đai 2024, quy định đấu giá đất",
+              "esco_hint": "deep knowledge of Vietnamese procurement and land law",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Large-scale Bid Management",
+              "label_vi": "Quản lý đấu thầu quy mô lớn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý hồ sơ đấu thầu lớn: khu đô thị, TTTM, dự án hàng ngàn tỷ",
+              "esco_hint": "manage large-scale real estate bids",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Senior Negotiation Real Estate",
+              "label_vi": "Đàm phán cấp cao BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đàm phán hợp đồng BĐS giá trị lớn: điều khoản, giá, rủi ro pháp lý",
+              "esco_hint": "conduct high-level real estate negotiations",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Investment Appraisal Tender",
+              "label_vi": "Thẩm định đầu tư cho đấu thầu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập và thẩm định phương án tài chính, IRR/NPV cho từng cơ hội đấu thầu",
+              "esco_hint": "appraise investments for real estate tenders",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Executive Stakeholder Management",
+              "label_vi": "Quản lý quan hệ cấp cao",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng quan hệ với cơ quan nhà nước, nhà đầu tư, đối tác chiến lược",
+              "esco_hint": "manage executive-level stakeholder relationships",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Team Leadership Tender Dept",
+              "label_vi": "Lãnh đạo phòng đấu thầu",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng, dẫn dắt đội đấu thầu chuyên nghiệp, hiệu quả cao",
+              "esco_hint": "lead and develop tendering department team",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "English Tender Director",
+              "label_vi": "Tiếng Anh cấp giám đốc đấu thầu",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đàm phán, báo cáo đấu thầu BĐS tiếng Anh với đối tác quốc tế",
+              "esco_hint": "use English at director level for international real estate deals",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Real Estate Law Degree",
+              "label_vi": "Bằng luật, kinh tế, BĐS cấp cao",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Thạc sĩ luật, kinh tế, quản trị kinh doanh liên quan BĐS",
+              "esco_hint": "hold advanced degree in law, economics or real estate",
+              "confidence": 0.87
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Giám đốc dự án bất động sản",
+      "nghe": "Quy hoạch và phát triển bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-giam-doc-du-an-bat-dong-san",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Real Estate Project Director",
+              "label_vi": "Giám đốc dự án bất động sản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lãnh đạo, chịu trách nhiệm toàn bộ dự án BĐS từ concept đến bàn giao",
+              "esco_hint": "lead real estate projects from concept to completion",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Multi-project Portfolio Leadership",
+              "label_vi": "Lãnh đạo đa dự án BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý đồng thời nhiều dự án BĐS phức tạp, phân bổ nguồn lực tối ưu",
+              "esco_hint": "lead multiple concurrent real estate projects",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Real Estate Legal Mastery",
+              "label_vi": "Pháp luật BĐS VN toàn diện",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm toàn diện: Luật Đất đai 2024, Luật Nhà ở 2023, Luật KDBĐS 2023, quy định PCCC",
+              "esco_hint": "comprehensive Vietnamese real estate legal knowledge",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Executive Project Decision Making",
+              "label_vi": "Ra quyết định cấp giám đốc dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Ra quyết định nhanh, chính xác về kỹ thuật, pháp lý, tài chính dự án",
+              "esco_hint": "make executive-level project decisions",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Developer Relations & Partners",
+              "label_vi": "Quan hệ chủ đầu tư, đối tác",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý quan hệ chủ đầu tư, cơ quan nhà nước, đối tác tài chính dự án",
+              "esco_hint": "manage developer and partner relationships",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Total Budget Control Real Estate",
+              "label_vi": "Kiểm soát tổng ngân sách dự án BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm soát tổng ngân sách dự án BĐS hàng trăm tỷ đến hàng ngàn tỷ",
+              "esco_hint": "control large real estate project budgets",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Design & Construction Leadership",
+              "label_vi": "Lãnh đạo thiết kế và thi công",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phê duyệt thiết kế, giám sát tổng thầu, đảm bảo chất lượng công trình",
+              "esco_hint": "lead design and construction teams for real estate",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Risk Management Real Estate Dir",
+              "label_vi": "Quản lý rủi ro cấp giám đốc BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nhận diện, quản lý rủi ro pháp lý, kỹ thuật, tài chính toàn dự án",
+              "esco_hint": "manage real estate project risks at director level",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Board Reporting Real Estate",
+              "label_vi": "Báo cáo HĐQT về dự án BĐS",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Báo cáo tiến độ, kết quả, rủi ro dự án lên HĐQT và nhà đầu tư",
+              "esco_hint": "report project status to board and investors",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "English Real Estate Director",
+              "label_vi": "Tiếng Anh cấp giám đốc BĐS",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giao tiếp, đàm phán, báo cáo tiếng Anh với nhà đầu tư nước ngoài",
+              "esco_hint": "use English at director level in real estate",
+              "confidence": 0.88
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Sales bất động sản/Môi giới bất động sản",
+      "nghe": "Sales Bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-sales-bat-dong-san-moi-gioi-bat-dong-san",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 14
+          },
+          "skills": [
+            {
+              "label_en": "Real Estate Sales & Brokerage",
+              "label_vi": "Bán hàng và môi giới bất động sản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn, môi giới mua bán, cho thuê BĐS: căn hộ, nhà phố, đất nền, TTTM",
+              "esco_hint": "sell and broker residential and commercial real estate",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Real Estate Product Knowledge",
+              "label_vi": "Am hiểu sản phẩm bất động sản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu sâu sản phẩm BĐS: pháp lý, vị trí, tiện ích, chính sách bán hàng",
+              "esco_hint": "deep knowledge of real estate products being sold",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Vietnam Real Estate Law Sales",
+              "label_vi": "Luật BĐS áp dụng trong bán hàng",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Đất đai 2024, Luật Nhà ở 2023, Luật KDBĐS 2023 để tư vấn khách",
+              "esco_hint": "knowledge of Vietnamese real estate law for sales",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Real Estate Broker Certificate",
+              "label_vi": "Chứng chỉ hành nghề môi giới BĐS",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ hành nghề môi giới BĐS theo Luật KDBĐS 2023, Bộ Xây dựng",
+              "esco_hint": "hold Vietnamese real estate broker licence",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Customer Needs Assessment RE",
+              "label_vi": "Khai thác nhu cầu khách mua BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Khai thác nhu cầu, tài chính, mục tiêu đầu tư của từng khách hàng BĐS",
+              "esco_hint": "assess real estate customer needs and investment goals",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Property Viewing & Presentation",
+              "label_vi": "Dẫn khách xem và giới thiệu BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dẫn khách xem thực tế, thuyết trình BĐS thuyết phục, chuyên nghiệp",
+              "esco_hint": "conduct property viewings and presentations",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Real Estate Market Analysis Sales",
+              "label_vi": "Phân tích thị trường BĐS cho sales",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích giá, cung cầu, tiềm năng tăng giá khu vực để thuyết phục khách",
+              "esco_hint": "analyse real estate market to support sales arguments",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Contract & Transaction Management",
+              "label_vi": "Quản lý hợp đồng, giao dịch BĐS",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hỗ trợ soạn, ký hợp đồng đặt cọc, mua bán BĐS đúng quy định pháp luật",
+              "esco_hint": "manage real estate contracts and transactions",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Mortgage & Finance Advice RE",
+              "label_vi": "Tư vấn vay mua BĐS",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tư vấn sơ bộ gói vay ngân hàng, lãi suất, thủ tục vay mua BĐS",
+              "esco_hint": "advise clients on mortgage and financing options",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "CRM Real Estate Sales",
+              "label_vi": "CRM quản lý khách hàng BĐS",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng CRM, Excel quản lý leads, lịch hẹn, pipeline BĐS",
+              "esco_hint": "use CRM to manage real estate sales pipeline",
+              "confidence": 0.91,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Digital Marketing Real Estate",
+              "label_vi": "Marketing BĐS kỹ thuật số",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Facebook Ads, Zalo, Tiktok, Batdongsan.com.vn đăng tin và tạo leads",
+              "esco_hint": "use digital marketing channels for real estate leads",
+              "confidence": 0.9,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Negotiation Real Estate",
+              "label_vi": "Đàm phán giao dịch BĐS",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đàm phán giá, điều khoản BĐS win-win cho cả hai bên mua và bán",
+              "esco_hint": "negotiate real estate transactions effectively",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Persistence & Resilience Sales RE",
+              "label_vi": "Kiên trì, bền bỉ trong sales BĐS",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiên trì chăm sóc khách hàng chu kỳ dài, vượt qua từ chối liên tục",
+              "esco_hint": "demonstrate persistence and resilience in real estate sales",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "English Real Estate Sales",
+              "label_vi": "Tiếng Anh bán BĐS cho khách quốc tế",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp tiếng Anh tư vấn BĐS cho khách nước ngoài, Việt kiều",
+              "esco_hint": "communicate in English for international real estate clients",
+              "confidence": 0.82
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Sales Bất động sản khác",
+      "nghe": "Sales Bất động sản",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-sales-bat-dong-san-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Real Estate Sales Other",
+              "label_vi": "Kinh doanh bất động sản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện công việc kinh doanh BĐS theo chuyên môn cụ thể",
+              "esco_hint": "conduct real estate sales activities",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Real Estate Law Basic Sales",
+              "label_vi": "Pháp lý BĐS cơ bản trong bán hàng",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm cơ bản pháp lý BĐS: Luật Đất đai, Luật Nhà ở để tư vấn khách",
+              "esco_hint": "basic knowledge of Vietnamese real estate law for sales",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Real Estate Broker Certificate Other",
+              "label_vi": "Chứng chỉ môi giới BĐS",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ hành nghề môi giới BĐS theo Luật KDBĐS 2023",
+              "esco_hint": "hold real estate broker certificate",
+              "confidence": 0.9,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Customer Relationship RE Other",
+              "label_vi": "Quản lý quan hệ khách hàng BĐS",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng, duy trì quan hệ khách hàng lâu dài trong ngành BĐS",
+              "esco_hint": "build and maintain client relationships in real estate",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Real Estate Market Knowledge Other",
+              "label_vi": "Kiến thức thị trường BĐS",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu thị trường BĐS VN: phân khúc, xu hướng, khu vực hoạt động",
+              "esco_hint": "knowledge of Vietnamese real estate market segments",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Sales Target Achievement RE",
+              "label_vi": "Đạt target doanh số BĐS",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Chủ động phát triển khách hàng, đạt chỉ tiêu doanh số BĐS",
+              "esco_hint": "achieve real estate sales targets",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Digital Tools Real Estate Other",
+              "label_vi": "Công cụ số trong BĐS",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Batdongsan.com.vn, Zalo, Facebook đăng tin, tìm kiếm khách hàng",
+              "esco_hint": "use digital tools for real estate marketing",
+              "confidence": 0.87,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "English Real Estate Other",
+              "label_vi": "Tiếng Anh BĐS cơ bản",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Giao tiếp tiếng Anh cơ bản với khách hàng quốc tế trong BĐS",
+              "esco_hint": "communicate in basic English for real estate",
+              "confidence": 0.78
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Bất động sản khác",
+      "nghe": "Bất động sản khác",
+      "nhom_nghe": "Bất động sản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-bat-dong-san-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Real Estate Professional Other",
+              "label_vi": "Chuyên môn bất động sản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện công việc chuyên môn BĐS theo lĩnh vực cụ thể",
+              "esco_hint": "apply real estate professional skills",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Real Estate Legal Framework Basic",
+              "label_vi": "Pháp luật BĐS VN cơ bản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm cơ bản Luật Đất đai 2024, Luật Nhà ở 2023, Luật KDBĐS 2023",
+              "esco_hint": "basic knowledge of Vietnamese real estate legal framework",
+              "confidence": 0.9,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Real Estate Market Knowledge General",
+              "label_vi": "Am hiểu thị trường BĐS VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu phân khúc, xu hướng thị trường BĐS Việt Nam",
+              "esco_hint": "general knowledge of Vietnamese real estate market",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Analytical Thinking Real Estate",
+              "label_vi": "Tư duy phân tích BĐS",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư duy phân tích tình huống pháp lý, tài chính trong BĐS",
+              "esco_hint": "apply analytical thinking in real estate context",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Communication Real Estate",
+              "label_vi": "Giao tiếp trong ngành BĐS",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giao tiếp chuyên nghiệp với khách hàng, đối tác trong ngành BĐS",
+              "esco_hint": "communicate professionally in real estate industry",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Excel & Real Estate Tools",
+              "label_vi": "Excel, công cụ BĐS",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Excel, phần mềm quản lý BĐS hỗ trợ công việc chuyên môn",
+              "esco_hint": "use Excel and real estate management tools",
+              "confidence": 0.87,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "English Real Estate General",
+              "label_vi": "Tiếng Anh BĐS",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Giao tiếp, đọc tài liệu BĐS tiếng Anh cơ bản",
+              "esco_hint": "use basic English in real estate context",
+              "confidence": 0.78
+            },
+            {
+              "label_en": "Relevant Real Estate Qualification",
+              "label_vi": "Bằng/chứng chỉ BĐS liên quan",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng đại học, chứng chỉ liên quan ngành BĐS, xây dựng, pháp lý",
+              "esco_hint": "hold relevant real estate or related qualification",
+              "confidence": 0.83
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
