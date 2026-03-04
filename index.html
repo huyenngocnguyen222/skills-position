@@ -268,33 +268,11 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
 
 <script>
 // =====================================================
-//  CAU HINH — them / bo file JSON o day
+//  CAU HINH — them / bo file JSON
 // =====================================================
-var JSON_FILES = [
-  'CS_VanHanh_skill_taxonomy_v1.json',
-  'Finance_Banking_Insurance_skill_taxonomy_v1.json',
-  'GiaoDuc_DaoTao_skill_taxonomy_v1.json',
-  'HR_Admin_Legal_skill_taxonomy_v1.json',
-  'IT_skill_taxonomy_v1.json',
-  'KeToan_KiemToan_Thue_skill_taxonomy_v1.json',
-  'KinhDoanh_BanHang_skill_taxonomy_v2.json',
-  'LaoDongPhoThong_skill_taxonomy_v1.json',
-  'Logistics_ThuMua_Kho_VanTai_skill_taxonomy_v1.json',
-  'Marketing_PR_QC_skill_taxonomy_v1.json',
-  'SanXuat_skill_taxonomy_v1.json',
-  'XayDung_skill_taxonomy_v1.json',
-  'BanLe_DVDoiSong_skill_taxonomy_v1.json',
-  'DienDienTuVienThong_skill_taxonomy_v1.json',
-  'BatDongSan_skill_taxonomy_v1.json',
-  'NangLuongMoiTruongNongNghiep_skill_taxonomy_v1.json',
-  'NhaHangKhachSanDuLich_skill_taxonomy_v1.json',
-  'DuocYTeSucKhoeCNSH_skill_taxonomy_v1.json',
-  'Luat_skill_taxonomy_v1.json'
-];
-
-// Fallback tên ngành nếu file JSON không có job_group
+// Fallback tên nhóm nghề nếu file JSON không có job_group
 var NAME_MAP = {
-  'CS_VanHanh_skill_taxonomy_v1.json':                    'CS/Vận hành',
+  'CS_VanHanh_skill_taxonomy_v1.json':                    'CS / Vận hành',
   'Finance_Banking_Insurance_skill_taxonomy_v1.json':      'Tài chính / Ngân hàng / Bảo hiểm',
   'GiaoDuc_DaoTao_skill_taxonomy_v1.json':                 'Giáo dục / Đào tạo',
   'HR_Admin_Legal_skill_taxonomy_v1.json':                 'HR / Hành chính / Pháp lý',
@@ -311,8 +289,14 @@ var NAME_MAP = {
   'BatDongSan_skill_taxonomy_v1.json':                     'Bất động sản',
   'NangLuongMoiTruongNongNghiep_skill_taxonomy_v1.json':   'Năng lượng / Môi trường / Nông nghiệp',
   'NhaHangKhachSanDuLich_skill_taxonomy_v1.json':          'Nhà hàng / Khách sạn / Du lịch',
-  'DuocYTeSucKhoeCNSH_skill_taxonomy_v1.json':             'Dược / Y tế / Sức khỏe / CNSH',
-  'Luat_skill_taxonomy_v1.json':                           'Luật'
+  'DuocYTeSucKhoeCNSH_skill_taxonomy_v1.json':             'Dược / Y tế / Sức khỏe / Công nghệ sinh học',
+  'Luat_skill_taxonomy_v1.json':                           'Luật',
+  'TuVanChuyenMon_skill_taxonomy_v1.json':                 'Tư vấn chuyên môn',
+  'PhimTruyenHinhBaoChiXuatBan_skill_taxonomy_v1.json':    'Phim / Truyền hình / Báo chí / Xuất bản',
+  'NhomNgheKhac_skill_taxonomy_v1.json':                   'Nhóm nghề khác',
+  'TaiXe_skill_taxonomy_v1.json':                          'Tài xế / Lái xe',
+  'ThietKe_skill_taxonomy_v1.json':                        'Thiết kế',
+  'BienPhienDich_skill_taxonomy_v1.json':                  'Biên / Phiên dịch'
 };
 // =====================================================
 
@@ -402,7 +386,7 @@ function updateStats() {
 // ── SECTOR PANEL ──────────────────────────────────
 function renderSectorPanel() {
   var panel = document.getElementById('sectorPanel');
-  panel.innerHTML = '<div class="panel-title">Ngành</div>';
+  panel.innerHTML = '<div class="panel-title">Nghề</div>';
   datasets.forEach(function(ds) {
     var el = document.createElement('div');
     el.className = 'sector-item' + (activeSector === ds.idx ? ' active' : '');
@@ -485,7 +469,7 @@ function renderOverview(ds) {
 
   html += '<div class="ov-cards">' +
     [['Vị trí', ds.positions.length], ['Kỹ năng', totalSk],
-     ['iViec VN', m.total_iviec_proposals||ivN], ['Nhóm nghề', ds.nghes.length]]
+     ['iViec VN', m.total_iviec_proposals||ivN], ['Nghề', ds.nghes.length]]
     .map(function(r) {
       return '<div class="ov-card"><div class="on">' + Number(r[1]).toLocaleString() +
         '</div><div class="ol">' + r[0] + '</div></div>';
