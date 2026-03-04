@@ -1,0 +1,466 @@
+{
+  "taxonomy_metadata": {
+    "sector": "Nhóm nghề khác",
+    "sector_en": "Other Occupational Groups",
+    "version": "v1",
+    "total_positions": 3,
+    "total_skills": 34,
+    "avg_skills_per_position": 11.3,
+    "sub_categories": {
+      "Hàng hải": {
+        "positions": 1,
+        "skills": 12
+      },
+      "NGO/Phi chính phủ/Phi lợi nhuận": {
+        "positions": 1,
+        "skills": 12
+      },
+      "Nghề khác": {
+        "positions": 1,
+        "skills": 10
+      }
+    },
+    "skill_type_distribution": {
+      "technical": 15,
+      "domain": 7,
+      "certification": 2,
+      "tool": 2,
+      "language": 3,
+      "soft": 5
+    },
+    "requirement_distribution": {
+      "required": 32,
+      "preferred": 2
+    },
+    "iviec_flags": {
+      "VN_REGULATION": 10,
+      "VN_TOOL": 3,
+      "VN_DOMAIN": 3
+    },
+    "data_sources": [
+      "topcv.vn",
+      "vietnamworks.com"
+    ],
+    "extraction_method": "structured_prompt_5jd_per_position",
+    "rows_covered": "1153–1155",
+    "notes": [
+      "Covers rows 1153–1155 (3 positions, 3 sub-categories) — final sector of the master taxonomy",
+      "VN_REGULATION: Bộ luật Hàng hải VN 2015 + Công ước STCW 2010 + chứng chỉ thuyền viên Cục Hàng hải VN (bắt buộc toàn bộ chức danh), IMO/SOLAS/MARPOL/ISM Code, Port State Control Tokyo MOU, canh trực STCW; NĐ 58/2022/NĐ-CP đăng ký tổ chức PCPNN + NĐ 80/2020 tiếp nhận viện trợ nước ngoài (NGO); Bộ luật Lao động 2019 + ATLĐ (nghề khác)",
+      "VN_TOOL: GMDSS, VHF/MF/HF radio, RADAR/ARPA, ECDIS hải đồ điện tử (hàng hải); Microsoft Office, email (nghề khác)",
+      "VN_DOMAIN: Cộng đồng nông thôn/dân tộc thiểu số/người dễ bị tổn thương VN, bối cảnh phát triển VN (giảm nghèo/y tế/giáo dục/BĐKH/giới), phân tích giới hòa nhập xã hội trong dự án NGO tại VN",
+      "Sector unique: Hàng hải — STCW International Convention flagged alongside Vietnamese Maritime Code 2015; English SMCP (Standard Marine Communication Phrases) is a mandatory technical language skill unique to this sector; NGO sector has highest English requirement density (required, not preferred) reflecting international donor environment; 'Chuyên môn khác' deliberately kept generic to serve as catch-all for uncategorised occupations in the Vietnamese labour market"
+    ]
+  },
+  "positions": [
+    {
+      "vi_tri": "Chuyên môn Hàng hải",
+      "nghe": "Hàng hải",
+      "nhom_nghe": "Nhóm nghề khác",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-hang-hai",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 12
+          },
+          "skills": [
+            {
+              "label_en": "Maritime Navigation & Seamanship",
+              "label_vi": "Hàng hải, điều khiển tàu biển",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vận hành tàu biển, thực hiện hải hành an toàn, canh gác hải đồ, xác định vị trí tàu",
+              "esco_hint": "navigate and operate vessels at sea and in port",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Maritime Law & STCW",
+              "label_vi": "Luật Hàng hải VN và Công ước STCW",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Bộ luật Hàng hải VN 2015, Công ước STCW 2010 về chứng chỉ thuyền viên quốc tế",
+              "esco_hint": "knowledge of Vietnamese Maritime Code 2015 and STCW Convention",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Vietnam Seafarer Certificates",
+              "label_vi": "Chứng chỉ thuyền viên VN (STCW/VR)",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ STCW cơ bản: Basic Safety Training, GMDSS, chứng chỉ chức danh Cục Hàng hải VN",
+              "esco_hint": "hold Vietnamese seafarer certificates from Vietnam Maritime Administration",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Cargo Operations & Stability",
+              "label_vi": "Điều hành hàng hóa, ổn định tàu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập kế hoạch xếp dỡ hàng, tính ổn định tàu, quản lý ba lát đảm bảo an toàn",
+              "esco_hint": "plan cargo operations and calculate vessel stability",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "GMDSS & Maritime Communications",
+              "label_vi": "GMDSS, thông tin liên lạc hàng hải",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng GMDSS, VHF, MF/HF radio liên lạc trong và ngoài khu vực hàng hải",
+              "esco_hint": "operate GMDSS and maritime communication equipment",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "RADAR & ECDIS Navigation",
+              "label_vi": "RADAR, ECDIS dẫn đường hàng hải",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng RADAR, ARPA, ECDIS hải đồ điện tử dẫn đường tàu biển chính xác",
+              "esco_hint": "use RADAR, ARPA and ECDIS for vessel navigation",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "IMO & SOLAS Compliance",
+              "label_vi": "Tuân thủ IMO, SOLAS, MARPOL",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuân thủ Công ước SOLAS, MARPOL, ISM Code trong quản lý an toàn tàu và môi trường",
+              "esco_hint": "comply with IMO conventions SOLAS, MARPOL and ISM Code",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Vietnam Port State Control",
+              "label_vi": "Kiểm tra tàu, Port State Control VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu quy trình PSC inspection Cục Hàng hải VN, Tokyo MOU phòng bị bắt giữ tàu",
+              "esco_hint": "knowledge of Vietnamese Port State Control inspection procedures",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Emergency & Survival at Sea",
+              "label_vi": "Xử lý khẩn cấp, sinh tồn trên biển",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện diễn tập: từ bỏ tàu, EPIRB, xuồng cứu sinh, chống cháy trên tàu",
+              "esco_hint": "conduct emergency drills and manage abandon ship procedures",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "English Maritime Communication",
+              "label_vi": "Tiếng Anh hàng hải (SMCP)",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng Standard Marine Communication Phrases (SMCP) tiếng Anh trong hàng hải",
+              "esco_hint": "use English Standard Marine Communication Phrases",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Ship Maintenance & Technical",
+              "label_vi": "Bảo dưỡng tàu, kỹ thuật hàng hải",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện bảo dưỡng thiết bị hàng hải, máy móc theo kế hoạch PMS trên tàu",
+              "esco_hint": "maintain vessel equipment according to planned maintenance system",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Watch-keeping Duties",
+              "label_vi": "Canh trực hải hành, cảng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện ca trực hải hành và cảng đúng quy định STCW, ghi nhật ký hàng hải",
+              "esco_hint": "perform navigational and port watch-keeping duties",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn NGO/Phi chính phủ/Phi lợi nhuận",
+      "nghe": "NGO/Phi chính phủ/Phi lợi nhuận",
+      "nhom_nghe": "Nhóm nghề khác",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-ngo-phi-chinh-phu-phi-loi-nhuan",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 12
+          },
+          "skills": [
+            {
+              "label_en": "Programme & Project Management NGO",
+              "label_vi": "Quản lý chương trình, dự án NGO",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập kế hoạch, triển khai, giám sát, đánh giá dự án NGO theo vòng đời dự án",
+              "esco_hint": "manage NGO programmes and projects through full project cycle",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Fundraising & Grant Writing",
+              "label_vi": "Gây quỹ, viết đề xuất tài trợ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nghiên cứu và viết proposal tài trợ cho ODA, EU, USAID, ADB tại VN",
+              "esco_hint": "write grant proposals and fundraise from international donors",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam NGO Legal Framework",
+              "label_vi": "Khung pháp lý NGO tại VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Nghị định 58/2022/NĐ-CP đăng ký tổ chức PCPNN, NĐ 80/2020 tiếp nhận viện trợ nước ngoài tại VN",
+              "esco_hint": "knowledge of Vietnamese NGO registration and foreign aid regulations",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Monitoring Evaluation & Learning",
+              "label_vi": "Giám sát, đánh giá và học hỏi (M&E)",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế khung M&E, thu thập và phân tích dữ liệu, báo cáo tiến độ dự án",
+              "esco_hint": "design and implement monitoring, evaluation and learning systems",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Community Engagement Vietnam",
+              "label_vi": "Gắn kết cộng đồng tại VN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Làm việc với cộng đồng nông thôn, dân tộc thiểu số, người dễ bị tổn thương tại VN",
+              "esco_hint": "engage with Vietnamese rural, ethnic minority and vulnerable communities",
+              "confidence": 0.96,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Donor Reporting & Compliance",
+              "label_vi": "Báo cáo nhà tài trợ, tuân thủ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Viết báo cáo tiến độ, tài chính cho nhà tài trợ đúng format và deadline",
+              "esco_hint": "write progress and financial reports for international donors",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Budget Management NGO",
+              "label_vi": "Quản lý ngân sách dự án NGO",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập, quản lý, kiểm soát ngân sách dự án theo quy định nhà tài trợ và VN",
+              "esco_hint": "manage project budgets according to donor and Vietnamese regulations",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Stakeholder Coordination NGO Vietnam",
+              "label_vi": "Phối hợp đa bên tại VN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phối hợp Sở/Bộ ngành, UBND tỉnh, đối tác địa phương trong triển khai dự án",
+              "esco_hint": "coordinate with Vietnamese government ministries and local partners",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Development Sector Knowledge Vietnam",
+              "label_vi": "Kiến thức ngành phát triển tại VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu bối cảnh phát triển VN: giảm nghèo, y tế, giáo dục, biến đổi khí hậu, giới",
+              "esco_hint": "knowledge of Vietnam development context and sectoral issues",
+              "confidence": 0.95,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "English NGO Professional",
+              "label_vi": "Tiếng Anh NGO chuyên nghiệp",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đọc, viết, thuyết trình bằng tiếng Anh trong môi trường NGO quốc tế thành thạo",
+              "esco_hint": "communicate proficiently in English in international NGO environment",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Participatory Research Methods",
+              "label_vi": "Phương pháp nghiên cứu tham gia",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện PRA, FGD, KII thu thập dữ liệu cộng đồng trong nghiên cứu phát triển",
+              "esco_hint": "apply participatory research methods in community settings",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Gender & Social Inclusion Vietnam",
+              "label_vi": "Giới và hòa nhập xã hội tại VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Áp dụng phân tích giới, đảm bảo hòa nhập xã hội trong thiết kế và triển khai dự án VN",
+              "esco_hint": "apply gender and social inclusion analysis in Vietnamese development projects",
+              "confidence": 0.93,
+              "iviec_flag": "VN_DOMAIN"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn khác",
+      "nghe": "Nghề khác",
+      "nhom_nghe": "Nhóm nghề khác",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Specialist Professional Skills",
+              "label_vi": "Kỹ năng chuyên môn theo lĩnh vực",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện công việc chuyên môn theo lĩnh vực được đào tạo và kinh nghiệm tích lũy",
+              "esco_hint": "apply specialist professional skills in relevant field",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Workplace Law & Safety",
+              "label_vi": "Luật Lao động, ATLĐ VN cơ bản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm cơ bản Bộ luật Lao động 2019, quy định ATLĐ liên quan lĩnh vực làm việc",
+              "esco_hint": "basic knowledge of Vietnamese labour law and workplace safety",
+              "confidence": 0.9,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Problem Solving & Critical Thinking",
+              "label_vi": "Tư duy phân tích, giải quyết vấn đề",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích tình huống, xác định nguyên nhân gốc rễ và đề xuất giải pháp hiệu quả",
+              "esco_hint": "apply critical thinking and problem-solving in work contexts",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Communication & Teamwork",
+              "label_vi": "Giao tiếp và làm việc nhóm",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Giao tiếp rõ ràng, phối hợp tốt với đồng nghiệp, đóng góp vào mục tiêu chung",
+              "esco_hint": "communicate clearly and collaborate effectively in teams",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Digital Literacy",
+              "label_vi": "Kỹ năng số cơ bản",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng thành thạo máy tính, email, Microsoft Office phục vụ công việc hàng ngày",
+              "esco_hint": "use computers, email and office software for daily work tasks",
+              "confidence": 0.91,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Time Management & Adaptability",
+              "label_vi": "Quản lý thời gian, linh hoạt thích nghi",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Ưu tiên công việc hợp lý, hoàn thành đúng deadline, thích nghi môi trường mới",
+              "esco_hint": "manage time effectively and adapt to changing work environments",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Learning Agility",
+              "label_vi": "Khả năng học hỏi nhanh",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Học hỏi kỹ năng, quy trình mới nhanh chóng, chủ động cập nhật kiến thức",
+              "esco_hint": "learn new skills and processes quickly and proactively",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Relevant Qualification",
+              "label_vi": "Bằng/Chứng chỉ chuyên môn liên quan",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng đại học, cao đẳng hoặc chứng chỉ nghề phù hợp với công việc",
+              "esco_hint": "hold relevant academic or vocational qualification",
+              "confidence": 0.86
+            },
+            {
+              "label_en": "Work Ethic & Integrity",
+              "label_vi": "Đạo đức nghề nghiệp, liêm chính",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Làm việc trung thực, trách nhiệm, tuân thủ quy định và đạo đức nghề nghiệp",
+              "esco_hint": "demonstrate professional ethics, integrity and accountability",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "English Basic Workplace",
+              "label_vi": "Tiếng Anh cơ bản công sở",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Đọc tài liệu, email tiếng Anh cơ bản phục vụ công việc nếu cần",
+              "esco_hint": "read basic English documents and emails for work purposes",
+              "confidence": 0.79
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
