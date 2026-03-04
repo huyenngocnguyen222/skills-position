@@ -1,0 +1,2015 @@
+{
+  "taxonomy_metadata": {
+    "sector": "Tài xế",
+    "sector_en": "Drivers & Transport Workers",
+    "version": "v1",
+    "total_positions": 19,
+    "total_skills": 156,
+    "avg_skills_per_position": 8.2,
+    "sub_categories": {
+      "Vận tải": {
+        "positions": 11,
+        "skills": 91
+      },
+      "Đưa đón": {
+        "positions": 8,
+        "skills": 65
+      }
+    },
+    "skill_type_distribution": {
+      "technical": 69,
+      "domain": 25,
+      "tool": 14,
+      "soft": 29,
+      "certification": 17,
+      "language": 2
+    },
+    "requirement_distribution": {
+      "required": 153,
+      "preferred": 3
+    },
+    "iviec_flags": {
+      "VN_REGULATION": 38,
+      "VN_TOOL": 15,
+      "VN_DOMAIN": 8
+    },
+    "data_sources": [
+      "topcv.vn",
+      "vietnamworks.com"
+    ],
+    "extraction_method": "structured_prompt_5jd_per_position",
+    "rows_covered": "1031–1049",
+    "notes": [
+      "Covers rows 1031–1049 (19 positions across 2 sub-categories)",
+      "VN_REGULATION — highest certification density of all sectors: Luật GTĐB 2008/2024 + Nghị định 10/2020/NĐ-CP kinh doanh vận tải (bắt buộc toàn bộ tài xế), bằng lái xe các hạng B1/B2/C/D/E/FC bắt buộc tương ứng phương tiện, chứng chỉ vận hành xe nâng Bộ LĐTBXH bắt buộc, Luật ATLĐ 2015 + QCVN bốc xếp/xe nâng, Nghị định 100/2019 xử phạt uống rượu bia lái xe (NĐ zero-tolerance), quy định tải trọng cầu đường + giấy phép lưu hành xe quá khổ, NĐ 42/2020 vận chuyển vật liệu nổ/hóa chất nguy hiểm, thủ tục cảng/hải quan xe container, Thông tư 25/2023/TT-BGDĐT xe đưa đón học sinh, thiết bị giám sát hành trình GPS bắt buộc NĐ 10/2020",
+      "VN_TOOL: Thiết bị GPS/giám sát hành trình bắt buộc (NĐ 10/2020), Google Maps/Waze dẫn đường, phần mềm TMS quản lý đội xe, app Grab/Be/Gojek xe công nghệ, app taxi Vinasun/Mai Linh, máy quét mã vạch WMS kho hàng, Excel báo cáo KPI vận tải, xe pallet/hand trolley",
+      "VN_DOMAIN: Thuộc đường nội đô Hà Nội/TP.HCM (tài xế taxi, văn phòng, B2), thuộc tuyến cố định xe đưa đón, địa điểm VIP (nhà hàng 5 sao, golf club, đại sứ quán), cảng Cát Lái/Hải Phòng/Cái Mép quy trình cảng, mạng lưới quốc lộ/cao tốc/BOT toàn quốc, thị trường lao động vận tải VN",
+      "Sector unique: Highest VN_CERTIFICATION density across all sectors — virtually EVERY position requires a specific government-issued licence (bằng lái xe by category, chứng chỉ xe nâng); NĐ 100/2019 zero-tolerance drink-driving law (0mg/100ml blood alcohol) flagged explicitly for driver positions; GPS tracking device mandatory under NĐ 10/2020 flagged as VN_TOOL across commercial vehicle roles; 'Lái xe cho sếp' uniquely flags VIP location knowledge and absolute confidentiality as core competencies"
+    ]
+  },
+  "positions": [
+    {
+      "vi_tri": "Giám sát/Điều phối vận tải",
+      "nghe": "Vận tải",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-giam-sat-dieu-phoi-van-tai",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Transport Dispatch & Coordination",
+              "label_vi": "Điều phối, giám sát vận tải",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lên kế hoạch, phân công lịch chạy xe, điều phối lái xe và phương tiện vận tải",
+              "esco_hint": "plan routes, assign drivers and coordinate transport operations",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Fleet Management",
+              "label_vi": "Quản lý đội xe",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý đội xe: theo dõi tình trạng phương tiện, lịch bảo dưỡng, đăng kiểm",
+              "esco_hint": "manage vehicle fleet including maintenance and inspection schedules",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Road Transport Law",
+              "label_vi": "Luật Giao thông đường bộ VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Giao thông đường bộ 2008/2024, quy định tải trọng, giờ lái xe, tuyến đường",
+              "esco_hint": "knowledge of Vietnamese road transport law and regulations",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "GPS & Transport Tracking Software",
+              "label_vi": "Phần mềm GPS, quản lý vận tải",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng hệ thống GPS, phần mềm TMS theo dõi lộ trình, vị trí xe thời gian thực",
+              "esco_hint": "use GPS and transport management software for fleet tracking",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Driver Management",
+              "label_vi": "Quản lý lái xe, nhân sự vận tải",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý lái xe: chấm công, giám sát tuân thủ luật giao thông, xử lý vi phạm",
+              "esco_hint": "manage drivers and ensure traffic law compliance",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Cost Control Transport",
+              "label_vi": "Kiểm soát chi phí vận tải",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm soát chi phí nhiên liệu, phụ tùng, phạt vi phạm; tối ưu chi phí vận hành",
+              "esco_hint": "control transport operating costs and optimise fuel efficiency",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Incident & Accident Management",
+              "label_vi": "Xử lý sự cố, tai nạn vận tải",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xử lý nhanh sự cố tai nạn giao thông, hỏng xe, trì hoãn vận chuyển",
+              "esco_hint": "handle transport incidents, accidents and delays",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Route Planning & Optimisation",
+              "label_vi": "Lập kế hoạch tuyến đường tối ưu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập và tối ưu tuyến đường giao hàng đảm bảo đúng giờ và tiết kiệm nhiên liệu",
+              "esco_hint": "plan and optimise delivery routes for efficiency",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Logistics Documentation",
+              "label_vi": "Quản lý chứng từ vận tải",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý chứng từ: vận đơn, lệnh giao hàng, phiếu xuất kho theo quy định",
+              "esco_hint": "manage transport documentation and delivery records",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Excel Transport Reporting",
+              "label_vi": "Excel báo cáo vận tải",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Excel lập báo cáo KPI đội xe: chuyến, km, nhiên liệu, chi phí định kỳ",
+              "esco_hint": "use Excel for transport KPI reporting",
+              "confidence": 0.89,
+              "iviec_flag": "VN_TOOL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Phân loại/Sắp xếp hàng hóa",
+      "nghe": "Vận tải",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-phan-loai-sap-xep-hang-hoa",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Goods Sorting & Classification",
+              "label_vi": "Phân loại, sắp xếp hàng hóa",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân loại hàng hóa theo mã, chủng loại, tuyến giao hàng chính xác và nhanh",
+              "esco_hint": "sort and classify goods by code, type and delivery route",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Warehouse Goods Arrangement",
+              "label_vi": "Sắp xếp hàng trong kho",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sắp xếp hàng hóa trong kho khoa học, đúng vị trí, dễ lấy và an toàn",
+              "esco_hint": "arrange goods in warehouse systematically and safely",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Goods Labelling Standards",
+              "label_vi": "Tiêu chuẩn nhãn hiệu hàng hóa VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nhận biết nhãn mác, mã vạch, QR code hàng hóa theo tiêu chuẩn VN",
+              "esco_hint": "read Vietnamese goods labelling and barcode standards",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Barcode Scanner & WMS Basic",
+              "label_vi": "Máy quét mã vạch, WMS cơ bản",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng máy quét mã vạch, thiết bị cầm tay nhập liệu hàng hóa vào hệ thống",
+              "esco_hint": "use barcode scanners and basic WMS for goods recording",
+              "confidence": 0.9,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Goods Damage Prevention",
+              "label_vi": "Phòng ngừa hư hỏng hàng hóa",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sắp xếp, di chuyển hàng hóa tránh đổ vỡ, hư hỏng; nhận biết hàng dễ vỡ",
+              "esco_hint": "handle goods carefully to prevent damage",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Physical Stamina Sorting",
+              "label_vi": "Thể lực phân loại hàng hóa",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thể lực tốt, chịu đựng công việc đứng lâu, bưng bê liên tục trong kho",
+              "esco_hint": "maintain physical stamina for sustained sorting work",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Accuracy & Speed Sorting",
+              "label_vi": "Độ chính xác và tốc độ phân loại",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân loại nhanh và chính xác theo mã hàng, tránh nhầm lẫn giao hàng sai địa chỉ",
+              "esco_hint": "sort goods quickly and accurately to prevent delivery errors",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Team Coordination Warehouse",
+              "label_vi": "Phối hợp nhóm trong kho",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối hợp nhịp nhàng với đồng nghiệp trong ca làm việc đông người",
+              "esco_hint": "coordinate effectively with warehouse team during peak periods",
+              "confidence": 0.92
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Công nhân bốc xếp hàng hóa",
+      "nghe": "Vận tải",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-cong-nhan-boc-xep-hang-hoa",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Manual Loading & Unloading",
+              "label_vi": "Bốc xếp hàng hóa thủ công",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bốc xếp, chuyển hàng hóa lên xuống xe tải, container bằng tay và thiết bị hỗ trợ",
+              "esco_hint": "load and unload goods from trucks and containers",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Safe Lifting Techniques",
+              "label_vi": "Kỹ thuật nâng vật nặng an toàn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Áp dụng kỹ thuật nâng đúng: đầu gối, lưng thẳng tránh chấn thương cột sống",
+              "esco_hint": "apply safe manual handling and lifting techniques",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Occupational Safety Warehouse",
+              "label_vi": "ATLĐ bốc xếp hàng hóa VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuân thủ Luật ATLĐ 2015, quy định an toàn bốc xếp hàng trong kho vận tải",
+              "esco_hint": "comply with Vietnamese occupational safety regulations for loading",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "PPE Usage Loading",
+              "label_vi": "Sử dụng PPE bốc xếp",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đeo đầy đủ PPE: găng tay, giày bảo hộ, mũ bảo hộ khi bốc xếp hàng hóa",
+              "esco_hint": "use appropriate PPE for loading and unloading work",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Goods Counting & Verification",
+              "label_vi": "Đếm, kiểm tra hàng hóa khi bốc xếp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đếm, đối chiếu số lượng hàng hóa với chứng từ khi bốc xếp lên/xuống xe",
+              "esco_hint": "count and verify goods against documentation",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Pallet Jack & Hand Trolley",
+              "label_vi": "Xe pallet, xe đẩy hàng",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Vận hành xe nâng pallet tay, xe đẩy hàng để di chuyển kiện hàng nặng",
+              "esco_hint": "operate pallet jacks and hand trolleys for heavy goods",
+              "confidence": 0.89,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Physical Strength & Endurance",
+              "label_vi": "Sức khỏe, thể lực bốc xếp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thể lực và sức khỏe tốt, chịu đựng công việc nặng nhọc trong môi trường kho",
+              "esco_hint": "maintain physical strength for heavy manual loading work",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Teamwork Loading Crew",
+              "label_vi": "Làm việc nhóm trong tổ bốc xếp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phối hợp với tổ bốc xếp hiệu quả, an toàn và nhanh chóng",
+              "esco_hint": "work effectively as part of a loading team",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tài xế lái xe nâng",
+      "nghe": "Vận tải",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tai-xe-lai-xe-nang",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Forklift Operation",
+              "label_vi": "Vận hành xe nâng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vận hành xe nâng điện, xe nâng dầu trong kho an toàn và chính xác",
+              "esco_hint": "operate electric and diesel forklifts safely in warehouse",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Forklift Licence",
+              "label_vi": "Chứng chỉ lái xe nâng VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ vận hành xe nâng hàng do Bộ LĐTBXH/Sở LĐTBXH cấp theo quy định",
+              "esco_hint": "hold Vietnamese forklift operator certificate from MoLISA",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Pallet & Rack Loading",
+              "label_vi": "Xếp hàng pallet, kệ kho",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xếp, lấy hàng trên kệ cao đúng vị trí, an toàn và không làm hỏng hàng",
+              "esco_hint": "stack and retrieve pallets on racking systems safely",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Forklift Pre-operation Inspection",
+              "label_vi": "Kiểm tra xe nâng trước ca",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm tra xe nâng trước khi sử dụng: dầu, pin, lốp, phanh, càng nâng",
+              "esco_hint": "conduct pre-operation forklift inspection checklist",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam Forklift Safety Regulations",
+              "label_vi": "Quy định ATLĐ xe nâng VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuân thủ Luật ATLĐ 2015, QCVN xe nâng hàng, quy định vùng an toàn kho",
+              "esco_hint": "comply with Vietnamese forklift safety regulations",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Warehouse Layout Knowledge",
+              "label_vi": "Am hiểu sơ đồ, bố trí kho",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu bố trí kho, vị trí hàng hóa, lối đi xe nâng an toàn",
+              "esco_hint": "understand warehouse layout and forklift traffic routes",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Load Capacity Awareness",
+              "label_vi": "Nhận thức tải trọng xe nâng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nhận biết và tuân thủ tải trọng tối đa của xe nâng với từng loại hàng",
+              "esco_hint": "respect forklift load capacity limits for different cargo",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Forklift Maintenance Basic",
+              "label_vi": "Bảo dưỡng xe nâng cơ bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện bảo dưỡng cơ bản xe nâng: sạc pin, tra dầu, kiểm tra bộ phận",
+              "esco_hint": "perform basic forklift maintenance and charging",
+              "confidence": 0.89
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tài xế xe tải",
+      "nghe": "Vận tải",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tai-xe-xe-tai",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Truck Driving Skills",
+              "label_vi": "Lái xe tải chuyên nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lái xe tải các loại tải trọng an toàn, đúng luật trong đô thị và đường dài",
+              "esco_hint": "drive trucks of various tonnages safely in urban and highway conditions",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Truck Driving Licence",
+              "label_vi": "Bằng lái xe tải VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái xe hạng C, D, E theo quy định Luật Giao thông đường bộ VN",
+              "esco_hint": "hold Vietnamese truck driving licence category C, D or E",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Vietnam Road Traffic Law Truck",
+              "label_vi": "Luật Giao thông đường bộ VN tài xế",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật GTĐB 2008/2024, biển báo, tải trọng đường, giờ cấm tải VN",
+              "esco_hint": "knowledge of Vietnamese road traffic law for truck drivers",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Route Navigation",
+              "label_vi": "Nhớ đường, định hướng lộ trình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nhớ đường, sử dụng bản đồ/GPS chọn lộ trình hợp lý, tránh đường cấm tải",
+              "esco_hint": "navigate routes using maps and GPS efficiently",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Cargo Securing & Tarpaulin",
+              "label_vi": "Chằng buộc, che phủ hàng hóa",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Chằng buộc, che phủ hàng hóa đúng kỹ thuật đảm bảo an toàn khi vận chuyển",
+              "esco_hint": "secure and cover cargo safely for transportation",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vehicle Pre-trip Inspection Truck",
+              "label_vi": "Kiểm tra xe tải trước mỗi chuyến",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm tra kỹ thuật trước chuyến: dầu, nước, lốp, phanh, đèn, còi xe tải",
+              "esco_hint": "conduct pre-trip vehicle inspection for trucks",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Defensive Driving Truck",
+              "label_vi": "Lái xe an toàn, phòng thủ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Áp dụng kỹ thuật lái xe phòng thủ: giữ khoảng cách, kiểm soát tốc độ, tránh điểm mù",
+              "esco_hint": "apply defensive driving techniques for trucks",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Delivery Documentation Truck",
+              "label_vi": "Chứng từ giao nhận hàng xe tải",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý vận đơn, phiếu giao hàng, biên bản giao nhận đúng quy trình",
+              "esco_hint": "process delivery documentation accurately",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Vietnam Truck Weight & Dimension Regulations",
+              "label_vi": "Quy định tải trọng, kích thước xe tải VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm quy định tải trọng cầu đường, kích thước xe, thủ tục cấp phép lưu hành xe quá khổ",
+              "esco_hint": "knowledge of Vietnamese truck weight and dimension regulations",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tài xế container",
+      "nghe": "Vận tải",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tai-xe-container",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Container Truck Driving",
+              "label_vi": "Lái xe container đầu kéo",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lái xe đầu kéo container 20', 40' an toàn trên đường bộ và trong cảng",
+              "esco_hint": "drive container semi-trailers safely on road and in port",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Container Truck Licence",
+              "label_vi": "Bằng lái xe container FC/FB VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái xe hạng FC (kéo moóc) theo Luật GTĐB VN, kinh nghiệm lái container",
+              "esco_hint": "hold Vietnamese haulage licence FC for container trucks",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Port & Terminal Operations",
+              "label_vi": "Vận hành trong cảng, terminal",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vào cảng, nhận container, xếp hàng đúng quy trình cảng: Cát Lái, Hải Phòng, Cái Mép",
+              "esco_hint": "operate in Vietnamese ports following port procedures",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Container Handling & Twist Locks",
+              "label_vi": "Móc khóa container, twist lock",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lắp, tháo twist lock, kiểm tra container trước khi kéo đảm bảo an toàn",
+              "esco_hint": "attach and check twist locks and container securing",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Port & Customs Procedures",
+              "label_vi": "Thủ tục cảng, hải quan xe container",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu thủ tục cảng, lệnh xuất/nhập container, làm việc với hải quan VN",
+              "esco_hint": "knowledge of Vietnamese port entry and customs procedures",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Oversize & Hazmat Transport",
+              "label_vi": "Vận chuyển hàng quá khổ, hàng nguy hiểm",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu quy định vận chuyển hàng quá khổ, hàng nguy hiểm IMDG trên đường bộ VN",
+              "esco_hint": "knowledge of oversized and hazardous goods transport regulations",
+              "confidence": 0.87,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Night & Long-distance Driving Container",
+              "label_vi": "Lái đêm, đường dài container",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lái xe đêm và đường dài an toàn: quản lý mệt mỏi, thời gian nghỉ đúng quy định",
+              "esco_hint": "drive safely at night and on long-distance routes",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "GPS & Electronic Logging Device",
+              "label_vi": "GPS, thiết bị giám sát hành trình",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng thiết bị giám sát hành trình GPS bắt buộc theo NĐ 10/2020 tại VN",
+              "esco_hint": "use mandatory GPS tracking devices under Vietnamese Decree 10/2020",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Clean Driving Record Container",
+              "label_vi": "Giấy tờ, lý lịch lái xe sạch",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Không vi phạm nghiêm trọng luật giao thông, giấy phép lái xe còn hiệu lực",
+              "esco_hint": "maintain clean driving record and valid licence",
+              "confidence": 0.96
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tài xế lái xe đường dài",
+      "nghe": "Vận tải",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tai-xe-lai-xe-duong-dai",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Long-distance Truck Driving",
+              "label_vi": "Lái xe đường dài",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lái xe tải/xe khách đường dài liên tỉnh, liên vùng Bắc-Trung-Nam an toàn",
+              "esco_hint": "drive long-distance routes across Vietnamese provinces",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Long-haul Driving Licence",
+              "label_vi": "Bằng lái phù hợp lái xe đường dài VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái C/D/E/FC phù hợp loại xe, còn hiệu lực, không bị treo bằng",
+              "esco_hint": "hold appropriate Vietnamese driving licence for vehicle type",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Fatigue Management Long-haul",
+              "label_vi": "Quản lý mệt mỏi lái xe đường dài",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuân thủ thời gian lái xe tối đa, nghỉ ngơi đúng quy định NĐ 10/2020 giám sát hành trình",
+              "esco_hint": "manage fatigue and comply with Vietnamese driving time regulations",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Vietnam National Road Network",
+              "label_vi": "Am hiểu mạng lưới đường bộ VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu hệ thống quốc lộ, cao tốc, đường tỉnh lộ toàn quốc, trạm nghỉ, trạm BOT",
+              "esco_hint": "knowledge of Vietnamese national road network and toll stations",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Night Driving Safety",
+              "label_vi": "Lái xe ban đêm an toàn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kỹ thuật lái xe đêm: đèn pha, giảm tốc, nhận biết nguy hiểm trong điều kiện tối",
+              "esco_hint": "drive safely at night with correct use of lights",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "GPS Navigation Long-haul",
+              "label_vi": "GPS dẫn đường đường dài",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng GPS/bản đồ số dẫn đường đường dài, tránh đường cấm, kẹt xe",
+              "esco_hint": "use GPS navigation for long-distance routing",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vehicle Maintenance Awareness Long-haul",
+              "label_vi": "Nhận biết sự cố kỹ thuật xe đường dài",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nhận biết sớm tiếng ồn, rung lắc bất thường báo hiệu sự cố kỹ thuật xe",
+              "esco_hint": "detect early signs of vehicle mechanical issues",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Schedule Adherence Long-haul",
+              "label_vi": "Đúng giờ, kỷ luật chuyến đường dài",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuân thủ lịch trình giao hàng, thông báo kịp thời khi bị trì hoãn",
+              "esco_hint": "adhere to delivery schedules and communicate delays promptly",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tài xế lái xe chuyên dụng",
+      "nghe": "Vận tải",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tai-xe-lai-xe-chuyen-dung",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Specialist Vehicle Operation",
+              "label_vi": "Vận hành xe chuyên dụng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vận hành xe chuyên dụng: xe bồn, xe cẩu, xe trộn bê tông, xe hút bể phốt",
+              "esco_hint": "operate specialist vehicles such as tankers, cranes or concrete mixers",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Specialist Vehicle Licence",
+              "label_vi": "Bằng lái xe chuyên dụng VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái phù hợp loại xe chuyên dụng + chứng chỉ vận hành thiết bị chuyên ngành",
+              "esco_hint": "hold Vietnamese specialist vehicle driving licence and equipment certificate",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Specialist Equipment Operation",
+              "label_vi": "Vận hành thiết bị gắn trên xe chuyên dụng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vận hành thiết bị chuyên dụng: cần cẩu, bơm hút, thùng bồn, máy trộn",
+              "esco_hint": "operate specialist equipment mounted on vehicles",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Hazmat & Special Cargo Regulations",
+              "label_vi": "Quy định vận chuyển hàng đặc biệt VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm quy định vận chuyển chất nguy hiểm, hàng đặc biệt: NĐ 42/2020 vật liệu nổ, hóa chất",
+              "esco_hint": "knowledge of Vietnamese hazardous and special cargo transport regulations",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Pre-operation Specialist Vehicle Inspection",
+              "label_vi": "Kiểm tra xe chuyên dụng trước vận hành",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm tra toàn bộ hệ thống xe + thiết bị chuyên dụng trước mỗi ca làm việc",
+              "esco_hint": "conduct thorough pre-operation inspection of specialist vehicles",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Site Navigation Specialist Vehicle",
+              "label_vi": "Di chuyển xe chuyên dụng vào công trường",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lái xe chuyên dụng vào công trường, nhà máy, khu vực hạn chế an toàn",
+              "esco_hint": "manoeuvre specialist vehicles in construction sites and restricted areas",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Emergency Response Specialist Vehicle",
+              "label_vi": "Xử lý sự cố xe chuyên dụng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý sự cố: tràn đổ hóa chất, sự cố thiết bị, tai nạn xe chuyên dụng",
+              "esco_hint": "respond to specialist vehicle incidents and equipment failures",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Physical Fitness Specialist Driver",
+              "label_vi": "Thể lực tài xế xe chuyên dụng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sức khỏe tốt, thể lực đủ vận hành xe chuyên dụng nặng và thiết bị đi kèm",
+              "esco_hint": "maintain physical fitness for specialist vehicle and equipment operation",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tài xế xe khách",
+      "nghe": "Vận tải",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tai-xe-xe-khach",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Passenger Bus Driving",
+              "label_vi": "Lái xe khách chuyên nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lái xe khách các loại: xe 16-45 chỗ liên tỉnh, nội tỉnh an toàn và đúng giờ",
+              "esco_hint": "drive passenger buses safely on intercity and local routes",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Passenger Vehicle Licence",
+              "label_vi": "Bằng lái xe khách hạng D/E VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái xe hạng D (xe 10-30 chỗ) hoặc E (trên 30 chỗ) theo Luật GTĐB VN",
+              "esco_hint": "hold Vietnamese bus driving licence category D or E",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Vietnam Passenger Transport Law",
+              "label_vi": "Luật kinh doanh vận tải hành khách VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Nghị định 10/2020/NĐ-CP kinh doanh vận tải hành khách, quy định tuyến cố định",
+              "esco_hint": "knowledge of Vietnamese passenger transport business regulations",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Passenger Safety & Service",
+              "label_vi": "An toàn hành khách, phục vụ khách",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo an toàn hành khách: lên xuống xe, bảo quản hành lý, thông báo lộ trình",
+              "esco_hint": "ensure passenger safety and provide good service",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "GPS Tracking Passenger Bus",
+              "label_vi": "GPS giám sát hành trình xe khách",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng thiết bị giám sát hành trình GPS bắt buộc, tuân thủ tốc độ và tuyến đường",
+              "esco_hint": "use mandatory GPS tracking on passenger vehicles",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Schedule Adherence Bus",
+              "label_vi": "Tuân thủ lịch chạy xe khách",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xuất bến đúng giờ, đón/trả khách đúng điểm dừng theo biểu đồ chạy xe",
+              "esco_hint": "adhere to bus timetable and designated stops",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Emergency Evacuation Bus",
+              "label_vi": "Xử lý tình huống khẩn cấp xe khách",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý khẩn cấp trên xe khách: sơ cứu, sơ tán hành khách, báo cứu hộ",
+              "esco_hint": "handle bus emergencies including passenger evacuation",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Customer Service Passenger Driver",
+              "label_vi": "Thái độ phục vụ hành khách",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thái độ lịch sự, kiên nhẫn với hành khách đa dạng, giải quyết phàn nàn chuyên nghiệp",
+              "esco_hint": "demonstrate courteous and professional passenger service",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Phụ xe",
+      "nghe": "Vận tải",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-phu-xe",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Vehicle Assistant Duties",
+              "label_vi": "Công việc phụ xe",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hỗ trợ lái xe: thu tiền vé, bán vé, hướng dẫn hành khách lên xuống xe an toàn",
+              "esco_hint": "perform vehicle assistant duties including ticketing and passenger guidance",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Ticket Collection & Cash Handling",
+              "label_vi": "Thu tiền vé, quản lý tiền mặt",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thu tiền vé, đếm tiền chính xác, xuất vé, quyết toán cuối ca với lái xe",
+              "esco_hint": "collect fares, issue tickets and reconcile cash",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Passenger Boarding Assistance",
+              "label_vi": "Hỗ trợ hành khách lên xuống xe",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hỗ trợ hành khách cao tuổi, trẻ em, người mang nhiều hành lý lên xuống xe an toàn",
+              "esco_hint": "assist passengers boarding and alighting safely",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Luggage Handling Bus",
+              "label_vi": "Sắp xếp hành lý trên xe khách",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xếp hành lý gọn gàng trong khoang, đảm bảo an toàn và dễ lấy khi đến bến",
+              "esco_hint": "arrange and secure luggage in bus compartments",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Route & Stop Knowledge",
+              "label_vi": "Am hiểu tuyến đường, điểm dừng",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm rõ các điểm dừng, trạm, địa danh dọc tuyến để thông báo cho hành khách",
+              "esco_hint": "know all stops and landmarks along the route",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Vietnam Passenger Transport Rules Conductor",
+              "label_vi": "Quy định phụ xe VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm NĐ 10/2020 quy định trách nhiệm phụ xe/nhân viên phục vụ xe khách",
+              "esco_hint": "knowledge of Vietnamese conductor duties and regulations",
+              "confidence": 0.91,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Communication & Courtesy Conductor",
+              "label_vi": "Giao tiếp, lịch sự với hành khách",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Giao tiếp thân thiện, trả lời thắc mắc hành khách, xử lý tình huống trên xe",
+              "esco_hint": "communicate courteously with passengers and handle issues",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Physical Stamina Conductor",
+              "label_vi": "Thể lực phụ xe",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thể lực tốt: đứng lâu, bưng hành lý, làm việc trong điều kiện nóng bức trên xe",
+              "esco_hint": "maintain physical stamina for demanding bus conductor work",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Dịch vụ vận tải khác",
+      "nghe": "Vận tải",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-dich-vu-van-tai-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 7
+          },
+          "skills": [
+            {
+              "label_en": "Transport Services Operation",
+              "label_vi": "Vận hành dịch vụ vận tải",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện dịch vụ vận tải theo chuyên môn: lái xe, điều phối, hỗ trợ vận chuyển",
+              "esco_hint": "operate transport services in relevant capacity",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Road Transport Regulations Basic",
+              "label_vi": "Luật Giao thông đường bộ VN cơ bản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm cơ bản Luật GTĐB 2008/2024, quy định an toàn giao thông",
+              "esco_hint": "basic knowledge of Vietnamese road transport law",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Relevant Driving Licence Vietnam",
+              "label_vi": "Bằng lái xe phù hợp VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái xe phù hợp loại phương tiện theo Luật GTĐB VN còn hiệu lực",
+              "esco_hint": "hold valid Vietnamese driving licence appropriate to vehicle",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Safe Driving Practices",
+              "label_vi": "Thực hành lái xe an toàn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lái xe an toàn: tuân thủ tốc độ, không uống rượu bia, giữ khoảng cách",
+              "esco_hint": "practise safe driving and comply with traffic regulations",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "GPS & Navigation Basic",
+              "label_vi": "GPS, định hướng cơ bản",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng GPS, Google Maps định hướng đường đi phù hợp",
+              "esco_hint": "use GPS and maps for basic navigation",
+              "confidence": 0.9,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Cargo or Passenger Responsibility",
+              "label_vi": "Trách nhiệm hàng hóa/hành khách",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Có trách nhiệm cao với hàng hóa hoặc hành khách được giao phó vận chuyển",
+              "esco_hint": "take responsibility for goods or passengers in transport",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Physical Health Driver",
+              "label_vi": "Sức khỏe tốt tài xế",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sức khỏe thể chất tốt, không bệnh lý ảnh hưởng khả năng lái xe",
+              "esco_hint": "maintain good physical health for driving duties",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tài xế công nghệ",
+      "nghe": "Đưa đón",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tai-xe-cong-nghe",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Ride-hailing App Operation",
+              "label_vi": "Vận hành ứng dụng gọi xe công nghệ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nhận và hoàn thành chuyến đi qua app Grab, Be, Gojek thành thạo và nhanh",
+              "esco_hint": "operate ride-hailing apps to accept and complete trips",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam B1/B2 Driving Licence",
+              "label_vi": "Bằng lái xe B1/B2 VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái xe B1 hoặc B2 theo Luật GTĐB VN còn hiệu lực, không bị treo bằng",
+              "esco_hint": "hold valid Vietnamese driving licence B1 or B2",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Vietnam Ride-hailing Regulations",
+              "label_vi": "Quy định xe công nghệ VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm NĐ 10/2020/NĐ-CP kinh doanh vận tải, quy định Bộ GTVT về xe công nghệ",
+              "esco_hint": "knowledge of Vietnamese ride-hailing and transport regulations",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Urban Navigation & Traffic",
+              "label_vi": "Thuộc đường đô thị, giao thông",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thuộc đường phố, ngõ hẻm TP.HCM hoặc Hà Nội, tránh kẹt xe chủ động",
+              "esco_hint": "navigate urban streets and avoid traffic congestion",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Vehicle Cleanliness & Maintenance",
+              "label_vi": "Vệ sinh, bảo dưỡng xe cá nhân",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì xe sạch sẽ, thơm tho, bảo dưỡng định kỳ đạt tiêu chuẩn nền tảng",
+              "esco_hint": "maintain vehicle cleanliness and regular servicing",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Customer Rating Management",
+              "label_vi": "Quản lý rating, đánh giá khách hàng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì rating cao: thái độ thân thiện, đúng giờ, không từ chối chuyến vô lý",
+              "esco_hint": "maintain high passenger ratings through service quality",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Passenger Safety Ridehailing",
+              "label_vi": "An toàn hành khách xe công nghệ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lái xe an toàn, không điện thoại khi lái, xác nhận đúng hành khách trước khởi hành",
+              "esco_hint": "ensure passenger safety throughout ride-hailing trips",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vehicle Registration Tech Driver",
+              "label_vi": "Đăng ký xe, hồ sơ tài xế công nghệ",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Xe đăng ký đúng tên, bảo hiểm xe máy/ô tô đúng hạn, hồ sơ tài xế hợp lệ",
+              "esco_hint": "register vehicle and maintain valid insurance for ride-hailing",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Smartphone & App Proficiency",
+              "label_vi": "Thành thạo smartphone, ứng dụng",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng thành thạo smartphone, app gọi xe, Google Maps không cần hỗ trợ",
+              "esco_hint": "use smartphone and ride-hailing apps proficiently",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tài xế taxi",
+      "nghe": "Đưa đón",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tai-xe-taxi",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Taxi Driving Professional",
+              "label_vi": "Lái taxi chuyên nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lái taxi phục vụ khách: đón theo điện thoại, app, vẫy xe an toàn và đúng luật",
+              "esco_hint": "drive taxis professionally to serve passengers",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Taxi Licence B2",
+              "label_vi": "Bằng lái xe B2 tài xế taxi VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái B2 còn hiệu lực, sức khỏe đủ tiêu chuẩn lái xe theo NĐ 10/2020",
+              "esco_hint": "hold valid Vietnamese B2 driving licence for taxi driving",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Vietnam Taxi Transport Regulations",
+              "label_vi": "Quy định kinh doanh taxi VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm NĐ 10/2020 kinh doanh vận tải taxi, quy định đồng hồ tính tiền, nhận dạng xe",
+              "esco_hint": "knowledge of Vietnamese taxi business regulations",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Taxi Meter & App Operation",
+              "label_vi": "Vận hành đồng hồ tính tiền, app taxi",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng đồng hồ tính tiền đúng quy định, nhận chuyến qua app taxi: Vinasun, Mai Linh",
+              "esco_hint": "operate taxi meters and company dispatch apps",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Hanoi & HCMC Urban Knowledge",
+              "label_vi": "Thuộc đường Hà Nội/TP.HCM và các tỉnh",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thuộc đường thành phố, khu công nghiệp, sân bay, bệnh viện, bến xe lớn",
+              "esco_hint": "know urban street network including airports and key destinations",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Professional Passenger Service Taxi",
+              "label_vi": "Phục vụ hành khách chuyên nghiệp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thái độ niềm nở, không cò kéo, không đi vòng, trả lại đồ thất lạc",
+              "esco_hint": "provide honest and professional taxi passenger service",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Shift Work Taxi",
+              "label_vi": "Làm ca taxi, giờ cao điểm",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sẵn sàng làm ca đêm, cuối tuần, lễ Tết đáp ứng nhu cầu dịch vụ taxi",
+              "esco_hint": "work flexible shifts including nights, weekends and holidays",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Vehicle Condition Taxi",
+              "label_vi": "Duy trì tình trạng xe taxi",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm tra và duy trì xe taxi sạch sẽ, máy lạnh hoạt động tốt, không hỏng hóc",
+              "esco_hint": "maintain taxi vehicle in clean and good working condition",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tài xế lái xe thuê",
+      "nghe": "Đưa đón",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tai-xe-lai-xe-thue",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Chauffeur & Hire Car Driving",
+              "label_vi": "Lái xe thuê theo yêu cầu khách hàng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lái xe thuê theo lịch: sân bay, du lịch, sự kiện, công tác cho khách cá nhân và doanh nghiệp",
+              "esco_hint": "drive hire cars for airport transfers, tourism and business trips",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Hire Car Licence",
+              "label_vi": "Bằng lái xe thuê VN (B2/C)",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái B2 hoặc C phù hợp loại xe thuê, kinh nghiệm lái xe thuê có hợp đồng",
+              "esco_hint": "hold Vietnamese driving licence B2 or C for hire car service",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Route Planning Hire Car",
+              "label_vi": "Lập kế hoạch lộ trình xe thuê",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập lộ trình tối ưu theo yêu cầu khách: sân bay, điểm du lịch, cuộc họp",
+              "esco_hint": "plan optimal routes for hire car clients",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Customer Service Hire Car",
+              "label_vi": "Phục vụ khách thuê xe cao cấp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thái độ lịch sự, chủ động hỗ trợ hành lý, mở cửa xe, giữ im lặng khi khách cần",
+              "esco_hint": "provide premium customer service for hire car clients",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vehicle Maintenance Hire Car",
+              "label_vi": "Bảo dưỡng xe thuê",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đảm bảo xe thuê sạch bóng, bảo dưỡng đúng hạn, không có sự cố kỹ thuật",
+              "esco_hint": "ensure hire car is immaculate and mechanically sound",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Discretion & Confidentiality Driver",
+              "label_vi": "Kín đáo, bảo mật thông tin khách thuê xe",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bảo mật tuyệt đối thông tin lịch trình, cuộc trò chuyện và đời tư khách hàng",
+              "esco_hint": "maintain strict discretion and confidentiality for clients",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "English Hire Car Communication",
+              "label_vi": "Tiếng Anh giao tiếp xe thuê",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp cơ bản tiếng Anh với khách nước ngoài thuê xe",
+              "esco_hint": "communicate in basic English with foreign hire car clients",
+              "confidence": 0.84
+            },
+            {
+              "label_en": "GPS & Map App Navigation",
+              "label_vi": "GPS, bản đồ dẫn đường xe thuê",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng Google Maps, Waze hoặc GPS dẫn đường chính xác, chọn đường tối ưu",
+              "esco_hint": "use GPS and mapping apps for accurate navigation",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tài xế lái xe văn phòng",
+      "nghe": "Đưa đón",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tai-xe-lai-xe-van-phong",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Office Driver Duties",
+              "label_vi": "Nhiệm vụ tài xế văn phòng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đưa đón ban lãnh đạo, nhân viên, đối tác theo lịch công tác văn phòng",
+              "esco_hint": "drive executives, staff and partners on office schedules",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam B2 Office Driver Licence",
+              "label_vi": "Bằng lái B2 tài xế văn phòng VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái B2 còn hiệu lực, không vi phạm nghiêm trọng, lý lịch sạch",
+              "esco_hint": "hold valid Vietnamese B2 driving licence with clean record",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Executive Scheduling Support",
+              "label_vi": "Hỗ trợ lịch công tác lãnh đạo",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Theo dõi, cập nhật lịch công tác lãnh đạo, chủ động chuẩn bị xe đúng giờ",
+              "esco_hint": "follow and anticipate executive travel schedules",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Hanoi HCMC City Knowledge Office Driver",
+              "label_vi": "Thuộc đường nội đô tài xế văn phòng",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thuộc đường nội đô, biết các tuyến đường tránh ùn tắc, địa điểm cơ quan thường đến",
+              "esco_hint": "navigate city roads efficiently avoiding congestion",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Vehicle Management Office",
+              "label_vi": "Quản lý xe văn phòng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đăng ký bảo dưỡng định kỳ, kiểm tra kỹ thuật, giữ xe sạch sẽ tiêu chuẩn văn phòng",
+              "esco_hint": "manage office vehicle maintenance and cleanliness",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Confidentiality & Professionalism Office Driver",
+              "label_vi": "Kín đáo, chuyên nghiệp tài xế văn phòng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bảo mật thông tin lịch trình và trao đổi trên xe; tác phong lịch sự, gọn gàng",
+              "esco_hint": "maintain confidentiality and professional conduct",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Errand & Administrative Support",
+              "label_vi": "Hỗ trợ việc vặt, hành chính văn phòng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Hỗ trợ giao nhận tài liệu, chạy việc vặt văn phòng khi không có lịch đưa đón",
+              "esco_hint": "assist with document delivery and office errands",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Punctuality Office Driver",
+              "label_vi": "Đúng giờ, trách nhiệm tài xế văn phòng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Luôn đúng giờ, chủ động có mặt trước lịch đón, thông báo kịp thời khi có sự cố",
+              "esco_hint": "be punctual and proactively communicate any delays",
+              "confidence": 0.97
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tài xế B2",
+      "nghe": "Đưa đón",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tai-xe-b2",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "B2 Passenger Car Driving",
+              "label_vi": "Lái xe ô tô hạng B2",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lái xe ô tô con, xe 7-9 chỗ an toàn trong đô thị và đường liên tỉnh",
+              "esco_hint": "drive passenger cars and MPVs safely in urban and intercity conditions",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam B2 Driving Licence",
+              "label_vi": "Bằng lái xe hạng B2 VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái B2 do Bộ GTVT cấp còn hiệu lực, đổi bằng đúng hạn",
+              "esco_hint": "hold valid Vietnamese B2 driving licence",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Vietnam Traffic Law B2",
+              "label_vi": "Luật Giao thông đường bộ hạng B2",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật GTĐB 2008/2024, xử lý vi phạm, Nghị định 100/2019 xử phạt",
+              "esco_hint": "knowledge of Vietnamese road traffic law and penalties",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Defensive Safe Driving B2",
+              "label_vi": "Lái xe an toàn phòng thủ hạng B2",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kỹ thuật lái xe phòng thủ: giữ khoảng cách, tốc độ phù hợp, quan sát gương",
+              "esco_hint": "apply defensive driving techniques for passenger cars",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vehicle Pre-check B2",
+              "label_vi": "Kiểm tra xe hàng ngày hạng B2",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm tra xe trước khi lái: dầu, nước, lốp, đèn, phanh đảm bảo an toàn",
+              "esco_hint": "conduct daily vehicle checks before driving",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "GPS Navigation B2",
+              "label_vi": "GPS dẫn đường xe B2",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng Google Maps, Waze tìm đường nhanh, tránh kẹt xe hiệu quả",
+              "esco_hint": "use GPS navigation apps efficiently",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Alcohol & Drug-free Driving",
+              "label_vi": "Không uống rượu bia khi lái xe",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuyệt đối không uống rượu bia, chất kích thích khi lái xe theo NĐ 100/2019",
+              "esco_hint": "comply with Vietnamese zero-tolerance drink-driving regulations",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Passenger Comfort B2",
+              "label_vi": "Đảm bảo sự thoải mái hành khách",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lái xe êm, ổn định, điều chỉnh điều hòa phù hợp, không phanh gấp đột ngột",
+              "esco_hint": "provide smooth and comfortable ride for passengers",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Lái xe cho sếp",
+      "nghe": "Đưa đón",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-lai-xe-cho-sep",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Executive Chauffeur Service",
+              "label_vi": "Lái xe riêng cho lãnh đạo cấp cao",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phục vụ lãnh đạo cấp cao: đưa đón nhà-cơ quan, sân bay, sự kiện VIP",
+              "esco_hint": "provide personal chauffeur service for senior executives",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Executive Driver Licence",
+              "label_vi": "Bằng lái xe lái xe cho sếp VN (B2/C)",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái B2 hoặc C (xe 7 chỗ) còn hiệu lực, lý lịch tư pháp sạch",
+              "esco_hint": "hold valid Vietnamese driving licence with clean criminal record",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "VIP Privacy & Confidentiality",
+              "label_vi": "Bảo mật tuyệt đối thông tin VIP",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuyệt đối không tiết lộ lịch trình, cuộc trò chuyện, thông tin cá nhân sếp",
+              "esco_hint": "maintain absolute confidentiality for executive's personal information",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Executive Schedule Management",
+              "label_vi": "Nắm lịch công tác sếp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm rõ và theo dõi lịch công tác hàng ngày/tuần của sếp để chuẩn bị xe",
+              "esco_hint": "track and anticipate executive's daily and weekly schedule",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "HCMC Hanoi Premium Location Knowledge",
+              "label_vi": "Thuộc địa điểm VIP Hà Nội/TP.HCM",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thuộc địa điểm VIP: nhà hàng, khách sạn 5 sao, đại sứ quán, golf club",
+              "esco_hint": "know premium and VIP locations in major Vietnamese cities",
+              "confidence": 0.96,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Professional Appearance Executive Driver",
+              "label_vi": "Tác phong, ngoại hình lái xe cho sếp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Ăn mặc lịch sự, gọn gàng, không hút thuốc trong/ngoài xe, cư xử đúng mực",
+              "esco_hint": "present professional appearance and conduct at all times",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Standby & Availability Executive",
+              "label_vi": "Luôn sẵn sàng, linh hoạt theo lịch sếp",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sẵn sàng 24/7, linh hoạt thay đổi lịch đột xuất theo yêu cầu lãnh đạo",
+              "esco_hint": "remain available and flexible for executive's changing schedule",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "English Basic Executive Driver",
+              "label_vi": "Tiếng Anh cơ bản lái xe cho sếp",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Giao tiếp cơ bản tiếng Anh với khách VIP nước ngoài của sếp",
+              "esco_hint": "communicate in basic English with foreign VIP guests",
+              "confidence": 0.82
+            },
+            {
+              "label_en": "Vehicle Premium Maintenance",
+              "label_vi": "Bảo dưỡng xe cao cấp cho sếp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo xe luôn sạch bóng, thơm tho, máy lạnh, bảo dưỡng đúng hạn",
+              "esco_hint": "keep executive vehicle immaculately clean and well-maintained",
+              "confidence": 0.97
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tài xế xe khách (Đưa đón)",
+      "nghe": "Đưa đón",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tai-xe-xe-khach",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Minibus & Shuttle Driving",
+              "label_vi": "Lái xe khách, xe shuttle đưa đón",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lái xe 16-29 chỗ đưa đón nhân viên, học sinh, du lịch đúng lịch và an toàn",
+              "esco_hint": "drive minibuses and shuttle vehicles for passenger transfers",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam D Licence Bus Driver",
+              "label_vi": "Bằng lái xe hạng D VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái xe hạng D (xe 10-30 chỗ) do Bộ GTVT cấp còn hiệu lực",
+              "esco_hint": "hold valid Vietnamese bus driving licence category D",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Fixed Route Shuttle Knowledge",
+              "label_vi": "Thuộc tuyến đưa đón cố định",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thuộc tuyến đường, điểm đón/trả, tên đường trong tuyến cố định được giao",
+              "esco_hint": "memorise fixed shuttle route stops and road names",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Passenger Headcount & Safety Shuttle",
+              "label_vi": "Đếm hành khách, an toàn xe đưa đón",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đếm và xác nhận đủ số hành khách, đảm bảo thắt dây an toàn trước khi lăn bánh",
+              "esco_hint": "count passengers and ensure seatbelt compliance before departure",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam School Bus & Staff Transport Regulations",
+              "label_vi": "Quy định xe đưa đón học sinh, nhân viên VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm quy định xe đưa đón học sinh Thông tư 25/2023/TT-BGDĐT và NĐ 10/2020",
+              "esco_hint": "knowledge of Vietnamese school and staff shuttle regulations",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Schedule Adherence Shuttle",
+              "label_vi": "Đúng giờ lịch đưa đón",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xuất phát và đến điểm đúng giờ theo lịch, thông báo ngay khi có sự cố",
+              "esco_hint": "adhere strictly to shuttle schedule and communicate delays",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Passenger Communication Shuttle",
+              "label_vi": "Giao tiếp hành khách xe đưa đón",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thông báo rõ ràng lộ trình, điểm dừng, xử lý yêu cầu hành khách đúng mực",
+              "esco_hint": "communicate route and stops clearly to shuttle passengers",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "GPS Shuttle Tracking",
+              "label_vi": "GPS giám sát hành trình xe đưa đón",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng thiết bị GPS giám sát hành trình theo quy định và báo cáo lộ trình",
+              "esco_hint": "use GPS tracking as required for shuttle vehicles",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Dịch vụ đưa đón khác",
+      "nghe": "Đưa đón",
+      "nhom_nghe": "Tài xế",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-dich-vu-dua-don-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 7
+          },
+          "skills": [
+            {
+              "label_en": "Passenger Transport Service Other",
+              "label_vi": "Dịch vụ đưa đón hành khách khác",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện dịch vụ đưa đón hành khách theo hình thức và phương tiện cụ thể",
+              "esco_hint": "provide passenger transport services in relevant capacity",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Valid Vietnam Driving Licence Other",
+              "label_vi": "Bằng lái xe phù hợp VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng lái xe phù hợp loại phương tiện đưa đón theo Luật GTĐB VN",
+              "esco_hint": "hold valid Vietnamese driving licence for vehicle type used",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Vietnam Passenger Transport Basic Law",
+              "label_vi": "Luật vận tải hành khách VN cơ bản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm cơ bản NĐ 10/2020 quy định kinh doanh vận tải hành khách bằng xe ô tô",
+              "esco_hint": "basic knowledge of Vietnamese passenger transport regulations",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Safe & Courteous Driving",
+              "label_vi": "Lái xe an toàn, lịch sự với hành khách",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lái xe an toàn, thái độ lịch sự, đúng giờ và tận tâm với hành khách",
+              "esco_hint": "drive safely and treat passengers with courtesy",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "GPS Navigation Passenger Other",
+              "label_vi": "GPS dẫn đường đưa đón",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng GPS/Google Maps dẫn đường tìm địa chỉ đón trả hành khách",
+              "esco_hint": "use GPS to navigate to passenger pick-up and drop-off locations",
+              "confidence": 0.92,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Passenger Responsibility Other",
+              "label_vi": "Trách nhiệm với hành khách",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Có trách nhiệm cao với an toàn và sự thoải mái của hành khách được đưa đón",
+              "esco_hint": "take full responsibility for passenger safety and comfort",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Physical Health Driver Other",
+              "label_vi": "Sức khỏe tài xế đưa đón",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sức khỏe thể chất tốt, thị lực đủ tiêu chuẩn, không bệnh lý ảnh hưởng lái xe",
+              "esco_hint": "maintain physical health and vision standards for driving",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

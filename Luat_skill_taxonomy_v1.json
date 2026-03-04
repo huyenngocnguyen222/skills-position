@@ -1,0 +1,967 @@
+{
+  "taxonomy_metadata": {
+    "sector": "Luật",
+    "sector_en": "Legal Services",
+    "version": "v1",
+    "total_positions": 8,
+    "total_skills": 74,
+    "avg_skills_per_position": 9.2,
+    "sub_categories": {
+      "Dịch vụ pháp lý (Agency/Firm)": {
+        "positions": 5,
+        "skills": 46
+      },
+      "Dịch vụ pháp chế (In-house)": {
+        "positions": 3,
+        "skills": 28
+      }
+    },
+    "skill_type_distribution": {
+      "technical": 41,
+      "domain": 9,
+      "certification": 5,
+      "language": 7,
+      "soft": 9,
+      "tool": 3
+    },
+    "requirement_distribution": {
+      "required": 66,
+      "preferred": 8
+    },
+    "iviec_flags": {
+      "VN_REGULATION": 25,
+      "VN_TOOL": 7
+    },
+    "data_sources": [
+      "topcv.vn",
+      "vietnamworks.com"
+    ],
+    "extraction_method": "structured_prompt_5jd_per_position",
+    "rows_covered": "1145–1152",
+    "notes": [
+      "Covers rows 1145–1152 (8 positions across 2 sub-categories)",
+      "VN_REGULATION: Thẻ luật sư Liên đoàn Luật sư VN bắt buộc (Luật Luật sư 2006/2012), BLDS 2015, BLTTDS 2015, BLTTHS 2015, Luật TTHC 2015, Luật Doanh nghiệp 2020, Luật Đầu tư 2020, Bộ luật Lao động 2019, Luật Công chứng 2014/NĐ 29/2015, Luật Chứng khoán 2019 (M&A/IPO), Luật Thương mại 2005, thủ tục toà án/Viện Kiểm sát/thi hành án",
+      "VN_TOOL: Luatvietnam.vn, thuvienphapluat.vn, Vbpl.vn (cơ sở dữ liệu pháp luật VN), phần mềm văn phòng công chứng, Microsoft Office (soạn thảo văn bản pháp lý)",
+      "VN_CERTIFICATION: Thẻ luật sư Liên đoàn/Đoàn Luật sư tỉnh/thành (bắt buộc hành nghề luật sư), bằng cử nhân/thạc sĩ luật",
+      "Sector unique: Confidentiality flagged as a core soft skill across all positions (attorney-client privilege / bí mật nghề nghiệp luật sư); Giám đốc pháp chế role reflects growing in-house legal demand from FDI and listed companies in Vietnam post-Luật Doanh nghiệp 2020"
+    ]
+  },
+  "positions": [
+    {
+      "vi_tri": "Luật sư",
+      "nghe": "Dịch vụ pháp lý (Agency/Firm)",
+      "nhom_nghe": "Luật",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-luat-su",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Legal Advice & Representation",
+              "label_vi": "Tư vấn pháp lý và đại diện pháp lý",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn, soạn thảo văn bản pháp lý và đại diện cho khách hàng trước cơ quan tố tụng",
+              "esco_hint": "provide legal advice and represent clients in proceedings",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Civil & Commercial Law",
+              "label_vi": "Bộ luật Dân sự, Thương mại VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm sâu BLDS 2015, Luật Thương mại 2005, Luật Doanh nghiệp 2020, Luật Đầu tư 2020",
+              "esco_hint": "comprehensive knowledge of Vietnamese civil and commercial law",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Vietnam Litigation & Court Procedure",
+              "label_vi": "Tố tụng dân sự, hành chính, hình sự VN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện tố tụng theo BLTTDS 2015, BLTTHS 2015, Luật TTHC 2015",
+              "esco_hint": "conduct litigation under Vietnamese procedural law",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Vietnam Bar Association Licence",
+              "label_vi": "Thẻ luật sư Đoàn Luật sư VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Thẻ luật sư do Liên đoàn Luật sư Việt Nam/Đoàn Luật sư tỉnh/thành phố cấp",
+              "esco_hint": "hold Vietnamese Bar Association lawyer licence",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Contract Drafting & Negotiation",
+              "label_vi": "Soạn thảo, đàm phán hợp đồng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Soạn thảo, rà soát, đàm phán hợp đồng dân sự, kinh tế, M&A, đầu tư",
+              "esco_hint": "draft and negotiate complex commercial contracts",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Legal Research Vietnam",
+              "label_vi": "Nghiên cứu pháp luật VN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tra cứu văn bản pháp luật VN, án lệ, hướng dẫn thi hành trên hệ thống Luatvietnam, VBPL",
+              "esco_hint": "research Vietnamese law, precedents and regulatory guidance",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Corporate & M&A Law",
+              "label_vi": "Luật doanh nghiệp, M&A",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu Luật Doanh nghiệp 2020, Luật Chứng khoán 2019, giao dịch M&A tại VN",
+              "esco_hint": "knowledge of Vietnamese corporate and M&A law",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Labour Law Vietnam",
+              "label_vi": "Luật Lao động VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm Bộ luật Lao động 2019, quy định hợp đồng lao động, tranh chấp lao động",
+              "esco_hint": "knowledge of Vietnamese labour law",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "English Legal Communication",
+              "label_vi": "Tiếng Anh pháp lý",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Soạn thảo, đàm phán, trình bày tài liệu pháp lý tiếng Anh với đối tác quốc tế",
+              "esco_hint": "communicate in English for legal purposes",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Client Relationship Management Legal",
+              "label_vi": "Quản lý quan hệ khách hàng pháp lý",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng, duy trì quan hệ khách hàng lâu dài, phát triển mảng dịch vụ pháp lý",
+              "esco_hint": "build and manage client relationships in legal services",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên viên pháp lý",
+      "nghe": "Dịch vụ pháp lý (Agency/Firm)",
+      "nhom_nghe": "Luật",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-vien-phap-ly",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Legal Research & Analysis",
+              "label_vi": "Nghiên cứu, phân tích pháp lý",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nghiên cứu văn bản pháp luật, phân tích rủi ro pháp lý cho từng vấn đề cụ thể",
+              "esco_hint": "research and analyse Vietnamese legal issues",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Contract Review & Drafting",
+              "label_vi": "Rà soát, soạn thảo hợp đồng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Rà soát, soạn thảo hợp đồng kinh tế, dân sự, lao động đảm bảo chặt chẽ pháp lý",
+              "esco_hint": "review and draft legal contracts",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Legal System Knowledge",
+              "label_vi": "Am hiểu hệ thống pháp luật VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm BLDS 2015, Luật Doanh nghiệp 2020, Luật Đầu tư 2020, Luật Lao động 2019",
+              "esco_hint": "comprehensive knowledge of Vietnamese legal system",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Legal Document Preparation",
+              "label_vi": "Soạn thảo văn bản pháp lý",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Soạn thảo văn bản pháp lý: tờ trình, công văn, biên bản, quy chế nội bộ",
+              "esco_hint": "prepare legal documents and internal regulations",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Legal Risk Assessment",
+              "label_vi": "Đánh giá rủi ro pháp lý",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nhận diện, đánh giá rủi ro pháp lý trong hợp đồng, giao dịch, dự án",
+              "esco_hint": "identify and assess legal risks in transactions",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Regulatory Compliance Monitoring",
+              "label_vi": "Theo dõi tuân thủ pháp luật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Theo dõi, cập nhật văn bản pháp luật mới; cảnh báo thay đổi ảnh hưởng đến hoạt động",
+              "esco_hint": "monitor and update on regulatory changes",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Legal Research Databases",
+              "label_vi": "Tra cứu cơ sở dữ liệu pháp luật VN",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Luatvietnam.vn, thuvienphapluat.vn, Vbpl.vn tra cứu văn bản",
+              "esco_hint": "use Vietnamese legal research databases",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Litigation Support",
+              "label_vi": "Hỗ trợ tố tụng",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Thu thập tài liệu, chuẩn bị hồ sơ tố tụng hỗ trợ luật sư trong vụ kiện",
+              "esco_hint": "provide litigation support to lawyers",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "English Legal Documents",
+              "label_vi": "Tiếng Anh văn bản pháp lý",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc, soạn thảo hợp đồng, văn bản pháp lý tiếng Anh cơ bản đến trung cấp",
+              "esco_hint": "read and draft basic to intermediate English legal documents",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Analytical Thinking Legal",
+              "label_vi": "Tư duy phân tích pháp lý",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư duy logic, phân tích vấn đề pháp lý phức tạp, đưa ra giải pháp rõ ràng",
+              "esco_hint": "apply analytical and logical thinking to legal problems",
+              "confidence": 0.96
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Thư ký công chứng viên",
+      "nghe": "Dịch vụ pháp lý (Agency/Firm)",
+      "nhom_nghe": "Luật",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-thu-ky-cong-chung-vien",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Notarial Document Processing",
+              "label_vi": "Xử lý hồ sơ công chứng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tiếp nhận, kiểm tra, xử lý hồ sơ công chứng: BĐS, hợp đồng, di chúc, uỷ quyền",
+              "esco_hint": "process notarial documentation requests",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Notary Law",
+              "label_vi": "Luật Công chứng VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Công chứng 2014/sửa đổi, Nghị định 29/2015/NĐ-CP quy trình công chứng",
+              "esco_hint": "knowledge of Vietnamese notary law and procedures",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Land & Property Document Verification",
+              "label_vi": "Kiểm tra hồ sơ đất đai, BĐS công chứng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm tra tính hợp lệ hồ sơ đất đai, nhà ở: sổ đỏ, sổ hồng, giấy phép xây dựng",
+              "esco_hint": "verify land and property documents for notarisation",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Vietnam Civil Status Records",
+              "label_vi": "Hộ tịch, chứng thực VN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm tra hộ khẩu, CCCD, giấy tờ hộ tịch phục vụ công chứng",
+              "esco_hint": "verify civil status records for notarial purposes",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Notarial File Management",
+              "label_vi": "Quản lý hồ sơ, sổ công chứng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập, lưu trữ hồ sơ công chứng theo đúng quy định Luật Công chứng",
+              "esco_hint": "manage and archive notarial files and registers",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Fee Calculation Notary",
+              "label_vi": "Tính phí công chứng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tính phí công chứng theo biểu phí quy định, thu tiền và cấp biên lai",
+              "esco_hint": "calculate and collect notarial fees",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Client Reception Notary",
+              "label_vi": "Tiếp nhận, hướng dẫn khách công chứng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tiếp nhận khách hàng ân cần, hướng dẫn đầy đủ hồ sơ cần thiết",
+              "esco_hint": "receive and guide clients through notarial processes",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Document Drafting Notary",
+              "label_vi": "Soạn thảo văn bản công chứng cơ bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Soạn thảo hợp đồng mua bán, tặng cho, uỷ quyền theo mẫu công chứng",
+              "esco_hint": "draft standard notarial documents from templates",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Notary Office Software",
+              "label_vi": "Phần mềm văn phòng công chứng VN",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng phần mềm quản lý văn phòng công chứng: tra cứu thông tin, lập hồ sơ",
+              "esco_hint": "use notary office management software",
+              "confidence": 0.91,
+              "iviec_flag": "VN_TOOL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Thư ký văn phòng luật sư/Thư ký pháp lý",
+      "nghe": "Dịch vụ pháp lý (Agency/Firm)",
+      "nhom_nghe": "Luật",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-thu-ky-van-phong-luat-su-thu-ky-phap-ly",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Legal Secretary Administration",
+              "label_vi": "Hành chính thư ký văn phòng luật sư",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý lịch, hồ sơ, văn bản, liên lạc cho luật sư và văn phòng luật",
+              "esco_hint": "provide administrative support to lawyers and law firm",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Legal Document Management",
+              "label_vi": "Quản lý hồ sơ, tài liệu pháp lý",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lưu trữ, phân loại, theo dõi hồ sơ vụ việc, hợp đồng, tài liệu pháp lý",
+              "esco_hint": "manage and archive legal case files and documents",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Court Filing & Procedure Support",
+              "label_vi": "Hỗ trợ nộp hồ sơ toà, thủ tục tố tụng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Chuẩn bị và nộp hồ sơ tại Toà án, Viện Kiểm sát, cơ quan thi hành án",
+              "esco_hint": "prepare and file court documents at Vietnamese courts",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Legal Research Assistance",
+              "label_vi": "Hỗ trợ nghiên cứu pháp lý cơ bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tra cứu văn bản pháp luật, án lệ trên Luatvietnam, thuvienphapluat.vn",
+              "esco_hint": "assist with basic legal research using Vietnamese databases",
+              "confidence": 0.89,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnamese Legal Document Drafting",
+              "label_vi": "Soạn thảo văn bản pháp lý tiếng Việt",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Soạn thảo, chỉnh sửa văn bản pháp lý tiếng Việt đúng quy cách, chính tả",
+              "esco_hint": "draft and edit Vietnamese legal documents",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Time & Billing Management Legal",
+              "label_vi": "Theo dõi thời gian, phí dịch vụ pháp lý",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Theo dõi giờ công, lập hoá đơn dịch vụ pháp lý theo quy định văn phòng",
+              "esco_hint": "track billable hours and prepare legal service invoices",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Communication & Client Liaison",
+              "label_vi": "Giao tiếp, liên lạc với khách hàng",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Giao tiếp điện thoại, email chuyên nghiệp với khách hàng và đối tác",
+              "esco_hint": "communicate professionally with clients and partners",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Microsoft Office Legal",
+              "label_vi": "Microsoft Office phục vụ công việc pháp lý",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Word, Excel, Outlook soạn thảo và quản lý tài liệu pháp lý",
+              "esco_hint": "use Microsoft Office for legal document preparation",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "English Legal Secretary",
+              "label_vi": "Tiếng Anh thư ký pháp lý",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc, soạn thảo thư, email, văn bản pháp lý tiếng Anh cơ bản",
+              "esco_hint": "read and draft basic English legal correspondence",
+              "confidence": 0.85
+            },
+            {
+              "label_en": "Confidentiality & Discretion",
+              "label_vi": "Bảo mật thông tin pháp lý",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bảo mật thông tin khách hàng, hồ sơ vụ việc theo đạo đức nghề luật",
+              "esco_hint": "maintain strict confidentiality of legal information",
+              "confidence": 0.97
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Pháp lý khác",
+      "nghe": "Dịch vụ pháp lý (Agency/Firm)",
+      "nhom_nghe": "Luật",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-phap-ly-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 7
+          },
+          "skills": [
+            {
+              "label_en": "Legal Professional Services",
+              "label_vi": "Dịch vụ pháp lý chuyên môn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện dịch vụ pháp lý theo chuyên môn cụ thể tại văn phòng luật",
+              "esco_hint": "provide specialist legal services",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Legal System Basic",
+              "label_vi": "Am hiểu hệ thống pháp luật VN cơ bản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm cơ bản hệ thống pháp luật VN: hệ thống văn bản, cơ quan tư pháp",
+              "esco_hint": "basic knowledge of Vietnamese legal system",
+              "confidence": 0.92,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Legal Document Preparation Other",
+              "label_vi": "Soạn thảo văn bản pháp lý cơ bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Soạn thảo, rà soát văn bản pháp lý cơ bản theo hướng dẫn luật sư",
+              "esco_hint": "prepare basic legal documents under lawyer guidance",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Legal Research Basic",
+              "label_vi": "Tra cứu pháp luật cơ bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tra cứu văn bản pháp luật trên cổng thông tin pháp lý VN",
+              "esco_hint": "conduct basic Vietnamese legal research",
+              "confidence": 0.9,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Analytical & Detail-oriented Legal",
+              "label_vi": "Tư duy phân tích, cẩn thận trong pháp lý",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư duy cẩn thận, chú ý chi tiết trong xử lý tài liệu pháp lý",
+              "esco_hint": "apply careful analytical thinking in legal work",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "English Legal Basic",
+              "label_vi": "Tiếng Anh pháp lý cơ bản",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "basic",
+              "evidence_text": "Đọc văn bản pháp lý, hợp đồng tiếng Anh cơ bản",
+              "esco_hint": "read basic English legal documents",
+              "confidence": 0.81
+            },
+            {
+              "label_en": "Law Degree",
+              "label_vi": "Bằng cử nhân luật",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng cử nhân luật trường đại học luật hoặc khoa luật trong/ngoài nước",
+              "esco_hint": "hold law degree from recognised institution",
+              "confidence": 0.9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Pháp chế",
+      "nghe": "Dịch vụ pháp chế (In-house)",
+      "nhom_nghe": "Luật",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-phap-che",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "In-house Legal Counsel",
+              "label_vi": "Pháp chế nội bộ doanh nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn pháp lý nội bộ toàn diện: hợp đồng, tranh chấp, tuân thủ, đầu tư",
+              "esco_hint": "provide comprehensive in-house legal counsel",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Corporate Legal Compliance",
+              "label_vi": "Tuân thủ pháp luật doanh nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đảm bảo doanh nghiệp tuân thủ pháp luật: Luật Doanh nghiệp 2020, Luật Đầu tư 2020, ngành đặc thù",
+              "esco_hint": "ensure corporate legal and regulatory compliance",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Contract Management In-house",
+              "label_vi": "Quản lý hợp đồng pháp chế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Soạn thảo, rà soát, đàm phán, lưu trữ hệ thống toàn bộ hợp đồng doanh nghiệp",
+              "esco_hint": "manage corporate contract lifecycle",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Business Law",
+              "label_vi": "Luật kinh doanh VN chuyên sâu",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Doanh nghiệp 2020, Luật Đầu tư 2020, Luật Lao động 2019, Luật Thuế, pháp luật chuyên ngành",
+              "esco_hint": "comprehensive knowledge of Vietnamese business law",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Regulatory Affairs In-house",
+              "label_vi": "Quan hệ cơ quan quản lý nhà nước",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Làm việc với cơ quan nhà nước: Sở KH&ĐT, Sở Tư pháp, cơ quan thuế, quản lý chuyên ngành",
+              "esco_hint": "liaise with Vietnamese government regulatory bodies",
+              "confidence": 0.95,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Legal Risk Management Corporate",
+              "label_vi": "Quản lý rủi ro pháp lý doanh nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nhận diện, đánh giá, kiểm soát rủi ro pháp lý trong hoạt động kinh doanh",
+              "esco_hint": "identify and manage corporate legal risks",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Dispute Resolution In-house",
+              "label_vi": "Giải quyết tranh chấp doanh nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối hợp giải quyết tranh chấp: thương lượng, hoà giải, trọng tài, toà án",
+              "esco_hint": "manage corporate dispute resolution processes",
+              "confidence": 0.94,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Internal Legal Training",
+              "label_vi": "Đào tạo pháp lý nội bộ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tổ chức đào tạo pháp lý cho các phòng ban, nâng cao nhận thức tuân thủ",
+              "esco_hint": "conduct internal legal compliance training",
+              "confidence": 0.89
+            },
+            {
+              "label_en": "English In-house Legal",
+              "label_vi": "Tiếng Anh pháp chế doanh nghiệp",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Soạn thảo hợp đồng, văn bản pháp lý tiếng Anh với đối tác và nhà đầu tư nước ngoài",
+              "esco_hint": "draft and review English legal documents for corporate use",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Law Degree & Bar Preferred",
+              "label_vi": "Bằng luật, thẻ luật sư ưu tiên",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng cử nhân/thạc sĩ luật; thẻ luật sư là lợi thế cho vị trí pháp chế",
+              "esco_hint": "hold law degree; bar licence preferred for in-house counsel",
+              "confidence": 0.91,
+              "iviec_flag": "VN_REGULATION"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Giám đốc pháp chế",
+      "nghe": "Dịch vụ pháp chế (In-house)",
+      "nhom_nghe": "Luật",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-giam-doc-phap-che",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Chief Legal Officer Function",
+              "label_vi": "Chức năng Giám đốc pháp chế/CLO",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lãnh đạo bộ phận pháp chế, định hướng chiến lược pháp lý toàn doanh nghiệp",
+              "esco_hint": "lead legal function and define corporate legal strategy",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Corporate Legal Strategy",
+              "label_vi": "Chiến lược pháp lý doanh nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng và triển khai chiến lược pháp lý hỗ trợ mục tiêu kinh doanh",
+              "esco_hint": "develop and implement corporate legal strategy",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Corporate Law Mastery",
+              "label_vi": "Pháp luật kinh doanh VN toàn diện",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm toàn diện pháp luật VN: doanh nghiệp, đầu tư, lao động, thuế, chứng khoán, BĐS",
+              "esco_hint": "mastery of Vietnamese corporate and commercial law",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Board & Executive Legal Advisory",
+              "label_vi": "Tư vấn pháp lý cho HĐQT, Ban TGĐ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn pháp lý cấp cao cho HĐQT và Ban TGĐ về rủi ro, chiến lược, giao dịch",
+              "esco_hint": "advise board and executive team on legal matters",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "M&A & Investment Legal",
+              "label_vi": "Pháp lý M&A, đầu tư",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dẫn dắt pháp lý M&A, đầu tư nước ngoài, cơ cấu vốn, IPO tại VN",
+              "esco_hint": "lead legal aspects of M&A and investment transactions",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Enterprise Risk & Compliance Program",
+              "label_vi": "Chương trình tuân thủ, quản lý rủi ro",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng chương trình tuân thủ toàn doanh nghiệp, phòng chống tham nhũng",
+              "esco_hint": "build enterprise-wide compliance and risk management program",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Government & Regulatory Relations",
+              "label_vi": "Quan hệ cơ quan quản lý cấp cao",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng quan hệ với cơ quan quản lý, đại diện doanh nghiệp trong vấn đề pháp lý lớn",
+              "esco_hint": "manage senior government and regulatory relationships",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Legal Team Leadership",
+              "label_vi": "Lãnh đạo đội ngũ pháp chế",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng, dẫn dắt đội pháp chế chuyên nghiệp, phát triển năng lực nhóm",
+              "esco_hint": "lead and develop in-house legal team",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "English Legal Director",
+              "label_vi": "Tiếng Anh cấp giám đốc pháp chế",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đàm phán, tư vấn, trình bày chiến lược pháp lý tiếng Anh với cổ đông, nhà đầu tư nước ngoài",
+              "esco_hint": "communicate legal strategy in English at director level",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Bar Licence & Senior Legal Degree",
+              "label_vi": "Thẻ luật sư và bằng luật cấp cao",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Thẻ luật sư Liên đoàn Luật sư VN; Thạc sĩ/Tiến sĩ luật là lợi thế",
+              "esco_hint": "hold Vietnamese bar licence and advanced law degree",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Pháp chế khác",
+      "nghe": "Dịch vụ pháp chế (In-house)",
+      "nhom_nghe": "Luật",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-phap-che-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "In-house Legal Specialist Other",
+              "label_vi": "Chuyên môn pháp chế nội bộ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện công việc pháp chế nội bộ theo chuyên môn và phân công cụ thể",
+              "esco_hint": "perform in-house legal specialist functions",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Business Law Basic In-house",
+              "label_vi": "Am hiểu pháp luật kinh doanh VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm cơ bản pháp luật kinh doanh VN: Luật Doanh nghiệp, Luật Lao động, ngành đặc thù",
+              "esco_hint": "basic knowledge of Vietnamese business law for in-house role",
+              "confidence": 0.92,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Contract Review Basic In-house",
+              "label_vi": "Rà soát hợp đồng cơ bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Rà soát, nhận xét hợp đồng cơ bản theo hướng dẫn của pháp chế trưởng",
+              "esco_hint": "review basic contracts under senior legal guidance",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Compliance Monitoring In-house",
+              "label_vi": "Theo dõi tuân thủ nội bộ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Theo dõi, cập nhật văn bản pháp luật mới, báo cáo thay đổi cho bộ phận pháp chế",
+              "esco_hint": "monitor regulatory changes and report to legal department",
+              "confidence": 0.9,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Legal Research In-house Basic",
+              "label_vi": "Nghiên cứu pháp luật cơ bản pháp chế",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tra cứu văn bản, quy định pháp luật liên quan đến hoạt động doanh nghiệp",
+              "esco_hint": "research legal regulations relevant to business operations",
+              "confidence": 0.9,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Attention to Detail Legal",
+              "label_vi": "Tỉ mỉ, chú ý chi tiết trong pháp chế",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tỉ mỉ trong rà soát văn bản pháp lý, phát hiện điểm bất hợp lệ",
+              "esco_hint": "apply meticulous attention to detail in legal review",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "English In-house Legal Basic",
+              "label_vi": "Tiếng Anh pháp chế cơ bản",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc hợp đồng, văn bản pháp lý tiếng Anh cơ bản",
+              "esco_hint": "read basic English legal documents for in-house purposes",
+              "confidence": 0.83
+            },
+            {
+              "label_en": "Law Degree In-house",
+              "label_vi": "Bằng cử nhân luật pháp chế",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng cử nhân luật là yêu cầu cơ bản cho vị trí pháp chế",
+              "esco_hint": "hold law degree for in-house legal position",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

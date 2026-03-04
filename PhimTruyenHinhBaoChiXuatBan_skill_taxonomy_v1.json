@@ -1,0 +1,2259 @@
+{
+  "taxonomy_metadata": {
+    "sector": "Phim và truyền hình/Báo chí/Xuất bản",
+    "sector_en": "Film & Television / Journalism / Publishing",
+    "version": "v1",
+    "total_positions": 21,
+    "total_skills": 178,
+    "avg_skills_per_position": 8.5,
+    "sub_categories": {
+      "Phim và truyền hình": {
+        "positions": 14,
+        "skills": 121
+      },
+      "Biên tập/Viết/Xuất bản": {
+        "positions": 7,
+        "skills": 57
+      }
+    },
+    "skill_type_distribution": {
+      "technical": 98,
+      "domain": 26,
+      "tool": 17,
+      "soft": 25,
+      "language": 9,
+      "certification": 3
+    },
+    "requirement_distribution": {
+      "required": 167,
+      "preferred": 11
+    },
+    "iviec_flags": {
+      "VN_DOMAIN": 15,
+      "VN_REGULATION": 12,
+      "VN_TOOL": 22
+    },
+    "data_sources": [
+      "topcv.vn",
+      "vietnamworks.com"
+    ],
+    "extraction_method": "structured_prompt_5jd_per_position",
+    "rows_covered": "811–831",
+    "notes": [
+      "Covers rows 811–831 (21 positions across 2 sub-categories)",
+      "VN_REGULATION: Luật Báo chí 2016 + quy định Bộ TT&TT + giấy phép xuất bản Cục Báo chí (biên tập viên, tổng biên tập, phóng viên), Thẻ nhà báo Bộ TT&TT bắt buộc cho phóng viên, Luật Điện ảnh 2022 + quy định kiểm duyệt nội dung/phân loại phim Cục Điện ảnh (đạo diễn, biên kịch, producer, phát hành), quy định phát sóng Bộ TT&TT (MC), tiêu chuẩn in ấn ISO 12647",
+      "VN_TOOL: WordPress/Drupal/CMS tòa soạn, Facebook/Zalo/YouTube/TikTok phân phối tin tức, Adobe Premiere Pro, DaVinci Resolve, After Effects, Lightroom, Photoshop, InDesign, QuarkXPress, Acrobat/PitStop, Final Draft/Celtx kịch bản, Maya/Blender 3D, CTP prepress, FPT Play/VieON/Galaxy Play OTT VN, phần mềm quản lý nghệ sĩ social media",
+      "VN_DOMAIN: Tiếng Việt viết chuẩn (biên tập, nhập liệu), Typography tiếng Việt/Unicode, Phát âm chuẩn tiếng Việt phát thanh (MC, lồng tiếng), Múa truyền thống VN (quan họ/chèo/cung đình Huế), Am hiểu văn hóa VN trong kịch bản, Ngành điện ảnh/thời trang/hoạt hình/giải trí VN",
+      "Sector unique: Press Card (Thẻ nhà báo) flagged as mandatory VN_CERTIFICATION for phóng viên; Vietnamese standard pronunciation (phát âm chuẩn không giọng địa phương) flagged as VN_DOMAIN for MC và lồng tiếng — reflects Vietnam Broadcasting Law requirements; Film censorship (kiểm duyệt Cục Điện ảnh) under Luật Điện ảnh 2022 flagged across all film production roles"
+    ]
+  },
+  "positions": [
+    {
+      "vi_tri": "Biên tập viên",
+      "nghe": "Biên tập/Viết/Xuất bản",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bien-tap-vien",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Editorial Content Review",
+              "label_vi": "Biên tập nội dung",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đọc, rà soát, chỉnh sửa bài viết đảm bảo chính xác, mạch lạc, đúng phong cách",
+              "esco_hint": "edit and review written content for quality and style",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnamese Writing Mastery",
+              "label_vi": "Tiếng Việt viết xuất sắc",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm vững ngữ pháp, chính tả, phong cách viết tiếng Việt chuyên nghiệp",
+              "esco_hint": "master Vietnamese language writing and grammar",
+              "confidence": 0.99,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Content Strategy & Planning",
+              "label_vi": "Lập kế hoạch nội dung",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập kế hoạch biên tập: lịch xuất bản, chủ đề, định hướng nội dung cho ấn phẩm",
+              "esco_hint": "plan editorial calendar and content strategy",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Vietnam Press Law Compliance",
+              "label_vi": "Tuân thủ Luật Báo chí VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Báo chí 2016, quy định quản lý thông tin, nội dung xuất bản tại VN",
+              "esco_hint": "comply with Vietnamese Press Law 2016 and publication regulations",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Fact-checking & Verification",
+              "label_vi": "Kiểm chứng thông tin",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm tra, xác minh độ chính xác thông tin trước khi xuất bản",
+              "esco_hint": "fact-check and verify information accuracy",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "CMS Editorial Systems",
+              "label_vi": "Hệ thống CMS biên tập",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng WordPress, Drupal, tòa soạn điện tử để quản lý và xuất bản nội dung",
+              "esco_hint": "use CMS platforms for editorial publishing",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "SEO Content Editing",
+              "label_vi": "Biên tập nội dung SEO",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tối ưu bài viết theo tiêu chuẩn SEO: từ khóa, tiêu đề, meta description",
+              "esco_hint": "edit content for SEO optimisation",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Cross-department Collaboration Editorial",
+              "label_vi": "Phối hợp đa phòng ban biên tập",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Làm việc với phóng viên, thiết kế, kỹ thuật để hoàn thiện sản phẩm nội dung",
+              "esco_hint": "collaborate across departments for content production",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "English Editing",
+              "label_vi": "Biên tập tiếng Anh",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Biên tập bài viết tiếng Anh hoặc dịch nội dung Anh-Việt",
+              "esco_hint": "edit English content or translate English-Vietnamese",
+              "confidence": 0.85
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tổng biên tập/Phó tổng biên tập",
+      "nghe": "Biên tập/Viết/Xuất bản",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tong-bien-tap-pho-tong-bien-tap",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Editorial Leadership",
+              "label_vi": "Lãnh đạo ban biên tập",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Định hướng chiến lược nội dung, quản lý toàn bộ ban biên tập và ấn phẩm",
+              "esco_hint": "lead editorial team and define content strategy",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Press Regulations Mastery",
+              "label_vi": "Pháp luật báo chí VN toàn diện",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm toàn diện Luật Báo chí 2016, quy định Bộ TT&TT, giấy phép xuất bản",
+              "esco_hint": "comprehensive knowledge of Vietnamese press and publication law",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Publication Strategy",
+              "label_vi": "Chiến lược xuất bản ấn phẩm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng chiến lược nội dung dài hạn, định vị thương hiệu ấn phẩm",
+              "esco_hint": "develop long-term publication strategy and brand positioning",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Editorial Quality Standards",
+              "label_vi": "Tiêu chuẩn chất lượng biên tập",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết lập và duy trì tiêu chuẩn chất lượng nội dung, phong cách biên tập",
+              "esco_hint": "establish and maintain editorial quality standards",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Press License Management Vietnam",
+              "label_vi": "Quản lý giấy phép báo chí VN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý giấy phép xuất bản, tuân thủ quy định cấp phép Cục Báo chí VN",
+              "esco_hint": "manage Vietnamese press licences and regulatory compliance",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Digital Media Strategy",
+              "label_vi": "Chiến lược truyền thông số",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Dẫn dắt chuyển đổi số, phát triển nền tảng số báo điện tử, mạng xã hội",
+              "esco_hint": "lead digital media transformation strategy",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Stakeholder & Advertiser Relations",
+              "label_vi": "Quan hệ đối tác, nhà quảng cáo",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý quan hệ đối tác chiến lược, nhà quảng cáo, cơ quan quản lý báo chí",
+              "esco_hint": "manage strategic partners, advertisers and press authorities",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Revenue & Budget Editorial",
+              "label_vi": "Quản lý doanh thu, ngân sách tòa soạn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý ngân sách hoạt động, doanh thu quảng cáo, phát hành ấn phẩm",
+              "esco_hint": "manage editorial budget and advertising revenue",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "English Media Leadership",
+              "label_vi": "Tiếng Anh lãnh đạo truyền thông",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đại diện tòa soạn trong quan hệ quốc tế, hội nghị báo chí quốc tế",
+              "esco_hint": "represent publication in international media contexts",
+              "confidence": 0.86
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Phóng viên/Biên tập viên tin tức",
+      "nghe": "Biên tập/Viết/Xuất bản",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-phong-vien-bien-tap-vien-tin-tuc",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "News Reporting",
+              "label_vi": "Viết tin, phóng sự",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tác nghiệp phỏng vấn, thu thập thông tin, viết tin bài chính xác và nhanh",
+              "esco_hint": "report news stories through interviews and investigation",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Investigative Journalism",
+              "label_vi": "Báo chí điều tra",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện điều tra, phân tích sự kiện chiều sâu, xác minh nguồn tin",
+              "esco_hint": "conduct investigative journalism",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Vietnam Press Ethics & Law",
+              "label_vi": "Đạo đức báo chí và Luật Báo chí VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuân thủ đạo đức nghề báo, Luật Báo chí 2016, quy định tác nghiệp",
+              "esco_hint": "comply with Vietnamese press ethics and Press Law 2016",
+              "confidence": 0.99,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Multimedia Journalism",
+              "label_vi": "Báo chí đa phương tiện",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sản xuất nội dung đa nền tảng: văn bản, ảnh, video, infographic, podcast",
+              "esco_hint": "produce multimedia journalism content",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Press Card Vietnam",
+              "label_vi": "Thẻ nhà báo VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Thẻ nhà báo do Bộ TT&TT cấp hoặc đang làm thủ tục cấp thẻ",
+              "esco_hint": "hold Vietnamese press card issued by Ministry of Information",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Source Development & Network",
+              "label_vi": "Phát triển nguồn tin, mạng lưới",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng mạng lưới nguồn tin đáng tin cậy trong lĩnh vực phụ trách",
+              "esco_hint": "develop and maintain reliable source networks",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Deadline Management News",
+              "label_vi": "Làm việc theo deadline tin tức",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Viết nhanh, chính xác dưới áp lực deadline liên tục của tòa soạn",
+              "esco_hint": "work accurately under tight news deadlines",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Social Media News Distribution",
+              "label_vi": "Phân phối tin tức mạng xã hội",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đăng tin trên Facebook, Zalo, YouTube, TikTok theo quy định tòa soạn",
+              "esco_hint": "distribute news content across social media platforms",
+              "confidence": 0.9,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "English Journalism",
+              "label_vi": "Tiếng Anh báo chí",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc, khai thác nguồn tin tiếng Anh; phỏng vấn nguồn tin quốc tế",
+              "esco_hint": "use English for news sourcing and international interviews",
+              "confidence": 0.85
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Nhập liệu",
+      "nghe": "Biên tập/Viết/Xuất bản",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-nhap-lieu",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 7
+          },
+          "skills": [
+            {
+              "label_en": "Data Entry Accuracy",
+              "label_vi": "Nhập liệu chính xác, tốc độ cao",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nhập liệu văn bản, số liệu vào hệ thống với tốc độ và độ chính xác cao",
+              "esco_hint": "perform fast and accurate data entry",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnamese Typing Speed",
+              "label_vi": "Tốc độ đánh máy tiếng Việt",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đánh máy tiếng Việt tốc độ tối thiểu 200 từ/phút không lỗi chính tả",
+              "esco_hint": "type Vietnamese text at high speed with accuracy",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Microsoft Office Data Entry",
+              "label_vi": "Microsoft Office nhập liệu",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Word, Excel nhập liệu, định dạng, tổng hợp dữ liệu",
+              "esco_hint": "use Microsoft Office for data entry and formatting",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Data Verification",
+              "label_vi": "Kiểm tra, xác minh dữ liệu nhập",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm tra lại dữ liệu đã nhập, phát hiện và sửa lỗi kịp thời",
+              "esco_hint": "verify and correct entered data for accuracy",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Document Management",
+              "label_vi": "Quản lý tài liệu, hồ sơ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân loại, lưu trữ, quản lý tài liệu hồ sơ theo hệ thống quy định",
+              "esco_hint": "organise and manage documents and records",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Confidentiality Data Handling",
+              "label_vi": "Bảo mật thông tin dữ liệu",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý dữ liệu nhạy cảm cẩn thận, tuân thủ quy định bảo mật nội bộ",
+              "esco_hint": "handle sensitive data with strict confidentiality",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Concentration & Patience",
+              "label_vi": "Tập trung và kiên nhẫn nhập liệu",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì tập trung cao độ trong công việc lặp lại, ít mắc lỗi",
+              "esco_hint": "maintain concentration for repetitive data entry tasks",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "In ấn và sắp chữ",
+      "nghe": "Biên tập/Viết/Xuất bản",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-in-an-va-sap-chu",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Typesetting & Layout",
+              "label_vi": "Sắp chữ, dàn trang xuất bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sắp chữ, dàn trang ấn phẩm sách/báo/tạp chí bằng phần mềm chuyên dụng",
+              "esco_hint": "perform typesetting and page layout for publications",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "InDesign & Publishing Software",
+              "label_vi": "Adobe InDesign, phần mềm dàn trang",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Adobe InDesign, QuarkXPress dàn trang ấn phẩm chuyên nghiệp",
+              "esco_hint": "use InDesign and professional publishing software",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Print Production Process",
+              "label_vi": "Quy trình sản xuất in ấn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu quy trình in: prepress, in offset, kỹ thuật số, đóng sách, gia công",
+              "esco_hint": "knowledge of print production from prepress to finishing",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Color Management Print",
+              "label_vi": "Quản lý màu sắc in ấn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý màu CMYK, ICC profile, proof màu trước khi in hàng loạt",
+              "esco_hint": "manage colour profiles and proofing for print",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Typography Vietnamese",
+              "label_vi": "Kỹ thuật typography tiếng Việt",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu font tiếng Việt, chuẩn Unicode, dấu thanh điệu đúng trong dàn trang",
+              "esco_hint": "apply Vietnamese typography and Unicode standards",
+              "confidence": 0.96,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "PDF Preflight & Print-ready Files",
+              "label_vi": "Kiểm tra PDF, file xuất in",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm tra file PDF trước in: bleed, margin, resolution, font embed",
+              "esco_hint": "check and prepare print-ready PDF files",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Print Quality Control",
+              "label_vi": "Kiểm soát chất lượng in ấn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Kiểm tra mẫu in, đối chiếu màu, phát hiện lỗi trước khi in hàng loạt",
+              "esco_hint": "conduct print quality control and colour checking",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Photoshop Illustrator Print",
+              "label_vi": "Adobe Photoshop, Illustrator hỗ trợ in",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xử lý ảnh, đồ họa hỗ trợ dàn trang bằng Photoshop, Illustrator",
+              "esco_hint": "use Photoshop and Illustrator to support print production",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Nhân viên chế bản",
+      "nghe": "Biên tập/Viết/Xuất bản",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-nhan-vien-che-ban",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Prepress & Plate Making",
+              "label_vi": "Chế bản in ấn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện chế bản: CTP, film, bản in offset đảm bảo chất lượng",
+              "esco_hint": "perform prepress and plate making for offset printing",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "CTP & Digital Prepress",
+              "label_vi": "CTP, chế bản kỹ thuật số",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Vận hành hệ thống CTP, RIP, xuất bản in chính xác màu và độ phân giải",
+              "esco_hint": "operate CTP systems and digital prepress workflows",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Color Separation & Proofing",
+              "label_vi": "Tách màu, proof màu chế bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tách màu CMYK, kiểm tra proof màu trước khi ra bản in chính thức",
+              "esco_hint": "perform colour separation and proofing",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Imposition & Signature Layout",
+              "label_vi": "Dàn dập, xếp trang ấn phẩm",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện dàn dập, xếp chữ ký in cho sách, báo, tạp chí",
+              "esco_hint": "perform imposition and signature layout for printing",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Print File Checking",
+              "label_vi": "Kiểm tra file in chuyên nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm tra file in: độ phân giải, bleed, font, màu, trap trước chế bản",
+              "esco_hint": "check print files for resolution, bleed, fonts and colour",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam Print Industry Standards",
+              "label_vi": "Tiêu chuẩn in ấn VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu tiêu chuẩn in ấn VN, ISO 12647 quản lý màu sắc in offset",
+              "esco_hint": "knowledge of Vietnamese and ISO print industry standards",
+              "confidence": 0.89,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Acrobat & Pitstop Preflight",
+              "label_vi": "Acrobat, PitStop kiểm tra PDF",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng Acrobat Pro, Enfocus PitStop kiểm tra và sửa lỗi file PDF",
+              "esco_hint": "use Acrobat and PitStop for PDF preflight",
+              "confidence": 0.92,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Attention to Technical Detail",
+              "label_vi": "Tỉ mỉ kỹ thuật chế bản",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tỉ mỉ kiểm tra từng chi tiết kỹ thuật để tránh lỗi in hàng loạt",
+              "esco_hint": "maintain meticulous attention to technical printing detail",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Chuyên môn Biên tập/Viết/Xuất bản khác",
+      "nghe": "Biên tập/Viết/Xuất bản",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-chuyen-mon-bien-tap-viet-xuat-ban-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 7
+          },
+          "skills": [
+            {
+              "label_en": "Editorial Publishing Specialist",
+              "label_vi": "Chuyên môn biên tập/xuất bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Thực hiện công việc biên tập, viết, xuất bản theo chuyên môn cụ thể",
+              "esco_hint": "apply specialist editorial and publishing skills",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnamese Language Proficiency",
+              "label_vi": "Tiếng Việt viết thành thạo",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Viết tiếng Việt chuẩn chính tả, ngữ pháp, phong cách báo chí/xuất bản",
+              "esco_hint": "write Vietnamese to professional publishing standard",
+              "confidence": 0.96,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Vietnam Press Law Basic",
+              "label_vi": "Luật Báo chí VN cơ bản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm cơ bản Luật Báo chí 2016, quy định xuất bản nội dung tại VN",
+              "esco_hint": "basic knowledge of Vietnamese Press Law for publishing",
+              "confidence": 0.9,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Content Management Tools",
+              "label_vi": "Công cụ quản lý nội dung",
+              "skill_type": "tool",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng CMS, Google Docs, Notion hoặc công cụ biên tập nội dung",
+              "esco_hint": "use content management and editorial tools",
+              "confidence": 0.87,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Creativity & Writing Passion",
+              "label_vi": "Sáng tạo, đam mê viết lách",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư duy sáng tạo, đam mê sáng tác và sản xuất nội dung chất lượng",
+              "esco_hint": "demonstrate creativity and passion for writing and content",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "English Content Basic",
+              "label_vi": "Tiếng Anh nội dung cơ bản",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc, tham khảo tài liệu và nội dung tiếng Anh phục vụ công việc",
+              "esco_hint": "read English content for research and reference",
+              "confidence": 0.82
+            },
+            {
+              "label_en": "Relevant Publishing Qualification",
+              "label_vi": "Bằng báo chí, truyền thông, văn học",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng báo chí, truyền thông, ngữ văn, xuất bản hoặc chuyên ngành liên quan",
+              "esco_hint": "hold relevant journalism, communication or publishing degree",
+              "confidence": 0.87
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Makeup/Stylist",
+      "nghe": "Phim và truyền hình",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-makeup-stylist",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Professional Makeup Artistry",
+              "label_vi": "Trang điểm chuyên nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện trang điểm nhân vật, diễn viên cho phim, TVC, chụp ảnh thương mại",
+              "esco_hint": "perform professional makeup for film, TV and commercial shoots",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Stage & Camera Makeup",
+              "label_vi": "Trang điểm sân khấu, máy quay",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Trang điểm phù hợp ánh sáng sân khấu và máy quay: bù sắc, che khuyết điểm",
+              "esco_hint": "apply makeup suitable for stage lighting and camera",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Character & SFX Makeup",
+              "label_vi": "Trang điểm nhân vật, hiệu ứng đặc biệt",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Trang điểm nhân vật lịch sử, già, thương tật, SFX cho phim truyền hình",
+              "esco_hint": "create character and special effects makeup",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Hair Styling & Wig",
+              "label_vi": "Làm tóc, tóc giả cho nhân vật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Làm tóc, tạo kiểu, sử dụng tóc giả phù hợp nhân vật và thời đại phim",
+              "esco_hint": "style hair and wigs for film and TV characters",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Fashion Styling",
+              "label_vi": "Styling trang phục, phụ kiện",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối đồ, chọn phụ kiện phù hợp nhân vật, xu hướng cho TVC, phim, chụp ảnh",
+              "esco_hint": "style outfits and accessories for productions",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Vietnam Film Industry Knowledge",
+              "label_vi": "Am hiểu ngành phim VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu quy trình sản xuất phim VN, yêu cầu makeup cho phim truyện, TVC",
+              "esco_hint": "knowledge of Vietnamese film production makeup requirements",
+              "confidence": 0.88,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Makeup Kit & Product Knowledge",
+              "label_vi": "Am hiểu dụng cụ, sản phẩm trang điểm",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu sản phẩm makeup HD, airbrush, các thương hiệu chuyên nghiệp",
+              "esco_hint": "knowledge of professional makeup products and techniques",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Set Adaptability Makeup",
+              "label_vi": "Linh hoạt trên trường quay",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Làm việc hiệu quả trong điều kiện trường quay: áp lực thời gian, ngoài trời",
+              "esco_hint": "work adaptably on film and TV sets under pressure",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Makeup Artist Certificate",
+              "label_vi": "Chứng chỉ trang điểm chuyên nghiệp",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ nghề trang điểm, thẩm mỹ hoặc đào tạo chuyên ngành makeup",
+              "esco_hint": "hold professional makeup artistry certificate",
+              "confidence": 0.87
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Diễn viên",
+      "nghe": "Phim và truyền hình",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-dien-vien",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Acting Performance",
+              "label_vi": "Diễn xuất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thể hiện nhân vật chân thực, xúc cảm qua diễn xuất phim, sân khấu, TVC",
+              "esco_hint": "perform acting roles in film, TV and theatre",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Script Memorisation & Character Study",
+              "label_vi": "Học kịch bản, phân tích nhân vật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Học thuộc thoại, phân tích tâm lý nhân vật để diễn xuất có chiều sâu",
+              "esco_hint": "memorise scripts and analyse character psychology",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Method Acting Techniques",
+              "label_vi": "Kỹ thuật diễn xuất phương pháp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Áp dụng kỹ thuật diễn xuất: Stanislavski, method acting để hóa thân nhân vật",
+              "esco_hint": "apply acting techniques including method acting",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Voice & Diction",
+              "label_vi": "Giọng nói, khẩu hình diễn xuất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kiểm soát giọng nói, khẩu hình, ngữ điệu phù hợp nhân vật và môi trường",
+              "esco_hint": "control voice, diction and intonation for performance",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Physical Expression & Movement",
+              "label_vi": "Biểu cảm cơ thể, di chuyển sân khấu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sử dụng ngôn ngữ cơ thể, biểu cảm khuôn mặt, di chuyển thể hiện nhân vật",
+              "esco_hint": "use physical expression and movement in performance",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Vietnam Film & Theatre Culture",
+              "label_vi": "Am hiểu văn hóa điện ảnh, sân khấu VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu phong cách điện ảnh VN, lịch sử sân khấu, xu hướng phim trong nước",
+              "esco_hint": "knowledge of Vietnamese film and theatre culture",
+              "confidence": 0.88,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "On-screen Presence",
+              "label_vi": "Năng lượng, hình ảnh trước máy quay",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tỏa sáng tự nhiên trước máy quay, tạo ấn tượng mạnh với khán giả",
+              "esco_hint": "project strong on-screen presence and charisma",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Adaptability Director Instructions",
+              "label_vi": "Tiếp thu chỉ đạo đạo diễn",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tiếp thu, thực hiện chỉ đạo đạo diễn linh hoạt, sáng tạo trong khuôn khổ",
+              "esco_hint": "respond creatively to director's instructions",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Diễn viên lồng tiếng",
+      "nghe": "Phim và truyền hình",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-dien-vien-long-tieng",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Voice Acting & Dubbing",
+              "label_vi": "Diễn xuất giọng nói, lồng tiếng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lồng tiếng nhân vật phim hoạt hình, phim nước ngoài, phim VN chính xác cảm xúc",
+              "esco_hint": "perform voice acting and dubbing for animation and film",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Voice Range & Character Voices",
+              "label_vi": "Dải giọng, giọng nhân vật đa dạng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tạo dải giọng đa dạng: trẻ em, người già, nam nữ, nhân vật đặc thù",
+              "esco_hint": "create diverse character voices across age and gender",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Lip-sync Dubbing Technique",
+              "label_vi": "Kỹ thuật khớp khẩu hình lồng tiếng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đồng bộ giọng nói khớp khẩu hình nhân vật gốc chính xác theo frame",
+              "esco_hint": "synchronise voice with character lip movements",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Microphone Technique Studio",
+              "label_vi": "Kỹ thuật micro thu âm studio",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Làm việc chuyên nghiệp trong phòng thu: khoảng cách micro, xử lý hơi thở",
+              "esco_hint": "use professional studio microphone technique",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnamese Standard Pronunciation",
+              "label_vi": "Phát âm tiếng Việt chuẩn",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phát âm chuẩn tiếng Việt, không giọng địa phương hoặc kiểm soát theo yêu cầu",
+              "esco_hint": "speak standard Vietnamese pronunciation for broadcasting",
+              "confidence": 0.98,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Script Reading & Interpretation",
+              "label_vi": "Đọc và diễn giải kịch bản lồng tiếng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đọc hiểu kịch bản, nắm bắt cảm xúc nhân vật để lồng tiếng đúng tâm lý",
+              "esco_hint": "read and interpret dubbing scripts accurately",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Emotion Delivery Voice",
+              "label_vi": "Truyền tải cảm xúc qua giọng nói",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Truyền tải cảm xúc đa dạng: vui, buồn, giận, sợ qua giọng nói tự nhiên",
+              "esco_hint": "deliver authentic emotional range through voice alone",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Director Collaboration Voice",
+              "label_vi": "Phối hợp với đạo diễn âm thanh",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tiếp thu phản hồi và điều chỉnh giọng nói theo yêu cầu đạo diễn âm thanh",
+              "esco_hint": "collaborate with sound director and take direction",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Quản lý/Trợ lý nghệ sĩ",
+      "nghe": "Phim và truyền hình",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-quan-ly-tro-ly-nghe-si",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Artist Management",
+              "label_vi": "Quản lý nghệ sĩ, diễn viên",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý lịch trình, hợp đồng, sự nghiệp, hình ảnh công chúng của nghệ sĩ",
+              "esco_hint": "manage artist schedules, contracts and public image",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Entertainment Contract Management",
+              "label_vi": "Quản lý hợp đồng nghệ thuật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đàm phán, rà soát hợp đồng biểu diễn, phim, quảng cáo cho nghệ sĩ",
+              "esco_hint": "negotiate and manage entertainment contracts",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Vietnam Entertainment Industry",
+              "label_vi": "Am hiểu ngành giải trí VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu hệ sinh thái giải trí VN: nhà sản xuất, nhãn hàng, event, media",
+              "esco_hint": "knowledge of Vietnamese entertainment industry ecosystem",
+              "confidence": 0.96,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "PR & Media Relations Artist",
+              "label_vi": "Quan hệ báo chí, truyền thông nghệ sĩ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng, quản lý quan hệ với báo chí, tạp chí, KOL cho nghệ sĩ",
+              "esco_hint": "manage media and press relations for artists",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Social Media Artist Management",
+              "label_vi": "Quản lý mạng xã hội nghệ sĩ",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý fanpage, Instagram, TikTok, YouTube của nghệ sĩ hiệu quả",
+              "esco_hint": "manage artist social media presence and engagement",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Crisis Management Artist",
+              "label_vi": "Xử lý khủng hoảng hình ảnh nghệ sĩ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Xử lý khéo léo tình huống tiêu cực, bảo vệ hình ảnh nghệ sĩ trong khủng hoảng",
+              "esco_hint": "manage artist reputation and crisis situations",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Schedule & Logistics Artist",
+              "label_vi": "Sắp xếp lịch, logistics nghệ sĩ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sắp xếp lịch recording, quay phim, event; đặt vé, khách sạn, di chuyển",
+              "esco_hint": "coordinate artist schedules, travel and logistics",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Discretion & Confidentiality Artist",
+              "label_vi": "Bảo mật thông tin nghệ sĩ",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Bảo mật thông tin cá nhân, hợp đồng và cuộc sống riêng tư nghệ sĩ",
+              "esco_hint": "maintain strict confidentiality about artist personal affairs",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "English Artist Management",
+              "label_vi": "Tiếng Anh quản lý nghệ sĩ quốc tế",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp với đối tác quốc tế, quản lý nghệ sĩ hoạt động quốc tế",
+              "esco_hint": "communicate in English for international artist management",
+              "confidence": 0.84
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Dẫn chương trình (MC)",
+      "nghe": "Phim và truyền hình",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-dan-chuong-trinh-mc",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "MC Hosting & Presentation",
+              "label_vi": "Dẫn chương trình, MC",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dẫn dắt chương trình truyền hình, sự kiện, gameshow chuyên nghiệp, tự nhiên",
+              "esco_hint": "host TV programmes, events and live shows professionally",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Stage Presence & Charisma",
+              "label_vi": "Năng lượng sân khấu, sức hút MC",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tỏa sáng trên sân khấu, tạo không khí, kết nối khán giả và khách mời",
+              "esco_hint": "project stage presence and audience connection as MC",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Ad-lib & Improvisation MC",
+              "label_vi": "Ứng biến, xử lý tình huống MC",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Ứng biến khéo léo khi có sự cố, duy trì flow chương trình mượt mà",
+              "esco_hint": "improvise and handle unexpected situations on stage",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnamese Standard Pronunciation MC",
+              "label_vi": "Phát âm chuẩn tiếng Việt MC",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phát âm chuẩn, rõ ràng, không giọng địa phương, dùng ngôn ngữ phù hợp sóng truyền hình",
+              "esco_hint": "speak standard Vietnamese for broadcast media",
+              "confidence": 0.98,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Script Reading & Delivery",
+              "label_vi": "Đọc script, teleprompter",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đọc script tự nhiên, sử dụng teleprompter mà không cứng nhắc",
+              "esco_hint": "read scripts and teleprompter naturally",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Interview & Guest Interaction",
+              "label_vi": "Phỏng vấn, tương tác khách mời",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phỏng vấn khéo léo, khai thác thông tin thú vị từ khách mời đa dạng",
+              "esco_hint": "conduct engaging interviews with diverse guests",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam Broadcasting Regulations",
+              "label_vi": "Quy định phát sóng truyền hình VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm quy định ngôn ngữ, nội dung phát sóng của Bộ TT&TT, đài truyền hình VN",
+              "esco_hint": "knowledge of Vietnamese broadcasting content regulations",
+              "confidence": 0.89,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "English MC Bilingual",
+              "label_vi": "Tiếng Anh dẫn chương trình song ngữ",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Dẫn chương trình song ngữ Việt-Anh cho sự kiện quốc tế, doanh nghiệp FDI",
+              "esco_hint": "host bilingual Vietnamese-English events and programmes",
+              "confidence": 0.84
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Người mẫu/Mẫu ảnh",
+      "nghe": "Phim và truyền hình",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-nguoi-mau-mau-anh",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Modelling & Posing",
+              "label_vi": "Dáng đứng, tạo pose chuyên nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tạo dáng, di chuyển catwalk, thể hiện sản phẩm chuyên nghiệp trước camera",
+              "esco_hint": "pose and move professionally for camera and runway",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Runway & Catwalk",
+              "label_vi": "Catwalk, trình diễn thời trang",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Trình diễn thời trang trên catwalk: dáng đi, xoay, dừng kỹ thuật chuyên nghiệp",
+              "esco_hint": "perform runway and catwalk presentations",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Commercial & Advertising Modelling",
+              "label_vi": "Mẫu quảng cáo, TVC",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Chụp ảnh quảng cáo thương mại, quay TVC thể hiện sản phẩm đa dạng ngành hàng",
+              "esco_hint": "model for commercial, advertising and TVC productions",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Portfolio & Lookbook",
+              "label_vi": "Portfolio, lookbook chuyên nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng và duy trì portfolio ảnh đa phong cách, cập nhật lookbook định kỳ",
+              "esco_hint": "develop and maintain professional modelling portfolio",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Physical Maintenance Model",
+              "label_vi": "Duy trì vóc dáng, sức khỏe người mẫu",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì vóc dáng, da, tóc, móng theo tiêu chuẩn ngành người mẫu",
+              "esco_hint": "maintain physical appearance to modelling industry standards",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Vietnam Fashion Industry Knowledge",
+              "label_vi": "Am hiểu ngành thời trang VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu thương hiệu thời trang VN, xu hướng, các designer và show lớn",
+              "esco_hint": "knowledge of Vietnamese fashion industry and designers",
+              "confidence": 0.88,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Social Media Model Presence",
+              "label_vi": "Mạng xã hội, hình ảnh người mẫu số",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng, quản lý hình ảnh trên Instagram, TikTok, Facebook cá nhân người mẫu",
+              "esco_hint": "build and manage model social media presence",
+              "confidence": 0.91,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Adaptability Direction Photo",
+              "label_vi": "Tiếp thu chỉ đạo nhiếp ảnh gia",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Linh hoạt thực hiện yêu cầu nhiếp ảnh gia, đạo diễn một cách chuyên nghiệp",
+              "esco_hint": "respond professionally to photographer and director direction",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Photographer/Video Editor",
+      "nghe": "Phim và truyền hình",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-photographer-video-editor",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Professional Photography",
+              "label_vi": "Chụp ảnh chuyên nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Chụp ảnh sản phẩm, chân dung, sự kiện, phong cảnh với kỹ thuật ánh sáng và bố cục",
+              "esco_hint": "photograph products, portraits, events with professional technique",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Video Production & Filming",
+              "label_vi": "Quay video chuyên nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quay video TVC, phim ngắn, nội dung mạng xã hội với thiết bị chuyên dụng",
+              "esco_hint": "produce and film video content for various platforms",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Adobe Premiere & Video Editing",
+              "label_vi": "Adobe Premiere, dựng phim video",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dựng phim, cắt ghép, hiệu chỉnh màu sắc, âm thanh bằng Premiere Pro",
+              "esco_hint": "edit videos using Adobe Premiere Pro",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Lightroom & Photoshop Retouching",
+              "label_vi": "Lightroom, Photoshop xử lý ảnh",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xử lý, retouch ảnh chuyên nghiệp bằng Lightroom và Photoshop",
+              "esco_hint": "retouch and process photos using Lightroom and Photoshop",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "After Effects & Motion Graphics",
+              "label_vi": "After Effects, motion graphics",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tạo motion graphics, hiệu ứng chuyển cảnh, title bằng After Effects",
+              "esco_hint": "create motion graphics and visual effects in After Effects",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Lighting Setup Photography",
+              "label_vi": "Thiết lập ánh sáng studio, ngoại cảnh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết lập ánh sáng studio (strobe, LED) và ngoại cảnh phù hợp từng chủ đề",
+              "esco_hint": "set up studio and location lighting for photography",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Color Grading Video",
+              "label_vi": "Color grading, hiệu chỉnh màu video",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Color grading video bằng Premiere Lumetri, DaVinci Resolve đúng tông màu yêu cầu",
+              "esco_hint": "colour grade video using Lumetri or DaVinci Resolve",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Social Media Content Creation",
+              "label_vi": "Sản xuất nội dung mạng xã hội",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sản xuất ảnh, video tối ưu cho Facebook, Instagram, TikTok, YouTube",
+              "esco_hint": "create photo and video content optimised for social platforms",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Equipment Maintenance Photo/Video",
+              "label_vi": "Bảo quản thiết bị máy ảnh, quay phim",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Bảo quản, vận chuyển thiết bị máy ảnh, lens, gimbal an toàn",
+              "esco_hint": "maintain and safely transport camera and video equipment",
+              "confidence": 0.89
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Đạo diễn",
+      "nghe": "Phim và truyền hình",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-dao-dien",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Film & TV Direction",
+              "label_vi": "Đạo diễn phim, truyền hình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dẫn dắt toàn bộ sản xuất phim/TVC/phim truyện: từ phát triển kịch bản đến post",
+              "esco_hint": "direct film and TV productions from development to post",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Script Analysis & Vision",
+              "label_vi": "Phân tích kịch bản, xây dựng tầm nhìn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đọc, phân tích kịch bản; xây dựng visual concept, tông màu, phong cách nghệ thuật",
+              "esco_hint": "analyse scripts and develop directorial vision",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Directing Actors",
+              "label_vi": "Chỉ đạo diễn xuất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Chỉ đạo diễn viên thể hiện nhân vật đúng tâm lý, cảm xúc theo ý đồ nghệ thuật",
+              "esco_hint": "direct actors to deliver character performances",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Shot Composition & Camera",
+              "label_vi": "Bố cục cảnh quay, máy quay",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lên shot list, storyboard; chỉ đạo quay phim về bố cục, góc máy, chuyển động",
+              "esco_hint": "compose shots and direct cinematography",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Production Management Direction",
+              "label_vi": "Quản lý sản xuất phim",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phối hợp với producer, quản lý tiến độ, ngân sách, nhân sự trên trường quay",
+              "esco_hint": "manage film production schedule, budget and crew",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Vietnam Film Industry & Culture",
+              "label_vi": "Am hiểu ngành điện ảnh VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu ngành điện ảnh VN: hệ sinh thái, phong cách, các đơn vị sản xuất lớn",
+              "esco_hint": "knowledge of Vietnamese film industry and culture",
+              "confidence": 0.95,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Vietnam Film Regulations",
+              "label_vi": "Luật Điện ảnh VN, kiểm duyệt",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm Luật Điện ảnh 2022, quy định phân loại phim, kiểm duyệt nội dung Cục Điện ảnh",
+              "esco_hint": "knowledge of Vietnamese Film Law 2022 and censorship rules",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Post-production Collaboration",
+              "label_vi": "Phối hợp hậu kỳ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giám sát dựng phim, color grading, âm thanh, VFX để đúng ý đồ đạo diễn",
+              "esco_hint": "supervise post-production to realise directorial vision",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Leadership Creative Team",
+              "label_vi": "Lãnh đạo đội ngũ sáng tạo",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Truyền cảm hứng và dẫn dắt đội ngũ diễn viên, kỹ thuật, sáng tạo",
+              "esco_hint": "lead and inspire creative and technical film crew",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "English Film Direction",
+              "label_vi": "Tiếng Anh đạo diễn phim",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp với đối tác, diễn viên, kỹ thuật quốc tế tiếng Anh",
+              "esco_hint": "communicate in English for international film projects",
+              "confidence": 0.84
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Biên đạo",
+      "nghe": "Phim và truyền hình",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bien-dao",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Choreography Creation",
+              "label_vi": "Biên đạo múa, vũ đạo",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Sáng tác, dàn dựng bài múa, vũ đạo cho phim, MV, sự kiện, gameshow",
+              "esco_hint": "create and choreograph dance routines for productions",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Dance Techniques Mastery",
+              "label_vi": "Thành thạo các kỹ thuật múa",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo ít nhất 2-3 phong cách: contemporary, hip-hop, truyền thống, jazz",
+              "esco_hint": "master multiple dance styles and techniques",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Traditional Dance",
+              "label_vi": "Múa truyền thống Việt Nam",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu và biên đạo múa dân gian VN: quan họ, chèo, múa cung đình Huế",
+              "esco_hint": "knowledge of Vietnamese traditional and folk dance",
+              "confidence": 0.93,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Directing Dancers & Performers",
+              "label_vi": "Chỉ đạo diễn viên múa, biểu diễn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hướng dẫn, đào tạo vũ công, diễn viên thực hiện biên đạo chính xác",
+              "esco_hint": "direct and train dancers and performers",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Music & Rhythm Analysis",
+              "label_vi": "Phân tích âm nhạc, nhịp điệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân tích nhịp điệu, cấu trúc âm nhạc để biên đạo phù hợp cảm xúc",
+              "esco_hint": "analyse music and rhythm for choreographic design",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Stage & Camera Choreography",
+              "label_vi": "Biên đạo sân khấu và máy quay",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Điều chỉnh biên đạo phù hợp không gian sân khấu và góc máy quay phim",
+              "esco_hint": "adapt choreography for stage and camera angles",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Physical Fitness Choreographer",
+              "label_vi": "Thể lực, kỹ năng thị phạm",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thể lực xuất sắc để thị phạm động tác, duy trì phong độ trong quá trình dàn dựng",
+              "esco_hint": "demonstrate movements and maintain physical fitness",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Creative Vision Choreography",
+              "label_vi": "Tầm nhìn sáng tạo biên đạo",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phát triển ý tưởng biên đạo độc đáo, phù hợp câu chuyện và thông điệp tác phẩm",
+              "esco_hint": "develop creative choreographic vision aligned with narrative",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Biên kịch",
+      "nghe": "Phim và truyền hình",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-bien-kich",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Screenplay & Script Writing",
+              "label_vi": "Viết kịch bản phim, kịch bản truyền hình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Viết kịch bản phim điện ảnh, phim truyền hình, phim ngắn theo format chuẩn",
+              "esco_hint": "write screenplays and TV scripts in professional format",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Story Structure & Development",
+              "label_vi": "Cấu trúc, phát triển câu chuyện",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng cấu trúc ba hồi, arc nhân vật, plot twist, conflict và resolution",
+              "esco_hint": "develop story structure, character arcs and plot",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Character Development Scriptwriting",
+              "label_vi": "Xây dựng nhân vật kịch bản",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tạo dựng nhân vật có chiều sâu tâm lý, thoại đặc trưng, hành trình rõ ràng",
+              "esco_hint": "create psychologically complex characters with distinct voices",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Cultural Context Scriptwriting",
+              "label_vi": "Am hiểu văn hóa VN trong kịch bản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng câu chuyện phù hợp văn hóa, lịch sử, đời sống người VN hiện đại",
+              "esco_hint": "incorporate Vietnamese cultural context into scripts",
+              "confidence": 0.96,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Vietnam Film Censorship Knowledge",
+              "label_vi": "Quy định kiểm duyệt kịch bản VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm Luật Điện ảnh 2022, tiêu chí kiểm duyệt nội dung kịch bản Cục Điện ảnh",
+              "esco_hint": "knowledge of Vietnamese film censorship and content rules",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Screenplay Format & Final Draft",
+              "label_vi": "Định dạng kịch bản, phần mềm viết kịch bản",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Viết kịch bản đúng format bằng Final Draft, Celtx hoặc tương đương",
+              "esco_hint": "write scripts in proper format using Final Draft or Celtx",
+              "confidence": 0.91,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Genre Expertise Scriptwriting",
+              "label_vi": "Am hiểu thể loại phim, kịch",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu đặc trưng các thể loại: hài, tình cảm, kinh dị, hành động, tâm lý xã hội",
+              "esco_hint": "understand genre conventions in film and TV writing",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Adaptation & Original Writing",
+              "label_vi": "Chuyển thể, viết kịch bản gốc",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Viết kịch bản gốc và chuyển thể từ tiểu thuyết, truyện ngắn, tin tức",
+              "esco_hint": "write original scripts and adapt source material",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Collaboration Director Producer",
+              "label_vi": "Phối hợp đạo diễn, producer",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tiếp thu ý kiến đạo diễn, producer để chỉnh sửa kịch bản hiệu quả",
+              "esco_hint": "collaborate with directors and producers on script revisions",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Producer (Sản xuất phim)",
+      "nghe": "Phim và truyền hình",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-producer-san-xuat-phim",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Film & TV Production Management",
+              "label_vi": "Quản lý sản xuất phim, truyền hình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lên kế hoạch, tổ chức, giám sát toàn bộ quá trình sản xuất phim từ pre đến post",
+              "esco_hint": "manage film and TV production from pre to post",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Production Budget Management",
+              "label_vi": "Quản lý ngân sách sản xuất phim",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập, kiểm soát ngân sách sản xuất chặt chẽ, tối ưu chi phí giữ chất lượng",
+              "esco_hint": "manage and control film production budgets",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Film Industry Regulations",
+              "label_vi": "Luật Điện ảnh 2022, quy định sản xuất phim VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Điện ảnh 2022, quy định hợp tác sản xuất phim nước ngoài, cấp phép",
+              "esco_hint": "knowledge of Vietnamese Film Law 2022 and production permits",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Cast & Crew Management",
+              "label_vi": "Quản lý diễn viên, ekip sản xuất",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuyển chọn, quản lý diễn viên, đạo diễn, kỹ thuật viên, location",
+              "esco_hint": "select and manage cast and crew for productions",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Production Schedule & Logistics",
+              "label_vi": "Lịch quay, logistics sản xuất phim",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lên lịch quay chi tiết, quản lý location, phương tiện, thiết bị, hậu cần",
+              "esco_hint": "plan shooting schedule and manage production logistics",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Contract & Talent Negotiation",
+              "label_vi": "Đàm phán hợp đồng diễn viên, đơn vị",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đàm phán hợp đồng với diễn viên, đạo diễn, địa điểm, nhà cung cấp",
+              "esco_hint": "negotiate contracts with talent, venues and suppliers",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Co-production & Distribution Deals",
+              "label_vi": "Hợp tác sản xuất, phát hành phim",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tìm kiếm và đàm phán cơ hội hợp tác sản xuất, phân phối phim trong nước và quốc tế",
+              "esco_hint": "develop co-production and distribution agreements",
+              "confidence": 0.88
+            },
+            {
+              "label_en": "Crisis Management Production",
+              "label_vi": "Xử lý sự cố sản xuất phim",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xử lý nhanh sự cố phát sinh trên trường quay để giữ tiến độ và ngân sách",
+              "esco_hint": "manage production crises and maintain schedule",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "English Film Production",
+              "label_vi": "Tiếng Anh sản xuất phim quốc tế",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "proficient",
+              "evidence_text": "Giao tiếp, đàm phán với đối tác, đơn vị phát hành quốc tế tiếng Anh",
+              "esco_hint": "communicate in English for international film co-productions",
+              "confidence": 0.88
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Phát hành điện ảnh và truyền hình",
+      "nghe": "Phim và truyền hình",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-phat-hanh-dien-anh-va-truyen-hinh",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 8
+          },
+          "skills": [
+            {
+              "label_en": "Film & TV Distribution",
+              "label_vi": "Phát hành phim, chương trình truyền hình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý phát hành phim rạp, truyền hình, OTT: lịch chiếu, hợp đồng, doanh thu",
+              "esco_hint": "manage film and TV distribution across channels",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Vietnam Cinema Distribution",
+              "label_vi": "Phát hành rạp chiếu phim VN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu hệ thống rạp chiếu VN: CGV, Lotte, Galaxy, BHD; đàm phán suất chiếu",
+              "esco_hint": "knowledge of Vietnamese cinema distribution landscape",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "OTT & Digital Distribution",
+              "label_vi": "Phát hành OTT, kỹ thuật số",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phát hành trên nền tảng OTT VN: Netflix, FPT Play, VieON, Galaxy Play",
+              "esco_hint": "distribute content on Vietnamese OTT platforms",
+              "confidence": 0.95,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam Film Law Distribution",
+              "label_vi": "Luật Điện ảnh 2022 trong phát hành",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Điện ảnh 2022, thủ tục cấp phép phổ biến phim, phân loại độ tuổi",
+              "esco_hint": "knowledge of Vietnamese film law for distribution licensing",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Marketing & Promotion Film",
+              "label_vi": "Marketing, quảng bá phim",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập kế hoạch marketing phim: trailer, poster, PR, event ra mắt, social media",
+              "esco_hint": "develop film marketing and promotional campaigns",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Box Office & Revenue Analysis",
+              "label_vi": "Phân tích doanh thu phòng vé",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Theo dõi, phân tích doanh thu phòng vé, suất chiếu, đưa ra điều chỉnh kịp thời",
+              "esco_hint": "analyse box office performance and revenue data",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Rights & Licensing Management",
+              "label_vi": "Quản lý bản quyền, giấy phép phim",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý bản quyền phim, đàm phán licence cho TV, OTT, thị trường quốc tế",
+              "esco_hint": "manage film rights and licensing agreements",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "English Film Distribution",
+              "label_vi": "Tiếng Anh phát hành phim quốc tế",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Đàm phán, giao tiếp với đối tác phát hành quốc tế tiếng Anh",
+              "esco_hint": "communicate in English with international distribution partners",
+              "confidence": 0.87
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Hậu kỳ sản xuất",
+      "nghe": "Phim và truyền hình",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-hau-ky-san-xuat",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Post-production Editing",
+              "label_vi": "Dựng phim, hậu kỳ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Dựng phim, cắt ghép, tạo dựng câu chuyện từ footage thô trên phần mềm chuyên dụng",
+              "esco_hint": "edit and assemble film footage in post-production",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Adobe Premiere / DaVinci Resolve",
+              "label_vi": "Adobe Premiere, DaVinci Resolve dựng phim",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Premiere Pro, DaVinci Resolve dựng phim, hậu kỳ chuyên nghiệp",
+              "esco_hint": "use Premiere Pro and DaVinci Resolve for professional editing",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Color Grading Post",
+              "label_vi": "Color grading, hiệu chỉnh màu hậu kỳ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Color grade chuyên nghiệp trên DaVinci Resolve, Lumetri đúng look yêu cầu",
+              "esco_hint": "perform professional colour grading in post-production",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Audio Post-production",
+              "label_vi": "Hậu kỳ âm thanh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Mix âm thanh, thêm nhạc nền, SFX, lọc tiếng ồn cho phim, TVC",
+              "esco_hint": "mix and master audio for film and TV post-production",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "VFX & Compositing",
+              "label_vi": "VFX, dựng kỹ xảo hình ảnh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tạo hiệu ứng hình ảnh cơ bản, compositing bằng After Effects, Nuke",
+              "esco_hint": "create VFX and compositing using After Effects or Nuke",
+              "confidence": 0.89,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Delivery Standards & Formats",
+              "label_vi": "Tiêu chuẩn xuất file, codec hậu kỳ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xuất file đúng tiêu chuẩn: ProRes, H.264/H.265, DCP cho rạp, OTT, truyền hình",
+              "esco_hint": "deliver files in correct formats for cinema, OTT and broadcast",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Post-production Workflow",
+              "label_vi": "Quy trình làm việc hậu kỳ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu và tối ưu workflow hậu kỳ: offline, online edit, proxy workflow",
+              "esco_hint": "optimise post-production workflows and pipelines",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Deadline Management Post",
+              "label_vi": "Quản lý deadline hậu kỳ",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Hoàn thành hậu kỳ đúng deadline dưới áp lực phát hành chặt chẽ",
+              "esco_hint": "manage post-production deadlines under delivery pressure",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Director Collaboration Post",
+              "label_vi": "Phối hợp đạo diễn trong hậu kỳ",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tiếp thu và hiện thực hóa tầm nhìn đạo diễn trong quá trình dựng phim",
+              "esco_hint": "collaborate with directors to realise editorial vision",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Animation Design",
+      "nghe": "Phim và truyền hình",
+      "nhom_nghe": "Phim và truyền hình/Báo chí/Xuất bản",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-animation-design",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "2D & 3D Animation",
+              "label_vi": "Thiết kế hoạt hình 2D và 3D",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tạo dựng hoạt hình 2D, 3D cho phim hoạt hình, TVC, nội dung số chất lượng cao",
+              "esco_hint": "create 2D and 3D animation for film, advertising and digital content",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "After Effects Animation",
+              "label_vi": "Adobe After Effects hoạt hình",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo After Effects tạo motion graphics, character animation, visual effects",
+              "esco_hint": "create animations and motion graphics in After Effects",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "3D Software Maya Blender",
+              "label_vi": "Maya, Blender hoạt hình 3D",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng Maya, Blender, Cinema 4D mô hình hóa, rigging, animation 3D",
+              "esco_hint": "use Maya or Blender for 3D modelling and animation",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Character Animation",
+              "label_vi": "Hoạt hình nhân vật",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tạo chuyển động nhân vật tự nhiên: walk cycle, lip sync, facial expression",
+              "esco_hint": "animate characters with natural movement and expressions",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Storyboard & Animatic",
+              "label_vi": "Storyboard, animatic hoạt hình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Vẽ storyboard, tạo animatic cho phim hoạt hình và TVC trước khi sản xuất",
+              "esco_hint": "create storyboards and animatics for animation pre-production",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Animation Principles",
+              "label_vi": "Nguyên tắc hoạt hình cơ bản",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm 12 nguyên tắc hoạt hình Disney và áp dụng tạo chuyển động sống động",
+              "esco_hint": "apply 12 principles of animation for natural movement",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam Animation Industry",
+              "label_vi": "Ngành hoạt hình VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu ngành hoạt hình VN: đơn vị sản xuất, kênh phân phối, phong cách",
+              "esco_hint": "knowledge of Vietnamese animation industry and production landscape",
+              "confidence": 0.87,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Rendering & Output Animation",
+              "label_vi": "Render, xuất file hoạt hình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thiết lập render settings, xuất file hoạt hình đúng tiêu chuẩn chất lượng cao",
+              "esco_hint": "set up rendering and export animation files correctly",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Creative Storytelling Animation",
+              "label_vi": "Kể chuyện sáng tạo qua hoạt hình",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Kết hợp kỹ thuật và nghệ thuật kể chuyện hấp dẫn qua ngôn ngữ hoạt hình",
+              "esco_hint": "combine technical skill with creative storytelling in animation",
+              "confidence": 0.94
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

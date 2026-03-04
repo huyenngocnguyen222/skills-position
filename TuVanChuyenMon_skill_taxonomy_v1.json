@@ -1,0 +1,1369 @@
+{
+  "taxonomy_metadata": {
+    "sector": "Tư vấn chuyên môn",
+    "sector_en": "Professional Consulting & Analytics",
+    "version": "v1",
+    "total_positions": 11,
+    "total_skills": 109,
+    "avg_skills_per_position": 9.9,
+    "sub_categories": {
+      "Tư vấn/Phân tích chuyên môn": {
+        "positions": 11,
+        "skills": 109
+      }
+    },
+    "skill_type_distribution": {
+      "technical": 58,
+      "domain": 18,
+      "tool": 10,
+      "language": 10,
+      "soft": 9,
+      "certification": 4
+    },
+    "requirement_distribution": {
+      "required": 103,
+      "preferred": 6
+    },
+    "iviec_flags": {
+      "VN_REGULATION": 10,
+      "VN_TOOL": 13,
+      "VN_DOMAIN": 10
+    },
+    "data_sources": [
+      "topcv.vn",
+      "vietnamworks.com"
+    ],
+    "extraction_method": "structured_prompt_5jd_per_position",
+    "rows_covered": "967–977",
+    "notes": [
+      "Covers rows 967–977 (11 positions, 1 sub-category)",
+      "VN_REGULATION: Luật Doanh nghiệp 2020 + quản trị công ty (tư vấn QLDN), Luật Chứng khoán 2019 + quy định UBCKNN + thị trường vốn VN (tư vấn tài chính), Luật ATTT 2015 + Nghị định 13/2023 bảo vệ dữ liệu cá nhân (tư vấn CNTT + phân tích dữ liệu), Bộ luật Lao động 2019 + BHXH/BHYT/BHTN (tư vấn nhân sự + headhunting), Luật KCB 2023 + đạo đức tư vấn tâm lý Bộ Y tế (tư vấn tâm lý), Luật Hôn nhân và Gia đình 2014 + quy định ly hôn/quyền nuôi con (tư vấn hôn nhân)",
+      "VN_TOOL: Excel/PowerPoint tư vấn, SAP/Oracle/Odoo ERP, AWS/Azure/GCP cloud, SPSS phân tích nghiên cứu, SQL/Python/R/Pandas phân tích dữ liệu, Power BI/Tableau/Looker Studio dashboard, Buzzmetrics/YouNet social listening VN, LinkedIn/CRM/Bullhorn headhunting, Base HRM/HRM VN hệ thống nhân sự",
+      "VN_DOMAIN: Am hiểu bối cảnh kinh doanh VN (SME/FDI/DNNN), thị trường nhân sự cấp cao VN (lương/động lực/xu hướng dịch chuyển), khảo sát lương Mercer/Towers Watson/Hay VN, insight người tiêu dùng VN theo vùng miền, nguồn dữ liệu nghiên cứu VN (Nielsen/Kantar/GSO/Cimigo), văn hóa gia đình VN (tam đại đồng đường/áp lực nội ngoại), bối cảnh văn hóa tâm lý VN (thể diện/áp lực xã hội)",
+      "Sector unique: Tư vấn tâm lý và tư vấn hôn nhân require Vietnamese cultural sensitivity as core skill (VN_DOMAIN) — reflects Confucian family values, face-saving and social pressure dynamics unique to Vietnam; Data Analysis position has highest VN_TOOL density reflecting modern analytics stack (SQL+Python/R+Power BI+Tableau); CFA/ACCA flagged for financial consulting reflecting global certifications used in Vietnamese capital markets"
+    ]
+  },
+  "positions": [
+    {
+      "vi_tri": "Tư vấn quản lý doanh nghiệp",
+      "nghe": "Tư vấn/Phân tích chuyên môn",
+      "nhom_nghe": "Tư vấn chuyên môn",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tu-van-quan-ly-doanh-nghiep",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Business Management Consulting",
+              "label_vi": "Tư vấn quản lý, vận hành doanh nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân tích, tư vấn cải thiện mô hình vận hành, quy trình, tổ chức doanh nghiệp",
+              "esco_hint": "advise on business operations, organisation and process improvement",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Business Process Reengineering",
+              "label_vi": "Tái cấu trúc quy trình kinh doanh BPR",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế lại quy trình vận hành, tối ưu dòng chảy công việc, loại bỏ lãng phí",
+              "esco_hint": "reengineer and optimise business processes",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Business Law & Corporate Governance",
+              "label_vi": "Luật doanh nghiệp, quản trị công ty VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Nắm Luật Doanh nghiệp 2020, quy định quản trị công ty cổ phần, HĐQT tại VN",
+              "esco_hint": "knowledge of Vietnamese corporate law and governance",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Change Management",
+              "label_vi": "Quản lý thay đổi doanh nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Dẫn dắt và quản lý sự thay đổi tổ chức: văn hóa, cơ cấu, quy trình",
+              "esco_hint": "lead organisational change management initiatives",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Financial Analysis Consulting",
+              "label_vi": "Phân tích tài chính tư vấn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Phân tích P&L, cashflow, cân đối kế toán để chẩn đoán sức khỏe tài chính doanh nghiệp",
+              "esco_hint": "analyse financial statements to diagnose business health",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Consulting Proposal & Report",
+              "label_vi": "Soạn đề xuất, báo cáo tư vấn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Soạn proposal tư vấn, báo cáo chẩn đoán và khuyến nghị chuyên nghiệp",
+              "esco_hint": "prepare consulting proposals and diagnostic reports",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Project Management Consulting",
+              "label_vi": "Quản lý dự án tư vấn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý dự án tư vấn: phạm vi, tiến độ, nguồn lực, deliverable cho khách hàng",
+              "esco_hint": "manage consulting project scope, timeline and deliverables",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Excel & PowerPoint Consulting",
+              "label_vi": "Excel, PowerPoint trình bày tư vấn",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Excel phân tích dữ liệu và PowerPoint deck tư vấn chuyên nghiệp",
+              "esco_hint": "use Excel for analysis and PowerPoint for consulting presentations",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam Business Market Knowledge",
+              "label_vi": "Am hiểu thị trường doanh nghiệp VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu bối cảnh kinh doanh VN: SME, FDI, tập đoàn nhà nước, đặc thù quản lý",
+              "esco_hint": "knowledge of Vietnamese business landscape and management culture",
+              "confidence": 0.93,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "English Business Consulting",
+              "label_vi": "Tiếng Anh tư vấn kinh doanh",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thuyết trình, soạn báo cáo tư vấn, giao tiếp với khách hàng quốc tế tiếng Anh",
+              "esco_hint": "communicate and present consulting work in English",
+              "confidence": 0.91
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tư vấn chiến lược",
+      "nghe": "Tư vấn/Phân tích chuyên môn",
+      "nhom_nghe": "Tư vấn chuyên môn",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tu-van-chien-luoc",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Strategic Planning & Analysis",
+              "label_vi": "Hoạch định, phân tích chiến lược",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng, phân tích chiến lược dài hạn: phân tích ngành, cạnh tranh, cơ hội tăng trưởng",
+              "esco_hint": "develop and analyse corporate strategy",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Market & Competitive Analysis",
+              "label_vi": "Phân tích thị trường, cạnh tranh",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân tích SWOT, Porter 5 forces, thị phần, cạnh tranh để định vị chiến lược",
+              "esco_hint": "conduct market and competitive analysis",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Business Case Development",
+              "label_vi": "Xây dựng business case chiến lược",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lập business case thuyết phục: phân tích tài chính, ROI, rủi ro cho sáng kiến chiến lược",
+              "esco_hint": "build strategic business cases with financial analysis",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam Macro & Industry Trends",
+              "label_vi": "Kinh tế vĩ mô và xu hướng ngành VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu xu hướng kinh tế VN, chính sách phát triển, ngành nghề trọng điểm VN",
+              "esco_hint": "knowledge of Vietnamese macro-economy and industry trends",
+              "confidence": 0.95,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Executive Presentation Strategy",
+              "label_vi": "Thuyết trình chiến lược cấp lãnh đạo",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Trình bày chiến lược thuyết phục, rõ ràng cho HĐQT, CEO, nhà đầu tư",
+              "esco_hint": "present strategic recommendations to board and C-suite",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Hypothesis-driven Problem Solving",
+              "label_vi": "Tư duy giải quyết vấn đề theo giả thuyết",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Áp dụng MECE, pyramid principle, issue tree phân tích vấn đề phức tạp",
+              "esco_hint": "apply hypothesis-driven and MECE problem solving",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Growth Strategy & Innovation",
+              "label_vi": "Chiến lược tăng trưởng, đổi mới",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xác định và phát triển chiến lược tăng trưởng: thị trường mới, sản phẩm, M&A",
+              "esco_hint": "develop growth and innovation strategies",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Strategy Frameworks",
+              "label_vi": "Khung phân tích chiến lược",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo BCG matrix, McKinsey 7S, Ansoff, Blue Ocean, Balanced Scorecard",
+              "esco_hint": "apply strategic frameworks and analytical tools",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Data-driven Strategy",
+              "label_vi": "Chiến lược dựa trên dữ liệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng dữ liệu thị trường, nội bộ để hỗ trợ ra quyết định chiến lược",
+              "esco_hint": "use data to support strategic decision-making",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "English Strategy Consulting",
+              "label_vi": "Tiếng Anh tư vấn chiến lược",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo tiếng Anh đọc báo cáo ngành, tư vấn khách hàng quốc tế",
+              "esco_hint": "use English fluently in strategy consulting engagements",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tư vấn tài chính",
+      "nghe": "Tư vấn/Phân tích chuyên môn",
+      "nhom_nghe": "Tư vấn chuyên môn",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tu-van-tai-chinh",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Financial Advisory Services",
+              "label_vi": "Dịch vụ tư vấn tài chính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn tài chính toàn diện: tái cấu trúc tài chính, huy động vốn, M&A, IPO",
+              "esco_hint": "provide comprehensive financial advisory services",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Financial Modelling & Valuation",
+              "label_vi": "Mô hình tài chính, định giá doanh nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng financial model DCF, comparable, LBO; định giá doanh nghiệp M&A",
+              "esco_hint": "build financial models and perform business valuations",
+              "confidence": 0.98
+            },
+            {
+              "label_en": "Vietnam Financial Regulations",
+              "label_vi": "Pháp luật tài chính, chứng khoán VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Chứng khoán 2019, Luật Doanh nghiệp 2020, quy định UBCKNN, thị trường vốn VN",
+              "esco_hint": "knowledge of Vietnamese financial and securities regulations",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "M&A Financial Due Diligence",
+              "label_vi": "Thẩm định tài chính M&A",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện financial due diligence: phân tích BCTC, chất lượng lợi nhuận, rủi ro",
+              "esco_hint": "conduct financial due diligence for M&A transactions",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Capital Raising & Fundraising",
+              "label_vi": "Huy động vốn, fundraising",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn huy động vốn cổ phần/nợ: chuẩn bị hồ sơ, định giá, kết nối nhà đầu tư",
+              "esco_hint": "advise on equity and debt capital raising",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "CFA / ACCA Certification",
+              "label_vi": "Chứng chỉ CFA, ACCA tư vấn tài chính",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "CFA Level I/II/III hoặc ACCA là lợi thế lớn cho vị trí tư vấn tài chính",
+              "esco_hint": "hold CFA or ACCA professional certification",
+              "confidence": 0.91
+            },
+            {
+              "label_en": "Excel Advanced Financial",
+              "label_vi": "Excel nâng cao mô hình tài chính",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo Excel nâng cao: pivot, VBA, Power Query xây dựng financial model",
+              "esco_hint": "use advanced Excel for financial modelling and analysis",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Investment Analysis",
+              "label_vi": "Phân tích đầu tư, thẩm định dự án",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân tích cơ hội đầu tư: NPV, IRR, payback, phân tích độ nhạy và kịch bản",
+              "esco_hint": "analyse investment opportunities using NPV, IRR and scenario analysis",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Client Relationship Finance",
+              "label_vi": "Quan hệ khách hàng tư vấn tài chính",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng quan hệ tin tưởng với CFO, CEO, chủ doanh nghiệp, quỹ đầu tư",
+              "esco_hint": "build trusted relationships with CFOs, CEOs and investors",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "English Financial Communication",
+              "label_vi": "Tiếng Anh tài chính chuyên sâu",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đọc báo cáo tài chính, thuyết trình investment memo tiếng Anh thành thạo",
+              "esco_hint": "communicate financial analysis fluently in English",
+              "confidence": 0.93
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tư vấn CNTT/IT consultant",
+      "nghe": "Tư vấn/Phân tích chuyên môn",
+      "nhom_nghe": "Tư vấn chuyên môn",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tu-van-cntt-it-consultant",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "IT Consulting & Solution Design",
+              "label_vi": "Tư vấn CNTT, thiết kế giải pháp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn giải pháp CNTT phù hợp nhu cầu doanh nghiệp: ERP, CRM, cloud, digital transformation",
+              "esco_hint": "advise on IT solutions and technology strategies",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Business Requirements Analysis IT",
+              "label_vi": "Phân tích yêu cầu nghiệp vụ CNTT",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thu thập, phân tích yêu cầu nghiệp vụ, chuyển đổi sang yêu cầu kỹ thuật",
+              "esco_hint": "gather and analyse business requirements for IT solutions",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "ERP & Enterprise Systems",
+              "label_vi": "Hệ thống ERP doanh nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn, triển khai ERP: SAP, Oracle, Microsoft Dynamics, Odoo tại thị trường VN",
+              "esco_hint": "consult on ERP implementation for Vietnamese enterprises",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Digital Transformation Consulting",
+              "label_vi": "Tư vấn chuyển đổi số",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn lộ trình chuyển đổi số, chọn lựa công nghệ, quản lý thay đổi",
+              "esco_hint": "advise on digital transformation roadmaps and technology selection",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Cloud & Infrastructure Consulting",
+              "label_vi": "Tư vấn cloud, hạ tầng CNTT",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn giải pháp cloud AWS/Azure/GCP, hạ tầng mạng, bảo mật cho doanh nghiệp VN",
+              "esco_hint": "advise on cloud and IT infrastructure solutions",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Vietnam IT Market & Regulations",
+              "label_vi": "Thị trường CNTT và quy định VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Am hiểu thị trường CNTT VN, Luật ATTT 2015, quy định bảo vệ dữ liệu cá nhân VN",
+              "esco_hint": "knowledge of Vietnamese IT market and cyber security regulations",
+              "confidence": 0.9,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Project Management IT Consulting",
+              "label_vi": "Quản lý dự án tư vấn CNTT",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý dự án CNTT: PMP, Agile/Scrum, giám sát tiến độ và chất lượng",
+              "esco_hint": "manage IT consulting projects using PMP and Agile methods",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Presales & Solution Presentation",
+              "label_vi": "Presales, thuyết trình giải pháp CNTT",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Chuẩn bị, thuyết trình demo giải pháp CNTT thuyết phục khách hàng doanh nghiệp",
+              "esco_hint": "conduct presales presentations and solution demonstrations",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "English IT Consulting",
+              "label_vi": "Tiếng Anh tư vấn CNTT",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Đọc tài liệu kỹ thuật, thuyết trình giải pháp CNTT tiếng Anh với FDI",
+              "esco_hint": "communicate technical solutions in English to FDI clients",
+              "confidence": 0.9
+            },
+            {
+              "label_en": "Analytical & Structured Thinking IT",
+              "label_vi": "Tư duy phân tích, có cấu trúc CNTT",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư duy có hệ thống, phân tích vấn đề CNTT phức tạp và đưa ra giải pháp rõ ràng",
+              "esco_hint": "apply structured analytical thinking to complex IT problems",
+              "confidence": 0.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tư vấn nhân sự",
+      "nghe": "Tư vấn/Phân tích chuyên môn",
+      "nhom_nghe": "Tư vấn chuyên môn",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tu-van-nhan-su",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "HR Consulting Services",
+              "label_vi": "Dịch vụ tư vấn nhân sự",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn HR toàn diện: cơ cấu tổ chức, lương thưởng, năng lực, văn hóa doanh nghiệp",
+              "esco_hint": "provide comprehensive HR consulting services",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Organisation Design & Restructuring",
+              "label_vi": "Thiết kế, tái cơ cấu tổ chức",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân tích và thiết kế lại cơ cấu tổ chức, mô tả công việc, phân tầng quản lý",
+              "esco_hint": "design and restructure organisational structures",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Compensation & Benefits Design",
+              "label_vi": "Thiết kế hệ thống lương thưởng, phúc lợi",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng hệ thống lương 3P, KPI, thưởng hiệu suất phù hợp thị trường VN",
+              "esco_hint": "design compensation and benefits systems for Vietnamese market",
+              "confidence": 0.96,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Vietnam Labour Law HR Consulting",
+              "label_vi": "Luật Lao động trong tư vấn nhân sự VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm sâu Bộ luật Lao động 2019, BHXH, BHYT, BHTN, quy định hợp đồng LĐ",
+              "esco_hint": "comprehensive knowledge of Vietnamese labour law for HR consulting",
+              "confidence": 0.98,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Talent Management & Development",
+              "label_vi": "Quản lý và phát triển nhân tài",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn xây dựng chương trình phát triển nhân tài, succession planning, leadership pipeline",
+              "esco_hint": "advise on talent management and succession planning",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "HR Technology & HRIS",
+              "label_vi": "Công nghệ HR, hệ thống HRIS",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Tư vấn lựa chọn, triển khai HRIS: HRM VN, Base HRM, SAP SuccessFactors",
+              "esco_hint": "advise on HR technology and HRIS implementation",
+              "confidence": 0.89,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Employee Engagement & Culture",
+              "label_vi": "Gắn kết nhân viên, văn hóa doanh nghiệp",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn xây dựng văn hóa doanh nghiệp, đo lường và cải thiện engagement",
+              "esco_hint": "advise on employee engagement and corporate culture",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Salary Survey & Benchmarking",
+              "label_vi": "Khảo sát lương, benchmark thị trường VN",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thực hiện hoặc sử dụng khảo sát lương Mercer, Towers Watson, Hay tại VN",
+              "esco_hint": "conduct or use salary surveys and market benchmarking",
+              "confidence": 0.93,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Client Relationship HR Consulting",
+              "label_vi": "Quan hệ khách hàng tư vấn nhân sự",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xây dựng quan hệ tin tưởng với CHRO, CEO, phát triển dịch vụ tư vấn HR",
+              "esco_hint": "build trusted relationships with HR and business leaders",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "English HR Consulting",
+              "label_vi": "Tiếng Anh tư vấn nhân sự",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn, thuyết trình giải pháp HR bằng tiếng Anh với FDI và tập đoàn quốc tế",
+              "esco_hint": "communicate HR consulting solutions in English",
+              "confidence": 0.87
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tư vấn headhunting",
+      "nghe": "Tư vấn/Phân tích chuyên môn",
+      "nhom_nghe": "Tư vấn chuyên môn",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tu-van-headhunting",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Executive Search & Headhunting",
+              "label_vi": "Tìm kiếm nhân sự cấp cao, headhunting",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tìm kiếm, tiếp cận và tuyển dụng ứng viên cấp cao (C-suite, Director) theo yêu cầu khách hàng",
+              "esco_hint": "conduct executive search and headhunting assignments",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Candidate Sourcing & Mapping",
+              "label_vi": "Tìm nguồn, mapping ứng viên",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tìm kiếm ứng viên passive qua LinkedIn, mạng lưới, database và market mapping",
+              "esco_hint": "source candidates through LinkedIn, networks and market mapping",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Candidate Assessment & Interview",
+              "label_vi": "Đánh giá, phỏng vấn ứng viên cấp cao",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phỏng vấn, đánh giá năng lực, kinh nghiệm, phù hợp văn hóa của ứng viên",
+              "esco_hint": "assess and interview senior candidates",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Executive Talent Market",
+              "label_vi": "Thị trường nhân sự cấp cao VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu thị trường nhân sự cấp cao VN: lương, động lực, xu hướng dịch chuyển",
+              "esco_hint": "knowledge of Vietnamese executive talent market and compensation",
+              "confidence": 0.96,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Client Brief & Job Specification",
+              "label_vi": "Khai thác yêu cầu, soạn JD cấp cao",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Khai thác yêu cầu tuyển dụng từ khách hàng, soạn JD cấp cao chính xác",
+              "esco_hint": "develop client briefs and senior job specifications",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Business Development Headhunting",
+              "label_vi": "Phát triển kinh doanh headhunting",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Chủ động phát triển khách hàng mới, upsell dịch vụ search, xây dựng quan hệ dài hạn",
+              "esco_hint": "develop new clients and grow headhunting business",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Offer Management & Negotiation",
+              "label_vi": "Quản lý offer, đàm phán lương cấp cao",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Đàm phán lương, phúc lợi, hỗ trợ closing với ứng viên và khách hàng cấp cao",
+              "esco_hint": "manage offers and negotiate compensation for senior placements",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam Labour Law Headhunting",
+              "label_vi": "Luật Lao động trong headhunting VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm quy định hợp đồng lao động, thử việc, non-compete áp dụng tư vấn tuyển dụng",
+              "esco_hint": "knowledge of Vietnamese labour law for recruitment consulting",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "CRM Headhunting Database",
+              "label_vi": "CRM, database quản lý headhunting",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Quản lý pipeline ứng viên và khách hàng trên Salesforce, Bullhorn hoặc ATS riêng",
+              "esco_hint": "manage candidate and client pipelines using CRM or ATS",
+              "confidence": 0.94,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "English Headhunting",
+              "label_vi": "Tiếng Anh headhunting quốc tế",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Trao đổi với ứng viên và khách hàng quốc tế, soạn JD tiếng Anh thành thạo",
+              "esco_hint": "communicate fluently in English for international headhunting",
+              "confidence": 0.9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tư vấn tâm lý",
+      "nghe": "Tư vấn/Phân tích chuyên môn",
+      "nhom_nghe": "Tư vấn chuyên môn",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tu-van-tam-ly",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Psychological Counselling",
+              "label_vi": "Tư vấn tâm lý lâm sàng và hỗ trợ",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện tư vấn tâm lý cá nhân, nhóm; hỗ trợ rối loạn lo âu, trầm cảm, stress",
+              "esco_hint": "provide individual and group psychological counselling",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Psychotherapy Modalities",
+              "label_vi": "Các liệu pháp tâm lý trị liệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Áp dụng CBT, ACT, DBT, tâm lý hỗ trợ, liệu pháp gia đình phù hợp thân chủ",
+              "esco_hint": "apply evidence-based psychotherapy modalities",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Mental Health Law & Ethics",
+              "label_vi": "Đạo đức, pháp luật sức khỏe tâm thần VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tuân thủ đạo đức tư vấn tâm lý, Luật KCB 2023 và quy định hành nghề tâm lý lâm sàng",
+              "esco_hint": "comply with Vietnamese mental health law and counselling ethics",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Psychological Assessment Tools",
+              "label_vi": "Công cụ đánh giá tâm lý",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Sử dụng trắc nghiệm tâm lý: MMPI, PHQ-9, GAD-7, DASS-21, Rorschach",
+              "esco_hint": "administer and interpret psychological assessment tools",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Crisis Intervention",
+              "label_vi": "Can thiệp khủng hoảng tâm lý",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nhận biết và can thiệp kịp thời các tình huống khủng hoảng: tự sát, bạo lực, chấn thương cấp",
+              "esco_hint": "conduct crisis intervention and safety planning",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Cultural Context Psychology",
+              "label_vi": "Am hiểu bối cảnh văn hóa VN trong tư vấn",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nhận thức ảnh hưởng văn hóa VN: gia đình, thể diện, áp lực xã hội trong trị liệu",
+              "esco_hint": "apply Vietnamese cultural context in psychological counselling",
+              "confidence": 0.95,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Clinical Psychology Certification",
+              "label_vi": "Chứng chỉ tâm lý lâm sàng VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng tâm lý học/tâm lý lâm sàng, chứng chỉ hành nghề tư vấn tâm lý Bộ Y tế/BYT",
+              "esco_hint": "hold Vietnamese clinical psychology qualification",
+              "confidence": 0.96,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Therapeutic Alliance Building",
+              "label_vi": "Xây dựng mối quan hệ trị liệu",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tạo môi trường an toàn, không phán xét, xây dựng lòng tin với thân chủ",
+              "esco_hint": "build therapeutic alliance with clients",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Case Conceptualisation & Notes",
+              "label_vi": "Khái niệm hóa ca, ghi chép tư vấn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Lập kế hoạch trị liệu, ghi chép phiên tư vấn đúng tiêu chuẩn lâm sàng",
+              "esco_hint": "conceptualise cases and maintain clinical case notes",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "English Psychology Literature",
+              "label_vi": "Tiếng Anh tài liệu tâm lý học",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Đọc nghiên cứu, tài liệu tâm lý học quốc tế tiếng Anh cập nhật",
+              "esco_hint": "read English psychology research and clinical literature",
+              "confidence": 0.85
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Tư vấn hôn nhân",
+      "nghe": "Tư vấn/Phân tích chuyên môn",
+      "nhom_nghe": "Tư vấn chuyên môn",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-tu-van-hon-nhan",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 9
+          },
+          "skills": [
+            {
+              "label_en": "Marriage & Family Counselling",
+              "label_vi": "Tư vấn hôn nhân và gia đình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư vấn các vấn đề hôn nhân: giao tiếp vợ chồng, xung đột, ngoại tình, ly hôn",
+              "esco_hint": "counsel couples and families on marital issues",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Couples Therapy Techniques",
+              "label_vi": "Kỹ thuật trị liệu cặp đôi",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Áp dụng EFT, Gottman Method, Imago Therapy, liệu pháp hệ thống gia đình",
+              "esco_hint": "apply couples therapy techniques including EFT and Gottman",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Marriage & Family Law",
+              "label_vi": "Luật Hôn nhân và Gia đình VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Nắm Luật Hôn nhân và Gia đình 2014, quy định ly hôn, quyền nuôi con, tài sản chung",
+              "esco_hint": "knowledge of Vietnamese Marriage and Family Law 2014",
+              "confidence": 0.97,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Vietnam Family Culture Context",
+              "label_vi": "Am hiểu văn hóa gia đình VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu sâu giá trị gia đình VN: tam đại đồng đường, vai trò giới, áp lực nội ngoại",
+              "esco_hint": "understand Vietnamese family culture and dynamics in counselling",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Divorce & Mediation Support",
+              "label_vi": "Hỗ trợ ly hôn, hòa giải gia đình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Hỗ trợ quá trình ly hôn: hòa giải, kế hoạch nuôi con, phân chia tài sản cảm xúc",
+              "esco_hint": "support divorce mediation and co-parenting planning",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Child & Adolescent Issues",
+              "label_vi": "Vấn đề trẻ em, thanh thiếu niên trong gia đình",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Tư vấn vấn đề trẻ em, thiếu niên liên quan gia đình: áp lực học hành, bạo lực gia đình",
+              "esco_hint": "counsel child and adolescent family issues",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Neutral & Non-judgmental Approach",
+              "label_vi": "Thái độ trung lập, không phán xét trong tư vấn HN",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Duy trì thái độ trung lập, không thiên vị, không phán xét với các cặp đôi xung đột",
+              "esco_hint": "maintain neutral and non-judgmental counselling stance",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Marriage Counselling Certification Vietnam",
+              "label_vi": "Chứng chỉ tư vấn hôn nhân VN",
+              "skill_type": "certification",
+              "requirement": "required",
+              "proficiency_level": "any",
+              "evidence_text": "Bằng tâm lý học, công tác xã hội hoặc chứng chỉ tư vấn hôn nhân theo quy định",
+              "esco_hint": "hold relevant qualification in marriage counselling",
+              "confidence": 0.93,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Empathy & Active Listening Marriage",
+              "label_vi": "Lắng nghe tích cực, đồng cảm tư vấn HN",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Lắng nghe tích cực, phản chiếu cảm xúc, đồng cảm với cả hai phía trong tư vấn",
+              "esco_hint": "apply empathy and active listening in couples counselling",
+              "confidence": 0.96
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Nghiên cứu thị trường (Market Research)",
+      "nghe": "Tư vấn/Phân tích chuyên môn",
+      "nhom_nghe": "Tư vấn chuyên môn",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-nghien-cuu-thi-truong-market-research",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Market Research Design",
+              "label_vi": "Thiết kế nghiên cứu thị trường",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế nghiên cứu định tính và định lượng: FGD, IDI, survey, ethnography",
+              "esco_hint": "design qualitative and quantitative market research",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "Survey Design & Quantitative Research",
+              "label_vi": "Thiết kế bảng khảo sát, nghiên cứu định lượng",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thiết kế questionnaire, sampling, thu thập dữ liệu khảo sát định lượng quy mô lớn",
+              "esco_hint": "design surveys and conduct quantitative research",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Qualitative Research Methods",
+              "label_vi": "Phương pháp nghiên cứu định tính",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thực hiện FGD, IDI, observation; phân tích theo thematic analysis, grounded theory",
+              "esco_hint": "conduct focus groups, IDIs and qualitative analysis",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Vietnam Consumer Insight",
+              "label_vi": "Insight người tiêu dùng VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu hành vi, động lực, insight người tiêu dùng VN theo vùng miền, phân khúc",
+              "esco_hint": "understand Vietnamese consumer behaviour and insights",
+              "confidence": 0.97,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "SPSS & Statistical Analysis",
+              "label_vi": "SPSS, phân tích thống kê nghiên cứu",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân tích dữ liệu SPSS: regression, factor analysis, cluster, conjoint, T-test",
+              "esco_hint": "use SPSS for advanced statistical analysis of research data",
+              "confidence": 0.96,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Research Report & Presentation",
+              "label_vi": "Báo cáo và thuyết trình nghiên cứu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Viết báo cáo nghiên cứu rõ ràng, actionable; thuyết trình insight cho khách hàng",
+              "esco_hint": "write and present research reports with actionable insights",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Panel & Data Sources",
+              "label_vi": "Nguồn dữ liệu, panel nghiên cứu VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu nguồn dữ liệu VN: Nielsen, Kantar, GSO, VnExpress Trends, Cimigo",
+              "esco_hint": "knowledge of Vietnamese market research data sources and panels",
+              "confidence": 0.93,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Project Management Research",
+              "label_vi": "Quản lý dự án nghiên cứu thị trường",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý dự án nghiên cứu: timeline, fieldwork, quality control, vendor management",
+              "esco_hint": "manage market research projects from brief to delivery",
+              "confidence": 0.93
+            },
+            {
+              "label_en": "Digital & Social Listening Research",
+              "label_vi": "Social listening, nghiên cứu kỹ thuật số",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Sử dụng Buzzmetrics, YouNet, Brandwatch social listening phân tích thị trường VN",
+              "esco_hint": "use social listening tools for digital market research in Vietnam",
+              "confidence": 0.88,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "English Research Communication",
+              "label_vi": "Tiếng Anh nghiên cứu thị trường",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Viết briefing, report, thuyết trình kết quả nghiên cứu tiếng Anh cho khách hàng quốc tế",
+              "esco_hint": "communicate market research findings in English",
+              "confidence": 0.9
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Phân tích dữ liệu",
+      "nghe": "Tư vấn/Phân tích chuyên môn",
+      "nhom_nghe": "Tư vấn chuyên môn",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-phan-tich-du-lieu",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Data Analysis & Interpretation",
+              "label_vi": "Phân tích và diễn giải dữ liệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Phân tích dữ liệu kinh doanh, xác định xu hướng, pattern, insight hành động",
+              "esco_hint": "analyse business data and extract actionable insights",
+              "confidence": 0.99
+            },
+            {
+              "label_en": "SQL Database Querying",
+              "label_vi": "SQL truy vấn cơ sở dữ liệu",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Thành thạo SQL: SELECT, JOIN, subquery, window function truy vấn dữ liệu lớn",
+              "esco_hint": "query databases proficiently using SQL",
+              "confidence": 0.98,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Python / R Data Analysis",
+              "label_vi": "Python, R phân tích dữ liệu",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Pandas, NumPy, Matplotlib, ggplot2 phân tích và trực quan hóa dữ liệu",
+              "esco_hint": "use Python or R for data analysis and visualisation",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Data Visualisation Tools",
+              "label_vi": "Công cụ trực quan hóa dữ liệu",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Power BI, Tableau, Google Looker Studio xây dựng dashboard và báo cáo trực quan",
+              "esco_hint": "build dashboards using Power BI, Tableau or Looker Studio",
+              "confidence": 0.97,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "Statistical Analysis Methods",
+              "label_vi": "Phương pháp thống kê phân tích dữ liệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Áp dụng thống kê mô tả, kiểm định giả thuyết, regression, A/B testing",
+              "esco_hint": "apply statistical methods for data analysis",
+              "confidence": 0.96
+            },
+            {
+              "label_en": "Business Intelligence & Reporting",
+              "label_vi": "Business intelligence, báo cáo quản trị",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Xây dựng hệ thống báo cáo BI, KPI dashboard phục vụ quyết định quản lý",
+              "esco_hint": "build BI systems and management reporting dashboards",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Data Cleaning & Preparation",
+              "label_vi": "Làm sạch, chuẩn hóa dữ liệu",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Xử lý missing values, outliers, chuẩn hóa dữ liệu trước phân tích",
+              "esco_hint": "clean, transform and prepare data for analysis",
+              "confidence": 0.97
+            },
+            {
+              "label_en": "Vietnam Data Privacy Regulations",
+              "label_vi": "Quy định bảo vệ dữ liệu cá nhân VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Nắm Nghị định 13/2023/NĐ-CP bảo vệ dữ liệu cá nhân áp dụng trong phân tích",
+              "esco_hint": "knowledge of Vietnamese personal data protection regulations",
+              "confidence": 0.88,
+              "iviec_flag": "VN_REGULATION"
+            },
+            {
+              "label_en": "Machine Learning Basic Analytics",
+              "label_vi": "Machine learning cơ bản phân tích",
+              "skill_type": "technical",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Áp dụng mô hình ML cơ bản: clustering, regression, classification hỗ trợ phân tích",
+              "esco_hint": "apply basic machine learning models for analytics",
+              "confidence": 0.87
+            },
+            {
+              "label_en": "English Data Analysis Communication",
+              "label_vi": "Tiếng Anh báo cáo phân tích dữ liệu",
+              "skill_type": "language",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Trình bày kết quả phân tích dữ liệu bằng tiếng Anh cho stakeholders quốc tế",
+              "esco_hint": "present data analysis findings in English",
+              "confidence": 0.87
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vi_tri": "Các vị trí tư vấn khác",
+      "nghe": "Tư vấn/Phân tích chuyên môn",
+      "nhom_nghe": "Tư vấn chuyên môn",
+      "topcv_url": "https://www.topcv.vn/tim-viec-lam-cac-vi-tri-tu-van-khac",
+      "pipeline": {
+        "S1_extraction": {
+          "meta": {
+            "jd_source": "topcv_vietnamworks",
+            "extraction_confidence": 0.93,
+            "language_mix_ratio": "mixed",
+            "total_skills": 10
+          },
+          "skills": [
+            {
+              "label_en": "Professional Consulting Services",
+              "label_vi": "Dịch vụ tư vấn chuyên môn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "working",
+              "evidence_text": "Cung cấp dịch vụ tư vấn chuyên môn theo lĩnh vực được đào tạo và kinh nghiệm",
+              "esco_hint": "provide specialist consulting services in relevant domain",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Domain Expertise Consulting",
+              "label_vi": "Chuyên môn sâu trong lĩnh vực tư vấn",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Am hiểu sâu lĩnh vực tư vấn cụ thể: kỹ thuật, pháp lý, môi trường, giáo dục",
+              "esco_hint": "demonstrate deep domain expertise in consulting area",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Vietnam Business Context",
+              "label_vi": "Am hiểu bối cảnh kinh doanh VN",
+              "skill_type": "domain",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Am hiểu môi trường kinh doanh, pháp lý, văn hóa VN trong lĩnh vực tư vấn",
+              "esco_hint": "knowledge of Vietnamese business and regulatory context",
+              "confidence": 0.91,
+              "iviec_flag": "VN_DOMAIN"
+            },
+            {
+              "label_en": "Client Needs Analysis",
+              "label_vi": "Phân tích nhu cầu khách hàng tư vấn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Khai thác, phân tích nhu cầu khách hàng và đề xuất giải pháp phù hợp",
+              "esco_hint": "analyse client needs and develop tailored solutions",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Consulting Report & Recommendation",
+              "label_vi": "Báo cáo, khuyến nghị tư vấn",
+              "skill_type": "technical",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Soạn báo cáo tư vấn chuyên nghiệp, khuyến nghị rõ ràng, có cơ sở",
+              "esco_hint": "prepare professional consulting reports and recommendations",
+              "confidence": 0.94
+            },
+            {
+              "label_en": "Problem Solving & Analytical Thinking",
+              "label_vi": "Tư duy phân tích, giải quyết vấn đề",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "expert",
+              "evidence_text": "Tư duy có hệ thống, phân tích vấn đề phức tạp và đưa ra giải pháp sáng tạo",
+              "esco_hint": "apply analytical and problem-solving thinking in consulting",
+              "confidence": 0.95
+            },
+            {
+              "label_en": "Stakeholder Management Consulting",
+              "label_vi": "Quản lý stakeholder tư vấn",
+              "skill_type": "soft",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Quản lý kỳ vọng và quan hệ với đa stakeholder trong dự án tư vấn",
+              "esco_hint": "manage stakeholder relationships in consulting engagements",
+              "confidence": 0.92
+            },
+            {
+              "label_en": "Excel PowerPoint Consulting Other",
+              "label_vi": "Excel, PowerPoint tư vấn",
+              "skill_type": "tool",
+              "requirement": "required",
+              "proficiency_level": "proficient",
+              "evidence_text": "Thành thạo Excel phân tích và PowerPoint trình bày tư vấn chuyên nghiệp",
+              "esco_hint": "use Excel and PowerPoint for consulting analysis and presentation",
+              "confidence": 0.93,
+              "iviec_flag": "VN_TOOL"
+            },
+            {
+              "label_en": "English Consulting Communication",
+              "label_vi": "Tiếng Anh tư vấn",
+              "skill_type": "language",
+              "requirement": "preferred",
+              "proficiency_level": "working",
+              "evidence_text": "Giao tiếp, soạn báo cáo tư vấn tiếng Anh với khách hàng quốc tế",
+              "esco_hint": "communicate consulting findings in English",
+              "confidence": 0.83
+            },
+            {
+              "label_en": "Relevant Consulting Certification",
+              "label_vi": "Chứng chỉ chuyên môn tư vấn",
+              "skill_type": "certification",
+              "requirement": "preferred",
+              "proficiency_level": "any",
+              "evidence_text": "Chứng chỉ chuyên môn liên quan: PMP, CPA, CFA, MBA hoặc tương đương",
+              "esco_hint": "hold relevant professional certification for consulting",
+              "confidence": 0.85
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
