@@ -5,233 +5,314 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Skill Taxonomy — Phân loại kĩ năng nghề</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-/* ══════════════════════════════════════════════
+/* ═══════════════════════════════════════════════
    TOKENS
-══════════════════════════════════════════════ */
+═══════════════════════════════════════════════ */
 :root {
-  --bg:#f4f3f0; --bg2:#eceae6; --bg3:#e0deda;
-  --sur:#fff; --brd:#dddbd7; --brd2:#b0ada8;
-  --tx1:#1a1917; --tx2:#4a4845; --txm:#9a9895;
-  --acc:#1a1917; --acc-i:#f4f3f0;
-  --acc-s:rgba(26,25,23,.06); --acc-s2:rgba(26,25,23,.11);
-  --vn-bg:#f0ede8; --vn-c:#7a5535; --vn-brd:#d4c4b0;
-  --sh:0 1px 2px rgba(0,0,0,.05),0 4px 16px rgba(0,0,0,.04);
-  --shm:0 2px 8px rgba(0,0,0,.08),0 8px 24px rgba(0,0,0,.05);
-  --r:4px; --tr:150ms ease; --sbW:288px; --topH:50px;
+  --bg:     #f2f2f0;
+  --bg2:    #e8e8e5;
+  --bg3:    #dcdcd8;
+  --sur:    #ffffff;
+  --sur2:   #fafaf8;
+  --brd:    #d8d8d4;
+  --brd2:   #a0a09a;
+  --tx1:    #141412;
+  --tx2:    #3a3a36;
+  --tx3:    #6a6a64;
+  --txm:    #8a8a84;
+  --acc:    #141412;
+  --acc-i:  #f2f2f0;
+  --acc-s:  rgba(20,20,18,.06);
+  --acc-s2: rgba(20,20,18,.10);
+  --grn:    #1a5c2a;
+  --grn-bg: #eaf4ec;
+  --grn-brd:#b8dfc0;
+  --vn-bg:  #f5efe8;
+  --vn-c:   #7a4f25;
+  --vn-brd: #d4bfa0;
+  --sh:     0 1px 3px rgba(0,0,0,.07), 0 4px 12px rgba(0,0,0,.04);
+  --shm:    0 2px 8px rgba(0,0,0,.09), 0 8px 20px rgba(0,0,0,.05);
+  --r:      3px;
+  --tr:     140ms ease;
+  --col1:   220px;  /* Sector */
+  --col2:   220px;  /* Ngành  */
+  --col3:   220px;  /* Vị trí */
+  --topH:   48px;
+  --statH:  52px;
 }
 [data-theme=dark] {
-  --bg:#131211; --bg2:#1d1c1a; --bg3:#272522;
-  --sur:#1d1c1a; --brd:#2e2c29; --brd2:#524f4a;
-  --tx1:#eeece8; --tx2:#a8a5a0; --txm:#635f5a;
-  --acc:#eeece8; --acc-i:#131211;
-  --acc-s:rgba(238,236,232,.06); --acc-s2:rgba(238,236,232,.11);
-  --vn-bg:#2a2219; --vn-c:#d4aa78; --vn-brd:#4a3a28;
-  --sh:0 1px 2px rgba(0,0,0,.3),0 4px 16px rgba(0,0,0,.2);
-  --shm:0 2px 8px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3);
+  --bg:     #111110;
+  --bg2:    #1a1a18;
+  --bg3:    #242420;
+  --sur:    #1a1a18;
+  --sur2:   #1f1f1c;
+  --brd:    #2c2c28;
+  --brd2:   #504f48;
+  --tx1:    #f0f0ec;
+  --tx2:    #b8b8b2;
+  --tx3:    #888882;
+  --txm:    #606058;
+  --acc:    #f0f0ec;
+  --acc-i:  #111110;
+  --acc-s:  rgba(240,240,236,.06);
+  --acc-s2: rgba(240,240,236,.10);
+  --grn:    #4dab62;
+  --grn-bg: #192820;
+  --grn-brd:#2a4a30;
+  --vn-bg:  #261e14;
+  --vn-c:   #d4a070;
+  --vn-brd: #4a3820;
+  --sh:     0 1px 3px rgba(0,0,0,.3),0 4px 12px rgba(0,0,0,.2);
+  --shm:    0 2px 8px rgba(0,0,0,.4),0 8px 20px rgba(0,0,0,.3);
 }
 
 /* ── RESET ── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{font-size:14px;-webkit-font-smoothing:antialiased}
-body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--tx1);
-  display:flex;flex-direction:column;min-height:100vh;
-  transition:background var(--tr),color var(--tr)}
+html{font-size:14px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{font-family:"IBM Plex Sans",sans-serif;background:var(--bg);color:var(--tx1);
+  min-height:100vh;transition:background var(--tr),color var(--tr);overflow-x:hidden}
 button{cursor:pointer;font-family:inherit;border:none;background:none}
 
-/* ── TOPBAR ── */
-.topbar{position:fixed;top:0;left:0;right:0;height:var(--topH);
+/* ═══════════════════════════════════════════════
+   TOPBAR
+═══════════════════════════════════════════════ */
+.topbar {
+  position:fixed;top:0;left:0;right:0;height:var(--topH);
   background:var(--sur);border-bottom:1px solid var(--brd);
   display:flex;align-items:center;justify-content:space-between;
-  padding:0 16px 0 0;z-index:300;box-shadow:var(--sh)}
-.top-brand{width:var(--sbW);height:100%;display:flex;align-items:center;
-  gap:10px;padding:0 16px;border-right:1px solid var(--brd);flex-shrink:0}
-.brand-dot{width:6px;height:6px;border-radius:50%;background:var(--acc);flex-shrink:0}
-.brand-name{font-family:"DM Mono",monospace;font-size:11px;font-weight:500;
-  letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
-.top-right{display:flex;align-items:center;gap:8px;padding-left:16px}
-.top-meta{font-family:"DM Mono",monospace;font-size:9px;color:var(--txm);
-  letter-spacing:.06em;line-height:1.5;text-align:right}
-.btn-ic{width:30px;height:30px;border:1px solid var(--brd);background:var(--bg2);
+  padding:0 16px;z-index:400;
+}
+.brand {
+  display:flex;align-items:center;gap:10px;
+  font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--tx1);
+}
+.brand-mark {
+  width:24px;height:24px;background:var(--acc);border-radius:2px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:10px;color:var(--acc-i);font-weight:700;letter-spacing:0;flex-shrink:0;
+}
+.top-right{display:flex;align-items:center;gap:6px}
+.top-meta{font-family:"IBM Plex Mono",monospace;font-size:9px;color:var(--tx3);letter-spacing:.05em}
+.btn-ic{width:28px;height:28px;border:1px solid var(--brd);background:var(--bg2);
   color:var(--tx1);border-radius:var(--r);display:flex;align-items:center;
-  justify-content:center;font-size:13px;transition:all var(--tr)}
+  justify-content:center;font-size:12px;transition:all var(--tr)}
 .btn-ic:hover{background:var(--bg3);border-color:var(--brd2)}
 
-/* ── SHELL ── */
-.shell{display:flex;margin-top:var(--topH);min-height:calc(100vh - var(--topH))}
+/* ── LOADING OVERLAY ── */
+.load-overlay{
+  position:fixed;inset:0;background:var(--bg);z-index:500;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;
+  transition:opacity .4s ease;
+}
+.load-overlay.done{opacity:0;pointer-events:none}
+.load-logo{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--tx1);margin-bottom:8px}
+.load-bar-wrap{width:280px;height:2px;background:var(--brd);border-radius:1px;overflow:hidden}
+.load-bar{height:100%;background:var(--acc);border-radius:1px;width:0;
+  transition:width .25s ease}
+.load-status{font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--tx3);
+  letter-spacing:.05em;min-height:16px}
 
-/* ══════════════════════════════════════════════
-   SIDEBAR
-══════════════════════════════════════════════ */
-.sidebar{width:var(--sbW);flex-shrink:0;background:var(--sur);
-  border-right:1px solid var(--brd);position:fixed;top:var(--topH);
-  left:0;bottom:0;overflow-y:auto;overflow-x:hidden;z-index:200;
-  display:flex;flex-direction:column}
-.sidebar::-webkit-scrollbar{width:3px}
-.sidebar::-webkit-scrollbar-thumb{background:var(--brd);border-radius:2px}
+/* ═══════════════════════════════════════════════
+   STATS BAR — fixed top-right area
+═══════════════════════════════════════════════ */
+.stats-bar {
+  position:fixed;top:var(--topH);right:0;
+  width:calc(100vw - var(--col1) - var(--col2) - var(--col3));
+  min-width:300px;
+  height:var(--statH);
+  background:var(--sur);border-bottom:1px solid var(--brd);
+  border-left:1px solid var(--brd);
+  display:flex;align-items:stretch;z-index:300;
+}
+.stat-cell{
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:6px 12px;border-right:1px solid var(--brd);gap:2px;
+}
+.stat-cell:last-child{border-right:none}
+.stat-n{
+  font-family:"IBM Plex Mono",monospace;font-size:18px;font-weight:500;
+  color:var(--tx1);line-height:1;letter-spacing:-.02em;
+}
+.stat-l{font-size:10px;font-weight:500;color:var(--tx2);letter-spacing:.02em}
 
-/* Search */
-.sb-search{padding:10px;border-bottom:1px solid var(--brd);
-  position:sticky;top:0;background:var(--sur);z-index:10}
-.sb-search-inner{position:relative}
-.sb-ico{position:absolute;left:9px;top:50%;transform:translateY(-50%);
-  color:var(--txm);font-size:12px;pointer-events:none}
-.sb-input{width:100%;padding:7px 8px 7px 28px;background:var(--bg2);
+/* ═══════════════════════════════════════════════
+   SHELL — 4-column layout
+═══════════════════════════════════════════════ */
+.shell {
+  display:flex;
+  margin-top:var(--topH);
+  min-height:calc(100vh - var(--topH));
+}
+
+/* ═══════════════════════════════════════════════
+   COLUMN SHARED STYLES
+═══════════════════════════════════════════════ */
+.col {
+  position:fixed;top:var(--topH);bottom:0;
+  overflow-y:auto;overflow-x:hidden;
+  border-right:1px solid var(--brd);
+  background:var(--sur);
+  display:flex;flex-direction:column;
+}
+.col::-webkit-scrollbar{width:2px}
+.col::-webkit-scrollbar-thumb{background:var(--brd2);border-radius:1px}
+
+.col-hdr {
+  position:sticky;top:0;z-index:10;background:var(--sur);
+  padding:10px 12px 8px;border-bottom:1px solid var(--brd);
+  flex-shrink:0;
+}
+.col-title {
+  font-family:"IBM Plex Mono",monospace;font-size:8.5px;
+  text-transform:uppercase;letter-spacing:.16em;color:var(--tx3);
+  margin-bottom:6px;
+}
+.col-search{
+  position:relative;
+}
+.col-search input{
+  width:100%;padding:5px 8px 5px 26px;background:var(--bg2);
   border:1px solid var(--brd);border-radius:var(--r);color:var(--tx1);
-  font-family:"DM Sans",sans-serif;font-size:12px;outline:none;transition:all var(--tr)}
-.sb-input:focus{border-color:var(--brd2);background:var(--sur)}
-.sb-input::placeholder{color:var(--txm)}
-.sb-cnt{font-family:"DM Mono",monospace;font-size:9px;color:var(--txm);
-  margin-top:5px;min-height:13px}
+  font-family:"IBM Plex Sans",sans-serif;font-size:11.5px;
+  outline:none;transition:all var(--tr);
+}
+.col-search input:focus{border-color:var(--brd2);background:var(--sur)}
+.col-search input::placeholder{color:var(--txm)}
+.col-search-ico{position:absolute;left:8px;top:50%;transform:translateY(-50%);
+  color:var(--txm);font-size:11px;pointer-events:none}
 
-/* ── TREE ── */
-.sb-tree{flex:1;padding:6px 0 24px}
+/* ─── COL 1: Sector ─── */
+.col-sector{left:0;width:var(--col1)}
+.sec-item {
+  width:100%;text-align:left;padding:9px 12px;
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  border-left:3px solid transparent;transition:all var(--tr);
+  border-bottom:1px solid var(--brd);
+}
+.sec-item:hover{background:var(--acc-s)}
+.sec-item.active{background:var(--acc-s2);border-left-color:var(--acc)}
+.sec-item-inner{flex:1;min-width:0}
+.sec-nm{font-size:11.5px;font-weight:600;color:var(--tx1);line-height:1.3;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sec-item.active .sec-nm{color:var(--tx1)}
+.sec-sub{font-family:"IBM Plex Mono",monospace;font-size:8px;color:var(--tx3);
+  margin-top:2px;letter-spacing:.04em}
+.sec-ver{font-family:"IBM Plex Mono",monospace;font-size:8px;padding:1px 4px;
+  background:var(--bg2);color:var(--tx3);border:1px solid var(--brd);
+  border-radius:2px;flex-shrink:0}
+.sec-item.active .sec-ver{background:var(--acc);color:var(--acc-i);border-color:var(--acc)}
 
-/* L1 — Sector */
-.tree-sector{border-bottom:1px solid var(--brd)}
-.tree-sec-hdr{width:100%;text-align:left;padding:8px 12px 8px 14px;
-  display:flex;align-items:center;gap:8px;
-  border-left:3px solid transparent;transition:all var(--tr)}
-.tree-sec-hdr:hover{background:var(--acc-s)}
-.tree-sec-hdr.open{border-left-color:var(--brd2)}
-.tree-sec-hdr.active-branch{border-left-color:var(--acc)}
-.sec-arrow{width:14px;height:14px;flex-shrink:0;display:flex;align-items:center;
-  justify-content:center;font-size:9px;color:var(--txm);transition:transform var(--tr)}
-.tree-sec-hdr.open .sec-arrow{transform:rotate(90deg)}
-.sec-info{flex:1;min-width:0}
-.sec-name{font-size:12px;font-weight:700;color:var(--tx1);letter-spacing:.01em;
-  line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.sec-meta{font-family:"DM Mono",monospace;font-size:8px;color:var(--txm);
-  margin-top:2px;letter-spacing:.06em}
-.sec-count{font-family:"DM Mono",monospace;font-size:8.5px;padding:2px 5px;
-  border-radius:2px;background:var(--bg2);color:var(--txm);
-  border:1px solid var(--brd);flex-shrink:0;letter-spacing:.04em}
-.tree-sec-hdr.active-branch .sec-count{background:var(--acc);color:var(--acc-i);border-color:var(--acc)}
-
-/* Loading state inside sector */
-.sec-loading{padding:10px 14px 10px 28px;
-  font-family:"DM Mono",monospace;font-size:9.5px;color:var(--txm);
-  letter-spacing:.07em;display:flex;align-items:center;gap:8px}
-.spin{display:inline-block;animation:spin .8s linear infinite;font-size:11px}
+/* Loading state per sector */
+.sec-loading-row{
+  padding:8px 12px;
+  font-family:"IBM Plex Mono",monospace;font-size:9px;color:var(--txm);
+  display:flex;align-items:center;gap:6px;
+}
+.spin{animation:spin .7s linear infinite;display:inline-block;font-size:10px}
 @keyframes spin{to{transform:rotate(360deg)}}
 
-.sec-error{padding:10px 14px 10px 28px;font-size:11px;color:#c0392b;
-  display:flex;align-items:center;gap:6px}
-.sec-error .retry{font-family:"DM Mono",monospace;font-size:9px;
-  text-decoration:underline;cursor:pointer;color:var(--txm)}
-.sec-error .retry:hover{color:var(--tx1)}
+/* ─── COL 2: Ngành ─── */
+.col-nghe{left:var(--col1);width:var(--col2)}
+.col-nghe-empty{
+  padding:40px 16px;text-align:center;
+  font-size:12px;color:var(--txm);line-height:1.6;
+}
+.nghe-item{
+  width:100%;text-align:left;padding:8px 12px;
+  display:flex;align-items:center;justify-content:space-between;gap:6px;
+  border-left:3px solid transparent;transition:all var(--tr);
+  border-bottom:1px solid var(--brd);
+}
+.nghe-item:hover{background:var(--acc-s)}
+.nghe-item.active{background:var(--acc-s2);border-left-color:var(--acc)}
+.nghe-nm{font-size:11.5px;font-weight:500;color:var(--tx2);flex:1;
+  line-height:1.3;text-align:left;}
+.nghe-item.active .nghe-nm{color:var(--tx1);font-weight:600}
+.nghe-cnt{font-family:"IBM Plex Mono",monospace;font-size:8.5px;color:var(--txm);flex-shrink:0}
+.nghe-item.active .nghe-cnt{color:var(--tx3)}
 
-.tree-sec-body{display:none}
-.tree-sec-body.open{display:block}
+/* ─── COL 3: Vị trí ─── */
+.col-vt{left:calc(var(--col1) + var(--col2));width:var(--col3)}
+.col-vt-empty{
+  padding:40px 16px;text-align:center;
+  font-size:12px;color:var(--txm);line-height:1.6;
+}
+.vt-item{
+  width:100%;text-align:left;padding:7px 12px 7px 14px;
+  display:flex;align-items:center;gap:7px;
+  border-left:3px solid transparent;transition:all var(--tr);
+  border-bottom:1px solid var(--brd);
+}
+.vt-item:hover{background:var(--acc-s);color:var(--tx2)}
+.vt-item.active{background:var(--acc-s2);border-left-color:var(--acc)}
+.vt-dot{width:4px;height:4px;border-radius:50%;background:var(--brd2);flex-shrink:0}
+.vt-item.active .vt-dot{background:var(--acc)}
+.vt-nm{font-size:11.5px;color:var(--tx2);flex:1;line-height:1.3;text-align:left}
+.vt-item.active .vt-nm{color:var(--tx1);font-weight:600}
 
-/* L2 — Ngành */
-.tree-nghe-hdr{width:100%;text-align:left;padding:5px 12px 5px 28px;
-  display:flex;align-items:center;gap:6px;border-left:3px solid transparent;
-  transition:all var(--tr)}
-.tree-nghe-hdr:hover{background:var(--acc-s)}
-.tree-nghe-hdr.active-branch{border-left-color:var(--brd2)}
-.nghe-arrow{font-size:8.5px;color:var(--txm);flex-shrink:0;
-  transition:transform var(--tr);width:12px;text-align:center}
-.tree-nghe-hdr.open .nghe-arrow{transform:rotate(90deg)}
-.nghe-name{font-size:11.5px;font-weight:500;color:var(--tx2);flex:1;
-  line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.tree-nghe-hdr.active-branch .nghe-name{color:var(--tx1)}
-.nghe-cnt{font-family:"DM Mono",monospace;font-size:8.5px;color:var(--txm);flex-shrink:0}
-.tree-nghe-body{display:none}
-.tree-nghe-body.open{display:block}
-
-/* L3 — Vị trí */
-.tree-vt-btn{width:100%;text-align:left;padding:4px 12px 4px 44px;
-  display:flex;align-items:center;gap:6px;border-left:3px solid transparent;
-  transition:all var(--tr);color:var(--txm);font-size:11px}
-.tree-vt-btn:hover{background:var(--acc-s);color:var(--tx2)}
-.tree-vt-btn.active{background:var(--acc-s2);color:var(--tx1);
-  border-left-color:var(--acc);font-weight:600}
-.vt-dot{width:4px;height:4px;border-radius:50%;background:var(--brd2);
-  flex-shrink:0;transition:background var(--tr)}
-.tree-vt-btn.active .vt-dot{background:var(--acc)}
-
-/* ══════════════════════════════════════════════
-   MAIN
-══════════════════════════════════════════════ */
-.main{margin-left:var(--sbW);flex:1;padding:32px 40px;min-width:0}
+/* ═══════════════════════════════════════════════
+   MAIN CONTENT
+═══════════════════════════════════════════════ */
+.main{
+  margin-left:calc(var(--col1) + var(--col2) + var(--col3));
+  margin-top:calc(var(--statH));
+  flex:1;padding:28px 36px;min-width:0;
+  min-height:calc(100vh - var(--topH) - var(--statH));
+}
 
 /* ── LANDING ── */
 .landing{display:block}
-.land-eyebrow{font-family:"DM Mono",monospace;font-size:9.5px;
-  letter-spacing:.14em;text-transform:uppercase;color:var(--txm);margin-bottom:8px}
-.land-title{font-family:"Instrument Serif",serif;font-size:40px;
-  line-height:1.1;letter-spacing:-.02em;color:var(--tx1);margin-bottom:10px}
+.land-title{font-size:28px;font-weight:700;letter-spacing:-.02em;
+  color:var(--tx1);margin-bottom:8px;line-height:1.15}
 .land-desc{font-size:13px;color:var(--tx2);line-height:1.65;
-  max-width:520px;margin-bottom:32px}
+  max-width:520px;margin-bottom:28px}
 
-/* Summary cards */
-.sum-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(145px,1fr));
-  gap:8px;margin-bottom:28px}
-.sum-card{background:var(--sur);border:1px solid var(--brd);border-radius:var(--r);
-  padding:16px 18px;transition:all var(--tr)}
-.sum-card:hover{border-color:var(--brd2);box-shadow:var(--shm)}
-.sum-card.hi{background:var(--acc);border-color:var(--acc)}
-.s-num{font-family:"DM Mono",monospace;font-size:28px;font-weight:500;
-  letter-spacing:-.03em;line-height:1;color:var(--tx1);margin-bottom:5px}
-.sum-card.hi .s-num{color:var(--acc-i)}
-.s-lbl{font-size:11px;color:var(--txm)}
-.sum-card.hi .s-lbl{color:var(--acc-i);opacity:.7}
-.s-sub{font-family:"DM Mono",monospace;font-size:8.5px;color:var(--txm);margin-top:3px}
-.sum-card.hi .s-sub{color:var(--acc-i);opacity:.45}
-
-/* Sector overview list */
-.sec-overview{margin-top:4px}
-.ov-hdr{font-family:"DM Mono",monospace;font-size:8.5px;text-transform:uppercase;
-  letter-spacing:.18em;color:var(--txm);margin-bottom:10px;
-  display:flex;align-items:center;gap:10px}
-.ov-hdr::after{content:'';flex:1;height:1px;background:var(--brd)}
-.ov-list{display:flex;flex-direction:column;gap:5px}
-.ov-item{background:var(--sur);border:1px solid var(--brd);border-radius:var(--r);
-  padding:12px 16px;display:flex;align-items:center;justify-content:space-between;
-  cursor:pointer;transition:all var(--tr)}
-.ov-item:hover{border-color:var(--brd2);box-shadow:var(--sh);
-  transform:translateX(2px)}
-.ov-left{}
-.ov-name{font-size:13px;font-weight:600;color:var(--tx1);margin-bottom:3px}
-.ov-stats{font-family:"DM Mono",monospace;font-size:9px;color:var(--txm);
-  letter-spacing:.05em}
-.ov-right{display:flex;align-items:center;gap:6px}
-.ov-ver{font-family:"DM Mono",monospace;font-size:8.5px;padding:2px 6px;
-  border-radius:2px;background:var(--bg2);color:var(--txm);
-  border:1px solid var(--brd)}
-.ov-arr{color:var(--txm);font-size:12px}
+.dist-section{margin-top:24px}
+.dist-ttl{font-family:"IBM Plex Mono",monospace;font-size:8.5px;
+  text-transform:uppercase;letter-spacing:.16em;color:var(--tx3);
+  margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.dist-ttl::after{content:'';flex:1;height:1px;background:var(--brd)}
+.dist-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(188px,1fr));gap:5px}
+.dist-item{background:var(--sur);border:1px solid var(--brd);border-radius:var(--r);
+  padding:9px 12px}
+.dist-row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:5px}
+.dist-nm{font-size:12px;color:var(--tx2);font-weight:500}
+.dist-vl{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--tx1);font-weight:600}
+.bar-bg{height:2px;background:var(--bg3);border-radius:1px}
+.bar-fill{height:2px;background:var(--acc);border-radius:1px}
 
 /* ── POSITION DETAIL ── */
 .pos-det{display:none}
 .pos-det.active{display:block}
-.pos-hdr{margin-bottom:22px;padding-bottom:20px;border-bottom:1px solid var(--brd)}
-.pos-bc{font-family:"DM Mono",monospace;font-size:9px;color:var(--txm);
-  letter-spacing:.07em;margin-bottom:8px;display:flex;align-items:center;
-  gap:5px;flex-wrap:wrap}
-.pos-bc .sep{opacity:.35}
-.pos-title{font-family:"Instrument Serif",serif;font-size:30px;
-  line-height:1.15;letter-spacing:-.01em;color:var(--tx1);margin-bottom:12px}
+.pos-hdr{margin-bottom:20px;padding-bottom:18px;border-bottom:1px solid var(--brd)}
+.pos-bc{font-family:"IBM Plex Mono",monospace;font-size:9px;color:var(--tx3);
+  letter-spacing:.06em;margin-bottom:8px;display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.pos-bc .sep{opacity:.4}
+.pos-title{font-size:26px;font-weight:700;letter-spacing:-.02em;
+  color:var(--tx1);margin-bottom:12px;line-height:1.15}
 .pos-chips{display:flex;flex-wrap:wrap;gap:5px}
-.pchip{font-family:"DM Mono",monospace;font-size:9px;padding:3px 8px;
-  border-radius:2px;border:1px solid var(--brd);color:var(--tx2);letter-spacing:.05em}
+.pchip{font-family:"IBM Plex Mono",monospace;font-size:9px;padding:3px 8px;
+  border-radius:2px;border:1px solid var(--brd);color:var(--tx2);letter-spacing:.04em}
 .pchip.tot{background:var(--acc);color:var(--acc-i);border-color:var(--acc)}
 .pchip.vn{background:var(--vn-bg);color:var(--vn-c);border-color:var(--vn-brd)}
 
 /* Filter */
 .frow{display:flex;gap:4px;margin-bottom:18px;flex-wrap:wrap}
-.ftab{font-family:"DM Mono",monospace;font-size:9px;letter-spacing:.07em;
+.ftab{font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.06em;
   text-transform:uppercase;padding:4px 9px;border-radius:2px;
-  border:1px solid var(--brd);color:var(--txm);transition:all var(--tr)}
+  border:1px solid var(--brd);color:var(--tx3);transition:all var(--tr)}
 .ftab:hover{border-color:var(--brd2);color:var(--tx2)}
 .ftab.active{background:var(--acc);color:var(--acc-i);border-color:var(--acc)}
 .ftab .cn{opacity:.55;margin-left:2px}
 
 /* Skill groups */
-.sk-grp{margin-bottom:24px}
-.sg-lbl{font-family:"DM Mono",monospace;font-size:8.5px;text-transform:uppercase;
-  letter-spacing:.18em;color:var(--txm);margin-bottom:9px;
+.sk-grp{margin-bottom:22px}
+.sg-lbl{font-family:"IBM Plex Mono",monospace;font-size:8px;text-transform:uppercase;
+  letter-spacing:.16em;color:var(--tx3);margin-bottom:8px;
   display:flex;align-items:center;gap:8px}
 .sg-lbl::after{content:'';flex:1;height:1px;background:var(--brd)}
 .sk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:6px}
@@ -241,85 +322,119 @@ button{cursor:pointer;font-family:inherit;border:none;background:none}
 .sk-card.required::before{background:var(--acc)}
 .sk-card.preferred::before{background:var(--brd2)}
 .sk-card:hover{border-color:var(--brd2);box-shadow:var(--shm)}
-.sk-nm{font-size:12.5px;font-weight:600;color:var(--tx1);line-height:1.35;margin-bottom:6px}
-.vn-badge{display:inline-block;font-family:"DM Mono",monospace;font-size:7.5px;
+.sk-nm{font-size:12.5px;font-weight:600;color:var(--tx1);line-height:1.35;margin-bottom:5px}
+.vn-badge{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:7.5px;
   background:var(--vn-bg);color:var(--vn-c);padding:1px 4px;border-radius:2px;
-  margin-left:5px;vertical-align:middle;border:1px solid var(--vn-brd);letter-spacing:.04em}
-.sk-tags{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:6px}
-.sk-tag{font-family:"DM Mono",monospace;font-size:8px;padding:2px 5px;
-  border-radius:1px;border:1px solid var(--brd);color:var(--txm);letter-spacing:.03em}
+  margin-left:5px;vertical-align:middle;border:1px solid var(--vn-brd);letter-spacing:.03em}
+.sk-tags{display:flex;flex-wrap:wrap;gap:3px;margin-bottom:5px}
+.sk-tag{font-family:"IBM Plex Mono",monospace;font-size:8px;padding:2px 5px;
+  border-radius:1px;border:1px solid var(--brd);color:var(--tx3);letter-spacing:.02em}
 .sk-tag.req-required{background:var(--acc);color:var(--acc-i);border-color:var(--acc)}
 .sk-tag.req-preferred{border-color:var(--brd2);color:var(--tx2)}
-.sk-ev{font-size:10.5px;color:var(--txm);font-style:italic;line-height:1.55;
-  border-top:1px solid var(--brd);padding-top:7px;display:none}
+.sk-ev{font-size:10.5px;color:var(--tx3);font-style:italic;line-height:1.55;
+  border-top:1px solid var(--brd);padding-top:6px;display:none}
 .sk-card:hover .sk-ev{display:block}
-
-/* Loading skeleton */
-.sk-skeleton{height:80px;background:linear-gradient(90deg,var(--bg2) 25%,var(--bg3) 50%,var(--bg2) 75%);
-  background-size:200% 100%;animation:shimmer 1.4s infinite;border-radius:var(--r);
-  border:1px solid var(--brd)}
-@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
 
 /* ── SEARCH RESULTS ── */
 .sr-view{display:none}
 .sr-view.active{display:block}
-.sr-hdr{margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--brd)}
-.sr-title{font-family:"Instrument Serif",serif;font-size:26px;letter-spacing:-.01em;margin-bottom:4px}
-.sr-sub{font-family:"DM Mono",monospace;font-size:9.5px;color:var(--txm)}
+.sr-hdr{margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid var(--brd)}
+.sr-title{font-size:22px;font-weight:700;letter-spacing:-.01em;color:var(--tx1);margin-bottom:4px}
+.sr-sub{font-family:"IBM Plex Mono",monospace;font-size:9.5px;color:var(--tx3)}
 .sri{background:var(--sur);border:1px solid var(--brd);border-radius:var(--r);
-  padding:11px 13px;margin-bottom:6px;transition:all var(--tr);
-  border-left:3px solid transparent}
-.sri:hover{border-color:var(--brd2);border-left-color:var(--acc);box-shadow:var(--sh)}
+  padding:10px 13px;margin-bottom:5px;transition:all var(--tr);border-left:3px solid transparent}
+.sri:hover{border-color:var(--brd2);border-left-color:var(--acc)}
 .sri-nm{font-size:13px;font-weight:600;color:var(--tx1);margin-bottom:2px}
-.sri-en{font-size:10.5px;color:var(--txm);margin-bottom:7px}
-.sri-meta{display:flex;flex-wrap:wrap;gap:4px}
-.sri-chip{font-family:"DM Mono",monospace;font-size:8.5px;padding:2px 6px;
-  border-radius:1px;border:1px solid var(--brd);color:var(--txm);letter-spacing:.03em}
+.sri-en{font-size:10.5px;color:var(--tx3);margin-bottom:6px}
+.sri-meta{display:flex;flex-wrap:wrap;gap:3px}
+.sri-chip{font-family:"IBM Plex Mono",monospace;font-size:8.5px;padding:2px 6px;
+  border-radius:1px;border:1px solid var(--brd);color:var(--tx3)}
 .sri-chip.pos{cursor:pointer;transition:all var(--tr)}
 .sri-chip.pos:hover{border-color:var(--brd2);color:var(--tx1);background:var(--acc-s)}
 .sri-chip.req{background:var(--acc);color:var(--acc-i);border-color:var(--acc)}
 .sri-chip.vn{background:var(--vn-bg);color:var(--vn-c);border-color:var(--vn-brd)}
-.sri-chip.loading-chip{animation:pulse 1.2s infinite}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 
 .no-res{text-align:center;padding:80px 20px;color:var(--txm)}
-.no-res .ico{font-size:32px;opacity:.2;margin-bottom:12px}
-.no-res p{font-size:13px}
+.no-res .ico{font-size:28px;opacity:.2;margin-bottom:10px}
+.no-res p{font-size:13px;color:var(--tx3)}
 
 .hidden{display:none !important}
 </style>
 </head>
 <body data-theme="light">
 
+<!-- ── LOADING OVERLAY ── -->
+<div class="load-overlay" id="load-overlay">
+  <div class="load-logo">Skill Taxonomy</div>
+  <div class="load-bar-wrap"><div class="load-bar" id="load-bar"></div></div>
+  <div class="load-status" id="load-status">Đang khởi động...</div>
+</div>
+
+<!-- ── TOPBAR ── -->
 <header class="topbar">
-  <div class="top-brand">
-    <span class="brand-dot"></span>
-    <span class="brand-name">Skill Taxonomy</span>
+  <div class="brand">
+    <div class="brand-mark">ST</div>
+    Skill Taxonomy
   </div>
   <div class="top-right">
-    <div class="top-meta">v1 &nbsp;·&nbsp; 04/03/2026</div>
+    <div class="top-meta" id="top-meta">v1 · 04/03/2026</div>
     <button class="btn-ic" onclick="toggleTheme()" title="Đổi giao diện">
       <span id="theme-ic">◑</span>
     </button>
   </div>
 </header>
 
-<div class="shell">
-  <aside class="sidebar">
-    <div class="sb-search">
-      <div class="sb-search-inner">
-        <span class="sb-ico">⌕</span>
-        <input class="sb-input" id="srch" type="text"
-          placeholder="Tìm kĩ năng..." autocomplete="off"
-          oninput="handleSearch(this.value)">
-      </div>
-      <div class="sb-cnt" id="srch-cnt"></div>
-    </div>
-    <div class="sb-tree" id="sb-tree"></div>
-  </aside>
+<!-- ── STATS BAR ── -->
+<div class="stats-bar" id="stats-bar">
+  <div class="stat-cell"><div class="stat-n" id="st-sectors">—</div><div class="stat-l">Nhóm nghề</div></div>
+  <div class="stat-cell"><div class="stat-n" id="st-positions">—</div><div class="stat-l">Vị trí</div></div>
+  <div class="stat-cell"><div class="stat-n" id="st-skills">—</div><div class="stat-l">Kĩ năng</div></div>
+  <div class="stat-cell"><div class="stat-n" id="st-vn">—</div><div class="stat-l">Đặc thù VN</div></div>
+</div>
 
+<div class="shell">
+  <!-- COL 1: SECTOR -->
+  <div class="col col-sector" id="col-sector">
+    <div class="col-hdr">
+      <div class="col-title">Nhóm nghề</div>
+      <div class="col-search">
+        <span class="col-search-ico">⌕</span>
+        <input type="text" placeholder="Tìm sector..." id="sec-filter" oninput="filterCol('sector',this.value)">
+      </div>
+    </div>
+    <div id="sec-list"></div>
+  </div>
+
+  <!-- COL 2: NGÀNH -->
+  <div class="col col-nghe" id="col-nghe">
+    <div class="col-hdr">
+      <div class="col-title">Ngành</div>
+      <div class="col-search">
+        <span class="col-search-ico">⌕</span>
+        <input type="text" placeholder="Tìm ngành..." id="nghe-filter" oninput="filterCol('nghe',this.value)">
+      </div>
+    </div>
+    <div id="nghe-list"><div class="col-nghe-empty">← Chọn nhóm nghề</div></div>
+  </div>
+
+  <!-- COL 3: VỊ TRÍ -->
+  <div class="col col-vt" id="col-vt">
+    <div class="col-hdr">
+      <div class="col-title">Vị trí</div>
+      <div class="col-search">
+        <span class="col-search-ico">⌕</span>
+        <input type="text" placeholder="Tìm vị trí..." id="vt-filter" oninput="filterCol('vt',this.value)">
+      </div>
+    </div>
+    <div id="vt-list"><div class="col-vt-empty">← Chọn ngành</div></div>
+  </div>
+
+  <!-- MAIN -->
   <main class="main">
-    <div class="landing" id="landing"></div>
+    <div class="landing" id="landing">
+      <div class="land-title">Phân loại kĩ năng nghề</div>
+      <p class="land-desc">Đang tải dữ liệu, vui lòng chờ...</p>
+    </div>
     <div class="sr-view" id="sr-view">
       <div class="sr-hdr">
         <div class="sr-title">Kết quả tìm kiếm</div>
@@ -332,418 +447,291 @@ button{cursor:pointer;font-family:inherit;border:none;background:none}
 </div>
 
 <script>
-/* ════════════════════════════════════════════════════════════════
-   ╔═══════════════════════════════════════════════════════════╗
-   ║  MANIFEST — Khai báo danh sách file JSON                 ║
-   ║                                                           ║
-   ║  Để thêm sector mới:                                     ║
-   ║    1. Upload file JSON vào cùng thư mục với index.html   ║
-   ║    2. Thêm 1 object vào mảng MANIFEST bên dưới với:      ║
-   ║         file     — tên file JSON (cùng thư mục)          ║
-   ║         sector   — tên hiển thị tiếng Việt               ║
-   ║         version  — ví dụ "v1", "v2"                      ║
-   ║         positions — số vị trí (hiển thị trước khi load)  ║
-   ║         skills   — số kĩ năng (hiển thị trước khi load)  ║
-   ║                                                           ║
-   ║  Không cần sửa bất kỳ dòng code nào khác.                ║
-   ╚═══════════════════════════════════════════════════════════╝
-════════════════════════════════════════════════════════════════ */
+/* ════════════════════════════════════════════════════════════
+   ╔══════════════════════════════════════════════════════╗
+   ║  MANIFEST — Danh sách file JSON cần load             ║
+   ║                                                      ║
+   ║  Để thêm sector mới:                                 ║
+   ║    1. Upload file JSON vào cùng thư mục index.html   ║
+   ║    2. Thêm 1 object vào mảng MANIFEST:               ║
+   ║       { file: "TenFile.json",                        ║
+   ║         sector: "Tên hiển thị",                      ║
+   ║         version: "v1" }                              ║
+   ║    Không cần sửa thêm gì khác.                       ║
+   ╚══════════════════════════════════════════════════════╝
+════════════════════════════════════════════════════════════ */
 const MANIFEST = [
-  { file: "BanLe_DVDoiSong_skill_taxonomy_v1.json",             sector: "Bán lẻ & Dịch vụ đời sống",          version: "v1", positions: 0,  skills: 0   },
-  { file: "BatDongSan_skill_taxonomy_v1.json",                  sector: "Bất động sản",                       version: "v1", positions: 0,  skills: 0   },
-  { file: "BienPhienDich_skill_taxonomy_v1.json",               sector: "Biên phiên dịch",                    version: "v1", positions: 11, skills: 97  },
-  { file: "CS_VanHanh_skill_taxonomy_v1.json",                  sector: "Chăm sóc khách hàng & Vận hành",    version: "v1", positions: 0,  skills: 0   },
-  { file: "DienDienTuVienThong_skill_taxonomy_v1.json",         sector: "Điện - Điện tử - Viễn thông",        version: "v1", positions: 0,  skills: 0   },
-  { file: "DuocYTeSucKhoeCNSH_skill_taxonomy_v1.json",          sector: "Dược - Y tế - Sức khoẻ - CNSH",     version: "v1", positions: 0,  skills: 0   },
-  { file: "Finance_Banking_Insurance_skill_taxonomy_v1.json",   sector: "Tài chính - Ngân hàng - Bảo hiểm",  version: "v1", positions: 0,  skills: 0   },
-  { file: "GiaoDuc_DaoTao_skill_taxonomy_v1.json",              sector: "Giáo dục & Đào tạo",                 version: "v1", positions: 0,  skills: 0   },
-  { file: "HR_Admin_Legal_skill_taxonomy_v1.json",              sector: "Nhân sự - Hành chính - Pháp lý",    version: "v1", positions: 0,  skills: 0   },
-  { file: "IT_skill_taxonomy_v4.json",                          sector: "Công nghệ thông tin (IT)",           version: "v4", positions: 70, skills: 1891},
-  { file: "KeToan_KiemToan_Thue_skill_taxonomy_v1.json",        sector: "Kế toán - Kiểm toán - Thuế",        version: "v1", positions: 0,  skills: 0   },
-  { file: "KinhDoanh_BanHang_skill_taxonomy_v2.json",           sector: "Kinh doanh & Bán hàng",              version: "v2", positions: 0,  skills: 0   },
-  { file: "LaoDongPhoThong_skill_taxonomy_v1.json",             sector: "Lao động phổ thông",                 version: "v1", positions: 0,  skills: 0   },
-  { file: "Logistics_ThuMua_Kho_VanTai_skill_taxonomy_v1.json", sector: "Logistics - Thu mua - Kho - Vận tải", version: "v1", positions: 0,  skills: 0   },
-  { file: "Luat_skill_taxonomy_v1.json",                        sector: "Luật",                               version: "v1", positions: 0,  skills: 0   },
-  { file: "Marketing_PR_QC_skill_taxonomy_v1.json",             sector: "Marketing - PR - Quảng cáo",         version: "v1", positions: 0,  skills: 0   },
-  { file: "NangLuongMoiTruongNongNghiep_skill_taxonomy_v1.json",sector: "Năng lượng - Môi trường - Nông nghiệp", version: "v1", positions: 0,  skills: 0   },
-  { file: "NhaHangKhachSanDuLich_skill_taxonomy_v1.json",       sector: "Nhà hàng - Khách sạn - Du lịch",    version: "v1", positions: 0,  skills: 0   },
-  { file: "NhomNgheKhac_skill_taxonomy_v1.json",                sector: "Nhóm nghề khác",                    version: "v1", positions: 0,  skills: 0   },
-  { file: "PhimTruyenHinhBaoChiXuatBan_skill_taxonomy_v1.json", sector: "Phim - Truyền hình - Báo chí - XB", version: "v1", positions: 0,  skills: 0   },
-  { file: "SanXuat_skill_taxonomy_v1.json",                     sector: "Sản xuất",                          version: "v1", positions: 0,  skills: 0   },
-  { file: "TaiXe_skill_taxonomy_v1.json",                       sector: "Tài xế",                            version: "v1", positions: 0,  skills: 0   },
-  { file: "ThietKe_skill_taxonomy_v1.json",                     sector: "Thiết kế",                          version: "v1", positions: 0,  skills: 0   },
-  { file: "TuVanChuyenMon_skill_taxonomy_v1.json",              sector: "Tư vấn chuyên môn",                 version: "v1", positions: 0,  skills: 0   },
-  { file: "XayDung_skill_taxonomy_v1.json",                     sector: "Xây dựng",                          version: "v1", positions: 0,  skills: 0   },
+  { file: "BanLe_DVDoiSong_skill_taxonomy_v1.json",              sector: "Bán lẻ & Dịch vụ đời sống",             version: "v1" },
+  { file: "BatDongSan_skill_taxonomy_v1.json",                   sector: "Bất động sản",                          version: "v1" },
+  { file: "BienPhienDich_skill_taxonomy_v1.json",                sector: "Biên phiên dịch",                       version: "v1" },
+  { file: "CS_VanHanh_skill_taxonomy_v1.json",                   sector: "Chăm sóc KH & Vận hành",               version: "v1" },
+  { file: "DienDienTuVienThong_skill_taxonomy_v1.json",          sector: "Điện - Điện tử - Viễn thông",           version: "v1" },
+  { file: "DuocYTeSucKhoeCNSH_skill_taxonomy_v1.json",           sector: "Dược - Y tế - Sức khoẻ - CNSH",        version: "v1" },
+  { file: "Finance_Banking_Insurance_skill_taxonomy_v1.json",    sector: "Tài chính - Ngân hàng - Bảo hiểm",     version: "v1" },
+  { file: "GiaoDuc_DaoTao_skill_taxonomy_v1.json",               sector: "Giáo dục & Đào tạo",                   version: "v1" },
+  { file: "HR_Admin_Legal_skill_taxonomy_v1.json",               sector: "Nhân sự - Hành chính - Pháp lý",       version: "v1" },
+  { file: "IT_skill_taxonomy_v4.json",                           sector: "Công nghệ thông tin (IT)",              version: "v4" },
+  { file: "KeToan_KiemToan_Thue_skill_taxonomy_v1.json",         sector: "Kế toán - Kiểm toán - Thuế",           version: "v1" },
+  { file: "KinhDoanh_BanHang_skill_taxonomy_v2.json",            sector: "Kinh doanh & Bán hàng",                version: "v2" },
+  { file: "LaoDongPhoThong_skill_taxonomy_v1.json",              sector: "Lao động phổ thông",                   version: "v1" },
+  { file: "Logistics_ThuMua_Kho_VanTai_skill_taxonomy_v1.json",  sector: "Logistics - Kho - Vận tải",            version: "v1" },
+  { file: "Luat_skill_taxonomy_v1.json",                         sector: "Luật",                                  version: "v1" },
+  { file: "Marketing_PR_QC_skill_taxonomy_v1.json",              sector: "Marketing - PR - Quảng cáo",           version: "v1" },
+  { file: "NangLuongMoiTruongNongNghiep_skill_taxonomy_v1.json", sector: "Năng lượng - MT - Nông nghiệp",        version: "v1" },
+  { file: "NhaHangKhachSanDuLich_skill_taxonomy_v1.json",        sector: "Nhà hàng - Khách sạn - Du lịch",      version: "v1" },
+  { file: "NhomNgheKhac_skill_taxonomy_v1.json",                 sector: "Nhóm nghề khác",                       version: "v1" },
+  { file: "PhimTruyenHinhBaoChiXuatBan_skill_taxonomy_v1.json",  sector: "Phim - Truyền hình - Báo chí",        version: "v1" },
+  { file: "SanXuat_skill_taxonomy_v1.json",                      sector: "Sản xuất",                             version: "v1" },
+  { file: "TaiXe_skill_taxonomy_v1.json",                        sector: "Tài xế",                               version: "v1" },
+  { file: "ThietKe_skill_taxonomy_v1.json",                      sector: "Thiết kế",                             version: "v1" },
+  { file: "TuVanChuyenMon_skill_taxonomy_v1.json",               sector: "Tư vấn chuyên môn",                   version: "v1" },
+  { file: "XayDung_skill_taxonomy_v1.json",                      sector: "Xây dựng",                             version: "v1" },
 ];
-/* ════════════════════════════════════════════════════════════════
+/* ════════════════════════════════════════════════════════════
    END MANIFEST
-════════════════════════════════════════════════════════════════ */
+════════════════════════════════════════════════════════════ */
 
-
-/* ────────────────────────────────────────────────────────────────
-   LABEL MAPS
-──────────────────────────────────────────────────────────────── */
+/* ─── LABEL MAPS ─── */
 const TYPE_VI  = { technical:'Kĩ thuật', tool:'Công cụ', domain:'Chuyên ngành',
                    soft:'Kĩ năng mềm', language:'Ngôn ngữ', certification:'Chứng chỉ', other:'Khác' };
 const REQ_VI   = { required:'Bắt buộc', preferred:'Ưu tiên' };
-const PROF_VI  = { proficient:'Thành thạo', working:'Làm được',
-                   awareness:'Nhận biết', expert:'Chuyên sâu', any:'' };
+const PROF_VI  = { proficient:'Thành thạo', working:'Làm được', awareness:'Nhận biết', expert:'Chuyên sâu', any:'' };
 const VN_SHORT = { VN_DOMAIN:'VN-Lĩnh vực', VN_TOOL:'VN-Công cụ', VN_REGULATION:'VN-Quy định' };
-const VN_FULL  = { VN_DOMAIN:'Lĩnh vực đặc thù VN', VN_TOOL:'Công cụ đặc thù VN',
-                   VN_REGULATION:'Quy định pháp lý VN' };
+const VN_FULL  = { VN_DOMAIN:'Lĩnh vực đặc thù VN', VN_TOOL:'Công cụ đặc thù VN', VN_REGULATION:'Quy định pháp lý VN' };
 const TYPE_ORDER = ['technical','tool','domain','soft','language','certification'];
 
-/* ────────────────────────────────────────────────────────────────
-   STATE
-   loadedData[si] = null | 'loading' | { positions, meta }
-──────────────────────────────────────────────────────────────── */
-const loadedData = new Array(MANIFEST.length).fill(null);
-let currentVT = null;  // { si, viTri }
-let searchQ   = '';
+/* ─── STATE ─── */
+const DB = [];           // DB[si] = { meta, positions, ngheMap }
+let activeSI   = null;   // selected sector index
+let activeNghe = null;   // selected nghe string
+let currentVT  = null;   // { si, viTri }
+let searchQ    = '';
+let allLoaded  = false;
 
-/* ────────────────────────────────────────────────────────────────
-   THEME
-──────────────────────────────────────────────────────────────── */
+/* ─── THEME ─── */
 function toggleTheme() {
   const dark = document.body.getAttribute('data-theme') === 'dark';
   document.body.setAttribute('data-theme', dark ? 'light' : 'dark');
   document.getElementById('theme-ic').textContent = dark ? '◑' : '◐';
 }
 
-/* ────────────────────────────────────────────────────────────────
-   NORMALIZE — chuẩn hóa từ raw JSON về cấu trúc thống nhất
-──────────────────────────────────────────────────────────────── */
+/* ─── NORMALIZE ─── */
 function normalize(raw, si) {
-  const meta      = raw.taxonomy_metadata || {};
+  const meta = raw.taxonomy_metadata || {};
   const positions = (raw.positions || []).map(p => {
-    const skills = (p.pipeline?.S1_extraction?.skills) || p.skills || [];
+    const skills = p.pipeline?.S1_extraction?.skills || p.skills || [];
     return { vi_tri: p.vi_tri, nghe: p.nghe, nhom_nghe: p.nhom_nghe, skills };
   });
-  const vnCount = meta.skills_with_vn_flag
-    ?? positions.flatMap(p => p.skills).filter(s => s.iviec_flag).length;
-  const certCount = meta.certifications_total
-    ?? positions.flatMap(p => p.skills).filter(s => s.skill_type === 'certification').length;
-
-  // Update manifest with real counts
-  MANIFEST[si].positions = meta.total_positions ?? positions.length;
-  MANIFEST[si].skills    = meta.total_skills    ?? positions.flatMap(p=>p.skills).length;
-
-  return {
-    positions,
-    meta: {
-      sector: meta.sector || MANIFEST[si].sector,
-      version: meta.version || MANIFEST[si].version,
-      total_positions: MANIFEST[si].positions,
-      total_skills:    MANIFEST[si].skills,
-      skill_type_distribution: meta.skill_type_distribution || {},
-      iviec_flags:     meta.iviec_flags     || {},
-      skills_with_vn_flag:  vnCount,
-      certifications_total: certCount,
-    }
-  };
-}
-
-/* ────────────────────────────────────────────────────────────────
-   LAZY LOAD — fetch JSON khi sector được mở lần đầu
-──────────────────────────────────────────────────────────────── */
-async function loadSector(si) {
-  if (loadedData[si] && loadedData[si] !== 'loading') return loadedData[si];
-  if (loadedData[si] === 'loading') {
-    // wait until loaded
-    return new Promise(res => {
-      const iv = setInterval(() => {
-        if (loadedData[si] && loadedData[si] !== 'loading') { clearInterval(iv); res(loadedData[si]); }
-      }, 80);
-    });
-  }
-
-  loadedData[si] = 'loading';
-  showSecLoading(si);
-
-  try {
-    const url  = MANIFEST[si].file;
-    const resp = await fetch(url);
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    const raw  = await resp.json();
-    const data = normalize(raw, si);
-    loadedData[si] = data;
-    renderSecBody(si, data);
-    updateLandingCounts();
-    return data;
-  } catch (err) {
-    loadedData[si] = null;
-    showSecError(si, err.message);
-    return null;
-  }
-}
-
-function showSecLoading(si) {
-  const body = document.getElementById('sbody-' + si);
-  if (body) body.innerHTML = `
-    <div class="sec-loading">
-      <span class="spin">◌</span>
-      <span>Đang tải...</span>
-    </div>`;
-}
-
-function showSecError(si, msg) {
-  const body = document.getElementById('sbody-' + si);
-  if (body) body.innerHTML = `
-    <div class="sec-error">
-      ⚠ Lỗi tải file
-      <span class="retry" onclick="retrySector(${si})">Thử lại</span>
-    </div>`;
-}
-
-async function retrySector(si) {
-  loadedData[si] = null;
-  await loadSector(si);
-}
-
-/* ────────────────────────────────────────────────────────────────
-   RENDER SECTOR BODY (L2 + L3) after data loaded
-──────────────────────────────────────────────────────────────── */
-function renderSecBody(si, data) {
-  const body = document.getElementById('sbody-' + si);
-  if (!body) return;
-
-  // Group by nghe
   const ngheMap = {};
-  data.positions.forEach(p => {
+  positions.forEach(p => {
     if (!ngheMap[p.nghe]) ngheMap[p.nghe] = [];
     ngheMap[p.nghe].push(p);
   });
-
-  body.innerHTML = Object.entries(ngheMap).map(([nghe, posList]) => {
-    const ngheId = 'nghe_' + si + '_' + nghe.replace(/\W/g,'_');
-    return `
-      <div class="tree-nghe">
-        <button class="tree-nghe-hdr" id="${ngheId}_hdr"
-          onclick="toggleNghe('${ngheId}')">
-          <span class="nghe-arrow">›</span>
-          <span class="nghe-name">${nghe}</span>
-          <span class="nghe-cnt">${posList.length}</span>
-        </button>
-        <div class="tree-nghe-body" id="${ngheId}_body">
-          ${posList.map(p => `
-            <button class="tree-vt-btn"
-              data-si="${si}" data-id="${esc(p.vi_tri)}"
-              onclick="selectVT(${si},'${esc(p.vi_tri)}',this)">
-              <span class="vt-dot"></span>
-              <span>${p.vi_tri}</span>
-            </button>`).join('')}
-        </div>
-      </div>`;
-  }).join('');
-
-  // Re-open if there's a pending active vt
-  if (currentVT && currentVT.si === si) {
-    openNghePath(si, currentVT.viTri);
-  }
+  const vnCount   = meta.skills_with_vn_flag  ?? positions.flatMap(p=>p.skills).filter(s=>s.iviec_flag).length;
+  const certCount = meta.certifications_total ?? positions.flatMap(p=>p.skills).filter(s=>s.skill_type==='certification').length;
+  return {
+    meta: {
+      sector:   meta.sector   || MANIFEST[si].sector,
+      version:  meta.version  || MANIFEST[si].version,
+      total_positions: meta.total_positions ?? positions.length,
+      total_skills:    meta.total_skills    ?? positions.flatMap(p=>p.skills).length,
+      skill_type_distribution: meta.skill_type_distribution || {},
+      iviec_flags: meta.iviec_flags || {},
+      skills_with_vn_flag:  vnCount,
+      certifications_total: certCount,
+    },
+    positions,
+    ngheMap
+  };
 }
 
-/* ────────────────────────────────────────────────────────────────
-   SIDEBAR TREE
-──────────────────────────────────────────────────────────────── */
-function buildTree() {
-  const tree = document.getElementById('sb-tree');
-  tree.innerHTML = '';
-  MANIFEST.forEach((m, si) => {
-    const el = document.createElement('div');
-    el.className = 'tree-sector';
-    const posLabel = m.positions ? `${m.positions} vị trí` : '—';
-    const skLabel  = m.skills    ? ` · ${m.skills} kĩ năng` : '';
-    el.innerHTML = `
-      <button class="tree-sec-hdr" id="shdr-${si}" onclick="toggleSector(${si})">
-        <span class="sec-arrow">›</span>
-        <span class="sec-info">
-          <span class="sec-name">${m.sector}</span>
-          <span class="sec-meta" id="smeta-${si}">${posLabel}${skLabel}</span>
-        </span>
-        <span class="sec-count" id="scnt-${si}">${m.skills || '·'}</span>
-      </button>
-      <div class="tree-sec-body" id="sbody-${si}"></div>`;
-    tree.appendChild(el);
+/* ─── LOAD ALL ─── */
+async function loadAll() {
+  const bar    = document.getElementById('load-bar');
+  const status = document.getElementById('load-status');
+  const total  = MANIFEST.length;
+  let loaded   = 0;
+
+  const tasks = MANIFEST.map(async (m, si) => {
+    try {
+      const resp = await fetch(m.file);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const raw = await resp.json();
+      DB[si] = normalize(raw, si);
+    } catch(e) {
+      DB[si] = null; // failed, skip
+    }
+    loaded++;
+    const pct = Math.round(loaded / total * 100);
+    bar.style.width = pct + '%';
+    status.textContent = `Đang tải... ${loaded}/${total} — ${m.sector}`;
   });
-}
 
-async function toggleSector(si) {
-  const hdr  = document.getElementById('shdr-' + si);
-  const body = document.getElementById('sbody-' + si);
-  const opening = !body.classList.contains('open');
+  await Promise.all(tasks);
+  allLoaded = true;
+  status.textContent = 'Hoàn tất!';
+  bar.style.width = '100%';
+  await new Promise(r => setTimeout(r, 300));
 
-  body.classList.toggle('open', opening);
-  hdr.classList.toggle('open', opening);
-  hdr.classList.toggle('active-branch', opening);
+  // Hide overlay
+  document.getElementById('load-overlay').classList.add('done');
 
-  if (opening && !loadedData[si]) {
-    await loadSector(si);
-  }
-}
-
-function toggleNghe(ngheId) {
-  const hdr  = document.getElementById(ngheId + '_hdr');
-  const body = document.getElementById(ngheId + '_body');
-  const open = body.classList.toggle('open');
-  hdr.classList.toggle('open', open);
-  hdr.classList.toggle('active-branch', open);
-}
-
-function openNghePath(si, viTri) {
-  const data = loadedData[si];
-  if (!data || data === 'loading') return;
-  const pos = data.positions.find(p => p.vi_tri === viTri);
-  if (!pos) return;
-  const ngheId = 'nghe_' + si + '_' + pos.nghe.replace(/\W/g,'_');
-  const nhdr = document.getElementById(ngheId + '_hdr');
-  const nbody = document.getElementById(ngheId + '_body');
-  if (nhdr && nbody) { nbody.classList.add('open'); nhdr.classList.add('open','active-branch'); }
-}
-
-function openSecPath(si) {
-  const shdr  = document.getElementById('shdr-' + si);
-  const sbody = document.getElementById('sbody-' + si);
-  sbody.classList.add('open');
-  shdr.classList.add('open','active-branch');
-}
-
-function updateTreeMeta(si) {
-  const m    = MANIFEST[si];
-  const meta = document.getElementById('smeta-' + si);
-  const cnt  = document.getElementById('scnt-' + si);
-  if (meta) meta.textContent = `${m.positions} vị trí · ${m.skills} kĩ năng`;
-  if (cnt)  cnt.textContent  = m.skills || '·';
-}
-
-/* ────────────────────────────────────────────────────────────────
-   LANDING
-──────────────────────────────────────────────────────────────── */
-function showLanding() {
-  currentVT = null;
-  clearMainViews();
-  document.getElementById('landing').style.display = '';
+  // Build UI
+  buildSectorCol();
+  updateStats();
   renderLanding();
 }
 
-function renderLanding() {
-  const totalSectors   = MANIFEST.length;
-  const totalPositions = MANIFEST.reduce((a,m)=>a+(m.positions||0), 0);
-  const totalSkills    = MANIFEST.reduce((a,m)=>a+(m.skills||0), 0);
-  const loadedCount    = loadedData.filter(d => d && d !== 'loading').length;
-
-  document.getElementById('landing').innerHTML = `
-    <div class="land-eyebrow">Skill Taxonomy · v1 · 04/03/2026</div>
-    <h1 class="land-title">Phân loại<br>kĩ năng nghề</h1>
-    <p class="land-desc">Hệ thống taxonomy kĩ năng theo từng nhóm nghề, ngành và vị trí công việc.
-      Chọn một vị trí trong menu bên trái để xem chi tiết, hoặc tìm kiếm theo tên kĩ năng.</p>
-
-    <div class="sum-grid" id="sum-grid">
-      ${[
-        { n: totalSectors,   l: 'Nhóm nghề',  s: 'Sectors',    hi: false },
-        { n: totalPositions, l: 'Vị trí',      s: 'Công việc',  hi: true  },
-        { n: totalSkills,    l: 'Kĩ năng',     s: 'Tổng cộng', hi: false },
-        { n: loadedCount,    l: 'Đã tải',      s: `/ ${totalSectors} sectors`, hi: false },
-      ].map(c => `
-        <div class="sum-card ${c.hi?'hi':''}">
-          <div class="s-num">${c.n}</div>
-          <div class="s-lbl">${c.l}</div>
-          <div class="s-sub">${c.s}</div>
-        </div>`).join('')}
-    </div>
-
-    <div class="sec-overview">
-      <div class="ov-hdr">Tất cả nhóm nghề</div>
-      <div class="ov-list">
-        ${MANIFEST.map((m, si) => `
-          <div class="ov-item" onclick="openAndFocus(${si})">
-            <div class="ov-left">
-              <div class="ov-name">${m.sector}</div>
-              <div class="ov-stats" id="ov-stats-${si}">
-                ${m.positions ? `${m.positions} vị trí · ${m.skills} kĩ năng` : 'Click để tải'}
-              </div>
-            </div>
-            <div class="ov-right">
-              <span class="ov-ver">${m.version}</span>
-              <span class="ov-arr">›</span>
-            </div>
-          </div>`).join('')}
-      </div>
-    </div>`;
+/* ─── STATS ─── */
+function updateStats() {
+  const loaded = DB.filter(Boolean);
+  document.getElementById('st-sectors').textContent   = loaded.length;
+  document.getElementById('st-positions').textContent = loaded.reduce((a,d)=>a+d.meta.total_positions,0);
+  document.getElementById('st-skills').textContent    = loaded.reduce((a,d)=>a+d.meta.total_skills,0).toLocaleString('vi');
+  document.getElementById('st-vn').textContent        = loaded.reduce((a,d)=>a+d.meta.skills_with_vn_flag,0);
 }
 
-function updateLandingCounts() {
-  // Update summary cards
-  const totalPositions = MANIFEST.reduce((a,m)=>a+(m.positions||0),0);
-  const totalSkills    = MANIFEST.reduce((a,m)=>a+(m.skills||0),0);
-  const loadedCount    = loadedData.filter(d=>d&&d!=='loading').length;
-  const grid = document.getElementById('sum-grid');
-  if (!grid) return;
-  const nums = grid.querySelectorAll('.s-num');
-  if (nums[1]) nums[1].textContent = totalPositions;
-  if (nums[2]) nums[2].textContent = totalSkills;
-  if (nums[3]) nums[3].textContent = loadedCount;
-  // Update overview stats rows
+/* ─── COL 1: SECTOR ─── */
+function buildSectorCol() {
+  const list = document.getElementById('sec-list');
+  list.innerHTML = '';
   MANIFEST.forEach((m, si) => {
-    const el = document.getElementById('ov-stats-' + si);
-    if (el && m.positions) el.textContent = `${m.positions} vị trí · ${m.skills} kĩ năng`;
+    const d = DB[si];
+    const btn = document.createElement('button');
+    btn.className = 'sec-item';
+    btn.dataset.si = si;
+    btn.dataset.sector = m.sector.toLowerCase();
+    btn.innerHTML = `
+      <div class="sec-item-inner">
+        <div class="sec-nm">${m.sector}</div>
+        <div class="sec-sub">${d ? `${d.meta.total_positions} vị trí · ${d.meta.total_skills} kĩ năng` : 'Lỗi tải'}</div>
+      </div>
+      <span class="sec-ver">${m.version}</span>`;
+    btn.onclick = () => selectSector(si);
+    list.appendChild(btn);
   });
 }
 
-async function openAndFocus(si) {
-  openSecPath(si);
-  if (!loadedData[si]) await loadSector(si);
-  document.getElementById('shdr-' + si).scrollIntoView({ behavior:'smooth', block:'start' });
+function selectSector(si) {
+  activeSI   = si;
+  activeNghe = null;
+  currentVT  = null;
+
+  document.querySelectorAll('.sec-item').forEach(b=>b.classList.remove('active'));
+  document.querySelector(`.sec-item[data-si="${si}"]`)?.classList.add('active');
+
+  buildNgheCol(si);
+  clearVTCol();
+  showLanding();
 }
 
-/* ────────────────────────────────────────────────────────────────
-   SELECT POSITION
-──────────────────────────────────────────────────────────────── */
-async function selectVT(si, viTri, btnEl) {
-  document.getElementById('srch').value = '';
-  searchQ = '';
-  document.getElementById('srch-cnt').textContent = '';
+/* ─── COL 2: NGÀNH ─── */
+function buildNgheCol(si) {
+  const d    = DB[si];
+  const list = document.getElementById('nghe-list');
+  if (!d) { list.innerHTML = '<div class="col-nghe-empty">Không có dữ liệu</div>'; return; }
 
-  document.querySelectorAll('.tree-vt-btn').forEach(b => b.classList.remove('active'));
-  if (btnEl) btnEl.classList.add('active');
+  list.innerHTML = '';
+  document.getElementById('nghe-filter').value = '';
 
+  Object.entries(d.ngheMap).forEach(([nghe, posList]) => {
+    const btn = document.createElement('button');
+    btn.className = 'nghe-item';
+    btn.dataset.nghe = nghe.toLowerCase();
+    btn.innerHTML = `<span class="nghe-nm">${nghe}</span><span class="nghe-cnt">${posList.length}</span>`;
+    btn.onclick = () => selectNghe(si, nghe);
+    list.appendChild(btn);
+  });
+}
+
+function selectNghe(si, nghe) {
+  activeNghe = nghe;
+  currentVT  = null;
+
+  document.querySelectorAll('.nghe-item').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.nghe-item').forEach(b=>{
+    if (b.querySelector('.nghe-nm')?.textContent === nghe) b.classList.add('active');
+  });
+
+  buildVTCol(si, nghe);
+  showLanding();
+}
+
+/* ─── COL 3: VỊ TRÍ ─── */
+function buildVTCol(si, nghe) {
+  const d    = DB[si];
+  const list = document.getElementById('vt-list');
+  if (!d) { list.innerHTML = '<div class="col-vt-empty">Không có dữ liệu</div>'; return; }
+
+  const posList = d.ngheMap[nghe] || [];
+  list.innerHTML = '';
+  document.getElementById('vt-filter').value = '';
+
+  posList.forEach(pos => {
+    const btn = document.createElement('button');
+    btn.className = 'vt-item';
+    btn.dataset.si  = si;
+    btn.dataset.vt  = pos.vi_tri.toLowerCase();
+    btn.dataset.vti = pos.vi_tri;
+    btn.innerHTML = `<span class="vt-dot"></span><span class="vt-nm">${pos.vi_tri}</span>`;
+    btn.onclick = () => selectVT(si, pos.vi_tri, btn);
+    list.appendChild(btn);
+  });
+}
+
+function clearVTCol() {
+  document.getElementById('vt-list').innerHTML = '<div class="col-vt-empty">← Chọn ngành</div>';
+  document.getElementById('vt-filter').value = '';
+}
+
+/* ─── COLUMN FILTER ─── */
+function filterCol(col, val) {
+  const q = val.trim().toLowerCase();
+  if (col === 'sector') {
+    document.querySelectorAll('.sec-item').forEach(el=>
+      el.classList.toggle('hidden', q && !el.dataset.sector.includes(q)));
+  } else if (col === 'nghe') {
+    document.querySelectorAll('.nghe-item').forEach(el=>
+      el.classList.toggle('hidden', q && !el.dataset.nghe.includes(q)));
+  } else if (col === 'vt') {
+    document.querySelectorAll('.vt-item').forEach(el=>
+      el.classList.toggle('hidden', q && !el.dataset.vt.includes(q)));
+  }
+}
+
+/* ─── SELECT VỊ TRÍ ─── */
+function selectVT(si, viTri, btnEl) {
   currentVT = { si, viTri };
 
-  // Ensure sector open
-  openSecPath(si);
+  document.querySelectorAll('.vt-item').forEach(b=>b.classList.remove('active'));
+  btnEl?.classList.add('active');
 
-  // Ensure data loaded
-  const data = await loadSector(si);
-  if (!data) return;
-
-  openNghePath(si, viTri);
-
-  const pos = data.positions.find(p => p.vi_tri === viTri);
+  const d   = DB[si];
+  const pos = d?.positions.find(p=>p.vi_tri===viTri);
   if (!pos) return;
 
   clearMainViews();
-  const id  = 'pd_' + si + '_' + viTri.replace(/\W/g,'_');
-  let det   = document.getElementById(id);
-  if (!det) { det = buildPosDetail(si, pos, data.meta, id); document.getElementById('pos-ct').appendChild(det); }
+  const id  = 'pd_'+si+'_'+viTri.replace(/\W/g,'_');
+  let   det = document.getElementById(id);
+  if (!det) { det = buildPosDetail(si, pos, d.meta, id); document.getElementById('pos-ct').appendChild(det); }
   det.classList.add('active');
-  window.scrollTo(0, 0);
+  window.scrollTo(0,0);
 }
 
-/* ────────────────────────────────────────────────────────────────
-   BUILD POSITION DETAIL
-──────────────────────────────────────────────────────────────── */
+/* ─── POSITION DETAIL ─── */
 function buildPosDetail(si, pos, meta, id) {
-  const skills = pos.skills || [];
-  const tg = {}, rg = { required:[], preferred:[] }, tc = {};
-  skills.forEach(s => {
-    const t = s.skill_type||'other';
+  const skills = pos.skills||[];
+  const tg={}, rg={required:[],preferred:[]}, tc={};
+  skills.forEach(s=>{
+    const t=s.skill_type||'other';
     (tg[t]||(tg[t]=[])).push(s);
     (s.requirement==='required'?rg.required:rg.preferred).push(s);
     tc[t]=(tc[t]||0)+1;
   });
-  const vnSk = skills.filter(s=>s.iviec_flag);
-  const el = document.createElement('div');
+  const vnSk=skills.filter(s=>s.iviec_flag);
+  const el=document.createElement('div');
   el.className='pos-det'; el.id=id;
-  el.innerHTML = `
+  el.innerHTML=`
     <div class="pos-hdr">
       <div class="pos-bc">
         <span>${meta.sector}</span><span class="sep">›</span><span>${pos.nghe}</span>
@@ -762,28 +750,27 @@ function buildPosDetail(si, pos, meta, id) {
       <button class="ftab" onclick="filterPos('${id}','preferred',this)">Ưu tiên <span class="cn">${rg.preferred.length}</span></button>
       ${vnSk.length?`<button class="ftab" onclick="filterPos('${id}','vn',this)">Đặc thù VN <span class="cn">${vnSk.length}</span></button>`:''}
       ${TYPE_ORDER.filter(t=>tg[t]).map(t=>
-        `<button class="ftab" onclick="filterPos('${id}','${t}',this)">${TYPE_VI[t]||t} <span class="cn">${tc[t]}</span></button>`
+        `<button class="ftab" onclick="filterPos('${id}','${t}',this)">${TYPE_VI[t]} <span class="cn">${tc[t]}</span></button>`
       ).join('')}
     </div>
     <div id="sc-${id}">
       ${TYPE_ORDER.filter(t=>tg[t]).map(t=>`
         <div class="sk-grp" data-type="${t}">
-          <div class="sg-lbl">${TYPE_VI[t]||t} (${tg[t].length})</div>
+          <div class="sg-lbl">${TYPE_VI[t]} (${tg[t].length})</div>
           <div class="sk-grid">${tg[t].map(renderCard).join('')}</div>
         </div>`).join('')}
       ${tg.other?`<div class="sk-grp" data-type="other">
         <div class="sg-lbl">Khác (${tg.other.length})</div>
-        <div class="sk-grid">${tg.other.map(renderCard).join('')}</div>
-      </div>`:''}
+        <div class="sk-grid">${tg.other.map(renderCard).join('')}</div></div>`:''}
     </div>`;
   return el;
 }
 
-function renderCard(s) {
-  const req  = s.requirement||'preferred';
-  const type = s.skill_type||'other';
-  const isVN = !!s.iviec_flag;
-  const prof = s.proficiency_level && s.proficiency_level!=='any' ? PROF_VI[s.proficiency_level]||s.proficiency_level : '';
+function renderCard(s){
+  const req=s.requirement||'preferred';
+  const type=s.skill_type||'other';
+  const isVN=!!s.iviec_flag;
+  const prof=s.proficiency_level&&s.proficiency_level!=='any'?PROF_VI[s.proficiency_level]||s.proficiency_level:'';
   return `
     <div class="sk-card ${req}" data-req="${req}" data-type="${type}" data-vn="${isVN}">
       <div class="sk-nm">${s.label_vi||s.label_en}${isVN?`<span class="vn-badge">${VN_SHORT[s.iviec_flag]||s.iviec_flag}</span>`:''}</div>
@@ -796,89 +783,141 @@ function renderCard(s) {
     </div>`;
 }
 
-function filterPos(posId, filter, btn) {
+function filterPos(posId,filter,btn){
   document.querySelectorAll(`#fr-${posId} .ftab`).forEach(t=>t.classList.remove('active'));
   btn.classList.add('active');
-  const ct    = document.getElementById('sc-'+posId);
-  const cards = ct.querySelectorAll('.sk-card');
-  const grps  = ct.querySelectorAll('.sk-grp');
-  if (filter==='all') { cards.forEach(c=>c.classList.remove('hidden')); grps.forEach(g=>g.classList.remove('hidden')); return; }
+  const ct=document.getElementById('sc-'+posId);
+  const cards=ct.querySelectorAll('.sk-card'),grps=ct.querySelectorAll('.sk-grp');
+  if(filter==='all'){cards.forEach(c=>c.classList.remove('hidden'));grps.forEach(g=>g.classList.remove('hidden'));return;}
   cards.forEach(c=>{
-    const show = (filter==='required'||filter==='preferred') ? c.dataset.req===filter
-               : filter==='vn' ? c.dataset.vn==='true'
-               : c.dataset.type===filter;
+    const show=filter==='required'||filter==='preferred'?c.dataset.req===filter
+              :filter==='vn'?c.dataset.vn==='true':c.dataset.type===filter;
     c.classList.toggle('hidden',!show);
   });
   grps.forEach(g=>g.classList.toggle('hidden',!g.querySelectorAll('.sk-card:not(.hidden)').length));
 }
 
-/* ────────────────────────────────────────────────────────────────
-   SEARCH — chỉ search các sector đã được load
-──────────────────────────────────────────────────────────────── */
+/* ─── LANDING ─── */
+function showLanding() {
+  currentVT = null;
+  document.querySelectorAll('.vt-item').forEach(b=>b.classList.remove('active'));
+  clearMainViews();
+  document.getElementById('landing').style.display = '';
+}
+
+function renderLanding() {
+  const loaded = DB.filter(Boolean);
+  const totalSkills = loaded.reduce((a,d)=>a+d.meta.total_skills,0);
+
+  // Aggregate skill type distribution across all sectors
+  const typeAgg = {};
+  loaded.forEach(d=>{
+    Object.entries(d.meta.skill_type_distribution||{}).forEach(([k,v])=>{
+      typeAgg[k]=(typeAgg[k]||0)+v;
+    });
+  });
+  const vnAgg = {};
+  loaded.forEach(d=>{
+    Object.entries(d.meta.iviec_flags||{}).forEach(([k,v])=>{
+      vnAgg[k]=(vnAgg[k]||0)+v;
+    });
+  });
+  const maxT=Math.max(1,...Object.values(typeAgg));
+  const maxV=Math.max(1,...Object.values(vnAgg));
+
+  document.getElementById('landing').innerHTML = `
+    <div class="land-title">Phân loại kĩ năng nghề</div>
+    <p class="land-desc">Đã tải ${loaded.length}/${MANIFEST.length} nhóm nghề · ${loaded.reduce((a,d)=>a+d.meta.total_positions,0)} vị trí · ${totalSkills.toLocaleString('vi')} kĩ năng.<br>Chọn nhóm nghề ở cột bên trái để bắt đầu.</p>
+
+    ${Object.keys(typeAgg).length ? `
+    <div class="dist-section">
+      <div class="dist-ttl">Phân bố loại kĩ năng</div>
+      <div class="dist-grid">
+        ${Object.entries(typeAgg).map(([k,v])=>`
+          <div class="dist-item">
+            <div class="dist-row"><span class="dist-nm">${TYPE_VI[k]||k}</span><span class="dist-vl">${v.toLocaleString('vi')}</span></div>
+            <div class="bar-bg"><div class="bar-fill" style="width:${Math.round(v/maxT*100)}%"></div></div>
+          </div>`).join('')}
+      </div>
+    </div>` : ''}
+
+    ${Object.keys(vnAgg).length ? `
+    <div class="dist-section">
+      <div class="dist-ttl">Đặc thù Việt Nam — iViec flags</div>
+      <div class="dist-grid">
+        ${Object.entries(vnAgg).map(([k,v])=>`
+          <div class="dist-item">
+            <div class="dist-row"><span class="dist-nm">${VN_FULL[k]||k}</span><span class="dist-vl">${v.toLocaleString('vi')}</span></div>
+            <div class="bar-bg"><div class="bar-fill" style="width:${Math.round(v/maxV*100)}%"></div></div>
+          </div>`).join('')}
+      </div>
+    </div>` : ''}`;
+}
+
+/* ─── SEARCH (global, across all loaded sectors) ─── */
+document.addEventListener('DOMContentLoaded', () => {
+  // Search is triggered from a global input — add it to topbar dynamically
+  const srchWrap = document.createElement('div');
+  srchWrap.style.cssText = 'position:relative;margin-right:8px';
+  srchWrap.innerHTML = `
+    <span style="position:absolute;left:8px;top:50%;transform:translateY(-50%);color:var(--txm);font-size:11px;pointer-events:none">⌕</span>
+    <input id="global-search" type="text" placeholder="Tìm kĩ năng..." autocomplete="off"
+      style="padding:5px 8px 5px 26px;background:var(--bg2);border:1px solid var(--brd);
+             border-radius:var(--r);color:var(--tx1);font-family:'IBM Plex Sans',sans-serif;
+             font-size:12px;outline:none;width:200px;transition:all var(--tr)"
+      oninput="handleSearch(this.value)"
+      onfocus="this.style.borderColor='var(--brd2)';this.style.background='var(--sur)'"
+      onblur="this.style.borderColor='var(--brd)';this.style.background='var(--bg2)'">`;
+  document.querySelector('.top-right').prepend(srchWrap);
+});
+
 function handleSearch(val) {
   searchQ = val.trim().toLowerCase();
-  document.getElementById('srch-cnt').textContent = '';
   if (!searchQ) {
     document.getElementById('sr-view').classList.remove('active');
-    currentVT ? (() => {
-      const id = 'pd_'+currentVT.si+'_'+currentVT.viTri.replace(/\W/g,'_');
+    if (currentVT) {
+      const id='pd_'+currentVT.si+'_'+currentVT.viTri.replace(/\W/g,'_');
       clearMainViews();
       document.getElementById(id)?.classList.add('active');
-    })() : showLanding();
+    } else { clearMainViews(); document.getElementById('landing').style.display=''; }
     return;
   }
   clearMainViews();
-
-  const loaded = loadedData
-    .map((d,si)=>({d,si}))
-    .filter(({d})=>d && d!=='loading');
-
-  // Collect results from loaded sectors
-  const results = [];
-  loaded.forEach(({d,si})=>{
-    (d.positions||[]).forEach(p=>{
-      (p.skills||[]).forEach(s=>{
-        if ((s.label_en||'').toLowerCase().includes(searchQ) ||
-            (s.label_vi||'').toLowerCase().includes(searchQ)) {
-          results.push({...s, _pos:p, _si:si, _sector:MANIFEST[si].sector});
-        }
+  const results=[];
+  DB.forEach((d,si)=>{
+    if(!d) return;
+    d.positions.forEach(p=>{
+      p.skills.forEach(s=>{
+        if((s.label_en||'').toLowerCase().includes(searchQ)||(s.label_vi||'').toLowerCase().includes(searchQ))
+          results.push({...s,_pos:p,_si:si,_sector:MANIFEST[si].sector});
       });
     });
   });
-
-  const loadedSectorCount = loaded.length;
-  const totalSectors = MANIFEST.length;
-  document.getElementById('srch-cnt').textContent = `${results.length} kết quả (${loadedSectorCount}/${totalSectors} sector đã tải)`;
-  renderSearch(results, loadedSectorCount, totalSectors);
+  renderSearch(results);
 }
 
-function renderSearch(results, loadedCount, totalCount) {
-  const view = document.getElementById('sr-view');
+function renderSearch(results){
+  const view=document.getElementById('sr-view');
+  document.getElementById('sr-sub').textContent=`Tìm thấy ${results.length} kĩ năng`;
   view.classList.add('active');
-  document.getElementById('sr-sub').textContent =
-    `${results.length} kĩ năng · đã tìm trong ${loadedCount}/${totalCount} sector`;
-
-  if (!results.length) {
-    document.getElementById('sr-list').innerHTML =
-      `<div class="no-res"><div class="ico">◇</div><p>Không tìm thấy kết quả trong các sector đã tải.</p></div>`;
+  if(!results.length){
+    document.getElementById('sr-list').innerHTML=`<div class="no-res"><div class="ico">◇</div><p>Không tìm thấy kết quả.</p></div>`;
     return;
   }
-
-  const map = {};
+  const map={};
   results.forEach(s=>{
     const k=s.label_en||s.label_vi;
     if(!map[k]) map[k]={vi:s.label_vi,en:s.label_en,type:s.skill_type,flag:s.iviec_flag,hits:[]};
-    map[k].hits.push({si:s._si,sector:s._sector,vt:s._pos.vi_tri,req:s.requirement});
+    map[k].hits.push({si:s._si,sector:s._sector,vt:s._pos.vi_tri,nghe:s._pos.nghe,req:s.requirement});
   });
-
-  document.getElementById('sr-list').innerHTML = Object.entries(map).map(([,it])=>`
+  document.getElementById('sr-list').innerHTML=Object.entries(map).map(([,it])=>`
     <div class="sri">
       <div class="sri-nm">${hl(it.vi||it.en)}</div>
       <div class="sri-en">${hl(it.en||'')}</div>
       <div class="sri-meta">
         ${it.hits.map(h=>`
           <span class="sri-chip pos ${h.req==='required'?'req':''}"
-            onclick="jumpToPos(${h.si},'${esc(h.vt)}')">
+            onclick="jumpToPos(${h.si},'${esc(h.nghe)}','${esc(h.vt)}')">
             ${h.sector} · ${h.vt}
           </span>`).join('')}
         <span class="sri-chip">${TYPE_VI[it.type]||it.type||''}</span>
@@ -887,36 +926,30 @@ function renderSearch(results, loadedCount, totalCount) {
     </div>`).join('');
 }
 
-function hl(text) {
-  if(!text) return '';
-  const re=new RegExp(`(${searchQ.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`,'gi');
-  return text.replace(re,'<mark style="background:var(--acc);color:var(--acc-i);border-radius:1px;padding:0 1px">$1</mark>');
+function hl(t){
+  if(!t) return '';
+  return t.replace(new RegExp(`(${searchQ.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`,'gi'),
+    '<mark style="background:var(--acc);color:var(--acc-i);border-radius:1px;padding:0 1px">$1</mark>');
 }
 
-async function jumpToPos(si, viTri) {
-  document.getElementById('srch').value='';
+function jumpToPos(si,nghe,viTri){
+  document.getElementById('global-search').value='';
   handleSearch('');
-  openSecPath(si);
-  const btn = document.querySelector(`.tree-vt-btn[data-si="${si}"][data-id="${viTri}"]`);
-  await selectVT(si, viTri, btn);
+  selectSector(si);
+  selectNghe(si,nghe);
+  const btn=document.querySelector(`.vt-item[data-vti="${viTri}"]`);
+  selectVT(si,viTri,btn);
 }
 
-/* ────────────────────────────────────────────────────────────────
-   HELPERS
-──────────────────────────────────────────────────────────────── */
 function esc(s){return (s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'")}
-
-function clearMainViews() {
+function clearMainViews(){
   document.getElementById('landing').style.display='none';
   document.getElementById('sr-view').classList.remove('active');
   document.querySelectorAll('.pos-det').forEach(e=>e.classList.remove('active'));
 }
 
-/* ────────────────────────────────────────────────────────────────
-   INIT
-──────────────────────────────────────────────────────────────── */
-buildTree();
-showLanding();
+/* ─── INIT ─── */
+loadAll();
 </script>
 </body>
 </html>
