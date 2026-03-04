@@ -602,10 +602,10 @@ function skillGroups(sk) {
       list.map(function(s) {
         return '<span class="chip ' + esc(s.skill_type) + '">' +
           (s.iviec_flag ? '<span class="vndot"></span>' : '') +
-          esc(s.label_en) +
+          esc(s.label_vi || s.label_en) +
           '<span class="tip">' +
-          '<div class="tip-en">' + esc(s.label_en) + '</div>' +
-          (s.label_vi ? '<div class="tip-vi">' + esc(s.label_vi) + '</div>' : '') +
+          '<div class="tip-en">' + esc(s.label_vi || s.label_en) + '</div>' +
+          (s.label_en ? '<div class="tip-vi">' + esc(s.label_en) + '</div>' : '') +
           (s.evidence_text ? '<div class="tip-ev">' + esc(s.evidence_text) + '</div>' : '') +
           (s.iviec_flag ? '<div class="tip-vn">&#127474;&#127475; ' + esc(s.iviec_flag) + '</div>' : '') +
           (s.iviec_reason ? '<div class="tip-reason">' + esc(s.iviec_reason) + '</div>' : '') +
