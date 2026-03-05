@@ -518,43 +518,93 @@ function toggleTheme() {
 /* ─── NORMALIZE ─── */
 function normalize(raw, si) {
   const meta = raw.taxonomy_metadata || {};
-  const positions = (raw.positions || []).map(p => {
-    const skills = p.pipeline?.S1_extraction?.skills || p.skills || [];
-    return { vi_tri: p.vi_tri, nghe: p.nghe, nhom_nghe: p.nhom_nghe, skills };
-  });
+
+  // ── Bước 1: lấy danh sách vị trí thô, lọc bỏ entry rỗng/null
+  const rawPositions = (raw.positions || []).filter(p => p && typeof p === 'object');
+
+  // ── Bước 2: với mỗi vị trí, tìm skills từ đúng 1 nguồn duy nhất
+  //    Ưu tiên: pipeline.S1_extraction.skills → pipeline (stage đầu tiên có skills) → p.skills trực tiếp
+  const positions = rawPositions.map(p => {
+    let skills = null;
+
+    // Thử S1_extraction trước
+    const s1 = p.pipeline?.S1_extraction;
+    if (s1 && Array.isArray(s1.skills) && s1.skills.length > 0) {
+      skills = s1.skills;
+    }
+
+    // Nếu S1 rỗng/không có, thử từng stage trong pipeline theo thứ tự
+    if (!skills && p.pipeline && typeof p.pipeline === 'object') {
+      for (const stage of Object.values(p.pipeline)) {
+        if (stage && Array.isArray(stage.skills) && stage.skills.length > 0) {
+          skills = stage.skills;
+          break;
+        }
+      }
+    }
+
+    // Cuối cùng thử skills trực tiếp trên position
+    if (!skills && Array.isArray(p.skills) && p.skills.length > 0) {
+      skills = p.skills;
+    }
+
+    // Lọc bỏ item không phải object (tránh null, string, array lồng nhau)
+    const cleanSkills = (skills || []).filter(s => s && typeof s === 'object' && !Array.isArray(s));
+
+    return {
+      vi_tri:    p.vi_tri   || '',
+      nghe:      p.nghe     || '',
+      nhom_nghe: p.nhom_nghe || '',
+      skills:    cleanSkills,
+    };
+  })
+  // ── Bước 3: lọc bỏ vị trí không có vi_tri hoặc nghe hợp lệ
+  .filter(p => p.vi_tri && p.nghe);
+
+  // ── Bước 4: build ngheMap
   const ngheMap = {};
   positions.forEach(p => {
     if (!ngheMap[p.nghe]) ngheMap[p.nghe] = [];
     ngheMap[p.nghe].push(p);
   });
-  // Luôn đếm từ data thực tế — không tin metadata có thể stale
-  const allSkills  = positions.flatMap(p => p.skills);
-  const vnCount    = allSkills.filter(s => s.iviec_flag).length;
-  const certCount  = allSkills.filter(s => s.skill_type === 'certification').length;
-  // Tổng hợp skill_type_distribution từ data thực
+
+  // ── Bước 5: đếm từ data thực tế, không dùng metadata
+  const allSkills = positions.flatMap(p => p.skills);
+
+  const vnCount   = allSkills.filter(s => s.iviec_flag).length;
+  const certCount = allSkills.filter(s => s.skill_type === 'certification').length;
+
   const typeDistActual = {};
   allSkills.forEach(s => {
     const t = s.skill_type || 'other';
     typeDistActual[t] = (typeDistActual[t] || 0) + 1;
   });
-  // iviec_flags tổng hợp từ data thực
   const iviecActual = {};
   allSkills.filter(s => s.iviec_flag).forEach(s => {
     iviecActual[s.iviec_flag] = (iviecActual[s.iviec_flag] || 0) + 1;
   });
+
+  // ── Debug log: mở DevTools > Console để kiểm tra từng file
+  console.log(`[normalize] ${MANIFEST[si].file}:`,
+    `rawPos=${rawPositions.length}`,
+    `validPos=${positions.length}`,
+    `skills=${allSkills.length}`,
+    `droppedPos=${rawPositions.length - positions.length}`
+  );
+
   return {
     meta: {
-      sector:   meta.sector   || MANIFEST[si].sector,
-      version:  meta.version  || MANIFEST[si].version,
-      total_positions: positions.length,           // đếm thực tế
-      total_skills:    allSkills.length,           // đếm thực tế
-      skill_type_distribution: typeDistActual,     // tính từ data
-      iviec_flags:             iviecActual,        // tính từ data
+      sector:   meta.sector  || MANIFEST[si].sector,
+      version:  meta.version || MANIFEST[si].version,
+      total_positions: positions.length,
+      total_skills:    allSkills.length,
+      skill_type_distribution: typeDistActual,
+      iviec_flags:             iviecActual,
       skills_with_vn_flag:     vnCount,
       certifications_total:    certCount,
     },
     positions,
-    ngheMap
+    ngheMap,
   };
 }
 
