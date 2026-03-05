@@ -527,18 +527,31 @@ function normalize(raw, si) {
     if (!ngheMap[p.nghe]) ngheMap[p.nghe] = [];
     ngheMap[p.nghe].push(p);
   });
-  const vnCount   = meta.skills_with_vn_flag  ?? positions.flatMap(p=>p.skills).filter(s=>s.iviec_flag).length;
-  const certCount = meta.certifications_total ?? positions.flatMap(p=>p.skills).filter(s=>s.skill_type==='certification').length;
+  // Luôn đếm từ data thực tế — không tin metadata có thể stale
+  const allSkills  = positions.flatMap(p => p.skills);
+  const vnCount    = allSkills.filter(s => s.iviec_flag).length;
+  const certCount  = allSkills.filter(s => s.skill_type === 'certification').length;
+  // Tổng hợp skill_type_distribution từ data thực
+  const typeDistActual = {};
+  allSkills.forEach(s => {
+    const t = s.skill_type || 'other';
+    typeDistActual[t] = (typeDistActual[t] || 0) + 1;
+  });
+  // iviec_flags tổng hợp từ data thực
+  const iviecActual = {};
+  allSkills.filter(s => s.iviec_flag).forEach(s => {
+    iviecActual[s.iviec_flag] = (iviecActual[s.iviec_flag] || 0) + 1;
+  });
   return {
     meta: {
       sector:   meta.sector   || MANIFEST[si].sector,
       version:  meta.version  || MANIFEST[si].version,
-      total_positions: meta.total_positions ?? positions.length,
-      total_skills:    meta.total_skills    ?? positions.flatMap(p=>p.skills).length,
-      skill_type_distribution: meta.skill_type_distribution || {},
-      iviec_flags: meta.iviec_flags || {},
-      skills_with_vn_flag:  vnCount,
-      certifications_total: certCount,
+      total_positions: positions.length,           // đếm thực tế
+      total_skills:    allSkills.length,           // đếm thực tế
+      skill_type_distribution: typeDistActual,     // tính từ data
+      iviec_flags:             iviecActual,        // tính từ data
+      skills_with_vn_flag:     vnCount,
+      certifications_total:    certCount,
     },
     positions,
     ngheMap
